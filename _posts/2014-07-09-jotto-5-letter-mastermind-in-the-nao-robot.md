@@ -5,7 +5,7 @@ comments: true
 ---
 
 <p style="text-align:center;">
-{{ oembed https://www.youtube.com/watch?v=xQVjHmyD770 }}
+{% oembed https://www.youtube.com/watch?v=xQVjHmyD770 %}
 </p>
 
 <!-- <p><iframe width="420" height="315" src="http://youtu.be/xQVjHmyD770" frameborder="0" allowfullscreen></iframe></p> -->
