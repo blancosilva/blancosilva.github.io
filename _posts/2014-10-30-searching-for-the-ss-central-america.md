@@ -36,7 +36,7 @@ We simulate several possible paths of the steamboat (say 10,000 randomly generat
 
 We start by creating a **data frame**—a computational structure that will hold all the values we need in a very efficient way.  We do so with the help of the `pandas` libraries.
 
-{% highlight python %}
+{% highlight python linenos %}
 from datetime import datetime, timedelta
 from dateutil.parser import parse
 import numpy as np, pandas as pd
