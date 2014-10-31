@@ -6,12 +6,12 @@
     <meta name="viewport" content="width=device-width initial-scale=1" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-    <title>Francisco Blanco-Silva</title>
+    <title>Advanced Problem #18</title>
     <meta name="description" content="Useless math is useful math. It can be used to generate more useless math.
 ">
 
     <link rel="stylesheet" href="/css/main.css">
-    <link rel="canonical" href="http://yourdomain.com/">
+    <link rel="canonical" href="http://yourdomain.com/2014/03/04/advanced-problem-18.html">
 </head>
 
 
@@ -62,57 +62,59 @@
 
     <div class="page-content">
       <div class="wrapper">
-        <div class="home">
+        <div class="post">
 
-  <h1 class="page-heading">Posts</h1>
+  <header class="post-header">
+    <h1 class="post-title">Advanced Problem #18</h1>
+    <p class="post-meta">Mar 4, 2014</p>
+  </header>
 
-  <ul class="post-list">
-    
-      <li>
-        <span class="post-meta">Oct 30, 2014</span>
+  <article class="post-content">
+    <p>Another fun problem, as requested by <a href="https://www.facebook.com/right.li.love">Qinfeng Li</a> in <a href="http://blancosilva.wordpress.com/teaching/ma598r/">MA598R: Measure Theory</a></p>
 
-        <h2>
-          <a class="post-link" href="/articles/2014/10/30/searching-for-the-ss-central-america.html">Searching for the SS Central America</a>
-        </h2>
-      </li>
-    
-      <li>
-        <span class="post-meta">Oct 29, 2014</span>
+<blockquote>
+  <p>Let   \(f \in L_2(\mathbb{R})\) so that \(g(x)=xf(x) \in L_2(\mathbb{R})\) too.  Show that \(f \in L_1(\mathbb{R})\) and \(\lVert f \rVert_1^2 \leq 8 \lVert f \rVert_2 \lVert g \rVert_2.\)</p>
+</blockquote>
 
-        <h2>
-          <a class="post-link" href="/2014/10/29/Numerical-Linear-Algebra.html">Numerical Linear Algebra</a>
-        </h2>
-      </li>
-    
-      <li>
-        <span class="post-meta">Oct 28, 2014</span>
+<p>I got this problem by picking some strictly positive value \(\lambda\) and breaking the integral \(\int_{\mathbb{R}} \lvert f \rvert\, d\mu\) as follows:</p>
 
-        <h2>
-          <a class="post-link" href="/2014/10/28/Computational-Geometry-in-Python.html">Computational Geometry In Python</a>
-        </h2>
-      </li>
-    
-      <li>
-        <span class="post-meta">Jul 9, 2014</span>
+<script type="math/tex; mode=display">% <![CDATA[
+\begin{array}{rl} \displaystyle{\int_{\mathbb{R}} \lvert f \rvert\, d\mu} &= \displaystyle{\int_{\lvert x \rvert \leq \lambda} \lvert f \rvert\, d\mu + \int_{\lvert x \rvert \geq \lambda} \lvert f \rvert\, d\mu} \\ \\
+ &= \displaystyle{\int_{-\lambda}^{\lambda} \lvert f \rvert\, d\mu + \int_{\lvert x \rvert \geq \lambda} \tfrac{1}{\lvert x \rvert} \lvert g(x) \rvert\, d\mu} \\ \\
+&= \displaystyle{\int_\mathbb{R} \lvert f \rvert \cdot \boldsymbol{1}_{\lvert x \rvert \leq \lambda}\, d\mu + \int_{\mathbb{R}} \lvert g \rvert \cdot  \big( \tfrac{1}{\lvert x \rvert} \boldsymbol{1}_{\lvert x \rvert \geq \lambda}\big) \, d\mu} \\ \\
+&\leq \lVert f \rVert_2 \cdot \big\lVert \boldsymbol{1}_{\lvert x \rvert \leq \lambda} \big\rVert_2 + \lVert g \rVert_2 \cdot \big\lVert \tfrac{1}{\lvert x \rvert} \boldsymbol{1}_{\lvert x \rvert \geq \lambda} \big\rVert_2 \end{array} %]]></script>
 
-        <h2>
-          <a class="post-link" href="/2014/07/09/jotto-5-letter-mastermind-in-the-nao-robot.html">Jotto (5-letter Mastermind) in the NAO robot</a>
-        </h2>
-      </li>
-    
-      <li>
-        <span class="post-meta">Mar 4, 2014</span>
+<p>Let us examine now the factors <script type="math/tex">\big\lVert \boldsymbol{1}_{\lvert x \rvert \leq \lambda} \big\rVert_2</script> and \( \big\lVert \tfrac{1}{\lvert x \rvert} \boldsymbol{1}_{\lvert x \rvert \geq \lambda} \big\rVert_2 \) above:</p>
 
-        <h2>
-          <a class="post-link" href="/2014/03/04/advanced-problem-18.html">Advanced Problem #18</a>
-        </h2>
-      </li>
-    
-  </ul>
+<script type="math/tex; mode=display">\big\lVert \boldsymbol{1}_{\lvert x \rvert \leq \lambda} \big\rVert_2 = \sqrt{2\lambda}</script>
 
-  <p class="rss-subscribe">subscribe <a href="/feed.xml">via RSS</a></p>
+<script type="math/tex; mode=display">\big\lVert \tfrac{1}{\lvert x \rvert} \boldsymbol{1}_{\lvert x \rvert \geq \lambda} \big\rVert_2 = \displaystyle{ \sqrt{ 2\int_\lambda^\infty \dfrac{dx}{x^2}} = \sqrt{ \dfrac{2}{\lambda}} }</script>
 
+<p>We have thus proven that \(f \in L_1(\mathbb{R})\) with \(\lVert f \rVert_1 \leq \sqrt{2\lambda} \lVert f \rVert_2 + \sqrt{\tfrac{2}{\lambda}} \lVert g \rVert_2.\)  At this point, all you have to do is pick \(\lambda = \lVert g \rVert_2 / \lVert f \rVert_2\) (provided the denominator is not zero) and you are done.</p>
+
+  </article>
+
+<!-- Add Disqus comments. -->
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+  /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+  var disqus_shortname = 'eseprimo'; 
+
+  /* * * DON'T EDIT BELOW THIS LINE * * */
+  (function() {
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+  })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
 </div>
+
+
+<script type="text/javascript"
+    src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
 
       </div>
     </div>

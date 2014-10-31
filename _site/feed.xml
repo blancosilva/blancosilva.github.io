@@ -6,8 +6,8 @@
 </description>
     <link>http://yourdomain.com/</link>
     <atom:link href="http://yourdomain.com/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Fri, 31 Oct 2014 03:01:32 -0400</pubDate>
-    <lastBuildDate>Fri, 31 Oct 2014 03:01:32 -0400</lastBuildDate>
+    <pubDate>Fri, 31 Oct 2014 03:18:18 -0400</pubDate>
+    <lastBuildDate>Fri, 31 Oct 2014 03:18:18 -0400</lastBuildDate>
     <generator>Jekyll v2.4.0</generator>
     
       <item>
@@ -33584,6 +33584,37 @@ In&amp;nbsp;[105]:
         <pubDate>Wed, 09 Jul 2014 00:00:00 -0400</pubDate>
         <link>http://yourdomain.com/2014/07/09/jotto-5-letter-mastermind-in-the-nao-robot.html</link>
         <guid isPermaLink="true">http://yourdomain.com/2014/07/09/jotto-5-letter-mastermind-in-the-nao-robot.html</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>Advanced Problem #18</title>
+        <description>&lt;p&gt;Another fun problem, as requested by &lt;a href=&quot;https://www.facebook.com/right.li.love&quot;&gt;Qinfeng Li&lt;/a&gt; in &lt;a href=&quot;http://blancosilva.wordpress.com/teaching/ma598r/&quot;&gt;MA598R: Measure Theory&lt;/a&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Let   \(f \in L_2(\mathbb{R})\) so that \(g(x)=xf(x) \in L_2(\mathbb{R})\) too.  Show that \(f \in L_1(\mathbb{R})\) and \(\lVert f \rVert_1^2 \leq 8 \lVert f \rVert_2 \lVert g \rVert_2.\)&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;I got this problem by picking some strictly positive value \(\lambda\) and breaking the integral \(\int_{\mathbb{R}} \lvert f \rvert\, d\mu\) as follows:&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;% &lt;![CDATA[
+\begin{array}{rl} \displaystyle{\int_{\mathbb{R}} \lvert f \rvert\, d\mu} &amp;= \displaystyle{\int_{\lvert x \rvert \leq \lambda} \lvert f \rvert\, d\mu + \int_{\lvert x \rvert \geq \lambda} \lvert f \rvert\, d\mu} \\ \\
+ &amp;= \displaystyle{\int_{-\lambda}^{\lambda} \lvert f \rvert\, d\mu + \int_{\lvert x \rvert \geq \lambda} \tfrac{1}{\lvert x \rvert} \lvert g(x) \rvert\, d\mu} \\ \\
+&amp;= \displaystyle{\int_\mathbb{R} \lvert f \rvert \cdot \boldsymbol{1}_{\lvert x \rvert \leq \lambda}\, d\mu + \int_{\mathbb{R}} \lvert g \rvert \cdot  \big( \tfrac{1}{\lvert x \rvert} \boldsymbol{1}_{\lvert x \rvert \geq \lambda}\big) \, d\mu} \\ \\
+&amp;\leq \lVert f \rVert_2 \cdot \big\lVert \boldsymbol{1}_{\lvert x \rvert \leq \lambda} \big\rVert_2 + \lVert g \rVert_2 \cdot \big\lVert \tfrac{1}{\lvert x \rvert} \boldsymbol{1}_{\lvert x \rvert \geq \lambda} \big\rVert_2 \end{array} %]]&gt;&lt;/script&gt;
+
+&lt;p&gt;Let us examine now the factors &lt;script type=&quot;math/tex&quot;&gt;\big\lVert \boldsymbol{1}_{\lvert x \rvert \leq \lambda} \big\rVert_2&lt;/script&gt; and \( \big\lVert \tfrac{1}{\lvert x \rvert} \boldsymbol{1}_{\lvert x \rvert \geq \lambda} \big\rVert_2 \) above:&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\big\lVert \boldsymbol{1}_{\lvert x \rvert \leq \lambda} \big\rVert_2 = \sqrt{2\lambda}&lt;/script&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\big\lVert \tfrac{1}{\lvert x \rvert} \boldsymbol{1}_{\lvert x \rvert \geq \lambda} \big\rVert_2 = \displaystyle{ \sqrt{ 2\int_\lambda^\infty \dfrac{dx}{x^2}} = \sqrt{ \dfrac{2}{\lambda}} }&lt;/script&gt;
+
+&lt;p&gt;We have thus proven that \(f \in L_1(\mathbb{R})\) with \(\lVert f \rVert_1 \leq \sqrt{2\lambda} \lVert f \rVert_2 + \sqrt{\tfrac{2}{\lambda}} \lVert g \rVert_2.\)  At this point, all you have to do is pick \(\lambda = \lVert g \rVert_2 / \lVert f \rVert_2\) (provided the denominator is not zero) and you are done.&lt;/p&gt;
+</description>
+        <pubDate>Tue, 04 Mar 2014 00:00:00 -0500</pubDate>
+        <link>http://yourdomain.com/2014/03/04/advanced-problem-18.html</link>
+        <guid isPermaLink="true">http://yourdomain.com/2014/03/04/advanced-problem-18.html</guid>
         
         
       </item>
