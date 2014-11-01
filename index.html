@@ -4,10 +4,6 @@ layout: default
 
 <div class="home">
 
-  <table style="text-align:left; width:100%; border:0px solid white;">
-    <tr><td>
-
-
       <h1 class="page-heading">Posts</h1>
 
       <ul class="post-list">
@@ -21,26 +17,7 @@ layout: default
         </li>
         {% endfor %}
       </ul>
-    </td><td style="vertical-align:top;">
-    <h1 class="page-heading">Teaching</h1>
-
-      <ul class="post-list">
-        {% for category in site.data.teaching %}
-        <li>
-        <a href="{{ category.folder }}">{{ category.description }}</a>
-        <ul class="post-list">
-          {% for course in category.courses %}
-          <li> <a href="{{ category.folder | prepend: site.baseurl }}{{ course.url }}">{{ course.name }}</a>
-
-            {{ category.folder | prepend: site.baseurl }}{{ course.url }}
-          </li>
-          {% endfor %}
-        </ul>
-        </li>
-        {% endfor %}
-      </ul>
-  </td>
-</table> 
+  
 
 <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
 
