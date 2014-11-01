@@ -4,15 +4,15 @@
     <title>Francisco Blanco-Silva</title>
     <description>Useless math is useful math. It can be used to generate more useless math.
 </description>
-    <link>http://yourdomain.com/</link>
-    <atom:link href="http://yourdomain.com/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Sat, 01 Nov 2014 11:18:20 -0400</pubDate>
-    <lastBuildDate>Sat, 01 Nov 2014 11:18:20 -0400</lastBuildDate>
+    <link>http://blancosilva.github.io//</link>
+    <atom:link href="http://blancosilva.github.io//feed.xml" rel="self" type="application/rss+xml" />
+    <pubDate>Sat, 01 Nov 2014 14:55:24 -0400</pubDate>
+    <lastBuildDate>Sat, 01 Nov 2014 14:55:24 -0400</lastBuildDate>
     <generator>Jekyll v2.4.0</generator>
     
       <item>
         <title>Searching for the SS Central America</title>
-        <description>&lt;p style=&quot;text-align:center;&quot;&gt;&lt;img src=&quot;https://farm6.staticflickr.com/5582/15072819006_39df81b2a6_d.jpg&quot; style=&quot;width:100%; border:2px solid black;&quot; /&gt;&lt;/p&gt; 
+        <description>&lt;p style=&quot;text-align:center;&quot;&gt;&lt;img src=&quot;https://farm6.staticflickr.com/5582/15072819006_39df81b2a6_d.jpg&quot; style=&quot;width:100%; border:2px solid black;&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;On Tuesday, September 8th 1857, the steamboat SS Central America left Havana at 9 AM for New York, carrying about 600 passengers and crew members.   Inside of this vessel, there was stowed a very precious cargo: a set of manuscripts by John James Audubon, and three tons of gold bars and coins.  The manuscripts documented an expedition through the yet uncharted southwestern United States and California, and contained 200 sketches and paintings of its wildlife.  The gold, fruit of many years of prospecting and mining during the California Gold Rush, was meant to start anew the lives of many of the passengers aboard.&lt;/p&gt;
 
@@ -20,7 +20,7 @@
 
 &lt;p&gt;It was not until late 1980s that technology allowed recovery of shipwrecks at deep sea.  But no technology would be of any help without an accurate location of the site.  In the following paragraphs we would like to illustrate the power of the &lt;code&gt;scipy&lt;/code&gt; stack by performing a simple simulation, that ultimately creates a dataset of possible locations for the wreck of the SS Central America, and mines the data to attempt to pinpoint the most probable target.&lt;/p&gt;
 
-&lt;p&gt;We simulate several possible paths of the steamboat (say 10,000 randomly generated possibilities), between 7:00 AM on Saturday, and 13 hours later, at 8:00 pm on Sunday. At 7:00 AM on that Saturday the ship&amp;#39;s captain, William Herndon, took a celestial fix and verbally relayed the position to the schooner &lt;em&gt;El Dorado&lt;/em&gt;.  The fix was 31º25&amp;#39; North, 77º10&amp;#39; West.  Because the ship was not operative at that point—no engine, no sails—, for the next thirteen hours its course was solely subjected to the effect of ocean current and winds.  With enough information, it is possible to model the drift and leeway on different possible paths.&lt;/p&gt;
+&lt;p&gt;We simulate several possible paths of the steamboat (say 10,000 randomly generated possibilities), between 7:00 AM on Saturday, and 13 hours later, at 8:00 pm on Sunday. At 7:00 AM on that Saturday the ship’s captain, William Herndon, took a celestial fix and verbally relayed the position to the schooner &lt;em&gt;El Dorado&lt;/em&gt;.  The fix was 31º25’ North, 77º10’ West.  Because the ship was not operative at that point—no engine, no sails—, for the next thirteen hours its course was solely subjected to the effect of ocean current and winds.  With enough information, it is possible to model the drift and leeway on different possible paths.&lt;/p&gt;
 
 &lt;p&gt;We start by creating a &lt;strong&gt;data frame&lt;/strong&gt;—a computational structure that will hold all the values we need in a very efficient way.  We do so with the help of the &lt;code&gt;pandas&lt;/code&gt; libraries.&lt;/p&gt;
 
@@ -46,9 +46,9 @@
 
 &lt;p&gt;To estimate the corresponding celestial fixes, as well as all further geodetic computations, we will use the accurate &lt;a href=&quot;en.wikipedia.org/wiki/Vincenty&#39;s_formulae&quot;&gt;formulas of Vincenty for ellipsoids&lt;/a&gt;, assuming a radius at the Equator of \(a = 63781374\) meters, and a flattening of the ellipsoid of \(f = 1/298.257223563\) (these figures are regarded as one of the standards for use in cartography, geodesy and navigation, and are referred by the community as the &lt;a href=&quot;http://en.wikipedia.org/wiki/World_Geodetic_System&quot;&gt;World Geodetic System WGS-84 ellipsoid&lt;/a&gt;)&lt;/p&gt;
 
-&lt;p&gt;A very good set of Vincenty&amp;#39;s formulas coded in &lt;code&gt;python&lt;/code&gt; can be found at &lt;a href=&quot;http://wegener.mechanik.tu-darmstadt.de/GMT-Help/Archiv/att-8710/Geodetic_py&quot;&gt;wegener.mechanik.tu-darmstadt.de/GMT-Help/Archiv/att-8710/Geodetic_py&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;A very good set of Vincenty’s formulas coded in &lt;code&gt;python&lt;/code&gt; can be found at &lt;a href=&quot;http://wegener.mechanik.tu-darmstadt.de/GMT-Help/Archiv/att-8710/Geodetic_py&quot;&gt;wegener.mechanik.tu-darmstadt.de/GMT-Help/Archiv/att-8710/Geodetic_py&lt;/a&gt;.&lt;/p&gt;
 
-&lt;p&gt;In particular, for this example we will be using &lt;em&gt;Vincenty&amp;#39;s direct formula&lt;/em&gt;, that computes the resulting latitude \(\phi&lt;em&gt;2\), longitude \(\lambda&lt;/em&gt;2\), and azimuth \(\alpha&lt;em&gt;2\) of an object starting at latitude \(\phi&lt;/em&gt;1\), longitude \(\lambda&lt;em&gt;1\), and traveling \(s\) meters with initial azimuth \(\alpha&lt;/em&gt;1\).  Latitudes, longitudes and azimuths are given in degrees, and distances in meters.  We also use the convention of assigning negative values to the latitudes to the West.  To apply the conversion from nautical miles or knots to their respective units in SI, we employ the system of units in &lt;code&gt;scipy.constants&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;In particular, for this example we will be using &lt;em&gt;Vincenty’s direct formula&lt;/em&gt;, that computes the resulting latitude \(\phi_2\), longitude \(\lambda_2\), and azimuth \(\alpha_2\) of an object starting at latitude \(\phi_1\), longitude \(\lambda_1\), and traveling \(s\) meters with initial azimuth \(\alpha_1\).  Latitudes, longitudes and azimuths are given in degrees, and distances in meters.  We also use the convention of assigning negative values to the latitudes to the West.  To apply the conversion from nautical miles or knots to their respective units in SI, we employ the system of units in &lt;code&gt;scipy.constants&lt;/code&gt;.&lt;/p&gt;
 
 &lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-python&quot; data-lang=&quot;python&quot;&gt;&lt;span class=&quot;lineno&quot;&gt; 1&lt;/span&gt; &lt;span class=&quot;kn&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;Geodetic_py&lt;/span&gt; &lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;vinc_pt&lt;/span&gt;
 &lt;span class=&quot;lineno&quot;&gt; 2&lt;/span&gt; &lt;span class=&quot;kn&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;scipy.constants&lt;/span&gt; &lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;nautical_mile&lt;/span&gt;
@@ -61,7 +61,7 @@
 &lt;span class=&quot;lineno&quot;&gt; 9&lt;/span&gt;     &lt;span class=&quot;n&quot;&gt;output&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;vinc_pt&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;f&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;31&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;mf&quot;&gt;25.&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;60&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;77&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;mf&quot;&gt;10.&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;60&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;azimuth&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;distance&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
 &lt;span class=&quot;lineno&quot;&gt;10&lt;/span&gt;     &lt;span class=&quot;n&quot;&gt;herndon&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ix&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;#39;1857-09-12 07:00:00&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,:][&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;k&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;output&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
-&lt;p&gt;Issuing now the command &lt;code&gt;herndon.ix[&amp;#39;1857-09-12 07:00:00&amp;#39;,:]&lt;/code&gt; gives us the following output:&lt;/p&gt;
+&lt;p&gt;Issuing now the command &lt;code&gt;herndon.ix[&#39;1857-09-12 07:00:00&#39;,:]&lt;/code&gt; gives us the following output:&lt;/p&gt;
 
 &lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-console&quot; data-lang=&quot;console&quot;&gt;&lt;span class=&quot;go&quot;&gt;--------------------------------------------------------------------------------&lt;/span&gt;
 &lt;span class=&quot;go&quot;&gt;          0          1          2          3          4          5     \&lt;/span&gt;
@@ -122,7 +122,7 @@
 
 &lt;p&gt;As expected they observe a North-Easterly general direction, in occasion showing deviations from the effect of the strong winds.&lt;/p&gt;
 
-&lt;p&gt;The advantage of storing all the different steps in these paths becomes apparent if we need to perform some further study—and maybe filtering—on the data obtained.  We could impose additional conditions to paths, and use only those filtered according to the extra rules, for example.  Another advantage is the possibility of performing different analysis on the paths with very little coding.  By issuing the command &lt;code&gt;herndon.loc(axis=0)[:,&amp;#39;Lat&amp;#39;].describe()&lt;/code&gt;, we obtain quick statistics on the computed latitudes for all 10000 paths (number of items, mean, standard deviation, min, max and the quartiles of the data).&lt;/p&gt;
+&lt;p&gt;The advantage of storing all the different steps in these paths becomes apparent if we need to perform some further study—and maybe filtering—on the data obtained.  We could impose additional conditions to paths, and use only those filtered according to the extra rules, for example.  Another advantage is the possibility of performing different analysis on the paths with very little coding.  By issuing the command &lt;code&gt;herndon.loc(axis=0)[:,&#39;Lat&#39;].describe()&lt;/code&gt;, we obtain quick statistics on the computed latitudes for all 10000 paths (number of items, mean, standard deviation, min, max and the quartiles of the data).&lt;/p&gt;
 
 &lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-console&quot; data-lang=&quot;console&quot;&gt;&lt;span class=&quot;go&quot;&gt;--------------------------------------------------------------------------------&lt;/span&gt;
 &lt;span class=&quot;go&quot;&gt;            0          1          2          3          4          5     \&lt;/span&gt;
@@ -186,8 +186,8 @@
 &lt;p style=&quot;text-align:center;&quot;&gt;&lt;img src=&quot;https://farm4.staticflickr.com/3901/14909109417_304514a8ae_c_d.jpg&quot; style=&quot;width:100%;&quot; /&gt;&lt;/p&gt;
 </description>
         <pubDate>Thu, 30 Oct 2014 00:00:00 -0400</pubDate>
-        <link>http://yourdomain.com/2014/10/30/searching-for-the-ss-central-america.html</link>
-        <guid isPermaLink="true">http://yourdomain.com/2014/10/30/searching-for-the-ss-central-america.html</guid>
+        <link>http://blancosilva.github.io//2014/10/30/searching-for-the-ss-central-america.html</link>
+        <guid isPermaLink="true">http://blancosilva.github.io//2014/10/30/searching-for-the-ss-central-america.html</guid>
         
         <category>Basemap</category>
         
@@ -5865,8 +5865,8 @@ UoEXERGJQCrwIiIiEUgFXkREJAKpwIuIiESg/w8PMJd+8cpMGgAAAABJRU5ErkJggg==
 &lt;/div&gt;
 </description>
         <pubDate>Wed, 29 Oct 2014 20:10:00 -0400</pubDate>
-        <link>http://yourdomain.com/2014/10/29/Numerical-Linear-Algebra.html</link>
-        <guid isPermaLink="true">http://yourdomain.com/2014/10/29/Numerical-Linear-Algebra.html</guid>
+        <link>http://blancosilva.github.io//2014/10/29/Numerical-Linear-Algebra.html</link>
+        <guid isPermaLink="true">http://blancosilva.github.io//2014/10/29/Numerical-Linear-Algebra.html</guid>
         
         
       </item>
@@ -33367,8 +33367,8 @@ In&amp;nbsp;[105]:
 &lt;/html&gt;
 </description>
         <pubDate>Tue, 28 Oct 2014 00:00:00 -0400</pubDate>
-        <link>http://yourdomain.com/2014/10/28/Computational-Geometry-in-Python.html</link>
-        <guid isPermaLink="true">http://yourdomain.com/2014/10/28/Computational-Geometry-in-Python.html</guid>
+        <link>http://blancosilva.github.io//2014/10/28/Computational-Geometry-in-Python.html</link>
+        <guid isPermaLink="true">http://blancosilva.github.io//2014/10/28/Computational-Geometry-in-Python.html</guid>
         
         
       </item>
@@ -33376,7 +33376,7 @@ In&amp;nbsp;[105]:
       <item>
         <title>Jotto (5-letter Mastermind) in the NAO robot</title>
         <description>&lt;p style=&quot;text-align:center;&quot;&gt;
-    &lt;iframe width=&quot;595&quot; height=&quot;365&quot; src=&quot;//www.youtube.com/embed/xQVjHmyD770&quot; frameborder=&quot;0&quot; allowfullscreen&gt;&lt;/iframe&gt;
+    &lt;iframe width=&quot;595&quot; height=&quot;365&quot; src=&quot;//www.youtube.com/embed/xQVjHmyD770&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
 &lt;/p&gt;
 
 &lt;!-- &lt;p&gt;&lt;iframe width=&quot;420&quot; height=&quot;315&quot; src=&quot;http://youtu.be/xQVjHmyD770&quot; frameborder=&quot;0&quot; allowfullscreen&gt;&lt;/iframe&gt;&lt;/p&gt; --&gt;
@@ -33384,29 +33384,29 @@ In&amp;nbsp;[105]:
 &lt;p&gt;I would like to show how to code the NAO robot to beat us at &lt;em&gt;Jotto&lt;/em&gt; (5-letter Mastermind) with &lt;code&gt;python&lt;/code&gt; in &lt;code&gt;Choregraphe&lt;/code&gt;. I will employ a brute force technique that does not require any knowledge of the English language, the frequency of its letters, or smart combinations of vowels and consonants to try to minimize the number of attempts. It goes like this:&lt;/p&gt;
 
 &lt;ol&gt;
-&lt;li&gt;Gather all 5-letter words with no repeated letters in a list.&lt;/li&gt;
-&lt;li&gt;Choose a random word from that list---your guess---, and ask it to be scored ala Mastermind.&lt;/li&gt;
-&lt;li&gt;Filter through the list all words that share the same score with your guess; discard the rest.&lt;/li&gt;
-&lt;li&gt;Go back to step 2 and repeat until the target word is found.&lt;/li&gt;
+  &lt;li&gt;Gather all 5-letter words with no repeated letters in a list.&lt;/li&gt;
+  &lt;li&gt;Choose a random word from that list—your guess—, and ask it to be scored ala Mastermind.&lt;/li&gt;
+  &lt;li&gt;Filter through the list all words that share the same score with your guess; discard the rest.&lt;/li&gt;
+  &lt;li&gt;Go back to step 2 and repeat until the target word is found.&lt;/li&gt;
 &lt;/ol&gt;
 
 &lt;p&gt;Coding this strategy in &lt;code&gt;python&lt;/code&gt; requires only four variables:&lt;/p&gt;
 
 &lt;ul&gt;
-&lt;li&gt;&lt;code&gt;whole_dict&lt;/code&gt;: the list with all the words&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;step = [x for x in whole_dict]&lt;/code&gt;: A copy of &lt;code&gt;whole_dict&lt;/code&gt;, which is going to be shortened on each step (hence the name). Note that stating &lt;code&gt;step = whole_dict&lt;/code&gt; will change the contents of &lt;code&gt;whole_dict&lt;/code&gt; when we change the contents of &lt;code&gt;step&lt;/code&gt; --- not a good idea.&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;guess = random.choice(step)&lt;/code&gt;: A random choice from the list &lt;code&gt;step&lt;/code&gt;.&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;score&lt;/code&gt;: A string containing the two digits we obtain after scoring the guess. The first digit indicates the number of correct letters in the same position as the target word; the second digit indicates the number of correct letters in the wrong position.&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;attempts&lt;/code&gt;: optional. The number of attempts at guessing words. For quality control purposes.&lt;/li&gt;
+  &lt;li&gt;&lt;code&gt;whole_dict&lt;/code&gt;: the list with all the words&lt;/li&gt;
+  &lt;li&gt;&lt;code&gt;step = [x for x in whole_dict]&lt;/code&gt;: A copy of &lt;code&gt;whole_dict&lt;/code&gt;, which is going to be shortened on each step (hence the name). Note that stating &lt;code&gt;step = whole_dict&lt;/code&gt; will change the contents of &lt;code&gt;whole_dict&lt;/code&gt; when we change the contents of &lt;code&gt;step&lt;/code&gt; — not a good idea.&lt;/li&gt;
+  &lt;li&gt;&lt;code&gt;guess = random.choice(step)&lt;/code&gt;: A random choice from the list &lt;code&gt;step&lt;/code&gt;.&lt;/li&gt;
+  &lt;li&gt;&lt;code&gt;score&lt;/code&gt;: A string containing the two digits we obtain after scoring the guess. The first digit indicates the number of correct letters in the same position as the target word; the second digit indicates the number of correct letters in the wrong position.&lt;/li&gt;
+  &lt;li&gt;&lt;code&gt;attempts&lt;/code&gt;: optional. The number of attempts at guessing words. For quality control purposes.&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;At this point, I urge the reader to stop reading the post and try to implement this strategy as a simple script. When done, come back to see how it can be coded in the NAO robot.&lt;/p&gt;
 
 &lt;p&gt;First, a screenshot of the &lt;code&gt;root&lt;/code&gt; view in choregraph. Note the simplicity of the code.&lt;/p&gt;
 
-&lt;p style=&quot;text-align:center;&quot;&gt;&lt;img src=&quot;https://farm4.staticflickr.com/3910/14425999857_b6500621b4_d.jpg&quot; alt=&quot;mastermind.png&quot; style=&quot;width:75% border:2px solid black;&quot;&gt;&lt;/p&gt;
+&lt;p style=&quot;text-align:center;&quot;&gt;&lt;img src=&quot;https://farm4.staticflickr.com/3910/14425999857_b6500621b4_d.jpg&quot; alt=&quot;mastermind.png&quot; style=&quot;width:75% border:2px solid black;&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;The first box, &lt;code&gt;ALMemory starter&lt;/code&gt;, is a &lt;em&gt;script box&lt;/em&gt; where we define all variables needed to run the program --- old school. This is the code of that box:&lt;/p&gt;
+&lt;p&gt;The first box, &lt;code&gt;ALMemory starter&lt;/code&gt;, is a &lt;em&gt;script box&lt;/em&gt; where we define all variables needed to run the program — old school. This is the code of that box:&lt;/p&gt;
 
 &lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-python&quot; data-lang=&quot;python&quot;&gt;&lt;span class=&quot;kn&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;urllib2&lt;/span&gt; &lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;urlopen&lt;/span&gt;
 
@@ -33458,11 +33458,11 @@ In&amp;nbsp;[105]:
 &lt;p&gt;The second box, &lt;code&gt;Deal with my word&lt;/code&gt;, is a &lt;em&gt;flow diagram&lt;/em&gt; containing two boxes:&lt;/p&gt;
 
 &lt;ul&gt;
-&lt;li&gt;One simple &lt;em&gt;script box&lt;/em&gt;, &lt;code&gt;Say the word&lt;/code&gt;. This box performs the random choice from &lt;code&gt;step&lt;/code&gt;, stores it in the variable &lt;code&gt;guess&lt;/code&gt;, and increments the value of &lt;code&gt;attempts&lt;/code&gt; by one. It asks then the player if &lt;code&gt;guess&lt;/code&gt; is the correct word --- and spells it, just in case.&lt;/li&gt;
-&lt;li&gt;A &lt;em&gt;speech recognition box&lt;/em&gt; that expects a yes/no answer.&lt;/li&gt;
+  &lt;li&gt;One simple &lt;em&gt;script box&lt;/em&gt;, &lt;code&gt;Say the word&lt;/code&gt;. This box performs the random choice from &lt;code&gt;step&lt;/code&gt;, stores it in the variable &lt;code&gt;guess&lt;/code&gt;, and increments the value of &lt;code&gt;attempts&lt;/code&gt; by one. It asks then the player if &lt;code&gt;guess&lt;/code&gt; is the correct word — and spells it, just in case.&lt;/li&gt;
+  &lt;li&gt;A &lt;em&gt;speech recognition box&lt;/em&gt; that expects a yes/no answer.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p style=&quot;text-align:center;&quot;&gt;&lt;img src=&quot;https://farm4.staticflickr.com/3898/14610327804_466959a9a5_d.jpg&quot; alt=&quot;deal.png&quot; style=&quot;width:75% border:2px solid black;&quot;&gt;&lt;/p&gt;
+&lt;p style=&quot;text-align:center;&quot;&gt;&lt;img src=&quot;https://farm4.staticflickr.com/3898/14610327804_466959a9a5_d.jpg&quot; alt=&quot;deal.png&quot; style=&quot;width:75% border:2px solid black;&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;This is the code of &lt;code&gt;Say the word&lt;/code&gt;:&lt;/p&gt;
 
@@ -33500,7 +33500,7 @@ In&amp;nbsp;[105]:
         &lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;onUnload&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
         &lt;span class=&quot;k&quot;&gt;pass&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
-&lt;p&gt;A &lt;em&gt;switch case&lt;/em&gt; is next: if the player says &amp;quot;yes&amp;quot;, the program concludes with the &lt;em&gt;script box&lt;/em&gt; &lt;code&gt;Success!&lt;/code&gt;, that states the number of attempts. The code is simple, and it illustrates once again the way to access data from &lt;code&gt;ALMemory&lt;/code&gt;. The only relevant portions of the code on that box are the methods &lt;code&gt;onLoad&lt;/code&gt; and &lt;code&gt;onInput_osStart&lt;/code&gt;:&lt;/p&gt;
+&lt;p&gt;A &lt;em&gt;switch case&lt;/em&gt; is next: if the player says “yes”, the program concludes with the &lt;em&gt;script box&lt;/em&gt; &lt;code&gt;Success!&lt;/code&gt;, that states the number of attempts. The code is simple, and it illustrates once again the way to access data from &lt;code&gt;ALMemory&lt;/code&gt;. The only relevant portions of the code on that box are the methods &lt;code&gt;onLoad&lt;/code&gt; and &lt;code&gt;onInput_osStart&lt;/code&gt;:&lt;/p&gt;
 
 &lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-python&quot; data-lang=&quot;python&quot;&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;onLoad&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
         &lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;talkProxy&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ALProxy&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;ALTextToSpeech&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
@@ -33512,9 +33512,9 @@ In&amp;nbsp;[105]:
         &lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;talkProxy&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;say&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;Wonderful!  I got it in &lt;/span&gt;&lt;span class=&quot;si&quot;&gt;%s&lt;/span&gt;&lt;span class=&quot;s&quot;&gt; attempts!&amp;quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;%&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;str&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;attempts&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
         &lt;span class=&quot;k&quot;&gt;pass&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
-&lt;p&gt;If the player says &amp;quot;no&amp;quot;, we retrieve the two scores with two &lt;em&gt;flow diagram&lt;/em&gt; boxes: &lt;code&gt;First Score&lt;/code&gt; and &lt;code&gt;Second Score&lt;/code&gt;. I will present the structure and code of the latter, and leave the code of the former as an exercise.&lt;/p&gt;
+&lt;p&gt;If the player says “no”, we retrieve the two scores with two &lt;em&gt;flow diagram&lt;/em&gt; boxes: &lt;code&gt;First Score&lt;/code&gt; and &lt;code&gt;Second Score&lt;/code&gt;. I will present the structure and code of the latter, and leave the code of the former as an exercise.&lt;/p&gt;
 
-&lt;p style=&quot;text-align:center;&quot;&gt;&lt;img src=&quot;https://farm4.staticflickr.com/3900/14425751180_279c59f295_d.jpg&quot; alt=&quot;secondscore.png&quot; style=&quot;width:75% border:2px solid black;&quot;&gt;&lt;/p&gt;
+&lt;p style=&quot;text-align:center;&quot;&gt;&lt;img src=&quot;https://farm4.staticflickr.com/3900/14425751180_279c59f295_d.jpg&quot; alt=&quot;secondscore.png&quot; style=&quot;width:75% border:2px solid black;&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;The first box is a simple &lt;em&gt;Say&lt;/em&gt; that asks for the score. The second box is a &lt;em&gt;Speech Recognition&lt;/em&gt; box that expects any digit from 0 to 5. The third is a &lt;em&gt;script box&lt;/em&gt; that receives the second box output (as a &lt;code&gt;string&lt;/code&gt;), and performs the following operation (only &lt;code&gt;onLoad&lt;/code&gt; and &lt;code&gt;onInput_onStart&lt;/code&gt; are shown):&lt;/p&gt;
 
@@ -33577,10 +33577,11 @@ In&amp;nbsp;[105]:
         &lt;span class=&quot;k&quot;&gt;pass&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;That is all! I hope you enjoy playing &lt;em&gt;Jotto&lt;/em&gt; with your NAO. The code can be greatly improved by adding motions in the different steps, or implementing better winning strategies. With brute force, NAO is able to find your word in about 5 attempts (as average, of course). Do you think you can find a strategy that brings this number down to 4 attempts? If so, I would love to hear about it.&lt;/p&gt;
+
 </description>
         <pubDate>Wed, 09 Jul 2014 00:00:00 -0400</pubDate>
-        <link>http://yourdomain.com/2014/07/09/jotto-5-letter-mastermind-in-the-nao-robot.html</link>
-        <guid isPermaLink="true">http://yourdomain.com/2014/07/09/jotto-5-letter-mastermind-in-the-nao-robot.html</guid>
+        <link>http://blancosilva.github.io//2014/07/09/jotto-5-letter-mastermind-in-the-nao-robot.html</link>
+        <guid isPermaLink="true">http://blancosilva.github.io//2014/07/09/jotto-5-letter-mastermind-in-the-nao-robot.html</guid>
         
         
       </item>
@@ -33590,27 +33591,28 @@ In&amp;nbsp;[105]:
         <description>&lt;p&gt;Another fun problem, as requested by &lt;a href=&quot;https://www.facebook.com/right.li.love&quot;&gt;Qinfeng Li&lt;/a&gt; in &lt;a href=&quot;http://blancosilva.wordpress.com/teaching/ma598r/&quot;&gt;MA598R: Measure Theory&lt;/a&gt;&lt;/p&gt;
 
 &lt;blockquote&gt;
-&lt;p&gt;Let   \(f \in L&lt;em&gt;2(\mathbb{R})\) so that \(g(x)=xf(x) \in L&lt;/em&gt;2(\mathbb{R})\) too.  Show that \(f \in L&lt;em&gt;1(\mathbb{R})\) and \(\lVert f \rVert&lt;/em&gt;1^2 \leq 8 \lVert f \rVert&lt;em&gt;2 \lVert g \rVert&lt;/em&gt;2.\)&lt;/p&gt;
+  &lt;p&gt;Let   \(f \in L_2(\mathbb{R})\) so that \(g(x)=xf(x) \in L_2(\mathbb{R})\) too.  Show that \(f \in L_1(\mathbb{R})\) and \(\lVert f \rVert_1^2 \leq 8 \lVert f \rVert_2 \lVert g \rVert_2.\)&lt;/p&gt;
 &lt;/blockquote&gt;
 
 &lt;p&gt;I got this problem by picking some strictly positive value \(\lambda\) and breaking the integral \(\int_{\mathbb{R}} \lvert f \rvert\, d\mu\) as follows:&lt;/p&gt;
 
-&lt;p&gt;$$\begin{array}{rl} \displaystyle{\int&lt;em&gt;{\mathbb{R}} \lvert f \rvert\, d\mu} &amp;amp;= \displaystyle{\int&lt;/em&gt;{\lvert x \rvert \leq \lambda} \lvert f \rvert\, d\mu + \int&lt;em&gt;{\lvert x \rvert \geq \lambda} \lvert f \rvert\, d\mu} \ \
- &amp;amp;= \displaystyle{\int&lt;/em&gt;{-\lambda}^{\lambda} \lvert f \rvert\, d\mu + \int&lt;em&gt;{\lvert x \rvert \geq \lambda} \tfrac{1}{\lvert x \rvert} \lvert g(x) \rvert\, d\mu} \ \
-&amp;amp;= \displaystyle{\int&lt;/em&gt;\mathbb{R} \lvert f \rvert \cdot \boldsymbol{1}&lt;em&gt;{\lvert x \rvert \leq \lambda}\, d\mu + \int&lt;/em&gt;{\mathbb{R}} \lvert g \rvert \cdot  \big( \tfrac{1}{\lvert x \rvert} \boldsymbol{1}&lt;em&gt;{\lvert x \rvert \geq \lambda}\big) \, d\mu} \ \
-&amp;amp;\leq \lVert f \rVert&lt;/em&gt;2 \cdot \big\lVert \boldsymbol{1}&lt;em&gt;{\lvert x \rvert \leq \lambda} \big\rVert&lt;/em&gt;2 + \lVert g \rVert&lt;em&gt;2 \cdot \big\lVert \tfrac{1}{\lvert x \rvert} \boldsymbol{1}&lt;/em&gt;{\lvert x \rvert \geq \lambda} \big\rVert_2 \end{array}$$&lt;/p&gt;
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;% &lt;![CDATA[
+\begin{array}{rl} \displaystyle{\int_{\mathbb{R}} \lvert f \rvert\, d\mu} &amp;= \displaystyle{\int_{\lvert x \rvert \leq \lambda} \lvert f \rvert\, d\mu + \int_{\lvert x \rvert \geq \lambda} \lvert f \rvert\, d\mu} \\ \\
+ &amp;= \displaystyle{\int_{-\lambda}^{\lambda} \lvert f \rvert\, d\mu + \int_{\lvert x \rvert \geq \lambda} \tfrac{1}{\lvert x \rvert} \lvert g(x) \rvert\, d\mu} \\ \\
+&amp;= \displaystyle{\int_\mathbb{R} \lvert f \rvert \cdot \boldsymbol{1}_{\lvert x \rvert \leq \lambda}\, d\mu + \int_{\mathbb{R}} \lvert g \rvert \cdot  \big( \tfrac{1}{\lvert x \rvert} \boldsymbol{1}_{\lvert x \rvert \geq \lambda}\big) \, d\mu} \\ \\
+&amp;\leq \lVert f \rVert_2 \cdot \big\lVert \boldsymbol{1}_{\lvert x \rvert \leq \lambda} \big\rVert_2 + \lVert g \rVert_2 \cdot \big\lVert \tfrac{1}{\lvert x \rvert} \boldsymbol{1}_{\lvert x \rvert \geq \lambda} \big\rVert_2 \end{array} %]]&gt;&lt;/script&gt;
 
-&lt;p&gt;Let us examine now the factors $$\big\lVert \boldsymbol{1}&lt;em&gt;{\lvert x \rvert \leq \lambda} \big\rVert&lt;/em&gt;2$$ and \( \big\lVert \tfrac{1}{\lvert x \rvert} \boldsymbol{1}&lt;em&gt;{\lvert x \rvert \geq \lambda} \big\rVert&lt;/em&gt;2 \) above:&lt;/p&gt;
+&lt;p&gt;Let us examine now the factors &lt;script type=&quot;math/tex&quot;&gt;\big\lVert \boldsymbol{1}_{\lvert x \rvert \leq \lambda} \big\rVert_2&lt;/script&gt; and \( \big\lVert \tfrac{1}{\lvert x \rvert} \boldsymbol{1}_{\lvert x \rvert \geq \lambda} \big\rVert_2 \) above:&lt;/p&gt;
 
-&lt;p&gt;$$\big\lVert \boldsymbol{1}&lt;em&gt;{\lvert x \rvert \leq \lambda} \big\rVert&lt;/em&gt;2 = \sqrt{2\lambda}$$&lt;/p&gt;
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\big\lVert \boldsymbol{1}_{\lvert x \rvert \leq \lambda} \big\rVert_2 = \sqrt{2\lambda}&lt;/script&gt;
 
-&lt;p&gt;$$\big\lVert \tfrac{1}{\lvert x \rvert} \boldsymbol{1}&lt;em&gt;{\lvert x \rvert \geq \lambda} \big\rVert&lt;/em&gt;2 = \displaystyle{ \sqrt{ 2\int_\lambda^\infty \dfrac{dx}{x^2}} = \sqrt{ \dfrac{2}{\lambda}} }$$&lt;/p&gt;
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\big\lVert \tfrac{1}{\lvert x \rvert} \boldsymbol{1}_{\lvert x \rvert \geq \lambda} \big\rVert_2 = \displaystyle{ \sqrt{ 2\int_\lambda^\infty \dfrac{dx}{x^2}} = \sqrt{ \dfrac{2}{\lambda}} }&lt;/script&gt;
 
-&lt;p&gt;We have thus proven that \(f \in L&lt;em&gt;1(\mathbb{R})\) with \(\lVert f \rVert&lt;/em&gt;1 \leq \sqrt{2\lambda} \lVert f \rVert&lt;em&gt;2 + \sqrt{\tfrac{2}{\lambda}} \lVert g \rVert&lt;/em&gt;2.\)  At this point, all you have to do is pick \(\lambda = \lVert g \rVert&lt;em&gt;2 / \lVert f \rVert&lt;/em&gt;2\) (provided the denominator is not zero) and you are done.&lt;/p&gt;
+&lt;p&gt;We have thus proven that \(f \in L_1(\mathbb{R})\) with \(\lVert f \rVert_1 \leq \sqrt{2\lambda} \lVert f \rVert_2 + \sqrt{\tfrac{2}{\lambda}} \lVert g \rVert_2.\)  At this point, all you have to do is pick \(\lambda = \lVert g \rVert_2 / \lVert f \rVert_2\) (provided the denominator is not zero) and you are done.&lt;/p&gt;
 </description>
         <pubDate>Tue, 04 Mar 2014 00:00:00 -0500</pubDate>
-        <link>http://yourdomain.com/2014/03/04/advanced-problem-18.html</link>
-        <guid isPermaLink="true">http://yourdomain.com/2014/03/04/advanced-problem-18.html</guid>
+        <link>http://blancosilva.github.io//2014/03/04/advanced-problem-18.html</link>
+        <guid isPermaLink="true">http://blancosilva.github.io//2014/03/04/advanced-problem-18.html</guid>
         
         
       </item>

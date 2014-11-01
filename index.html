@@ -4,20 +4,42 @@ layout: default
 
 <div class="home">
 
-  <h1 class="page-heading">Posts</h1>
+  <table style="text-align:left; width:100%; border:0px solid white;">
+    <tr><td>
 
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
 
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
+      <h1 class="page-heading">Posts</h1>
 
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+      <ul class="post-list">
+        {% for post in site.posts %}
+        <li>
+          <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+
+          <h2>
+            <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+          </h2>
+        </li>
+        {% endfor %}
+      </ul>
+    </td><td style="vertical-align:top;">
+    <h1 class="page-heading">Teaching</h1>
+
+      <ul class="post-list">
+        {% for category in site.data.teaching %}
+        <li>
+        <a href="{{ category.folder }}">{{ category.description }}</a>
+        <ul class="post-list">
+          {% for course in category.courses %}
+          <li> <a href="{{ course.url | prepend: site.baseurl }}">{{ course.name }}</a>
+          </li>
+          {% endfor %}
+        </ul>
+        </li>
+        {% endfor %}
+      </ul>
+  </td>
+</table> 
+
+<p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
 
 </div>

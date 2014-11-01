@@ -3,12 +3,10 @@ title: Francisco Blanco-Silva
 email: francisco.blanco.silva@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
   Useless math is useful math. It can be used to generate more useless math.
-baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://yourdomain.com" # the base hostname & protocol for your site
+baseurl: # the subpath of your site, e.g. /blog/
+url: "http://blancosilva.github.io/" # the base hostname & protocol for your site
 twitter_username: eseprimo
 github_username:  blancosilva
 
 # Build settings
-#markdown: kramdown
-markdown: redcarpet
-highlighter: pygments
+markdown: kramdown

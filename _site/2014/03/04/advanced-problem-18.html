@@ -11,7 +11,7 @@
 ">
 
     <link rel="stylesheet" href="/css/main.css">
-    <link rel="canonical" href="http://yourdomain.com/2014/03/04/advanced-problem-18.html">
+    <link rel="canonical" href="http://blancosilva.github.io//2014/03/04/advanced-problem-18.html">
 </head>
 
 
@@ -73,23 +73,24 @@
     <p>Another fun problem, as requested by <a href="https://www.facebook.com/right.li.love">Qinfeng Li</a> in <a href="http://blancosilva.wordpress.com/teaching/ma598r/">MA598R: Measure Theory</a></p>
 
 <blockquote>
-<p>Let   \(f \in L<em>2(\mathbb{R})\) so that \(g(x)=xf(x) \in L</em>2(\mathbb{R})\) too.  Show that \(f \in L<em>1(\mathbb{R})\) and \(\lVert f \rVert</em>1^2 \leq 8 \lVert f \rVert<em>2 \lVert g \rVert</em>2.\)</p>
+  <p>Let   \(f \in L_2(\mathbb{R})\) so that \(g(x)=xf(x) \in L_2(\mathbb{R})\) too.  Show that \(f \in L_1(\mathbb{R})\) and \(\lVert f \rVert_1^2 \leq 8 \lVert f \rVert_2 \lVert g \rVert_2.\)</p>
 </blockquote>
 
 <p>I got this problem by picking some strictly positive value \(\lambda\) and breaking the integral \(\int_{\mathbb{R}} \lvert f \rvert\, d\mu\) as follows:</p>
 
-<p>$$\begin{array}{rl} \displaystyle{\int<em>{\mathbb{R}} \lvert f \rvert\, d\mu} &amp;= \displaystyle{\int</em>{\lvert x \rvert \leq \lambda} \lvert f \rvert\, d\mu + \int<em>{\lvert x \rvert \geq \lambda} \lvert f \rvert\, d\mu} \ \
- &amp;= \displaystyle{\int</em>{-\lambda}^{\lambda} \lvert f \rvert\, d\mu + \int<em>{\lvert x \rvert \geq \lambda} \tfrac{1}{\lvert x \rvert} \lvert g(x) \rvert\, d\mu} \ \
-&amp;= \displaystyle{\int</em>\mathbb{R} \lvert f \rvert \cdot \boldsymbol{1}<em>{\lvert x \rvert \leq \lambda}\, d\mu + \int</em>{\mathbb{R}} \lvert g \rvert \cdot  \big( \tfrac{1}{\lvert x \rvert} \boldsymbol{1}<em>{\lvert x \rvert \geq \lambda}\big) \, d\mu} \ \
-&amp;\leq \lVert f \rVert</em>2 \cdot \big\lVert \boldsymbol{1}<em>{\lvert x \rvert \leq \lambda} \big\rVert</em>2 + \lVert g \rVert<em>2 \cdot \big\lVert \tfrac{1}{\lvert x \rvert} \boldsymbol{1}</em>{\lvert x \rvert \geq \lambda} \big\rVert_2 \end{array}$$</p>
+<script type="math/tex; mode=display">% <![CDATA[
+\begin{array}{rl} \displaystyle{\int_{\mathbb{R}} \lvert f \rvert\, d\mu} &= \displaystyle{\int_{\lvert x \rvert \leq \lambda} \lvert f \rvert\, d\mu + \int_{\lvert x \rvert \geq \lambda} \lvert f \rvert\, d\mu} \\ \\
+ &= \displaystyle{\int_{-\lambda}^{\lambda} \lvert f \rvert\, d\mu + \int_{\lvert x \rvert \geq \lambda} \tfrac{1}{\lvert x \rvert} \lvert g(x) \rvert\, d\mu} \\ \\
+&= \displaystyle{\int_\mathbb{R} \lvert f \rvert \cdot \boldsymbol{1}_{\lvert x \rvert \leq \lambda}\, d\mu + \int_{\mathbb{R}} \lvert g \rvert \cdot  \big( \tfrac{1}{\lvert x \rvert} \boldsymbol{1}_{\lvert x \rvert \geq \lambda}\big) \, d\mu} \\ \\
+&\leq \lVert f \rVert_2 \cdot \big\lVert \boldsymbol{1}_{\lvert x \rvert \leq \lambda} \big\rVert_2 + \lVert g \rVert_2 \cdot \big\lVert \tfrac{1}{\lvert x \rvert} \boldsymbol{1}_{\lvert x \rvert \geq \lambda} \big\rVert_2 \end{array} %]]></script>
 
-<p>Let us examine now the factors $$\big\lVert \boldsymbol{1}<em>{\lvert x \rvert \leq \lambda} \big\rVert</em>2$$ and \( \big\lVert \tfrac{1}{\lvert x \rvert} \boldsymbol{1}<em>{\lvert x \rvert \geq \lambda} \big\rVert</em>2 \) above:</p>
+<p>Let us examine now the factors <script type="math/tex">\big\lVert \boldsymbol{1}_{\lvert x \rvert \leq \lambda} \big\rVert_2</script> and \( \big\lVert \tfrac{1}{\lvert x \rvert} \boldsymbol{1}_{\lvert x \rvert \geq \lambda} \big\rVert_2 \) above:</p>
 
-<p>$$\big\lVert \boldsymbol{1}<em>{\lvert x \rvert \leq \lambda} \big\rVert</em>2 = \sqrt{2\lambda}$$</p>
+<script type="math/tex; mode=display">\big\lVert \boldsymbol{1}_{\lvert x \rvert \leq \lambda} \big\rVert_2 = \sqrt{2\lambda}</script>
 
-<p>$$\big\lVert \tfrac{1}{\lvert x \rvert} \boldsymbol{1}<em>{\lvert x \rvert \geq \lambda} \big\rVert</em>2 = \displaystyle{ \sqrt{ 2\int_\lambda^\infty \dfrac{dx}{x^2}} = \sqrt{ \dfrac{2}{\lambda}} }$$</p>
+<script type="math/tex; mode=display">\big\lVert \tfrac{1}{\lvert x \rvert} \boldsymbol{1}_{\lvert x \rvert \geq \lambda} \big\rVert_2 = \displaystyle{ \sqrt{ 2\int_\lambda^\infty \dfrac{dx}{x^2}} = \sqrt{ \dfrac{2}{\lambda}} }</script>
 
-<p>We have thus proven that \(f \in L<em>1(\mathbb{R})\) with \(\lVert f \rVert</em>1 \leq \sqrt{2\lambda} \lVert f \rVert<em>2 + \sqrt{\tfrac{2}{\lambda}} \lVert g \rVert</em>2.\)  At this point, all you have to do is pick \(\lambda = \lVert g \rVert<em>2 / \lVert f \rVert</em>2\) (provided the denominator is not zero) and you are done.</p>
+<p>We have thus proven that \(f \in L_1(\mathbb{R})\) with \(\lVert f \rVert_1 \leq \sqrt{2\lambda} \lVert f \rVert_2 + \sqrt{\tfrac{2}{\lambda}} \lVert g \rVert_2.\)  At this point, all you have to do is pick \(\lambda = \lVert g \rVert_2 / \lVert f \rVert_2\) (provided the denominator is not zero) and you are done.</p>
 
   </article>
 
