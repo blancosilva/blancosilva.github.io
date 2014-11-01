@@ -31,6 +31,8 @@ layout: default
         <ul class="post-list">
           {% for course in category.courses %}
           <li> <a href="{{ category.folder | prepend: site.baseurl }}{{ course.url }}">{{ course.name }}</a>
+
+            {{ category.folder | prepend: site.baseurl }}{{ course.url }}
           </li>
           {% endfor %}
         </ul>
