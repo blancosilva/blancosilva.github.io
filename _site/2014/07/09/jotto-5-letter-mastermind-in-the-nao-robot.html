@@ -71,7 +71,7 @@
 
   <article class="post-content">
     <p style="text-align:center;">
-    <iframe width="595" height="365" src="//www.youtube.com/embed/xQVjHmyD770" frameborder="0" allowfullscreen=""></iframe>
+    <iframe width="595" height="365" src="//www.youtube.com/embed/xQVjHmyD770" frameborder="0" allowfullscreen></iframe>
 </p>
 
 <!-- <p><iframe width="420" height="315" src="http://youtu.be/xQVjHmyD770" frameborder="0" allowfullscreen></iframe></p> -->
@@ -79,29 +79,29 @@
 <p>I would like to show how to code the NAO robot to beat us at <em>Jotto</em> (5-letter Mastermind) with <code>python</code> in <code>Choregraphe</code>. I will employ a brute force technique that does not require any knowledge of the English language, the frequency of its letters, or smart combinations of vowels and consonants to try to minimize the number of attempts. It goes like this:</p>
 
 <ol>
-  <li>Gather all 5-letter words with no repeated letters in a list.</li>
-  <li>Choose a random word from that list—your guess—, and ask it to be scored ala Mastermind.</li>
-  <li>Filter through the list all words that share the same score with your guess; discard the rest.</li>
-  <li>Go back to step 2 and repeat until the target word is found.</li>
+<li>Gather all 5-letter words with no repeated letters in a list.</li>
+<li>Choose a random word from that list---your guess---, and ask it to be scored ala Mastermind.</li>
+<li>Filter through the list all words that share the same score with your guess; discard the rest.</li>
+<li>Go back to step 2 and repeat until the target word is found.</li>
 </ol>
 
 <p>Coding this strategy in <code>python</code> requires only four variables:</p>
 
 <ul>
-  <li><code>whole_dict</code>: the list with all the words</li>
-  <li><code>step = [x for x in whole_dict]</code>: A copy of <code>whole_dict</code>, which is going to be shortened on each step (hence the name). Note that stating <code>step = whole_dict</code> will change the contents of <code>whole_dict</code> when we change the contents of <code>step</code> — not a good idea.</li>
-  <li><code>guess = random.choice(step)</code>: A random choice from the list <code>step</code>.</li>
-  <li><code>score</code>: A string containing the two digits we obtain after scoring the guess. The first digit indicates the number of correct letters in the same position as the target word; the second digit indicates the number of correct letters in the wrong position.</li>
-  <li><code>attempts</code>: optional. The number of attempts at guessing words. For quality control purposes.</li>
+<li><code>whole_dict</code>: the list with all the words</li>
+<li><code>step = [x for x in whole_dict]</code>: A copy of <code>whole_dict</code>, which is going to be shortened on each step (hence the name). Note that stating <code>step = whole_dict</code> will change the contents of <code>whole_dict</code> when we change the contents of <code>step</code> --- not a good idea.</li>
+<li><code>guess = random.choice(step)</code>: A random choice from the list <code>step</code>.</li>
+<li><code>score</code>: A string containing the two digits we obtain after scoring the guess. The first digit indicates the number of correct letters in the same position as the target word; the second digit indicates the number of correct letters in the wrong position.</li>
+<li><code>attempts</code>: optional. The number of attempts at guessing words. For quality control purposes.</li>
 </ul>
 
 <p>At this point, I urge the reader to stop reading the post and try to implement this strategy as a simple script. When done, come back to see how it can be coded in the NAO robot.</p>
 
 <p>First, a screenshot of the <code>root</code> view in choregraph. Note the simplicity of the code.</p>
 
-<p style="text-align:center;"><img src="https://farm4.staticflickr.com/3910/14425999857_b6500621b4_d.jpg" alt="mastermind.png" style="width:75% border:2px solid black;" /></p>
+<p style="text-align:center;"><img src="https://farm4.staticflickr.com/3910/14425999857_b6500621b4_d.jpg" alt="mastermind.png" style="width:75% border:2px solid black;"></p>
 
-<p>The first box, <code>ALMemory starter</code>, is a <em>script box</em> where we define all variables needed to run the program — old school. This is the code of that box:</p>
+<p>The first box, <code>ALMemory starter</code>, is a <em>script box</em> where we define all variables needed to run the program --- old school. This is the code of that box:</p>
 
 <div class="highlight"><pre><code class="language-python" data-lang="python"><span class="kn">from</span> <span class="nn">urllib2</span> <span class="kn">import</span> <span class="n">urlopen</span>
 
@@ -153,11 +153,11 @@
 <p>The second box, <code>Deal with my word</code>, is a <em>flow diagram</em> containing two boxes:</p>
 
 <ul>
-  <li>One simple <em>script box</em>, <code>Say the word</code>. This box performs the random choice from <code>step</code>, stores it in the variable <code>guess</code>, and increments the value of <code>attempts</code> by one. It asks then the player if <code>guess</code> is the correct word — and spells it, just in case.</li>
-  <li>A <em>speech recognition box</em> that expects a yes/no answer.</li>
+<li>One simple <em>script box</em>, <code>Say the word</code>. This box performs the random choice from <code>step</code>, stores it in the variable <code>guess</code>, and increments the value of <code>attempts</code> by one. It asks then the player if <code>guess</code> is the correct word --- and spells it, just in case.</li>
+<li>A <em>speech recognition box</em> that expects a yes/no answer.</li>
 </ul>
 
-<p style="text-align:center;"><img src="https://farm4.staticflickr.com/3898/14610327804_466959a9a5_d.jpg" alt="deal.png" style="width:75% border:2px solid black;" /></p>
+<p style="text-align:center;"><img src="https://farm4.staticflickr.com/3898/14610327804_466959a9a5_d.jpg" alt="deal.png" style="width:75% border:2px solid black;"></p>
 
 <p>This is the code of <code>Say the word</code>:</p>
 
@@ -195,7 +195,7 @@
         <span class="bp">self</span><span class="o">.</span><span class="n">onUnload</span><span class="p">()</span>
         <span class="k">pass</span></code></pre></div>
 
-<p>A <em>switch case</em> is next: if the player says “yes”, the program concludes with the <em>script box</em> <code>Success!</code>, that states the number of attempts. The code is simple, and it illustrates once again the way to access data from <code>ALMemory</code>. The only relevant portions of the code on that box are the methods <code>onLoad</code> and <code>onInput_osStart</code>:</p>
+<p>A <em>switch case</em> is next: if the player says &quot;yes&quot;, the program concludes with the <em>script box</em> <code>Success!</code>, that states the number of attempts. The code is simple, and it illustrates once again the way to access data from <code>ALMemory</code>. The only relevant portions of the code on that box are the methods <code>onLoad</code> and <code>onInput_osStart</code>:</p>
 
 <div class="highlight"><pre><code class="language-python" data-lang="python"><span class="k">def</span> <span class="nf">onLoad</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">talkProxy</span> <span class="o">=</span> <span class="n">ALProxy</span><span class="p">(</span><span class="s">&quot;ALTextToSpeech&quot;</span><span class="p">)</span>
@@ -207,9 +207,9 @@
         <span class="bp">self</span><span class="o">.</span><span class="n">talkProxy</span><span class="o">.</span><span class="n">say</span><span class="p">(</span><span class="s">&quot;Wonderful!  I got it in </span><span class="si">%s</span><span class="s"> attempts!&quot;</span> <span class="o">%</span> <span class="nb">str</span><span class="p">(</span><span class="n">attempts</span><span class="p">))</span>
         <span class="k">pass</span></code></pre></div>
 
-<p>If the player says “no”, we retrieve the two scores with two <em>flow diagram</em> boxes: <code>First Score</code> and <code>Second Score</code>. I will present the structure and code of the latter, and leave the code of the former as an exercise.</p>
+<p>If the player says &quot;no&quot;, we retrieve the two scores with two <em>flow diagram</em> boxes: <code>First Score</code> and <code>Second Score</code>. I will present the structure and code of the latter, and leave the code of the former as an exercise.</p>
 
-<p style="text-align:center;"><img src="https://farm4.staticflickr.com/3900/14425751180_279c59f295_d.jpg" alt="secondscore.png" style="width:75% border:2px solid black;" /></p>
+<p style="text-align:center;"><img src="https://farm4.staticflickr.com/3900/14425751180_279c59f295_d.jpg" alt="secondscore.png" style="width:75% border:2px solid black;"></p>
 
 <p>The first box is a simple <em>Say</em> that asks for the score. The second box is a <em>Speech Recognition</em> box that expects any digit from 0 to 5. The third is a <em>script box</em> that receives the second box output (as a <code>string</code>), and performs the following operation (only <code>onLoad</code> and <code>onInput_onStart</code> are shown):</p>
 
@@ -272,7 +272,6 @@
         <span class="k">pass</span></code></pre></div>
 
 <p>That is all! I hope you enjoy playing <em>Jotto</em> with your NAO. The code can be greatly improved by adding motions in the different steps, or implementing better winning strategies. With brute force, NAO is able to find your word in about 5 attempts (as average, of course). Do you think you can find a strategy that brings this number down to 4 attempts? If so, I would love to hear about it.</p>
-
 
   </article>
 

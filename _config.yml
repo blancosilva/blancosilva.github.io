@@ -9,4 +9,6 @@ twitter_username: eseprimo
 github_username:  blancosilva
 
 # Build settings
-markdown: kramdown
+#markdown: kramdown
+markdown: redcarpet
+highlighter: pygments

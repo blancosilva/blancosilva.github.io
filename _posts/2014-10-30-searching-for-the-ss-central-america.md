@@ -2,7 +2,6 @@
 layout: post
 title: "Searching for the SS Central America"
 date: 2014-10-30 
-categories: articles
 tags:
 - Basemap
 - latitude
@@ -14,13 +13,7 @@ tags:
 - ss central america
 - steamboat
 - vessel
-status: publish
-type: post
-published: true
 comments: true
-image:
-  teaser: sscentralamerica.jpg
-  feature: sscentralamerica.jpg
 author: Francisco Blanco-Silva
 ---
 <p style="text-align:center;"><img src="https://farm6.staticflickr.com/5582/15072819006_39df81b2a6_d.jpg" style="width:100%; border:2px solid black;" /></p> 
@@ -56,7 +49,7 @@ Each column of the data frame `herndon` is to hold the latitude and longitude of
 
 The celestial fix obtained by Capt. Herndon at 7:00 AM was taken with a sextant in the middle of a storm.  There are some uncertainties in the estimation of latitude and longitude with this method and under those weather conditions, which are modeled by a bivariate normally distributed random variable with mean (0,0) and standard deviations of 0.9 nautical miles (for latitude), and 3.9 nautical miles (for longitude).  We create first a random variable with those characteristics.  Let us use this idea to populate the dataframe with several random initial locations.
 
-{% highlight python %}
+{% highlight python linenos %}
 from scipy.stats import multivariate_normal
 celestial_fix = multivariate_normal(cov = np.diag((0.9, 3.9)))
 {% endhighlight %}
@@ -67,7 +60,7 @@ A very good set of Vincenty's formulas coded in `python` can be found at <a href
 
 In particular, for this example we will be using *Vincenty's direct formula*, that computes the resulting latitude \\(\phi_2\\), longitude \\(\lambda_2\\), and azimuth \\(\alpha_2\\) of an object starting at latitude \\(\phi_1\\), longitude \\(\lambda_1\\), and traveling \\(s\\) meters with initial azimuth \\(\alpha_1\\).  Latitudes, longitudes and azimuths are given in degrees, and distances in meters.  We also use the convention of assigning negative values to the latitudes to the West.  To apply the conversion from nautical miles or knots to their respective units in SI, we employ the system of units in `scipy.constants`.
 
-{% highlight python %}
+{% highlight python linenos %}
 from Geodetic_py import vinc_pt
 from scipy.constants import nautical_mile
 a = 6378137.0
@@ -107,7 +100,7 @@ We simulate the drift according to the formula \\(D = (V + \gamma W)\\).  In thi
 
 This choice of random variables to represent the ocean current and wind differs from the ones used in the aforementioned paper.  In our version we have not used the actual covariance matrices as computed by Stone from data received from the Naval Oceanographic Data Center.  Rather, we have presented a very simplified version.
 
-{% highlight python %}
+{% highlight python linenos %}
 current = multivariate_normal((np.pi/4, 1.25), cov=np.diag((np.pi/270, .25/3)))
 wind    = multivariate_normal((np.pi/4, .3), cov=np.diag((np.pi/12, 1./30)))
 leeway  = 3./100
@@ -129,7 +122,7 @@ for date in pd.date_range('1857-9-12 08:00:00', periods=13, freq='1h'):
 
 Let us plot the first three of those simulated paths:
 
-{% highlight python %}
+{% highlight python linenos %}
 import matplotlib.pyplot as plt
 from mpl_toolkits.basemap import Basemap 
 m = Basemap(llcrnrlon=-77.4, llcrnrlat=31.2, urcrnrlon=-76.6,
@@ -199,7 +192,7 @@ max    31.605647  31.605175  31.556127
 
 The focus of this simulation is, nonetheless, on the final location of all these paths.  Let us plot them all on the same map first, for a quick visual evaluation.
 
-{% highlight python %}
+{% highlight python linenos %}
 latitudes, longitudes = herndon.ix['1857-9-12 20:00:00'].values
 m = Basemap(llcrnrlon=-82., llcrnrlat=31, urcrnrlon=-76,
             urcrnrlat=32.5, projection='lcc', lat_0 = 31.5,
