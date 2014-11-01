@@ -1,0 +1,22 @@
+- id: current
+  description: Classes I am teaching this year.
+  folder: /_teaching/
+  courses: 
+  - url: 2014-01-06-ma141-spring-2014.html  
+    name: MATH 141.  Spring 2014
+    date: 2014-01-06
+  - url: 2014-05-31-ma141-summer-2014.html  
+    name: MATH 141.  Summer 2014
+    date: 2014-05-31
+  - url: 2014-08-19-6226-2.html
+    name: MATH 141.  Fall 2014
+    date: 2014-08-19
+  - url: 2014-01-11-ma-241-spring-2014.html 
+    name: MATH 241.  Spring 2014
+    date: 2014-01-11
+  - url: 2014-08-18-math-122-fall-2014.html
+    name: MATH 122. Fall 2014
+    date: 2014-08-18
+- id: past
+  description: Repository of classes I have taught in the past.
+  folder: /_pages/
