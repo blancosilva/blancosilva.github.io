@@ -30,7 +30,7 @@ layout: default
         <a href="{{ category.folder }}">{{ category.description }}</a>
         <ul class="post-list">
           {% for course in category.courses %}
-          <li> <a href="{{ course.url | prepend: site.baseurl }}">{{ course.name }}</a>
+          <li> <a href="{{ course.folder | prepend: site.baseurl }}{{ course.url }}">{{ course.name }}</a>
           </li>
           {% endfor %}
         </ul>
