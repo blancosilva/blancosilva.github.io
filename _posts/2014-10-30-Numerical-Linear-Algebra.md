@@ -15,7 +15,7 @@ An arrow from a node to another indicates the existence of a link from the web p
 
 Is there a mathematical way to actually express the popularity of a web page within a network? Researchers at Google came up with the idea of a **PageRank** to roughly estimate this concept by counting the number and quality of links to a page. It goes like this:
 
-We construct a *transition matrix* of this graph \(T=\big( a_{i,j} \big)\) in the following fashion: the entry \(a_{i,j}\) is \(1/k\) if there is a link from web page \(i\) to web page \(j\), and the total number of outer links in web page \(i\) amounts to \(k\). Otherwise, the entry is just zero. The size of a transition matrix of \(N\) web pages is always \(N \times N\). In our case, the matrix has size \(8 \times 8\):</p>
+We construct a *transition matrix* of this graph \\( T=\big( a_{i,j} \big)  \\) in the following fashion: the entry \\( a_{i,j} \\) is \\( 1/k \\) if there is a link from web page \\( i \\) to web page \\( j \\), and the total number of outer links in web page \\( i \\) amounts to \\( k \\). Otherwise, the entry is just zero. The size of a transition matrix of \\( N \\) web pages is always \\( N \times N \\). In our case, the matrix has size \\( 8 \times 8 \\):</p>
 <p>\[\begin{pmatrix}
 0  &amp;1/2  &amp; 0   &amp; 0    &amp; 0   &amp; 0   &amp; 0   &amp; 0 \\
 1  &amp; 0   &amp;1/2  &amp;1/2   &amp; 0   &amp; 0   &amp; 0   &amp; 0 \\
@@ -42,7 +42,7 @@ T[rows,cols] = data
 {% endhighlight %}
 
 
-From the transition matrix, we create a *Page Rank matrix*, \(G\) (also known as the **Google matrix**), by fixing a positive constant \(0 < p \leq 1\), and following the formula \(G = (1-p) \cdot T + p \cdot B\). Here, \(B\) is a matrix with the same size as \(T\), with all its entries equal to \(1/N\). For example, if we choose \(p=0.15\), we obtain the following Google matrix
+From the transition matrix, we create a *Page Rank matrix*, \\( G \\) (also known as the **Google matrix**), by fixing a positive constant \\( 0 < p \leq 1 \\), and following the formula \\( G = (1-p) \cdot T + p \cdot B \\). Here, \\( B \\) is a matrix with the same size as \\( T \\), with all its entries equal to \\( 1/N \\). For example, if we choose \\( p=0.15 \\), we obtain the following Google matrix
 
 {% highlight python linenos %}
 G = (1-0.15) * T + 0.15/8
@@ -149,7 +149,7 @@ The first sixteen lines are comments, and give us some information about the gen
 
 * The computer vision problem where it arose: An MRI reconstruction.
 * Author information: Mark Bydder, UCSD.
-* Procedures to apply to the data: Solve a least square problem \(A \cdot x - b\), and posterior visualization of the result.
+* Procedures to apply to the data: Solve a least square problem \\( A \cdot x - b \\), and posterior visualization of the result.
 
 The seventeenth line indicates the size of the matrix: 63240 rows by 147456 columns, as well as the number of non-zero entries in the data: 569160.
 
@@ -4643,27 +4643,27 @@ A horizontal earthquake oscillation affects each floor of a tall building, depen
 
 These are the assumptions we need: 
 
-* Each floor is considered a point of mass located at its center-of-mass. The floors have masses \(m_1, m_2, ..., m_N\). 
-* Each floor is restored to its equilibrium position by a linear restoring force (Hooke's \(-k \times \text{elongation}\)). The Hooke's constants for the floors are \(k_1, k_2, ..., k_N\). 
-* The locations of masses representing the oscillation of the floors are \(x_1, x_2, ..., x_N\). We assume all of them functions of time, and that at equilibrium they are all equal to zero. 
+* Each floor is considered a point of mass located at its center-of-mass. The floors have masses \\( m_1, m_2, ..., m_N \\). 
+* Each floor is restored to its equilibrium position by a linear restoring force (Hooke's \\( -k \times \text{elongation} \\)). The Hooke's constants for the floors are \\( k_1, k_2, ..., k_N \\). 
+* The locations of masses representing the oscillation of the floors are \\( x_1, x_2, ..., x_N \\). We assume all of them functions of time, and that at equilibrium they are all equal to zero. 
 * For simplicity of exposition, we are going to assume no friction: all damping effects on the floors are ignored. 
 * The equations of a floor depend only on the neighboring floors.
 
-Set \(M\), the mass matrix, to be a diagonal matrix containing the floor masses on its diagonal. Set \(K\), the Hooke's matrix, to be a tri-diagonal matrix with the following structure: for each row \(j\), all the entries are zero except 
+Set \\( M \\), the mass matrix, to be a diagonal matrix containing the floor masses on its diagonal. Set \\( K \\), the Hooke's matrix, to be a tri-diagonal matrix with the following structure: for each row \\( j \\), all the entries are zero except 
 
-* Column \(j-1\), which we set to be \(k_{j+1}\),
-* Column \(j\), which we set to \(-k_{j+1}-k_{j+1}\), and
-* Column \(j+1\), which we set to \(k_{j+2}\).
+* Column \\( j-1 \\), which we set to be \\( k_{j+1} \\),
+* Column \\( j \\), which we set to \\( -k_{j+1}-k_{j+1} \\), and
+* Column \\( j+1 \\), which we set to \\( k_{j+2} \\).
 
-Set \(H\) to be a column vector containing the external force on each floor due to the earthquake, and \(X\) the column vector containing the functions \(x_j\).
+Set \\( H \\) to be a column vector containing the external force on each floor due to the earthquake, and \\( X \\) the column vector containing the functions \\( x_j \\).
 
-We have then the system \(M \cdot X`` = K \cdot X + H\). The Homogeneous part of this system is the product of the inverse of \(M\) with \(K\), which we denote \(A\).
+We have then the system \\( M \cdot X\prime\prime = K \cdot X + H \\). The Homogeneous part of this system is the product of the inverse of \\( M \\) with \\( K \\), which we denote \\( A \\).
 
-To solve the homogeneous linear second-order system \(X`` = A \cdot X\), we define the variable \(Y\) to contain \(2N\) entries: all \(N\) functions \(x_j\), followed by their derivatives \(x`_j\). Any solution of this second-order linear system has a corresponding solution on the first-order linear system \(Y` = C \cdot Y\), where \(C\) is a block matrix of size \(2N \times 2N\). This matrix \(C\) is composed by a block of size \(N \times N\) containing only zeros, followed horizontally by the identity (of size \(N \times N\)), and below these two, the matrix \(A\) followed horizontally by another \(N \times N\) block of zeros.
+To solve the homogeneous linear second-order system \\( X\prime\prime = A \cdot X \\), we define the variable \\( Y \\) to contain \\( 2N \\) entries: all \\( N \\) functions \\( x_j \\), followed by their derivatives \\( x\prime_j \\). Any solution of this second-order linear system has a corresponding solution on the first-order linear system \\( Y\prime = C \cdot Y \\), where \\( C \\) is a block matrix of size \\( 2N \times 2N \\). This matrix \\( C \\) is composed by a block of size \\( N \times N \\) containing only zeros, followed horizontally by the identity (of size \\( N \times N \\)), and below these two, the matrix \\( A \\) followed horizontally by another \\( N \times N \\) block of zeros.
 
-It is not necessary to store this matrix \(C\) into memory, or any of its factors or blocks. Instead, we will make use of its structure, and use a **Linear Operator** to represent it. Minimal data is then needed to generate this operator (only the values of the masses and the Hooke's coefficients): much less than any matrix representation of it.
+It is not necessary to store this matrix \\( C \\) into memory, or any of its factors or blocks. Instead, we will make use of its structure, and use a **Linear Operator** to represent it. Minimal data is then needed to generate this operator (only the values of the masses and the Hooke's coefficients): much less than any matrix representation of it.
 
-Let us show a concrete example with 6 floors. We indicate first their masses and Hooke's constants, and proceed to construct a representation of \(A\) as a linear operator:
+Let us show a concrete example with 6 floors. We indicate first their masses and Hooke's constants, and proceed to construct a representation of \\( A \\) as a linear operator:
 
 {% highlight python linenos %}
 m = np.array([56., 56., 56., 54., 54., 53.])
@@ -4682,7 +4682,7 @@ def Axv(v):
 A = spspla.LinearOperator((6,6), matvec=Axv, matmat=Axv, dtype=np.float64)
 {% endhighlight %}
 
-The construction of \(C\) is very simple now (much simpler than its matrix!):
+The construction of \\( C \\) is very simple now (much simpler than its matrix!):
 
 {% highlight python linenos %}
 def Cxv(v):
@@ -4695,9 +4695,9 @@ def Cxv(v):
 C = spspla.LinearOperator((12,12), matvec=Cxv, matmat=Cxv, dtype=np.float64)
 {% endhighlight %}
 
-A solution of this homogeneous system comes in the form of an *action of the exponential* of \(C\): \(Y(t) = \operatorname{expm}(C t) \cdot Y(0)\), where \(\operatorname{expm}()\) here denotes a matrix exponential function. In `scipy`, this operation is performed with the routine `expm_multiply` in the module `scipy.sparse.linalg`.
+A solution of this homogeneous system comes in the form of an *action of the exponential* of \\( C \\): \\( Y(t) = \operatorname{expm}(C t) \cdot Y(0) \\), where \\( \operatorname{expm}() \\) here denotes a matrix exponential function. In `scipy`, this operation is performed with the routine `expm_multiply` in the module `scipy.sparse.linalg`.
 
-For example, in our case, given the initial value containing the values \(x_1(0)=0, \dots, x_N(0)=0, x`_1(0)=1, \dots, x`_N(0)=1\), if we require a solution \(Y(t)\) for values of \(t\) between 0 and 1 in steps of size 0.1, we could issue the following:
+For example, in our case, given the initial value containing the values \\( x_1(0)=0, \dots, x_N(0)=0, x\prime_1(0)=1, \dots, x\prime_N(0)=1 \\), if we require a solution \\( Y(t) \\) for values of \\( t \\) between 0 and 1 in steps of size 0.1, we could issue the following:
 
 {% highlight python linenos %}
 initial_condition = np.zeros(12)
@@ -4706,7 +4706,7 @@ initial_condition[6:] = 1
 Y = spspla.expm_multiply(C.matmat(np.eye(12)), np.ones(12), start=0, stop=1, num=10)
 {% endhighlight %}
 
->It has been reported in some installations that, in the next step, a matrix for \(C\) must be given instead of the actual linear operator (thus contradicting the manual). If this is the case in your system, simply change \(C\) in the next lines, to its matrix representation.</p>
+>It has been reported in some installations that, in the next step, a matrix for \\( C \\) must be given instead of the actual linear operator (thus contradicting the manual). If this is the case in your system, simply change \\( C \\) in the next lines, to its matrix representation.</p>
 
 The oscillations of the six floors during the first second can then be calculated and plotted as follows.
 
@@ -5323,12 +5323,12 @@ This choice then dictates the modules that we use for the different algorithms: 
 >    * `ARPACK`: <a href="www.caam.rice.edu/software/ARPACK/" class="uri">www.caam.rice.edu/software/ARPACK/</a>
 >    * `SuperLU`: <a href="crd-legacy.lbl.gov/~xiaoye/SuperLU/" class="uri">crd-legacy.lbl.gov/~xiaoye/SuperLU/</a>
 
-Most of the routines in these three `scipy</code> modules are wrappers to functions in the mentioned libraries. If we so desire, we also have the possibility to call the underlying functions directly. In the module `scipy.linalg</code>, we have 
+Most of the routines in these three `scipy` modules are wrappers to functions in the mentioned libraries. If we so desire, we also have the possibility to call the underlying functions directly. In the module `scipy.linalg`, we have 
 
-* `scipy.linalg.get_blas_funcs</code> to call routines from `BLAS</code>. 
-* `scipy.linalg.get_lapack_funcs</code> to call routines from `LAPACK</code>.
+* `scipy.linalg.get_blas_funcs` to call routines from `BLAS`. 
+* `scipy.linalg.get_lapack_funcs` to call routines from `LAPACK`.
 
-For example, if we want to use the `BLAS</code> function `NRM2</code> to compute Frobenius norms:
+For example, if we want to use the `BLAS` function `NRM2` to compute Frobenius norms:
 
 {% highlight python linenos %}
 blas_norm = spla.get_blas_funcs('nrm2')

@@ -6,8 +6,8 @@
 </description>
     <link>http://blancosilva.github.io//</link>
     <atom:link href="http://blancosilva.github.io//feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Mon, 03 Nov 2014 09:45:39 -0500</pubDate>
-    <lastBuildDate>Mon, 03 Nov 2014 09:45:39 -0500</lastBuildDate>
+    <pubDate>Mon, 03 Nov 2014 09:51:03 -0500</pubDate>
+    <lastBuildDate>Mon, 03 Nov 2014 09:51:03 -0500</lastBuildDate>
     <generator>Jekyll v2.4.0</generator>
     
       <item>
@@ -204,7 +204,7 @@ max    31.605647  31.605175  31.556127
 
 &lt;p&gt;Is there a mathematical way to actually express the popularity of a web page within a network? Researchers at Google came up with the idea of a &lt;strong&gt;PageRank&lt;/strong&gt; to roughly estimate this concept by counting the number and quality of links to a page. It goes like this:&lt;/p&gt;
 
-&lt;p&gt;We construct a &lt;em&gt;transition matrix&lt;/em&gt; of this graph (T=\big( a&lt;em&gt;{i,j} \big)) in the following fashion: the entry (a&lt;/em&gt;{i,j}) is (1/k) if there is a link from web page (i) to web page (j), and the total number of outer links in web page (i) amounts to (k). Otherwise, the entry is just zero. The size of a transition matrix of (N) web pages is always (N \times N). In our case, the matrix has size (8 \times 8):&amp;lt;/p&amp;gt;&lt;/p&gt;
+&lt;p&gt;We construct a &lt;em&gt;transition matrix&lt;/em&gt; of this graph \( T=\big( a&lt;em&gt;{i,j} \big)  \) in the following fashion: the entry \( a&lt;/em&gt;{i,j} \) is \( 1/k \) if there is a link from web page \( i \) to web page \( j \), and the total number of outer links in web page \( i \) amounts to \( k \). Otherwise, the entry is just zero. The size of a transition matrix of \( N \) web pages is always \( N \times N \). In our case, the matrix has size \( 8 \times 8 \):&amp;lt;/p&amp;gt;&lt;/p&gt;
 &lt;p&gt;\[\begin{pmatrix}
 0  &amp;amp;1/2  &amp;amp; 0   &amp;amp; 0    &amp;amp; 0   &amp;amp; 0   &amp;amp; 0   &amp;amp; 0 \\
 1  &amp;amp; 0   &amp;amp;1/2  &amp;amp;1/2   &amp;amp; 0   &amp;amp; 0   &amp;amp; 0   &amp;amp; 0 \\
@@ -228,7 +228,7 @@ max    31.605647  31.605175  31.556127
 &lt;span class=&quot;lineno&quot;&gt;8&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;T&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;np&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;zeros&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;((&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;8&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;8&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt; 
 &lt;span class=&quot;lineno&quot;&gt;9&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;T&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;rows&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;cols&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;data&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
-&lt;p&gt;From the transition matrix, we create a &lt;em&gt;Page Rank matrix&lt;/em&gt;, (G) (also known as the &lt;strong&gt;Google matrix&lt;/strong&gt;), by fixing a positive constant (0 &amp;lt; p \leq 1), and following the formula (G = (1-p) \cdot T + p \cdot B). Here, (B) is a matrix with the same size as (T), with all its entries equal to (1/N). For example, if we choose (p=0.15), we obtain the following Google matrix&lt;/p&gt;
+&lt;p&gt;From the transition matrix, we create a &lt;em&gt;Page Rank matrix&lt;/em&gt;, \( G \) (also known as the &lt;strong&gt;Google matrix&lt;/strong&gt;), by fixing a positive constant \( 0 &amp;lt; p \leq 1 \), and following the formula \( G = (1-p) \cdot T + p \cdot B \). Here, \( B \) is a matrix with the same size as \( T \), with all its entries equal to \( 1/N \). For example, if we choose \( p=0.15 \), we obtain the following Google matrix&lt;/p&gt;
 
 &lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-python&quot; data-lang=&quot;python&quot;&gt;&lt;span class=&quot;lineno&quot;&gt;1&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;G&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;mf&quot;&gt;0.15&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;T&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;0.15&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;8&lt;/span&gt;
 &lt;span class=&quot;lineno&quot;&gt;2&lt;/span&gt; 
@@ -330,7 +330,7 @@ max    31.605647  31.605175  31.556127
 &lt;ul&gt;
   &lt;li&gt;The computer vision problem where it arose: An MRI reconstruction.&lt;/li&gt;
   &lt;li&gt;Author information: Mark Bydder, UCSD.&lt;/li&gt;
-  &lt;li&gt;Procedures to apply to the data: Solve a least square problem (A \cdot x - b), and posterior visualization of the result.&lt;/li&gt;
+  &lt;li&gt;Procedures to apply to the data: Solve a least square problem \( A \cdot x - b \), and posterior visualization of the result.&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;The seventeenth line indicates the size of the matrix: 63240 rows by 147456 columns, as well as the number of non-zero entries in the data: 569160.&lt;/p&gt;
@@ -4817,30 +4817,30 @@ lVRSSSWVA5RUEaeSSiqppJLKAcr/BkPRYCZW2y4rAAAAAElFTkSuQmCC
 &lt;p&gt;These are the assumptions we need: &lt;/p&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;Each floor is considered a point of mass located at its center-of-mass. The floors have masses (m_1, m_2, …, m_N). &lt;/li&gt;
-  &lt;li&gt;Each floor is restored to its equilibrium position by a linear restoring force (Hooke’s (-k \times \text{elongation})). The Hooke’s constants for the floors are (k_1, k_2, …, k_N). &lt;/li&gt;
-  &lt;li&gt;The locations of masses representing the oscillation of the floors are (x_1, x_2, …, x_N). We assume all of them functions of time, and that at equilibrium they are all equal to zero. &lt;/li&gt;
+  &lt;li&gt;Each floor is considered a point of mass located at its center-of-mass. The floors have masses \( m_1, m_2, …, m_N \). &lt;/li&gt;
+  &lt;li&gt;Each floor is restored to its equilibrium position by a linear restoring force (Hooke’s \( -k \times \text{elongation} \)). The Hooke’s constants for the floors are \( k_1, k_2, …, k_N \). &lt;/li&gt;
+  &lt;li&gt;The locations of masses representing the oscillation of the floors are \( x_1, x_2, …, x_N \). We assume all of them functions of time, and that at equilibrium they are all equal to zero. &lt;/li&gt;
   &lt;li&gt;For simplicity of exposition, we are going to assume no friction: all damping effects on the floors are ignored. &lt;/li&gt;
   &lt;li&gt;The equations of a floor depend only on the neighboring floors.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;Set (M), the mass matrix, to be a diagonal matrix containing the floor masses on its diagonal. Set (K), the Hooke’s matrix, to be a tri-diagonal matrix with the following structure: for each row (j), all the entries are zero except &lt;/p&gt;
+&lt;p&gt;Set \( M \), the mass matrix, to be a diagonal matrix containing the floor masses on its diagonal. Set \( K \), the Hooke’s matrix, to be a tri-diagonal matrix with the following structure: for each row \( j \), all the entries are zero except &lt;/p&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;Column (j-1), which we set to be (k_{j+1}),&lt;/li&gt;
-  &lt;li&gt;Column (j), which we set to (-k&lt;em&gt;{j+1}-k&lt;/em&gt;{j+1}), and&lt;/li&gt;
-  &lt;li&gt;Column (j+1), which we set to (k_{j+2}).&lt;/li&gt;
+  &lt;li&gt;Column \( j-1 \), which we set to be \( k_{j+1} \),&lt;/li&gt;
+  &lt;li&gt;Column \( j \), which we set to \( -k&lt;em&gt;{j+1}-k&lt;/em&gt;{j+1} \), and&lt;/li&gt;
+  &lt;li&gt;Column \( j+1 \), which we set to \( k_{j+2} \).&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;Set (H) to be a column vector containing the external force on each floor due to the earthquake, and (X) the column vector containing the functions (x_j).&lt;/p&gt;
+&lt;p&gt;Set \( H \) to be a column vector containing the external force on each floor due to the earthquake, and \( X \) the column vector containing the functions \( x_j \).&lt;/p&gt;
 
-&lt;p&gt;We have then the system (M \cdot X`` = K \cdot X + H). The Homogeneous part of this system is the product of the inverse of (M) with (K), which we denote (A).&lt;/p&gt;
+&lt;p&gt;We have then the system \( M \cdot X\prime\prime = K \cdot X + H \). The Homogeneous part of this system is the product of the inverse of \( M \) with \( K \), which we denote \( A \).&lt;/p&gt;
 
-&lt;p&gt;To solve the homogeneous linear second-order system (X`` = A \cdot X), we define the variable (Y) to contain (2N) entries: all (N) functions (x_j), followed by their derivatives (x&lt;code&gt;_j\). Any solution of this second-order linear system has a corresponding solution on the first-order linear system \(Y&lt;/code&gt; = C \cdot Y), where (C) is a block matrix of size (2N \times 2N). This matrix (C) is composed by a block of size (N \times N) containing only zeros, followed horizontally by the identity (of size (N \times N)), and below these two, the matrix (A) followed horizontally by another (N \times N) block of zeros.&lt;/p&gt;
+&lt;p&gt;To solve the homogeneous linear second-order system \( X\prime\prime = A \cdot X \), we define the variable \( Y \) to contain \( 2N \) entries: all \( N \) functions \( x_j \), followed by their derivatives \( x\prime_j \). Any solution of this second-order linear system has a corresponding solution on the first-order linear system \( Y\prime = C \cdot Y \), where \( C \) is a block matrix of size \( 2N \times 2N \). This matrix \( C \) is composed by a block of size \( N \times N \) containing only zeros, followed horizontally by the identity (of size \( N \times N \)), and below these two, the matrix \( A \) followed horizontally by another \( N \times N \) block of zeros.&lt;/p&gt;
 
-&lt;p&gt;It is not necessary to store this matrix (C) into memory, or any of its factors or blocks. Instead, we will make use of its structure, and use a &lt;strong&gt;Linear Operator&lt;/strong&gt; to represent it. Minimal data is then needed to generate this operator (only the values of the masses and the Hooke’s coefficients): much less than any matrix representation of it.&lt;/p&gt;
+&lt;p&gt;It is not necessary to store this matrix \( C \) into memory, or any of its factors or blocks. Instead, we will make use of its structure, and use a &lt;strong&gt;Linear Operator&lt;/strong&gt; to represent it. Minimal data is then needed to generate this operator (only the values of the masses and the Hooke’s coefficients): much less than any matrix representation of it.&lt;/p&gt;
 
-&lt;p&gt;Let us show a concrete example with 6 floors. We indicate first their masses and Hooke’s constants, and proceed to construct a representation of (A) as a linear operator:&lt;/p&gt;
+&lt;p&gt;Let us show a concrete example with 6 floors. We indicate first their masses and Hooke’s constants, and proceed to construct a representation of \( A \) as a linear operator:&lt;/p&gt;
 
 &lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-python&quot; data-lang=&quot;python&quot;&gt;&lt;span class=&quot;lineno&quot;&gt; 1&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;m&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;np&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;array&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;([&lt;/span&gt;&lt;span class=&quot;mf&quot;&gt;56.&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;56.&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;56.&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;54.&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;54.&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;53.&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;])&lt;/span&gt;
 &lt;span class=&quot;lineno&quot;&gt; 2&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;k&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;np&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;array&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;([&lt;/span&gt;&lt;span class=&quot;mf&quot;&gt;561.&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;562.&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;560.&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;541.&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;542.&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;530.&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;])&lt;/span&gt;
@@ -4857,7 +4857,7 @@ lVRSSSWVA5RUEaeSSiqppJLKAcr/BkPRYCZW2y4rAAAAAElFTkSuQmCC
 &lt;span class=&quot;lineno&quot;&gt;13&lt;/span&gt; 
 &lt;span class=&quot;lineno&quot;&gt;14&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;A&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;spspla&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;LinearOperator&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;((&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;6&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;6&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;matvec&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Axv&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;matmat&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Axv&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;dtype&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;np&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;float64&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
-&lt;p&gt;The construction of (C) is very simple now (much simpler than its matrix!):&lt;/p&gt;
+&lt;p&gt;The construction of \( C \) is very simple now (much simpler than its matrix!):&lt;/p&gt;
 
 &lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-python&quot; data-lang=&quot;python&quot;&gt;&lt;span class=&quot;lineno&quot;&gt;1&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;Cxv&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;v&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
 &lt;span class=&quot;lineno&quot;&gt;2&lt;/span&gt;     &lt;span class=&quot;n&quot;&gt;n&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;len&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;v&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;
@@ -4868,9 +4868,9 @@ lVRSSSWVA5RUEaeSSiqppJLKAcr/BkPRYCZW2y4rAAAAAElFTkSuQmCC
 &lt;span class=&quot;lineno&quot;&gt;7&lt;/span&gt; 
 &lt;span class=&quot;lineno&quot;&gt;8&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;C&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;spspla&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;LinearOperator&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;((&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;12&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;12&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;matvec&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Cxv&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;matmat&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Cxv&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;dtype&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;np&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;float64&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
-&lt;p&gt;A solution of this homogeneous system comes in the form of an &lt;em&gt;action of the exponential&lt;/em&gt; of (C): (Y(t) = \operatorname{expm}(C t) \cdot Y(0)), where (\operatorname{expm}()) here denotes a matrix exponential function. In &lt;code&gt;scipy&lt;/code&gt;, this operation is performed with the routine &lt;code&gt;expm_multiply&lt;/code&gt; in the module &lt;code&gt;scipy.sparse.linalg&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;A solution of this homogeneous system comes in the form of an &lt;em&gt;action of the exponential&lt;/em&gt; of \( C \): \( Y(t) = \operatorname{expm}(C t) \cdot Y(0) \), where \( \operatorname{expm}() \) here denotes a matrix exponential function. In &lt;code&gt;scipy&lt;/code&gt;, this operation is performed with the routine &lt;code&gt;expm_multiply&lt;/code&gt; in the module &lt;code&gt;scipy.sparse.linalg&lt;/code&gt;.&lt;/p&gt;
 
-&lt;p&gt;For example, in our case, given the initial value containing the values (x_1(0)=0, \dots, x_N(0)=0, x&lt;code&gt;_1(0)=1, \dots, x&lt;/code&gt;_N(0)=1), if we require a solution (Y(t)) for values of (t) between 0 and 1 in steps of size 0.1, we could issue the following:&lt;/p&gt;
+&lt;p&gt;For example, in our case, given the initial value containing the values \( x_1(0)=0, \dots, x_N(0)=0, x\prime_1(0)=1, \dots, x\prime_N(0)=1 \), if we require a solution \( Y(t) \) for values of \( t \) between 0 and 1 in steps of size 0.1, we could issue the following:&lt;/p&gt;
 
 &lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-python&quot; data-lang=&quot;python&quot;&gt;&lt;span class=&quot;lineno&quot;&gt;1&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;initial_condition&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;np&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;zeros&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;12&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
 &lt;span class=&quot;lineno&quot;&gt;2&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;initial_condition&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;6&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;
@@ -4878,7 +4878,7 @@ lVRSSSWVA5RUEaeSSiqppJLKAcr/BkPRYCZW2y4rAAAAAElFTkSuQmCC
 &lt;span class=&quot;lineno&quot;&gt;4&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Y&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;spspla&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;expm_multiply&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;C&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;matmat&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;np&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;eye&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;12&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)),&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;np&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ones&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;12&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;start&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;stop&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;num&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;10&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;blockquote&gt;
-  &lt;p&gt;It has been reported in some installations that, in the next step, a matrix for (C) must be given instead of the actual linear operator (thus contradicting the manual). If this is the case in your system, simply change (C) in the next lines, to its matrix representation.&amp;lt;/p&amp;gt;&lt;/p&gt;
+  &lt;p&gt;It has been reported in some installations that, in the next step, a matrix for \( C \) must be given instead of the actual linear operator (thus contradicting the manual). If this is the case in your system, simply change \( C \) in the next lines, to its matrix representation.&amp;lt;/p&amp;gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 
 &lt;p&gt;The oscillations of the six floors during the first second can then be calculated and plotted as follows.&lt;/p&gt;
@@ -5498,14 +5498,14 @@ UoEXERGJQCrwIiIiEUgFXkREJAKpwIuIiESg/w8PMJd+8cpMGgAAAABJRU5ErkJggg==
   &lt;/ul&gt;
 &lt;/blockquote&gt;
 
-&lt;p&gt;Most of the routines in these three &lt;code&gt;scipy&amp;lt;/code&amp;gt; modules are wrappers to functions in the mentioned libraries. If we so desire, we also have the possibility to call the underlying functions directly. In the module &lt;/code&gt;scipy.linalg&amp;lt;/code&amp;gt;, we have &lt;/p&gt;
+&lt;p&gt;Most of the routines in these three &lt;code&gt;scipy&lt;/code&gt; modules are wrappers to functions in the mentioned libraries. If we so desire, we also have the possibility to call the underlying functions directly. In the module &lt;code&gt;scipy.linalg&lt;/code&gt;, we have &lt;/p&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;&lt;code&gt;scipy.linalg.get_blas_funcs&amp;lt;/code&amp;gt; to call routines from &lt;/code&gt;BLAS&amp;lt;/code&amp;gt;. &lt;/li&gt;
-  &lt;li&gt;&lt;code&gt;scipy.linalg.get_lapack_funcs&amp;lt;/code&amp;gt; to call routines from &lt;/code&gt;LAPACK&amp;lt;/code&amp;gt;.&lt;/li&gt;
+  &lt;li&gt;&lt;code&gt;scipy.linalg.get_blas_funcs&lt;/code&gt; to call routines from &lt;code&gt;BLAS&lt;/code&gt;. &lt;/li&gt;
+  &lt;li&gt;&lt;code&gt;scipy.linalg.get_lapack_funcs&lt;/code&gt; to call routines from &lt;code&gt;LAPACK&lt;/code&gt;.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;For example, if we want to use the &lt;code&gt;BLAS&amp;lt;/code&amp;gt; function &lt;/code&gt;NRM2&amp;lt;/code&amp;gt; to compute Frobenius norms:&lt;/p&gt;
+&lt;p&gt;For example, if we want to use the &lt;code&gt;BLAS&lt;/code&gt; function &lt;code&gt;NRM2&lt;/code&gt; to compute Frobenius norms:&lt;/p&gt;
 
 &lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-python&quot; data-lang=&quot;python&quot;&gt;&lt;span class=&quot;lineno&quot;&gt;1&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;blas_norm&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;spla&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;get_blas_funcs&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;#39;nrm2&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
 &lt;span class=&quot;lineno&quot;&gt;2&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;blas_norm&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;np&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;float32&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;([&lt;/span&gt;&lt;span class=&quot;mf&quot;&gt;1e20&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]))&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
