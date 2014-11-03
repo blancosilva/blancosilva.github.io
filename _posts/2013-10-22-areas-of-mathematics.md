@@ -13,7 +13,7 @@ For one of my upcoming talks I am trying to include an exhaustive mindmap showin
 
 But I am not entirely happy with what I see:  my lack of training in the area of Combinatorics results in a rather dry treatment of that part of the mindmap, for example.  I am afraid that the same could be told about other parts of the diagram.  Any help from the reader to clarify and polish this information will be very much appreciated.
 
-And as a bonus, I included a \(\LaTeX\) script to generate the diagram with the aid of the `tikz` libraries.
+And as a bonus, I included a \\(\LaTeX \\) script to generate the diagram with the aid of the `tikz` libraries.
 
 {% highlight tex linenos %}
 \tikzstyle{level 2 concept}+=[sibling angle=40]
