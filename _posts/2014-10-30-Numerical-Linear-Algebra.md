@@ -4652,14 +4652,14 @@ These are the assumptions we need:
 Set \\( M \\), the mass matrix, to be a diagonal matrix containing the floor masses on its diagonal. Set \\( K \\), the Hooke's matrix, to be a tri-diagonal matrix with the following structure: for each row \\( j \\), all the entries are zero except 
 
 * Column \\( j-1 \\), which we set to be \\( k_{j+1} \\),
-* Column \\( j \\), which we set to \\( -k_{j+1}-k_{j+1} \\), and
+* Column \\( j \\), which we set to \\( -k_{j+1} - k_{j+1} \\), and
 * Column \\( j+1 \\), which we set to \\( k_{j+2} \\).
 
 Set \\( H \\) to be a column vector containing the external force on each floor due to the earthquake, and \\( X \\) the column vector containing the functions \\( x_j \\).
 
-We have then the system \\( M \cdot X\prime\prime = K \cdot X + H \\). The Homogeneous part of this system is the product of the inverse of \\( M \\) with \\( K \\), which we denote \\( A \\).
+We have then the system \\( M \cdot X^{\prime\prime} = K \cdot X + H \\). The Homogeneous part of this system is the product of the inverse of \\( M \\) with \\( K \\), which we denote \\( A \\).
 
-To solve the homogeneous linear second-order system \\( X\prime\prime = A \cdot X \\), we define the variable \\( Y \\) to contain \\( 2N \\) entries: all \\( N \\) functions \\( x_j \\), followed by their derivatives \\( x\prime_j \\). Any solution of this second-order linear system has a corresponding solution on the first-order linear system \\( Y\prime = C \cdot Y \\), where \\( C \\) is a block matrix of size \\( 2N \times 2N \\). This matrix \\( C \\) is composed by a block of size \\( N \times N \\) containing only zeros, followed horizontally by the identity (of size \\( N \times N \\)), and below these two, the matrix \\( A \\) followed horizontally by another \\( N \times N \\) block of zeros.
+To solve the homogeneous linear second-order system \\( X^{\prime\prime} = A \cdot X \\), we define the variable \\( Y \\) to contain \\( 2N \\) entries: all \\( N \\) functions \\( x_j \\), followed by their derivatives \\( x\prime_j \\). Any solution of this second-order linear system has a corresponding solution on the first-order linear system \\( Y^\prime = C \cdot Y \\), where \\( C \\) is a block matrix of size \\( 2N \times 2N \\). This matrix \\( C \\) is composed by a block of size \\( N \times N \\) containing only zeros, followed horizontally by the identity (of size \\( N \times N \\)), and below these two, the matrix \\( A \\) followed horizontally by another \\( N \times N \\) block of zeros.
 
 It is not necessary to store this matrix \\( C \\) into memory, or any of its factors or blocks. Instead, we will make use of its structure, and use a **Linear Operator** to represent it. Minimal data is then needed to generate this operator (only the values of the masses and the Hooke's coefficients): much less than any matrix representation of it.
 
@@ -4697,7 +4697,7 @@ C = spspla.LinearOperator((12,12), matvec=Cxv, matmat=Cxv, dtype=np.float64)
 
 A solution of this homogeneous system comes in the form of an *action of the exponential* of \\( C \\): \\( Y(t) = \operatorname{expm}(C t) \cdot Y(0) \\), where \\( \operatorname{expm}() \\) here denotes a matrix exponential function. In `scipy`, this operation is performed with the routine `expm_multiply` in the module `scipy.sparse.linalg`.
 
-For example, in our case, given the initial value containing the values \\( x_1(0)=0, \dots, x_N(0)=0, x\prime_1(0)=1, \dots, x\prime_N(0)=1 \\), if we require a solution \\( Y(t) \\) for values of \\( t \\) between 0 and 1 in steps of size 0.1, we could issue the following:
+For example, in our case, given the initial value containing the values \\( x_1(0)=0, \dots, x_N(0)=0, x^\prime_1(0)=1, \dots, x^\prime_N(0)=1 \\), if we require a solution \\( Y(t) \\) for values of \\( t \\) between 0 and 1 in steps of size 0.1, we could issue the following:
 
 {% highlight python linenos %}
 initial_condition = np.zeros(12)

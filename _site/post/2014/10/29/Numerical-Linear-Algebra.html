@@ -4710,15 +4710,15 @@ lVRSSSWVA5RUEaeSSiqppJLKAcr/BkPRYCZW2y4rAAAAAElFTkSuQmCC
 
 <ul>
   <li>Column \( j-1 \), which we set to be \( k_{j+1} \),</li>
-  <li>Column \( j \), which we set to \( -k<em>{j+1}-k</em>{j+1} \), and</li>
+  <li>Column \( j \), which we set to \( -k<em>{j+1} - k</em>{j+1} \), and</li>
   <li>Column \( j+1 \), which we set to \( k_{j+2} \).</li>
 </ul>
 
 <p>Set \( H \) to be a column vector containing the external force on each floor due to the earthquake, and \( X \) the column vector containing the functions \( x_j \).</p>
 
-<p>We have then the system \( M \cdot X\prime\prime = K \cdot X + H \). The Homogeneous part of this system is the product of the inverse of \( M \) with \( K \), which we denote \( A \).</p>
+<p>We have then the system \( M \cdot X^{\prime\prime} = K \cdot X + H \). The Homogeneous part of this system is the product of the inverse of \( M \) with \( K \), which we denote \( A \).</p>
 
-<p>To solve the homogeneous linear second-order system \( X\prime\prime = A \cdot X \), we define the variable \( Y \) to contain \( 2N \) entries: all \( N \) functions \( x_j \), followed by their derivatives \( x\prime_j \). Any solution of this second-order linear system has a corresponding solution on the first-order linear system \( Y\prime = C \cdot Y \), where \( C \) is a block matrix of size \( 2N \times 2N \). This matrix \( C \) is composed by a block of size \( N \times N \) containing only zeros, followed horizontally by the identity (of size \( N \times N \)), and below these two, the matrix \( A \) followed horizontally by another \( N \times N \) block of zeros.</p>
+<p>To solve the homogeneous linear second-order system \( X^{\prime\prime} = A \cdot X \), we define the variable \( Y \) to contain \( 2N \) entries: all \( N \) functions \( x_j \), followed by their derivatives \( x\prime_j \). Any solution of this second-order linear system has a corresponding solution on the first-order linear system \( Y^\prime = C \cdot Y \), where \( C \) is a block matrix of size \( 2N \times 2N \). This matrix \( C \) is composed by a block of size \( N \times N \) containing only zeros, followed horizontally by the identity (of size \( N \times N \)), and below these two, the matrix \( A \) followed horizontally by another \( N \times N \) block of zeros.</p>
 
 <p>It is not necessary to store this matrix \( C \) into memory, or any of its factors or blocks. Instead, we will make use of its structure, and use a <strong>Linear Operator</strong> to represent it. Minimal data is then needed to generate this operator (only the values of the masses and the Hooke’s coefficients): much less than any matrix representation of it.</p>
 
@@ -4752,7 +4752,7 @@ lVRSSSWVA5RUEaeSSiqppJLKAcr/BkPRYCZW2y4rAAAAAElFTkSuQmCC
 
 <p>A solution of this homogeneous system comes in the form of an <em>action of the exponential</em> of \( C \): \( Y(t) = \operatorname{expm}(C t) \cdot Y(0) \), where \( \operatorname{expm}() \) here denotes a matrix exponential function. In <code>scipy</code>, this operation is performed with the routine <code>expm_multiply</code> in the module <code>scipy.sparse.linalg</code>.</p>
 
-<p>For example, in our case, given the initial value containing the values \( x_1(0)=0, \dots, x_N(0)=0, x\prime_1(0)=1, \dots, x\prime_N(0)=1 \), if we require a solution \( Y(t) \) for values of \( t \) between 0 and 1 in steps of size 0.1, we could issue the following:</p>
+<p>For example, in our case, given the initial value containing the values \( x_1(0)=0, \dots, x_N(0)=0, x^\prime_1(0)=1, \dots, x^\prime_N(0)=1 \), if we require a solution \( Y(t) \) for values of \( t \) between 0 and 1 in steps of size 0.1, we could issue the following:</p>
 
 <div class="highlight"><pre><code class="language-python" data-lang="python"><span class="lineno">1</span> <span class="n">initial_condition</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">(</span><span class="mi">12</span><span class="p">)</span>
 <span class="lineno">2</span> <span class="n">initial_condition</span><span class="p">[</span><span class="mi">6</span><span class="p">:]</span> <span class="o">=</span> <span class="mi">1</span>
