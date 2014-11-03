@@ -102,141 +102,53 @@
 
 <div class="highlight"><pre><code class="language-python" data-lang="python"><span class="lineno">1</span> <span class="kn">import</span> <span class="nn">numpy</span> <span class="kn">as</span> <span class="nn">np</span><span class="o">,</span> <span class="nn">matplotlib.pyplot</span> <span class="kn">as</span> <span class="nn">plt</span><span class="o">,</span> <span class="nn">scipy.linalg</span> <span class="kn">as</span> <span class="nn">spla</span><span class="o">,</span> <span class="nn">scipy.sparse</span> <span class="kn">as</span> <span class="nn">spsp</span><span class="o">,</span> <span class="nn">scipy.sparse.linalg</span> <span class="kn">as</span> <span class="nn">spspla</span>
 <span class="lineno">2</span> <span class="n">np</span><span class="o">.</span><span class="n">set_printoptions</span><span class="p">(</span><span class="n">suppress</span><span class="o">=</span><span class="bp">True</span><span class="p">,</span> <span class="n">precision</span><span class="o">=</span><span class="mi">3</span><span class="p">)</span>
-<span class="lineno">3</span> <span class="n">cols</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">6</span><span class="p">,</span><span class="mi">6</span><span class="p">,</span><span class="mi">6</span><span class="p">,</span><span class="mi">7</span><span class="p">,</span><span class="mi">7</span><span class="p">])</span>
-<span class="lineno">4</span> <span class="n">rows</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">7</span><span class="p">,</span><span class="mi">6</span><span class="p">,</span><span class="mi">7</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">7</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">6</span><span class="p">])</span>
-<span class="lineno">5</span> <span class="n">data</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mf">1.</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">,</span> <span class="mf">1.</span><span class="p">,</span> <span class="mf">1.</span><span class="o">/</span><span class="mi">3</span><span class="p">,</span> <span class="mf">1.</span><span class="o">/</span><span class="mi">3</span><span class="p">,</span> <span class="mf">1.</span><span class="o">/</span><span class="mi">3</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">])</span>
-<span class="lineno">6</span> <span class="n">T</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">((</span><span class="mi">8</span><span class="p">,</span><span class="mi">8</span><span class="p">))</span> 
-<span class="lineno">7</span> <span class="n">T</span><span class="p">[</span><span class="n">rows</span><span class="p">,</span><span class="n">cols</span><span class="p">]</span> <span class="o">=</span> <span class="n">data</span></code></pre></div>
+<span class="lineno">3</span> 
+<span class="lineno">4</span> <span class="n">cols</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">6</span><span class="p">,</span><span class="mi">6</span><span class="p">,</span><span class="mi">6</span><span class="p">,</span><span class="mi">7</span><span class="p">,</span><span class="mi">7</span><span class="p">])</span>
+<span class="lineno">5</span> <span class="n">rows</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">7</span><span class="p">,</span><span class="mi">6</span><span class="p">,</span><span class="mi">7</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">7</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">6</span><span class="p">])</span>
+<span class="lineno">6</span> <span class="n">data</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mf">1.</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">,</span> <span class="mf">1.</span><span class="p">,</span> <span class="mf">1.</span><span class="o">/</span><span class="mi">3</span><span class="p">,</span> <span class="mf">1.</span><span class="o">/</span><span class="mi">3</span><span class="p">,</span> <span class="mf">1.</span><span class="o">/</span><span class="mi">3</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">])</span>
+<span class="lineno">7</span> 
+<span class="lineno">8</span> <span class="n">T</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">((</span><span class="mi">8</span><span class="p">,</span><span class="mi">8</span><span class="p">))</span> 
+<span class="lineno">9</span> <span class="n">T</span><span class="p">[</span><span class="n">rows</span><span class="p">,</span><span class="n">cols</span><span class="p">]</span> <span class="o">=</span> <span class="n">data</span></code></pre></div>
 
-<p>&lt;/div&gt;
-&lt;div class="cell border-box-sizing text_cell rendered"&gt;
-&lt;div class="prompt input_prompt"&gt;
-&lt;/div&gt;
-&lt;div class="inner_cell"&gt;
-&lt;div class="text_cell_render border-box-sizing rendered_html"&gt;</p>
-<p>From the transition matrix, we create a *Page Rank matrix*, \(G\) (also known as the **Google matrix**), by fixing a positive constant \(0 &lt; p \leq 1\), and following the formula \(G = (1-p) \cdot T + p \cdot B\). Here, \(B\) is a matrix with the same size as \(T\), with all its entries equal to \(1/N\). For example, if we choose \(p=0.15\), we obtain the following Google matrix</p>
-<p>&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class="cell border-box-sizing code_cell rendered"&gt;
-&lt;div class="input"&gt;
-&lt;div class="inner_cell"&gt;
-    &lt;div class="input_area"&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;<span class="n">In</span> <span class="p">[</span><span class="mi">7</span><span class="p">]:</span> <span class="n">G</span> <span class="o">=</span> <span class="p">(</span><span class="mi">1</span><span class="o">-</span><span class="mf">0.15</span><span class="p">)</span> <span class="o">*</span> <span class="n">T</span> <span class="o">+</span> <span class="mf">0.15</span><span class="o">/</span><span class="mi">8</span><span class="p">;</span> \
-   <span class="o">…</span><span class="p">:</span> <span class="k">print</span> <span class="n">G</span>
-&lt;/pre&gt;&lt;/div&gt;</p>
+<p>From the transition matrix, we create a <em>Page Rank matrix</em>, (G) (also known as the <strong>Google matrix</strong>), by fixing a positive constant (0 &lt; p \leq 1), and following the formula (G = (1-p) \cdot T + p \cdot B). Here, (B) is a matrix with the same size as (T), with all its entries equal to (1/N). For example, if we choose (p=0.15), we obtain the following Google matrix</p>
 
-<p>&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;</p>
+<div class="highlight"><pre><code class="language-python" data-lang="python"><span class="lineno">1</span> <span class="n">G</span> <span class="o">=</span> <span class="p">(</span><span class="mi">1</span><span class="o">-</span><span class="mf">0.15</span><span class="p">)</span> <span class="o">*</span> <span class="n">T</span> <span class="o">+</span> <span class="mf">0.15</span><span class="o">/</span><span class="mi">8</span>
+<span class="lineno">2</span> <span class="p">}}}}}}}}}</span>
+<span class="lineno">3</span> <span class="k">print</span> <span class="n">G</span></code></pre></div>
 
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area"><div class="prompt"></div>
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>
-[[ 0.019  0.444  0.019  0.019  0.019  0.019  0.019  0.019]
+<div class="highlight"><pre><code class="language-text" data-lang="text">[[ 0.019  0.444  0.019  0.019  0.019  0.019  0.019  0.019]
  [ 0.869  0.019  0.444  0.444  0.019  0.019  0.019  0.019]
  [ 0.019  0.019  0.019  0.019  0.019  0.019  0.302  0.019]
  [ 0.019  0.444  0.019  0.019  0.019  0.869  0.302  0.019]
  [ 0.019  0.019  0.444  0.019  0.019  0.019  0.019  0.019]
  [ 0.019  0.019  0.019  0.019  0.019  0.019  0.019  0.444]
  [ 0.019  0.019  0.019  0.019  0.444  0.019  0.019  0.444]
- [ 0.019  0.019  0.019  0.444  0.444  0.019  0.302  0.019]]
+ [ 0.019  0.019  0.019  0.444  0.444  0.019  0.302  0.019]]</code></pre></div>
 
-</pre>
-</div>
-</div>
+<p>Google matrices have some interesting properties: </p>
 
-</div>
-</div>
+<ul>
+  <li>1 is an eigenvalue of multiplicity one. </li>
+  <li>1 is actually the largest eigenvalue: all the other eigenvalues are in modulus smaller than 1. </li>
+  <li>The eigenvector corresponding to eigenvalue 1 has all entries positive. In particular, for the eigenvalue 1 there exists a unique eigenvector with the sum of its entries equal to one. This is what we call the <strong>Page Rank vector</strong>.</li>
+</ul>
 
-<p>&lt;/div&gt;
-&lt;div class="cell border-box-sizing text_cell rendered"&gt;
-&lt;div class="prompt input_prompt"&gt;
-&lt;/div&gt;
-&lt;div class="inner_cell"&gt;
-&lt;div class="text_cell_render border-box-sizing rendered_html"&gt;</p>
-<p>Google matrices have some interesting properties: 
+<p>A quick computation with <code>scipy.linalg.eig</code> finds that eigenvector for us:</p>
 
-	<ul>
-		<li> 1 is an eigenvalue of multiplicity one. </li>
-		<li> 1 is actually the largest eigenvalue: all the other eigenvalues are in modulus smaller than 1. </li>
-		<li> The eigenvector corresponding to eigenvalue 1 has all entries positive. In particular, for the eigenvalue 1 there exists a unique eigenvector with the sum of its entries equal to one. This is what we call the **Page Rank vector**.</li>
-	</ul>
-</p>
+<div class="highlight"><pre><code class="language-python" data-lang="python"><span class="lineno">1</span> <span class="n">eigenvalues</span><span class="p">,</span> <span class="n">eigenvectors</span> <span class="o">=</span> <span class="n">spla</span><span class="o">.</span><span class="n">eig</span><span class="p">(</span><span class="n">G</span><span class="p">)</span>
+<span class="lineno">2</span> 
+<span class="lineno">3</span> <span class="k">print</span> <span class="n">eigenvalues</span></code></pre></div>
 
-<p>A quick computation with `scipy.linalg.eig` finds that eigenvector for us:</p>
-<p>&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class="cell border-box-sizing code_cell rendered"&gt;
-&lt;div class="input"&gt;
-&lt;div class="inner_cell"&gt;
-    &lt;div class="input_area"&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;<span class="n">In</span> <span class="p">[</span><span class="mi">8</span><span class="p">]:</span> <span class="n">eigenvalues</span><span class="p">,</span> <span class="n">eigenvectors</span> <span class="o">=</span> <span class="n">spla</span><span class="o">.</span><span class="n">eig</span><span class="p">(</span><span class="n">G</span><span class="p">)</span>
-<span class="n">In</span> <span class="p">[</span><span class="mi">9</span><span class="p">]:</span> <span class="k">print</span> <span class="n">eigenvalues</span>
-&lt;/pre&gt;&lt;/div&gt;</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">[ 1.000+0.j    -0.655+0.j    -0.333+0.313j -0.333-0.313j -0.171+0.372j
+ -0.171-0.372j  0.544+0.j     0.268+0.j   ]</code></pre></div>
 
-<p>&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;</p>
+<div class="highlight"><pre><code class="language-python" data-lang="python"><span class="lineno">1</span> <span class="n">PageRank</span> <span class="o">=</span> <span class="n">eigenvectors</span><span class="p">[:,</span><span class="mi">0</span><span class="p">]</span>
+<span class="lineno">2</span> <span class="n">PageRank</span> <span class="o">/=</span> <span class="nb">sum</span><span class="p">(</span><span class="n">PageRank</span><span class="p">)</span>
+<span class="lineno">3</span> 
+<span class="lineno">4</span> <span class="k">print</span> <span class="n">PageRank</span><span class="o">.</span><span class="n">real</span></code></pre></div>
 
-<div class="output_wrapper">
-<div class="output">
+<div class="highlight"><pre><code class="language-text" data-lang="text">[ 0.117  0.232  0.048  0.219  0.039  0.086  0.102  0.157]</code></pre></div>
 
-
-<div class="output_area"><div class="prompt"></div>
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>
-[ 1.000+0.j    -0.655+0.j    -0.333+0.313j -0.333-0.313j -0.171+0.372j
- -0.171-0.372j  0.544+0.j     0.268+0.j   ]
-
-</pre>
-</div>
-</div>
-
-</div>
-</div>
-
-<p>&lt;/div&gt;
-&lt;div class="cell border-box-sizing code_cell rendered"&gt;
-&lt;div class="input"&gt;
-&lt;div class="inner_cell"&gt;
-    &lt;div class="input_area"&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;<span class="n">In</span> <span class="p">[</span><span class="mi">10</span><span class="p">]:</span> <span class="n">PageRank</span> <span class="o">=</span> <span class="n">eigenvectors</span><span class="p">[:,</span><span class="mi">0</span><span class="p">];</span> \
-   <span class="o">….</span><span class="p">:</span> <span class="n">PageRank</span> <span class="o">/=</span> <span class="nb">sum</span><span class="p">(</span><span class="n">PageRank</span><span class="p">)</span>
-<span class="n">In</span> <span class="p">[</span><span class="mi">11</span><span class="p">]:</span> <span class="k">print</span> <span class="n">PageRank</span><span class="o">.</span><span class="n">real</span>
-&lt;/pre&gt;&lt;/div&gt;</p>
-
-<p>&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;</p>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area"><div class="prompt"></div>
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>
-[ 0.117  0.232  0.048  0.219  0.039  0.086  0.102  0.157]
-
-</pre>
-</div>
-</div>
-
-</div>
-</div>
-
-<p>&lt;/div&gt;
-&lt;div class="cell border-box-sizing text_cell rendered"&gt;
-&lt;div class="prompt input_prompt"&gt;
-&lt;/div&gt;
-&lt;div class="inner_cell"&gt;
-&lt;div class="text_cell_render border-box-sizing rendered_html"&gt;</p>
 <p>Those values correspond to the Page Ranks of each of the eight web pages depicted on the graph. As expected, the maximum value of those is associated to the second web page (0.232), closely followed by the fourth (0.219), and then the eighth web page (0.157).</p>
 <blockquote>
 <p>Note how this problem of networks of web pages has been translated into mathematical objects, to an equivalent problem involving matrices, eigenvalues and eigenvectors, and has been solved with techniques of Linear Algebra.</p>

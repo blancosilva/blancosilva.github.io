@@ -48,7 +48,7 @@ From the transition matrix, we create a *Page Rank matrix*, \(G\) (also known as
 G = (1-0.15) * T + 0.15/8
 }}}}}}}}}
 print G
-{% end highlight %}
+{% endhighlight %}
 
 {% highlight text %}
 [[ 0.019  0.444  0.019  0.019  0.019  0.019  0.019  0.019]
