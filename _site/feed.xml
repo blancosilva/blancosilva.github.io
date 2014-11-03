@@ -6,8 +6,8 @@
 </description>
     <link>http://blancosilva.github.io//</link>
     <atom:link href="http://blancosilva.github.io//feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Mon, 03 Nov 2014 09:06:06 -0500</pubDate>
-    <lastBuildDate>Mon, 03 Nov 2014 09:06:06 -0500</lastBuildDate>
+    <pubDate>Mon, 03 Nov 2014 09:45:39 -0500</pubDate>
+    <lastBuildDate>Mon, 03 Nov 2014 09:45:39 -0500</lastBuildDate>
     <generator>Jekyll v2.4.0</generator>
     
       <item>
@@ -268,37 +268,43 @@ max    31.605647  31.605175  31.556127
 &lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;[ 0.117  0.232  0.048  0.219  0.039  0.086  0.102  0.157]&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;Those values correspond to the Page Ranks of each of the eight web pages depicted on the graph. As expected, the maximum value of those is associated to the second web page (0.232), closely followed by the fourth (0.219), and then the eighth web page (0.157).&lt;/p&gt;
+
 &lt;blockquote&gt;
-&lt;p&gt;Note how this problem of networks of web pages has been translated into mathematical objects, to an equivalent problem involving matrices, eigenvalues and eigenvectors, and has been solved with techniques of Linear Algebra.&lt;/p&gt;
+  &lt;p&gt;Note how this problem of networks of web pages has been translated into mathematical objects, to an equivalent problem involving matrices, eigenvalues and eigenvectors, and has been solved with techniques of Linear Algebra.&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;p&gt;The transition matrix is **sparse**: most of its entries are zeros. Sparse matrices with extremely large size are of special importance in *Numerical Linear Algebra*, not only because they encode challenging scientific problems, but also because it is extremely hard to manipulate them with basic algorithms.&lt;/p&gt;
-&lt;p&gt;Rather than storing to memory all values in the matrix, it makes sense to collect only the non-zero values instead, and use algorithms with exploit these smart storage schemes. The gain in memory management is obvious. These methods are usually faster for this kind of matrices and give less roundoff errors, since there are usually far less operations involved. This is another advantage of `scipy`, since it contains numerous procedures to attack different problems where data is stored in this fashion. Let us observe its power with another example:&lt;/p&gt;
-&lt;p&gt;The **University of Florida Sparse Matrix Collection** is the largest database of matrices accessible online. As of January 2014, it contains 157 groups of matrices arising from all sorts of scientific disciplines. The sizes of the matrices range from very small (1-by-2) to insanely large (28-million-by-28-million). More matrices are expected to be added constantly, as they arise in different engineering problems.&lt;/p&gt;
+
+&lt;p&gt;The transition matrix is &lt;strong&gt;sparse&lt;/strong&gt;: most of its entries are zeros. Sparse matrices with extremely large size are of special importance in &lt;em&gt;Numerical Linear Algebra&lt;/em&gt;, not only because they encode challenging scientific problems, but also because it is extremely hard to manipulate them with basic algorithms.&lt;/p&gt;
+
+&lt;p&gt;Rather than storing to memory all values in the matrix, it makes sense to collect only the non-zero values instead, and use algorithms with exploit these smart storage schemes. The gain in memory management is obvious. These methods are usually faster for this kind of matrices and give less roundoff errors, since there are usually far less operations involved. This is another advantage of &lt;code&gt;scipy&lt;/code&gt;, since it contains numerous procedures to attack different problems where data is stored in this fashion. Let us observe its power with another example:&lt;/p&gt;
+
+&lt;p&gt;The &lt;strong&gt;University of Florida Sparse Matrix Collection&lt;/strong&gt; is the largest database of matrices accessible online. As of January 2014, it contains 157 groups of matrices arising from all sorts of scientific disciplines. The sizes of the matrices range from very small (1-by-2) to insanely large (28-million-by-28-million). More matrices are expected to be added constantly, as they arise in different engineering problems.&lt;/p&gt;
+
 &lt;blockquote&gt;
-&lt;p&gt;More information about this database can be found in ACM Transactions on Mathematical Software, vol 38, Issue 1, 2011, pp 1:1 - 1:25, by T.A. Davis and Y.Hu, or online at &lt;a href=&quot;www.cise.ufl.edu/research/sparse/matrices&quot; class=&quot;uri&quot;&gt;www.cise.ufl.edu/research/sparse/matrices&lt;/a&gt;&lt;/p&gt;
+  &lt;p&gt;More information about this database can be found in ACM Transactions on Mathematical Software, vol 38, Issue 1, 2011, pp 1:1 - 1:25, by T.A. Davis and Y.Hu, or online at &lt;a href=&quot;www.cise.ufl.edu/research/sparse/matrices&quot; class=&quot;uri&quot;&gt;www.cise.ufl.edu/research/sparse/matrices&lt;/a&gt;&amp;lt;/p&amp;gt;&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;p&gt;For example, the group with the most matrices in the database is the original Harwell-Boeing Collection, with 292 different sparse matrices. This group can also be accessed online at the **Matrix Market**: &lt;a href=&quot;math.nist.gov/MatrixMarket&quot; class=&quot;uri&quot;&gt;math.nist.gov/MatrixMarket&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;Each matrix in the database comes in three formats: 
 
-	&lt;ul&gt;
-		&lt;li&gt; **Matrix Market Exchange Format** [Boisvert et al. 1997] &lt;/li&gt;
-		&lt;li&gt; **Rutherford-Boeing Exchange Format** [Duff et al. 1997] &lt;/li&gt;
-		&lt;li&gt; Proprietary **matlab** `.mat` format.&lt;/li&gt;
-	&lt;/ul&gt;
-&lt;/p&gt;
+&lt;p&gt;For example, the group with the most matrices in the database is the original Harwell-Boeing Collection, with 292 different sparse matrices. This group can also be accessed online at the &lt;strong&gt;Matrix Market&lt;/strong&gt;: &lt;a href=&quot;math.nist.gov/MatrixMarket&quot; class=&quot;uri&quot;&gt;math.nist.gov/MatrixMarket&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;Let us import to our `ipython` session two matrices in Matrix Market Exchange format from the Collection, meant to be used in a solution of a least squares problem. These matrices are located at&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;www.cise.ufl.edu/research/sparse/matrices/Bydder/mri2.html&quot; class=&quot;uri&quot;&gt;www.cise.ufl.edu/research/sparse/matrices/Bydder/mri2.html&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;We download the corresponding `tar` bundle and `untar` it to get two `ASCII` files: 
+&lt;p&gt;Each matrix in the database comes in three formats: &lt;/p&gt;
 
-	&lt;ul&gt;
-		&lt;li&gt; `mri2.mtx` (the main matrix in the least squares problem)&lt;/li&gt; 
-		&lt;li&gt; `mri2_b.mtx` (the right-hand side of the equation)&lt;/li&gt;
-	&lt;/ul&gt;
-&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;Matrix Market Exchange Format&lt;/strong&gt; [Boisvert et al. 1997]&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Rutherford-Boeing Exchange Format&lt;/strong&gt; [Duff et al. 1997]&lt;/li&gt;
+  &lt;li&gt;Proprietary &lt;strong&gt;matlab&lt;/strong&gt; &lt;code&gt;.mat&lt;/code&gt; format&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Let us import to our &lt;code&gt;ipython&lt;/code&gt; session two matrices in Matrix Market Exchange format from the Collection, meant to be used in a solution of a least squares problem. These matrices are located at &lt;a href=&quot;www.cise.ufl.edu/research/sparse/matrices/Bydder/mri2.html&quot; class=&quot;uri&quot;&gt;www.cise.ufl.edu/research/sparse/matrices/Bydder/mri2.html&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;We download the corresponding &lt;code&gt;tar&lt;/code&gt; bundle and &lt;code&gt;untar&lt;/code&gt; it to get two &lt;code&gt;ASCII&lt;/code&gt; files: &lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;code&gt;mri2.mtx&lt;/code&gt; (the main matrix in the least squares problem)&lt;/li&gt;
+  &lt;li&gt;&lt;code&gt;mri2_b.mtx&lt;/code&gt; (the right-hand side of the equation)&lt;/li&gt;
+&lt;/ul&gt;
 
 &lt;p&gt;The first twenty lines of the file mri2.mtx read as follows:&lt;/p&gt;
-&lt;pre&gt;`%% MatrixMarket matrix coordinate real general
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;%% MatrixMarket matrix coordinate real general
 %-----------------------------------------------------------------
 % UF Sparse Matrix Collection, Tim Davis
 % http://www.cise.ufl.edu/research/sparse/matrices/Bydder/mri2
@@ -317,72 +323,35 @@ max    31.605647  31.605175  31.556127
 63240 147456 569160
 31992 1720 .053336731395584265
 31992 1721 .15785917688901102
-31992 1722 .07903055194318191`&lt;/pre&gt;
-&lt;p&gt;The first sixteen lines are comments, and give us some information about the generation of the matrix. 
+31992 1722 .07903055194318191&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
-	&lt;ul&gt;
-		&lt;li&gt; The computer vision problem where it arose: An MRI reconstruction. &lt;/li&gt;
-		&lt;li&gt; Author information: Mark Bydder, UCSD. &lt;/li&gt;
-		&lt;li&gt; Procedures to apply to the data: Solve a least square problem \(A \cdot x - b\), and posterior visualization of the result.&lt;/li&gt;
-	&lt;/ul&gt;
-&lt;/p&gt;
+&lt;p&gt;The first sixteen lines are comments, and give us some information about the generation of the matrix.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;The computer vision problem where it arose: An MRI reconstruction.&lt;/li&gt;
+  &lt;li&gt;Author information: Mark Bydder, UCSD.&lt;/li&gt;
+  &lt;li&gt;Procedures to apply to the data: Solve a least square problem (A \cdot x - b), and posterior visualization of the result.&lt;/li&gt;
+&lt;/ul&gt;
 
 &lt;p&gt;The seventeenth line indicates the size of the matrix: 63240 rows by 147456 columns, as well as the number of non-zero entries in the data: 569160.&lt;/p&gt;
+
 &lt;p&gt;The rest of the file includes precisely 569160 lines, each containing two integer numbers, and a floating point number: These are the locations of the non-zero elements in the matrix, together with the corresponding values.&lt;/p&gt;
+
 &lt;blockquote&gt;
-&lt;p&gt;We need to take into account that these files use the `Fortran` convention of starting arrays from 1, not from 0. See `In [13]`.&lt;/p&gt;
+  &lt;p&gt;We need to take into account that these files use the &lt;code&gt;Fortran&lt;/code&gt; convention of starting arrays from 1, not from 0. See &lt;code&gt;In [13]&lt;/code&gt;.&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;p&gt;A good way to read this file into an ndarray is by means of the function `loadtxt` in `numpy`. We can then use `scipy` to transform the array into a sparse matrix with the function `coo_matrix` in the module `scipy.sparse` (`coo` stands for *coordinate* internal format).&lt;/p&gt;
-&lt;p&gt;&amp;lt;/div&amp;gt;
-&amp;lt;/div&amp;gt;
-&amp;lt;/div&amp;gt;
-&amp;lt;div class=&quot;cell border-box-sizing code_cell rendered&quot;&amp;gt;
-&amp;lt;div class=&quot;input&quot;&amp;gt;
-&amp;lt;div class=&quot;inner_cell&quot;&amp;gt;
-    &amp;lt;div class=&quot;input_area&quot;&amp;gt;
-&amp;lt;div class=&quot;highlight&quot;&amp;gt;&amp;lt;pre&amp;gt;&lt;span class=&quot;n&quot;&gt;In&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;12&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;rows&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;cols&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;data&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;np&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;loadtxt&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;mri2.mtx&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;skiprows&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;17&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; \
-   &lt;span class=&quot;o&quot;&gt;….&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;                               &lt;span class=&quot;n&quot;&gt;unpack&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;True&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;In&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;13&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;rows&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;cols&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;In&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;14&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;MRI2&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;spsp&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;coo_matrix&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;((&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;data&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;rows&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;cols&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)),&lt;/span&gt; \
-   &lt;span class=&quot;o&quot;&gt;….&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;                        &lt;span class=&quot;n&quot;&gt;shape&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;63240&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;147456&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
-&amp;lt;/pre&amp;gt;&amp;lt;/div&amp;gt;&lt;/p&gt;
 
-&lt;p&gt;&amp;lt;/div&amp;gt;
-&amp;lt;/div&amp;gt;
-&amp;lt;/div&amp;gt;&lt;/p&gt;
+&lt;p&gt;A good way to read this file into an ndarray is by means of the function &lt;code&gt;loadtxt&lt;/code&gt; in &lt;code&gt;numpy&lt;/code&gt;. We can then use &lt;code&gt;scipy&lt;/code&gt; to transform the array into a sparse matrix with the function &lt;code&gt;coo_matrix&lt;/code&gt; in the module &lt;code&gt;scipy.sparse&lt;/code&gt; (&lt;code&gt;coo&lt;/code&gt; stands for &lt;em&gt;coordinate&lt;/em&gt; internal format).&lt;/p&gt;
 
-&lt;p&gt;&amp;lt;/div&amp;gt;
-&amp;lt;div class=&quot;cell border-box-sizing text_cell rendered&quot;&amp;gt;
-&amp;lt;div class=&quot;prompt input_prompt&quot;&amp;gt;
-&amp;lt;/div&amp;gt;
-&amp;lt;div class=&quot;inner_cell&quot;&amp;gt;
-&amp;lt;div class=&quot;text_cell_render border-box-sizing rendered_html&quot;&amp;gt;&lt;/p&gt;
-&lt;p&gt;The best way to visualize the sparsity of this matrix is by means of the routine `spy` from the module `matplotlib.pyplot`.&lt;/p&gt;
-&lt;p&gt;&amp;lt;/div&amp;gt;
-&amp;lt;/div&amp;gt;
-&amp;lt;/div&amp;gt;
-&amp;lt;div class=&quot;cell border-box-sizing code_cell rendered&quot;&amp;gt;
-&amp;lt;div class=&quot;input&quot;&amp;gt;
-&amp;lt;div class=&quot;inner_cell&quot;&amp;gt;
-    &amp;lt;div class=&quot;input_area&quot;&amp;gt;
-&amp;lt;div class=&quot;highlight&quot;&amp;gt;&amp;lt;pre&amp;gt;&lt;span class=&quot;o&quot;&gt;%&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;matplotlib&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;inline&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;In&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;15&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;plt&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;figure&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;figsize&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;8&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;8&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;));&lt;/span&gt; \
-   &lt;span class=&quot;o&quot;&gt;….&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;plt&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;spy&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;MRI2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt; \
-   &lt;span class=&quot;o&quot;&gt;….&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;plt&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;show&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
-&amp;lt;/pre&amp;gt;&amp;lt;/div&amp;gt;&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-python&quot; data-lang=&quot;python&quot;&gt;&lt;span class=&quot;lineno&quot;&gt;1&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;rows&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;cols&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;data&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;np&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;loadtxt&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;mri2.mtx&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;skiprows&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;17&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;unpack&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;True&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;lineno&quot;&gt;2&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;rows&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt; 
+&lt;span class=&quot;lineno&quot;&gt;3&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;cols&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;lineno&quot;&gt;4&lt;/span&gt; 
+&lt;span class=&quot;lineno&quot;&gt;5&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;MRI2&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;spsp&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;coo_matrix&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;((&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;data&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;rows&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;cols&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)),&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;shape&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;63240&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;147456&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
-&lt;p&gt;&amp;lt;/div&amp;gt;
-&amp;lt;/div&amp;gt;
-&amp;lt;/div&amp;gt;&lt;/p&gt;
+&lt;p&gt;The best way to visualize the sparsity of this matrix is by means of the routine &lt;code&gt;spy&lt;/code&gt; from the module &lt;code&gt;matplotlib.pyplot&lt;/code&gt;.&lt;/p&gt;
 
-&lt;div class=&quot;output_wrapper&quot;&gt;
-&lt;div class=&quot;output&quot;&gt;
-
-
-&lt;div class=&quot;output_area&quot;&gt;&lt;div class=&quot;prompt&quot;&gt;&lt;/div&gt;
-
-
-&lt;div class=&quot;output_png output_subarea &quot;&gt;
+&lt;p style=&quot;text-align:center;&quot;&gt;
 &lt;img src=&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAe8AAADbCAYAAABEFRnCAAAABHNCSVQICAgIfAhkiAAAAAlwSFlz
 AAALEgAACxIB0t1+/AAAIABJREFUeJztvXvQXdV14Plb+mQhIQlhBQSSkYxky2XjUUwDCZmE9qNF
 HKY7YHeNDbimHRKYpAZNxu4Zd8ciUzPW/MNg9zAOqYxJOXFi7G4/ME450OMQA+1kWjWDicEiamTa
@@ -721,43 +690,13 @@ fgP4cA9990Z9h+nM6O71mtDMWJsYz+GSvip6Hc+e6J6HgVN0LrfaJHkx77YoS2jmIWP4UwzHRnnv
 /pZFDP9vPDbK2zAMwxgEbXJhA3xv1APogvZ8dmOjvA8dOjTqIQyVffva9jTaPCbzNDBdHjRH22Tu
 xbLshkHK2x5l6Sj67Ib/N64s0tIW7rzzTp2m6WI7duyYuulxJvPkM23ywvTJPG3yQrMyFxVpGRvl
 bRiGYRiGY2zc5oZhGIZhOEx5G4ZhGMaYYcrbMAzDMMYMU96GYRiGMWaY8jYMwzCMMeP/B/xI7JJm
-LJEDAAAAAElFTkSuQmCC
-&quot; /&gt;
-&lt;/div&gt;
+LJEDAAAAAElFTkSuQmCC &quot; /&gt;
+&lt;/p&gt;
 
-&lt;/div&gt;
+&lt;p&gt;These are the first ten lines from the second file, &lt;code&gt;mri2_b.mtx&lt;/code&gt;, which does not represent a sparse matrix, but a column vector:&lt;/p&gt;
 
-&lt;/div&gt;
-&lt;/div&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;$ head mri2_b.mtx
 
-&lt;p&gt;&amp;lt;/div&amp;gt;
-&amp;lt;div class=&quot;cell border-box-sizing text_cell rendered&quot;&amp;gt;
-&amp;lt;div class=&quot;prompt input_prompt&quot;&amp;gt;
-&amp;lt;/div&amp;gt;
-&amp;lt;div class=&quot;inner_cell&quot;&amp;gt;
-&amp;lt;div class=&quot;text_cell_render border-box-sizing rendered_html&quot;&amp;gt;&lt;/p&gt;
-&lt;p&gt;These are the first ten lines from the second file, `mri2_b.mtx`, which does not represent a sparse matrix, but a column vector:&lt;/p&gt;
-&lt;p&gt;&amp;lt;/div&amp;gt;
-&amp;lt;/div&amp;gt;
-&amp;lt;/div&amp;gt;
-&amp;lt;div class=&quot;cell border-box-sizing code_cell rendered&quot;&amp;gt;
-&amp;lt;div class=&quot;input&quot;&amp;gt;
-&amp;lt;div class=&quot;inner_cell&quot;&amp;gt;
-    &amp;lt;div class=&quot;input_area&quot;&amp;gt;
-&amp;lt;div class=&quot;highlight&quot;&amp;gt;&amp;lt;pre&amp;gt;&lt;span class=&quot;o&quot;&gt;!&lt;/span&gt;head mri2_b.mtx
-&amp;lt;/pre&amp;gt;&amp;lt;/div&amp;gt;&lt;/p&gt;
-
-&lt;p&gt;&amp;lt;/div&amp;gt;
-&amp;lt;/div&amp;gt;
-&amp;lt;/div&amp;gt;&lt;/p&gt;
-
-&lt;div class=&quot;output_wrapper&quot;&gt;
-&lt;div class=&quot;output&quot;&gt;
-
-
-&lt;div class=&quot;output_area&quot;&gt;&lt;div class=&quot;prompt&quot;&gt;&lt;/div&gt;
-&lt;div class=&quot;output_subarea output_stream output_stdout output_text&quot;&gt;
-&lt;pre&gt;
 %%MatrixMarket matrix array complex general
 %-------------------------------------------------------------------------------
 % UF Sparse Matrix Collection, Tim Davis
@@ -767,69 +706,25 @@ LJEDAAAAAElFTkSuQmCC
 63240 1
 -.07214859127998352 .037707749754190445
 -.0729086771607399 .03763720765709877
--.07373382151126862 .03766685724258423
+-.07373382151126862 .03766685724258423&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
-&lt;/pre&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-
-&lt;/div&gt;
-&lt;/div&gt;
-
-&lt;p&gt;&amp;lt;/div&amp;gt;
-&amp;lt;div class=&quot;cell border-box-sizing text_cell rendered&quot;&amp;gt;
-&amp;lt;div class=&quot;prompt input_prompt&quot;&amp;gt;
-&amp;lt;/div&amp;gt;
-&amp;lt;div class=&quot;inner_cell&quot;&amp;gt;
-&amp;lt;div class=&quot;text_cell_render border-box-sizing rendered_html&quot;&amp;gt;&lt;/p&gt;
 &lt;p&gt;Those are six commented lines with information, one more line indicating the shape of the vector (63240 rows and one column), and the rest of the lines contain two columns of floating point values: the real and imaginary parts of the corresponding data. We proceed to read this vector to memory, solve the least squares problem suggested, and obtain the following reconstruction:&lt;/p&gt;
-&lt;p&gt;&amp;lt;/div&amp;gt;
-&amp;lt;/div&amp;gt;
-&amp;lt;/div&amp;gt;
-&amp;lt;div class=&quot;cell border-box-sizing code_cell rendered&quot;&amp;gt;
-&amp;lt;div class=&quot;input&quot;&amp;gt;
-&amp;lt;div class=&quot;inner_cell&quot;&amp;gt;
-    &amp;lt;div class=&quot;input_area&quot;&amp;gt;
-&amp;lt;div class=&quot;highlight&quot;&amp;gt;&amp;lt;pre&amp;gt;&lt;span class=&quot;n&quot;&gt;In&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;16&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;r_vals&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i_vals&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;np&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;loadtxt&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;mri2_b.mtx&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;skiprows&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;7&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;unpack&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;True&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;In&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;17&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]:&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;%&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;time&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;solution&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;spspla&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;lsqr&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;MRI2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;r_vals&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1j&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;i_vals&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;In&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;18&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]:&lt;/span&gt; &lt;span class=&quot;kn&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;scipy.fftpack&lt;/span&gt; &lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;fft2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;fftshift&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;In&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;19&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;img&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;solution&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;reshape&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;384&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;384&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt; \
-   &lt;span class=&quot;o&quot;&gt;….&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;img&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;np&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;abs&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;fftshift&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;fft2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;img&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)))&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;In&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;20&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;plt&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;figure&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;figsize&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;8&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;8&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
-   &lt;span class=&quot;o&quot;&gt;….&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;plt&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;imshow&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;img&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&amp;lt;/pre&amp;gt;&amp;lt;/div&amp;gt;&lt;/p&gt;
 
-&lt;p&gt;&amp;lt;/div&amp;gt;
-&amp;lt;/div&amp;gt;
-&amp;lt;/div&amp;gt;&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-python&quot; data-lang=&quot;python&quot;&gt;&lt;span class=&quot;lineno&quot;&gt;1&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;r_vals&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i_vals&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;np&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;loadtxt&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;mri2_b.mtx&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;skiprows&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;7&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;unpack&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;True&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;lineno&quot;&gt;2&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;%&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;time&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;solution&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;spspla&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;lsqr&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;MRI2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;r_vals&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1j&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;i_vals&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
-&lt;div class=&quot;output_wrapper&quot;&gt;
-&lt;div class=&quot;output&quot;&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;CPU times: user 5min, sys: 1min 49s, total: 6min 49s
+Wall time: 6min 50s&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-python&quot; data-lang=&quot;python&quot;&gt;&lt;span class=&quot;lineno&quot;&gt;1&lt;/span&gt; &lt;span class=&quot;kn&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;scipy.fftpack&lt;/span&gt; &lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;fft2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;fftshift&lt;/span&gt;
+&lt;span class=&quot;lineno&quot;&gt;2&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;img&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;solution&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;reshape&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;384&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;384&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt; \
+&lt;span class=&quot;lineno&quot;&gt;3&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;img&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;np&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;abs&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;fftshift&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;fft2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;img&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)))&lt;/span&gt;
+&lt;span class=&quot;lineno&quot;&gt;4&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;plt&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;figure&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;figsize&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;8&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;8&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
+&lt;span class=&quot;lineno&quot;&gt;5&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;plt&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;imshow&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;img&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
-&lt;div class=&quot;output_area&quot;&gt;&lt;div class=&quot;prompt&quot;&gt;&lt;/div&gt;
-&lt;div class=&quot;output_subarea output_stream output_stdout output_text&quot;&gt;
-&lt;pre&gt;
-CPU times: user 5min, sys: 1min 49s, total: 6min 49s
-Wall time: 6min 50s
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;&amp;lt;matplotlib.image.AxesImage at 0x11218c250&amp;gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
-&lt;/pre&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-
-&lt;div class=&quot;output_area&quot;&gt;
-&lt;div class=&quot;output_text output_subarea output_pyout&quot;&gt;
-&lt;pre&gt;
-&amp;lt;matplotlib.image.AxesImage at 0x11218c250&amp;gt;
-&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;/div&gt;
-
-&lt;div class=&quot;output_area&quot;&gt;&lt;div class=&quot;prompt&quot;&gt;&lt;/div&gt;
-
-
-&lt;div class=&quot;output_png output_subarea &quot;&gt;
+&lt;p style=&quot;text-align:center;&quot;&gt;
 &lt;img src=&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAeIAAAHfCAYAAACMDdvQAAAABHNCSVQICAgIfAhkiAAAAAlwSFlz
 AAALEgAACxIB0t1+/AAAIABJREFUeJzsvfmPXNmV5/d578W+ZWTkvjHJ5E5WqTaqJJVUakolqXo0
 3ZZsN8bdM4AB278YHo9hAzb8k+F/wA34B8PwDzOA4Rmjp23PjKcXSS2p1KXWVqXaWAuLLJJJMslk
@@ -4908,173 +4803,95 @@ Bd5m9ObzY/spYyPIozmfDxsdhoVt38MS57/+sO//KfbrBIbQWwbeVd+wSrDfxYpNvw5MHnRb/wp9
 5zdGbU6x01Z+EPp5Dvgn4fVRm88H9fORn8+0xGUqqaSSSiqpHKCklbVSSSWVVFJJ5QAlVcSppJJK
 KqmkcoCSKuJUUkkllVRSOUBJFXEqqaSSSiqpHKCkijiVVFJJJZVUDlBSRZxKKqmkkkoqByipIk4l
 lVRSSSWVA5RUEaeSSiqppJLKAcr/BkPRYCZW2y4rAAAAAElFTkSuQmCC
-&quot; /&gt;
-&lt;/div&gt;
+&quot; /&gt; 
+&lt;/p&gt;
 
-&lt;/div&gt;
-
-&lt;/div&gt;
-&lt;/div&gt;
-
-&lt;p&gt;&amp;lt;/div&amp;gt;
-&amp;lt;div class=&quot;cell border-box-sizing text_cell rendered&quot;&amp;gt;
-&amp;lt;div class=&quot;prompt input_prompt&quot;&amp;gt;
-&amp;lt;/div&amp;gt;
-&amp;lt;div class=&quot;inner_cell&quot;&amp;gt;
-&amp;lt;div class=&quot;text_cell_render border-box-sizing rendered_html&quot;&amp;gt;&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;If interested in the theory behind the creation of this matrix and the particulars of this problem, read the article *On the optimality of the Gridding Reconstruction Algorithm*, by H. Sedarat and D. G. Nishimura, published in IEEE Trans. Medical Imaging, vol 19, no 4, pp. 306-317, 2000.&lt;/p&gt;
+  &lt;p&gt;If interested in the theory behind the creation of this matrix and the particulars of this problem, read the article &lt;em&gt;On the optimality of the Gridding Reconstruction Algorithm&lt;/em&gt;, by H. Sedarat and D. G. Nishimura, published in IEEE Trans. Medical Imaging, vol 19, no 4, pp. 306-317, 2000.&lt;/p&gt;
 &lt;/blockquote&gt;
+
 &lt;p&gt;For matrices with a good structure, which are going to be exclusively involved in matrix multiplications, it is often possible to store the objects without allocating almost any space. Consider the following example:&lt;/p&gt;
-&lt;p&gt;A horizontal earthquake oscillation affects each floor of a tall building, depending on the natural frequencies of oscillation of the floors. If we make certain assumptions, a model to quantize the oscillations on buildings with N floors can be obtained as a second-order system of N differential equations by *competition*: the Newton&#39;s second law force is set equal to the sum of Hooke&#39;s forces, and the external force due to the earthquake wave.&lt;/p&gt;
-&lt;p&gt;These are the assumptions we need: 
 
-	&lt;ul&gt;
-		&lt;li&gt;Each floor is considered a point of mass located at its center-of-mass. The floors have masses \(m[1], m[2], ..., m[N]\). &lt;/li&gt;
-		&lt;li&gt;Each floor is restored to its equilibrium position by a linear restoring force (Hooke&#39;s \(-k \times \text{elongation}\)). The Hooke&#39;s constants for the floors are \(k[1], k[2], ..., k[N]\). &lt;/li&gt;
-		&lt;li&gt;The locations of masses representing the oscillation of the floors are \(x[1], x[2], ..., x[N]\). We assume all of them functions of time, and that at equilibrium they are all equal to zero. &lt;/li&gt;
-		&lt;li&gt;For simplicity of exposition, we are going to assume no friction: all damping effects on the floors are ignored. &lt;/li&gt;
-		&lt;li&gt;The equations of a floor depend only on the neighboring floors.&lt;/li&gt;
-	&lt;/ul&gt;
-&lt;/p&gt;
+&lt;p&gt;A horizontal earthquake oscillation affects each floor of a tall building, depending on the natural frequencies of oscillation of the floors. If we make certain assumptions, a model to quantize the oscillations on buildings with N floors can be obtained as a second-order system of N differential equations by &lt;em&gt;competition&lt;/em&gt;: the Newton’s second law force is set equal to the sum of Hooke’s forces, and the external force due to the earthquake wave.&lt;/p&gt;
 
-&lt;p&gt;Set \(M\), the mass matrix, to be a diagonal matrix containing the floor masses on its diagonal. Set \(K\), the Hooke&#39;s matrix, to be a tri-diagonal matrix with the following structure: for each row \(j\), all the entries are zero except 
+&lt;p&gt;These are the assumptions we need: &lt;/p&gt;
 
-	&lt;ul&gt;
-		&lt;li&gt;Column \(j-1\), which we set to be \(k[j+1]\), &lt;/li&gt;
-		&lt;li&gt;Column \(j\), which we set to \(-k[j+1]-k[j+1]\), and &lt;/li&gt;
-		&lt;li&gt;Column \(j+1\), which we set to \(k[j+2]\).&lt;/li&gt;
-	&lt;/ul&gt;
-&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Each floor is considered a point of mass located at its center-of-mass. The floors have masses (m_1, m_2, …, m_N). &lt;/li&gt;
+  &lt;li&gt;Each floor is restored to its equilibrium position by a linear restoring force (Hooke’s (-k \times \text{elongation})). The Hooke’s constants for the floors are (k_1, k_2, …, k_N). &lt;/li&gt;
+  &lt;li&gt;The locations of masses representing the oscillation of the floors are (x_1, x_2, …, x_N). We assume all of them functions of time, and that at equilibrium they are all equal to zero. &lt;/li&gt;
+  &lt;li&gt;For simplicity of exposition, we are going to assume no friction: all damping effects on the floors are ignored. &lt;/li&gt;
+  &lt;li&gt;The equations of a floor depend only on the neighboring floors.&lt;/li&gt;
+&lt;/ul&gt;
 
-&lt;p&gt;Set \(H\) to be a column vector containing the external force on each floor due to the earthquake, and \(X\) the column vector containing the functions \(x[j]\).&lt;/p&gt;
-&lt;p&gt;We have then the system \(M \cdot X&amp;#39;&amp;#39; = K \cdot X + H\). The Homogeneous part of this system is the product of the inverse of \(M\) with \(K\), which we denote \(A\).&lt;/p&gt;
-&lt;p&gt;To solve the homogeneous linear second-order system \(X&amp;#39;&amp;#39; = A \cdot X\), we define the variable \(Y\) to contain \(2N\) entries: all \(N\) functions \(x[j]\), followed by their derivatives \(x&amp;#39;[j]\). Any solution of this second-order linear system has a corresponding solution on the first-order linear system \(Y&amp;#39; = C \cdot Y\), where \(C\) is a block matrix of size \(2N \times 2N\). This matrix \(C\) is composed by a block of size \(N \times N\) containing only zeros, followed horizontally by the identity (of size \(N \times N\)), and below these two, the matrix \(A\) followed horizontally by another \(N \times N\) block of zeros.&lt;/p&gt;
-&lt;p&gt;It is not necessary to store this matrix \(C\) into memory, or any of its factors or blocks. Instead, we will make use of its structure, and use a **Linear Operator** to represent it. Minimal data is then needed to generate this operator (only the values of the masses and the Hooke&#39;s coefficients): much less than any matrix representation of it.&lt;/p&gt;
-&lt;p&gt;Let us show a concrete example with 6 floors. We indicate first their masses and Hooke&#39;s constants, and proceed to construct a representation of \(A\) as a linear operator:&lt;/p&gt;
-&lt;p&gt;&amp;lt;/div&amp;gt;
-&amp;lt;/div&amp;gt;
-&amp;lt;/div&amp;gt;
-&amp;lt;div class=&quot;cell border-box-sizing code_cell rendered&quot;&amp;gt;
-&amp;lt;div class=&quot;input&quot;&amp;gt;
-&amp;lt;div class=&quot;inner_cell&quot;&amp;gt;
-    &amp;lt;div class=&quot;input_area&quot;&amp;gt;
-&amp;lt;div class=&quot;highlight&quot;&amp;gt;&amp;lt;pre&amp;gt;&lt;span class=&quot;n&quot;&gt;In&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;21&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;m&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;np&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;array&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;([&lt;/span&gt;&lt;span class=&quot;mf&quot;&gt;56.&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;56.&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;56.&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;54.&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;54.&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;53.&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]);&lt;/span&gt; \
-   &lt;span class=&quot;o&quot;&gt;….&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;k&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;np&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;array&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;([&lt;/span&gt;&lt;span class=&quot;mf&quot;&gt;561.&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;562.&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;560.&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;541.&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;542.&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;530.&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;])&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;In&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;22&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]:&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;Axv&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;v&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
-   &lt;span class=&quot;o&quot;&gt;….&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;     &lt;span class=&quot;k&quot;&gt;global&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;k&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;m&lt;/span&gt;
-   &lt;span class=&quot;o&quot;&gt;….&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;     &lt;span class=&quot;n&quot;&gt;w&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;v&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;copy&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
-   &lt;span class=&quot;o&quot;&gt;….&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;     &lt;span class=&quot;n&quot;&gt;w&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;k&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;v&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;k&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;k&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;])&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;v&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;])&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;m&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
-   &lt;span class=&quot;o&quot;&gt;….&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;     &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;j&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;range&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;len&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;v&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
-   &lt;span class=&quot;o&quot;&gt;….&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;         &lt;span class=&quot;n&quot;&gt;w&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;j&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;k&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;j&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;v&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;j&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;k&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;j&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;v&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;j&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt; \
-   &lt;span class=&quot;o&quot;&gt;….&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;                &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;k&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;j&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;k&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;j&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;])&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;v&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;j&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
-   &lt;span class=&quot;o&quot;&gt;….&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;         &lt;span class=&quot;n&quot;&gt;w&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;j&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;/=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;m&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;j&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
-   &lt;span class=&quot;o&quot;&gt;….&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;     &lt;span class=&quot;n&quot;&gt;w&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;k&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;v&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;v&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;])&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;m&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
-   &lt;span class=&quot;o&quot;&gt;….&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;     &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;w&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;In&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;23&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;A&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;spspla&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;LinearOperator&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;((&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;6&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;6&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;matvec&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Axv&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; \
-   &lt;span class=&quot;o&quot;&gt;….&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;matmat&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Axv&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;dtype&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;np&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;float64&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&amp;lt;/pre&amp;gt;&amp;lt;/div&amp;gt;&lt;/p&gt;
+&lt;p&gt;Set (M), the mass matrix, to be a diagonal matrix containing the floor masses on its diagonal. Set (K), the Hooke’s matrix, to be a tri-diagonal matrix with the following structure: for each row (j), all the entries are zero except &lt;/p&gt;
 
-&lt;p&gt;&amp;lt;/div&amp;gt;
-&amp;lt;/div&amp;gt;
-&amp;lt;/div&amp;gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Column (j-1), which we set to be (k_{j+1}),&lt;/li&gt;
+  &lt;li&gt;Column (j), which we set to (-k&lt;em&gt;{j+1}-k&lt;/em&gt;{j+1}), and&lt;/li&gt;
+  &lt;li&gt;Column (j+1), which we set to (k_{j+2}).&lt;/li&gt;
+&lt;/ul&gt;
 
-&lt;p&gt;&amp;lt;/div&amp;gt;
-&amp;lt;div class=&quot;cell border-box-sizing text_cell rendered&quot;&amp;gt;
-&amp;lt;div class=&quot;prompt input_prompt&quot;&amp;gt;
-&amp;lt;/div&amp;gt;
-&amp;lt;div class=&quot;inner_cell&quot;&amp;gt;
-&amp;lt;div class=&quot;text_cell_render border-box-sizing rendered_html&quot;&amp;gt;&lt;/p&gt;
-&lt;p&gt;The construction of \(C\) is very simple now (much simpler than its matrix!):&lt;/p&gt;
-&lt;p&gt;&amp;lt;/div&amp;gt;
-&amp;lt;/div&amp;gt;
-&amp;lt;/div&amp;gt;
-&amp;lt;div class=&quot;cell border-box-sizing code_cell rendered&quot;&amp;gt;
-&amp;lt;div class=&quot;input&quot;&amp;gt;
-&amp;lt;div class=&quot;inner_cell&quot;&amp;gt;
-    &amp;lt;div class=&quot;input_area&quot;&amp;gt;
-&amp;lt;div class=&quot;highlight&quot;&amp;gt;&amp;lt;pre&amp;gt;&lt;span class=&quot;n&quot;&gt;In&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;25&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]:&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;Cxv&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;v&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
-   &lt;span class=&quot;o&quot;&gt;….&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;     &lt;span class=&quot;n&quot;&gt;n&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;len&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;v&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;
-   &lt;span class=&quot;o&quot;&gt;….&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;     &lt;span class=&quot;n&quot;&gt;w&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;v&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;copy&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
-   &lt;span class=&quot;o&quot;&gt;….&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;     &lt;span class=&quot;n&quot;&gt;w&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[:&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;n&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;v&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;n&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:]&lt;/span&gt;
-   &lt;span class=&quot;o&quot;&gt;….&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;     &lt;span class=&quot;n&quot;&gt;w&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;n&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;A&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;v&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[:&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;n&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
-   &lt;span class=&quot;o&quot;&gt;….&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;     &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;w&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;In&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;26&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;C&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;spspla&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;LinearOperator&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;((&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;12&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;12&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;matvec&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Cxv&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;matmat&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Cxv&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;dtype&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;np&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;float64&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&amp;lt;/pre&amp;gt;&amp;lt;/div&amp;gt;&lt;/p&gt;
+&lt;p&gt;Set (H) to be a column vector containing the external force on each floor due to the earthquake, and (X) the column vector containing the functions (x_j).&lt;/p&gt;
 
-&lt;p&gt;&amp;lt;/div&amp;gt;
-&amp;lt;/div&amp;gt;
-&amp;lt;/div&amp;gt;&lt;/p&gt;
+&lt;p&gt;We have then the system (M \cdot X`` = K \cdot X + H). The Homogeneous part of this system is the product of the inverse of (M) with (K), which we denote (A).&lt;/p&gt;
 
-&lt;p&gt;&amp;lt;/div&amp;gt;
-&amp;lt;div class=&quot;cell border-box-sizing text_cell rendered&quot;&amp;gt;
-&amp;lt;div class=&quot;prompt input_prompt&quot;&amp;gt;
-&amp;lt;/div&amp;gt;
-&amp;lt;div class=&quot;inner_cell&quot;&amp;gt;
-&amp;lt;div class=&quot;text_cell_render border-box-sizing rendered_html&quot;&amp;gt;&lt;/p&gt;
-&lt;p&gt;A solution of this homogeneous system comes in the form of an *action of the exponential* of \(C\): \(Y(t) = \operatorname{expm}(C t) \cdot Y(0)\), where \(\operatorname{expm}()\) here denotes a matrix exponential function. In `scipy`, this operation is performed with the routine `expm_multiply` in the module `scipy.sparse.linalg`.&lt;/p&gt;
-&lt;p&gt;For example, in our case, given the initial value containing the values \(x[1](0)=0, \dots, x[N](0)=0, x&amp;#39;[1](0)=1, \dots, x&amp;#39;[N](0)=1\), if we require a solution \(Y(t)\) for values of \(t\) between 0 and 1 in steps of size 0.1, we could issue the following:&lt;/p&gt;
+&lt;p&gt;To solve the homogeneous linear second-order system (X`` = A \cdot X), we define the variable (Y) to contain (2N) entries: all (N) functions (x_j), followed by their derivatives (x&lt;code&gt;_j\). Any solution of this second-order linear system has a corresponding solution on the first-order linear system \(Y&lt;/code&gt; = C \cdot Y), where (C) is a block matrix of size (2N \times 2N). This matrix (C) is composed by a block of size (N \times N) containing only zeros, followed horizontally by the identity (of size (N \times N)), and below these two, the matrix (A) followed horizontally by another (N \times N) block of zeros.&lt;/p&gt;
+
+&lt;p&gt;It is not necessary to store this matrix (C) into memory, or any of its factors or blocks. Instead, we will make use of its structure, and use a &lt;strong&gt;Linear Operator&lt;/strong&gt; to represent it. Minimal data is then needed to generate this operator (only the values of the masses and the Hooke’s coefficients): much less than any matrix representation of it.&lt;/p&gt;
+
+&lt;p&gt;Let us show a concrete example with 6 floors. We indicate first their masses and Hooke’s constants, and proceed to construct a representation of (A) as a linear operator:&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-python&quot; data-lang=&quot;python&quot;&gt;&lt;span class=&quot;lineno&quot;&gt; 1&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;m&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;np&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;array&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;([&lt;/span&gt;&lt;span class=&quot;mf&quot;&gt;56.&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;56.&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;56.&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;54.&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;54.&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;53.&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;])&lt;/span&gt;
+&lt;span class=&quot;lineno&quot;&gt; 2&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;k&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;np&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;array&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;([&lt;/span&gt;&lt;span class=&quot;mf&quot;&gt;561.&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;562.&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;560.&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;541.&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;542.&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;530.&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;])&lt;/span&gt;
+&lt;span class=&quot;lineno&quot;&gt; 3&lt;/span&gt; 
+&lt;span class=&quot;lineno&quot;&gt; 4&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;Axv&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;v&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+&lt;span class=&quot;lineno&quot;&gt; 5&lt;/span&gt;     &lt;span class=&quot;k&quot;&gt;global&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;k&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;m&lt;/span&gt;
+&lt;span class=&quot;lineno&quot;&gt; 6&lt;/span&gt;     &lt;span class=&quot;n&quot;&gt;w&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;v&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;copy&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+&lt;span class=&quot;lineno&quot;&gt; 7&lt;/span&gt;     &lt;span class=&quot;n&quot;&gt;w&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;k&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;v&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;k&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;k&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;])&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;v&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;])&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;m&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
+&lt;span class=&quot;lineno&quot;&gt; 8&lt;/span&gt;     &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;j&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;range&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;len&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;v&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+&lt;span class=&quot;lineno&quot;&gt; 9&lt;/span&gt;     &lt;span class=&quot;n&quot;&gt;w&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;j&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;k&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;j&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;v&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;j&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;k&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;j&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;v&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;j&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;k&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;j&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;k&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;j&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;])&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;v&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;j&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
+&lt;span class=&quot;lineno&quot;&gt;10&lt;/span&gt;     &lt;span class=&quot;n&quot;&gt;w&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;j&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;/=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;m&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;j&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
+&lt;span class=&quot;lineno&quot;&gt;11&lt;/span&gt;     &lt;span class=&quot;n&quot;&gt;w&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;k&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;v&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;v&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;])&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;m&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
+&lt;span class=&quot;lineno&quot;&gt;12&lt;/span&gt;     &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;w&lt;/span&gt;
+&lt;span class=&quot;lineno&quot;&gt;13&lt;/span&gt; 
+&lt;span class=&quot;lineno&quot;&gt;14&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;A&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;spspla&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;LinearOperator&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;((&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;6&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;6&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;matvec&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Axv&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;matmat&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Axv&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;dtype&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;np&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;float64&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;The construction of (C) is very simple now (much simpler than its matrix!):&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-python&quot; data-lang=&quot;python&quot;&gt;&lt;span class=&quot;lineno&quot;&gt;1&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;Cxv&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;v&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+&lt;span class=&quot;lineno&quot;&gt;2&lt;/span&gt;     &lt;span class=&quot;n&quot;&gt;n&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;len&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;v&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;
+&lt;span class=&quot;lineno&quot;&gt;3&lt;/span&gt;     &lt;span class=&quot;n&quot;&gt;w&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;v&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;copy&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+&lt;span class=&quot;lineno&quot;&gt;4&lt;/span&gt;     &lt;span class=&quot;n&quot;&gt;w&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[:&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;n&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;v&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;n&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:]&lt;/span&gt;
+&lt;span class=&quot;lineno&quot;&gt;5&lt;/span&gt;     &lt;span class=&quot;n&quot;&gt;w&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;n&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;A&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;v&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[:&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;n&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
+&lt;span class=&quot;lineno&quot;&gt;6&lt;/span&gt;     &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;w&lt;/span&gt;
+&lt;span class=&quot;lineno&quot;&gt;7&lt;/span&gt; 
+&lt;span class=&quot;lineno&quot;&gt;8&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;C&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;spspla&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;LinearOperator&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;((&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;12&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;12&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;matvec&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Cxv&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;matmat&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Cxv&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;dtype&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;np&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;float64&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;A solution of this homogeneous system comes in the form of an &lt;em&gt;action of the exponential&lt;/em&gt; of (C): (Y(t) = \operatorname{expm}(C t) \cdot Y(0)), where (\operatorname{expm}()) here denotes a matrix exponential function. In &lt;code&gt;scipy&lt;/code&gt;, this operation is performed with the routine &lt;code&gt;expm_multiply&lt;/code&gt; in the module &lt;code&gt;scipy.sparse.linalg&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;For example, in our case, given the initial value containing the values (x_1(0)=0, \dots, x_N(0)=0, x&lt;code&gt;_1(0)=1, \dots, x&lt;/code&gt;_N(0)=1), if we require a solution (Y(t)) for values of (t) between 0 and 1 in steps of size 0.1, we could issue the following:&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-python&quot; data-lang=&quot;python&quot;&gt;&lt;span class=&quot;lineno&quot;&gt;1&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;initial_condition&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;np&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;zeros&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;12&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;lineno&quot;&gt;2&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;initial_condition&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;6&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;
+&lt;span class=&quot;lineno&quot;&gt;3&lt;/span&gt; 
+&lt;span class=&quot;lineno&quot;&gt;4&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Y&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;spspla&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;expm_multiply&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;C&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;matmat&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;np&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;eye&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;12&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)),&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;np&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ones&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;12&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;start&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;stop&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;num&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;10&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
 &lt;blockquote&gt;
-&lt;p&gt;It has been reported in some installations that, in the next step, a matrix for \(C\) must be given instead of the actual linear operator (thus contradicting the manual). If this is the case in your system, simply change \(C\) in the next lines, to its matrix representation.&lt;/p&gt;
+  &lt;p&gt;It has been reported in some installations that, in the next step, a matrix for (C) must be given instead of the actual linear operator (thus contradicting the manual). If this is the case in your system, simply change (C) in the next lines, to its matrix representation.&amp;lt;/p&amp;gt;&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;p&gt;&amp;lt;/div&amp;gt;
-&amp;lt;/div&amp;gt;
-&amp;lt;/div&amp;gt;
-&amp;lt;div class=&quot;cell border-box-sizing code_cell rendered&quot;&amp;gt;
-&amp;lt;div class=&quot;input&quot;&amp;gt;
-&amp;lt;div class=&quot;inner_cell&quot;&amp;gt;
-    &amp;lt;div class=&quot;input_area&quot;&amp;gt;
-&amp;lt;div class=&quot;highlight&quot;&amp;gt;&amp;lt;pre&amp;gt;&lt;span class=&quot;n&quot;&gt;In&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;27&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;initial_condition&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;np&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;zeros&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;12&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt; \
-   &lt;span class=&quot;o&quot;&gt;….&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;initial_condition&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;6&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;In&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;28&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Y&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;spspla&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;expm_multiply&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;C&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;matmat&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;np&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;eye&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;12&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)),&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;np&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ones&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;12&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;start&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;stop&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;num&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;10&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&amp;lt;/pre&amp;gt;&amp;lt;/div&amp;gt;&lt;/p&gt;
 
-&lt;p&gt;&amp;lt;/div&amp;gt;
-&amp;lt;/div&amp;gt;
-&amp;lt;/div&amp;gt;&lt;/p&gt;
-
-&lt;p&gt;&amp;lt;/div&amp;gt;
-&amp;lt;div class=&quot;cell border-box-sizing text_cell rendered&quot;&amp;gt;
-&amp;lt;div class=&quot;prompt input_prompt&quot;&amp;gt;
-&amp;lt;/div&amp;gt;
-&amp;lt;div class=&quot;inner_cell&quot;&amp;gt;
-&amp;lt;div class=&quot;text_cell_render border-box-sizing rendered_html&quot;&amp;gt;&lt;/p&gt;
 &lt;p&gt;The oscillations of the six floors during the first second can then be calculated and plotted as follows.&lt;/p&gt;
-&lt;p&gt;&amp;lt;/div&amp;gt;
-&amp;lt;/div&amp;gt;
-&amp;lt;/div&amp;gt;
-&amp;lt;div class=&quot;cell border-box-sizing code_cell rendered&quot;&amp;gt;
-&amp;lt;div class=&quot;input&quot;&amp;gt;
-&amp;lt;div class=&quot;inner_cell&quot;&amp;gt;
-    &amp;lt;div class=&quot;input_area&quot;&amp;gt;
-&amp;lt;div class=&quot;highlight&quot;&amp;gt;&amp;lt;pre&amp;gt;&lt;span class=&quot;n&quot;&gt;In&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;29&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;plt&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;figure&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;figsize&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;8&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;8&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
-   &lt;span class=&quot;o&quot;&gt;….&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;plt&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;plot&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;np&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;linspace&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;10&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Y&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[:,:&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;6&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]);&lt;/span&gt; \
-   &lt;span class=&quot;o&quot;&gt;….&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;plt&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;xlabel&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&#39;time (in seconds)&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt; \
-   &lt;span class=&quot;o&quot;&gt;….&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;plt&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ylabel&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&#39;oscillation&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt; \
-   &lt;span class=&quot;o&quot;&gt;….&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;plt&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;legend&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;np&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;arange&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;6&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;loc&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&amp;lt;/pre&amp;gt;&amp;lt;/div&amp;gt;&lt;/p&gt;
 
-&lt;p&gt;&amp;lt;/div&amp;gt;
-&amp;lt;/div&amp;gt;
-&amp;lt;/div&amp;gt;&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-python&quot; data-lang=&quot;python&quot;&gt;&lt;span class=&quot;lineno&quot;&gt;1&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;plt&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;figure&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;figsize&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;8&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;8&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
+&lt;span class=&quot;lineno&quot;&gt;2&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;plt&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;plot&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;np&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;linspace&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;10&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Y&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[:,:&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;6&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]);&lt;/span&gt; \
+&lt;span class=&quot;lineno&quot;&gt;3&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;plt&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;xlabel&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;#39;time (in seconds)&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt; \
+&lt;span class=&quot;lineno&quot;&gt;4&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;plt&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ylabel&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;#39;oscillation&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt; \
+&lt;span class=&quot;lineno&quot;&gt;5&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;plt&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;legend&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;np&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;arange&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;6&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;loc&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
-&lt;div class=&quot;output_wrapper&quot;&gt;
-&lt;div class=&quot;output&quot;&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;&amp;lt;matplotlib.legend.Legend at 0x10a28bd90&amp;gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
-
-&lt;div class=&quot;output_area&quot;&gt;
-&lt;div class=&quot;output_text output_subarea output_pyout&quot;&gt;
-&lt;pre&gt;
-&amp;lt;matplotlib.legend.Legend at 0x10a28bd90&amp;gt;
-&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;/div&gt;
-
-&lt;div class=&quot;output_area&quot;&gt;&lt;div class=&quot;prompt&quot;&gt;&lt;/div&gt;
-
-
-&lt;div class=&quot;output_png output_subarea &quot;&gt;
+&lt;p style=&quot;text_align:center;&quot;&gt;
 &lt;img src=&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAfgAAAHxCAYAAACBJ663AAAABHNCSVQICAgIfAhkiAAAAAlwSFlz
 AAALEgAACxIB0t1+/AAAIABJREFUeJzs3Xd8lfX5//HXfc7J3nuTQQgQIGGDEFCGIorWVQfiqLt2
 +tPWrm93bZ2trau1rdq6K7WKExdgAGUmQAIkIQkJ2Xvn5Iz798c5HBKWIeSM++R6Ph48TO7c5+Rz
@@ -5647,93 +5464,54 @@ fzK+i/A24Ds7cLL/8d3GZq2dD1wB/Aff0fwmfGcKtjge+MkYUw08DpxjrW3w/+5XwDO7+BtFIoqJ
 zDkvRATAGHMJMMhae12oYwk1Y0wm8CUw1H9xnkhEU4EXERGJQDpFLyIiEoFU4EVERCKQCryIiEgE
 UoEXERGJQCrwIiIiEUgFXkREJAKpwIuIiESg/w8PMJd+8cpMGgAAAABJRU5ErkJggg==
 &quot; /&gt;
-&lt;/div&gt;
-
-&lt;/div&gt;
-
-&lt;/div&gt;
-&lt;/div&gt;
-
-&lt;p&gt;&amp;lt;/div&amp;gt;
-&amp;lt;div class=&quot;cell border-box-sizing text_cell rendered&quot;&amp;gt;
-&amp;lt;div class=&quot;prompt input_prompt&quot;&amp;gt;
-&amp;lt;/div&amp;gt;
-&amp;lt;div class=&quot;inner_cell&quot;&amp;gt;
-&amp;lt;div class=&quot;text_cell_render border-box-sizing rendered_html&quot;&amp;gt;&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;For more details about systems of differential equations, and how to solve them with actions of exponentials, read for example the excellent book *Elementary Differential Equations* 10 ed., by William E. Boyce and Richard C. DiPrima. Wiley, 2012.&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;These three examples illustrate the goal of this first chapter: **Numerical Linear Algebra**. In `python` this is accomplished first by storing the data in matrix form, or as a related linear operator, by means of any of the following classes: 
-
-	&lt;ul&gt;
-		&lt;li&gt;`numpy.ndarray` (making sure that they are two-dimensional) &lt;/li&gt;
-		&lt;li&gt;`numpy.matrix` &lt;/li&gt;
-		&lt;li&gt;`scipy.sparse.bsr_matrix` (Block Sparse Row matrix) &lt;/li&gt;
-		&lt;li&gt;`scipy.sparse.coo_matrix` (Sparse Matrix in **COO**rdinate format) &lt;/li&gt;
-		&lt;li&gt;`scipy.sparse.csc_matrix` (Compressed Sparse Column matrix) &lt;/li&gt;
-		&lt;li&gt;`scipy.sparse.csr_matrix` (Compressed Sparse Row matrix) &lt;/li&gt;
-		&lt;li&gt;`scipy.sparse.dia_matrix` (Sparse matrix with **DIA**gonal storage) &lt;/li&gt;
-		&lt;li&gt;`scipy.sparse.dok_matrix` (Sparse matrix based on a Dictionary of Keys) &lt;/li&gt;
-		&lt;li&gt;`scipy.sparse.lil_matrix` (Sparse matrix based on a linked list) &lt;/li&gt;
-		&lt;li&gt;`scipy.sparse.linalg.LinearOperator`&lt;/li&gt;
-	&lt;/ul&gt;
 &lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;For more details about systems of differential equations, and how to solve them with actions of exponentials, read for example the excellent book &lt;em&gt;Elementary Differential Equations&lt;/em&gt; 10 ed., by William E. Boyce and Richard C. DiPrima. Wiley, 2012.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;These three examples illustrate the goal of this first chapter: &lt;strong&gt;Numerical Linear Algebra&lt;/strong&gt;. In &lt;code&gt;python&lt;/code&gt; this is accomplished first by storing the data in matrix form, or as a related linear operator, by means of any of the following classes: &lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;numpy.ndarray&lt;/code&gt; (making sure that they are two-dimensional) 
+&lt;code&gt;numpy.matrix&lt;/code&gt; 
+&lt;code&gt;scipy.sparse.bsr_matrix&lt;/code&gt; (Block Sparse Row matrix) 
+&lt;code&gt;scipy.sparse.coo_matrix&lt;/code&gt; (Sparse Matrix in &lt;strong&gt;COO&lt;/strong&gt;rdinate format) 
+&lt;code&gt;scipy.sparse.csc_matrix&lt;/code&gt; (Compressed Sparse Column matrix) 
+&lt;code&gt;scipy.sparse.csr_matrix&lt;/code&gt; (Compressed Sparse Row matrix) 
+&lt;code&gt;scipy.sparse.dia_matrix&lt;/code&gt; (Sparse matrix with &lt;strong&gt;DIA&lt;/strong&gt;gonal storage) 
+&lt;code&gt;scipy.sparse.dok_matrix&lt;/code&gt; (Sparse matrix based on a Dictionary of Keys) 
+&lt;code&gt;scipy.sparse.lil_matrix&lt;/code&gt; (Sparse matrix based on a linked list) 
+&lt;code&gt;scipy.sparse.linalg.LinearOperator&lt;/code&gt;&lt;/p&gt;
 
 &lt;p&gt;As we have seen in the examples, the choice of different classes obeys mainly to the sparsity of the data, and the algorithms we are to apply on them.&lt;/p&gt;
-&lt;p&gt;This choice then dictates the modules that we use for the different algorithms: `scipy.linalg` for generic matrices, and both `scipy.sparse`, `scipy.sparse.linalg`, for sparse matrices or linear operators. These three `scipy` modules are compiled on top of the highly optimized computer libraries `BLAS` (written in `Fortran77`), `LAPACK` (in `Fortran90`), `ARPACK` (in `Fortran77`), and `SuperLU` (in `C`).&lt;/p&gt;
+
+&lt;p&gt;This choice then dictates the modules that we use for the different algorithms: &lt;code&gt;scipy.linalg&lt;/code&gt; for generic matrices, and both &lt;code&gt;scipy.sparse&lt;/code&gt;, &lt;code&gt;scipy.sparse.linalg&lt;/code&gt;, for sparse matrices or linear operators. These three &lt;code&gt;scipy&lt;/code&gt; modules are compiled on top of the highly optimized computer libraries &lt;code&gt;BLAS&lt;/code&gt; (written in &lt;code&gt;Fortran77&lt;/code&gt;), &lt;code&gt;LAPACK&lt;/code&gt; (in &lt;code&gt;Fortran90&lt;/code&gt;), &lt;code&gt;ARPACK&lt;/code&gt; (in &lt;code&gt;Fortran77&lt;/code&gt;), and &lt;code&gt;SuperLU&lt;/code&gt; (in &lt;code&gt;C&lt;/code&gt;).&lt;/p&gt;
+
 &lt;blockquote&gt;
-&lt;p&gt;For a better understanding of these underlying packages, read the description and documentation from their creators: 
+  &lt;p&gt;For a better understanding of these underlying packages, read the description and documentation from their creators: &lt;/p&gt;
 
-	&lt;ul&gt;
-		&lt;li&gt;`BLAS`: &lt;a href=&quot;netlib.org/blas/faq.html&quot; class=&quot;uri&quot;&gt;netlib.org/blas/faq.html&lt;/a&gt; &lt;/li&gt;
-		&lt;li&gt;`LAPACK`: &lt;a href=&quot;netlib.org/lapack/lapack-3.2.html&quot; class=&quot;uri&quot;&gt;netlib.org/lapack/lapack-3.2.html&lt;/a&gt; &lt;/li&gt;
-		&lt;li&gt;`ARPACK`: &lt;a href=&quot;www.caam.rice.edu/software/ARPACK/&quot; class=&quot;uri&quot;&gt;www.caam.rice.edu/software/ARPACK/&lt;/a&gt; &lt;/li&gt;
-		&lt;li&gt;`SuperLU`: &lt;a href=&quot;crd-legacy.lbl.gov/~xiaoye/SuperLU/&quot; class=&quot;uri&quot;&gt;crd-legacy.lbl.gov/~xiaoye/SuperLU/&lt;/a&gt;&lt;/li&gt;
-	&lt;/ul&gt;
-&lt;/p&gt;
-
+  &lt;ul&gt;
+    &lt;li&gt;&lt;code&gt;BLAS&lt;/code&gt;: &lt;a href=&quot;netlib.org/blas/faq.html&quot; class=&quot;uri&quot;&gt;netlib.org/blas/faq.html&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;code&gt;LAPACK&lt;/code&gt;: &lt;a href=&quot;netlib.org/lapack/lapack-3.2.html&quot; class=&quot;uri&quot;&gt;netlib.org/lapack/lapack-3.2.html&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;code&gt;ARPACK&lt;/code&gt;: &lt;a href=&quot;www.caam.rice.edu/software/ARPACK/&quot; class=&quot;uri&quot;&gt;www.caam.rice.edu/software/ARPACK/&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;code&gt;SuperLU&lt;/code&gt;: &lt;a href=&quot;crd-legacy.lbl.gov/~xiaoye/SuperLU/&quot; class=&quot;uri&quot;&gt;crd-legacy.lbl.gov/~xiaoye/SuperLU/&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;
 &lt;/blockquote&gt;
-&lt;p&gt;Most of the routines in these three `scipy modules are wrappers to functions in the mentioned libraries. If we so desire, we also have the possibility to call the underlying functions directly. In the module `scipy.linalg, we have 
 
-	&lt;ul&gt;
-		&lt;li&gt;`scipy.linalg.get_blas_funcs to call routines from `BLAS. &lt;/li&gt;
-		&lt;li&gt;`scipy.linalg.get_lapack_funcs to call routines from `LAPACK.&lt;/li&gt;
-	&lt;/ul&gt;
-&lt;/p&gt;
+&lt;p&gt;Most of the routines in these three &lt;code&gt;scipy&amp;lt;/code&amp;gt; modules are wrappers to functions in the mentioned libraries. If we so desire, we also have the possibility to call the underlying functions directly. In the module &lt;/code&gt;scipy.linalg&amp;lt;/code&amp;gt;, we have &lt;/p&gt;
 
-&lt;p&gt;For example, if we want to use the `BLAS function `NRM2 to compute Frobenius norms:&lt;/p&gt;
-&lt;p&gt;&amp;lt;/div&amp;gt;
-&amp;lt;/div&amp;gt;
-&amp;lt;/div&amp;gt;
-&amp;lt;div class=&quot;cell border-box-sizing code_cell rendered&quot;&amp;gt;
-&amp;lt;div class=&quot;input&quot;&amp;gt;
-&amp;lt;div class=&quot;inner_cell&quot;&amp;gt;
-    &amp;lt;div class=&quot;input_area&quot;&amp;gt;
-&amp;lt;div class=&quot;highlight&quot;&amp;gt;&amp;lt;pre&amp;gt;&lt;span class=&quot;n&quot;&gt;In&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;28&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;blas_norm&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;spla&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;get_blas_funcs&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&#39;nrm2&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;In&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;29&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;blas_norm&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;np&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;float32&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;([&lt;/span&gt;&lt;span class=&quot;mf&quot;&gt;1e20&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]))&lt;/span&gt;
-&amp;lt;/pre&amp;gt;&amp;lt;/div&amp;gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;code&gt;scipy.linalg.get_blas_funcs&amp;lt;/code&amp;gt; to call routines from &lt;/code&gt;BLAS&amp;lt;/code&amp;gt;. &lt;/li&gt;
+  &lt;li&gt;&lt;code&gt;scipy.linalg.get_lapack_funcs&amp;lt;/code&amp;gt; to call routines from &lt;/code&gt;LAPACK&amp;lt;/code&amp;gt;.&lt;/li&gt;
+&lt;/ul&gt;
 
-&lt;p&gt;&amp;lt;/div&amp;gt;
-&amp;lt;/div&amp;gt;
-&amp;lt;/div&amp;gt;&lt;/p&gt;
+&lt;p&gt;For example, if we want to use the &lt;code&gt;BLAS&amp;lt;/code&amp;gt; function &lt;/code&gt;NRM2&amp;lt;/code&amp;gt; to compute Frobenius norms:&lt;/p&gt;
 
-&lt;div class=&quot;output_wrapper&quot;&gt;
-&lt;div class=&quot;output&quot;&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-python&quot; data-lang=&quot;python&quot;&gt;&lt;span class=&quot;lineno&quot;&gt;1&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;blas_norm&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;spla&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;get_blas_funcs&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;#39;nrm2&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;lineno&quot;&gt;2&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;blas_norm&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;np&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;float32&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;([&lt;/span&gt;&lt;span class=&quot;mf&quot;&gt;1e20&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]))&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;1.0000000200408773e+20&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
-&lt;div class=&quot;output_area&quot;&gt;
-&lt;div class=&quot;output_text output_subarea output_pyout&quot;&gt;
-&lt;pre&gt;
-1.0000000200408773e+20
-&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;/div&gt;
-
-&lt;/div&gt;
-&lt;/div&gt;
-
-&lt;p&gt;&amp;lt;/div&amp;gt;&lt;/p&gt;
 </description>
         <pubDate>Wed, 29 Oct 2014 20:10:00 -0400</pubDate>
         <link>http://blancosilva.github.io//post/2014/10/29/Numerical-Linear-Algebra.html</link>
