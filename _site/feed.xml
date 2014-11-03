@@ -6,8 +6,8 @@
 </description>
     <link>http://blancosilva.github.io//</link>
     <atom:link href="http://blancosilva.github.io//feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Mon, 03 Nov 2014 17:26:34 -0500</pubDate>
-    <lastBuildDate>Mon, 03 Nov 2014 17:26:34 -0500</lastBuildDate>
+    <pubDate>Mon, 03 Nov 2014 17:28:06 -0500</pubDate>
+    <lastBuildDate>Mon, 03 Nov 2014 17:28:06 -0500</lastBuildDate>
     <generator>Jekyll v2.4.0</generator>
     
       <item>
@@ -204,7 +204,7 @@ max    31.605647  31.605175  31.556127
 
 &lt;p&gt;Is there a mathematical way to actually express the popularity of a web page within a network? Researchers at Google came up with the idea of a &lt;strong&gt;PageRank&lt;/strong&gt; to roughly estimate this concept by counting the number and quality of links to a page. It goes like this:&lt;/p&gt;
 
-&lt;p&gt;We construct a &lt;em&gt;transition matrix&lt;/em&gt; of this graph \(T=\big( a&lt;em&gt;{i,j} \big)\) in the following fashion: the entry 
+&lt;p&gt;We construct a &lt;em&gt;transition matrix&lt;/em&gt; of this graph (T=\big( a&lt;em&gt;{i,j} \big)) in the following fashion: the entry 
 \( a&lt;/em&gt;{i,j} \) is \( 1/k \) if there is a link from web page \( i \) to web page \( j \), and the total number of outer links in web page \( i \) amounts to \( k \). Otherwise, the entry is just zero. The size of a transition matrix of \( N \) web pages is always \( N \times N \). In our case, the matrix has size \( 8 \times 8 \):&lt;/p&gt;
 
 &lt;div&gt;\\[\begin{pmatrix}
