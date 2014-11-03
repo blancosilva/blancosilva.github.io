@@ -125,21 +125,21 @@
 
 <p>Issuing now the command <code>herndon.ix['1857-09-12 07:00:00',:]</code> gives us the following output:</p>
 
-<div class="highlight"><pre><code class="language-console" data-lang="console"><span class="go">--------------------------------------------------------------------------------</span>
-<span class="go">          0          1          2          3          4          5     \</span>
-<span class="go">Lat  31.455345  31.452572  31.439491  31.444000  31.462029  31.406287</span>
-<span class="go">Lon -77.148860 -77.168941 -77.173416 -77.163484 -77.169911 -77.168462   </span>
-<span class="go">          6          7          8          9       ...           9990  \</span>
-<span class="go">Lat  31.390807  31.420929  31.441248  31.367623    ...      31.405862</span>
-<span class="go">Lon -77.178367 -77.187680 -77.176924 -77.172941    ...     -77.146794   </span>
-<span class="go">          9991       9992       9993       9994       9995       9996  \</span>
-<span class="go">Lat  31.394365  31.428827  31.415392  31.443225  31.350158  31.392087</span>
-<span class="go">Lon -77.179720 -77.182885 -77.159965 -77.186102 -77.183292 -77.168586   </span>
-<span class="go">          9997       9998       9999</span>
-<span class="go">Lat  31.443154  31.438852  31.401723</span>
-<span class="go">Lon -77.169504 -77.151137 -77.134298  </span>
-<span class="go">[2 rows x 10000 columns]</span>
-<span class="go">--------------------------------------------------------------------------------</span></code></pre></div>
+<div class="highlight"><pre><code class="language-text" data-lang="text">--------------------------------------------------------------------------------
+          0          1          2          3          4          5     \
+Lat  31.455345  31.452572  31.439491  31.444000  31.462029  31.406287
+Lon -77.148860 -77.168941 -77.173416 -77.163484 -77.169911 -77.168462   
+          6          7          8          9       ...           9990  \
+Lat  31.390807  31.420929  31.441248  31.367623    ...      31.405862
+Lon -77.178367 -77.187680 -77.176924 -77.172941    ...     -77.146794   
+          9991       9992       9993       9994       9995       9996  \
+Lat  31.394365  31.428827  31.415392  31.443225  31.350158  31.392087
+Lon -77.179720 -77.182885 -77.159965 -77.186102 -77.183292 -77.168586   
+          9997       9998       9999
+Lat  31.443154  31.438852  31.401723
+Lon -77.169504 -77.151137 -77.134298  
+[2 rows x 10000 columns]
+--------------------------------------------------------------------------------</code></pre></div>
 
 <p>We simulate the drift according to the formula \(D = (V + \gamma W)\).  In this formula \(V\) (the ocean current) is modeled as vector pointing about North-East (around 45 degrees of azimuth) and a variable speed between 1 and 1.5 knots. The other random variable, \(W\), represents the action of the winds in the area during the hurricane, which we choose to represent by directions ranging between South and East, and speeds with a mean 0.2 knots, standard deviation 1/30 knots. Both random variables are coded as bivariate normal.  Finally, we have accounted for the leeway factor.  According to a study performed on the blueprints of the SS Central America, we have estimated this leeway \(\gamma\) to be about 3%.</p>
 
@@ -186,45 +186,45 @@
 
 <p>The advantage of storing all the different steps in these paths becomes apparent if we need to perform some further study—and maybe filtering—on the data obtained.  We could impose additional conditions to paths, and use only those filtered according to the extra rules, for example.  Another advantage is the possibility of performing different analysis on the paths with very little coding.  By issuing the command <code>herndon.loc(axis=0)[:,'Lat'].describe()</code>, we obtain quick statistics on the computed latitudes for all 10000 paths (number of items, mean, standard deviation, min, max and the quartiles of the data).</p>
 
-<div class="highlight"><pre><code class="language-console" data-lang="console"><span class="go">--------------------------------------------------------------------------------</span>
-<span class="go">            0          1          2          3          4          5     \</span>
-<span class="go">count  14.000000  14.000000  14.000000  14.000000  14.000000  14.000000</span>
-<span class="go">mean   31.474706  31.489831  31.479797  31.551953  31.543533  31.516511</span>
-<span class="go">std     0.058218   0.060026   0.060504   0.060204   0.060290   0.065008</span>
-<span class="go">min    31.388410  31.400693  31.387974  31.457087  31.446786  31.421331</span>
-<span class="go">25%    31.431773  31.439437  31.429712  31.506764  31.498132  31.465424</span>
-<span class="go">50%    31.470768  31.491100  31.481918  31.551521  31.546649  31.510613</span>
-<span class="go">75%    31.515063  31.541353  31.527317  31.599800  31.588251  31.568368</span>
-<span class="go">max    31.571535  31.580176  31.575999  31.641745  31.639944  31.619281   </span>
-<span class="go">            6          7          8          9       ...           9990  \</span>
-<span class="go">count  14.000000  14.000000  14.000000  14.000000    ...      14.000000</span>
-<span class="go">mean   31.463063  31.515181  31.510682  31.448281    ...      31.541765</span>
-<span class="go">std     0.064530   0.060904   0.064621   0.061350    ...       0.059633</span>
-<span class="go">min    31.369973  31.410879  31.412623  31.353806    ...      31.445757</span>
-<span class="go">25%    31.410827  31.473212  31.460292  31.398931    ...      31.500659</span>
-<span class="go">50%    31.460968  31.516328  31.511749  31.448647    ...      31.542774</span>
-<span class="go">75%    31.512171  31.565814  31.555854  31.492793    ...      31.583822</span>
-<span class="go">max    31.564134  31.601316  31.620487  31.547686    ...      31.632320   </span>
-<span class="go">            9991       9992       9993       9994       9995       9996  \</span>
-<span class="go">count  14.000000  14.000000  14.000000  14.000000  14.000000  14.000000</span>
-<span class="go">mean   31.481608  31.501862  31.509630  31.495412  31.557487  31.491508</span>
-<span class="go">std     0.064426   0.061343   0.057857   0.068578   0.058520   0.055164</span>
-<span class="go">min    31.384021  31.398002  31.408542  31.387861  31.452803  31.402979</span>
-<span class="go">25%    31.422987  31.457732  31.468419  31.440465  31.518770  31.450746</span>
-<span class="go">50%    31.489742  31.509546  31.515301  31.503460  31.565790  31.493993</span>
-<span class="go">75%    31.532992  31.549224  31.553803  31.545975  31.596499  31.532340</span>
-<span class="go">max    31.576120  31.589048  31.591815  31.599973  31.645622  31.577492   </span>
-<span class="go">            9997       9998       9999</span>
-<span class="go">count  14.000000  14.000000  14.000000</span>
-<span class="go">mean   31.522756  31.509904  31.461305</span>
-<span class="go">std     0.055411   0.064045   0.066058</span>
-<span class="go">min    31.435634  31.408430  31.363115</span>
-<span class="go">25%    31.482015  31.458449  31.405953</span>
-<span class="go">50%    31.523253  31.519991  31.463235</span>
-<span class="go">75%    31.567399  31.555133  31.516251</span>
-<span class="go">max    31.605647  31.605175  31.556127  </span>
-<span class="go">[8 rows x 10000 columns]</span>
-<span class="go">--------------------------------------------------------------------------------</span></code></pre></div>
+<div class="highlight"><pre><code class="language-text" data-lang="text">--------------------------------------------------------------------------------
+            0          1          2          3          4          5     \
+count  14.000000  14.000000  14.000000  14.000000  14.000000  14.000000
+mean   31.474706  31.489831  31.479797  31.551953  31.543533  31.516511
+std     0.058218   0.060026   0.060504   0.060204   0.060290   0.065008
+min    31.388410  31.400693  31.387974  31.457087  31.446786  31.421331
+25%    31.431773  31.439437  31.429712  31.506764  31.498132  31.465424
+50%    31.470768  31.491100  31.481918  31.551521  31.546649  31.510613
+75%    31.515063  31.541353  31.527317  31.599800  31.588251  31.568368
+max    31.571535  31.580176  31.575999  31.641745  31.639944  31.619281   
+            6          7          8          9       ...           9990  \
+count  14.000000  14.000000  14.000000  14.000000    ...      14.000000
+mean   31.463063  31.515181  31.510682  31.448281    ...      31.541765
+std     0.064530   0.060904   0.064621   0.061350    ...       0.059633
+min    31.369973  31.410879  31.412623  31.353806    ...      31.445757
+25%    31.410827  31.473212  31.460292  31.398931    ...      31.500659
+50%    31.460968  31.516328  31.511749  31.448647    ...      31.542774
+75%    31.512171  31.565814  31.555854  31.492793    ...      31.583822
+max    31.564134  31.601316  31.620487  31.547686    ...      31.632320   
+            9991       9992       9993       9994       9995       9996  \
+count  14.000000  14.000000  14.000000  14.000000  14.000000  14.000000
+mean   31.481608  31.501862  31.509630  31.495412  31.557487  31.491508
+std     0.064426   0.061343   0.057857   0.068578   0.058520   0.055164
+min    31.384021  31.398002  31.408542  31.387861  31.452803  31.402979
+25%    31.422987  31.457732  31.468419  31.440465  31.518770  31.450746
+50%    31.489742  31.509546  31.515301  31.503460  31.565790  31.493993
+75%    31.532992  31.549224  31.553803  31.545975  31.596499  31.532340
+max    31.576120  31.589048  31.591815  31.599973  31.645622  31.577492   
+            9997       9998       9999
+count  14.000000  14.000000  14.000000
+mean   31.522756  31.509904  31.461305
+std     0.055411   0.064045   0.066058
+min    31.435634  31.408430  31.363115
+25%    31.482015  31.458449  31.405953
+50%    31.523253  31.519991  31.463235
+75%    31.567399  31.555133  31.516251
+max    31.605647  31.605175  31.556127  
+[8 rows x 10000 columns]
+--------------------------------------------------------------------------------</code></pre></div>
 
 <p>The focus of this simulation is, nonetheless, on the final location of all these paths.  Let us plot them all on the same map first, for a quick visual evaluation.</p>
 

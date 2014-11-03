@@ -69,7 +69,7 @@ for k in range(10000):
 
 Issuing now the command `herndon.ix['1857-09-12 07:00:00',:]` gives us the following output:
 
-{% highlight console %}
+{% highlight text %}
 --------------------------------------------------------------------------------
           0          1          2          3          4          5     \
 Lat  31.455345  31.452572  31.439491  31.444000  31.462029  31.406287
@@ -139,7 +139,7 @@ As expected they observe a North-Easterly general direction, in occasion showing
 
 The advantage of storing all the different steps in these paths becomes apparent if we need to perform some further study—and maybe filtering—on the data obtained.  We could impose additional conditions to paths, and use only those filtered according to the extra rules, for example.  Another advantage is the possibility of performing different analysis on the paths with very little coding.  By issuing the command `herndon.loc(axis=0)[:,'Lat'].describe()`, we obtain quick statistics on the computed latitudes for all 10000 paths (number of items, mean, standard deviation, min, max and the quartiles of the data).
 
-{% highlight console %}
+{% highlight text %}
 --------------------------------------------------------------------------------
             0          1          2          3          4          5     \
 count  14.000000  14.000000  14.000000  14.000000  14.000000  14.000000
