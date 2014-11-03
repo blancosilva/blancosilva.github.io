@@ -2,6 +2,7 @@
 layout: post
 title: "Jotto (5-letter Mastermind) in the NAO robot"
 comments: true
+category: post
 ---
 
 <p style="text-align:center;">

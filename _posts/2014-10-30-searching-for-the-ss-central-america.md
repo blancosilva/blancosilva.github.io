@@ -2,19 +2,8 @@
 layout: post
 title: "Searching for the SS Central America"
 date: 2014-10-30 
-tags:
-- Basemap
-- latitude
-- leeway
-- longitude
-- search and rescue
-- ship
-- shipwreck
-- ss central america
-- steamboat
-- vessel
 comments: true
-author: Francisco Blanco-Silva
+category: post
 ---
 <p style="text-align:center;"><img src="https://farm6.staticflickr.com/5582/15072819006_39df81b2a6_d.jpg" style="width:100%; border:2px solid black;" /></p> 
 

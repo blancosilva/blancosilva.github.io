@@ -6,12 +6,12 @@
     <meta name="viewport" content="width=device-width initial-scale=1" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-    <title>Teaching</title>
+    <title>Advanced Problem #18</title>
     <meta name="description" content="Useless math is useful math. It can be used to generate more useless math.
 ">
 
     <link rel="stylesheet" href="/css/main.css">
-    <link rel="canonical" href="http://blancosilva.github.io//teaching.html">
+    <link rel="canonical" href="http://blancosilva.github.io//post/2014/03/04/advanced-problem-18.html">
 </head>
 
 
@@ -68,49 +68,59 @@
       <div class="wrapper">
         <div class="post">
 
-  <header class="post-header">
-    <h1 class="post-title">Teaching</h1>
-  </header>
+	<header class="post-header">
+		<h1 class="post-title">Advanced Problem #18</h1>
+		<p class="post-meta">Mar 4, 2014</p>
+	</header>
 
-  <article class="post-content">
-    <h1 id="current-classes">Current classes</h1>
+	<article class="post-content">
+		<p>Another fun problem, as requested by <a href="https://www.facebook.com/right.li.love">Qinfeng Li</a> in <a href="http://blancosilva.wordpress.com/teaching/ma598r/">MA598R: Measure Theory</a></p>
 
-<p><a href="/course/2014/08/19/ma141-fall-2014.html">MA141—Fall 2014</a></p>
+<blockquote>
+  <p>Let   \(f \in L_2(\mathbb{R})\) so that \(g(x)=xf(x) \in L_2(\mathbb{R})\) too.  Show that \(f \in L_1(\mathbb{R})\) and \(\lVert f \rVert_1^2 \leq 8 \lVert f \rVert_2 \lVert g \rVert_2.\)</p>
+</blockquote>
 
-<p><a href="/course/2014/08/18/math-122-fall-2014.html">MA122—Fall 2014</a></p>
+<p>I got this problem by picking some strictly positive value \(\lambda\) and breaking the integral \(\int_{\mathbb{R}} \lvert f \rvert\, d\mu\) as follows:</p>
 
-<h1 id="past-classes">Past classes</h1>
+<script type="math/tex; mode=display">% <![CDATA[
+\begin{array}{rl} \displaystyle{\int_{\mathbb{R}} \lvert f \rvert\, d\mu} &= \displaystyle{\int_{\lvert x \rvert \leq \lambda} \lvert f \rvert\, d\mu + \int_{\lvert x \rvert \geq \lambda} \lvert f \rvert\, d\mu} \\ \\
+ &= \displaystyle{\int_{-\lambda}^{\lambda} \lvert f \rvert\, d\mu + \int_{\lvert x \rvert \geq \lambda} \tfrac{1}{\lvert x \rvert} \lvert g(x) \rvert\, d\mu} \\ \\
+&= \displaystyle{\int_\mathbb{R} \lvert f \rvert \cdot \boldsymbol{1}_{\lvert x \rvert \leq \lambda}\, d\mu + \int_{\mathbb{R}} \lvert g \rvert \cdot  \big( \tfrac{1}{\lvert x \rvert} \boldsymbol{1}_{\lvert x \rvert \geq \lambda}\big) \, d\mu} \\ \\
+&\leq \lVert f \rVert_2 \cdot \big\lVert \boldsymbol{1}_{\lvert x \rvert \leq \lambda} \big\rVert_2 + \lVert g \rVert_2 \cdot \big\lVert \tfrac{1}{\lvert x \rvert} \boldsymbol{1}_{\lvert x \rvert \geq \lambda} \big\rVert_2 \end{array} %]]></script>
 
-<p><a href="/course/2014/05/31/ma141-summer-2014.html">MA141—Summer 2014</a></p>
+<p>Let us examine now the factors <script type="math/tex">\big\lVert \boldsymbol{1}_{\lvert x \rvert \leq \lambda} \big\rVert_2</script> and \( \big\lVert \tfrac{1}{\lvert x \rvert} \boldsymbol{1}_{\lvert x \rvert \geq \lambda} \big\rVert_2 \) above:</p>
 
-<p><a href="/course/2014/01/11/ma-241-spring-2014.html">MA241—Spring 2014</a></p>
+<script type="math/tex; mode=display">\big\lVert \boldsymbol{1}_{\lvert x \rvert \leq \lambda} \big\rVert_2 = \sqrt{2\lambda}</script>
 
-<p><a href="/course/2014/01/06/ma141-spring-2014.html">MA141—Spring 2014</a></p>
+<script type="math/tex; mode=display">\big\lVert \tfrac{1}{\lvert x \rvert} \boldsymbol{1}_{\lvert x \rvert \geq \lambda} \big\rVert_2 = \displaystyle{ \sqrt{ 2\int_\lambda^\infty \dfrac{dx}{x^2}} = \sqrt{ \dfrac{2}{\lambda}} }</script>
 
-<p><a href="/course/2013/08/22/ma242-fall-2013.html">MA242—Fall 2013</a></p>
+<p>We have thus proven that \(f \in L_1(\mathbb{R})\) with \(\lVert f \rVert_1 \leq \sqrt{2\lambda} \lVert f \rVert_2 + \sqrt{\tfrac{2}{\lambda}} \lVert g \rVert_2.\)  At this point, all you have to do is pick \(\lambda = \lVert g \rVert_2 / \lVert f \rVert_2\) (provided the denominator is not zero) and you are done.</p>
 
-<p><a href="/course/2013/08/20/ma141-fall-2013.html">MA141—Fall 2013</a></p>
+	</article>
 
-<p><a href="/course/2013/08/19/ma122-fall-2013.html">MA122—Fall 2013</a></p>
+	
+	<!-- Add Disqus comments. -->
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+  /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+  var disqus_shortname = 'eseprimo'; 
 
-<p><a href="/course/2013/01/10/ma122-spring-2013.html">MA122—Spring 2013</a></p>
-
-<p><a href="/course/2013/01/10/ma141-spring-2013.html">MA141—Spring 2013</a></p>
-
-<p><a href="/course/2013/01/08/ma241-spring-2013.html">MA241—Spring 2013</a></p>
-
-<p><a href="/course/2012/08/17/ma242-fall-2012.html">MA242—Fall 2012</a></p>
-
-<p><a href="/course/2012/08/17/ma241-fall-2012.html">MA241—Fall 2012</a></p>
-
-<p><a href="/course/2012/08/15/ma141-fall-2012.html">MA141—Fall 2012</a></p>
-
-<p><a href="/course/2012/06/26/ma142-summer-ii-2012.html">MA142—Summer II 2012</a></p>
-
-
-  </article>
-
+  /* * * DON'T EDIT BELOW THIS LINE * * */
+  (function() {
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+  })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+	
 </div>
+
+
+<script type="text/javascript"
+src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
 
       </div>
     </div>

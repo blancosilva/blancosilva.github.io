@@ -1,6 +1,7 @@
 ---
 layout: post
 title: 'Advanced Problem #18'
+category: post
 ---
 Another fun problem, as requested by <a href="https://www.facebook.com/right.li.love">Qinfeng Li</a> in <a href="http://blancosilva.wordpress.com/teaching/ma598r/">MA598R: Measure Theory</a>
 
