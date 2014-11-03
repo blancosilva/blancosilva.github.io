@@ -7,20 +7,16 @@ category: post
 image:
   teaser: "https://raw.githubusercontent.com/blancosilva/Mastering-Scipy/master/4749_01_01.png" 
 ---
-  <div tabindex="-1" id="notebook" class="border-box-sizing">
-    <div class="container" id="notebook-container">
+The following diagram shows a graph that represents a series of web pages (numbered from 1 to 8).
 
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>The following diagram shows a graph that represents a series of web pages (numbered from 1 to 8).</p>
 <p style="text-align:center;"><img src="https://raw.githubusercontent.com/blancosilva/Mastering-Scipy/master/4749_01_01.png" style="text-align:center; width:50%"></p>
-<p>An arrow from a node to another indicates the existence of a link from the web page represented by the sending node, to the page represented by the receiving node. For example, the arrow from node 2 to node 1 indicates that there is a link in web page 2 pointing to web page 1. Notice how web page 4 has two outer links (to pages 2 and 8), and there are three pages that link to web page 4 (pages 2, 6 and 7). The pages represented by nodes 2, 4 and 8 seem to be the most <em>popular</em> at first sight.</p>
-<p>Is there a mathematical way to actually express the popularity of a web page within a network? Researchers at Google came up with the idea of a <strong>PageRank</strong> to roughly estimate this concept by counting the number and quality of links to a page. It goes like this:</p>
-<p>We construct a <em>transition matrix</em> of this graph \(T=\big( a_{i,j} \big)\) in the following fashion: the entry <span class="math">\(a_{i,j}\)</span> is <span class="math">\(1/k\)</span> if there is a link from web page <span class="math">\(i\)</span> to web page <span class="math">\(j\)</span>, and the total number of outer links in web page <span class="math">\(i\)</span> amounts to <span class="math">\(k\)</span>. Otherwise, the entry is just zero. The size of a transition matrix of <span class="math">\(N\)</span> web pages is always <span class="math">\(N \times N\)</span>. In our case, the matrix has size <span class="math">\(8 \times 8\)</span>:</p>
-<p><span class="math">\[\begin{pmatrix}
+
+An arrow from a node to another indicates the existence of a link from the web page represented by the sending node, to the page represented by the receiving node. For example, the arrow from node 2 to node 1 indicates that there is a link in web page 2 pointing to web page 1. Notice how web page 4 has two outer links (to pages 2 and 8), and there are three pages that link to web page 4 (pages 2, 6 and 7). The pages represented by nodes 2, 4 and 8 seem to be the most *popular* at first sight.
+
+Is there a mathematical way to actually express the popularity of a web page within a network? Researchers at Google came up with the idea of a **PageRank** to roughly estimate this concept by counting the number and quality of links to a page. It goes like this:
+
+We construct a *transition matrix* of this graph \(T=\big( a_{i,j} \big)\) in the following fashion: the entry \(a_{i,j}\) is \(1/k\) if there is a link from web page \(i\) to web page \(j\), and the total number of outer links in web page \(i\) amounts to \(k\). Otherwise, the entry is just zero. The size of a transition matrix of \(N\) web pages is always \(N \times N\). In our case, the matrix has size \(8 \times 8\):</p>
+<p>\[\begin{pmatrix}
 0  &amp;1/2  &amp; 0   &amp; 0    &amp; 0   &amp; 0   &amp; 0   &amp; 0 \\
 1  &amp; 0   &amp;1/2  &amp;1/2   &amp; 0   &amp; 0   &amp; 0   &amp; 0 \\
 0  &amp; 0   &amp; 0   &amp; 0    &amp; 0   &amp; 0   &amp;1/3  &amp; 0 \\
@@ -29,61 +25,32 @@ image:
 0  &amp; 0   &amp; 0   &amp; 0    &amp; 0   &amp; 0   &amp; 0   &amp;1/2\\
 0  &amp; 0   &amp; 0   &amp; 0    &amp;1/2  &amp; 0   &amp; 0   &amp;1/2\\
 0  &amp; 0   &amp; 0   &amp;1/2   &amp;1/2  &amp; 0   &amp;1/3  &amp;0
-\end{pmatrix}\]</span></p>
-<p>Let us open an <code>ipython</code> session and load this particular matrix to memory. Remember that in <code>python</code>, indices start from zero, not one:</p>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="inner_cell">
-    <div class="input_area">
-<div class="highlight"><pre><span class="n">In</span> <span class="p">[</span><span class="mi">1</span><span class="p">]:</span> <span class="kn">import</span> <span class="nn">numpy</span> <span class="kn">as</span> <span class="nn">np</span><span class="o">,</span> <span class="nn">matplotlib.pyplot</span> <span class="kn">as</span> <span class="nn">plt</span><span class="o">,</span> \
-   <span class="o">...</span><span class="p">:</span> <span class="n">scipy</span><span class="o">.</span><span class="n">linalg</span> <span class="k">as</span> <span class="n">spla</span><span class="p">,</span> <span class="n">scipy</span><span class="o">.</span><span class="n">sparse</span> <span class="k">as</span> <span class="n">spsp</span><span class="p">,</span> \
-   <span class="o">...</span><span class="p">:</span> <span class="n">scipy</span><span class="o">.</span><span class="n">sparse</span><span class="o">.</span><span class="n">linalg</span> <span class="k">as</span> <span class="n">spspla</span>
-<span class="n">In</span> <span class="p">[</span><span class="mi">2</span><span class="p">]:</span> <span class="n">np</span><span class="o">.</span><span class="n">set_printoptions</span><span class="p">(</span><span class="n">suppress</span><span class="o">=</span><span class="bp">True</span><span class="p">,</span> <span class="n">precision</span><span class="o">=</span><span class="mi">3</span><span class="p">)</span>
-<span class="n">In</span> <span class="p">[</span><span class="mi">3</span><span class="p">]:</span> <span class="n">cols</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">6</span><span class="p">,</span><span class="mi">6</span><span class="p">,</span><span class="mi">6</span><span class="p">,</span><span class="mi">7</span><span class="p">,</span><span class="mi">7</span><span class="p">])</span>
-<span class="n">In</span> <span class="p">[</span><span class="mi">4</span><span class="p">]:</span> <span class="n">rows</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">7</span><span class="p">,</span><span class="mi">6</span><span class="p">,</span><span class="mi">7</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">7</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">6</span><span class="p">])</span>
-<span class="n">In</span> <span class="p">[</span><span class="mi">5</span><span class="p">]:</span> <span class="n">data</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mf">1.</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">,</span> \
-   <span class="o">...</span><span class="p">:</span>                  <span class="mf">0.5</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">,</span> <span class="mf">1.</span><span class="p">,</span> \
-   <span class="o">...</span><span class="p">:</span>                  <span class="mf">1.</span><span class="o">/</span><span class="mi">3</span><span class="p">,</span> <span class="mf">1.</span><span class="o">/</span><span class="mi">3</span><span class="p">,</span> <span class="mf">1.</span><span class="o">/</span><span class="mi">3</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">])</span>
-<span class="n">In</span> <span class="p">[</span><span class="mi">6</span><span class="p">]:</span> <span class="n">T</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">((</span><span class="mi">8</span><span class="p">,</span><span class="mi">8</span><span class="p">));</span> \
-   <span class="o">...</span><span class="p">:</span> <span class="n">T</span><span class="p">[</span><span class="n">rows</span><span class="p">,</span><span class="n">cols</span><span class="p">]</span> <span class="o">=</span> <span class="n">data</span>
-</pre></div>
+\end{pmatrix}\]</p>
 
-</div>
-</div>
-</div>
+Let us open an `ipython` session and load this particular matrix to memory. Remember that in `python`, indices start from zero, not one:
 
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>From the transition matrix, we create a <em>Page Rank matrix</em>, <span class="math">\(G\)</span> (also known as the <strong>Google matrix</strong>), by fixing a positive constant <span class="math">\(0 &lt; p \leq 1\)</span>, and following the formula <span class="math">\(G = (1-p) \cdot T + p \cdot B\)</span>. Here, <span class="math">\(B\)</span> is a matrix with the same size as <span class="math">\(T\)</span>, with all its entries equal to <span class="math">\(1/N\)</span>. For example, if we choose <span class="math">\(p=0.15\)</span>, we obtain the following Google matrix</p>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="inner_cell">
-    <div class="input_area">
-<div class="highlight"><pre><span class="n">In</span> <span class="p">[</span><span class="mi">7</span><span class="p">]:</span> <span class="n">G</span> <span class="o">=</span> <span class="p">(</span><span class="mi">1</span><span class="o">-</span><span class="mf">0.15</span><span class="p">)</span> <span class="o">*</span> <span class="n">T</span> <span class="o">+</span> <span class="mf">0.15</span><span class="o">/</span><span class="mi">8</span><span class="p">;</span> \
-   <span class="o">...</span><span class="p">:</span> <span class="k">print</span> <span class="n">G</span>
-</pre></div>
+{% highlight python linenos %}
+import numpy as np, matplotlib.pyplot as plt, scipy.linalg as spla, scipy.sparse as spsp, scipy.sparse.linalg as spspla
+np.set_printoptions(suppress=True, precision=3)
 
-</div>
-</div>
-</div>
+cols = np.array([0,1,1,2,2,3,3,4,4,5,6,6,6,7,7])
+rows = np.array([1,0,3,1,4,1,7,6,7,3,2,3,7,5,6])
+data = np.array([1., 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 1., 1./3, 1./3, 1./3, 0.5, 0.5])
 
-<div class="output_wrapper">
-<div class="output">
+T = np.zeros((8,8)) 
+T[rows,cols] = data
+{% endhighlight %}
 
 
-<div class="output_area"><div class="prompt"></div>
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>
+From the transition matrix, we create a *Page Rank matrix*, \(G\) (also known as the **Google matrix**), by fixing a positive constant \(0 < p \leq 1\), and following the formula \(G = (1-p) \cdot T + p \cdot B\). Here, \(B\) is a matrix with the same size as \(T\), with all its entries equal to \(1/N\). For example, if we choose \(p=0.15\), we obtain the following Google matrix
+
+{% highlight python linenos %}
+G = (1-0.15) * T + 0.15/8
+}}}}}}}}}
+print G
+{% end highlight %}
+
+{% highlight text %}
 [[ 0.019  0.444  0.019  0.019  0.019  0.019  0.019  0.019]
  [ 0.869  0.019  0.444  0.444  0.019  0.019  0.019  0.019]
  [ 0.019  0.019  0.019  0.019  0.019  0.019  0.302  0.019]
@@ -92,130 +59,71 @@ image:
  [ 0.019  0.019  0.019  0.019  0.019  0.019  0.019  0.444]
  [ 0.019  0.019  0.019  0.019  0.444  0.019  0.019  0.444]
  [ 0.019  0.019  0.019  0.444  0.444  0.019  0.302  0.019]]
+ {% endhighlight %}
 
-</pre>
-</div>
-</div>
+Google matrices have some interesting properties: 
 
-</div>
-</div>
+* 1 is an eigenvalue of multiplicity one. 
+* 1 is actually the largest eigenvalue: all the other eigenvalues are in modulus smaller than 1. 
+* The eigenvector corresponding to eigenvalue 1 has all entries positive. In particular, for the eigenvalue 1 there exists a unique eigenvector with the sum of its entries equal to one. This is what we call the **Page Rank vector**.
 
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>Google matrices have some interesting properties: 
-
-	<ul>
-		<li> 1 is an eigenvalue of multiplicity one. </li>
-		<li> 1 is actually the largest eigenvalue: all the other eigenvalues are in modulus smaller than 1. </li>
-		<li> The eigenvector corresponding to eigenvalue 1 has all entries positive. In particular, for the eigenvalue 1 there exists a unique eigenvector with the sum of its entries equal to one. This is what we call the <strong>Page Rank vector</strong>.</li>
-	</ul>
-</p>
-
-<p>A quick computation with <code>scipy.linalg.eig</code> finds that eigenvector for us:</p>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="inner_cell">
-    <div class="input_area">
-<div class="highlight"><pre><span class="n">In</span> <span class="p">[</span><span class="mi">8</span><span class="p">]:</span> <span class="n">eigenvalues</span><span class="p">,</span> <span class="n">eigenvectors</span> <span class="o">=</span> <span class="n">spla</span><span class="o">.</span><span class="n">eig</span><span class="p">(</span><span class="n">G</span><span class="p">)</span>
-<span class="n">In</span> <span class="p">[</span><span class="mi">9</span><span class="p">]:</span> <span class="k">print</span> <span class="n">eigenvalues</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
+A quick computation with `scipy.linalg.eig` finds that eigenvector for us:
 
 
-<div class="output_area"><div class="prompt"></div>
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>
+{% highlight python linenos %}
+eigenvalues, eigenvectors = spla.eig(G)
+
+print eigenvalues
+{% endhighlight %}
+
+{% highlight text %}
 [ 1.000+0.j    -0.655+0.j    -0.333+0.313j -0.333-0.313j -0.171+0.372j
  -0.171-0.372j  0.544+0.j     0.268+0.j   ]
+ {% endhighlight %}
 
-</pre>
-</div>
-</div>
+{% highlight python linenos %}
+PageRank = eigenvectors[:,0]
+PageRank /= sum(PageRank)
 
-</div>
-</div>
+print PageRank.real
+{% endhighlight %}
 
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="inner_cell">
-    <div class="input_area">
-<div class="highlight"><pre><span class="n">In</span> <span class="p">[</span><span class="mi">10</span><span class="p">]:</span> <span class="n">PageRank</span> <span class="o">=</span> <span class="n">eigenvectors</span><span class="p">[:,</span><span class="mi">0</span><span class="p">];</span> \
-   <span class="o">....</span><span class="p">:</span> <span class="n">PageRank</span> <span class="o">/=</span> <span class="nb">sum</span><span class="p">(</span><span class="n">PageRank</span><span class="p">)</span>
-<span class="n">In</span> <span class="p">[</span><span class="mi">11</span><span class="p">]:</span> <span class="k">print</span> <span class="n">PageRank</span><span class="o">.</span><span class="n">real</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area"><div class="prompt"></div>
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>
+{% highlight text %}
 [ 0.117  0.232  0.048  0.219  0.039  0.086  0.102  0.157]
+{% endhighlight %}
 
-</pre>
-</div>
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
 <p>Those values correspond to the Page Ranks of each of the eight web pages depicted on the graph. As expected, the maximum value of those is associated to the second web page (0.232), closely followed by the fourth (0.219), and then the eighth web page (0.157).</p>
 <blockquote>
 <p>Note how this problem of networks of web pages has been translated into mathematical objects, to an equivalent problem involving matrices, eigenvalues and eigenvectors, and has been solved with techniques of Linear Algebra.</p>
 </blockquote>
-<p>The transition matrix is <strong>sparse</strong>: most of its entries are zeros. Sparse matrices with extremely large size are of special importance in <em>Numerical Linear Algebra</em>, not only because they encode challenging scientific problems, but also because it is extremely hard to manipulate them with basic algorithms.</p>
-<p>Rather than storing to memory all values in the matrix, it makes sense to collect only the non-zero values instead, and use algorithms with exploit these smart storage schemes. The gain in memory management is obvious. These methods are usually faster for this kind of matrices and give less roundoff errors, since there are usually far less operations involved. This is another advantage of <code>scipy</code>, since it contains numerous procedures to attack different problems where data is stored in this fashion. Let us observe its power with another example:</p>
-<p>The <strong>University of Florida Sparse Matrix Collection</strong> is the largest database of matrices accessible online. As of January 2014, it contains 157 groups of matrices arising from all sorts of scientific disciplines. The sizes of the matrices range from very small (1-by-2) to insanely large (28-million-by-28-million). More matrices are expected to be added constantly, as they arise in different engineering problems.</p>
+<p>The transition matrix is **sparse**: most of its entries are zeros. Sparse matrices with extremely large size are of special importance in *Numerical Linear Algebra*, not only because they encode challenging scientific problems, but also because it is extremely hard to manipulate them with basic algorithms.</p>
+<p>Rather than storing to memory all values in the matrix, it makes sense to collect only the non-zero values instead, and use algorithms with exploit these smart storage schemes. The gain in memory management is obvious. These methods are usually faster for this kind of matrices and give less roundoff errors, since there are usually far less operations involved. This is another advantage of `scipy`, since it contains numerous procedures to attack different problems where data is stored in this fashion. Let us observe its power with another example:</p>
+<p>The **University of Florida Sparse Matrix Collection** is the largest database of matrices accessible online. As of January 2014, it contains 157 groups of matrices arising from all sorts of scientific disciplines. The sizes of the matrices range from very small (1-by-2) to insanely large (28-million-by-28-million). More matrices are expected to be added constantly, as they arise in different engineering problems.</p>
 <blockquote>
 <p>More information about this database can be found in ACM Transactions on Mathematical Software, vol 38, Issue 1, 2011, pp 1:1 - 1:25, by T.A. Davis and Y.Hu, or online at <a href="www.cise.ufl.edu/research/sparse/matrices" class="uri">www.cise.ufl.edu/research/sparse/matrices</a></p>
 </blockquote>
-<p>For example, the group with the most matrices in the database is the original Harwell-Boeing Collection, with 292 different sparse matrices. This group can also be accessed online at the <strong>Matrix Market</strong>: <a href="math.nist.gov/MatrixMarket" class="uri">math.nist.gov/MatrixMarket</a></p>
+<p>For example, the group with the most matrices in the database is the original Harwell-Boeing Collection, with 292 different sparse matrices. This group can also be accessed online at the **Matrix Market**: <a href="math.nist.gov/MatrixMarket" class="uri">math.nist.gov/MatrixMarket</a></p>
 <p>Each matrix in the database comes in three formats: 
 
 	<ul>
-		<li> <strong>Matrix Market Exchange Format</strong> [Boisvert et al. 1997] </li>
-		<li> <strong>Rutherford-Boeing Exchange Format</strong> [Duff et al. 1997] </li>
-		<li> Proprietary <strong>matlab</strong> <code>.mat</code> format.</li>
+		<li> **Matrix Market Exchange Format** [Boisvert et al. 1997] </li>
+		<li> **Rutherford-Boeing Exchange Format** [Duff et al. 1997] </li>
+		<li> Proprietary **matlab** `.mat` format.</li>
 	</ul>
 </p>
 
-<p>Let us import to our <code>ipython</code> session two matrices in Matrix Market Exchange format from the Collection, meant to be used in a solution of a least squares problem. These matrices are located at</p>
+<p>Let us import to our `ipython` session two matrices in Matrix Market Exchange format from the Collection, meant to be used in a solution of a least squares problem. These matrices are located at</p>
 <p><a href="www.cise.ufl.edu/research/sparse/matrices/Bydder/mri2.html" class="uri">www.cise.ufl.edu/research/sparse/matrices/Bydder/mri2.html</a></p>
-<p>We download the corresponding <code>tar</code> bundle and <code>untar</code> it to get two <code>ASCII</code> files: 
+<p>We download the corresponding `tar` bundle and `untar` it to get two `ASCII` files: 
 
 	<ul>
-		<li> <code>mri2.mtx</code> (the main matrix in the least squares problem)</li> 
-		<li> <code>mri2_b.mtx</code> (the right-hand side of the equation)</li>
+		<li> `mri2.mtx` (the main matrix in the least squares problem)</li> 
+		<li> `mri2_b.mtx` (the right-hand side of the equation)</li>
 	</ul>
 </p>
 
 <p>The first twenty lines of the file mri2.mtx read as follows:</p>
-<pre><code>%% MatrixMarket matrix coordinate real general
+<pre>`%% MatrixMarket matrix coordinate real general
 %-----------------------------------------------------------------
 % UF Sparse Matrix Collection, Tim Davis
 % http://www.cise.ufl.edu/research/sparse/matrices/Bydder/mri2
@@ -234,22 +142,22 @@ image:
 63240 147456 569160
 31992 1720 .053336731395584265
 31992 1721 .15785917688901102
-31992 1722 .07903055194318191</code></pre>
+31992 1722 .07903055194318191`</pre>
 <p>The first sixteen lines are comments, and give us some information about the generation of the matrix. 
 
 	<ul>
 		<li> The computer vision problem where it arose: An MRI reconstruction. </li>
 		<li> Author information: Mark Bydder, UCSD. </li>
-		<li> Procedures to apply to the data: Solve a least square problem <span class="math">\(A \cdot x - b\)</span>, and posterior visualization of the result.</li>
+		<li> Procedures to apply to the data: Solve a least square problem \(A \cdot x - b\)</span>, and posterior visualization of the result.</li>
 	</ul>
 </p>
 
 <p>The seventeenth line indicates the size of the matrix: 63240 rows by 147456 columns, as well as the number of non-zero entries in the data: 569160.</p>
 <p>The rest of the file includes precisely 569160 lines, each containing two integer numbers, and a floating point number: These are the locations of the non-zero elements in the matrix, together with the corresponding values.</p>
 <blockquote>
-<p>We need to take into account that these files use the <code>Fortran</code> convention of starting arrays from 1, not from 0. See <code>In [13]</code>.</p>
+<p>We need to take into account that these files use the `Fortran` convention of starting arrays from 1, not from 0. See `In [13]`.</p>
 </blockquote>
-<p>A good way to read this file into an ndarray is by means of the function <code>loadtxt</code> in <code>numpy</code>. We can then use <code>scipy</code> to transform the array into a sparse matrix with the function <code>coo_matrix</code> in the module <code>scipy.sparse</code> (<code>coo</code> stands for <em>coordinate</em> internal format).</p>
+<p>A good way to read this file into an ndarray is by means of the function `loadtxt` in `numpy`. We can then use `scipy` to transform the array into a sparse matrix with the function `coo_matrix` in the module `scipy.sparse` (`coo` stands for *coordinate* internal format).</p>
 </div>
 </div>
 </div>
@@ -274,7 +182,7 @@ image:
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>The best way to visualize the sparsity of this matrix is by means of the routine <code>spy</code> from the module <code>matplotlib.pyplot</code>.</p>
+<p>The best way to visualize the sparsity of this matrix is by means of the routine `spy` from the module `matplotlib.pyplot`.</p>
 </div>
 </div>
 </div>
@@ -654,7 +562,7 @@ LJEDAAAAAElFTkSuQmCC
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>These are the first ten lines from the second file, <code>mri2_b.mtx</code>, which does not represent a sparse matrix, but a column vector:</p>
+<p>These are the first ten lines from the second file, `mri2_b.mtx`, which does not represent a sparse matrix, but a column vector:</p>
 </div>
 </div>
 </div>
@@ -738,7 +646,7 @@ Wall time: 6min 50s
 <div class="output_area">
 <div class="output_text output_subarea output_pyout">
 <pre>
-&lt;matplotlib.image.AxesImage at 0x11218c250&gt;
+<matplotlib.image.AxesImage at 0x11218c250&gt;
 </pre>
 </div>
 
@@ -4842,35 +4750,35 @@ lVRSSSWVA5RUEaeSSiqppJLKAcr/BkPRYCZW2y4rAAAAAElFTkSuQmCC
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <blockquote>
-<p>If interested in the theory behind the creation of this matrix and the particulars of this problem, read the article <em>On the optimality of the Gridding Reconstruction Algorithm</em>, by H. Sedarat and D. G. Nishimura, published in IEEE Trans. Medical Imaging, vol 19, no 4, pp. 306-317, 2000.</p>
+<p>If interested in the theory behind the creation of this matrix and the particulars of this problem, read the article *On the optimality of the Gridding Reconstruction Algorithm*, by H. Sedarat and D. G. Nishimura, published in IEEE Trans. Medical Imaging, vol 19, no 4, pp. 306-317, 2000.</p>
 </blockquote>
 <p>For matrices with a good structure, which are going to be exclusively involved in matrix multiplications, it is often possible to store the objects without allocating almost any space. Consider the following example:</p>
-<p>A horizontal earthquake oscillation affects each floor of a tall building, depending on the natural frequencies of oscillation of the floors. If we make certain assumptions, a model to quantize the oscillations on buildings with N floors can be obtained as a second-order system of N differential equations by <em>competition</em>: the Newton's second law force is set equal to the sum of Hooke's forces, and the external force due to the earthquake wave.</p>
+<p>A horizontal earthquake oscillation affects each floor of a tall building, depending on the natural frequencies of oscillation of the floors. If we make certain assumptions, a model to quantize the oscillations on buildings with N floors can be obtained as a second-order system of N differential equations by *competition*: the Newton's second law force is set equal to the sum of Hooke's forces, and the external force due to the earthquake wave.</p>
 <p>These are the assumptions we need: 
 
 	<ul>
-		<li>Each floor is considered a point of mass located at its center-of-mass. The floors have masses <span class="math">\(m[1], m[2], ..., m[N]\)</span>. </li>
-		<li>Each floor is restored to its equilibrium position by a linear restoring force (Hooke's <span class="math">\(-k \times \text{elongation}\)</span>). The Hooke's constants for the floors are <span class="math">\(k[1], k[2], ..., k[N]\)</span>. </li>
-		<li>The locations of masses representing the oscillation of the floors are <span class="math">\(x[1], x[2], ..., x[N]\)</span>. We assume all of them functions of time, and that at equilibrium they are all equal to zero. </li>
+		<li>Each floor is considered a point of mass located at its center-of-mass. The floors have masses \(m[1], m[2], ..., m[N]\)</span>. </li>
+		<li>Each floor is restored to its equilibrium position by a linear restoring force (Hooke's \(-k \times \text{elongation}\)</span>). The Hooke's constants for the floors are \(k[1], k[2], ..., k[N]\)</span>. </li>
+		<li>The locations of masses representing the oscillation of the floors are \(x[1], x[2], ..., x[N]\)</span>. We assume all of them functions of time, and that at equilibrium they are all equal to zero. </li>
 		<li>For simplicity of exposition, we are going to assume no friction: all damping effects on the floors are ignored. </li>
 		<li>The equations of a floor depend only on the neighboring floors.</li>
 	</ul>
 </p>
 
-<p>Set <span class="math">\(M\)</span>, the mass matrix, to be a diagonal matrix containing the floor masses on its diagonal. Set <span class="math">\(K\)</span>, the Hooke's matrix, to be a tri-diagonal matrix with the following structure: for each row <span class="math">\(j\)</span>, all the entries are zero except 
+<p>Set \(M\)</span>, the mass matrix, to be a diagonal matrix containing the floor masses on its diagonal. Set \(K\)</span>, the Hooke's matrix, to be a tri-diagonal matrix with the following structure: for each row \(j\)</span>, all the entries are zero except 
 
 	<ul>
-		<li>Column <span class="math">\(j-1\)</span>, which we set to be <span class="math">\(k[j+1]\)</span>, </li>
-		<li>Column <span class="math">\(j\)</span>, which we set to <span class="math">\(-k[j+1]-k[j+1]\)</span>, and </li>
-		<li>Column <span class="math">\(j+1\)</span>, which we set to <span class="math">\(k[j+2]\)</span>.</li>
+		<li>Column \(j-1\)</span>, which we set to be \(k[j+1]\)</span>, </li>
+		<li>Column \(j\)</span>, which we set to \(-k[j+1]-k[j+1]\)</span>, and </li>
+		<li>Column \(j+1\)</span>, which we set to \(k[j+2]\)</span>.</li>
 	</ul>
 </p>
 
-<p>Set <span class="math">\(H\)</span> to be a column vector containing the external force on each floor due to the earthquake, and <span class="math">\(X\)</span> the column vector containing the functions <span class="math">\(x[j]\)</span>.</p>
-<p>We have then the system <span class="math">\(M \cdot X&#39;&#39; = K \cdot X + H\)</span>. The Homogeneous part of this system is the product of the inverse of <span class="math">\(M\)</span> with <span class="math">\(K\)</span>, which we denote <span class="math">\(A\)</span>.</p>
-<p>To solve the homogeneous linear second-order system <span class="math">\(X&#39;&#39; = A \cdot X\)</span>, we define the variable <span class="math">\(Y\)</span> to contain <span class="math">\(2N\)</span> entries: all <span class="math">\(N\)</span> functions <span class="math">\(x[j]\)</span>, followed by their derivatives <span class="math">\(x&#39;[j]\)</span>. Any solution of this second-order linear system has a corresponding solution on the first-order linear system <span class="math">\(Y&#39; = C \cdot Y\)</span>, where <span class="math">\(C\)</span> is a block matrix of size <span class="math">\(2N \times 2N\)</span>. This matrix <span class="math">\(C\)</span> is composed by a block of size <span class="math">\(N \times N\)</span> containing only zeros, followed horizontally by the identity (of size <span class="math">\(N \times N\)</span>), and below these two, the matrix <span class="math">\(A\)</span> followed horizontally by another <span class="math">\(N \times N\)</span> block of zeros.</p>
-<p>It is not necessary to store this matrix <span class="math">\(C\)</span> into memory, or any of its factors or blocks. Instead, we will make use of its structure, and use a <strong>Linear Operator</strong> to represent it. Minimal data is then needed to generate this operator (only the values of the masses and the Hooke's coefficients): much less than any matrix representation of it.</p>
-<p>Let us show a concrete example with 6 floors. We indicate first their masses and Hooke's constants, and proceed to construct a representation of <span class="math">\(A\)</span> as a linear operator:</p>
+<p>Set \(H\)</span> to be a column vector containing the external force on each floor due to the earthquake, and \(X\)</span> the column vector containing the functions \(x[j]\)</span>.</p>
+<p>We have then the system \(M \cdot X&#39;&#39; = K \cdot X + H\)</span>. The Homogeneous part of this system is the product of the inverse of \(M\)</span> with \(K\)</span>, which we denote \(A\)</span>.</p>
+<p>To solve the homogeneous linear second-order system \(X&#39;&#39; = A \cdot X\)</span>, we define the variable \(Y\)</span> to contain \(2N\)</span> entries: all \(N\)</span> functions \(x[j]\)</span>, followed by their derivatives \(x&#39;[j]\)</span>. Any solution of this second-order linear system has a corresponding solution on the first-order linear system \(Y&#39; = C \cdot Y\)</span>, where \(C\)</span> is a block matrix of size \(2N \times 2N\)</span>. This matrix \(C\)</span> is composed by a block of size \(N \times N\)</span> containing only zeros, followed horizontally by the identity (of size \(N \times N\)</span>), and below these two, the matrix \(A\)</span> followed horizontally by another \(N \times N\)</span> block of zeros.</p>
+<p>It is not necessary to store this matrix \(C\)</span> into memory, or any of its factors or blocks. Instead, we will make use of its structure, and use a **Linear Operator** to represent it. Minimal data is then needed to generate this operator (only the values of the masses and the Hooke's coefficients): much less than any matrix representation of it.</p>
+<p>Let us show a concrete example with 6 floors. We indicate first their masses and Hooke's constants, and proceed to construct a representation of \(A\)</span> as a linear operator:</p>
 </div>
 </div>
 </div>
@@ -4904,7 +4812,7 @@ lVRSSSWVA5RUEaeSSiqppJLKAcr/BkPRYCZW2y4rAAAAAElFTkSuQmCC
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>The construction of <span class="math">\(C\)</span> is very simple now (much simpler than its matrix!):</p>
+<p>The construction of \(C\)</span> is very simple now (much simpler than its matrix!):</p>
 </div>
 </div>
 </div>
@@ -4931,10 +4839,10 @@ lVRSSSWVA5RUEaeSSiqppJLKAcr/BkPRYCZW2y4rAAAAAElFTkSuQmCC
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>A solution of this homogeneous system comes in the form of an <em>action of the exponential</em> of <span class="math">\(C\)</span>: <span class="math">\(Y(t) = \operatorname{expm}(C t) \cdot Y(0)\)</span>, where <span class="math">\(\operatorname{expm}()\)</span> here denotes a matrix exponential function. In <code>scipy</code>, this operation is performed with the routine <code>expm_multiply</code> in the module <code>scipy.sparse.linalg</code>.</p>
-<p>For example, in our case, given the initial value containing the values <span class="math">\(x[1](0)=0, \dots, x[N](0)=0, x&#39;[1](0)=1, \dots, x&#39;[N](0)=1\)</span>, if we require a solution <span class="math">\(Y(t)\)</span> for values of <span class="math">\(t\)</span> between 0 and 1 in steps of size 0.1, we could issue the following:</p>
+<p>A solution of this homogeneous system comes in the form of an *action of the exponential* of \(C\)</span>: \(Y(t) = \operatorname{expm}(C t) \cdot Y(0)\)</span>, where \(\operatorname{expm}()\)</span> here denotes a matrix exponential function. In `scipy`, this operation is performed with the routine `expm_multiply` in the module `scipy.sparse.linalg`.</p>
+<p>For example, in our case, given the initial value containing the values \(x[1](0)=0, \dots, x[N](0)=0, x&#39;[1](0)=1, \dots, x&#39;[N](0)=1\)</span>, if we require a solution \(Y(t)\)</span> for values of \(t\)</span> between 0 and 1 in steps of size 0.1, we could issue the following:</p>
 <blockquote>
-<p>It has been reported in some installations that, in the next step, a matrix for <span class="math">\(C\)</span> must be given instead of the actual linear operator (thus contradicting the manual). If this is the case in your system, simply change <span class="math">\(C\)</span> in the next lines, to its matrix representation.</p>
+<p>It has been reported in some installations that, in the next step, a matrix for \(C\)</span> must be given instead of the actual linear operator (thus contradicting the manual). If this is the case in your system, simply change \(C\)</span> in the next lines, to its matrix representation.</p>
 </blockquote>
 </div>
 </div>
@@ -4984,7 +4892,7 @@ lVRSSSWVA5RUEaeSSiqppJLKAcr/BkPRYCZW2y4rAAAAAElFTkSuQmCC
 <div class="output_area">
 <div class="output_text output_subarea output_pyout">
 <pre>
-&lt;matplotlib.legend.Legend at 0x10a28bd90&gt;
+<matplotlib.legend.Legend at 0x10a28bd90&gt;
 </pre>
 </div>
 
@@ -5581,47 +5489,47 @@ UoEXERGJQCrwIiIiEUgFXkREJAKpwIuIiESg/w8PMJd+8cpMGgAAAABJRU5ErkJggg==
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <blockquote>
-<p>For more details about systems of differential equations, and how to solve them with actions of exponentials, read for example the excellent book <em>Elementary Differential Equations</em> 10 ed., by William E. Boyce and Richard C. DiPrima. Wiley, 2012.</p>
+<p>For more details about systems of differential equations, and how to solve them with actions of exponentials, read for example the excellent book *Elementary Differential Equations* 10 ed., by William E. Boyce and Richard C. DiPrima. Wiley, 2012.</p>
 </blockquote>
-<p>These three examples illustrate the goal of this first chapter: <strong>Numerical Linear Algebra</strong>. In <code>python</code> this is accomplished first by storing the data in matrix form, or as a related linear operator, by means of any of the following classes: 
+<p>These three examples illustrate the goal of this first chapter: **Numerical Linear Algebra**. In `python` this is accomplished first by storing the data in matrix form, or as a related linear operator, by means of any of the following classes: 
 
 	<ul>
-		<li><code>numpy.ndarray</code> (making sure that they are two-dimensional) </li>
-		<li><code>numpy.matrix</code> </li>
-		<li><code>scipy.sparse.bsr_matrix</code> (Block Sparse Row matrix) </li>
-		<li><code>scipy.sparse.coo_matrix</code> (Sparse Matrix in <strong>COO</strong>rdinate format) </li>
-		<li><code>scipy.sparse.csc_matrix</code> (Compressed Sparse Column matrix) </li>
-		<li><code>scipy.sparse.csr_matrix</code> (Compressed Sparse Row matrix) </li>
-		<li><code>scipy.sparse.dia_matrix</code> (Sparse matrix with <strong>DIA</strong>gonal storage) </li>
-		<li><code>scipy.sparse.dok_matrix</code> (Sparse matrix based on a Dictionary of Keys) </li>
-		<li><code>scipy.sparse.lil_matrix</code> (Sparse matrix based on a linked list) </li>
-		<li><code>scipy.sparse.linalg.LinearOperator</code></li>
+		<li>`numpy.ndarray` (making sure that they are two-dimensional) </li>
+		<li>`numpy.matrix` </li>
+		<li>`scipy.sparse.bsr_matrix` (Block Sparse Row matrix) </li>
+		<li>`scipy.sparse.coo_matrix` (Sparse Matrix in **COO**rdinate format) </li>
+		<li>`scipy.sparse.csc_matrix` (Compressed Sparse Column matrix) </li>
+		<li>`scipy.sparse.csr_matrix` (Compressed Sparse Row matrix) </li>
+		<li>`scipy.sparse.dia_matrix` (Sparse matrix with **DIA**gonal storage) </li>
+		<li>`scipy.sparse.dok_matrix` (Sparse matrix based on a Dictionary of Keys) </li>
+		<li>`scipy.sparse.lil_matrix` (Sparse matrix based on a linked list) </li>
+		<li>`scipy.sparse.linalg.LinearOperator`</li>
 	</ul>
 </p>
 
 <p>As we have seen in the examples, the choice of different classes obeys mainly to the sparsity of the data, and the algorithms we are to apply on them.</p>
-<p>This choice then dictates the modules that we use for the different algorithms: <code>scipy.linalg</code> for generic matrices, and both <code>scipy.sparse</code>, <code>scipy.sparse.linalg</code>, for sparse matrices or linear operators. These three <code>scipy</code> modules are compiled on top of the highly optimized computer libraries <code>BLAS</code> (written in <code>Fortran77</code>), <code>LAPACK</code> (in <code>Fortran90</code>), <code>ARPACK</code> (in <code>Fortran77</code>), and <code>SuperLU</code> (in <code>C</code>).</p>
+<p>This choice then dictates the modules that we use for the different algorithms: `scipy.linalg` for generic matrices, and both `scipy.sparse`, `scipy.sparse.linalg`, for sparse matrices or linear operators. These three `scipy` modules are compiled on top of the highly optimized computer libraries `BLAS` (written in `Fortran77`), `LAPACK` (in `Fortran90`), `ARPACK` (in `Fortran77`), and `SuperLU` (in `C`).</p>
 <blockquote>
 <p>For a better understanding of these underlying packages, read the description and documentation from their creators: 
 
 	<ul>
-		<li><code>BLAS</code>: <a href="netlib.org/blas/faq.html" class="uri">netlib.org/blas/faq.html</a> </li>
-		<li><code>LAPACK</code>: <a href="netlib.org/lapack/lapack-3.2.html" class="uri">netlib.org/lapack/lapack-3.2.html</a> </li>
-		<li><code>ARPACK</code>: <a href="www.caam.rice.edu/software/ARPACK/" class="uri">www.caam.rice.edu/software/ARPACK/</a> </li>
-		<li><code>SuperLU</code>: <a href="crd-legacy.lbl.gov/~xiaoye/SuperLU/" class="uri">crd-legacy.lbl.gov/~xiaoye/SuperLU/</a></li>
+		<li>`BLAS`: <a href="netlib.org/blas/faq.html" class="uri">netlib.org/blas/faq.html</a> </li>
+		<li>`LAPACK`: <a href="netlib.org/lapack/lapack-3.2.html" class="uri">netlib.org/lapack/lapack-3.2.html</a> </li>
+		<li>`ARPACK`: <a href="www.caam.rice.edu/software/ARPACK/" class="uri">www.caam.rice.edu/software/ARPACK/</a> </li>
+		<li>`SuperLU`: <a href="crd-legacy.lbl.gov/~xiaoye/SuperLU/" class="uri">crd-legacy.lbl.gov/~xiaoye/SuperLU/</a></li>
 	</ul>
 </p>
 
 </blockquote>
-<p>Most of the routines in these three <code>scipy</code> modules are wrappers to functions in the mentioned libraries. If we so desire, we also have the possibility to call the underlying functions directly. In the module <code>scipy.linalg</code>, we have 
+<p>Most of the routines in these three `scipy</code> modules are wrappers to functions in the mentioned libraries. If we so desire, we also have the possibility to call the underlying functions directly. In the module `scipy.linalg</code>, we have 
 
 	<ul>
-		<li><code>scipy.linalg.get_blas_funcs</code> to call routines from <code>BLAS</code>. </li>
-		<li><code>scipy.linalg.get_lapack_funcs</code> to call routines from <code>LAPACK</code>.</li>
+		<li>`scipy.linalg.get_blas_funcs</code> to call routines from `BLAS</code>. </li>
+		<li>`scipy.linalg.get_lapack_funcs</code> to call routines from `LAPACK</code>.</li>
 	</ul>
 </p>
 
-<p>For example, if we want to use the <code>BLAS</code> function <code>NRM2</code> to compute Frobenius norms:</p>
+<p>For example, if we want to use the `BLAS</code> function `NRM2</code> to compute Frobenius norms:</p>
 </div>
 </div>
 </div>
