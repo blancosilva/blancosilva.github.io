@@ -31,6 +31,7 @@ Let us open an `ipython` session and load this particular matrix to memory. Reme
 
 {% highlight python linenos %}
 import numpy as np, matplotlib.pyplot as plt, scipy.linalg as spla, scipy.sparse as spsp, scipy.sparse.linalg as spspla
+
 np.set_printoptions(suppress=True, precision=3)
 
 cols = np.array([0,1,1,2,2,3,3,4,4,5,6,6,6,7,7])
@@ -155,7 +156,7 @@ The seventeenth line indicates the size of the matrix: 63240 rows by 147456 colu
 
 The rest of the file includes precisely 569160 lines, each containing two integer numbers, and a floating point number: These are the locations of the non-zero elements in the matrix, together with the corresponding values.
 
->We need to take into account that these files use the `Fortran` convention of starting arrays from 1, not from 0. See `In [13]`.
+>We need to take into account that these files use the `Fortran` convention of starting arrays from 1, not from 0.
 
 A good way to read this file into an ndarray is by means of the function `loadtxt` in `numpy`. We can then use `scipy` to transform the array into a sparse matrix with the function `coo_matrix` in the module `scipy.sparse` (`coo` stands for *coordinate* internal format).
 
@@ -532,6 +533,7 @@ Those are six commented lines with information, one more line indicating the sha
 
 {% highlight python linenos %}
 r_vals, i_vals = np.loadtxt("mri2_b.mtx", skiprows=7, unpack=True)
+
 %time solution = spspla.lsqr(MRI2, r_vals + 1j*i_vals)
 {% endhighlight %}
 
@@ -542,6 +544,7 @@ Wall time: 6min 50s
 
 {% highlight python linenos %}
 from scipy.fftpack import fft2, fftshift
+
 img = solution[0].reshape(384,384); \
 img = np.abs(fftshift(fft2(img)))
 plt.figure(figsize=(8,8))
@@ -4659,7 +4662,7 @@ Set \\( H \\) to be a column vector containing the external force on each floor 
 
 We have then the system \\( M \cdot X^{\prime\prime} = K \cdot X + H \\). The Homogeneous part of this system is the product of the inverse of \\( M \\) with \\( K \\), which we denote \\( A \\).
 
-To solve the homogeneous linear second-order system \\( X^{\prime\prime} = A \cdot X \\), we define the variable \\( Y \\) to contain \\( 2N \\) entries: all \\( N \\) functions \\( x_j \\), followed by their derivatives \\( x\prime_j \\). Any solution of this second-order linear system has a corresponding solution on the first-order linear system \\( Y^\prime = C \cdot Y \\), where \\( C \\) is a block matrix of size \\( 2N \times 2N \\). This matrix \\( C \\) is composed by a block of size \\( N \times N \\) containing only zeros, followed horizontally by the identity (of size \\( N \times N \\)), and below these two, the matrix \\( A \\) followed horizontally by another \\( N \times N \\) block of zeros.
+To solve the homogeneous linear second-order system \\( X^{\prime\prime} = A \cdot X \\), we define the variable \\( Y \\) to contain \\( 2N \\) entries: all \\( N \\) functions \\( x_j \\), followed by their derivatives \\( x^\prime_j \\). Any solution of this second-order linear system has a corresponding solution on the first-order linear system \\( Y^\prime = C \cdot Y \\), where \\( C \\) is a block matrix of size \\( 2N \times 2N \\). This matrix \\( C \\) is composed by a block of size \\( N \times N \\) containing only zeros, followed horizontally by the identity (of size \\( N \times N \\)), and below these two, the matrix \\( A \\) followed horizontally by another \\( N \times N \\) block of zeros.
 
 It is not necessary to store this matrix \\( C \\) into memory, or any of its factors or blocks. Instead, we will make use of its structure, and use a **Linear Operator** to represent it. Minimal data is then needed to generate this operator (only the values of the masses and the Hooke's coefficients): much less than any matrix representation of it.
 
@@ -5332,6 +5335,7 @@ For example, if we want to use the `BLAS` function `NRM2` to compute Frobenius n
 
 {% highlight python linenos %}
 blas_norm = spla.get_blas_funcs('nrm2')
+
 blas_norm(np.float32([1e20]))
 {% endhighlight %}
 
