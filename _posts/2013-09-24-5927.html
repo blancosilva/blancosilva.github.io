@@ -1,0 +1,120 @@
+---
+layout: post
+title: More on Lindenmayer Systems
+date: 2013-09-24 01:04:46.000000000 -04:00
+category: post
+comments: true
+image:
+  teaser: "http://farm3.staticflickr.com/2811/9909917143_3520006ec2_z_d.jpg"
+---
+
+
+We briefly explored Lindenmayer systems (or L-systems) in an old post: <a href="http://blancosilva.wordpress.com/2011/01/28/toying-with-basic-fractals/">Toying with Basic Fractals</a>.   We quickly reviewed this method for creation of an approximation to fractals, and displayed an example (the Koch snowflake) based on `tikz` libraries.
+
+I would like to show a few more examples of beautiful curves generated with this technique, together with their generating axiom, rules and parameters.  Feel free to click on each of the images below to download a larger version.
+
+Note that any coding language with plotting capabilities should be able to tackle this project.  I used once again `tikz` for \\( \LaTeX \\), but this time with the tikzlibrary `lindenmayersystems`.
+
+<table style="margin-left:auto;margin-right:auto;width:90%;border:0 white;">
+<tr>
+<td style="width:50%;border:0 white;vertical-align:middle;">
+<a href="http://farm3.staticflickr.com/2808/9909917233_ae428083cb_d.jpg"><img src="http://farm3.staticflickr.com/2808/9909917233_ae428083cb_d.jpg" width="100%" /></a>
+</td>
+<td style="width:50%;border:0 white;vertical-align:middle;">
+<a href="http://farm3.staticflickr.com/2811/9909917143_3520006ec2_z_d.jpg"><img src="http://farm3.staticflickr.com/2811/9909917143_3520006ec2_z_d.jpg" width="100%" /></a>
+</td>
+</tr>
+<tr>
+<td style="width:50%;border:0 white;">
+{% highlight tex %}
+name  : Dragon Curve
+axiom : X
+order : 11
+step  : 5pt
+angle : 90
+rules :
+        X -> X+YF+
+        Y -> -FX-Y
+{% endhighlight %}
+</td>
+<td style="width:50%;border:0 white;">
+{% highlight tex %}
+name  : Gosper Space-filling Curve
+axiom : XF
+order : 5
+step  : 2pt
+angle : 60
+rules :
+	XF -> XF+YF++YF-XF--XFXF-YF+
+	YF -> -XF+YFYF++YF+XF--XF-YF
+{% endhighlight %}
+</td>
+</tr>
+<tr>
+<td style="width:50%;border:0 white;vertical-align:middle;">
+<a href="http://farm6.staticflickr.com/5549/9909916673_15bdd618fe_d.jpg"><img src="http://farm6.staticflickr.com/5549/9909916673_15bdd618fe_d.jpg" width="100%" /></a>
+</td>
+<td style="width:50%;border:0 white;vertical-align:middle;">
+<a href="http://farm3.staticflickr.com/2874/9909747095_500419ca52_d.jpg"><img src="http://farm3.staticflickr.com/2874/9909747095_500419ca52_d.jpg" width="100%" /></a>
+</td>
+</tr>
+<tr>
+<td style="width:50%;border:0 white;">
+{% highlight tex %}
+name  : Quadric Koch Island
+axiom : F+F+F+F
+order : 4
+step  : 1pt
+angle : 90
+rules :
+        F -> F+F-F-FF+F+F-F
+{% endhighlight %}
+</td>
+<td style="width:50%;border:0 white;">
+{% highlight tex %}
+name  : Sierpinski Arrowhead
+axiom : F
+order : 8
+step  : 3.5pt
+angle : 60
+rules :
+        G -> F+G+F
+        F -> G-F-G
+{% endhighlight %}
+</td>
+</tr>
+<tr>
+<td style="width:50%;border:0 white;vertical-align:middle;">
+<a href="http://farm4.staticflickr.com/3696/9915286545_2f7813f4a8_d.jpg"><img src="http://farm4.staticflickr.com/3696/9915286545_2f7813f4a8_d.jpg" width="100%" /></a>
+</td>
+<td style="width:50%;border:0 white;vertical-align:middle;">
+<a href="http://farm3.staticflickr.com/2849/9915456673_38a82dfeb5_d.jpg"><img src="http://farm3.staticflickr.com/2849/9915456673_38a82dfeb5_d.jpg" width="100%" /></a>
+</td>
+</tr>
+<tr>
+<td style="width:50%;border:0 white;">
+{% highlight tex %}
+name  : ?
+axiom : F+F+F+F
+order : 4
+step  : 2pt
+angle : 90
+rules :
+        F -> FF+F+F+F+F+F-F
+{% endhighlight %}
+</td>
+<td style="width:50%;border:0 white;">
+{% highlight tex %}
+name  : ?
+axiom : F+F+F+F
+order : 4
+step  : 3pt
+angle : 90
+rules :
+        F -> FF+F+F+F+FF
+{% endhighlight %}
+</td>
+</tr>
+</table>
+
+Would you like to experiment a little with axioms, rules and parameters, and obtain some new pleasant curves with this method?  If the mathematical properties of the fractal that they approximate are interesting enough, I bet you could attach your name to them.  Like the astronomer that finds through her telescope a new object in the sky, or the zoologist that discover a new species of spider in the forest.
