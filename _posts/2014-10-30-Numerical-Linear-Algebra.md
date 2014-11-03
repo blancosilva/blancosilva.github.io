@@ -20,14 +20,14 @@ We construct a *transition matrix* of this graph <span>\\( T=\big( a_{i,j} \big)
 
 <p style="text-align:center;">
 \\( \begin{pmatrix}
-0  &1/2  & 0   & 0    & 0   & 0   & 0   & 0 \\
-1  & 0   &1/2  &1/2   & 0   & 0   & 0   & 0 \\
-0  & 0   & 0   & 0    & 0   & 0   &1/3  & 0 \\
-0  &1/2  & 0   & 0    & 0   & 1   &1/3  & 0 \\
-0  & 0   &1/2  & 0    & 0   & 0   & 0   & 0 \\
-0  & 0   & 0   & 0    & 0   & 0   & 0   &1/2\\
-0  & 0   & 0   & 0    &1/2  & 0   & 0   &1/2\\
-0  & 0   & 0   &1/2   &1/2  & 0   &1/3  &0
+0  & 1/2  & 0   & 0    & 0   & 0   & 0   & 0 \\
+1  & 0   & 1/2  & 1/2   & 0   & 0   & 0   & 0 \\
+0  & 0   & 0   & 0    & 0   & 0   & 1/3  & 0 \\
+0  & 1/2  & 0   & 0    & 0   & 1   & 1/3  & 0 \\
+0  & 0   & 1/2  & 0    & 0   & 0   & 0   & 0 \\
+0  & 0   & 0   & 0    & 0   & 0   & 0   & 1/2\\
+0  & 0   & 0   & 0    & 1/2  & 0   & 0   & 1/2\\
+0  & 0   & 0   & 1/2   & 1/2  & 0   & 1/3  & 0
 \end{pmatrix} \\)</p>
 
 Let us open an `ipython` session and load this particular matrix to memory. Remember that in `python`, indices start from zero, not one:
