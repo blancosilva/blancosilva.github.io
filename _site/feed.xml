@@ -6,8 +6,8 @@
 </description>
     <link>http://blancosilva.github.io//</link>
     <atom:link href="http://blancosilva.github.io//feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Mon, 03 Nov 2014 10:01:09 -0500</pubDate>
-    <lastBuildDate>Mon, 03 Nov 2014 10:01:09 -0500</lastBuildDate>
+    <pubDate>Mon, 03 Nov 2014 10:03:15 -0500</pubDate>
+    <lastBuildDate>Mon, 03 Nov 2014 10:03:15 -0500</lastBuildDate>
     <generator>Jekyll v2.4.0</generator>
     
       <item>
@@ -282,7 +282,7 @@ max    31.605647  31.605175  31.556127
 &lt;p&gt;The &lt;strong&gt;University of Florida Sparse Matrix Collection&lt;/strong&gt; is the largest database of matrices accessible online. As of January 2014, it contains 157 groups of matrices arising from all sorts of scientific disciplines. The sizes of the matrices range from very small (1-by-2) to insanely large (28-million-by-28-million). More matrices are expected to be added constantly, as they arise in different engineering problems.&lt;/p&gt;
 
 &lt;blockquote&gt;
-  &lt;p&gt;More information about this database can be found in ACM Transactions on Mathematical Software, vol 38, Issue 1, 2011, pp 1:1 - 1:25, by T.A. Davis and Y.Hu, or online at &lt;a href=&quot;www.cise.ufl.edu/research/sparse/matrices&quot; class=&quot;uri&quot;&gt;www.cise.ufl.edu/research/sparse/matrices&lt;/a&gt;&amp;lt;/p&amp;gt;&lt;/p&gt;
+  &lt;p&gt;More information about this database can be found in ACM Transactions on Mathematical Software, vol 38, Issue 1, 2011, pp 1:1 - 1:25, by T.A. Davis and Y.Hu, or online at &lt;a href=&quot;www.cise.ufl.edu/research/sparse/matrices&quot; class=&quot;uri&quot;&gt;www.cise.ufl.edu/research/sparse/matrices&lt;/a&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 
 &lt;p&gt;For example, the group with the most matrices in the database is the original Harwell-Boeing Collection, with 292 different sparse matrices. This group can also be accessed online at the &lt;strong&gt;Matrix Market&lt;/strong&gt;: &lt;a href=&quot;math.nist.gov/MatrixMarket&quot; class=&quot;uri&quot;&gt;math.nist.gov/MatrixMarket&lt;/a&gt;&lt;/p&gt;
@@ -4882,7 +4882,7 @@ lVRSSSWVA5RUEaeSSiqppJLKAcr/BkPRYCZW2y4rAAAAAElFTkSuQmCC
 &lt;span class=&quot;lineno&quot;&gt;4&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Y&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;spspla&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;expm_multiply&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;C&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;matmat&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;np&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;eye&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;12&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)),&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;np&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ones&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;12&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;start&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;stop&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;num&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;10&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;blockquote&gt;
-  &lt;p&gt;It has been reported in some installations that, in the next step, a matrix for \( C \) must be given instead of the actual linear operator (thus contradicting the manual). If this is the case in your system, simply change \( C \) in the next lines, to its matrix representation.&amp;lt;/p&amp;gt;&lt;/p&gt;
+  &lt;p&gt;It has been reported in some installations that, in the next step, a matrix for \( C \) must be given instead of the actual linear operator (thus contradicting the manual). If this is the case in your system, simply change \( C \) in the next lines, to its matrix representation.&lt;/p&gt;
 &lt;/blockquote&gt;
 
 &lt;p&gt;The oscillations of the six floors during the first second can then be calculated and plotted as follows.&lt;/p&gt;

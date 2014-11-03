@@ -44,7 +44,7 @@ T[rows,cols] = data
 {% endhighlight %}
 
 
-From the transition matrix, we create a *Page Rank matrix*, \\( G \\) (also known as the **Google matrix**), by fixing a positive constant \\( 0 < p \leq 1 \\), and following the formula \\( G = (1-p) \cdot T + p \cdot B \\). Here, \\( B \\) is a matrix with the same size as \\( T \\), with all its entries equal to \\( 1/N \\). For example, if we choose \\( p=0.15 \\), we obtain the following Google matrix
+From the transition matrix, we create a *Page Rank matrix*, \\( G \\) (also known as the **Google matrix**), by fixing a positive constant \\( 0 &lt; p \leq 1 \\), and following the formula \\( G = (1-p) \cdot T + p \cdot B \\). Here, \\( B \\) is a matrix with the same size as \\( T \\), with all its entries equal to \\( 1/N \\). For example, if we choose \\( p=0.15 \\), we obtain the following Google matrix
 
 {% highlight python linenos %}
 G = (1-0.15) * T + 0.15/8
@@ -104,7 +104,7 @@ Rather than storing to memory all values in the matrix, it makes sense to collec
 
 The **University of Florida Sparse Matrix Collection** is the largest database of matrices accessible online. As of January 2014, it contains 157 groups of matrices arising from all sorts of scientific disciplines. The sizes of the matrices range from very small (1-by-2) to insanely large (28-million-by-28-million). More matrices are expected to be added constantly, as they arise in different engineering problems.
 
->More information about this database can be found in ACM Transactions on Mathematical Software, vol 38, Issue 1, 2011, pp 1:1 - 1:25, by T.A. Davis and Y.Hu, or online at <a href="www.cise.ufl.edu/research/sparse/matrices" class="uri">www.cise.ufl.edu/research/sparse/matrices</a></p>
+>More information about this database can be found in ACM Transactions on Mathematical Software, vol 38, Issue 1, 2011, pp 1:1 - 1:25, by T.A. Davis and Y.Hu, or online at <a href="www.cise.ufl.edu/research/sparse/matrices" class="uri">www.cise.ufl.edu/research/sparse/matrices</a>
 
 For example, the group with the most matrices in the database is the original Harwell-Boeing Collection, with 292 different sparse matrices. This group can also be accessed online at the **Matrix Market**: <a href="math.nist.gov/MatrixMarket" class="uri">math.nist.gov/MatrixMarket</a>
 
@@ -4710,7 +4710,7 @@ initial_condition[6:] = 1
 Y = spspla.expm_multiply(C.matmat(np.eye(12)), np.ones(12), start=0, stop=1, num=10)
 {% endhighlight %}
 
->It has been reported in some installations that, in the next step, a matrix for \\( C \\) must be given instead of the actual linear operator (thus contradicting the manual). If this is the case in your system, simply change \\( C \\) in the next lines, to its matrix representation.</p>
+>It has been reported in some installations that, in the next step, a matrix for \\( C \\) must be given instead of the actual linear operator (thus contradicting the manual). If this is the case in your system, simply change \\( C \\) in the next lines, to its matrix representation.
 
 The oscillations of the six floors during the first second can then be calculated and plotted as follows.
 
