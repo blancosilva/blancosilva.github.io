@@ -4,7 +4,7 @@ title: "Presentations"
 ---
 
 
-Feel free to download any of my presentations.  You may find a complete list in my github repository [<a href="https://github.com/blancosilva/Presentations">github/blancosilva/Presentations/</a>]. Or click on each image below to access the corresponding documents.
+Feel free to download any of my presentations.  You may find a complete list in the github repository [<a href="https://github.com/blancosilva/Presentations">github/blancosilva/Presentations/</a>]. Or click on each image below to access the corresponding documents.
 
 <table style="border-width:1px;" width="100%">
 <tbody>
