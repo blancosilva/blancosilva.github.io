@@ -4657,7 +4657,7 @@ These are the assumptions we need:
 Set \\( M \\), the mass matrix, to be a diagonal matrix containing the floor masses on its diagonal. Set \\( K \\), the Hooke's matrix, to be a tri-diagonal matrix with the following structure: for each row \\( j \\), all the entries are zero except 
 
 * Column \\( j-1 \\), which we set to be \\( k_{j+1} \\),
-* Column \\( j \\), which we set to <span>\\( -k_{j+1} - k_{j+1} \\)</span>, and
+* Column \\( j \\), which we set to <div>\\( -k_{j+1} - k_{j+1} \\)</div>, and
 * Column \\( j+1 \\), which we set to \\( k_{j+2} \\).
 
 Set \\( H \\) to be a column vector containing the external force on each floor due to the earthquake, and \\( X \\) the column vector containing the functions \\( x_j \\).
