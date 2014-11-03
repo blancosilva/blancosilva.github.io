@@ -1,4 +1,4 @@
- ---
+---
 layout: page
 title: Books
 date: 2013-06-03 01:48:46.000000000 -04:00
@@ -8,7 +8,7 @@ permalink: /books/
 ## Learning SciPy for Numerical and Scientific Computing
 
 
-<a href="http://www.amazon.com/gp/product/1782161627/ref=as_li_qf_sp_asin_tl?ie=UTF8&amp;camp=1789&amp;creative=9325&amp;creativeASIN=1782161627&amp;linkCode=as2&amp;tag=blancosilva-20"><img src="assets/8693715736_0bb71d0d1d_z_d.jpg" style="float:left;margin:24px;width:18%;" /></a><img src="assets/ir?t=blancosilva-20&amp;l=as2&amp;o=1&amp;a=1782161627" width="1" height="1" border="0" alt="" style="border:none !important;margin:0!important;" />I recently enjoyed the rare pleasure of having a child (my first!) and publishing a book almost at the same time.  Since this post belongs in my professional blog, I will exclusively comment on the latter: <a href="http://www.amazon.com/gp/product/1782161627/ref=as_li_qf_sp_asin_tl?ie=UTF8&amp;camp=1789&amp;creative=9325&amp;creativeASIN=1782161627&amp;linkCode=as2&amp;tag=blancosilva-20">Learning SciPy for Numerical and Scientific Computing</a><img src="assets/ir?t=blancosilva-20&amp;l=as2&amp;o=1&amp;a=1782161627" width="1" height="1" border="0" alt="" style="border:none !important;margin:0!important;" />, published by <a href="http://www.packtpub.com/learning-scipy-for-numerical-and-scientific-computing/book">Packt</a> in a series of technical books focusing on Open Source software.
+<a href="http://www.amazon.com/gp/product/1782161627/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=1782161627&linkCode=as2&tag=blancosilva-20&linkId=UBT4TZNXICJ2L47C"><img style="float:left;margin:24px;width:18%;" src="http://ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=1782161627&Format=_SL250_&ID=AsinImage&MarketPlace=US&ServiceVersion=20070822&WS=1&tag=blancosilva-20" ></a><img src="http://ir-na.amazon-adsystem.com/e/ir?t=blancosilva-20&l=as2&o=1&a=1782161627" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />Early 2013 I enjoyed the rare pleasure of having a child (my first!) and publishing a book almost at the same time.  Since this post belongs in my professional blog, I will exclusively comment on the latter: <a href="http://www.amazon.com/gp/product/1782161627/ref=as_li_qf_sp_asin_tl?ie=UTF8&amp;camp=1789&amp;creative=9325&amp;creativeASIN=1782161627&amp;linkCode=as2&amp;tag=blancosilva-20">Learning SciPy for Numerical and Scientific Computing</a><img src="http://www.assoc-amazon.com/e/ir?t=blancosilva-20&amp;l=as2&amp;o=1&amp;a=1782161627" width="1" height="1" border="0" alt="" style="border:none !important;margin:0!important;" />, published by <a href="http://www.packtpub.com/learning-scipy-for-numerical-and-scientific-computing/book">Packt</a> in a series of technical books focusing on Open Source software.
 
 Keep in mind that the book is for a very specialized audience: not only do you need a basic knowledge of Python, but also a somewhat advanced command of mathematics/physics, and an interest in engineering or scientific applications.  This is an excerpt of the detailed description of the monograph, as it reads in the publisher's page:
 
@@ -24,14 +24,14 @@ Keep in mind that the book is for a very specialized audience: not only do you n
 >
 >The rest of the chapters describe the use of all different modules and routines from the SciPy libraries, through the scope of different branches of numerical mathematics. Each big field is represented: numerical analysis, linear algebra, statistics, signal processing, and computational geometry. And for each of these fields all possibilities are illustrated with clear syntax, and plenty of examples. The book then presents combinations of all these techniques to the solution of research problems in real-life scenarios for different sciences or engineering — from image compression, biological classification of species, control theory, design of wings, to structural analysis of oxides.
 
-The book is also being sold online in <a href="http://www.amazon.com/gp/product/1782161627/ref=as_li_qf_sp_asin_tl?ie=UTF8&amp;camp=1789&amp;creative=9325&amp;creativeASIN=1782161627&amp;linkCode=as2&amp;tag=blancosilva-20">Amazon</a><img src="assets/ir?t=blancosilva-20&amp;l=as2&amp;o=1&amp;a=1782161627" width="1" height="1" border="0" alt="" style="border:none !important;margin:0!important;" />, where it has been received with pretty good reviews.  I have found other random reviews elsewhere, with similar welcoming comments:
+The book is also being sold online in <a href="http://www.amazon.com/gp/product/1782161627/ref=as_li_qf_sp_asin_tl?ie=UTF8&amp;camp=1789&amp;creative=9325&amp;creativeASIN=1782161627&amp;linkCode=as2&amp;tag=blancosilva-20">Amazon</a><img src="http://www.assoc-amazon.com/e/ir?t=blancosilva-20&amp;l=as2&amp;o=1&amp;a=1782161627" width="1" height="1" border="0" alt="" style="border:none !important;margin:0!important;" />, where it has been received with pretty good reviews.  I have found other random reviews elsewhere, with similar welcoming comments:
 
 * <a href="http://aimotion.blogspot.com.br/2013/04/review-of-book-learning-scipy-for.html">Artificial Intelligence in Motion</a> by Marcel Caraciolo
 * <a href="http://www.johndcook.com/blog/2013/03/29/new-introduction-to-scipy/">The Endeavour</a>, by John D. Cook
 
 ## Modeling Nanoscale Imaging in Electron Microscopy
 
-<a href="http://www.amazon.com/gp/product/146142190X/ref=as_li_tf_il?ie=UTF8&amp;camp=1789&amp;creative=9325&amp;creativeASIN=146142190X&amp;linkCode=as2&amp;tag=blancosilva-20"><img border="0" src="assets/q?_encoding=UTF8&amp;ASIN=146142190X&amp;Format=_SL160_&amp;ID=AsinImage&amp;MarketPlace=US&amp;ServiceVersion=20070822&amp;WS=1&amp;tag=blancosilva-20" style="float:left;margin:24px;width:16%;" /></a><img src="assets/ir?t=blancosilva-20&amp;l=as2&amp;o=1&amp;a=146142190X" width="1" height="1" border="0" alt="" style="border:none !important;margin:0!important;" />Well, ok, it is not <em>my book</em> technically, but I am one of the authors of one of the chapters.  And <strong>no</strong>, as far as I know, I don't get a dime of the sales in concept of copyright or anything else.
+<a href="http://www.amazon.com/gp/product/146142190X/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=146142190X&linkCode=as2&tag=blancosilva-20&linkId=UQITG3F6LD4HFEQZ"><img style="float:left;margin:24px;width:18%;" src="http://ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=146142190X&Format=_SL250_&ID=AsinImage&MarketPlace=US&ServiceVersion=20070822&WS=1&tag=blancosilva-20" ></a><img src="http://ir-na.amazon-adsystem.com/e/ir?t=blancosilva-20&l=as2&o=1&a=146142190X" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />Well, ok, it is not <em>my book</em> technically, but I am one of the authors of one of the chapters.  And <strong>no</strong>, as far as I know, I don't get a dime of the sales in concept of copyright or anything else.
 
 As the title suggests (<a href="http://www.amazon.com/gp/product/146142190X/ref=as_li_tf_tl?ie=UTF8&amp;camp=1789&amp;creative=9325&amp;creativeASIN=146142190X&amp;linkCode=as2&amp;tag=blancosilva-20">Modeling Nanoscale Imaging in Electron Microscopy</a><img src="assets/ir?t=blancosilva-20&amp;l=as2&amp;o=1&amp;a=146142190X" width="1" height="1" border="0" alt="" style="border:none !important;margin:0!important;" />), this book presents some recent advances that have been made using mathematical methods to resolve problems in electron microscopy. With improvements in hardware-based aberration software significantly expanding the nanoscale imaging capabilities of scanning transmission electron microscopes (STEM), these mathematical models can replace some labor intensive procedures used to operate and maintain STEMs. This book, the first in its field since 1998,   covers relevant concepts such as super-resolution techniques (<em>that's my contribution!</em>), special de-noising methods, application of mathematical/statistical learning theory, and compressed sensing.
 
@@ -66,13 +66,13 @@ We even got a nice review in <a href="http://www.physicstoday.org/resource/1/pht
 </tr>
 <tr>
 <td style="border:1px solid black;width:30%;text-align:center;vertical-align:middle;">
-<a href="https://www.dropbox.com/s/r0km64pjww3t2ad/9781461421900-t1.pdf"><img src="assets/7610051032_3c31b79cd0_o_d.jpg" width="100%" /></a>
+<a href="https://www.dropbox.com/s/r0km64pjww3t2ad/9781461421900-t1.pdf"><img src="http://farm9.staticflickr.com/8164/7610051032_3c31b79cd0_o_d.jpg" width="100%"></a>
 </td>
 <td style="border:1px solid black;width:30%;text-align:center;vertical-align:middle;">
-<a href="https://www.dropbox.com/s/1pht0o9phgrqxs2/9781461421900-p1.pdf"><img src="assets/7610052080_8f18b01651_o_d.jpg" width="100%" /></a>
+<a href="https://www.dropbox.com/s/1pht0o9phgrqxs2/9781461421900-p1.pdf"><img src="http://farm8.staticflickr.com/7107/7610052080_8f18b01651_o_d.jpg" width="100%"></a>
 </td>
 <td style="border:1px solid black;width:30%;text-align:center;vertical-align:middle;">
-<a href="https://www.dropbox.com/s/jvls6m0u71xg9m1/9781461421900-c1.pdf"><img src="assets/7610053198_a9797bc43e_o_d.jpg" width="100%" /></a>
+<a href="https://www.dropbox.com/s/jvls6m0u71xg9m1/9781461421900-c1.pdf"><img src="http://farm9.staticflickr.com/8428/7610053198_a9797bc43e_o_d.jpg" width="100%"></a>
 </td>
 </tr>
 </table>

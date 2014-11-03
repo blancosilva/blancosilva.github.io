@@ -9,7 +9,7 @@ permalink: /about/
 Father, Husband, Author, Mathematician, Spaniard, U.S. Permanent Resident
 ===
 
-Originally from Spain, I spent a few years in Indiana pursuing a Ph.D. in Applied Mathematics at Purdue University.  After graduation, I moved to South Carolina for professional reasons.  An amateur boulderer (see below), I met my wife in a climbing trip to the walls of Looking glass.  We married a few years after that adventurous encounter, and now have a beautiful daughter.  Following a promise I made to myself a few years back, I wrote a book to coincide with the birth of my first born.  This book---a technical monograph on the usage of python for mathematical and engineering purposes---has been recently published, and very well received by the scientific community.
+Originally from Spain, I spent a few years in Indiana pursuing a Ph.D. in Applied Mathematics at Purdue University.  After graduation, I moved to South Carolina for professional reasons.  An amateur boulderer (see below), I met my wife in a climbing trip to the walls of Looking glass.  We married a few years after that adventurous encounter, and now have a beautiful daughter. 
 
 When I am not working, I delve into any of my multiple hobbies.
 
