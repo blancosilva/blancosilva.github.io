@@ -3,6 +3,8 @@ layout: post
 title: "Jotto (5-letter Mastermind) in the NAO robot"
 comments: true
 category: post
+image:
+  teaser: <img src="https://farm4.staticflickr.com/3910/14425999857_b6500621b4_d.jpg" width="230px">
 ---
 
 <p style="text-align:center;">

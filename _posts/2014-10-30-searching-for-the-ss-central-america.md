@@ -4,10 +4,13 @@ title: "Searching for the SS Central America"
 date: 2014-10-30 
 comments: true
 category: post
+image:
+  teaser: <img src="https://farm6.staticflickr.com/5582/15072819006_39df81b2a6_d.jpg" style="width:230px;">
 ---
-<p style="text-align:center;"><img src="https://farm6.staticflickr.com/5582/15072819006_39df81b2a6_d.jpg" style="width:100%; border:2px solid black;" /></p> 
 
 On Tuesday, September 8th 1857, the steamboat SS Central America left Havana at 9 AM for New York, carrying about 600 passengers and crew members.   Inside of this vessel, there was stowed a very precious cargo: a set of manuscripts by John James Audubon, and three tons of gold bars and coins.  The manuscripts documented an expedition through the yet uncharted southwestern United States and California, and contained 200 sketches and paintings of its wildlife.  The gold, fruit of many years of prospecting and mining during the California Gold Rush, was meant to start anew the lives of many of the passengers aboard.
+
+<p style="text-align:center;"><img src="https://farm6.staticflickr.com/5582/15072819006_39df81b2a6_d.jpg" style="width:100%; border:2px solid black;" /></p> 
 
 On the 9th, the vessel ran into a storm which developed into a hurricane.  The steamboat endured four hard days at sea, and by Saturday morning the ship was doomed.  The captain arranged to have women and children taken off to the brig Marine, which offered them assistance at about noon.  In spite of the efforts of the remaining crew and passengers to save the ship, the inevitable happened at about 8 PM that same day.  The wreck claimed the lives of 425 men, and carried the valuable cargo to the bottom of the sea.
 
