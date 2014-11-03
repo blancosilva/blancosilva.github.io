@@ -6,8 +6,8 @@
 </description>
     <link>http://blancosilva.github.io//</link>
     <atom:link href="http://blancosilva.github.io//feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Sun, 02 Nov 2014 21:08:35 -0500</pubDate>
-    <lastBuildDate>Sun, 02 Nov 2014 21:08:35 -0500</lastBuildDate>
+    <pubDate>Sun, 02 Nov 2014 21:09:33 -0500</pubDate>
+    <lastBuildDate>Sun, 02 Nov 2014 21:09:33 -0500</lastBuildDate>
     <generator>Jekyll v2.4.0</generator>
     
       <item>
@@ -210,7 +210,7 @@ max    31.605647  31.605175  31.556127
 &lt;p style=&quot;text-align:center;&quot;&gt;&lt;img src=&quot;https://raw.githubusercontent.com/blancosilva/Mastering-Scipy/master/4749_01_01.png&quot; style=&quot;text-align:center; width:50%&quot;&gt;&lt;/p&gt;
 &lt;p&gt;An arrow from a node to another indicates the existence of a link from the web page represented by the sending node, to the page represented by the receiving node. For example, the arrow from node 2 to node 1 indicates that there is a link in web page 2 pointing to web page 1. Notice how web page 4 has two outer links (to pages 2 and 8), and there are three pages that link to web page 4 (pages 2, 6 and 7). The pages represented by nodes 2, 4 and 8 seem to be the most &lt;em&gt;popular&lt;/em&gt; at first sight.&lt;/p&gt;
 &lt;p&gt;Is there a mathematical way to actually express the popularity of a web page within a network? Researchers at Google came up with the idea of a &lt;strong&gt;PageRank&lt;/strong&gt; to roughly estimate this concept by counting the number and quality of links to a page. It goes like this:&lt;/p&gt;
-&lt;p&gt;We construct a &lt;em&gt;transition matrix&lt;/em&gt; of this graph $T=a_{i,j}$ in the following fashion: the entry &lt;span class=&quot;math&quot;&gt;\(a_{i,j}\)&lt;/span&gt; is &lt;span class=&quot;math&quot;&gt;\(1/k\)&lt;/span&gt; if there is a link from web page &lt;span class=&quot;math&quot;&gt;\(i\)&lt;/span&gt; to web page &lt;span class=&quot;math&quot;&gt;\(j\)&lt;/span&gt;, and the total number of outer links in web page &lt;span class=&quot;math&quot;&gt;\(i\)&lt;/span&gt; amounts to &lt;span class=&quot;math&quot;&gt;\(k\)&lt;/span&gt;. Otherwise, the entry is just zero. The size of a transition matrix of &lt;span class=&quot;math&quot;&gt;\(N\)&lt;/span&gt; web pages is always &lt;span class=&quot;math&quot;&gt;\(N \times N\)&lt;/span&gt;. In our case, the matrix has size &lt;span class=&quot;math&quot;&gt;\(8 \times 8\)&lt;/span&gt;:&lt;/p&gt;
+&lt;p&gt;We construct a &lt;em&gt;transition matrix&lt;/em&gt; of this graph \(T=a_{i,j}\) in the following fashion: the entry &lt;span class=&quot;math&quot;&gt;\(a_{i,j}\)&lt;/span&gt; is &lt;span class=&quot;math&quot;&gt;\(1/k\)&lt;/span&gt; if there is a link from web page &lt;span class=&quot;math&quot;&gt;\(i\)&lt;/span&gt; to web page &lt;span class=&quot;math&quot;&gt;\(j\)&lt;/span&gt;, and the total number of outer links in web page &lt;span class=&quot;math&quot;&gt;\(i\)&lt;/span&gt; amounts to &lt;span class=&quot;math&quot;&gt;\(k\)&lt;/span&gt;. Otherwise, the entry is just zero. The size of a transition matrix of &lt;span class=&quot;math&quot;&gt;\(N\)&lt;/span&gt; web pages is always &lt;span class=&quot;math&quot;&gt;\(N \times N\)&lt;/span&gt;. In our case, the matrix has size &lt;span class=&quot;math&quot;&gt;\(8 \times 8\)&lt;/span&gt;:&lt;/p&gt;
 &lt;p&gt;&lt;span class=&quot;math&quot;&gt;\[\begin{pmatrix}
 0  &amp;amp;1/2  &amp;amp; 0   &amp;amp; 0    &amp;amp; 0   &amp;amp; 0   &amp;amp; 0   &amp;amp; 0 \\
 1  &amp;amp; 0   &amp;amp;1/2  &amp;amp;1/2   &amp;amp; 0   &amp;amp; 0   &amp;amp; 0   &amp;amp; 0 \\
