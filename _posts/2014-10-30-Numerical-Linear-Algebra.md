@@ -15,7 +15,7 @@ An arrow from a node to another indicates the existence of a link from the web p
 
 Is there a mathematical way to actually express the popularity of a web page within a network? Researchers at Google came up with the idea of a **PageRank** to roughly estimate this concept by counting the number and quality of links to a page. It goes like this:
 
-We construct a *transition matrix* of this graph \( T=\big( a_{i,j} \big) \) in the following fashion: the entry \\( a_{i,j} \\) is \\( 1/k \\) if there is a link from web page \\( i \\) to web page \\( j \\), and the total number of outer links in web page \\( i \\) amounts to \\( k \\). Otherwise, the entry is just zero. The size of a transition matrix of \\( N \\) web pages is always \\( N \times N \\). In our case, the matrix has size \\( 8 \times 8 \\):</p>
+We construct a *transition matrix* of this graph \(T=\big(a_{i,j}\big)\) in the following fashion: the entry \\( a_{i,j} \\) is \\( 1/k \\) if there is a link from web page \\( i \\) to web page \\( j \\), and the total number of outer links in web page \\( i \\) amounts to \\( k \\). Otherwise, the entry is just zero. The size of a transition matrix of \\( N \\) web pages is always \\( N \times N \\). In our case, the matrix has size \\( 8 \times 8 \\):</p>
 <p>\[\begin{pmatrix}
 0  &amp;1/2  &amp; 0   &amp; 0    &amp; 0   &amp; 0   &amp; 0   &amp; 0 \\
 1  &amp; 0   &amp;1/2  &amp;1/2   &amp; 0   &amp; 0   &amp; 0   &amp; 0 \\
