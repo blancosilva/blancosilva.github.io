@@ -9,7 +9,7 @@ image:
 
 For one of my upcoming talks I am trying to include an exhaustive mindmap showing the different areas of Mathematics, and somehow, how they relate to each other.  Most of the information I am using has been processed from years of exposure in the field, and a bit of help from Wikipedia.
 
-<p><img src="https://i0.wp.com/farm8.staticflickr.com/7451/10428227193_109ee4dd96_o_d.jpg" style="width:100%;text-align:center;margin-left:auto;margin-right:auto;" />
+<img src="https://i0.wp.com/farm8.staticflickr.com/7451/10428227193_109ee4dd96_o_d.jpg" style="width:100%;text-align:center;margin-left:auto;margin-right:auto;">
 
 But I am not entirely happy with what I see:  my lack of training in the area of Combinatorics results in a rather dry treatment of that part of the mindmap, for example.  I am afraid that the same could be told about other parts of the diagram.  Any help from the reader to clarify and polish this information will be very much appreciated.
 
