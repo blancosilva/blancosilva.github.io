@@ -1,9 +1,31 @@
 <article class="tile" itemscope itemtype="http://schema.org/Article">
-  <a href="{{ site.url }}{{ post.url }}" title="{{ post.title }}" class="post-teaser">{% if post.image.teaser %}{{ post.image.teaser }}
-    {% endif %}</a>
-  {% if post.date %}<p class="entry-date date published"><time datetime="{{ post.date | date: "%Y-%m-%d" }}" itemprop="datePublished">{{ post.date | date: "%B %d, %Y" }}</time></p>{% endif %}
-  <h2 class="post-title" itemprop="name"><a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a></h2>
-  <p class="post-excerpt" itemprop="description">{{ post.excerpt | strip_html | truncate: 160 }}</p>
-  <hr />
+
+	<h4 class="post-title" itemprop="name"><a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a></h4>
+
+	{% if post.date %}
+
+	<p class="entry-date date published">
+		<time datetime="{{ post.date | date: "%Y-%m-%d" }}" itemprop="datePublished">{{ post.date | date: "%B %d, %Y" }}</time>
+	</p>
+
+	{% endif %}
+
+	<p class="post-excerpt" itemprop="description">
+		<table>
+			<tr>
+				<td width="350px">
+					{% if post.image.teaser %}
+					<a href="{{ site.url }}{{ post.url }}" title="{{ post.title }}" class="post-teaser"><img src={{ post.image.teaser }} style="float:left;side-margin:25px;width:300px;"></a>
+					{% endif %}
+				</td>
+				<td style="vertical-align:top;">
+					{{ post.excerpt | strip_html | truncate: 160 }}
+				</td>
+			</tr>
+		</table>
+	</p>
 </article><!-- /.tile -->
+
+<hr />
+
 

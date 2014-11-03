@@ -4,7 +4,7 @@ title: "Jotto (5-letter Mastermind) in the NAO robot"
 comments: true
 category: post
 image:
-  teaser: <img src="https://farm4.staticflickr.com/3910/14425999857_b6500621b4_d.jpg" width="230px">
+  teaser: "https://farm4.staticflickr.com/3910/14425999857_b6500621b4_d.jpg"
 ---
 
 I would like to show how to code the NAO robot to beat us at *Jotto* (5-letter Mastermind) with `python` in `Choregraphe`. I will employ a brute force technique that does not require any knowledge of the English language, the frequency of its letters, or smart combinations of vowels and consonants to try to minimize the number of attempts. It goes like this:
