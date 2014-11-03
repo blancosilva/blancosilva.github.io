@@ -7,12 +7,6 @@ image:
   teaser: <img src="https://farm4.staticflickr.com/3910/14425999857_b6500621b4_d.jpg" width="230px">
 ---
 
-<p style="text-align:center;">
-    <iframe width="595" height="365" src="//www.youtube.com/embed/xQVjHmyD770" frameborder="0" allowfullscreen></iframe>
-</p>
-
-<!-- <p><iframe width="420" height="315" src="http://youtu.be/xQVjHmyD770" frameborder="0" allowfullscreen></iframe></p> -->
-
 I would like to show how to code the NAO robot to beat us at *Jotto* (5-letter Mastermind) with `python` in `Choregraphe`. I will employ a brute force technique that does not require any knowledge of the English language, the frequency of its letters, or smart combinations of vowels and consonants to try to minimize the number of attempts. It goes like this:
 
 1. Gather all 5-letter words with no repeated letters in a list.
@@ -32,6 +26,9 @@ Coding this strategy in `python` requires only four variables:
 
 At this point, I urge the reader to stop reading the post and try to implement this strategy as a simple script. When done, come back to see how it can be coded in the NAO robot.
 
+<p style="text-align:center;">
+    <iframe width="595" height="365" src="//www.youtube.com/embed/xQVjHmyD770" frameborder="0" allowfullscreen></iframe>
+</p>
 
 First, a screenshot of the `root` view in choregraph. Note the simplicity of the code.
 

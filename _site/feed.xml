@@ -6,8 +6,8 @@
 </description>
     <link>http://blancosilva.github.io//</link>
     <atom:link href="http://blancosilva.github.io//feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Sun, 02 Nov 2014 21:09:33 -0500</pubDate>
-    <lastBuildDate>Sun, 02 Nov 2014 21:09:33 -0500</lastBuildDate>
+    <pubDate>Sun, 02 Nov 2014 21:12:04 -0500</pubDate>
+    <lastBuildDate>Sun, 02 Nov 2014 21:12:04 -0500</lastBuildDate>
     <generator>Jekyll v2.4.0</generator>
     
       <item>
@@ -33957,13 +33957,7 @@ Francisco Blanco-Silva&lt;br /&gt;
     
       <item>
         <title>Jotto (5-letter Mastermind) in the NAO robot</title>
-        <description>&lt;p style=&quot;text-align:center;&quot;&gt;
-    &lt;iframe width=&quot;595&quot; height=&quot;365&quot; src=&quot;//www.youtube.com/embed/xQVjHmyD770&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
-&lt;/p&gt;
-
-&lt;!-- &lt;p&gt;&lt;iframe width=&quot;420&quot; height=&quot;315&quot; src=&quot;http://youtu.be/xQVjHmyD770&quot; frameborder=&quot;0&quot; allowfullscreen&gt;&lt;/iframe&gt;&lt;/p&gt; --&gt;
-
-&lt;p&gt;I would like to show how to code the NAO robot to beat us at &lt;em&gt;Jotto&lt;/em&gt; (5-letter Mastermind) with &lt;code&gt;python&lt;/code&gt; in &lt;code&gt;Choregraphe&lt;/code&gt;. I will employ a brute force technique that does not require any knowledge of the English language, the frequency of its letters, or smart combinations of vowels and consonants to try to minimize the number of attempts. It goes like this:&lt;/p&gt;
+        <description>&lt;p&gt;I would like to show how to code the NAO robot to beat us at &lt;em&gt;Jotto&lt;/em&gt; (5-letter Mastermind) with &lt;code&gt;python&lt;/code&gt; in &lt;code&gt;Choregraphe&lt;/code&gt;. I will employ a brute force technique that does not require any knowledge of the English language, the frequency of its letters, or smart combinations of vowels and consonants to try to minimize the number of attempts. It goes like this:&lt;/p&gt;
 
 &lt;ol&gt;
   &lt;li&gt;Gather all 5-letter words with no repeated letters in a list.&lt;/li&gt;
@@ -33983,6 +33977,10 @@ Francisco Blanco-Silva&lt;br /&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;At this point, I urge the reader to stop reading the post and try to implement this strategy as a simple script. When done, come back to see how it can be coded in the NAO robot.&lt;/p&gt;
+
+&lt;p style=&quot;text-align:center;&quot;&gt;
+    &lt;iframe width=&quot;595&quot; height=&quot;365&quot; src=&quot;//www.youtube.com/embed/xQVjHmyD770&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+&lt;/p&gt;
 
 &lt;p&gt;First, a screenshot of the &lt;code&gt;root&lt;/code&gt; view in choregraph. Note the simplicity of the code.&lt;/p&gt;
 
