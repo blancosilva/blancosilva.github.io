@@ -6,8 +6,8 @@
 </description>
     <link>http://blancosilva.github.io//</link>
     <atom:link href="http://blancosilva.github.io//feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Mon, 03 Nov 2014 17:48:57 -0500</pubDate>
-    <lastBuildDate>Mon, 03 Nov 2014 17:48:57 -0500</lastBuildDate>
+    <pubDate>Mon, 03 Nov 2014 17:50:03 -0500</pubDate>
+    <lastBuildDate>Mon, 03 Nov 2014 17:50:03 -0500</lastBuildDate>
     <generator>Jekyll v2.4.0</generator>
     
       <item>
@@ -4833,7 +4833,7 @@ lVRSSSWVA5RUEaeSSiqppJLKAcr/BkPRYCZW2y4rAAAAAElFTkSuQmCC
 
 &lt;ul&gt;
   &lt;li&gt;Column \( j-1 \), which we set to be \( k_{j+1} \),&lt;/li&gt;
-  &lt;li&gt;Column \( j \), which we set to &lt;span&gt;\( -k_{j+1}-k_j \)&lt;/span&gt;, and&lt;/li&gt;
+  &lt;li&gt;Column \( j \), which we set to \( -k_{j+1}-k_j \), and&lt;/li&gt;
   &lt;li&gt;Column \( j+1 \), which we set to \( k_{j+2} \).&lt;/li&gt;
 &lt;/ul&gt;
 
