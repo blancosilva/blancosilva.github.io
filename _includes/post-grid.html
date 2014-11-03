@@ -13,11 +13,11 @@
 	<p class="post-excerpt" itemprop="description">
 		<table>
 			<tr>
+				{% if post.image.teaser %}
 				<td width="350px">
-					{% if post.image.teaser %}
 					<a href="{{ site.url }}{{ post.url }}" title="{{ post.title }}" class="post-teaser"><img src={{ post.image.teaser }} style="float:left;side-margin:25px;width:300px;"></a>
-					{% endif %}
 				</td>
+				{% endif %}
 				<td style="vertical-align:top;">
 					{{ post.excerpt | strip_html | truncate: 320 }}
 				</td>
