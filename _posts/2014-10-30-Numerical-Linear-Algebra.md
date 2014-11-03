@@ -17,16 +17,16 @@ Is there a mathematical way to actually express the popularity of a web page wit
 
 We construct a *transition matrix* of this graph \\(T=\big(a_{i,j}\big)\\) in the following fashion: the entry \\( a_{i,j} \\) is \\( 1/k \\) if there is a link from web page \\( i \\) to web page \\( j \\), and the total number of outer links in web page \\( i \\) amounts to \\( k \\). Otherwise, the entry is just zero. The size of a transition matrix of \\( N \\) web pages is always \\( N \times N \\). In our case, the matrix has size \\( 8 \times 8 \\):
 
-\[\begin{pmatrix}
-0  &amp;1/2  &amp; 0   &amp; 0    &amp; 0   &amp; 0   &amp; 0   &amp; 0 \\
-1  &amp; 0   &amp;1/2  &amp;1/2   &amp; 0   &amp; 0   &amp; 0   &amp; 0 \\
-0  &amp; 0   &amp; 0   &amp; 0    &amp; 0   &amp; 0   &amp;1/3  &amp; 0 \\
-0  &amp;1/2  &amp; 0   &amp; 0    &amp; 0   &amp; 1   &amp;1/3  &amp; 0 \\
-0  &amp; 0   &amp;1/2  &amp; 0    &amp; 0   &amp; 0   &amp; 0   &amp; 0 \\
-0  &amp; 0   &amp; 0   &amp; 0    &amp; 0   &amp; 0   &amp; 0   &amp;1/2\\
-0  &amp; 0   &amp; 0   &amp; 0    &amp;1/2  &amp; 0   &amp; 0   &amp;1/2\\
-0  &amp; 0   &amp; 0   &amp;1/2   &amp;1/2  &amp; 0   &amp;1/3  &amp;0
-\end{pmatrix}\]
+\\[\begin{pmatrix}
+0  &1/2  & 0   & 0    & 0   & 0   & 0   & 0 \\
+1  & 0   &1/2  &1/2   & 0   & 0   & 0   & 0 \\
+0  & 0   & 0   & 0    & 0   & 0   &1/3  & 0 \\
+0  &1/2  & 0   & 0    & 0   & 1   &1/3  & 0 \\
+0  & 0   &1/2  & 0    & 0   & 0   & 0   & 0 \\
+0  & 0   & 0   & 0    & 0   & 0   & 0   &1/2\\
+0  & 0   & 0   & 0    &1/2  & 0   & 0   &1/2\\
+0  & 0   & 0   &1/2   &1/2  & 0   &1/3  &0
+\end{pmatrix}\\]
 
 Let us open an `ipython` session and load this particular matrix to memory. Remember that in `python`, indices start from zero, not one:
 
