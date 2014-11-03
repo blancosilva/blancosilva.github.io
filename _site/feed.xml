@@ -6,8 +6,8 @@
 </description>
     <link>http://blancosilva.github.io//</link>
     <atom:link href="http://blancosilva.github.io//feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Sun, 02 Nov 2014 21:04:54 -0500</pubDate>
-    <lastBuildDate>Sun, 02 Nov 2014 21:04:54 -0500</lastBuildDate>
+    <pubDate>Sun, 02 Nov 2014 21:08:35 -0500</pubDate>
+    <lastBuildDate>Sun, 02 Nov 2014 21:08:35 -0500</lastBuildDate>
     <generator>Jekyll v2.4.0</generator>
     
       <item>
@@ -196,7 +196,7 @@ max    31.605647  31.605175  31.556127
     
       <item>
         <title>Numerical Linear Algebra</title>
-        <description>&lt;script type=&quot;text/javascript&quot; src=&quot;http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML&quot;&gt;&lt;/script&gt; 
+        <description>&lt;!-- &lt;script type=&quot;text/javascript&quot; src=&quot;http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML&quot;&gt;&lt;/script&gt;  --&gt;
 
   &lt;div tabindex=&quot;-1&quot; id=&quot;notebook&quot; class=&quot;border-box-sizing&quot;&gt;
     &lt;div class=&quot;container&quot; id=&quot;notebook-container&quot;&gt;
