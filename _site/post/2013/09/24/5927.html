@@ -78,11 +78,11 @@
 	</header>
 
 	<article class="post-content">
-		We briefly explored Lindenmayer systems (or L-systems) in an old post: <a href="http://blancosilva.wordpress.com/2011/01/28/toying-with-basic-fractals/">Toying with Basic Fractals</a>.   We quickly reviewed this method for creation of an approximation to fractals, and displayed an example (the Koch snowflake) based on `tikz` libraries.
+		<p>We briefly explored Lindenmayer systems (or L-systems) in an old post: <a href="http://blancosilva.wordpress.com/2011/01/28/toying-with-basic-fractals/">Toying with Basic Fractals</a>.   We quickly reviewed this method for creation of an approximation to fractals, and displayed an example (the Koch snowflake) based on <code>tikz</code> libraries.</p>
 
-I would like to show a few more examples of beautiful curves generated with this technique, together with their generating axiom, rules and parameters.  Feel free to click on each of the images below to download a larger version.
+<p>I would like to show a few more examples of beautiful curves generated with this technique, together with their generating axiom, rules and parameters.  Feel free to click on each of the images below to download a larger version.</p>
 
-Note that any coding language with plotting capabilities should be able to tackle this project.  I used once again `tikz` for \\( \LaTeX \\), but this time with the tikzlibrary `lindenmayersystems`.
+<p>Note that any coding language with plotting capabilities should be able to tackle this project.  I used once again <code>tikz</code> for \( \LaTeX \), but this time with the tikzlibrary <code>lindenmayersystems</code>.</p>
 
 <table style="margin-left:auto;margin-right:auto;width:90%;border:0 white;">
 <tr>
@@ -95,6 +95,7 @@ Note that any coding language with plotting capabilities should be able to tackl
 </tr>
 <tr>
 <td style="width:50%;border:0 white;">
+
 <div class="highlight"><pre><code class="language-tex" data-lang="tex">name  : Dragon Curve
 axiom : X
 order : 11
@@ -103,8 +104,10 @@ angle : 90
 rules :
         X -&gt; X+YF+
         Y -&gt; -FX-Y</code></pre></div>
+
 </td>
 <td style="width:50%;border:0 white;">
+
 <div class="highlight"><pre><code class="language-tex" data-lang="tex">name  : Gosper Space-filling Curve
 axiom : XF
 order : 5
@@ -113,6 +116,7 @@ angle : 60
 rules :
 	XF -&gt; XF+YF++YF-XF--XFXF-YF+
 	YF -&gt; -XF+YFYF++YF+XF--XF-YF</code></pre></div>
+
 </td>
 </tr>
 <tr>
@@ -125,6 +129,7 @@ rules :
 </tr>
 <tr>
 <td style="width:50%;border:0 white;">
+
 <div class="highlight"><pre><code class="language-tex" data-lang="tex">name  : Quadric Koch Island
 axiom : F+F+F+F
 order : 4
@@ -132,8 +137,10 @@ step  : 1pt
 angle : 90
 rules :
         F -&gt; F+F-F-FF+F+F-F</code></pre></div>
+
 </td>
 <td style="width:50%;border:0 white;">
+
 <div class="highlight"><pre><code class="language-tex" data-lang="tex">name  : Sierpinski Arrowhead
 axiom : F
 order : 8
@@ -142,6 +149,7 @@ angle : 60
 rules :
         G -&gt; F+G+F
         F -&gt; G-F-G</code></pre></div>
+
 </td>
 </tr>
 <tr>
@@ -154,6 +162,7 @@ rules :
 </tr>
 <tr>
 <td style="width:50%;border:0 white;">
+
 <div class="highlight"><pre><code class="language-tex" data-lang="tex">name  : ?
 axiom : F+F+F+F
 order : 4
@@ -161,8 +170,10 @@ step  : 2pt
 angle : 90
 rules :
         F -&gt; FF+F+F+F+F+F-F</code></pre></div>
+
 </td>
 <td style="width:50%;border:0 white;">
+
 <div class="highlight"><pre><code class="language-tex" data-lang="tex">name  : ?
 axiom : F+F+F+F
 order : 4
@@ -170,11 +181,12 @@ step  : 3pt
 angle : 90
 rules :
         F -&gt; FF+F+F+F+FF</code></pre></div>
+
 </td>
 </tr>
 </table>
 
-Would you like to experiment a little with axioms, rules and parameters, and obtain some new pleasant curves with this method?  If the mathematical properties of the fractal that they approximate are interesting enough, I bet you could attach your name to them.  Like the astronomer that finds through her telescope a new object in the sky, or the zoologist that discover a new species of spider in the forest.
+<p>Would you like to experiment a little with axioms, rules and parameters, and obtain some new pleasant curves with this method?  If the mathematical properties of the fractal that they approximate are interesting enough, I bet you could attach your name to them.  Like the astronomer that finds through her telescope a new object in the sky, or the zoologist that discover a new species of spider in the forest.</p>
 
 	</article>
 
