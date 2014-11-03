@@ -18,7 +18,7 @@ Is there a mathematical way to actually express the popularity of a web page wit
 We construct a *transition matrix* of this graph <span>\\( T=\big( a_{i,j} \big) \\)</span> in the following fashion: the entry 
  <span>\\( a_{i,j} \\)</span> is \\( 1/k \\) if there is a link from web page \\( i \\) to web page \\( j \\), and the total number of outer links in web page \\( i \\) amounts to \\( k \\). Otherwise, the entry is just zero. The size of a transition matrix of \\( N \\) web pages is always \\( N \times N \\). In our case, the matrix has size \\( 8 \times 8 \\):
 
-<span>\\[\begin{pmatrix}
+\\[\begin{pmatrix}
 0  &1/2  & 0   & 0    & 0   & 0   & 0   & 0 \\
 1  & 0   &1/2  &1/2   & 0   & 0   & 0   & 0 \\
 0  & 0   & 0   & 0    & 0   & 0   &1/3  & 0 \\
@@ -27,7 +27,7 @@ We construct a *transition matrix* of this graph <span>\\( T=\big( a_{i,j} \big)
 0  & 0   & 0   & 0    & 0   & 0   & 0   &1/2\\
 0  & 0   & 0   & 0    &1/2  & 0   & 0   &1/2\\
 0  & 0   & 0   &1/2   &1/2  & 0   &1/3  &0
-\end{pmatrix}\\]</span>
+\end{pmatrix}\\]
 
 Let us open an `ipython` session and load this particular matrix to memory. Remember that in `python`, indices start from zero, not one:
 
