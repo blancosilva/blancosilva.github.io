@@ -113,7 +113,7 @@
 <p>From the transition matrix, we create a <em>Page Rank matrix</em>, (G) (also known as the <strong>Google matrix</strong>), by fixing a positive constant (0 &lt; p \leq 1), and following the formula (G = (1-p) \cdot T + p \cdot B). Here, (B) is a matrix with the same size as (T), with all its entries equal to (1/N). For example, if we choose (p=0.15), we obtain the following Google matrix</p>
 
 <div class="highlight"><pre><code class="language-python" data-lang="python"><span class="lineno">1</span> <span class="n">G</span> <span class="o">=</span> <span class="p">(</span><span class="mi">1</span><span class="o">-</span><span class="mf">0.15</span><span class="p">)</span> <span class="o">*</span> <span class="n">T</span> <span class="o">+</span> <span class="mf">0.15</span><span class="o">/</span><span class="mi">8</span>
-<span class="lineno">2</span> <span class="p">}}}}}}}}}</span>
+<span class="lineno">2</span> 
 <span class="lineno">3</span> <span class="k">print</span> <span class="n">G</span></code></pre></div>
 
 <div class="highlight"><pre><code class="language-text" data-lang="text">[[ 0.019  0.444  0.019  0.019  0.019  0.019  0.019  0.019]

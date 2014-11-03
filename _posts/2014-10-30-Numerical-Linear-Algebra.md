@@ -46,7 +46,7 @@ From the transition matrix, we create a *Page Rank matrix*, \(G\) (also known as
 
 {% highlight python linenos %}
 G = (1-0.15) * T + 0.15/8
-}}}}}}}}}
+
 print G
 {% endhighlight %}
 
