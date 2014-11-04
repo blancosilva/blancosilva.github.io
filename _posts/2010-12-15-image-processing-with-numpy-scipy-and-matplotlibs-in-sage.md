@@ -51,14 +51,14 @@ import matplotlib.pyplot
 The image is loaded with the command `matplotlib.imread(filename)`.  It stores the image as a `numpy.ndarray` with `dtype=float32`.  Notice that the maxima and minima are respectively `1.0` and `0.0`.  Other interesting information about the image can be retrieved:
 
 {% highlight python linenos %}
-img=matplotlib.image.imread('/Users/blanco/Desktop/NbW-STEM.png')
+img = matplotlib.image.imread('/Users/blanco/Desktop/NbW-STEM.png')
 
-print ''Image dtype: %s''%(img.dtype)
-print ''Image size: %6d''%(img.size)
-print ''Image shape: %3dx%3d''%(img.shape[0], img.shape[1])
-print ''Max value %1.2f at pixel %6d''%(img.max(), img.argmax())
-print ''Min value %1.2f at pixel %6d''%(img.min(), img.argmin())
-print ''Variance: %1.5f\nStandard deviation: %1.5f''%(img.var(), img.std())
+print "Image dtype: %s"%(img.dtype)
+print "Image size: %6d"%(img.size)
+print "Image shape: %3dx%3d"%(img.shape[0], img.shape[1])
+print "Max value %1.2f at pixel %6d"%(img.max(), img.argmax())
+print "Min value %1.2f at pixel %6d"%(img.min(), img.argmin())
+print "Variance: %1.5f\nStandard deviation: %1.5f"%(img.var(), img.std())
 {% endhighlight %}
 
 {% highlight text %}
@@ -80,16 +80,16 @@ Thresholding is done, as in `matlab`, by imposing an inequality on the matrix ho
 <td style="width:50%;border-width:0;"><img src="http://farm6.static.flickr.com/5081/5264059122_ebd6a55259_o_d.png" alt="" width="100%" /></td>
 </tr>
 <tr>
-<td style="width:50%;text-align:center;border-width:0;">`img > 0.2`</td>
-<td style="width:50%;text-align:center;border-width:0;">`img > 0.7`</td>
+<td style="width:50%;text-align:center;border-width:0;"><code>img > 0.2</code></td>
+<td style="width:50%;text-align:center;border-width:0;"><code>img > 0.7</code></td>
 </tr>
 <tr>
 <td style="width:50%;border-width:0;"><img src="http://farm6.static.flickr.com/5046/5263447021_b1cbff99a5_o_d.png" alt="" width="100%" /></td>
 <td style="width:50%;border-width:0;"><img src="http://farm6.static.flickr.com/5203/5264059274_2ec7849e8d_o_d.png" alt="" width="100%" /></td>
 </tr>
 <tr>
-<td style="width:50%;text-align:center;border-width:0;">`multiply(img < 0.5,img > 0.25)`</td>
-<td style="width:50%;text-align:center;border-width:0;">`multiply(img, img > 0.62)`</td>
+<td style="width:50%;text-align:center;border-width:0;"><code>multiply(img < 0.5,img > 0.25)</code></td>
+<td style="width:50%;text-align:center;border-width:0;"><code>multiply(img, img > 0.62)</code></td>
 </tr>
 </tbody>
 </table>
