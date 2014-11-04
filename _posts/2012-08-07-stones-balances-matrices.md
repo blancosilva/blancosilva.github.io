@@ -18,7 +18,6 @@ This is a trivial problem, but I will use it to illustrate different ideas, defi
 
 This solution finds the stone in two weights.  It is what we call *adaptive measures*: each measure is determined by the result of the previous.  This is a good point to introduce an algebraic scheme to code the solution.
 
-<ul style="text-align:justify;">
 * **The weights matrix**: This is a matrix with four columns (one for each stone) and two rows (one for each weight).  The entries of this matrix can only be <span>\\( -1, 0 \\)</span> or <span>\\( 1, \\)</span> depending whether a given stone is placed on the left plate <span>\\( (1) \\)</span>, on the right plate <span>\\( (-1) \\)</span> or in neither plate <span>\\( (0). \\)</span>  For example, for the solution given above, the corresponding matrix would be
 
 \\[ W = \begin{pmatrix} 1 &amp; 1 &amp; -1 &amp; -1 \\ 1 &amp; -1 &amp; 0 &amp; 0 \end{pmatrix} \\]
