@@ -12,7 +12,7 @@ Let me show you an exciting technique to prove some convergence statements using
 
 *Proof:*  Note first that
 
-\\( \displaystyle  \begin{array}{rcl}  \lvert f_n - f\rvert\, \boldsymbol{1}_E \leq \lvert f_n - f \rvert \leq \lvert f_n \rvert + \lvert f \rvert. \end{array}  \\)
+\\[ \displaystyle  \begin{array}{rcl}  \lvert f_n - f\rvert\, \boldsymbol{1}_E \leq \lvert f_n - f \rvert \leq \lvert f_n \rvert + \lvert f \rvert. \end{array}  \\]
 
 Set then \\( {g_n = \lvert f_n \rvert + \lvert f \rvert - \lvert f_n-f \rvert\, \boldsymbol{1}_E} \\) (which are non-negative functions) and apply Fatou's Lemma to that sequence. We have then
 
