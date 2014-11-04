@@ -20,9 +20,7 @@ This solution finds the stone in two weights.  It is what we call *adaptive meas
 
 * **The weights matrix**: This is a matrix with four columns (one for each stone) and two rows (one for each weight).  The entries of this matrix can only be <span>\\( -1, 0 \\)</span> or <span>\\( 1, \\)</span> depending whether a given stone is placed on the left plate <span>\\( (1) \\)</span>, on the right plate <span>\\( (-1) \\)</span> or in neither plate <span>\\( (0). \\)</span>  For example, for the solution given above, the corresponding matrix would be
 
-<div>
-\\[ W = \begin{pmatrix} 1 & 1 & -1 & -1 \\ 1 & -1 & 0 & 0 \end{pmatrix} \\]
-</div>
+\begin{equation} W = \begin{pmatrix} 1 & 1 & -1 & -1 \\ 1 & -1 & 0 & 0 \end{pmatrix} \end{equation}
 
 * **The stones matrix**: This is a square matrix with four rows and columns (one for each stone).  Each column represents a different combination of stones, in such a way that the *n*-th column assumes that the heaviest stone is in the *n*-th position.  The entries on this matrix indicate the weight of each stone.  For example, if we assume that the heaviest stone weights *b* units, and each other stone weights *a* units, then the corresponding **stones matrix** is
 
