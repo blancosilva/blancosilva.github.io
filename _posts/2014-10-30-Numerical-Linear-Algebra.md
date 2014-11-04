@@ -4729,7 +4729,7 @@ plt.legend(np.arange(6)+1, loc=2)
 <matplotlib.legend.Legend at 0x10a28bd90>
 {% endhighlight %}
 
-<p style="text_align:center;">
+<p style="text-align:center;">
 <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAfgAAAHxCAYAAACBJ663AAAABHNCSVQICAgIfAhkiAAAAAlwSFlz
 AAALEgAACxIB0t1+/AAAIABJREFUeJzs3Xd8lfX5//HXfc7J3nuTQQgQIGGDEFCGIorWVQfiqLt2
 +tPWrm93bZ2trau1rdq6K7WKExdgAGUmQAIkIQkJ2Xvn5Iz798c5HBKWIeSM++R6Ph48TO7c5+Rz
