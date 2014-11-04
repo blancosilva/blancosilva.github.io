@@ -97,8 +97,8 @@ Thresholding is done, as in `matlab`, by imposing an inequality on the matrix ho
 By visual inspection of several different thresholds, I chose `0.62` as one that gives me a good map showing what I need for segmentation.  I need to get rid of "outliers", though: small particles that might fulfill the given threshold, but are small enough not to be considered an actual atom.  Therefore, in the next step I perform a morphological operation of opening to get rid of those small particles: I decided than anything smaller than a quare of size <span>\\( 2 \times 2 \\)</span> is to be eliminated from the output of thresholding:
 
 {% highlight python linenos %}
-BWatoms=(img  >  0.62)
-BWatoms=scipy.ndimage.binary_opening(BWatoms, structure=ones((2,2)))
+BWatoms = (img  >  0.62)
+BWatoms = scipy.ndimage.binary_opening(BWatoms, structure=ones((2,2)))
 {% endhighlight %}
 
 And we are now ready for segmentation.  We perform this task with the `scipy.ndimage.label` function:  It collects one slice per segmented atom, and the number of slices computed.  We need to indicate what kind of connectivity is allowed.  For example, in the toy example below, do we consider this as one or two atoms?
