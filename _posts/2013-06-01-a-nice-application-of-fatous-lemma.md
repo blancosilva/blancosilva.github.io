@@ -27,11 +27,11 @@ Set then \\( {g_n = \lvert f_n \rvert + \lvert f \rvert - \lvert f_n-f \rvert\, 
 
 which implies
 
-\\( \displaystyle  \begin{array}{rcl}  0 \leq \liminf_n \int_E \lvert f_n-f \rvert\, d\mu \leq \limsup_n \int_E \lvert f_n-f \rvert\, d\mu \leq 0. \end{array}  \\)
+\\[ 0 \leq \liminf_n \int_E \lvert f_n-f \rvert\, d\mu \leq \limsup_n \int_E \lvert f_n-f \rvert\, d\mu \leq 0. \\]
 
 It must then be \\( {\int_E \lvert f_n - f \rvert\, d\mu = 0} \\). But this proves the statement, since
 
-\\( \displaystyle  \begin{array}{c}  \bigg\lvert \int_E \lvert f_n\rvert\, d\mu - \int_E \lvert f \rvert\, d\mu \bigg\rvert = \bigg\lvert \int_E \big( \lvert f_n \rvert - \lvert f \rvert \big)\, d\mu \bigg\rvert \\  \leq \int_E \Big\lvert \lvert f_n \rvert - \lvert f \rvert \Big\rvert\, d\mu \leq \int_E \lvert f_n - f \rvert\, d\mu \end{array}  \\)
+\\[ \bigg\lvert \int_E \lvert f_n\rvert\, d\mu - \int_E \lvert f \rvert\, d\mu \bigg\rvert = \bigg\lvert \int_E \big( \lvert f_n \rvert - \lvert f \rvert \big)\, d\mu \bigg\rvert \\  \leq \int_E \Big\lvert \lvert f_n \rvert - \lvert f \rvert \Big\rvert\, d\mu \leq \int_E \lvert f_n - f \rvert\, d\mu \\]
 
 \\( \Box \\)
 
