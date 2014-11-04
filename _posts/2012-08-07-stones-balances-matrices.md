@@ -8,7 +8,6 @@ image:
   teaser: "https://i0.wp.com/farm9.staticflickr.com/8285/7737057646_e02f559a02_o_d.jpg"
 ---
 
-Let's examine an easy puzzle on finding the different stone by using a balance:
 >You have four stones identical in size and appearance, but one of them is heavier than the rest.  You have a set of scales (a balance): how many weights do you need to determine which stone is the heaviest?
 
 This is a trivial problem, but I will use it to illustrate different ideas, definitions, and the connection to linear algebra needed to answer the harder puzzles below.  Let us start by solving it in the most natural way:
