@@ -105,7 +105,7 @@ You also need to know the basics of computer programming. Also, more importantly
 </tr>
 </tbody>
 </table>
-<p>&nbsp;</td>
+&nbsp;</td>
 <td style="border:0 solid black;text-align:center;vertical-align:top;width:20%;">
 <table style="border:0 solid black;width:100%;padding:2px;">
 <tbody>
@@ -118,7 +118,7 @@ You also need to know the basics of computer programming. Also, more importantly
 </tr>
 </tbody>
 </table>
-<p>&nbsp;</td>
+&nbsp;</td>
 <td style="border:0 solid black;text-align:center;vertical-align:top;width:20%;">
 <table style="border:0 solid black;width:100%;padding:2px;">
 <tbody>
@@ -131,7 +131,7 @@ You also need to know the basics of computer programming. Also, more importantly
 </tr>
 </tbody>
 </table>
-<p>&nbsp;</td>
+&nbsp;</td>
 </tr>
 <tr>
 <td style="border:0 solid black;text-align:center;vertical-align:top;width:20%;">
@@ -146,7 +146,7 @@ You also need to know the basics of computer programming. Also, more importantly
 </tr>
 </tbody>
 </table>
-<p>&nbsp;</td>
+&nbsp;</td>
 <td style="border:0 solid black;text-align:center;vertical-align:top;width:20%;">
 <table style="border:0 solid black;width:100%;padding:2px;">
 <tbody>
@@ -159,7 +159,7 @@ You also need to know the basics of computer programming. Also, more importantly
 </tr>
 </tbody>
 </table>
-<p>&nbsp;</td>
+&nbsp;</td>
 <td style="border:0 solid black;text-align:center;vertical-align:top;width:20%;">
 <table style="border:0 solid black;width:100%;padding:2px;">
 <tbody>
@@ -172,7 +172,7 @@ You also need to know the basics of computer programming. Also, more importantly
 </tr>
 </tbody>
 </table>
-<p>&nbsp;</td>
+&nbsp;</td>
 <td style="border:0 solid black;text-align:center;vertical-align:top;width:20%;">
 <table style="border:0 solid black;width:100%;padding:2px;">
 <tbody>
@@ -185,7 +185,7 @@ You also need to know the basics of computer programming. Also, more importantly
 </tr>
 </tbody>
 </table>
-<p>&nbsp;</td>
+&nbsp;</td>
 </tr>
 <tr>
 <td style="border:0 solid black;text-align:center;vertical-align:top;width:20%;">
@@ -200,7 +200,7 @@ You also need to know the basics of computer programming. Also, more importantly
 </tr>
 </tbody>
 </table>
-<p>&nbsp;</td>
+&nbsp;</td>
 <td style="border:0 solid black;text-align:center;vertical-align:top;width:20%;">
 <table style="border:0 solid black;width:100%;padding:2px;">
 <tbody>
@@ -213,7 +213,7 @@ You also need to know the basics of computer programming. Also, more importantly
 </tr>
 </tbody>
 </table>
-<p>&nbsp;</td>
+&nbsp;</td>
 <td style="border:0 solid black;text-align:center;vertical-align:top;width:20%;">
 <table style="border:0 solid black;width:100%;padding:2px;">
 <tbody>
@@ -226,7 +226,7 @@ You also need to know the basics of computer programming. Also, more importantly
 </tr>
 </tbody>
 </table>
-<p>&nbsp;</td>
+&nbsp;</td>
 <td style="border:0 solid black;text-align:center;vertical-align:top;width:20%;">
 <table style="border:0 solid black;width:100%;padding:2px;">
 <tbody>
@@ -239,7 +239,7 @@ You also need to know the basics of computer programming. Also, more importantly
 </tr>
 </tbody>
 </table>
-<p>&nbsp;</td>
+&nbsp;</td>
 </tr>
 <tr>
 <td style="border:0 solid black;text-align:center;vertical-align:top;width:20%;">
@@ -254,7 +254,7 @@ You also need to know the basics of computer programming. Also, more importantly
 </tr>
 </tbody>
 </table>
-<p>&nbsp;</td>
+&nbsp;</td>
 <td style="border:0 solid black;text-align:center;vertical-align:top;width:20%;">
 <table style="border:0 solid black;width:100%;padding:2px;">
 <tbody>
@@ -267,7 +267,7 @@ You also need to know the basics of computer programming. Also, more importantly
 </tr>
 </tbody>
 </table>
-<p>&nbsp;</td>
+&nbsp;</td>
 <td style="border:0 solid black;text-align:center;vertical-align:top;width:20%;">
 <table style="border:0 solid black;width:100%;padding:2px;">
 <tbody>
@@ -280,7 +280,7 @@ You also need to know the basics of computer programming. Also, more importantly
 </tr>
 </tbody>
 </table>
-<p>&nbsp;</td>
+&nbsp;</td>
 <td style="border:0 solid black;text-align:center;vertical-align:top;width:20%;">
 <table style="border:0 solid black;width:100%;padding:2px;">
 <tbody>
@@ -293,7 +293,7 @@ You also need to know the basics of computer programming. Also, more importantly
 </tr>
 </tbody>
 </table>
-<p>&nbsp;</td>
+&nbsp;</td>
 </tr>
 </tbody>
 </table>
