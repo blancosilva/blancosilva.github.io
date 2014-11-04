@@ -8,7 +8,7 @@ comments: true
 
 Let me show you an exciting technique to prove some convergence statements using exclusively functional inequalities and Fatou's Lemma. The following are two classic problems solved this way. Enjoy!
 
-> **Exercise 1** *Let \\( {(X, \mathcal{F}, \mu)}\\)  be a measurable space and suppose \\( \\{f_n\\}_{n\in \mathbb{N}} \\)  is a sequence of measurable functions in \\( {L_1(\mu)}\\)  that converge almost everywhere to a function \\( {f \in L_1(\mu)},\\)  and such that the sequence of norms \\( \big\\{ \lVert f_n \rVert_1 \big\\}_{n \in \mathbb{N}} \\)  converges to \\( {\lVert f \rVert_1}\\) . Prove that the sequence of integrals \\( {\int_E \lvert f_n \rvert\, d\mu}\\)  converges to the integral \\( {\int_E \lvert f \rvert\, d\mu}\\)  for every measurable set \\( {E}\\).*
+> **Exercise 1** Let \\( {(X, \mathcal{F}, \mu)}\\)  be a measurable space and suppose \\( \\{f_n\\}_{n\in \mathbb{N}} \\)  is a sequence of measurable functions in \\( {L_1(\mu)}\\)  that converge almost everywhere to a function \\( {f \in L_1(\mu)},\\)  and such that the sequence of norms \\( \big\\{ \lVert f_n \rVert_1 \big\\}_{n \in \mathbb{N}} \\)  converges to \\( {\lVert f \rVert_1}\\) . Prove that the sequence of integrals \\( {\int_E \lvert f_n \rvert\, d\mu}\\)  converges to the integral \\( {\int_E \lvert f \rvert\, d\mu}\\)  for every measurable set \\( {E}\\).
 
 *Proof:*  Note first that
 
@@ -35,21 +35,21 @@ It must then be \\( {\int_E \lvert f_n - f \rvert\, d\mu = 0} \\). But this prov
 
 \\( \Box \\)
 
-> **Exercise 2** * Let \\( {(X, \mathcal{F}, \mu)}\\)  be a finite measure space and let \\( {1&lt;p&lt;\infty}\\) . Suppose that \\( {\{ f_n \}_{n \in \mathbb{N}}}\\)  is a sequence of measurable functions in \\( {L_p(\mu)}\\)  whose norms are uniformly bounded in \\( {n}\\)  and which converge almost everywhere to a function \\( {f}\\) . Prove that the sequence \\( {\big\{ \int_X f_ng\, d\mu \big\}_{n \in \mathbb{N}}}\\)  converges to \\( {\int_x fg\, d\mu}\\)  for all \\( {g \in L_q(\mu)}\\)  where \\( {q}\\)  is the conjugate exponent of \\( {p}\\) . *
+> **Exercise 2** Let \\( {(X, \mathcal{F}, \mu)}\\)  be a finite measure space and let \\(  1&lt;p&lt;\infty \\) . Suppose that \\( \\{ f_n \\}_{n \in \mathbb{N}} \\) is a sequence of measurable functions in \\( L_p(\mu) \\)  whose norms are uniformly bounded in \\( n \\)  and which converges almost everywhere to a function \\( f \\) . Prove that the sequence \\( \big\\{ \int_X f_n g\, d\mu \big\\}_{n \in \mathbb{N}} \\) converges to \\( \int_X fg\, d\mu \\) for all \\( g \in L_q(\mu) \\), where \\( q \\) is the conjugate exponent of \\( p \\).
 
 *Proof:*  The proof is very similar to the previous problem. We start by noticing that under the hypotheses of the problem,
 
-\\( \displaystyle  \begin{array}{c}  \bigg\lvert \int_x f_ng\, d\mu - \int_X fg\, d\mu \bigg\rvert = \bigg\lvert \int_X (f_n -f)g\, d\mu \bigg\rvert \\ \leq \lVert (f_n-f)g \rVert_1 \leq \lVert f_n - f \rVert_p\, \lVert g \rVert_q. \end{array}  \\)
+\\[ \bigg\lvert \int_x f_ng\, d\mu - \int_X fg\, d\mu \bigg\rvert = \bigg\lvert \int_X (f_n -f)g\, d\mu \bigg\rvert \\ \leq \lVert (f_n-f)g \rVert_1 \leq \lVert f_n - f \rVert_p\, \lVert g \rVert_q. \\]
 
 If we prove that \\( {\lim_n \lVert f_n-f \rVert_p = 0} \\), we are done.
 
 We will achieve this by using the convexity of \\( {\lvert \cdot \rvert^p} \\), since in that case it is
 
-\\( \displaystyle  \begin{array}{rcl}  \frac{\lvert f_n - f \rvert^p}{2^p} \leq \tfrac{1}{2} \lvert f_n \rvert^p + \tfrac{1}{2} \lvert f \rvert^p. \end{array}  \\)
+\\[ \frac{\lvert f_n - f \rvert^p}{2^p} \leq \tfrac{1}{2} \lvert f_n \rvert^p + \tfrac{1}{2} \lvert f \rvert^p. \\]
 
 hence,
 
-\\( \displaystyle  \begin{array}{rcl}  \lvert f_n -f \rvert^p \leq 2^{p-1} \big( \lvert f_n \rvert^p + \lvert f \rvert^p \big). \end{array}  \\)
+\\[ \lvert f_n -f \rvert^p \leq 2^{p-1} \big( \lvert f_n \rvert^p + \lvert f \rvert^p \big). \\]
 
 Set then \\( {g_n = 2^{p-1} \big( \lvert f_n\rvert^p + \lvert f \rvert^p\big) - \lvert f_n-f \rvert^p} \\) (which are non-negative functions) and apply Fatou's Lemma as before. \\( \Box \\)
 
