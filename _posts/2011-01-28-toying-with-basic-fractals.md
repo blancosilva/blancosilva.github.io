@@ -53,7 +53,7 @@ Based on this simple construction, Michael Barnsley proposed the following so-ca
 
 Set <span>\\( \boldsymbol{x}=(0,0), \\)</span> and consider the four affine maps below, with their corresponding probabilities:
 
-<p style="text-align:center;"><img src="https://farm4.staticflickr.com/3945/15526589187_02ed30f15d_o_d.jpg" width="500px"></p>
+<p style="text-align:center;"><img src="https://farm4.staticflickr.com/3945/15526589187_02ed30f15d_o_d.jpg" width="400px"></p>
 
 <p style="text-align:center;"><img src="http://farm6.static.flickr.com/5258/5417325046_0d7dfce960_b_d.jpg" alt="" /></p>
 
