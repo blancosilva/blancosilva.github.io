@@ -73,7 +73,7 @@ for id in data:
 
 These are the names in my tree, for example: Do you recognize any of them?
 
-{% highlight python %}
+{% highlight text %}
 >>> names.values()
 
 ['Adam Sedgwick', 'Adolph Vorstius', 'Adriaan van den Spieghel', 'Alessandro
@@ -85,12 +85,12 @@ Chalcocondyles', 'Demetrios Kydones', 'Desiderius Erasmus', 'Duncan Liddel',
 'Edward  Waring', 'Elissaeus Judaeus', 'Emmanuel Stupanus', 'Erasmus Reinhold',
 'Francisco Blanco-Silva', 'Franciscus Gomarus', 'Franciscus Sylvius', 'Franck
 Burgersdijk', 'Franois Du Jon, Sr.', 'Franois Dubois', 'Gabriele Falloppio',
-'Gaetano da Thiene', <strong>"Galileo de' Galilei"</strong>, 'Garrett Birkhoff', 'Gemma
+'Gaetano da Thiene', "Galileo de' Galilei", 'Garrett Birkhoff', 'Gemma
 Frisius', 'Georg Beer', 'Georgios Gemistos', 'Georgius Hermonymus', 'Gerard van
 Swieten', 'Gilbert Jacchaeus', 'Gilles de Roberval', 'Girolamo Aleandro',
 'Gisbertus Voetius', 'Guarino da Verona', 'Guillaume Bud', 'Henricus Renerius',
 'Henry  Bracken', 'Herman Boerhaave', 'Hieronymus Fabricius', 'Immanuel
-Tremellius', 'Isaac Barrow', <strong>'Isaac Newton'</strong>, 'Jacob ben Jehiel Loans', 'Jacobus
+Tremellius', 'Isaac Barrow', 'Isaac Newton', 'Jacob ben Jehiel Loans', 'Jacobus
 Arminius', 'Jacobus Latomus', 'Jacobus Sylvius', "Jacques Lefvre d'taples",
 'Jacques Toussain', 'Jakob Milich', 'Jan Standonck', 'Jan van Campen', 'Janus
 Lascaris', 'Jean Tagault', 'Jerry Bona', 'Johann Reuchlin', 'Johannes
