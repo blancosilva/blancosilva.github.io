@@ -53,30 +53,7 @@ Based on this simple construction, Michael Barnsley proposed the following so-ca
 
 Set <span>\\( \boldsymbol{x}=(0,0), \\)</span> and consider the four affine maps below, with their corresponding probabilities:
 
-<table style="margin-left:auto;margin-right:auto;text-align:center;border-width:0;">
-<tbody>
-<tr>
-<td style="text-align:center;vertical-align:middle;border-width:1px;"><span>\\( A_1=\dfrac{1}{10} \begin{pmatrix} 0&0\\ 0&2\end{pmatrix} \\)</span></td>
-<td style="text-align:center;vertical-align:middle;border-width:1px;"><span>\\( \boldsymbol{b}_1=\dfrac{1}{100}\begin{pmatrix}0\\ -12 \end{pmatrix} \\)</span></td>
-<td style="text-align:center;vertical-align:middle;border-width:1px;"><span>\\( p_1=0.01 \\)</span></td>
-</tr>
-<tr>
-<td style="vertical-align:middle;text-align:center;border-width:1px;"><span>\\( A_2=\dfrac{1}{1000} \begin{pmatrix} 845&35\\ -35&820\end{pmatrix} \\)</span></td>
-<td style="text-align:center;vertical-align:middle;border-width:1px;"><span>\\( \boldsymbol{b}_2=\dfrac{1}{10}\begin{pmatrix}0\\ 16 \end{pmatrix} \\)</span></td>
-<td style="text-align:center;vertical-align:middle;border-width:1px;"><span>\\( p_2=0.85 \\)</span></td>
-</tr>
-<tr>
-<td style="text-align:center;vertical-align:middle;border-width:1px;"><span>\\( A_3=\dfrac{1}{1000} \begin{pmatrix} 200&-310\\ 255&245\end{pmatrix} \\)</span></td>
-<td style="text-align:center;vertical-align:middle;border-width:1px;"><span>\\( \boldsymbol{b}_3=\dfrac{1}{100}\begin{pmatrix}0\\ 25\end{pmatrix} \\)</span></td>
-<td style="text-align:center;vertical-align:middle;border-width:1px;"><span>\\( p_3=0.07 \\)</span></td>
-</tr>
-<tr>
-<td style="text-align:center;vertical-align:middle;border-width:1px;"><span>\\( A_4=\dfrac{1}{100} \begin{pmatrix} -15&24\\ 25&20\end{pmatrix} \\)</span></td>
-<td style="text-align:center;vertical-align:middle;border-width:1px;"><span>\\( \boldsymbol{b}_4=\dfrac{1}{100}\begin{pmatrix}0\\ 25\end{pmatrix} \\)</span></td>
-<td style="text-align:center;vertical-align:middle;border-width:1px;"><span>\\( p_4=0.07 \\)</span></td>
-</tr>
-</tbody>
-</table>
+<p style="text-align:center;"><img crs="https://farm4.staticflickr.com/3945/15526589187_02ed30f15d_o_d.jpg"></p>
 
 <p style="text-align:center;"><img src="http://farm6.static.flickr.com/5258/5417325046_0d7dfce960_b_d.jpg" alt="" /></p>
 
