@@ -91,11 +91,13 @@ numer(expr)
 
 We can then use the following three polynomials to define the Feuerbach point:
 
+<div>
 \begin{align}
 h_1(s,u) &= s^2+1-u^2  \\
 h_2(s,u,x_1,y_1) &= (4y-s)^2+(4x-1)^2-1-s^2 \\
 h_3(s,u,x_1,y_1) &= \big( (s+u+1)x-s\big)^2+\big((s+u+1)y-s\big)^2-s^2  \\
 \end{align}
+</div>
 
 Let us now proceed to computing the three feet of the internal bisectors, starting by collecting the coordinates of the incenter:
 
