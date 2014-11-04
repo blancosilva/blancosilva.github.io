@@ -271,5 +271,8 @@ sage: h = s**2*(2*x - 1)**2-s**2-(r**2-r+s**2)**2+(-r**2+r-s**2+2*s*y)**2
 sage: g = 2*s**2*(r**2*y-r*y+s**2*y-s*x**2+s*x-s*y**2)
 sage: I = R.ideal(1-z*g, h)
 sage: I.groebner_basis()
+{% endhighlight %}
+
+{% highlight text %}
 [1]
 {% endhighlight %}
