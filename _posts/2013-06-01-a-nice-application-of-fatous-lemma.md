@@ -35,7 +35,7 @@ It must then be \\( {\int_E \lvert f_n - f \rvert\, d\mu = 0} \\). But this prov
 
 \\( \Box \\)
 
-> **Exercise 2** Let \\( {(X, \mathcal{F}, \mu)}\\)  be a finite measure space and let \\(  1&lt;p&lt;\infty \\) . Suppose that \\( \\{f_n\\}_{n \in\mathbb{N}} \\) is a sequence of measurable functions in \\( L_p(\mu) \\)  whose norms are uniformly bounded in \\( n \\)  and which converges almost everywhere to a function \\( f \\) . Prove that the sequence \\( \big\\{ \int_X f_n g\, d\mu \big\\}_{n \in \mathbb{N}} \\) converges to \\( \int_X fg\, d\mu \\) for all \\( g \in L_q(\mu) \\), where \\( q \\) is the conjugate exponent of \\( p \\).
+> **Exercise 2** Let \\( {(X, \mathcal{F}, \mu)}\\)  be a finite measure space and let \\(  1&lt;p&lt;\infty \\) . Suppose that <span>\\( \\{f_n\\}_{n \in\mathbb{N}} \\)</span> is a sequence of measurable functions in \\( L_p(\mu) \\)  whose norms are uniformly bounded in \\( n \\)  and which converges almost everywhere to a function \\( f \\) . Prove that the sequence <span>\\( \big\\{ \int_X f_n g\, d\mu \big\\}_{n \in \mathbb{N}} \\)</span> converges to \\( \int_X fg\, d\mu \\) for all \\( g \in L_q(\mu) \\), where \\( q \\) is the conjugate exponent of \\( p \\).
 
 *Proof:*  The proof is very similar to the previous problem. We start by noticing that under the hypotheses of the problem,
 
