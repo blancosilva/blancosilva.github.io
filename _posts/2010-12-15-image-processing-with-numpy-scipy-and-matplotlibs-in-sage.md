@@ -208,7 +208,3 @@ matplotlib.pyplot.gray()
 matplotlib.pyplot.imshow(edges)
 matplotlib.pyplot.savefig('/Users/blanco/Desktop/output.png')
 {% endhighlight %}
-
-### References
-
-<p style="text-align:center;"><a href="http://www.amazon.com/gp/product/1439840458/ref=as_li_tf_il?ie=UTF8&amp;tag=blancosilva-20&amp;linkCode=as2&amp;camp=217145&amp;creative=399373&amp;creativeASIN=1439840458"><img border="0" src="assets/q?_encoding=UTF8&amp;Format=_SL160_&amp;ASIN=1439840458&amp;MarketPlace=US&amp;ID=AsinImage&amp;WS=1&amp;tag=blancosilva-20&amp;ServiceVersion=20070822" /></a><img src="assets/ir?t=blancosilva-20&amp;l=as2&amp;o=1&amp;a=1439840458&amp;camp=217145&amp;creative=399373" width="1" height="1" border="0" alt="" style="border:none!important;margin:0!important;" /><a href="http://www.amazon.com/gp/product/1439840458/ref=as_li_tf_tl?ie=UTF8&amp;tag=blancosilva-20&amp;linkCode=as2&amp;camp=217145&amp;creative=399373&amp;creativeASIN=1439840458">The Image Processing Handbook, Sixth Edition</a><img src="assets/ir?t=blancosilva-20&amp;l=as2&amp;o=1&amp;a=1439840458&amp;camp=217145&amp;creative=399373" width="1" height="1" border="0" alt="" style="border:none!important;margin:0!important;" /></p>
