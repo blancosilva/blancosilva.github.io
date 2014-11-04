@@ -20,15 +20,17 @@ This solution finds the stone in two weights.  It is what we call *adaptive meas
 
 * **The weights matrix**: This is a matrix with four columns (one for each stone) and two rows (one for each weight).  The entries of this matrix can only be <span>\\( -1, 0 \\)</span> or <span>\\( 1, \\)</span> depending whether a given stone is placed on the left plate <span>\\( (1) \\)</span>, on the right plate <span>\\( (-1) \\)</span> or in neither plate <span>\\( (0). \\)</span>  For example, for the solution given above, the corresponding matrix would be
 
-\\[ W = \begin{pmatrix} 1 &amp; 1 &amp; -1 &amp; -1 \\ 1 &amp; -1 &amp; 0 &amp; 0 \end{pmatrix} \\]
+<div>
+\\[ W = \begin{pmatrix} 1 & 1 & -1 & -1 \\ 1 & -1 & 0 & 0 \end{pmatrix} \\]
+</div>
 
 * **The stones matrix**: This is a square matrix with four rows and columns (one for each stone).  Each column represents a different combination of stones, in such a way that the *n*-th column assumes that the heaviest stone is in the *n*-th position.  The entries on this matrix indicate the weight of each stone.  For example, if we assume that the heaviest stone weights *b* units, and each other stone weights *a* units, then the corresponding **stones matrix** is
 
-\\[ B = \begin{pmatrix} b &amp; a &amp; a &amp; a \\ a &amp; b &amp; a &amp; a \\ a &amp; a &amp; b &amp; a \\ a &amp; a &amp; a &amp; b \end{pmatrix} \\]
+\\[ B = \begin{pmatrix} b & a & a & a \\ a & b & a & a \\ a & a & b & a \\ a & a & a & b \end{pmatrix} \\]
 
 Multiplying these two matrices, and looking at the sign of the entries of the resulting matrix, offers great insight on the result of the measures:
 
-\\[ \text{sign} \big( W \cdot B \big) = \text{sign} \begin{pmatrix} b-a &amp; b-a &amp; a-b &amp; a-b \\ b-a &amp; a-b &amp; 0 &amp; 0 \end{pmatrix} = \begin{pmatrix} + &amp; + &amp; - &amp; - \\ + &amp; - &amp; 0 &amp; 0 \end{pmatrix} \\]
+\\[ \text{sign} \big( W \cdot B \big) = \text{sign} \begin{pmatrix} b-a & b-a & a-b & a-b \\ b-a & a-b & 0 & 0 \end{pmatrix} = \begin{pmatrix} + & + & - & - \\ + & - & 0 & 0 \end{pmatrix} \\]
 
 Note the columns of this matrix code the behavior of the measures:
 * The column <span>\\( \big( \begin{smallmatrix} + \\ + \end{smallmatrix} \big) \\)</span> indicates that the balance tipped to the left in both measures (and therefore, the heaviest stone is the first one)
@@ -37,7 +39,7 @@ Note the columns of this matrix code the behavior of the measures:
 
 Is it possible to design a solution to this puzzle that is not adaptive?  Note the solution with two measures given (in algebraic form) below:
 
-\\[ \text{sign} \left[ \begin{pmatrix} 1 &amp; 1 &amp; -1 &amp; -1 \\ 1 &amp; -1 &amp; 1 &amp; -1 \end{pmatrix} \cdot B \right] = \begin{pmatrix} + &amp; + &amp; - &amp; - \\ + &amp; - &amp; + &amp; - \end{pmatrix} \\]
+\\[ \text{sign} \left[ \begin{pmatrix} 1 & 1 & -1 & -1 \\ 1 & -1 & 1 & -1 \end{pmatrix} \cdot B \right] = \begin{pmatrix} + & + & - & - \\ + & - & + & - \end{pmatrix} \\]
 
 Since each column is different, it is trivial to decide after the experiment is done, which stone will be the heaviest.  For instance, if the balance tips first to the right (-) and then to the left (+), the heaviest stone can only be the third one.
 
@@ -45,13 +47,13 @@ Let us make it a big harder: Same situation, but now we don't know whether the s
 
 The solution above is no good: Since we are not sure whether *b* is greater or smaller than *a*, we would obtain two sign matrices which are virtually mirror images of each other.
 
-\\[ \begin{pmatrix} + &amp; + &amp; - &amp; - \\ + &amp; - &amp; + &amp; - \end{pmatrix} \\)</span> and <span>\\( \begin{pmatrix} - &amp; - &amp; + &amp; + \\ - &amp; + &amp; - &amp; + \end{pmatrix} \\]
+\\[ \begin{pmatrix} + & + & - & - \\ + & - & + & - \end{pmatrix} \\)</span> and <span>\\( \begin{pmatrix} - & - & + & + \\ - & + & - & + \end{pmatrix} \\]
 
 In this case, in the event of obtaining that the balance tips twice to the left: which would be the different stone?  The first, which is heaviest, or the fourth, which is lightest?  We cannot decide.
 
 One possible solution to this situation involves taking one more measure.  Look at the algebraic expression of the following example, to realize why:
 
-\\[ \text{sign} \left[ \begin{pmatrix} 1 &amp; 1 &amp; -1 &amp; -1 \\ 1 &amp; -1 &amp; 1 &amp; -1 \\ 1 &amp; -1 &amp; -1 &amp; 1 \end{pmatrix} \cdot B \right] = \begin{pmatrix} + &amp; + &amp; - &amp; - \\ + &amp; - &amp; + &amp; - \\ + &amp; - &amp; - &amp; + \end{pmatrix} \\)</span> or <span>\\( \begin{pmatrix} - &amp; - &amp; + &amp; + \\ - &amp; + &amp; - &amp; + \\ - &amp; + &amp; + &amp; - \end{pmatrix} \\]
+\\[ \text{sign} \left[ \begin{pmatrix} 1 & 1 & -1 & -1 \\ 1 & -1 & 1 & -1 \\ 1 & -1 & -1 & 1 \end{pmatrix} \cdot B \right] = \begin{pmatrix} + & + & - & - \\ + & - & + & - \\ + & - & - & + \end{pmatrix} \\)</span> or <span>\\( \begin{pmatrix} - & - & + & + \\ - & + & - & + \\ - & + & + & - \end{pmatrix} \\]
 
 In this case there is no room for confusion: if the balance tips three times to the same side, then the different stone is the first one (whether heavier or lighter). The other possibilities are also easily solvable: if the balance tips first to one side, then to the other, and then to the first side, then the different stone is the third one.
 
