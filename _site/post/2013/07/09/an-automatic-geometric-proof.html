@@ -78,11 +78,11 @@
 	</header>
 
 	<article class="post-content">
-		We are familiar with that result that states that, on any given triangle, the circumcenter, centroid and orthocenter are always collinear.  I would like to illustrate how to use Gröbner bases theory to prove that the incenter also belongs in the previous line, provided the triangle is isosceles.
+		<p>We are familiar with that result that states that, on any given triangle, the circumcenter, centroid and orthocenter are always collinear.  I would like to illustrate how to use Gröbner bases theory to prove that the incenter also belongs in the previous line, provided the triangle is isosceles.</p>
 
-We start, as usual, indicating that this property is independent of shifts, rotations or dilations, and therefore we may assume that the isosceles triangle has one vertex at \\( A=(0,0) \\),  another vertex at \\( B=(1,0) \\) and the third vertex at \\( C=(1/2, s) \\) for some value \\( s \neq 0. \\)  In that case, we will need to work on the polynomial ring \\( R=\mathbb{R}[s,x_1,x_2,x_3,y_1,y_2,y_3,z], \\) since we need the parameter \\( s \\) free, the variables \\( x_1 \\) and \\( y_1 \\) are used to input the conditions for the circumcenter of the triangle, the variables \\( x_2 \\) and \\( y_2 \\) for centroid, and the variables \\( x_3 \\) and \\( y_3 \\) for the incenter (note that we do not need to use the orthocenter in this case).
+<p>We start, as usual, indicating that this property is independent of shifts, rotations or dilations, and therefore we may assume that the isosceles triangle has one vertex at \( A=(0,0) \),  another vertex at \( B=(1,0) \) and the third vertex at \( C=(1/2, s) \) for some value \( s \neq 0. \)  In that case, we will need to work on the polynomial ring \( R=\mathbb{R}[s,x_1,x_2,x_3,y_1,y_2,y_3,z], \) since we need the parameter \( s \) free, the variables \( x_1 \) and \( y_1 \) are used to input the conditions for the circumcenter of the triangle, the variables \( x_2 \) and \( y_2 \) for centroid, and the variables \( x_3 \) and \( y_3 \) for the incenter (note that we do not need to use the orthocenter in this case).</p>
 
-We may obtain all six conditions by using `sympy`, as follows:
+<p>We may obtain all six conditions by using <code>sympy</code>, as follows:</p>
 
 <div class="highlight"><pre><code class="language-python" data-lang="python"><span class="lineno"> 1</span> <span class="kn">import</span> <span class="nn">sympy</span>
 <span class="lineno"> 2</span> <span class="kn">from</span> <span class="nn">sympy</span> <span class="kn">import</span> <span class="o">*</span>
@@ -101,17 +101,17 @@ We may obtain all six conditions by using `sympy`, as follows:
 Point(1/2, s/3)
 Point(1/2, s/(sqrt(4*s**2 + 1) + 1))</code></pre></div>
 
-This translates into the following polynomials
+<p>This translates into the following polynomials</p>
 
 <div>
 	\begin{align}
-	h_1 &= x_1-1, &h_2 &= sy_1-4s^2+1 &\text{(for circumcenter)} \\
-	h_3 &= x_2-1, &h_4 &= y_2-s &\text{(for centroid)} \\
-	h_5 &= x_3-1, &h_6 &= 4sy_3+1)^2-4s^2-1 \text{(for incenter)} 
+	h_1 &amp;= x_1-1, &amp;h_2 &amp;= sy_1-4s^2+1 &amp;\text{(for circumcenter)} \\
+	h_3 &amp;= x_2-1, &amp;h_4 &amp;= y_2-s &amp;\text{(for centroid)} \\
+	h_5 &amp;= x_3-1, &amp;h_6 &amp;= 4sy_3+1)^2-4s^2-1 \text{(for incenter)} 
 	\end{align}
 </div>
 
-The hypothesis polynomial comes simply from asking whether the slope of the line through two of those centers is the same as the slope of the line through another choice of two centers; we could use then, for example, \\( g=(x_2-x_1)(y_3-y_1)-(x_3-x_1)(y_2-y_1). \\)  It only remains to compute the Gröbner basis of the ideal \\( I=(h_1, \dotsc, h_6, 1-zg) \subset \mathbb{R}[s,x_1,x_2,x_3,y_1,y_2,y_3,z]. \\)  Let us use `sagemath` for this task:
+<p>The hypothesis polynomial comes simply from asking whether the slope of the line through two of those centers is the same as the slope of the line through another choice of two centers; we could use then, for example, \( g=(x_2-x_1)(y_3-y_1)-(x_3-x_1)(y_2-y_1). \)  It only remains to compute the Gröbner basis of the ideal \( I=(h_1, \dotsc, h_6, 1-zg) \subset \mathbb{R}[s,x_1,x_2,x_3,y_1,y_2,y_3,z]. \)  Let us use <code>sagemath</code> for this task:</p>
 
 <div class="highlight"><pre><code class="language-python" data-lang="python"><span class="lineno">1</span> <span class="n">sage</span><span class="p">:</span> <span class="n">R</span><span class="o">.&lt;</span><span class="n">s</span><span class="p">,</span><span class="n">x1</span><span class="p">,</span><span class="n">x2</span><span class="p">,</span><span class="n">x3</span><span class="p">,</span><span class="n">y1</span><span class="p">,</span><span class="n">y2</span><span class="p">,</span><span class="n">y3</span><span class="p">,</span><span class="n">z</span><span class="o">&gt;</span> <span class="o">=</span> <span class="n">PolynomialRing</span><span class="p">(</span><span class="n">QQ</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="n">order</span><span class="o">=</span><span class="s">&#39;lex&#39;</span><span class="p">)</span>
 <span class="lineno">2</span> <span class="n">sage</span><span class="p">:</span> <span class="n">h</span> <span class="o">=</span> <span class="p">[</span><span class="mi">2</span><span class="o">*</span><span class="n">x1</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">8</span><span class="o">*</span><span class="n">r</span><span class="o">*</span><span class="n">y1</span> <span class="o">-</span> <span class="mi">4</span><span class="o">*</span><span class="n">r</span><span class="o">**</span><span class="mi">2</span> <span class="o">+</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="o">*</span><span class="n">x2</span> <span class="o">-</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">3</span><span class="o">*</span><span class="n">y2</span> <span class="o">-</span> <span class="n">r</span><span class="p">,</span> <span class="mi">2</span><span class="o">*</span><span class="n">x3</span> <span class="o">-</span> <span class="mi">1</span><span class="p">,</span> <span class="p">(</span><span class="mi">4</span><span class="o">*</span><span class="n">r</span><span class="o">*</span><span class="n">y3</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span><span class="o">**</span><span class="mi">2</span> <span class="o">-</span> <span class="mi">4</span><span class="o">*</span><span class="n">r</span><span class="o">**</span><span class="mi">2</span> <span class="o">-</span> <span class="mi">1</span><span class="p">]</span>
@@ -121,7 +121,7 @@ The hypothesis polynomial comes simply from asking whether the slope of the line
 
 <div class="highlight"><pre><code class="language-text" data-lang="text">[1]</code></pre></div>
 
-This proves the result.
+<p>This proves the result.</p>
 
 	</article>
 
