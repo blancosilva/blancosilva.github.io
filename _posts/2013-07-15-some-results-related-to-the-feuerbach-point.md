@@ -22,6 +22,7 @@ Most of these results are easily shown with `sympy` without the need to resort t
 {% highlight python linenos %}
 import sympy
 from sympy import *
+
 A = Point(0,0)
 B = Point(1,0)
 r,s = var('r,s')
@@ -29,6 +30,7 @@ C = Point(r,s)
 D = Segment(A,B).midpoint
 E = Segment(B,C).midpoint
 F = Segment(A,C).midpoint
+
 simplify(Triangle(A,B,C).circumcircle.area/Triangle(D,E,F).circumcircle.area)
 {% endhighlight %}
 
