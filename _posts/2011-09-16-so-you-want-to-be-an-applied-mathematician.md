@@ -298,4 +298,5 @@ You also need to know the basics of computer programming. Also, more importantly
 </tbody>
 </table>
 
+
 If you are in the field, and feel that there is a missing text in my list, please make me know. I focused mostly on those which I needed at some point to progress on my research, which is basically oriented to mathematical imaging. So, five cents anyone?
