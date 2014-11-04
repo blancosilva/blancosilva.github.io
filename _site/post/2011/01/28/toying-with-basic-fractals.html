@@ -78,26 +78,28 @@
 	</header>
 
 	<article class="post-content">
-		I will skip all the mathematical theory behind Fractals (dimensions, measures, etc) to focus directly into the description and implementation of some of the most basic examples.  In this post, I will cover the ideas behind three classical techniques:
+		<p>I will skip all the mathematical theory behind Fractals (dimensions, measures, etc) to focus directly into the description and implementation of some of the most basic examples.  In this post, I will cover the ideas behind three classical techniques:</p>
 
-* Iterated function systems
-* Membership tests
-* Lindenmayer systems
+<ul>
+  <li>Iterated function systems</li>
+  <li>Membership tests</li>
+  <li>Lindenmayer systems</li>
+</ul>
 
-## Fractals from Iterated Function Systems
+<h2 id="fractals-from-iterated-function-systems">Fractals from Iterated Function Systems</h2>
 
-We start from an affine transformation <span>\\( f\colon \mathbb{R}^2 \to \mathbb{R}^2, \\)</span> described as a shift with direction <span>\\( \boldsymbol{b}=(b_1,b_2) \\)</span> of a linear transformation <span>\\( A=\big( \begin{smallmatrix} a_{11}& a_{12}\\a_{21} & a_{22}\end{smallmatrix}\big): \\)</span>
-<p style="text-align:center;"><span>\\( f(\boldsymbol{x}) = A\boldsymbol{x}+\boldsymbol{b} = \begin{pmatrix} a_{11} & a_{12}\\ a_{21} & a_{22} \end{pmatrix} \begin{pmatrix} x_1\\ x_2 \end{pmatrix} + \begin{pmatrix} b_1\\ b_2\end{pmatrix}. \\)</span>
+<p>We start from an affine transformation <span>\( f\colon \mathbb{R}^2 \to \mathbb{R}^2, \)</span> described as a shift with direction <span>\( \boldsymbol{b}=(b_1,b_2) \)</span> of a linear transformation <span>\( A=\big( \begin{smallmatrix} a<em>{11}&amp; a</em>{12}\a<em>{21} &amp; a</em>{22}\end{smallmatrix}\big): \)</span>
+&lt;p style="text-align:center;"&gt;<span>\( f(\boldsymbol{x}) = A\boldsymbol{x}+\boldsymbol{b} = \begin{pmatrix} a<em>{11} &amp; a</em>{12}\ a<em>{21} &amp; a</em>{22} \end{pmatrix} \begin{pmatrix} x_1\ x_2 \end{pmatrix} + \begin{pmatrix} b_1\ b_2\end{pmatrix}. \)</span></p>
 
-Given a single point <span>\\( \boldsymbol{x} \in \mathbb{R}, \\)</span> and an affine transformation as above, consider the sequence formed by applying the same transformation on successive outputs:
+<p>Given a single point <span>\( \boldsymbol{x} \in \mathbb{R}, \)</span> and an affine transformation as above, consider the sequence formed by applying the same transformation on successive outputs:</p>
 
 <div>
   \begin{equation} 
-  \begin{array}{|c|c|c|c|c|}\hline\mbox{}&f&f\circ f&\dotsb & f\circ f\circ \stackrel{(n)}{\dotsb}\circ f\\ \hline\boldsymbol{x}&A\boldsymbol{x}+\boldsymbol{b}&A\big(A\boldsymbol{x}+\boldsymbol{b}\big)+\boldsymbol{b}&\dotsb &A^n\boldsymbol{x}+\big(A^{n-1}+\dotsb +A\big)\boldsymbol{b}+\boldsymbol{b}\\ \hline\end{array} 
+  \begin{array}{|c|c|c|c|c|}\hline\mbox{}&amp;f&amp;f\circ f&amp;\dotsb &amp; f\circ f\circ \stackrel{(n)}{\dotsb}\circ f\\ \hline\boldsymbol{x}&amp;A\boldsymbol{x}+\boldsymbol{b}&amp;A\big(A\boldsymbol{x}+\boldsymbol{b}\big)+\boldsymbol{b}&amp;\dotsb &amp;A^n\boldsymbol{x}+\big(A^{n-1}+\dotsb +A\big)\boldsymbol{b}+\boldsymbol{b}\\ \hline\end{array} 
   \end{equation}  
 </div>
 
-For example, for the point <span>\\( \boldsymbol{x}=(0.42,0.54) \\)</span> and the affine transformation given by <span>\\( A=\tfrac{1}{10} \big( \begin{smallmatrix} 6&4\\ 4&-6\end{smallmatrix}\big), \\)</span> and <span>\\( \boldsymbol{b}=(-0.1,0.1), \\)</span> the graph below shows the behavior of the sequence.  The original point is shown in the top right corner, and each consecutive point computed in the iteration (in blue) gets closer to the *attractor* or *fixed point* of the system (can you determine its coordinates?).  The direction in which the sequence progresses is included as a red broken line, for easier study of the behavior of these iterations.
+<p>For example, for the point <span>\( \boldsymbol{x}=(0.42,0.54) \)</span> and the affine transformation given by <span>\( A=\tfrac{1}{10} \big( \begin{smallmatrix} 6&amp;4\ 4&amp;-6\end{smallmatrix}\big), \)</span> and <span>\( \boldsymbol{b}=(-0.1,0.1), \)</span> the graph below shows the behavior of the sequence.  The original point is shown in the top right corner, and each consecutive point computed in the iteration (in blue) gets closer to the <em>attractor</em> or <em>fixed point</em> of the system (can you determine its coordinates?).  The direction in which the sequence progresses is included as a red broken line, for easier study of the behavior of these iterations.</p>
 
 <p style="text-align:center;"><img src="http://farm5.static.flickr.com/4141/5395599135_a0c722523e_d.jpg" alt="" /></p>
 
@@ -113,29 +115,29 @@ For example, for the point <span>\\( \boldsymbol{x}=(0.42,0.54) \\)</span> and t
 <span class="lineno">10</span> <span class="n">matplotlib</span><span class="o">.</span><span class="n">pyplot</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="o">*</span><span class="nb">zip</span><span class="p">(</span><span class="o">*</span><span class="n">A</span><span class="p">),</span> <span class="n">marker</span><span class="o">=</span><span class="s">&#39;o&#39;</span><span class="p">,</span> <span class="n">ls</span><span class="o">=</span><span class="s">&#39;&#39;</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s">&#39;b&#39;</span><span class="p">)</span>
 <span class="lineno">11</span> <span class="n">matplotlib</span><span class="o">.</span><span class="n">pyplot</span><span class="o">.</span><span class="n">savefigure</span><span class="p">(</span><span class="s">&#39;/Users/blanco/Desktop/sequence.png&#39;</span><span class="p">)</span></code></pre></div>
 
-Based on this simple construction, Michael Barnsley proposed the following so-called *Chaos game*: choose a point <span>\\( \boldsymbol{x} \in \mathbb{R} \\)</span> in the plane, and several different affine transformations <span>\\( f_1, f_2, \dotsc, f_n. \\)</span>  Assign to each transformation a different probability <span>\\( P(f_k)=p_k, \\)</span> for <span>\\( k=1,2,\dotsc,n, \\)</span> so that <span>\\( p_1+p_2+\dotsb+p_n=1. \\)</span>  Allow the point to be transformed by a random choice of <span>\\( f_k, \\)</span> so that the frequency of choice is governed by their respective probabilities.  The following example indicates a possible outcome:
+<p>Based on this simple construction, Michael Barnsley proposed the following so-called <em>Chaos game</em>: choose a point <span>\( \boldsymbol{x} \in \mathbb{R} \)</span> in the plane, and several different affine transformations <span>\( f_1, f_2, \dotsc, f_n. \)</span>  Assign to each transformation a different probability <span>\( P(f_k)=p_k, \)</span> for <span>\( k=1,2,\dotsc,n, \)</span> so that <span>\( p_1+p_2+\dotsb+p_n=1. \)</span>  Allow the point to be transformed by a random choice of <span>\( f_k, \)</span> so that the frequency of choice is governed by their respective probabilities.  The following example indicates a possible outcome:</p>
 
-Set <span>\\( \boldsymbol{x}=(0,0), \\)</span> and consider the four affine maps below, with their corresponding probabilities:
+<p>Set <span>\( \boldsymbol{x}=(0,0), \)</span> and consider the four affine maps below, with their corresponding probabilities:</p>
 
 <table style="margin-left:auto;margin-right:auto;text-align:center;border-width:0;">
 <tbody>
 <tr>
-<td style="text-align:center;vertical-align:middle;border-width:1px;"><span>\\( A_1=\dfrac{1}{10} \begin{pmatrix} 0&0\\ 0&2\end{pmatrix} \\)</span></td>
+<td style="text-align:center;vertical-align:middle;border-width:1px;"><span>\\( A_1=\dfrac{1}{10} \begin{pmatrix} 0&amp;0\\ 0&amp;2\end{pmatrix} \\)</span></td>
 <td style="text-align:center;vertical-align:middle;border-width:1px;"><span>\\( \boldsymbol{b}_1=\dfrac{1}{100}\begin{pmatrix}0\\ -12 \end{pmatrix} \\)</span></td>
 <td style="text-align:center;vertical-align:middle;border-width:1px;"><span>\\( p_1=0.01 \\)</span></td>
 </tr>
 <tr>
-<td style="vertical-align:middle;text-align:center;border-width:1px;"><span>\\( A_2=\dfrac{1}{1000} \begin{pmatrix} 845&35\\ -35&820\end{pmatrix} \\)</span></td>
+<td style="vertical-align:middle;text-align:center;border-width:1px;"><span>\\( A_2=\dfrac{1}{1000} \begin{pmatrix} 845&amp;35\\ -35&amp;820\end{pmatrix} \\)</span></td>
 <td style="text-align:center;vertical-align:middle;border-width:1px;"><span>\\( \boldsymbol{b}_2=\dfrac{1}{10}\begin{pmatrix}0\\ 16 \end{pmatrix} \\)</span></td>
 <td style="text-align:center;vertical-align:middle;border-width:1px;"><span>\\( p_2=0.85 \\)</span></td>
 </tr>
 <tr>
-<td style="text-align:center;vertical-align:middle;border-width:1px;"><span>\\( A_3=\dfrac{1}{1000} \begin{pmatrix} 200&-310\\ 255&245\end{pmatrix} \\)</span></td>
+<td style="text-align:center;vertical-align:middle;border-width:1px;"><span>\\( A_3=\dfrac{1}{1000} \begin{pmatrix} 200&amp;-310\\ 255&amp;245\end{pmatrix} \\)</span></td>
 <td style="text-align:center;vertical-align:middle;border-width:1px;"><span>\\( \boldsymbol{b}_3=\dfrac{1}{100}\begin{pmatrix}0\\ 25\end{pmatrix} \\)</span></td>
 <td style="text-align:center;vertical-align:middle;border-width:1px;"><span>\\( p_3=0.07 \\)</span></td>
 </tr>
 <tr>
-<td style="text-align:center;vertical-align:middle;border-width:1px;"><span>\\( A_4=\dfrac{1}{100} \begin{pmatrix} -15&24\\ 25&20\end{pmatrix} \\)</span></td>
+<td style="text-align:center;vertical-align:middle;border-width:1px;"><span>\\( A_4=\dfrac{1}{100} \begin{pmatrix} -15&amp;24\\ 25&amp;20\end{pmatrix} \\)</span></td>
 <td style="text-align:center;vertical-align:middle;border-width:1px;"><span>\\( \boldsymbol{b}_4=\dfrac{1}{100}\begin{pmatrix}0\\ 25\end{pmatrix} \\)</span></td>
 <td style="text-align:center;vertical-align:middle;border-width:1px;"><span>\\( p_4=0.07 \\)</span></td>
 </tr>
@@ -144,13 +146,13 @@ Set <span>\\( \boldsymbol{x}=(0,0), \\)</span> and consider the four affine maps
 
 <p style="text-align:center;"><img src="http://farm6.static.flickr.com/5258/5417325046_0d7dfce960_b_d.jpg" alt="" /></p>
 
-What we see is a large set of points (100,000) that are *close* to a fractal fern: the attractor (or the set of fixed points) of the system of iterations given above.
+<p>What we see is a large set of points (100,000) that are <em>close</em> to a fractal fern: the attractor (or the set of fixed points) of the system of iterations given above.</p>
 
-A nice coding exercise is the creation of a function that offers as outputs the graphs of the clouds of points obtained: Collect the data from the IFS in a single matrix of size <span>\\( 7\times n, \\)</span> and use it as input of a script that, in a similar way to the toy example above, plots a large number of iterations of this system.
+<p>A nice coding exercise is the creation of a function that offers as outputs the graphs of the clouds of points obtained: Collect the data from the IFS in a single matrix of size <span>\( 7\times n, \)</span> and use it as input of a script that, in a similar way to the toy example above, plots a large number of iterations of this system.</p>
 
-## Membership tests
+<h2 id="membership-tests">Membership tests</h2>
 
-In membership tests, each point of a lattice of the plane is tested for membership in a given fractal set.  This membership test may be defined in many different ways.  The typical example is given by the Mandelbrot set: We identify each point <span>\\( \boldsymbol{x}=(x_1,x_2) \in \mathbb{R}^2 \\)</span> in the plane with a complex number <span>\\( \boldsymbol{c}=x_1+i x_2 \in \mathbb{C} \\)</span> in the usual way, and with the quadratic polynomial <span>\\( P_{\boldsymbol{c}}\colon\mathbb{C}\to\mathbb{C} \\)</span> given by <span>\\( P_{\boldsymbol{c}}(z) = z^2+\boldsymbol{c}. \\)</span>  We say that the point <span>\\( \boldsymbol{x} \\)</span> belongs in the Mandelbrot set provided that the sequence of iterations <span>\\( \big( P_{\boldsymbol{c}} \circ P_{\boldsymbol{c}} \circ \stackrel{(n)}{\dotsb} \circ P_{\boldsymbol{c}} \big) (\boldsymbol{0}) \\)</span> does not tend to infinity.  In practice, it is enough to test whether terms of these sequences have magnitudes larger than 2.  A simple script that approximates this set on a grid of size <span>\\( 256 \times 256 \\)</span> by testing after thirty iterations is shown below:
+<p>In membership tests, each point of a lattice of the plane is tested for membership in a given fractal set.  This membership test may be defined in many different ways.  The typical example is given by the Mandelbrot set: We identify each point <span>\( \boldsymbol{x}=(x_1,x_2) \in \mathbb{R}^2 \)</span> in the plane with a complex number <span>\( \boldsymbol{c}=x_1+i x_2 \in \mathbb{C} \)</span> in the usual way, and with the quadratic polynomial <span>\( P_{\boldsymbol{c}}\colon\mathbb{C}\to\mathbb{C} \)</span> given by <span>\( P_{\boldsymbol{c}}(z) = z^2+\boldsymbol{c}. \)</span>  We say that the point <span>\( \boldsymbol{x} \)</span> belongs in the Mandelbrot set provided that the sequence of iterations <span>\( \big( P<em>{\boldsymbol{c}} \circ P</em>{\boldsymbol{c}} \circ \stackrel{(n)}{\dotsb} \circ P_{\boldsymbol{c}} \big) (\boldsymbol{0}) \)</span> does not tend to infinity.  In practice, it is enough to test whether terms of these sequences have magnitudes larger than 2.  A simple script that approximates this set on a grid of size <span>\( 256 \times 256 \)</span> by testing after thirty iterations is shown below:</p>
 
 <div class="highlight"><pre><code class="language-python" data-lang="python"><span class="lineno"> 1</span> <span class="kn">from</span> <span class="nn">numpy</span> <span class="kn">import</span> <span class="o">*</span>
 <span class="lineno"> 2</span> 
@@ -180,22 +182,22 @@ In membership tests, each point of a lattice of the plane is tested for membersh
 
 <p style="text-align:center;"><img src="http://farm6.static.flickr.com/5132/5397495432_bb48f36b6b_d.jpg" alt="" /></p>
 
-## Lindenmayer systems
+<h2 id="lindenmayer-systems">Lindenmayer systems</h2>
 
-Start with a simple chain of commands, coded by symbols: for example: "Go forward one unit (*A*), turn left 60º (*B*), go forward one unit (*A*), turn right 120º (*C*), go forward one unit (*A*), turn left 60º (*B*), go forward one unit (*A*)"—coded as *ABACABA*. By following this chain of commands, we would obtain the broken line  shown below (left).   We also have a set of rules that change some of the symbols.  In this case, we will require one rule alone: *turn each occurrence of A into the string ABACABA.* Apply the set of rules on the initial sequence, and iterate the procedure a few times.  For example, after two iterations, we have the string
+<p>Start with a simple chain of commands, coded by symbols: for example: “Go forward one unit (<em>A</em>), turn left 60º (<em>B</em>), go forward one unit (<em>A</em>), turn right 120º (<em>C</em>), go forward one unit (<em>A</em>), turn left 60º (<em>B</em>), go forward one unit (<em>A</em>)”—coded as <em>ABACABA</em>. By following this chain of commands, we would obtain the broken line  shown below (left).   We also have a set of rules that change some of the symbols.  In this case, we will require one rule alone: <em>turn each occurrence of A into the string ABACABA.</em> Apply the set of rules on the initial sequence, and iterate the procedure a few times.  For example, after two iterations, we have the string</p>
 
 <div>
 \begin{equation} \begin{array}{l} ABACABABABACABACABACABABABACABABABACABA\dotsb \\ BABACABACABACABABABACABACABACABABABACAB\dotsb \\ ACABACABABABACABABABACABABABACABACABACA\dotsb \\ BABABACABA \end{array}
 \end{equation}
 </div>
 
-A suitable interpreter that follows each command appropriately, will produce the broken line below (right).
+<p>A suitable interpreter that follows each command appropriately, will produce the broken line below (right).</p>
 
 <p style="text-align:center;"><img src="http://farm6.static.flickr.com/5135/5396932677_bdf435ec89_b_d.jpg" alt="" /></p>
 
-In this case, the fractal is the broken line that results after taking this iteration to the limit: it can be proved that it has an infinite length, and it has many other interesting properties.
+<p>In this case, the fractal is the broken line that results after taking this iteration to the limit: it can be proved that it has an infinite length, and it has many other interesting properties.</p>
 
-The <span>\\( \LaTeX \\)</span> package `tikz` offers us a very simple syntax to produce approximations to this so-called Koch snowflake, as well as some other well-known fractals.  By including the `tikz` library `decorations.fractals`, the two curves mentioned above could be obtained as follows:
+<p>The <span>\( \LaTeX \)</span> package <code>tikz</code> offers us a very simple syntax to produce approximations to this so-called Koch snowflake, as well as some other well-known fractals.  By including the <code>tikz</code> library <code>decorations.fractals</code>, the two curves mentioned above could be obtained as follows:</p>
 
 <div class="highlight"><pre><code class="language-latex" data-lang="latex"><span class="lineno">1</span> <span class="k">\begin</span><span class="nb">{</span>center<span class="nb">}</span>
 <span class="lineno">2</span>   <span class="k">\begin</span><span class="nb">{</span>tikzpicture<span class="nb">}</span>[decoration=Koch snowflake]
@@ -204,7 +206,7 @@ The <span>\\( \LaTeX \\)</span> package `tikz` offers us a very simple syntax to
 <span class="lineno">5</span>   <span class="k">\end</span><span class="nb">{</span>tikzpicture<span class="nb">}</span>
 <span class="lineno">6</span> <span class="k">\end</span><span class="nb">{</span>center<span class="nb">}</span></code></pre></div>
 
-We can obtain decorative fractal-based image generated with `tikz`, by issuing very simple commands:
+<p>We can obtain decorative fractal-based image generated with <code>tikz</code>, by issuing very simple commands:</p>
 
 <div class="highlight"><pre><code class="language-latex" data-lang="latex"><span class="lineno">1</span> <span class="k">\begin</span><span class="nb">{</span>tikzpicture<span class="nb">}</span>[decoration=Koch snowflake,scale=2]
 <span class="lineno">2</span>   <span class="k">\draw</span> decorate<span class="nb">{</span> decorate<span class="nb">{</span> decorate<span class="nb">{</span> decorate<span class="nb">{</span> (0,0) --
@@ -212,6 +214,7 @@ We can obtain decorative fractal-based image generated with `tikz`, by issuing v
 <span class="lineno">4</span>   <span class="k">\draw</span> decorate<span class="nb">{</span> decorate<span class="nb">{</span> decorate<span class="nb">{</span> decorate<span class="nb">{</span> (2,1.5) --
 <span class="lineno">5</span>           (2.5,2) -- (2,2.5) -- (1.5,2) -- cycle <span class="nb">}</span> <span class="nb">}</span> <span class="nb">}</span> <span class="nb">}</span>;
 <span class="lineno">6</span> <span class="k">\end</span><span class="nb">{</span>tikzpicture<span class="nb">}</span></code></pre></div>
+
 
 	</article>
 
