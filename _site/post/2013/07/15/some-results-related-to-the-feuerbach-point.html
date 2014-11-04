@@ -78,18 +78,18 @@
 	</header>
 
 	<article class="post-content">
-		<p>Given a triangle \( \triangle ABC )), the circle that goes through the midpoints of each side, \( D, E, F )), is called the Feuerbach circle.  It has very surprising properties:</p>
+		<p>Given a triangle \( \triangle ABC \), the circle that goes through the midpoints of each side, \( D, E, F \), is called the Feuerbach circle.  It has very surprising properties:</p>
 
 <div style="text-align:center;width:75%;margin-left:auto;margin-right:auto;"><a href="http://www.flickr.com/photos/eseprimo/9297168636/" title="Fcircle by eseprimo, on Flickr"><img src="https://i0.wp.com/farm4.staticflickr.com/3805/9297168636_e56cd25e62_c.jpg" width="100%" alt="Fcircle" /></a></div>
 
 <ul>
-  <li>It also goes through the feet of the heights, points \( G, H, I. ))</li>
-  <li>If \( Oc )) denotes the orthocenter of the triangle, then the Feuerbach circle also goes through the midpoints of the segments \( OcA, OcB, OcC. ))  For this reason, the Feuerbach circle is also called the <strong>nine-point circle.</strong></li>
+  <li>It also goes through the feet of the heights, points \( G, H, I. \)</li>
+  <li>If \( Oc \) denotes the orthocenter of the triangle, then the Feuerbach circle also goes through the midpoints of the segments \( OcA, OcB, OcC. \)  For this reason, the Feuerbach circle is also called the <strong>nine-point circle.</strong></li>
   <li>The center of the Feuerbach circle is the midpoint between the orthocenter and circumcenter of the triangle.</li>
   <li>The area of the circumcircle is precisely four times the area of the Feuerbach circle.</li>
 </ul>
 
-<p>Most of these results are easily shown with <code>sympy</code> without the need to resort to Gröbner bases or Ritt-Wu techniques.  As usual, we realize that the properties are independent of rotation, translation or dilation, and so we may assume that the vertices of the triangle are \( A=(0,0), B=(1,0) )) and \( C=(r,s) )) for some positive parameters \( r,s&gt;0. ))  To prove the last statement, for instance we may issue the following:</p>
+<p>Most of these results are easily shown with <code>sympy</code> without the need to resort to Gröbner bases or Ritt-Wu techniques.  As usual, we realize that the properties are independent of rotation, translation or dilation, and so we may assume that the vertices of the triangle are \( A=(0,0), B=(1,0) \) and \( C=(r,s) \) for some positive parameters \( r,s&gt;0. \)  To prove the last statement, for instance we may issue the following:</p>
 
 <div class="highlight"><pre><code class="language-python" data-lang="python"><span class="lineno"> 1</span> <span class="kn">import</span> <span class="nn">sympy</span>
 <span class="lineno"> 2</span> <span class="kn">from</span> <span class="nn">sympy</span> <span class="kn">import</span> <span class="o">*</span>
@@ -111,13 +111,13 @@
 <p>The two results that we want to prove, whose synthetic proofs can be read in [<a href="https://www.google.com/url?sa=t&amp;rct=j&amp;q=&amp;esrc=s&amp;source=web&amp;cd=1&amp;cad=rja&amp;ved=0CC8QFjAA&amp;url=http%3A%2F%2Fforumgeom.fau.edu%2FFG2012volume12%2FFG201205.pdf&amp;ei=fMLkUd70NaHhygHx14CIBg&amp;usg=AFQjCNE8vXAgL4SNnBQ_g6c2F6DEkrbBNg&amp;sig2=UgTTpJVuVEL-ogDne5ppDQ&amp;bvm=bv.48705608,d.aWc">this article</a>] are the following:</p>
 
 <blockquote>
-  <p><strong>Theorem 1.</strong> The circle through the feet of the internal bisectors of triangle \( \triangle ABC&amp;bg=F4F5F7 )) passes through the Feuerbach point of the triangle.
-<strong>Theorem 2.</strong> The Feuerbach point of triangle \( \triangle ABC&amp;bg=F4F5F7 )) is the anti-Steiner point of the Euler line of the intouch triangle of \( \triangle ABC&amp;bg=F4F5F7 )) with respect to the same triangle.</p>
+  <p><strong>Theorem 1.</strong> The circle through the feet of the internal bisectors of triangle \( \triangle ABC&amp;bg=F4F5F7 \) passes through the Feuerbach point of the triangle.
+<strong>Theorem 2.</strong> The Feuerbach point of triangle \( \triangle ABC&amp;bg=F4F5F7 \) is the anti-Steiner point of the Euler line of the intouch triangle of \( \triangle ABC&amp;bg=F4F5F7 \) with respect to the same triangle.</p>
 </blockquote>
 
-<p>Let us prove the first  Theorem for the case of a right-triangle.  We only need to modify the definition of the point \( C )) to guarantee this situation.  We set \( C=(0,s) )) for some positive value of the parameter \( s )).</p>
+<p>Let us prove the first  Theorem for the case of a right-triangle.  We only need to modify the definition of the point \( C \) to guarantee this situation.  We set \( C=(0,s) \) for some positive value of the parameter \( s \).</p>
 
-<p>Let us start by collecting the hypothesis polynomials that define the coordinates \( (x_1,y_1) )) of the Feuerbach point of the triangle \( \triangle ABC. ))</p>
+<p>Let us start by collecting the hypothesis polynomials that define the coordinates \( (x_1,y_1) \) of the Feuerbach point of the triangle \( \triangle ABC. \)</p>
 
 <div class="highlight"><pre><code class="language-python" data-lang="python"><span class="lineno">1</span> <span class="kn">import</span> <span class="nn">sympy</span>
 <span class="lineno">2</span> <span class="kn">from</span> <span class="nn">sympy</span> <span class="kn">import</span> <span class="o">*</span>
@@ -130,7 +130,7 @@
 <div class="highlight"><pre><code class="language-text" data-lang="text">-s**2/(s + sqrt(s**2 + 1) + 1)**2 + (-s/(s + sqrt(s**2 + 1) + 1) + x)**2
 + (-s/(s + sqrt(s**2 + 1) + 1) + y)**2</code></pre></div>
 
-<p>We shall introduce the parameter \( u )) in our polynomial rings, and relate it to the parameter \( s )) so that \( u=\sqrt{s^2+1}. )) This will allow us to input the incenter, incircle and their interaction with other objects, in a simple polynomial way.</p>
+<p>We shall introduce the parameter \( u \) in our polynomial rings, and relate it to the parameter \( s \) so that \( u=\sqrt{s^2+1}. \) This will allow us to input the incenter, incircle and their interaction with other objects, in a simple polynomial way.</p>
 
 <div class="highlight"><pre><code class="language-python" data-lang="python"><span class="lineno">1</span> <span class="n">var</span><span class="p">(</span><span class="s">&#39;u&#39;</span><span class="p">)</span>
 <span class="lineno">2</span> <span class="n">expr</span><span class="o">=</span><span class="n">Triangle</span><span class="p">(</span><span class="n">A</span><span class="p">,</span><span class="n">B</span><span class="p">,</span><span class="n">C</span><span class="p">)</span><span class="o">.</span><span class="n">incircle</span><span class="o">.</span><span class="n">equation</span><span class="p">()</span><span class="o">.</span><span class="n">subs</span><span class="p">(</span><span class="n">sqrt</span><span class="p">(</span><span class="n">s</span><span class="o">**</span><span class="mi">2</span><span class="o">+</span><span class="mi">1</span><span class="p">),</span><span class="n">u</span><span class="p">)</span>
@@ -163,16 +163,16 @@ h_3(s,u,x_1,y_1) &amp;= \big( (s+u+1)x-s\big)^2+\big((s+u+1)y-s\big)^2-s^2
 [Point(s/(s + u), 0)]
 [Point(s/(s + 1), s/(s + 1))]</code></pre></div>
 
-<p>This gives us the hypothesis polynomials for the coordinates \( (x_2,y_2), (x_3,y_3), (x_4,y_4) )) of the three feet:</p>
+<p>This gives us the hypothesis polynomials for the coordinates \( (x_2,y_2), (x_3,y_3), (x_4,y_4) \) of the three feet:</p>
 
 <div style="text-align:left;font-size:11pt;font-family:modern;width:50%;margin-left:auto;margin-right:auto;">
-\\( h_4(s,u,y_2)=(u+1)y_2-s \))
-\\( h_5(s,u,x_3)=(s+u)x_3-s \))
-\\( h_6(s,u,x_4)=(s+1)x_4-s \))
-\\( h_7(s,u,y_4)=(s+1)y_4-s \))
+\\( h_4(s,u,y_2)=(u+1)y_2-s \\)
+\\( h_5(s,u,x_3)=(s+u)x_3-s \\)
+\\( h_6(s,u,x_4)=(s+1)x_4-s \\)
+\\( h_7(s,u,y_4)=(s+1)y_4-s \\)
 </div>
 
-<p>Note we do not need to include polynomials for \( x_2 )) or \( y_3 )) since those are always zero.  We proceed to compute a polynomial equation of a circle that goes through the last three points:</p>
+<p>Note we do not need to include polynomials for \( x_2 \) or \( y_3 \) since those are always zero.  We proceed to compute a polynomial equation of a circle that goes through the last three points:</p>
 
 <div class="highlight"><pre><code class="language-python" data-lang="python"><span class="lineno">1</span> <span class="n">var</span><span class="p">(</span><span class="s">&#39;x2:5 y2:5&#39;</span><span class="p">)</span>
 <span class="lineno">2</span> <span class="n">Q1</span><span class="o">=</span><span class="n">Point</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="n">y2</span><span class="p">)</span>
@@ -187,10 +187,10 @@ h_3(s,u,x_1,y_1) &amp;= \big( (s+u+1)x-s\big)^2+\big((s+u+1)y-s\big)^2-s^2
 - (x3*(-x3**2 + x4**2 + y4**2) - 2*y2*(x3*y4 - y2*(x3 - x4))
 + (x3 - x4)*(x3**2 - y2**2))**2</code></pre></div>
 
-<p>We thus have the thesis polynomial for the coordinates \( (x_1,y_1) )) of the Feuerbach point to belong on the required circumcircle:</p>
+<p>We thus have the thesis polynomial for the coordinates \( (x_1,y_1) \) of the Feuerbach point to belong on the required circumcircle:</p>
 
 <div style="text-align:left;font-size:11pt;font-family:modern;">
-\\( g(s,x_1,y_1,y_2,x_3,x_4,y_4)=- \left(y_{2} \left(- x_{3}^{2} + x_{4}^{2} + y_{4}^{2}\right) + y_{4} \left(x_{3}^{2} - y_{2}^{2}\right)\right)^{2} + \left(2 x_1 \left(x_{3} y_{4} - y_{2} \left(x_{3} - x_{4}\right)\right) - y_{2} \left(- x_{3}^{2} + x_{4}^{2} + y_{4}^{2}\right) - y_{4} \left(x_{3}^{2} - y_{2}^{2}\right)\right)^{2} + \left(- x_{3} \left(- x_{3}^{2} + x_{4}^{2} + y_{4}^{2}\right) + 2 y_1 \left(x_{3} y_{4} - y_{2} \left(x_{3} - x_{4}\right)\right) - \left(x_{3} - x_{4}\right) \left(x_{3}^{2} - y_{2}^{2}\right)\right)^{2} - \left(x_{3} \left(- x_{3}^{2} + x_{4}^{2} + y_{4}^{2}\right) - 2 y_{2} \left(x_{3} y_{4} - y_{2} \left(x_{3} - x_{4}\right)\right) + \left(x_{3} - x_{4}\right) \left(x_{3}^{2} - y_{2}^{2}\right)\right)^{2} \))
+\\( g(s,x_1,y_1,y_2,x_3,x_4,y_4)=- \left(y_{2} \left(- x_{3}^{2} + x_{4}^{2} + y_{4}^{2}\right) + y_{4} \left(x_{3}^{2} - y_{2}^{2}\right)\right)^{2} + \left(2 x_1 \left(x_{3} y_{4} - y_{2} \left(x_{3} - x_{4}\right)\right) - y_{2} \left(- x_{3}^{2} + x_{4}^{2} + y_{4}^{2}\right) - y_{4} \left(x_{3}^{2} - y_{2}^{2}\right)\right)^{2} + \left(- x_{3} \left(- x_{3}^{2} + x_{4}^{2} + y_{4}^{2}\right) + 2 y_1 \left(x_{3} y_{4} - y_{2} \left(x_{3} - x_{4}\right)\right) - \left(x_{3} - x_{4}\right) \left(x_{3}^{2} - y_{2}^{2}\right)\right)^{2} - \left(x_{3} \left(- x_{3}^{2} + x_{4}^{2} + y_{4}^{2}\right) - 2 y_{2} \left(x_{3} y_{4} - y_{2} \left(x_{3} - x_{4}\right)\right) + \left(x_{3} - x_{4}\right) \left(x_{3}^{2} - y_{2}^{2}\right)\right)^{2} \\)
 </div>
 
 <p>We could use then the following code in <code>sage</code> or <code>sympy</code> in a <code>Python</code> session, to prove the result:</p>
@@ -237,7 +237,7 @@ h_3(s,u,x_1,y_1) &amp;= \big( (s+u+1)x-s\big)^2+\big((s+u+1)y-s\big)^2-s^2
 
 <p>To prove the second theorem, we need to go over the notion of anti-Steiner points first, and some of their properties:</p>
 
-<p>It is known that there is a one-to-one correspondence between any point in the circumcircle of a triangle \( \triangle ABC )) with a unique line that goes through the orthocenter, via reflections  with the sides of the triangle:</p>
+<p>It is known that there is a one-to-one correspondence between any point in the circumcircle of a triangle \( \triangle ABC \) with a unique line that goes through the orthocenter, via reflections  with the sides of the triangle:</p>
 
 <div style="text-align:center;width:100%;">
 <table style="width:100%;">
@@ -251,8 +251,8 @@ h_3(s,u,x_1,y_1) &amp;= \big( (s+u+1)x-s\big)^2+\big((s+u+1)y-s\big)^2-s^2
 </div>
 
 <ul>
-  <li>If \( P )) is a point belonging to the circumcircle, then the images \( P’,P’‘,P’’’ )) through reflections with axes the three sides of the triangle are collinear, and the corresponding line goes through the orthocenter.  This is called the <strong>Steiner line</strong> of the point \( P. ))</li>
-  <li>Similarly, if a line \( m )) goes through the orthocenter, then the three reflected lines with the sides of the triangle, \( m’, m’’, m’’’, )) are concurrent at a point of the circumcircle.  This is called the <strong>anti-Steiner point</strong> of the line \( m. ))</li>
+  <li>If \( P \) is a point belonging to the circumcircle, then the images \( P’,P’‘,P’’’ \) through reflections with axes the three sides of the triangle are collinear, and the corresponding line goes through the orthocenter.  This is called the <strong>Steiner line</strong> of the point \( P. \)</li>
+  <li>Similarly, if a line \( m \) goes through the orthocenter, then the three reflected lines with the sides of the triangle, \( m’, m’’, m’’’, \) are concurrent at a point of the circumcircle.  This is called the <strong>anti-Steiner point</strong> of the line \( m. \)</li>
 </ul>
 
 <p>It is relatively easy to prove these two facts with <code>sympy</code> (for the geometric computations) and <code>sagemath</code> (for the Gröbner bases calculations).  For example, for the first property, we could do as follows:  Start by defining a function that computes the reflection of a point with respect to a line.</p>
@@ -261,7 +261,7 @@ h_3(s,u,x_1,y_1) &amp;= \big( (s+u+1)x-s\big)^2+\big((s+u+1)y-s\big)^2-s^2
 <span class="lineno">2</span> 	<span class="n">Q</span><span class="o">=</span><span class="n">intersection</span><span class="p">(</span><span class="n">ln</span><span class="o">.</span><span class="n">perpendicular_line</span><span class="p">(</span><span class="n">Pt</span><span class="p">),</span><span class="n">ln</span><span class="p">)[</span><span class="mi">0</span><span class="p">]</span>
 <span class="lineno">3</span> 	<span class="k">return</span> <span class="n">Point</span><span class="p">(</span><span class="mi">2</span><span class="o">*</span><span class="n">Q</span><span class="o">.</span><span class="n">x</span><span class="o">+</span><span class="n">Pt</span><span class="o">.</span><span class="n">x</span><span class="p">,</span> <span class="mi">2</span><span class="o">*</span><span class="n">Q</span><span class="o">.</span><span class="n">y</span><span class="o">+</span><span class="n">Pt</span><span class="o">.</span><span class="n">y</span><span class="p">)</span></code></pre></div>
 
-<p>Given a generic point \( P=(x,y) )), the three reflections with respect to the sides of the triangle read as follows:</p>
+<p>Given a generic point \( P=(x,y) \), the three reflections with respect to the sides of the triangle read as follows:</p>
 
 <div class="highlight"><pre><code class="language-python" data-lang="python"><span class="lineno">1</span> <span class="n">reflection</span><span class="p">(</span><span class="n">P</span><span class="p">,</span><span class="n">Line</span><span class="p">(</span><span class="n">A</span><span class="p">,</span><span class="n">B</span><span class="p">))</span>
 <span class="lineno">2</span> <span class="n">reflection</span><span class="p">(</span><span class="n">P</span><span class="p">,</span><span class="n">Line</span><span class="p">(</span><span class="n">B</span><span class="p">,</span><span class="n">C</span><span class="p">))</span>
@@ -272,13 +272,13 @@ Point(-x + 2*(s**2 + (r - 1)*(r*x + s*y - x))/(s**2 + (r - 1)**2),
 	  2*s*(r*x - r + s*y - x + 1)/(s**2 + (r - 1)**2) - y)
 Point(2*r*(r*x + s*y)/(r**2 + s**2) - x, 2*s*(r*x + s*y)/(r**2 + s**2) - y)</code></pre></div>
 
-<p>If the point \( P )) is to belong in the circumcircle of triangle \( \triangle ABC, )) then it must satisfy the corresponding polynomial equation:</p>
+<p>If the point \( P \) is to belong in the circumcircle of triangle \( \triangle ABC, \) then it must satisfy the corresponding polynomial equation:</p>
 
 <div class="highlight"><pre><code class="language-python" data-lang="python"><span class="lineno">1</span> <span class="n">numer</span><span class="p">(</span><span class="n">together</span><span class="p">(</span><span class="n">Triangle</span><span class="p">(</span><span class="n">A</span><span class="p">,</span><span class="n">B</span><span class="p">,</span><span class="n">C</span><span class="p">)</span><span class="o">.</span><span class="n">circumcircle</span><span class="o">.</span><span class="n">equation</span><span class="p">()))</span></code></pre></div>
 
 <div class="highlight"><pre><code class="language-text" data-lang="text">s**2*(2*x - 1)**2 - s**2 - (r**2 - r + s**2)**2 + (-r**2 + r - s**2 + 2*s*y)**2</code></pre></div>
 
-<p>This is the (only needed) hypothesis polynomial.  The thesis polynomial, that inquires whether the three reflection points are collinear, can be reduced to asking whether the triangle \( \triangle P’P’‘P’’’ )) has area zero:</p>
+<p>This is the (only needed) hypothesis polynomial.  The thesis polynomial, that inquires whether the three reflection points are collinear, can be reduced to asking whether the triangle \( \triangle P’P’‘P’’’ \) has area zero:</p>
 
 <div class="highlight"><pre><code class="language-python" data-lang="python"><span class="lineno">1</span> <span class="n">numer</span><span class="p">(</span><span class="n">together</span><span class="p">(</span><span class="n">Triangle</span><span class="p">(</span><span class="n">P1</span><span class="p">,</span><span class="n">P2</span><span class="p">,</span><span class="n">P3</span><span class="p">)</span><span class="o">.</span><span class="n">area</span><span class="p">))</span></code></pre></div>
 
