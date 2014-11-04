@@ -42,8 +42,9 @@ But probably the most amazing property of the nine-point circle, is the fact tha
 
 The two results that we want to prove, whose synthetic proofs can be read in [<a href="https://www.google.com/url?sa=t&amp;rct=j&amp;q=&amp;esrc=s&amp;source=web&amp;cd=1&amp;cad=rja&amp;ved=0CC8QFjAA&amp;url=http%3A%2F%2Fforumgeom.fau.edu%2FFG2012volume12%2FFG201205.pdf&amp;ei=fMLkUd70NaHhygHx14CIBg&amp;usg=AFQjCNE8vXAgL4SNnBQ_g6c2F6DEkrbBNg&amp;sig2=UgTTpJVuVEL-ogDne5ppDQ&amp;bvm=bv.48705608,d.aWc">this article</a>] are the following:
 
-> **Theorem 1.** The circle through the feet of the internal bisectors of triangle \\( \triangle ABC&amp;bg=F4F5F7 \\) passes through the Feuerbach point of the triangle.
-> **Theorem 2.** The Feuerbach point of triangle \\( \triangle ABC&amp;bg=F4F5F7 \\) is the anti-Steiner point of the Euler line of the intouch triangle of \\( \triangle ABC&amp;bg=F4F5F7 \\) with respect to the same triangle.
+> **Theorem 1.** The circle through the feet of the internal bisectors of triangle \\( \triangle ABC \\) passes through the Feuerbach point of the triangle.
+>
+> **Theorem 2.** The Feuerbach point of triangle \\( \triangle ABC \\) is the anti-Steiner point of the Euler line of the intouch triangle of \\( \triangle ABC \\) with respect to the same triangle.
 
 Let us prove the first  Theorem for the case of a right-triangle.  We only need to modify the definition of the point \\( C \\) to guarantee this situation.  We set \\( C=(0,s) \\) for some positive value of the parameter \\( s \\).
 
