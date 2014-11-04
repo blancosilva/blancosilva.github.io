@@ -149,10 +149,7 @@ numer(expr)
 
 We thus have the thesis polynomial for the coordinates \\( (x_1,y_1) \\) of the Feuerbach point to belong on the required circumcircle:
 
-<div>
 \\[ g(s,x_1,y_1,y_2,x_3,x_4,y_4)=- \left(y_{2} \left(- x_{3}^{2} + x_{4}^{2} + y_{4}^{2}\right) + y_{4} \left(x_{3}^{2} - y_{2}^{2}\right)\right)^{2} + \left(2 x_1 \left(x_{3} y_{4} - y_{2} \left(x_{3} - x_{4}\right)\right) - y_{2} \left(- x_{3}^{2} + x_{4}^{2} + y_{4}^{2}\right) - y_{4} \left(x_{3}^{2} - y_{2}^{2}\right)\right)^{2} + \left(- x_{3} \left(- x_{3}^{2} + x_{4}^{2} + y_{4}^{2}\right) + 2 y_1 \left(x_{3} y_{4} - y_{2} \left(x_{3} - x_{4}\right)\right) - \left(x_{3} - x_{4}\right) \left(x_{3}^{2} - y_{2}^{2}\right)\right)^{2} - \left(x_{3} \left(- x_{3}^{2} + x_{4}^{2} + y_{4}^{2}\right) - 2 y_{2} \left(x_{3} y_{4} - y_{2} \left(x_{3} - x_{4}\right)\right) + \left(x_{3} - x_{4}\right) \left(x_{3}^{2} - y_{2}^{2}\right)\right)^{2} \\]
-\end{align}
-</div>
 
 We could use then the following code in `sage` or `sympy` in a `python` session, to prove the result:
 
