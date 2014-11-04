@@ -199,12 +199,14 @@ h_7(s,u,y_4) &amp;= (s+1)y_4-s \\
 
 <p>We thus have the thesis polynomial for the coordinates \( (x_1,y_1) \) of the Feuerbach point to belong on the required circumcircle:</p>
 
-<p>\begin{align}
-g(s,x_1,y_1,y_2,x_3,x_4,y_4) &amp;= -\left(y<em>{2} \left(- x</em>{3}^{2} + x<em>{4}^{2} + y</em>{4}^{2}\right) + y<em>{4} \left(x</em>{3}^{2} - y<em>{2}^{2}\right)\right)^{2} <br />
- &amp; + \left(2 x_1 \left(x</em>{3} y<em>{4} - y</em>{2} \left(x<em>{3} - x</em>{4}\right)\right) - y<em>{2} \left(- x</em>{3}^{2} + x<em>{4}^{2} + y</em>{4}^{2}\right) - y<em>{4} \left(x</em>{3}^{2} - y<em>{2}^{2}\right)\right)^{2} 
- &amp; + \left(- x</em>{3} \left(- x<em>{3}^{2} + x</em>{4}^{2} + y<em>{4}^{2}\right) + 2 y_1 \left(x</em>{3} y<em>{4} - y</em>{2} \left(x<em>{3} - x</em>{4}\right)\right) - \left(x<em>{3} - x</em>{4}\right) \left(x<em>{3}^{2} - y</em>{2}^{2}\right)\right)^{2} 
- &amp; - \left(x<em>{3} \left(- x</em>{3}^{2} + x<em>{4}^{2} + y</em>{4}^{2}\right) - 2 y<em>{2} \left(x</em>{3} y<em>{4} - y</em>{2} \left(x<em>{3} - x</em>{4}\right)\right) + \left(x<em>{3} - x</em>{4}\right) \left(x<em>{3}^{2} - y</em>{2}^{2}\right)\right)^{2}
-\end{align}</p>
+<div>
+\begin{align}
+g(s,x_1,y_1,y_2,x_3,x_4,y_4) &amp;= -\left(y_{2} \left(- x_{3}^{2} + x_{4}^{2} + y_{4}^{2}\right) + y_{4} \left(x_{3}^{2} - y_{2}^{2}\right)\right)^{2} \\
+ &amp; + \left(2 x_1 \left(x_{3} y_{4} - y_{2} \left(x_{3} - x_{4}\right)\right) - y_{2} \left(- x_{3}^{2} + x_{4}^{2} + y_{4}^{2}\right) - y_{4} \left(x_{3}^{2} - y_{2}^{2}\right)\right)^{2} 
+ &amp; + \left(- x_{3} \left(- x_{3}^{2} + x_{4}^{2} + y_{4}^{2}\right) + 2 y_1 \left(x_{3} y_{4} - y_{2} \left(x_{3} - x_{4}\right)\right) - \left(x_{3} - x_{4}\right) \left(x_{3}^{2} - y_{2}^{2}\right)\right)^{2} 
+ &amp; - \left(x_{3} \left(- x_{3}^{2} + x_{4}^{2} + y_{4}^{2}\right) - 2 y_{2} \left(x_{3} y_{4} - y_{2} \left(x_{3} - x_{4}\right)\right) + \left(x_{3} - x_{4}\right) \left(x_{3}^{2} - y_{2}^{2}\right)\right)^{2}
+\end{align}
+</div>
 
 <p>We could use then the following code in <code>sage</code> or <code>sympy</code> in a <code>python</code> session, to prove the result:</p>
 
