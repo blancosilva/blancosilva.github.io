@@ -39,7 +39,7 @@ This translates into the following polynomials
 	\begin{align}
 	h_1 &= x_1-1, &h_2 &= sy_1-4s^2+1 &\text{(for circumcenter)} \\
 	h_3 &= x_2-1, &h_4 &= y_2-s &\text{(for centroid)} \\
-	h_5 &= x_3-1, &h_6 &= 4sy_3+1)^2-4s^2-1 &\text{(for incenter)} 
+	h_5 &= x_3-1, &h_6 &= (4sy_3+1)^2-4s^2-1 &\text{(for incenter)} 
 	\end{align}
 </div>
 
