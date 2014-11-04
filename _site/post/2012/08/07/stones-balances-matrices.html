@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Stones, balances, matrices</title>
+    <meta name="description" content="Useless math is useful math. It can be used to generate more useless math.
+">
+
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="canonical" href="http://blancosilva.github.io//post/2012/08/07/stones-balances-matrices.html">
+</head>
+
+
+  <body>
+
+    <header class="site-header">
+
+  <div class="wrapper">
+
+    <a class="site-title" href="/">Francisco Blanco-Silva</a>
+
+    <nav class="site-nav">
+      <a href="#" class="menu-icon">
+        <svg viewBox="0 0 18 15">
+          <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
+          <path fill="#424242" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"/>
+          <path fill="#424242" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
+        </svg>
+      </a>
+
+      <div class="trigger">
+        
+          
+          <a class="page-link" href="/about/">About me</a>
+          
+        
+          
+          <a class="page-link" href="/books/">Books</a>
+          
+        
+          
+        
+          
+        
+          
+        
+          
+          <a class="page-link" href="/presentations.html">Presentations</a>
+          
+        
+          
+          <a class="page-link" href="/resume.html">Résumé</a>
+          
+        
+          
+          <a class="page-link" href="/teaching.html">Teaching</a>
+          
+        
+      </div>
+    </nav>
+
+  </div>
+
+</header>
+
+
+    <div class="page-content">
+      <div class="wrapper">
+        <div class="post">
+
+	<header class="post-header">
+		<h1 class="post-title">Stones, balances, matrices</h1>
+		<p class="post-meta">Aug 7, 2012</p>
+	</header>
+
+	<article class="post-content">
+		<!-- <p style="text-align:center;"><img src="https://i0.wp.com/farm9.staticflickr.com/8285/7737057646_e02f559a02_o_d.jpg" width="75%" /> -->
+
+Let's examine an easy puzzle on finding the different stone by using a balance:
+
+>You have four stones identical in size and appearance, but one of them is heavier than the rest.  You have a set of scales (a balance): how many weights do you need to determine which stone is the heaviest?
+
+This is a trivial problem, but I will use it to illustrate different ideas, definitions, and the connection to linear algebra needed to answer the harder puzzles below.  Let us start by solving it in the most natural way:
+
+1. Enumerate each stone from 1 to 4.
+2. Set stones 1 and 2 on the left plate; set stones 3 and 4 on the right plate.  Since one of the stones is heavier, it will be in the plate that tips the balance.  Let us assume this is the left plate.
+3. Discard stones 3 and 4. Put stone 1 on the left plate; and stone 2 on the right plate.  The plate that tips the balance holds the heaviest stone.
+
+This solution finds the stone in two weights.  It is what we call *adaptive measures*: each measure is determined by the result of the previous.  This is a good point to introduce an algebraic scheme to code the solution.
+
+<ul style="text-align:justify;">
+* **The weights matrix**: This is a matrix with four columns (one for each stone) and two rows (one for each weight).  The entries of this matrix can only be <span>\\( -1, 0 \\)</span> or <span>\\( 1, \\)</span> depending whether a given stone is placed on the left plate <span>\\( (1) \\)</span>, on the right plate <span>\\( (-1) \\)</span> or in neither plate <span>\\( (0). \\)</span>  For example, for the solution given above, the corresponding matrix would be
+
+\\[ W = \begin{pmatrix} 1 &amp; 1 &amp; -1 &amp; -1 \\ 1 &amp; -1 &amp; 0 &amp; 0 \end{pmatrix} \\]
+
+* **The stones matrix**: This is a square matrix with four rows and columns (one for each stone).  Each column represents a different combination of stones, in such a way that the *n*-th column assumes that the heaviest stone is in the *n*-th position.  The entries on this matrix indicate the weight of each stone.  For example, if we assume that the heaviest stone weights *b* units, and each other stone weights *a* units, then the corresponding **stones matrix** is
+
+\\[ B = \begin{pmatrix} b &amp; a &amp; a &amp; a \\ a &amp; b &amp; a &amp; a \\ a &amp; a &amp; b &amp; a \\ a &amp; a &amp; a &amp; b \end{pmatrix} \\]
+
+Multiplying these two matrices, and looking at the sign of the entries of the resulting matrix, offers great insight on the result of the measures:
+
+\\[ \text{sign} \big( W \cdot B \big) = \text{sign} \begin{pmatrix} b-a &amp; b-a &amp; a-b &amp; a-b \\ b-a &amp; a-b &amp; 0 &amp; 0 \end{pmatrix} = \begin{pmatrix} + &amp; + &amp; - &amp; - \\ + &amp; - &amp; 0 &amp; 0 \end{pmatrix} \\]
+
+Note the columns of this matrix code the behavior of the measures:
+* The column <span>\\( \big( \begin{smallmatrix} + \\ + \end{smallmatrix} \big) \\)</span> indicates that the balance tipped to the left in both measures (and therefore, the heaviest stone is the first one)
+* The column <span>\\( \big( \begin{smallmatrix} + \\ - \end{smallmatrix} \big) \\)</span> indicates that the heaviest stone is the second one.
+* Note that the other two measures can't find the heaviest stone, since this matrix was designed to find adaptively a stone supposed to be either the first or  the second.
+
+Is it possible to design a solution to this puzzle that is not adaptive?  Note the solution with two measures given (in algebraic form) below:
+
+\\[ \text{sign} \left[ \begin{pmatrix} 1 &amp; 1 &amp; -1 &amp; -1 \\ 1 &amp; -1 &amp; 1 &amp; -1 \end{pmatrix} \cdot B \right] = \begin{pmatrix} + &amp; + &amp; - &amp; - \\ + &amp; - &amp; + &amp; - \end{pmatrix} \\]
+
+Since each column is different, it is trivial to decide after the experiment is done, which stone will be the heaviest.  For instance, if the balance tips first to the right (-) and then to the left (+), the heaviest stone can only be the third one.
+
+Let us make it a big harder: Same situation, but now we don't know whether the stone that is different is heavier or lighter.
+
+The solution above is no good: Since we are not sure whether *b* is greater or smaller than *a*, we would obtain two sign matrices which are virtually mirror images of each other.
+
+\\[ \begin{pmatrix} + &amp; + &amp; - &amp; - \\ + &amp; - &amp; + &amp; - \end{pmatrix} \\)</span> and <span>\\( \begin{pmatrix} - &amp; - &amp; + &amp; + \\ - &amp; + &amp; - &amp; + \end{pmatrix} \\]
+
+In this case, in the event of obtaining that the balance tips twice to the left: which would be the different stone?  The first, which is heaviest, or the fourth, which is lightest?  We cannot decide.
+
+One possible solution to this situation involves taking one more measure.  Look at the algebraic expression of the following example, to realize why:
+
+\\[ \text{sign} \left[ \begin{pmatrix} 1 &amp; 1 &amp; -1 &amp; -1 \\ 1 &amp; -1 &amp; 1 &amp; -1 \\ 1 &amp; -1 &amp; -1 &amp; 1 \end{pmatrix} \cdot B \right] = \begin{pmatrix} + &amp; + &amp; - &amp; - \\ + &amp; - &amp; + &amp; - \\ + &amp; - &amp; - &amp; + \end{pmatrix} \\)</span> or <span>\\( \begin{pmatrix} - &amp; - &amp; + &amp; + \\ - &amp; + &amp; - &amp; + \\ - &amp; + &amp; + &amp; - \end{pmatrix} \\]
+
+In this case there is no room for confusion: if the balance tips three times to the same side, then the different stone is the first one (whether heavier or lighter). The other possibilities are also easily solvable: if the balance tips first to one side, then to the other, and then to the first side, then the different stone is the third one.
+
+The reader will not be very surprised at this point to realize that three (non adaptive) measures are also enough to decide which stone is different (be it heavier or lighter) in a set of twelve similar stones. To design the solution, a good weight matrix with twelve columns and three rows need to be constructed.  The trick here is to allow measures that balance both plates, which gives us more combinations with which to play.  How would the reader design this matrix?
+
+	</article>
+
+	
+	<!-- Add Disqus comments. -->
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+  /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+  var disqus_shortname = 'eseprimo'; 
+
+  /* * * DON'T EDIT BELOW THIS LINE * * */
+  (function() {
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+  })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+	
+</div>
+
+
+<script type="text/javascript"
+src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+      </div>
+    </div>
+
+    <footer class="site-footer">
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">Francisco Blanco-Silva</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col  footer-col-1">
+        <ul class="contact-list">
+          <li>Francisco Blanco-Silva</li>
+          <li><a href="mailto:francisco.blanco.silva@gmail.com">francisco.blanco.silva@gmail.com</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col  footer-col-2">
+        <ul class="social-media-list">
+          
+          <li>
+            <a href="https://github.com/blancosilva">
+              <span class="icon  icon--github">
+                <svg viewBox="0 0 16 16">
+                  <path fill="#828282" d="M7.999,0.431c-4.285,0-7.76,3.474-7.76,7.761 c0,3.428,2.223,6.337,5.307,7.363c0.388,0.071,0.53-0.168,0.53-0.374c0-0.184-0.007-0.672-0.01-1.32 c-2.159,0.469-2.614-1.04-2.614-1.04c-0.353-0.896-0.862-1.135-0.862-1.135c-0.705-0.481,0.053-0.472,0.053-0.472 c0.779,0.055,1.189,0.8,1.189,0.8c0.692,1.186,1.816,0.843,2.258,0.645c0.071-0.502,0.271-0.843,0.493-1.037 C4.86,11.425,3.049,10.76,3.049,7.786c0-0.847,0.302-1.54,0.799-2.082C3.768,5.507,3.501,4.718,3.924,3.65 c0,0,0.652-0.209,2.134,0.796C6.677,4.273,7.34,4.187,8,4.184c0.659,0.003,1.323,0.089,1.943,0.261 c1.482-1.004,2.132-0.796,2.132-0.796c0.423,1.068,0.157,1.857,0.077,2.054c0.497,0.542,0.798,1.235,0.798,2.082 c0,2.981-1.814,3.637-3.543,3.829c0.279,0.24,0.527,0.713,0.527,1.437c0,1.037-0.01,1.874-0.01,2.129 c0,0.208,0.14,0.449,0.534,0.373c3.081-1.028,5.302-3.935,5.302-7.362C15.76,3.906,12.285,0.431,7.999,0.431z"/>
+                </svg>
+              </span>
+
+              <span class="username">blancosilva</span>
+            </a>
+          </li>
+          
+
+          
+          <li>
+            <a href="https://twitter.com/eseprimo">
+              <span class="icon  icon--twitter">
+                <svg viewBox="0 0 16 16">
+                  <path fill="#828282" d="M15.969,3.058c-0.586,0.26-1.217,0.436-1.878,0.515c0.675-0.405,1.194-1.045,1.438-1.809
+                  c-0.632,0.375-1.332,0.647-2.076,0.793c-0.596-0.636-1.446-1.033-2.387-1.033c-1.806,0-3.27,1.464-3.27,3.27 c0,0.256,0.029,0.506,0.085,0.745C5.163,5.404,2.753,4.102,1.14,2.124C0.859,2.607,0.698,3.168,0.698,3.767 c0,1.134,0.577,2.135,1.455,2.722C1.616,6.472,1.112,6.325,0.671,6.08c0,0.014,0,0.027,0,0.041c0,1.584,1.127,2.906,2.623,3.206 C3.02,9.402,2.731,9.442,2.433,9.442c-0.211,0-0.416-0.021-0.615-0.059c0.416,1.299,1.624,2.245,3.055,2.271 c-1.119,0.877-2.529,1.4-4.061,1.4c-0.264,0-0.524-0.015-0.78-0.046c1.447,0.928,3.166,1.469,5.013,1.469 c6.015,0,9.304-4.983,9.304-9.304c0-0.142-0.003-0.283-0.009-0.423C14.976,4.29,15.531,3.714,15.969,3.058z"/>
+                </svg>
+              </span>
+
+              <span class="username">eseprimo</span>
+            </a>
+          </li>
+          
+        </ul>
+      </div>
+
+      <div class="footer-col  footer-col-3">
+        <p class="text">Useless math is useful math. It can be used to generate more useless math.
+</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+
+
+    <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-56262970-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+  </body>
+
+</html>
