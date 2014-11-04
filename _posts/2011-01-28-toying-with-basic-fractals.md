@@ -97,10 +97,10 @@ mandelbrot.transpose()
 
 ## Lindenmayer systems
 
-Start with a simple chain of commands, coded by symbols: for example: "Go forward one unit (*A*), turn left 60º (*B*), go forward one unit (*A*), turn right 120º (*C*), go forward one unit (*A*), turn left 60º (*B*), go forward one unit (*A*)"—coded as *ABACABA*. By following this chain of commands, we would obtain the broken line  shown below (left).   We also have a set of rules that change some of the symbols.  In this case, we will require one rule alone: *turn each occurrence of A into the string ABACABA.* Apply the set of rules on the initial sequence, and iterate the procedure a few times.  For example, after two iterations, we have the string
+Start with a simple chain of commands, coded by symbols: for example: "Go forward one unit (*F*), turn left 60º (*X*), go forward one unit (*F*), turn right 120º (*Y*), go forward one unit (*F*), turn left 60º (*X*), go forward one unit (*F*)"—coded as *FXFYFXF*. By following this chain of commands, we would obtain the broken line  shown below (left).   We also have a set of rules that change some of the symbols.  In this case, we will require one rule alone: *turn each occurrence of F into the string FXFYFXF.* Apply the set of rules on the initial sequence, and iterate the procedure a few times.  For example, after two iterations, we have the string
 
 <div>
-\begin{equation} \begin{array}{l} ABACABABABACABACABACABABABACABABABACABA\dotsb \\ BABACABACABACABABABACABACABACABABABACAB\dotsb \\ ACABACABABABACABABABACABABABACABACABACA\dotsb \\ BABABACABA \end{array}
+\begin{equation} \begin{array}{l} FXFYFXFXFXFYFXFYFXFYFXFXFXFYFXFXFXFYFXF\dotsb \\ XFXFYFXFYFXFYFXFXFXFYFXFYFXFYFXFXFXFYFX\dotsb \\ FYFXFYFXFXFXFYFXFXFXFYFXFXFXFYFXFYFXFYF\dotsb \\ XFXFXFYFXF \end{array}
 \end{equation}
 </div>
 

@@ -166,10 +166,10 @@
 
 <h2 id="lindenmayer-systems">Lindenmayer systems</h2>
 
-<p>Start with a simple chain of commands, coded by symbols: for example: “Go forward one unit (<em>A</em>), turn left 60º (<em>B</em>), go forward one unit (<em>A</em>), turn right 120º (<em>C</em>), go forward one unit (<em>A</em>), turn left 60º (<em>B</em>), go forward one unit (<em>A</em>)”—coded as <em>ABACABA</em>. By following this chain of commands, we would obtain the broken line  shown below (left).   We also have a set of rules that change some of the symbols.  In this case, we will require one rule alone: <em>turn each occurrence of A into the string ABACABA.</em> Apply the set of rules on the initial sequence, and iterate the procedure a few times.  For example, after two iterations, we have the string</p>
+<p>Start with a simple chain of commands, coded by symbols: for example: “Go forward one unit (<em>F</em>), turn left 60º (<em>X</em>), go forward one unit (<em>F</em>), turn right 120º (<em>Y</em>), go forward one unit (<em>F</em>), turn left 60º (<em>X</em>), go forward one unit (<em>F</em>)”—coded as <em>FXFYFXF</em>. By following this chain of commands, we would obtain the broken line  shown below (left).   We also have a set of rules that change some of the symbols.  In this case, we will require one rule alone: <em>turn each occurrence of F into the string FXFYFXF.</em> Apply the set of rules on the initial sequence, and iterate the procedure a few times.  For example, after two iterations, we have the string</p>
 
 <div>
-\begin{equation} \begin{array}{l} ABACABABABACABACABACABABABACABABABACABA\dotsb \\ BABACABACABACABABABACABACABACABABABACAB\dotsb \\ ACABACABABABACABABABACABABABACABACABACA\dotsb \\ BABABACABA \end{array}
+\begin{equation} \begin{array}{l} FXFYFXFXFXFYFXFYFXFYFXFXFXFYFXFXFXFYFXF\dotsb \\ XFXFYFXFYFXFYFXFXFXFYFXFYFXFYFXFXFXFYFX\dotsb \\ FYFXFYFXFXFXFYFXFXFXFYFXFXFXFYFXFYFXFYF\dotsb \\ XFXFXFYFXF \end{array}
 \end{equation}
 </div>
 
