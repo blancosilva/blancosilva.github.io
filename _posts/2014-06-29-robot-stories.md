@@ -4,8 +4,6 @@ title: Robot stories
 date: 2014-06-29 
 category: post
 comments: true
-image:
-  teaser: "https://farm4.staticflickr.com/3921/14343225109_6d4c70558e_d.jpg"
 ---
 Every summer before school was over, I was assigned a list of books to read.  Mostly nonfiction and historical fiction, but in fourth grade there that was that first science fiction book.  I often remember how that book made me feel, and marvel at the impact that it had in my life.  I had read some science fiction before—Well's *Time Traveller* and *War of the Worlds*—but this was different.  This was a book with  witty and thought-provoking short stories by Isaac Asimov.  Each of them delivered drama, comedy, mystery and a surprise ending in about ten pages.  And they had robots.  And those robots had personalities, in spite of their very simple programming: *The Three Laws of Robotics*.
 
