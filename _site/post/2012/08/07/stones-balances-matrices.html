@@ -148,12 +148,19 @@
 <p>One possible solution to this situation involves taking one more measure.  Look at the algebraic expression of the following example, to realize why:</p>
 
 <div>
-\begin{equation} \text{sign} \left[ \begin{pmatrix} 1 &amp; 1 &amp; -1 &amp; -1 \\ 1 &amp; -1 &amp; 1 &amp; -1 \\ 1 &amp; -1 &amp; -1 &amp; 1 \end{pmatrix} \cdot B \right] = \begin{pmatrix} + &amp; + &amp; - &amp; - \\ + &amp; - &amp; + &amp; - \\ + &amp; - &amp; - &amp; + \end{pmatrix} \\) or <span>\\( \begin{pmatrix} - &amp; - &amp; + &amp; + \\ - &amp; + &amp; - &amp; + \\ - &amp; + &amp; + &amp; - \end{pmatrix} \end{equation}
+\begin{equation} \operatorname{sign} \left[ \begin{pmatrix} 1 &amp; 1 &amp; -1 &amp; -1 \\ 1 &amp; -1 &amp; 1 &amp; -1 \\ 1 &amp; -1 &amp; -1 &amp; 1 \end{pmatrix} \cdot B \right] = \begin{pmatrix} + &amp; + &amp; - &amp; - \\ + &amp; - &amp; + &amp; - \\ + &amp; - &amp; - &amp; + \end{pmatrix} \\)
+\end{equation}
+</div>
 
-In this case there is no room for confusion: if the balance tips three times to the same side, then the different stone is the first one (whether heavier or lighter). The other possibilities are also easily solvable: if the balance tips first to one side, then to the other, and then to the first side, then the different stone is the third one.
+<p>or </p>
 
-The reader will not be very surprised at this point to realize that three (non adaptive) measures are also enough to decide which stone is different (be it heavier or lighter) in a set of twelve similar stones. To design the solution, a good weight matrix with twelve columns and three rows need to be constructed.  The trick here is to allow measures that balance both plates, which gives us more combinations with which to play.  How would the reader design this matrix?
-</span></div>
+<div>
+\begin{equation} \begin{pmatrix} - &amp; - &amp; + &amp; + \\ - &amp; + &amp; - &amp; + \\ - &amp; + &amp; + &amp; - \end{pmatrix} \end{equation}
+</div>
+
+<p>In this case there is no room for confusion: if the balance tips three times to the same side, then the different stone is the first one (whether heavier or lighter). The other possibilities are also easily solvable: if the balance tips first to one side, then to the other, and then to the first side, then the different stone is the third one.</p>
+
+<p>The reader will not be very surprised at this point to realize that three (non adaptive) measures are also enough to decide which stone is different (be it heavier or lighter) in a set of twelve similar stones. To design the solution, a good weight matrix with twelve columns and three rows need to be constructed.  The trick here is to allow measures that balance both plates, which gives us more combinations with which to play.  How would the reader design this matrix?</p>
 
 	</article>
 

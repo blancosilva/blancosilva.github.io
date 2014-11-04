@@ -68,7 +68,15 @@ In this case, in the event of obtaining that the balance tips twice to the left:
 One possible solution to this situation involves taking one more measure.  Look at the algebraic expression of the following example, to realize why:
 
 <div>
-\begin{equation} \text{sign} \left[ \begin{pmatrix} 1 & 1 & -1 & -1 \\ 1 & -1 & 1 & -1 \\ 1 & -1 & -1 & 1 \end{pmatrix} \cdot B \right] = \begin{pmatrix} + & + & - & - \\ + & - & + & - \\ + & - & - & + \end{pmatrix} \\)</span> or <span>\\( \begin{pmatrix} - & - & + & + \\ - & + & - & + \\ - & + & + & - \end{pmatrix} \end{equation}</div>
+\begin{equation} \operatorname{sign} \left[ \begin{pmatrix} 1 & 1 & -1 & -1 \\ 1 & -1 & 1 & -1 \\ 1 & -1 & -1 & 1 \end{pmatrix} \cdot B \right] = \begin{pmatrix} + & + & - & - \\ + & - & + & - \\ + & - & - & + \end{pmatrix} \\)
+\end{equation}
+</div>
+
+or 
+
+<div>
+\begin{equation} \begin{pmatrix} - & - & + & + \\ - & + & - & + \\ - & + & + & - \end{pmatrix} \end{equation}
+</div>
 
 In this case there is no room for confusion: if the balance tips three times to the same side, then the different stone is the first one (whether heavier or lighter). The other possibilities are also easily solvable: if the balance tips first to one side, then to the other, and then to the first side, then the different stone is the third one.
 
