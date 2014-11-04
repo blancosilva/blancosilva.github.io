@@ -10,7 +10,11 @@ image:
 
 The objective of this post is to construct a pairing function, that presents us with a bijection between the set of natural numbers, and the lattice of points in the plane with non-negative integer coordinates.
 
-\\[\pi\colon \mathbb{N} \cup \{ 0 \} \to \big( \mathbb{N} \cup \{ 0 \} \big)^2.]
+<div>
+	\begin{equation}
+	\pi\colon \mathbb{N} \cup \{ 0 \} \to \big( \mathbb{N} \cup \{ 0 \} \big)^2.
+	\end{equation}
+</div>
 
 We will accomplish this by creating the corresponding map (and its inverse), that takes each natural number <span>\\( z \\)</span> and drops it at a location in the lattice, as the following diagram suggests:
 
@@ -22,23 +26,39 @@ In particular, note that the triangular numbers <span>\\( t_n = 1 + 2 + \dotsb +
 
 This is the key ingredient to construct the required bijection: Given a natural number <span>\\( z \in \mathbb{N}, \\)</span> there is a **unique** value <span>\\( n = n(z) \\)</span> such that <span>\\( t_n \leq z < t_{n+1} \\)</span> (since the sequence of triangular numbers is strictly increasing).  The number <span>\\( z \\)</span> then belongs to the intersection of the lattice with the diagonal line <span>\\( x+y=n, \\)</span> and it only remains to know how far from the <span>\\( x \\)</span>–axis: the **offset** <span>\\( z-t_n \\)</span> actually indicates the <span>\\( y \\)</span> coordinate of the position of <span>\\( z \\)</span> in the lattice.  We can now find the precise position of <span>\\( z \\)</span> by solving the following simple system of two equations with two variables:
 
-\\[ \left\{ \begin{array}{rl} x+y &amp;= n(z)\\ y &amp;= z - t_{n(z)} \end{array}\right. \\]
+<div>
+\begin{equation}
+ \left\{ \begin{array}{rl} x+y &amp;= n(z)\\ y &amp;= z - t_{n(z)} \end{array}\right. 
+\end{equation}
+</div>
 
 Or simply put, the coordinates are given by <span>\\( x=n(z)-z+t_{n(z)}, y=z-t_{n(z)}. \\)</span>  The question remaining is, of course, how to find the value of <span>\\( n(z). \\)</span>
 
 We need to look for the value of <span>\\( n \\)</span> such that
 
-\\[ \displaystyle{\frac{n(n+1)}{2}} \leq z &lt; \displaystyle{\frac{(n+1)(n+2)}{2}}. \\]
+<div>
+\begin{equation}
+ \displaystyle{\frac{n(n+1)}{2}} \leq z < \displaystyle{\frac{(n+1)(n+2)}{2}}. 
+\end{equation}
+</div>
 
 One way to accomplish this is to find the closest natural number <span>\\( n \\)</span> to the solution of either side of the inequalities above, say <span>\\( n^2 + n -2z = 0. \\)</span>  By choosing this side, an appropriate expression for this value is given by
 
-\\[ n(z) = \big\lfloor \frac{-1+\sqrt{1+8z}}{2} \big\rfloor. \\]
+<div>
+\begin{equation}
+ n(z) = \big\lfloor \frac{-1+\sqrt{1+8z}}{2} \big\rfloor. 
+\end{equation}
+</div>
 
 We have successfully computed for each natural number <span>\\( z \in \mathbb{N} \cup \{ 0 \} \\)</span> a unique position in the lattice <span>\\( \big( \mathbb{N} \cup \{ 0 \}\big)^2. \\)</span>  The construction is also such that for each position <span>\\( (x,y) \\)</span> in the previous lattice, there is a unique natural number that can be sent to that position.  The corresponding expression will lead us to the construction of the inverse function <span>\\( \pi^{-1} \colon \big( \mathbb{N} \cup \{ 0 \} \big)^2 \to \mathbb{N} \cup \{ 0 \}. \\)</span>  The key is again the same system of equations as before:
 
 Given <span>\\( (x,y), \\)</span> we find <span>\\( n=x+y. \\)</span>  This leads us to compute the corresponding <span>\\( t_n, \\)</span> and the second equations gives us
 
-\\[ z = y + t_n = y + \displaystyle{\frac{n(n+1)}{2}} = \underbrace{y + \displaystyle{\frac{(x+y)(x+y+1)}{2}}}_{\pi^{-1}(x,y)}. \\]
+<div>
+\begin{equation}
+ z = y + t_n = y + \displaystyle{\frac{n(n+1)}{2}} = \underbrace{y + \displaystyle{\frac{(x+y)(x+y+1)}{2}}}_{\pi^{-1}(x,y)}. 
+\end{equation}
+</div>
 
 ### Miscellaneous
 
