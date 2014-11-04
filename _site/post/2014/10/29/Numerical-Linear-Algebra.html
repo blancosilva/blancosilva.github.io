@@ -5361,16 +5361,18 @@ UoEXERGJQCrwIiIiEUgFXkREJAKpwIuIiESg/w8PMJd+8cpMGgAAAABJRU5ErkJggg==
 
 <p>These three examples illustrate the goal of this first chapter: <strong>Numerical Linear Algebra</strong>. In <code>python</code> this is accomplished first by storing the data in matrix form, or as a related linear operator, by means of any of the following classes: </p>
 
-<p><code>numpy.ndarray</code> (making sure that they are two-dimensional) 
-<code>numpy.matrix</code> 
-<code>scipy.sparse.bsr_matrix</code> (Block Sparse Row matrix) 
-<code>scipy.sparse.coo_matrix</code> (Sparse Matrix in <strong>COO</strong>rdinate format) 
-<code>scipy.sparse.csc_matrix</code> (Compressed Sparse Column matrix) 
-<code>scipy.sparse.csr_matrix</code> (Compressed Sparse Row matrix) 
-<code>scipy.sparse.dia_matrix</code> (Sparse matrix with <strong>DIA</strong>gonal storage) 
-<code>scipy.sparse.dok_matrix</code> (Sparse matrix based on a Dictionary of Keys) 
-<code>scipy.sparse.lil_matrix</code> (Sparse matrix based on a linked list) 
-<code>scipy.sparse.linalg.LinearOperator</code></p>
+<ul>
+  <li><code>numpy.ndarray</code> (making sure that they are two-dimensional) </li>
+  <li><code>numpy.matrix</code> </li>
+  <li><code>scipy.sparse.bsr_matrix</code> (Block Sparse Row matrix) </li>
+  <li><code>scipy.sparse.coo_matrix</code> (Sparse Matrix in <strong>COO</strong>rdinate format) </li>
+  <li><code>scipy.sparse.csc_matrix</code> (Compressed Sparse Column matrix) </li>
+  <li><code>scipy.sparse.csr_matrix</code> (Compressed Sparse Row matrix) </li>
+  <li><code>scipy.sparse.dia_matrix</code> (Sparse matrix with <strong>DIA</strong>gonal storage) </li>
+  <li><code>scipy.sparse.dok_matrix</code> (Sparse matrix based on a Dictionary of Keys) </li>
+  <li><code>scipy.sparse.lil_matrix</code> (Sparse matrix based on a linked list) </li>
+  <li><code>scipy.sparse.linalg.LinearOperator</code></li>
+</ul>
 
 <p>As we have seen in the examples, the choice of different classes obeys mainly to the sparsity of the data, and the algorithms we are to apply on them.</p>
 

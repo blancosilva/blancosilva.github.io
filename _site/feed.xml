@@ -6,8 +6,8 @@
 </description>
     <link>http://blancosilva.github.io//</link>
     <atom:link href="http://blancosilva.github.io//feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Tue, 04 Nov 2014 01:14:07 -0500</pubDate>
-    <lastBuildDate>Tue, 04 Nov 2014 01:14:07 -0500</lastBuildDate>
+    <pubDate>Tue, 04 Nov 2014 01:39:53 -0500</pubDate>
+    <lastBuildDate>Tue, 04 Nov 2014 01:39:53 -0500</lastBuildDate>
     <generator>Jekyll v2.4.0</generator>
     
       <item>
@@ -5479,16 +5479,18 @@ UoEXERGJQCrwIiIiEUgFXkREJAKpwIuIiESg/w8PMJd+8cpMGgAAAABJRU5ErkJggg==
 
 &lt;p&gt;These three examples illustrate the goal of this first chapter: &lt;strong&gt;Numerical Linear Algebra&lt;/strong&gt;. In &lt;code&gt;python&lt;/code&gt; this is accomplished first by storing the data in matrix form, or as a related linear operator, by means of any of the following classes: &lt;/p&gt;
 
-&lt;p&gt;&lt;code&gt;numpy.ndarray&lt;/code&gt; (making sure that they are two-dimensional) 
-&lt;code&gt;numpy.matrix&lt;/code&gt; 
-&lt;code&gt;scipy.sparse.bsr_matrix&lt;/code&gt; (Block Sparse Row matrix) 
-&lt;code&gt;scipy.sparse.coo_matrix&lt;/code&gt; (Sparse Matrix in &lt;strong&gt;COO&lt;/strong&gt;rdinate format) 
-&lt;code&gt;scipy.sparse.csc_matrix&lt;/code&gt; (Compressed Sparse Column matrix) 
-&lt;code&gt;scipy.sparse.csr_matrix&lt;/code&gt; (Compressed Sparse Row matrix) 
-&lt;code&gt;scipy.sparse.dia_matrix&lt;/code&gt; (Sparse matrix with &lt;strong&gt;DIA&lt;/strong&gt;gonal storage) 
-&lt;code&gt;scipy.sparse.dok_matrix&lt;/code&gt; (Sparse matrix based on a Dictionary of Keys) 
-&lt;code&gt;scipy.sparse.lil_matrix&lt;/code&gt; (Sparse matrix based on a linked list) 
-&lt;code&gt;scipy.sparse.linalg.LinearOperator&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;code&gt;numpy.ndarray&lt;/code&gt; (making sure that they are two-dimensional) &lt;/li&gt;
+  &lt;li&gt;&lt;code&gt;numpy.matrix&lt;/code&gt; &lt;/li&gt;
+  &lt;li&gt;&lt;code&gt;scipy.sparse.bsr_matrix&lt;/code&gt; (Block Sparse Row matrix) &lt;/li&gt;
+  &lt;li&gt;&lt;code&gt;scipy.sparse.coo_matrix&lt;/code&gt; (Sparse Matrix in &lt;strong&gt;COO&lt;/strong&gt;rdinate format) &lt;/li&gt;
+  &lt;li&gt;&lt;code&gt;scipy.sparse.csc_matrix&lt;/code&gt; (Compressed Sparse Column matrix) &lt;/li&gt;
+  &lt;li&gt;&lt;code&gt;scipy.sparse.csr_matrix&lt;/code&gt; (Compressed Sparse Row matrix) &lt;/li&gt;
+  &lt;li&gt;&lt;code&gt;scipy.sparse.dia_matrix&lt;/code&gt; (Sparse matrix with &lt;strong&gt;DIA&lt;/strong&gt;gonal storage) &lt;/li&gt;
+  &lt;li&gt;&lt;code&gt;scipy.sparse.dok_matrix&lt;/code&gt; (Sparse matrix based on a Dictionary of Keys) &lt;/li&gt;
+  &lt;li&gt;&lt;code&gt;scipy.sparse.lil_matrix&lt;/code&gt; (Sparse matrix based on a linked list) &lt;/li&gt;
+  &lt;li&gt;&lt;code&gt;scipy.sparse.linalg.LinearOperator&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
 
 &lt;p&gt;As we have seen in the examples, the choice of different classes obeys mainly to the sparsity of the data, and the algorithms we are to apply on them.&lt;/p&gt;
 

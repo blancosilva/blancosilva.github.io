@@ -5308,16 +5308,16 @@ UoEXERGJQCrwIiIiEUgFXkREJAKpwIuIiESg/w8PMJd+8cpMGgAAAABJRU5ErkJggg==
 
 These three examples illustrate the goal of this first chapter: **Numerical Linear Algebra**. In `python` this is accomplished first by storing the data in matrix form, or as a related linear operator, by means of any of the following classes: 
 
-`numpy.ndarray` (making sure that they are two-dimensional) 
-`numpy.matrix` 
-`scipy.sparse.bsr_matrix` (Block Sparse Row matrix) 
-`scipy.sparse.coo_matrix` (Sparse Matrix in **COO**rdinate format) 
-`scipy.sparse.csc_matrix` (Compressed Sparse Column matrix) 
-`scipy.sparse.csr_matrix` (Compressed Sparse Row matrix) 
-`scipy.sparse.dia_matrix` (Sparse matrix with **DIA**gonal storage) 
-`scipy.sparse.dok_matrix` (Sparse matrix based on a Dictionary of Keys) 
-`scipy.sparse.lil_matrix` (Sparse matrix based on a linked list) 
-`scipy.sparse.linalg.LinearOperator`
+* `numpy.ndarray` (making sure that they are two-dimensional) 
+* `numpy.matrix` 
+* `scipy.sparse.bsr_matrix` (Block Sparse Row matrix) 
+* `scipy.sparse.coo_matrix` (Sparse Matrix in **COO**rdinate format) 
+* `scipy.sparse.csc_matrix` (Compressed Sparse Column matrix) 
+* `scipy.sparse.csr_matrix` (Compressed Sparse Row matrix) 
+* `scipy.sparse.dia_matrix` (Sparse matrix with **DIA**gonal storage) 
+* `scipy.sparse.dok_matrix` (Sparse matrix based on a Dictionary of Keys) 
+* `scipy.sparse.lil_matrix` (Sparse matrix based on a linked list) 
+* `scipy.sparse.linalg.LinearOperator`
 
 As we have seen in the examples, the choice of different classes obeys mainly to the sparsity of the data, and the algorithms we are to apply on them.
 
