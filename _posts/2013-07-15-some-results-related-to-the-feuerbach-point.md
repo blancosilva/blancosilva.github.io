@@ -200,11 +200,11 @@ To prove the second theorem, we need to go over the notion of anti-Steiner point
 It is known that there is a one-to-one correspondence between any point in the circumcircle of a triangle \\( \triangle ABC \\) with a unique line that goes through the orthocenter, via reflections  with the sides of the triangle:
 
 <div style="text-align:center;width:100%;">
-<table style="width:100%; border: 2px solid black;">
+<table style="width:100%;">
 <tr>
-<td width="50%">
+<td style="width:50%; border:2px solid black;">
 <a href="http://www.flickr.com/photos/eseprimo/9294845121/" title="SteinerLine by eseprimo, on Flickr"><img src="https://i0.wp.com/farm4.staticflickr.com/3671/9294845121_348575ef00_c.jpg" width="100%" alt="SteinerLine" /></a></td>
-<td width="50%">
+<td style="width:50%; border:2px solid black;">
 <a href="http://www.flickr.com/photos/eseprimo/9297624172/" title="antiSteinerPoint by eseprimo, on Flickr"><img src="https://i0.wp.com/farm8.staticflickr.com/7302/9297624172_7c8516e6a2_c.jpg" width="100%" alt="antiSteinerPoint" /></a></td>
 </tr>
 </table>
