@@ -149,7 +149,12 @@ numer(expr)
 
 We thus have the thesis polynomial for the coordinates \\( (x_1,y_1) \\) of the Feuerbach point to belong on the required circumcircle:
 
-\\[ g(s,x_1,y_1,y_2,x_3,x_4,y_4)=- \left(y_{2} \left(- x_{3}^{2} + x_{4}^{2} + y_{4}^{2}\right) + y_{4} \left(x_{3}^{2} - y_{2}^{2}\right)\right)^{2} + \left(2 x_1 \left(x_{3} y_{4} - y_{2} \left(x_{3} - x_{4}\right)\right) - y_{2} \left(- x_{3}^{2} + x_{4}^{2} + y_{4}^{2}\right) - y_{4} \left(x_{3}^{2} - y_{2}^{2}\right)\right)^{2} + \left(- x_{3} \left(- x_{3}^{2} + x_{4}^{2} + y_{4}^{2}\right) + 2 y_1 \left(x_{3} y_{4} - y_{2} \left(x_{3} - x_{4}\right)\right) - \left(x_{3} - x_{4}\right) \left(x_{3}^{2} - y_{2}^{2}\right)\right)^{2} - \left(x_{3} \left(- x_{3}^{2} + x_{4}^{2} + y_{4}^{2}\right) - 2 y_{2} \left(x_{3} y_{4} - y_{2} \left(x_{3} - x_{4}\right)\right) + \left(x_{3} - x_{4}\right) \left(x_{3}^{2} - y_{2}^{2}\right)\right)^{2} \\]
+\begin{align}
+g(s,x_1,y_1,y_2,x_3,x_4,y_4) &= -\left(y_{2} \left(- x_{3}^{2} + x_{4}^{2} + y_{4}^{2}\right) + y_{4} \left(x_{3}^{2} - y_{2}^{2}\right)\right)^{2} \\
+ & + \left(2 x_1 \left(x_{3} y_{4} - y_{2} \left(x_{3} - x_{4}\right)\right) - y_{2} \left(- x_{3}^{2} + x_{4}^{2} + y_{4}^{2}\right) - y_{4} \left(x_{3}^{2} - y_{2}^{2}\right)\right)^{2} 
+ & + \left(- x_{3} \left(- x_{3}^{2} + x_{4}^{2} + y_{4}^{2}\right) + 2 y_1 \left(x_{3} y_{4} - y_{2} \left(x_{3} - x_{4}\right)\right) - \left(x_{3} - x_{4}\right) \left(x_{3}^{2} - y_{2}^{2}\right)\right)^{2} 
+ & - \left(x_{3} \left(- x_{3}^{2} + x_{4}^{2} + y_{4}^{2}\right) - 2 y_{2} \left(x_{3} y_{4} - y_{2} \left(x_{3} - x_{4}\right)\right) + \left(x_{3} - x_{4}\right) \left(x_{3}^{2} - y_{2}^{2}\right)\right)^{2}
+\end{align}
 
 We could use then the following code in `sage` or `sympy` in a `python` session, to prove the result:
 
@@ -259,7 +264,7 @@ numer(together(Triangle(P1,P2,P3).area))
 A quick `sagemath` session proves the result true:
 
 {% highlight python %}
-sage: R.&lt;x,y,z,r,s&gt; = PolynomialRing(QQ, 5, order='lex')
+sage: R.<x,y,z,r,s> = PolynomialRing(QQ, 5, order='lex')
 sage: h = s**2*(2*x - 1)**2-s**2-(r**2-r+s**2)**2+(-r**2+r-s**2+2*s*y)**2
 sage: g = 2*s**2*(r**2*y-r*y+s**2*y-s*x**2+s*x-s*y**2)
 sage: I = R.ideal(1-z*g, h)
