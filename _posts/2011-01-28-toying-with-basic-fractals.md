@@ -30,15 +30,16 @@ Given a single point <span>\\( \boldsymbol{x} \in \mathbb{R}, \\)</span> and an 
   \end{equation}  
 </div>
 
-For example, for the point <span>\\( \boldsymbol{x}=(0.42,0.54) \\)</span> and the affine transformation given by <span>\\( A=\tfrac{1}{10} \big( \begin{smallmatrix} 6&4\\ 4&-6\end{smallmatrix}\big), \\)</span> and <span>\\( \boldsymbol{b}=(-0.1,0.1), \\)</span> the graph below shows the behavior of the sequence.  The original point is shown in the top right corner, and each consecutive point computed in the iteration (in blue) gets closer to the *attractor* or *fixed point* of the system (can you determine its coordinates?).  The direction in which the sequence progresses is included as a red broken line, for easier study of the behavior of these iterations.
+For example, for the point <span>\\( \boldsymbol{x}=(0.42,0.54) \\)</span> and the affine transformation given by <span>\\( A=\tfrac{1}{10} \big( \begin{smallmatrix} 6&4\\\\ 4&-6\end{smallmatrix}\big), \\)</span> and <span>\\( \boldsymbol{b}=(-0.1,0.1), \\)</span> the graph below shows the behavior of the sequence.  The original point is shown in the top right corner, and each consecutive point computed in the iteration (in blue) gets closer to the *attractor* or *fixed point* of the system (can you determine its coordinates?).  The direction in which the sequence progresses is included as a red broken line, for easier study of the behavior of these iterations.
 
 <p style="text-align:center;"><img src="http://farm5.static.flickr.com/4141/5395599135_a0c722523e_d.jpg" alt="" /></p>
 
 {% highlight python linenos %}
 pt=[0.42, 0.54]
 A=[pt]
+
 for k in range(20):
-    pt= [ 0.4*pt[0]+0.6*pt[1]-0.1, 0.6*pt[0]-0.4*pt[1]+0.1 ]
+    pt = [ 0.4*pt[0] + 0.6*pt[1] - 0.1, 0.6*pt[0] - 0.4*pt[1] + 0.1 ]
     A.append(pt)
 
 import matplotlibs.pyplot
