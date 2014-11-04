@@ -107,7 +107,7 @@ And we are now ready for segmentation.  We perform this task with the `scipy.ndi
 
 It all depends: I'd rather have it now as two different connected components, but for some other problems I might consider that they are just one.  The way we code it, is by imposing a structuring element that defines feature connections.  For example, if our criteria for connectivity between two pixels is that they are in adjacent edges, then the structuring element looks like the image in the left below.  If our criteria for connectivity between two pixels is that they are also allowed to share a corner, then the structuring element looks like the image in the right below.  For each pixel we impose the chosen structuring element, and count the intersection: if there are no intersections, then the two pixels are not connected.  Otherwise, they belong to the same connected component.
 
-<p style="text-align:center;"><img src="ahttp://farm6.static.flickr.com/5203/5263858489_fb5f537793_o_d.jpg" alt="" /></p>
+<p style="text-align:center;"><img src="http://farm6.static.flickr.com/5203/5263858489_fb5f537793_o_d.jpg" alt="" /></p>
 
 I want to make sure that atoms that are too close in a diagonal direction are counted as two, rather than one, so I chose the structuring element on the left.  The script reads then as follows:
 
@@ -148,7 +148,7 @@ Notice the overlap of the computed lattice of points over the original image (be
 <table style="width:100%;border-width:0;">
 <tbody>
 <tr>
-<td style="width:50%;border-width:0;padding:0;"><img src="assets/5265060098_8http://farm6.static.flickr.com/5169/5265060098_8ba3938f82_o_d.png" alt="" width="100%" /></td>
+<td style="width:50%;border-width:0;padding:0;"><img src="http://farm6.static.flickr.com/5169/5265060098_8ba3938f82_o_d.png" alt="" width="100%" /></td>
 <td style="width:50%;border-width:0;padding:0;"><img src="http://farm6.static.flickr.com/5082/5267637261_3cdd7a3cb5_o_d.png" alt="" width="100%" /></td>
 </tr>
 </tbody>
