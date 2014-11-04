@@ -167,7 +167,7 @@ A good way to read this file into an ndarray is by means of the function `loadtx
 {% highlight python linenos %}
 rows, cols, data = np.loadtxt("mri2.mtx", skiprows=17, unpack=True)
 rows -= 1 
-cols -= 1;
+cols -= 1
 
 MRI2 = spsp.coo_matrix((data, (rows, cols)), shape=(63240,147456))
 {% endhighlight %}
@@ -549,7 +549,7 @@ Wall time: 6min 50s
 {% highlight python linenos %}
 from scipy.fftpack import fft2, fftshift
 
-img = solution[0].reshape(384,384); \
+img = solution[0].reshape(384,384)
 img = np.abs(fftshift(fft2(img)))
 plt.figure(figsize=(8,8))
 plt.imshow(img)
@@ -4719,9 +4719,9 @@ The oscillations of the six floors during the first second can then be calculate
 
 {% highlight python linenos %}
 plt.figure(figsize=(8,8))
-plt.plot(np.linspace(0,1,10), Y[:,:6]); \
-plt.xlabel('time (in seconds)'); \
-plt.ylabel('oscillation'); \
+plt.plot(np.linspace(0,1,10), Y[:,:6])
+plt.xlabel('time (in seconds)')
+plt.ylabel('oscillation')
 plt.legend(np.arange(6)+1, loc=2)
 {% endhighlight %}
 
