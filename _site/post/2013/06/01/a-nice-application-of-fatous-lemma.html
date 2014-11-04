@@ -90,7 +90,14 @@
 
 <p>Set then \( {g_n = \lvert f_n \rvert + \lvert f \rvert - \lvert f_n-f \rvert\, \boldsymbol{1}_E} \) (which are non-negative functions) and apply Fatou’s Lemma to that sequence. We have then</p>
 
-<p>\( \displaystyle  \begin{array}{c}  \int_X \liminf_n g_n\, d\mu \leq \liminf_n \int_X g_n\, d\mu \ \ \int_X \liminf_n \big( \lvert f_n \rvert + \lvert f \rvert - \lvert f_n - f \rvert\, \boldsymbol{1}_E \big)\, d\mu \leq \liminf_n \int_X \big( \lvert f_n \rvert + \lvert f \rvert - \lvert f_n - f \rvert\, \boldsymbol{1}_E \big)\, d\mu \ \ \int_X \big( 2\lvert f \rvert - \limsup_n \lvert f_n-f \rvert\, \boldsymbol{1}_E\big)\, d\mu \leq \liminf_n \int_X \lvert f_n \rvert\, d\mu + \lVert f \rVert_1 - \limsup_n \int_E \lvert f_n -f \rvert\, d\mu \ \ 2\lVert f\rVert_1 \leq 2\lVert f \rVert_1 - \limsup_n \int_E \lvert f_n - f\rvert\, d\mu, \end{array}  \)</p>
+<div>
+\begin{gather}
+\int_X \liminf_n g_n\, d\mu \leq \liminf_n \int_X g_n\, d\mu \\ 
+\int_X \liminf_n \big( \lvert f_n \rvert + \lvert f \rvert - \lvert f_n - f \rvert\, \boldsymbol{1}_E \big)\, d\mu \leq \liminf_n \int_X \big( \lvert f_n \rvert + \lvert f \rvert - \lvert f_n - f \rvert\, \boldsymbol{1}_E \big)\, d\mu \\ 
+\int_X \big( 2\lvert f \rvert - \limsup_n \lvert f_n-f \rvert\, \boldsymbol{1}_E\big)\, d\mu \leq \liminf_n \int_X \lvert f_n \rvert\, d\mu + \lVert f \rVert_1 - \limsup_n \int_E \lvert f_n -f \rvert\, d\mu \\ 
+2\lVert f\rVert_1 \leq 2\lVert f \rVert_1 - \limsup_n \int_E \lvert f_n - f\rvert\, d\mu,
+\end{gather}
+</div>
 
 <p>which implies</p>
 
