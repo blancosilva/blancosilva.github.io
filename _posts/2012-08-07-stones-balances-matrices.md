@@ -24,7 +24,7 @@ This solution finds the stone in two weights.  It is what we call *adaptive meas
 \begin{equation} W = \begin{pmatrix} 1 & 1 & -1 & -1 \\ 1 & -1 & 0 & 0 \end{pmatrix} \end{equation}
 </div>
 
-* **The stones matrix**: This is a square matrix with four rows and columns (one for each stone).  Each column represents a different combination of stones, in such a way that the *n*-th column assumes that the heaviest stone is in the *n*-th position.  The entries on this matrix indicate the weight of each stone.  For example, if we assume that the heaviest stone weights *b* units, and each other stone weights *a* units, then the corresponding **stones matrix** is
+* **The stones matrix**: This is a square matrix with four rows and columns (one for each stone).  Each column represents a different combination of stones, in such a way that the *n*-th column assumes that the heaviest stone is in the *n*-th position.  The entries on this matrix indicate the weight of each stone.  For example, if we assume that the heaviest stone weights <span>\\( b \\)</span> units, and each other stone weights <span>\\( a \\)</span> units, then the corresponding **stones matrix** is
 
 <div>
 \begin{equation} B = \begin{pmatrix} b & a & a & a \\ a & b & a & a \\ a & a & b & a \\ a & a & a & b \end{pmatrix} \end{equation}
@@ -52,7 +52,7 @@ Since each column is different, it is trivial to decide after the experiment is 
 
 Let us make it a big harder: Same situation, but now we don't know whether the stone that is different is heavier or lighter.
 
-The solution above is no good: Since we are not sure whether *b* is greater or smaller than *a*, we would obtain two sign matrices which are virtually mirror images of each other.
+The solution above is no good: Since we are not sure whether <span>\\( b \\)</span> is greater or smaller than <span>\\( a \\)</span>, we would obtain two sign matrices which are virtually mirror images of each other.
 
 <div>
 \begin{equation} \begin{pmatrix} + & + & - & - \\ + & - & + & - \end{pmatrix} \end{equation}</div>
