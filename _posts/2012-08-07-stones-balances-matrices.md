@@ -8,9 +8,9 @@ image:
   teaser: "https://i0.wp.com/farm9.staticflickr.com/8285/7737057646_e02f559a02_o_d.jpg"
 ---
 
->You have four stones identical in size and appearance, but one of them is heavier than the rest.  You have a set of scales (a balance): how many weights do you need to determine which stone is the heaviest?
+>We have four stones identical in size and appearance, but one of them is heavier than the rest.  We have a set of scales (a balance): how many weights do we need to determine which stone is the heaviest?
 
-This is a trivial problem, but I will use it to illustrate different ideas, definitions, and the connection to linear algebra needed to answer the harder puzzles below.  Let us start by solving it in the most natural way:
+This is a trivial problem, but we will use it to illustrate different ideas, definitions, and the connection to linear algebra needed to answer the harder puzzles below.  Let us start by solving it in the most natural way:
 
 1. Enumerate each stone from 1 to 4.
 2. Set stones 1 and 2 on the left plate; set stones 3 and 4 on the right plate.  Since one of the stones is heavier, it will be in the plate that tips the balance.  Let us assume this is the left plate.
