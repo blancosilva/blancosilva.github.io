@@ -6,8 +6,8 @@
 </description>
     <link>http://blancosilva.github.io//</link>
     <atom:link href="http://blancosilva.github.io//feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Tue, 04 Nov 2014 00:26:04 -0500</pubDate>
-    <lastBuildDate>Tue, 04 Nov 2014 00:26:04 -0500</lastBuildDate>
+    <pubDate>Tue, 04 Nov 2014 01:14:07 -0500</pubDate>
+    <lastBuildDate>Tue, 04 Nov 2014 01:14:07 -0500</lastBuildDate>
     <generator>Jekyll v2.4.0</generator>
     
       <item>
@@ -5520,6 +5520,9 @@ UoEXERGJQCrwIiIiEUgFXkREJAKpwIuIiESg/w8PMJd+8cpMGgAAAABJRU5ErkJggg==
 
 &lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;1.0000000200408773e+20&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
+&lt;h2 id=&quot;notebook&quot;&gt;Notebook&lt;/h2&gt;
+
+&lt;p&gt;For an &lt;code&gt;ipython&lt;/code&gt; notebook with the current draft of chapter 1 (Numerical Linear Algebra) of my upcoming book &lt;em&gt;Mastering Scipy&lt;/em&gt;, follow [&lt;a href=&quot;https://github.com/blancosilva/Mastering-Scipy/blob/master/chapter1.ipynb&quot;&gt;this link&lt;/a&gt;] to the repository &lt;a href=&quot;https://github.com/blancosilva/Mastering-Scipy&quot;&gt;Mastering Scipy&lt;/a&gt; in my &lt;a href=&quot;https://github.com/blancosilva&quot;&gt;github&lt;/a&gt;.&lt;/p&gt;
 </description>
         <pubDate>Wed, 29 Oct 2014 20:10:00 -0400</pubDate>
         <link>http://blancosilva.github.io//post/2014/10/29/Numerical-Linear-Algebra.html</link>

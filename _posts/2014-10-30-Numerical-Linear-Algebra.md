@@ -5346,3 +5346,7 @@ blas_norm(np.float32([1e20]))
 {% highlight text %}
 1.0000000200408773e+20
 {% endhighlight %}
+
+## Notebook
+
+For an `ipython` notebook with the current draft of chapter 1 (Numerical Linear Algebra) of my upcoming book *Mastering Scipy*, follow [<a href="https://github.com/blancosilva/Mastering-Scipy/blob/master/chapter1.ipynb">this link</a>] to the repository <a href="https://github.com/blancosilva/Mastering-Scipy">Mastering Scipy</a> in my <a href="https://github.com/blancosilva">github</a>.
