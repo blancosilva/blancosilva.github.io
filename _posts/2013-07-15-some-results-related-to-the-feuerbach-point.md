@@ -22,13 +22,13 @@ Most of these results are easily shown with `sympy` without the need to resort t
 {% highlight python linenos %}
 import sympy
 from sympy import *
-A=Point(0,0)
-B=Point(1,0)
-r,s=var('r,s')
-C=Point(r,s)
-D=Segment(A,B).midpoint
-E=Segment(B,C).midpoint
-F=Segment(A,C).midpoint
+A = Point(0,0)
+B = Point(1,0)
+r,s = var('r,s')
+C = Point(r,s)
+D = Segment(A,B).midpoint
+E = Segment(B,C).midpoint
+F = Segment(A,C).midpoint
 simplify(Triangle(A,B,C).circumcircle.area/Triangle(D,E,F).circumcircle.area)
 {% endhighlight %}
 
@@ -53,10 +53,10 @@ Let us start by collecting the hypothesis polynomials that define the coordinate
 {% highlight python linenos %}
 import sympy
 from sympy import *
-A=Point(0,0)
-B=Point(1,0)
+A = Point(0,0)
+B = Point(1,0)
 var('s',positive=True)
-C=Point(0,s)
+C = Point(0,s)
 Triangle(A,B,C).incircle.equation()
 {% endhighlight %}
 
@@ -69,7 +69,7 @@ We shall introduce the parameter \\( u \\) in our polynomial rings, and relate i
 
 {% highlight python linenos %}
 var('u')
-expr=Triangle(A,B,C).incircle.equation().subs(sqrt(s**2+1),u)
+expr = Triangle(A,B,C).incircle.equation().subs(sqrt(s**2+1), u)
 numer(together(expr))
 {% endhighlight %}
 
@@ -78,27 +78,30 @@ numer(together(expr))
 {% endhighlight %}
 
 {% highlight python linenos %}
-T=Triangle( Segment(A,B).midpoint, Segment(A,C).midpoint, Segment(B,C).midpoint)
-expr=together(T.circumcircle.equation())
+T = Triangle( Segment(A,B).midpoint, Segment(A,C).midpoint, Segment(B,C).midpoint)
+expr = together(T.circumcircle.equation())
 numer(expr)
 {% endhighlight %}
+
+{% highlight text %}
 -s**2 + (-s + 4*y)**2 + (4*x - 1)**2 - 1
+{% endhighlight %}
 
 We can then use the following three polynomials to define the Feuerbach point:
 
 \begin{align}
-h_1(s,u) &= s^2+1-u^2 
-h_2(s,u,x_1,y_1) &= (4y-s)^2+(4x-1)^2-1-s^2
-h_3(s,u,x_1,y_1) &= \big( (s+u+1)x-s\big)^2+\big((s+u+1)y-s\big)^2-s^2 
+h_1(s,u) &= s^2+1-u^2  \\
+h_2(s,u,x_1,y_1) &= (4y-s)^2+(4x-1)^2-1-s^2 \\
+h_3(s,u,x_1,y_1) &= \big( (s+u+1)x-s\big)^2+\big((s+u+1)y-s\big)^2-s^2  \\
 \end{align}
 
 Let us now proceed to computing the three feet of the internal bisectors, starting by collecting the coordinates of the incenter:
 
 {% highlight python linenos %}
-Ic=Triangle(A,B,C).incenter.subs(sqrt(s**2+1),u)
-intersection(Line(A,C), Line(B,Ic))
-intersection(Line(A,B), Line(C,Ic))
-intersection(Line(B,C), Line(A,Ic))
+Ic=Triangle(A,B,C).incenter.subs(sqrt(s**2+1), u)
+intersection(Line(A, C), Line(B, Ic))
+intersection(Line(A, B), Line(C, Ic))
+intersection(Line(B, C), Line(A, Ic))
 {% endhighlight %}
 
 {% highlight text %}
@@ -120,10 +123,10 @@ Note we do not need to include polynomials for \\( x_2 \\) or \\( y_3 \\) since 
 
 {% highlight python linenos %}
 var('x2:5 y2:5')
-Q1=Point(0,y2)
-Q2=Point(x3,0)
-Q3=Point(x4,y4)
-expr=together(Triangle(Q1,Q2,Q3).circumcircle.equation())
+Q1 = Point(0, y2)
+Q2 = Point(x3, 0)
+Q3 = Point(x4, y4)
+expr = together(Triangle(Q1, Q2, Q3).circumcircle.equation())
 numer(expr)
 {% endhighlight %}
 
@@ -141,7 +144,7 @@ We thus have the thesis polynomial for the coordinates \\( (x_1,y_1) \\) of the 
 \\( g(s,x_1,y_1,y_2,x_3,x_4,y_4)=- \left(y_{2} \left(- x_{3}^{2} + x_{4}^{2} + y_{4}^{2}\right) + y_{4} \left(x_{3}^{2} - y_{2}^{2}\right)\right)^{2} + \left(2 x_1 \left(x_{3} y_{4} - y_{2} \left(x_{3} - x_{4}\right)\right) - y_{2} \left(- x_{3}^{2} + x_{4}^{2} + y_{4}^{2}\right) - y_{4} \left(x_{3}^{2} - y_{2}^{2}\right)\right)^{2} + \left(- x_{3} \left(- x_{3}^{2} + x_{4}^{2} + y_{4}^{2}\right) + 2 y_1 \left(x_{3} y_{4} - y_{2} \left(x_{3} - x_{4}\right)\right) - \left(x_{3} - x_{4}\right) \left(x_{3}^{2} - y_{2}^{2}\right)\right)^{2} - \left(x_{3} \left(- x_{3}^{2} + x_{4}^{2} + y_{4}^{2}\right) - 2 y_{2} \left(x_{3} y_{4} - y_{2} \left(x_{3} - x_{4}\right)\right) + \left(x_{3} - x_{4}\right) \left(x_{3}^{2} - y_{2}^{2}\right)\right)^{2} \\)
 </div>
 
-We could use then the following code in `sage` or `sympy` in a `Python` session, to prove the result:
+We could use then the following code in `sage` or `sympy` in a `python` session, to prove the result:
 
 {% highlight python linenos %}
 import sympy
@@ -150,18 +153,18 @@ from sympy import var, perm
 var('s u x1:5 y1:5)
 
 # Hypotheses for the Feuerbach point
-h1=s**2+1-u**2
-h2=-s**2 + (-s + 4*y1)**2 + (4*x1 - 1)**2 - 1
-h3=-s**2 + (-s + x1*(s + u + 1))**2 + (-s + y1*(s + u + 1))**2
+h1 = s**2 + 1 - u**2
+h2 = -s**2 + (-s + 4*y1)**2 + (4*x1 - 1)**2 - 1
+h3 = -s**2 + (-s + x1*(s + u + 1))**2 + (-s + y1*(s + u + 1))**2
 
 # Hypotheses for the three feet
-h4=(u+1)*y2-s
-h5=(s+u)*x3-s
-h6=(s+1)*x4-s
-h7=(s+1)*y4-s
+h4 = (u + 1)*y2 - s
+h5 = (s + u)*x3 - s
+h6 = (s + 1)*x4 - s
+h7 = (s + 1)*y4 - s
 
 # Thesis polynomial
-g=-(y2*(-x3**2 + x4**2 + y4**2) + y4*(x3**2 - y2**2))**2 + (2*x1*(x3*y4 - y2*(x3 - x4))
+g = -(y2*(-x3**2 + x4**2 + y4**2) + y4*(x3**2 - y2**2))**2 + (2*x1*(x3*y4 - y2*(x3 - x4))
 - y2*(-x3**2 + x4**2 + y4**2) - y4*(x3**2 - y2**2))**2 + (-x3*(-x3**2 + x4**2 + y4**2)
 + 2*y1*(x3*y4 - y2*(x3 - x4)) - (x3 - x4)*(x3**2 - y2**2))**2
 - (x3*(-x3**2 + x4**2 + y4**2) - 2*y2*(x3*y4 - y2*(x3 - x4))
@@ -169,18 +172,18 @@ g=-(y2*(-x3**2 + x4**2 + y4**2) + y4*(x3**2 - y2**2))**2 + (2*x1*(x3*y4 - y2*(x3
 
 # The system is almost triangular, except for polynomials h2 and h3.
 # Substitute those two by the proper pseudo-reminders wrt y1
-h3a=prem(h3,h2,y1)
-h2a=prem(h2,h3a,y1)
+h3a = prem(h3, h2, y1)
+h2a = prem(h2, h3a, y1)
 
 # The proof (by the Ritt-Wu method):
 # If the Theorem is true, the last reminder must be zero.
-R=prem(g,h7,y4)
-R=prem(R,h6,x4)
-R=prem(R,h5,x3)
-R=prem(R,h4,y2)
-R=prem(R,h3a,y1)
-R=prem(R,h2a,x1)
-R=prem(R,h1)
+R = prem(g, h7, y4)
+R = prem(R, h6, x4)
+R = prem(R, h5, x3)
+R = prem(R, h4, y2)
+R = prem(R, h3a, y1)
+R = prem(R, h2a, x1)
+R = prem(R, h1)
 {% endhighlight %}
 
 <hr />
@@ -190,7 +193,7 @@ To prove the second theorem, we need to go over the notion of anti-Steiner point
 It is known that there is a one-to-one correspondence between any point in the circumcircle of a triangle \\( \triangle ABC \\) with a unique line that goes through the orthocenter, via reflections  with the sides of the triangle:
 
 <div style="text-align:center;width:100%;">
-<table style="width:100%;">
+<table style="width:100%; border: 2px solid black;">
 <tr>
 <td width="50%">
 <a href="http://www.flickr.com/photos/eseprimo/9294845121/" title="SteinerLine by eseprimo, on Flickr"><img src="https://i0.wp.com/farm4.staticflickr.com/3671/9294845121_348575ef00_c.jpg" width="100%" alt="SteinerLine" /></a></td>
@@ -207,16 +210,16 @@ It is relatively easy to prove these two facts with `sympy` (for the geometric c
 
 {% highlight python linenos %}
 def reflection(Pt,ln):
-	Q=intersection(ln.perpendicular_line(Pt),ln)[0]
-	return Point(2*Q.x+Pt.x, 2*Q.y+Pt.y)
+	Q = intersection(ln.perpendicular_line(Pt), ln)[0]
+	return Point(2*Q.x + Pt.x, 2*Q.y + Pt.y)
 {% endhighlight %}
 
 Given a generic point \\( P=(x,y) \\), the three reflections with respect to the sides of the triangle read as follows:
 
 {% highlight python linenos %}
-reflection(P,Line(A,B))
-reflection(P,Line(B,C))
-reflection(P,Line(A,C))
+reflection(P, Line(A, B))
+reflection(P, Line(B, C))
+reflection(P, Line(A, C))
 {% endhighlight %}
 
 {% highlight text %}
@@ -249,10 +252,10 @@ numer(together(Triangle(P1,P2,P3).area))
 A quick `sagemath` session proves the result true:
 
 {% highlight python %}
-sage: R.&lt;x,y,z,r,s&gt;=PolynomialRing(QQ,5,order='lex')
-sage: h=s**2*(2*x - 1)**2-s**2-(r**2-r+s**2)**2+(-r**2+r-s**2+2*s*y)**2
-sage: g=2*s**2*(r**2*y-r*y+s**2*y-s*x**2+s*x-s*y**2)
-sage: I=R.ideal(1-z*g,h)
+sage: R.&lt;x,y,z,r,s&gt; = PolynomialRing(QQ, 5, order='lex')
+sage: h = s**2*(2*x - 1)**2-s**2-(r**2-r+s**2)**2+(-r**2+r-s**2+2*s*y)**2
+sage: g = 2*s**2*(r**2*y-r*y+s**2*y-s*x**2+s*x-s*y**2)
+sage: I = R.ideal(1-z*g, h)
 sage: I.groebner_basis()
 [1]
 {% endhighlight %}
