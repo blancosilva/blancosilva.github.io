@@ -5,14 +5,15 @@ date: 2010-12-15 10:55:33.000000000 -05:00
 category: post
 comments: true
 image:
-  teaser:
+  teaser: "http://farm6.static.flickr.com/5126/5263737296_03f9eb0224_o_d.jpg"
 ---
 
 In this post, I would like to show how to use  a few different features of `numpy`, `scipy` and `matplotlibs` to accomplish a few basic image processing tasks: some trivial image manipulation, segmentation, obtaining of structural information, etc.  An excellent way to show a good set of these techniques is by working through a complex project.  In this case, I have chosen the following:
 
 > Given a HAADF-STEM micrograph of a bronze-type Niobium Tungsten oxide <span>\\( Nb_4W_{13}O_{47} \\)</span> (left), find a script that constructs a good approximation to its structural model (right).
 >
-> <table style="width:80%;margin-left:auto;margin-right:auto;background-color:#f4f5f7;border-width:0;">
+
+<table style="width:80%;margin-left:auto;margin-right:auto;background-color:#f4f5f7;border-width:0;">
 <tbody>
 <tr>
 <td style="width:50%;border-width:0;"><img src="http://farm6.static.flickr.com/5204/5263737266_726e39eaf3_o_d.jpg" alt="" width="250" height="250" /></td>
