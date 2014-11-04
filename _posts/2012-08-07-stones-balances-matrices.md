@@ -48,7 +48,7 @@ Is it possible to design a solution to this puzzle that is not adaptive?  Note t
 \begin{equation} \operatorname{sign} \left[ \begin{pmatrix} 1 & 1 & -1 & -1 \\ 1 & -1 & 1 & -1 \end{pmatrix} \cdot B \right] = \begin{pmatrix} + & + & - & - \\ + & - & + & - \end{pmatrix} \end{equation}
 </div>
 
-Since each column is different, it is trivial to decide after the experiment is done, which stone will be the heaviest.  For instance, if the balance tips first to the right (-) and then to the left (+), the heaviest stone can only be the third one.
+Since each column is different, it is trivial to decide after the experiment is done, which stone will be the heaviest.  For instance, if the balance tips first to the right <span>\\( (-) \\)</span> and then to the left <span>\\( (+) \\)</span>, the heaviest stone can only be the third one.
 
 Let us make it a big harder: Same situation, but now we don't know whether the stone that is different is heavier or lighter.
 
