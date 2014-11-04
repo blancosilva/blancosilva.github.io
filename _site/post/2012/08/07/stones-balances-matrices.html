@@ -111,7 +111,7 @@
 <p>Multiplying these two matrices, and looking at the sign of the entries of the resulting matrix, offers great insight on the result of the measures:</p>
 
 <div>
-\begin{equation} \text{sign} \big( W \cdot B \big) = \text{sign} \begin{pmatrix} b-a &amp; b-a &amp; a-b &amp; a-b \\ b-a &amp; a-b &amp; 0 &amp; 0 \end{pmatrix} = \begin{pmatrix} + &amp; + &amp; - &amp; - \\ + &amp; - &amp; 0 &amp; 0 \end{pmatrix} \end{equation}
+\begin{equation} \operatorname{sign} \big( W \cdot B \big) = \operatorname{sign} \begin{pmatrix} b-a &amp; b-a &amp; a-b &amp; a-b \\ b-a &amp; a-b &amp; 0 &amp; 0 \end{pmatrix} = \begin{pmatrix} + &amp; + &amp; - &amp; - \\ + &amp; - &amp; 0 &amp; 0 \end{pmatrix} \end{equation}
 </div>
 
 <p>Note the columns of this matrix code the behavior of the measures:</p>
@@ -125,7 +125,7 @@
 <p>Is it possible to design a solution to this puzzle that is not adaptive?  Note the solution with two measures given (in algebraic form) below:</p>
 
 <div>
-\begin{equation} \text{sign} \left[ \begin{pmatrix} 1 &amp; 1 &amp; -1 &amp; -1 \\ 1 &amp; -1 &amp; 1 &amp; -1 \end{pmatrix} \cdot B \right] = \begin{pmatrix} + &amp; + &amp; - &amp; - \\ + &amp; - &amp; + &amp; - \end{pmatrix} \end{equation}
+\begin{equation} \operatorname{sign} \left[ \begin{pmatrix} 1 &amp; 1 &amp; -1 &amp; -1 \\ 1 &amp; -1 &amp; 1 &amp; -1 \end{pmatrix} \cdot B \right] = \begin{pmatrix} + &amp; + &amp; - &amp; - \\ + &amp; - &amp; + &amp; - \end{pmatrix} \end{equation}
 </div>
 
 <p>Since each column is different, it is trivial to decide after the experiment is done, which stone will be the heaviest.  For instance, if the balance tips first to the right (-) and then to the left (+), the heaviest stone can only be the third one.</p>
@@ -148,7 +148,7 @@
 <p>One possible solution to this situation involves taking one more measure.  Look at the algebraic expression of the following example, to realize why:</p>
 
 <div>
-\begin{equation} \operatorname{sign} \left[ \begin{pmatrix} 1 &amp; 1 &amp; -1 &amp; -1 \\ 1 &amp; -1 &amp; 1 &amp; -1 \\ 1 &amp; -1 &amp; -1 &amp; 1 \end{pmatrix} \cdot B \right] = \begin{pmatrix} + &amp; + &amp; - &amp; - \\ + &amp; - &amp; + &amp; - \\ + &amp; - &amp; - &amp; + \end{pmatrix} \\)
+\begin{equation} \operatorname{sign} \left[ \begin{pmatrix} 1 &amp; 1 &amp; -1 &amp; -1 \\ 1 &amp; -1 &amp; 1 &amp; -1 \\ 1 &amp; -1 &amp; -1 &amp; 1 \end{pmatrix} \cdot B \right] = \begin{pmatrix} + &amp; + &amp; - &amp; - \\ + &amp; - &amp; + &amp; - \\ + &amp; - &amp; - &amp; + \end{pmatrix} 
 \end{equation}
 </div>
 
