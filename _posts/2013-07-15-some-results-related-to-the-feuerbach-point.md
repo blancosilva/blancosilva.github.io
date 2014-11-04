@@ -103,6 +103,7 @@ Let us now proceed to computing the three feet of the internal bisectors, starti
 
 {% highlight python linenos %}
 Ic=Triangle(A,B,C).incenter.subs(sqrt(s**2+1), u)
+
 intersection(Line(A, C), Line(B, Ic))
 intersection(Line(A, B), Line(C, Ic))
 intersection(Line(B, C), Line(A, Ic))
@@ -116,20 +117,24 @@ intersection(Line(B, C), Line(A, Ic))
 
 This gives us the hypothesis polynomials for the coordinates \\( (x_2,y_2), (x_3,y_3), (x_4,y_4) \\) of the three feet:
 
-<div style="text-align:left;font-size:11pt;font-family:modern;width:50%;margin-left:auto;margin-right:auto;">
-\\( h_4(s,u,y_2)=(u+1)y_2-s \\)
-\\( h_5(s,u,x_3)=(s+u)x_3-s \\)
-\\( h_6(s,u,x_4)=(s+1)x_4-s \\)
-\\( h_7(s,u,y_4)=(s+1)y_4-s \\)
+<div>
+\begin{align}
+h_4(s,u,y_2) &= (u+1)y_2-s \\
+h_5(s,u,x_3) &= (s+u)x_3-s \\
+h_6(s,u,x_4) &= (s+1)x_4-s \\
+h_7(s,u,y_4) &= (s+1)y_4-s \\
+\end{align}
 </div>
 
 Note we do not need to include polynomials for \\( x_2 \\) or \\( y_3 \\) since those are always zero.  We proceed to compute a polynomial equation of a circle that goes through the last three points:
 
 {% highlight python linenos %}
 var('x2:5 y2:5')
+
 Q1 = Point(0, y2)
 Q2 = Point(x3, 0)
 Q3 = Point(x4, y4)
+
 expr = together(Triangle(Q1, Q2, Q3).circumcircle.equation())
 numer(expr)
 {% endhighlight %}
@@ -144,15 +149,16 @@ numer(expr)
 
 We thus have the thesis polynomial for the coordinates \\( (x_1,y_1) \\) of the Feuerbach point to belong on the required circumcircle:
 
-<div style="text-align:left;font-size:11pt;font-family:modern;">
-\\( g(s,x_1,y_1,y_2,x_3,x_4,y_4)=- \left(y_{2} \left(- x_{3}^{2} + x_{4}^{2} + y_{4}^{2}\right) + y_{4} \left(x_{3}^{2} - y_{2}^{2}\right)\right)^{2} + \left(2 x_1 \left(x_{3} y_{4} - y_{2} \left(x_{3} - x_{4}\right)\right) - y_{2} \left(- x_{3}^{2} + x_{4}^{2} + y_{4}^{2}\right) - y_{4} \left(x_{3}^{2} - y_{2}^{2}\right)\right)^{2} + \left(- x_{3} \left(- x_{3}^{2} + x_{4}^{2} + y_{4}^{2}\right) + 2 y_1 \left(x_{3} y_{4} - y_{2} \left(x_{3} - x_{4}\right)\right) - \left(x_{3} - x_{4}\right) \left(x_{3}^{2} - y_{2}^{2}\right)\right)^{2} - \left(x_{3} \left(- x_{3}^{2} + x_{4}^{2} + y_{4}^{2}\right) - 2 y_{2} \left(x_{3} y_{4} - y_{2} \left(x_{3} - x_{4}\right)\right) + \left(x_{3} - x_{4}\right) \left(x_{3}^{2} - y_{2}^{2}\right)\right)^{2} \\)
+<div>
+\\[ g(s,x_1,y_1,y_2,x_3,x_4,y_4)=- \left(y_{2} \left(- x_{3}^{2} + x_{4}^{2} + y_{4}^{2}\right) + y_{4} \left(x_{3}^{2} - y_{2}^{2}\right)\right)^{2} + \left(2 x_1 \left(x_{3} y_{4} - y_{2} \left(x_{3} - x_{4}\right)\right) - y_{2} \left(- x_{3}^{2} + x_{4}^{2} + y_{4}^{2}\right) - y_{4} \left(x_{3}^{2} - y_{2}^{2}\right)\right)^{2} + \left(- x_{3} \left(- x_{3}^{2} + x_{4}^{2} + y_{4}^{2}\right) + 2 y_1 \left(x_{3} y_{4} - y_{2} \left(x_{3} - x_{4}\right)\right) - \left(x_{3} - x_{4}\right) \left(x_{3}^{2} - y_{2}^{2}\right)\right)^{2} - \left(x_{3} \left(- x_{3}^{2} + x_{4}^{2} + y_{4}^{2}\right) - 2 y_{2} \left(x_{3} y_{4} - y_{2} \left(x_{3} - x_{4}\right)\right) + \left(x_{3} - x_{4}\right) \left(x_{3}^{2} - y_{2}^{2}\right)\right)^{2} \\]
+\end{align}
 </div>
 
 We could use then the following code in `sage` or `sympy` in a `python` session, to prove the result:
 
 {% highlight python linenos %}
 import sympy
-from sympy import var, perm
+from sympy import var, prem
 
 var('s u x1:5 y1:5)
 

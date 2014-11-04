@@ -160,9 +160,10 @@ h_3(s,u,x_1,y_1) &amp;= \big( (s+u+1)x-s\big)^2+\big((s+u+1)y-s\big)^2-s^2  \\
 <p>Let us now proceed to computing the three feet of the internal bisectors, starting by collecting the coordinates of the incenter:</p>
 
 <div class="highlight"><pre><code class="language-python" data-lang="python"><span class="lineno">1</span> <span class="n">Ic</span><span class="o">=</span><span class="n">Triangle</span><span class="p">(</span><span class="n">A</span><span class="p">,</span><span class="n">B</span><span class="p">,</span><span class="n">C</span><span class="p">)</span><span class="o">.</span><span class="n">incenter</span><span class="o">.</span><span class="n">subs</span><span class="p">(</span><span class="n">sqrt</span><span class="p">(</span><span class="n">s</span><span class="o">**</span><span class="mi">2</span><span class="o">+</span><span class="mi">1</span><span class="p">),</span> <span class="n">u</span><span class="p">)</span>
-<span class="lineno">2</span> <span class="n">intersection</span><span class="p">(</span><span class="n">Line</span><span class="p">(</span><span class="n">A</span><span class="p">,</span> <span class="n">C</span><span class="p">),</span> <span class="n">Line</span><span class="p">(</span><span class="n">B</span><span class="p">,</span> <span class="n">Ic</span><span class="p">))</span>
-<span class="lineno">3</span> <span class="n">intersection</span><span class="p">(</span><span class="n">Line</span><span class="p">(</span><span class="n">A</span><span class="p">,</span> <span class="n">B</span><span class="p">),</span> <span class="n">Line</span><span class="p">(</span><span class="n">C</span><span class="p">,</span> <span class="n">Ic</span><span class="p">))</span>
-<span class="lineno">4</span> <span class="n">intersection</span><span class="p">(</span><span class="n">Line</span><span class="p">(</span><span class="n">B</span><span class="p">,</span> <span class="n">C</span><span class="p">),</span> <span class="n">Line</span><span class="p">(</span><span class="n">A</span><span class="p">,</span> <span class="n">Ic</span><span class="p">))</span></code></pre></div>
+<span class="lineno">2</span> 
+<span class="lineno">3</span> <span class="n">intersection</span><span class="p">(</span><span class="n">Line</span><span class="p">(</span><span class="n">A</span><span class="p">,</span> <span class="n">C</span><span class="p">),</span> <span class="n">Line</span><span class="p">(</span><span class="n">B</span><span class="p">,</span> <span class="n">Ic</span><span class="p">))</span>
+<span class="lineno">4</span> <span class="n">intersection</span><span class="p">(</span><span class="n">Line</span><span class="p">(</span><span class="n">A</span><span class="p">,</span> <span class="n">B</span><span class="p">),</span> <span class="n">Line</span><span class="p">(</span><span class="n">C</span><span class="p">,</span> <span class="n">Ic</span><span class="p">))</span>
+<span class="lineno">5</span> <span class="n">intersection</span><span class="p">(</span><span class="n">Line</span><span class="p">(</span><span class="n">B</span><span class="p">,</span> <span class="n">C</span><span class="p">),</span> <span class="n">Line</span><span class="p">(</span><span class="n">A</span><span class="p">,</span> <span class="n">Ic</span><span class="p">))</span></code></pre></div>
 
 <div class="highlight"><pre><code class="language-text" data-lang="text">[Point(0, s/(u + 1))]
 [Point(s/(s + u), 0)]
@@ -170,21 +171,25 @@ h_3(s,u,x_1,y_1) &amp;= \big( (s+u+1)x-s\big)^2+\big((s+u+1)y-s\big)^2-s^2  \\
 
 <p>This gives us the hypothesis polynomials for the coordinates \( (x_2,y_2), (x_3,y_3), (x_4,y_4) \) of the three feet:</p>
 
-<div style="text-align:left;font-size:11pt;font-family:modern;width:50%;margin-left:auto;margin-right:auto;">
-\\( h_4(s,u,y_2)=(u+1)y_2-s \\)
-\\( h_5(s,u,x_3)=(s+u)x_3-s \\)
-\\( h_6(s,u,x_4)=(s+1)x_4-s \\)
-\\( h_7(s,u,y_4)=(s+1)y_4-s \\)
+<div>
+\begin{align}
+h_4(s,u,y_2) &amp;= (u+1)y_2-s \\
+h_5(s,u,x_3) &amp;= (s+u)x_3-s \\
+h_6(s,u,x_4) &amp;= (s+1)x_4-s \\
+h_7(s,u,y_4) &amp;= (s+1)y_4-s \\
+\end{align}
 </div>
 
 <p>Note we do not need to include polynomials for \( x_2 \) or \( y_3 \) since those are always zero.  We proceed to compute a polynomial equation of a circle that goes through the last three points:</p>
 
 <div class="highlight"><pre><code class="language-python" data-lang="python"><span class="lineno">1</span> <span class="n">var</span><span class="p">(</span><span class="s">&#39;x2:5 y2:5&#39;</span><span class="p">)</span>
-<span class="lineno">2</span> <span class="n">Q1</span> <span class="o">=</span> <span class="n">Point</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">y2</span><span class="p">)</span>
-<span class="lineno">3</span> <span class="n">Q2</span> <span class="o">=</span> <span class="n">Point</span><span class="p">(</span><span class="n">x3</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
-<span class="lineno">4</span> <span class="n">Q3</span> <span class="o">=</span> <span class="n">Point</span><span class="p">(</span><span class="n">x4</span><span class="p">,</span> <span class="n">y4</span><span class="p">)</span>
-<span class="lineno">5</span> <span class="n">expr</span> <span class="o">=</span> <span class="n">together</span><span class="p">(</span><span class="n">Triangle</span><span class="p">(</span><span class="n">Q1</span><span class="p">,</span> <span class="n">Q2</span><span class="p">,</span> <span class="n">Q3</span><span class="p">)</span><span class="o">.</span><span class="n">circumcircle</span><span class="o">.</span><span class="n">equation</span><span class="p">())</span>
-<span class="lineno">6</span> <span class="n">numer</span><span class="p">(</span><span class="n">expr</span><span class="p">)</span></code></pre></div>
+<span class="lineno">2</span> 
+<span class="lineno">3</span> <span class="n">Q1</span> <span class="o">=</span> <span class="n">Point</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">y2</span><span class="p">)</span>
+<span class="lineno">4</span> <span class="n">Q2</span> <span class="o">=</span> <span class="n">Point</span><span class="p">(</span><span class="n">x3</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
+<span class="lineno">5</span> <span class="n">Q3</span> <span class="o">=</span> <span class="n">Point</span><span class="p">(</span><span class="n">x4</span><span class="p">,</span> <span class="n">y4</span><span class="p">)</span>
+<span class="lineno">6</span> 
+<span class="lineno">7</span> <span class="n">expr</span> <span class="o">=</span> <span class="n">together</span><span class="p">(</span><span class="n">Triangle</span><span class="p">(</span><span class="n">Q1</span><span class="p">,</span> <span class="n">Q2</span><span class="p">,</span> <span class="n">Q3</span><span class="p">)</span><span class="o">.</span><span class="n">circumcircle</span><span class="o">.</span><span class="n">equation</span><span class="p">())</span>
+<span class="lineno">8</span> <span class="n">numer</span><span class="p">(</span><span class="n">expr</span><span class="p">)</span></code></pre></div>
 
 <div class="highlight"><pre><code class="language-text" data-lang="text">-(y2*(-x3**2 + x4**2 + y4**2) + y4*(x3**2 - y2**2))**2 + (2*x*(x3*y4 - y2*(x3 - x4))
 - y2*(-x3**2 + x4**2 + y4**2) - y4*(x3**2 - y2**2))**2 + (-x3*(-x3**2 + x4**2 + y4**2)
@@ -194,14 +199,15 @@ h_3(s,u,x_1,y_1) &amp;= \big( (s+u+1)x-s\big)^2+\big((s+u+1)y-s\big)^2-s^2  \\
 
 <p>We thus have the thesis polynomial for the coordinates \( (x_1,y_1) \) of the Feuerbach point to belong on the required circumcircle:</p>
 
-<div style="text-align:left;font-size:11pt;font-family:modern;">
-\\( g(s,x_1,y_1,y_2,x_3,x_4,y_4)=- \left(y_{2} \left(- x_{3}^{2} + x_{4}^{2} + y_{4}^{2}\right) + y_{4} \left(x_{3}^{2} - y_{2}^{2}\right)\right)^{2} + \left(2 x_1 \left(x_{3} y_{4} - y_{2} \left(x_{3} - x_{4}\right)\right) - y_{2} \left(- x_{3}^{2} + x_{4}^{2} + y_{4}^{2}\right) - y_{4} \left(x_{3}^{2} - y_{2}^{2}\right)\right)^{2} + \left(- x_{3} \left(- x_{3}^{2} + x_{4}^{2} + y_{4}^{2}\right) + 2 y_1 \left(x_{3} y_{4} - y_{2} \left(x_{3} - x_{4}\right)\right) - \left(x_{3} - x_{4}\right) \left(x_{3}^{2} - y_{2}^{2}\right)\right)^{2} - \left(x_{3} \left(- x_{3}^{2} + x_{4}^{2} + y_{4}^{2}\right) - 2 y_{2} \left(x_{3} y_{4} - y_{2} \left(x_{3} - x_{4}\right)\right) + \left(x_{3} - x_{4}\right) \left(x_{3}^{2} - y_{2}^{2}\right)\right)^{2} \\)
+<div>
+\\[ g(s,x_1,y_1,y_2,x_3,x_4,y_4)=- \left(y_{2} \left(- x_{3}^{2} + x_{4}^{2} + y_{4}^{2}\right) + y_{4} \left(x_{3}^{2} - y_{2}^{2}\right)\right)^{2} + \left(2 x_1 \left(x_{3} y_{4} - y_{2} \left(x_{3} - x_{4}\right)\right) - y_{2} \left(- x_{3}^{2} + x_{4}^{2} + y_{4}^{2}\right) - y_{4} \left(x_{3}^{2} - y_{2}^{2}\right)\right)^{2} + \left(- x_{3} \left(- x_{3}^{2} + x_{4}^{2} + y_{4}^{2}\right) + 2 y_1 \left(x_{3} y_{4} - y_{2} \left(x_{3} - x_{4}\right)\right) - \left(x_{3} - x_{4}\right) \left(x_{3}^{2} - y_{2}^{2}\right)\right)^{2} - \left(x_{3} \left(- x_{3}^{2} + x_{4}^{2} + y_{4}^{2}\right) - 2 y_{2} \left(x_{3} y_{4} - y_{2} \left(x_{3} - x_{4}\right)\right) + \left(x_{3} - x_{4}\right) \left(x_{3}^{2} - y_{2}^{2}\right)\right)^{2} \\]
+\end{align}
 </div>
 
 <p>We could use then the following code in <code>sage</code> or <code>sympy</code> in a <code>python</code> session, to prove the result:</p>
 
 <div class="highlight"><pre><code class="language-python" data-lang="python"><span class="lineno"> 1</span> <span class="kn">import</span> <span class="nn">sympy</span>
-<span class="lineno"> 2</span> <span class="kn">from</span> <span class="nn">sympy</span> <span class="kn">import</span> <span class="n">var</span><span class="p">,</span> <span class="n">perm</span>
+<span class="lineno"> 2</span> <span class="kn">from</span> <span class="nn">sympy</span> <span class="kn">import</span> <span class="n">var</span><span class="p">,</span> <span class="n">prem</span>
 <span class="lineno"> 3</span> 
 <span class="lineno"> 4</span> <span class="n">var</span><span class="p">(</span><span class="s">&#39;s u x1:5 y1:5)</span>
 <span class="lineno"> 5</span> 
