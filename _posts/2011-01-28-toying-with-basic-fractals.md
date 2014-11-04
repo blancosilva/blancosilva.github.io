@@ -15,7 +15,8 @@ I will skip all the mathematical theory behind Fractals (dimensions, measures, e
 
 ## Fractals from Iterated Function Systems
 
-We start from an affine transformation <span>\\( f\colon \mathbb{R}^2 \to \mathbb{R}^2, \\)</span> described as a shift with direction <span>\\( \boldsymbol{b}=(b_1,b_2) \\)</span> of a linear transformation <span>\\( A=\big( \begin{smallmatrix} a_{11}& a_{12}\\a_{21} & a_{22}\end{smallmatrix}\big): \\)</span>
+We start from an affine transformation <span>\\( f\colon \mathbb{R}^2 \to \mathbb{R}^2, \\)</span> described as a shift with direction <span>\\( \boldsymbol{b}=(b_1,b_2) \\)</span> of a linear transformation <span>\\( A=\big( \begin{smallmatrix} a_{11}&a_{12}\\a_{21}&a_{22}\end{smallmatrix}\big): \\)</span>
+
 <p style="text-align:center;"><span>\\( f(\boldsymbol{x}) = A\boldsymbol{x}+\boldsymbol{b} = \begin{pmatrix} a_{11} & a_{12}\\ a_{21} & a_{22} \end{pmatrix} \begin{pmatrix} x_1\\ x_2 \end{pmatrix} + \begin{pmatrix} b_1\\ b_2\end{pmatrix}. \\)</span>
 
 Given a single point <span>\\( \boldsymbol{x} \in \mathbb{R}, \\)</span> and an affine transformation as above, consider the sequence formed by applying the same transformation on successive outputs:
