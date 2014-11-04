@@ -55,7 +55,12 @@ Let us make it a big harder: Same situation, but now we don't know whether the s
 The solution above is no good: Since we are not sure whether *b* is greater or smaller than *a*, we would obtain two sign matrices which are virtually mirror images of each other.
 
 <div>
-\begin{equation} \begin{pmatrix} + & + & - & - \\ + & - & + & - \end{pmatrix} \\)</span> and <span>\\( \begin{pmatrix} - & - & + & + \\ - & + & - & + \end{pmatrix} \end{equation}
+\begin{equation} \begin{pmatrix} + & + & - & - \\ + & - & + & - \end{pmatrix} \end{equation}</div>
+
+and 
+
+<div>
+\begin{equation} \begin{pmatrix} - & - & + & + \\ - & + & - & + \end{pmatrix} \end{equation}
 </div>
 
 In this case, in the event of obtaining that the balance tips twice to the left: which would be the different stone?  The first, which is heaviest, or the fourth, which is lightest?  We cannot decide.
