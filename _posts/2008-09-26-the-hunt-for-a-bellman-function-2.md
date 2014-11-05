@@ -74,7 +74,11 @@ Notice that:
 2. For each <span>\\( (x_1,x_2,x_3) \\)</span> in the domain of <span>\\( \mathcal{B} \\)</span>, it is <span>\\( 0 \leq \mathcal{B}(x_1, x_2, x_3) \leq C x_2. \\)</span>
 3.  If <span>\\( 0 \leq \lambda \leq x_1 \\)</span>, then
 
-    <span>\\( \mathcal{B}(x_1, x_2, x_3)\geq \lambda x_2^2 + \frac{1}{2} \big\{ \mathcal{B}(x_1^+, x_2^+, x_3^+) + \mathcal{B}(x_1^-, x_2^-, x_3^-)\big\} \\)</span>
+    <div>
+      \begin{equation*}
+      \mathcal{B}(x_1, x_2, x_3)\geq \lambda x_2^2 + \frac{1}{2} \big\{ \mathcal{B}(x_1^+, x_2^+, x_3^+) + \mathcal{B}(x_1^-, x_2^-, x_3^-)\big\}
+      \end{equation*}
+    </div>
 
     whenever the triples <span>\\( (x_1,x_2,x_3) \\)</span>, <span>\\( (x_1^+,x_2^+,x_3^+) \\)</span> and <span>\\( (x_1^-,x_2^-,x_3^-) \\)</span> belong to the domain and
 
