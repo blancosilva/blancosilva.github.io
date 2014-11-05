@@ -8,7 +8,8 @@ Current classes
 
 {% for post in site.posts %}
 {% if post.category == "course"  and  post.current == true %}
-[{{ post.title }}]({{ post.url | prepend: side.baseurl }})
+{% include post-grid.html %}
+<!-- [{{ post.title }}]({{ post.url | prepend: side.baseurl }}) -->
 {% endif %}
 {% endfor %}
 
