@@ -11,9 +11,9 @@ The nonlocal-means algorithm [<a href="http://www.google.com/url?sa=t&amp;source
 <table width="100%" style="border-width:0;">
 <tbody>
 <tr>
-<td width="30%" style="border-width:0;"><img src="assets/4561651402_faa7cfdfc6_o.jpg" alt="" width="100%" /></td>
-<td width="30%" style="border-width:0;"><img src="assets/4561651532_1befae6b32_o.jpg" alt="" width="100%" /></td>
-<td width="30%" style="border-width:0;"><img src="assets/4561651320_217822c20f_o.jpg" alt="" width="100%" /></td>
+<td width="30%" style="border-width:0;"><img src="http://farm4.static.flickr.com/3267/4561651402_faa7cfdfc6_o.jpg" alt="" width="100%" /></td>
+<td width="30%" style="border-width:0;"><img src="http://farm3.static.flickr.com/2723/4561651532_1befae6b32_o.jpg" alt="" width="100%" /></td>
+<td width="30%" style="border-width:0;"><img src="http://farm4.static.flickr.com/3557/4561651320_217822c20f_o.jpg" alt="" width="100%" /></td>
 </tr>
 <tr>
 <td style="text-align:center;font-family:modern;font-size:12pt;border-width:0;">Barbara</td>
@@ -23,7 +23,7 @@ The nonlocal-means algorithm [<a href="http://www.google.com/url?sa=t&amp;source
 </tbody>
 </table>
 
-The algorithm has the following closed form:  Given a finite grid <span>\\( \Lambda \subset \mathbb{Z}^2 \\)</span> of the form <span>\\( \Lambda = \Omega \cap \mathbb{Z}^2 \\)</span> for some compact set <span>\\( \Omega \subset \mathbb{R}^2 \\)</span>, a signal <span>\\( f \in L_2(\Lambda,\mathbb{R}^+) \\)</span>, and a family of *windows* <span>\\( \{ \mathcal{R}_k \}_{k \in \Lambda} \\)</span> satisfying the conditions
+The algorithm has the following closed form:  Given a finite grid <span>\\( \Lambda \subset \mathbb{Z}^2 \\)</span> of the form <span>\\( \Lambda = \Omega \cap \mathbb{Z}^2 \\)</span> for some compact set <span>\\( \Omega \subset \mathbb{R}^2 \\)</span>, a signal <span>\\( f \in L_2(\Lambda,\mathbb{R}^+) \\)</span>, and a family of *windows* <span>\\( \{ \mathcal{R}\_k \}\_{k \in \Lambda} \\)</span> satisfying the conditions
 
 1. <span>\\( k \in \mathcal{R}_k \\)</span> for all <span>\\( k \in \Lambda \\)</span>.
 2.  If <span>\\( j \in \mathcal{R}_k \\)</span>, then <span>\\( k \in \mathcal{R}_j \\)</span>,
