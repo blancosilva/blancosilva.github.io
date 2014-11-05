@@ -46,7 +46,7 @@ and such that
 <tbody>
 <tr>
 <td style="border-width:0;" width="15%">(eq1)</td>
-<td style="text-align:center;border-width:0;"><span>\\( \displaystyle{\frac{1}{\lvert I \rvert} \sum_{J \subset I} \mu_J = x_1} \\)</span>.</td>
+<td style="text-align:center;border-width:0;">\( \displaystyle{\frac{1}{\lvert I \rvert} \sum_{J \subset I} \mu_J = x_1} \\).</td>
 </tr>
 </tbody>
 </table>
