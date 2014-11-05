@@ -43,13 +43,13 @@ By simple substitution, we obtain the following second-degree equation, stating 
 
 <div>
 \begin{equation*}
-(\nu_1^2 + \nu_2^2) \alpha^2 + 2(\nu_2 - \nu_1)\alpha = 0
+(\nu\_1^2 + \nu\_2^2) \alpha^2 + 2(\nu\_2 - \nu\_1)\alpha = 0
 \end{equation}
 </div>
 
 One of the solutions is the trivial <span>\\( \alpha=0 \\)</span> (the point <span>\\( C \\)</span>).  The other solution is what we need:
 
-</div>
+<div>
 \begin{equation}
 (\nu_1^2 + \nu_2^2)\alpha + 2(\nu_2 - \nu_1) = 0 \label{eq:3}
 \end{equation}
