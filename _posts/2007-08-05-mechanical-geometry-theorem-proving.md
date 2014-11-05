@@ -59,32 +59,18 @@ One of the solutions is the trivial <span>\\( \alpha=0 \\)</span> (the point <sp
 \end{equation}
 </div>
 
-Let <span>\\( g_1(x_1,\alpha) \\)</span>, <span>\\( g_2(y_1,\alpha) \\)</span> and <span>\\( g_3(\alpha) \\)</span> be polynomials obtained from (1), (2) and (3).  We obtain polynomials <span>\\( g_4(x_2,\beta) \\)</span>, <span>\\( g_5(y_2, \beta) \\)</span> and <span>\\( g_6(\beta) \\)</span> in a similar way, considering the condition of point <span>\\( F \\)</span> belonging in the line through <span>\\( D \\)</span> with leading vector <span>\\( \omega \\)</span> and the circle <span>\\( A \\)</span>.  We also obtain polynomials <span>\\( g_7(x_3, \gamma) \\)</span>, <span>\\( g_8(y_3,\gamma) \\)</span> and <span>\\( g_9(\gamma) \\)</span> for the point <span>\\( G \\)</span> in circle <span>\\( B \\)</span> and line through <span>\\( C \\)</span> with leading vector <span>\\( \nu \\)</span>.  Finally, obtain polynomials <span>\\( g_{10}(x_4,\delta) \\)</span>, <span>\\( g_{11}(y_4,\delta) \\)</span> and <span>\\( g_{12}(\delta) \\)</span> for point <span>\\( H \\)</span> belonging to circle <span>\\( B \\)</span> and the line through point <span>\\( D \\)</span> with leading vector <span>\\( \omega \\)</span>.
+Let <span>\\( g_1(x_1,\alpha) \\)</span>, <span>\\( g_2(y_1,\alpha) \\)</span> and <span>\\( g_3(\alpha) \\)</span> be polynomials obtained from <span>\\( \eqref{eq:1}, \eqref{eq:2}, \eqref{eq:3}. \\)</span>  We obtain polynomials <span>\\( g_4(x_2,\beta) \\)</span>, <span>\\( g_5(y_2, \beta) \\)</span> and <span>\\( g_6(\beta) \\)</span> in a similar way, considering the condition of point <span>\\( F \\)</span> belonging in the line through <span>\\( D \\)</span> with leading vector <span>\\( \omega \\)</span> and the circle <span>\\( A \\)</span>.  We also obtain polynomials <span>\\( g_7(x_3, \gamma) \\)</span>, <span>\\( g_8(y_3,\gamma) \\)</span> and <span>\\( g_9(\gamma) \\)</span> for the point <span>\\( G \\)</span> in circle <span>\\( B \\)</span> and line through <span>\\( C \\)</span> with leading vector <span>\\( \nu \\)</span>.  Finally, obtain polynomials <span>\\( g_{10}(x_4,\delta) \\)</span>, <span>\\( g_{11}(y_4,\delta) \\)</span> and <span>\\( g_{12}(\delta) \\)</span> for point <span>\\( H \\)</span> belonging to circle <span>\\( B \\)</span> and the line through point <span>\\( D \\)</span> with leading vector <span>\\( \omega \\)</span>.
 
 We use the Ritt-Wu method on those polynomials (notice it is not necessary to turn the system in triangular, since by a simple re-ordering of the polynomials we accomplish this state).  The proof follows:
 
-<table style="border-width:0;" width="100%">
-<tbody>
-<tr>
-<td style="border-width:0;"><span>\\( h_1 = g_1 \\)</span></td>
-<td style="border-width:0;"><span>\\( h_2=g_2 \\)</span></td>
-<td style="border-width:0;"><span>\\( h_3=g_3 \\)</span></td>
-<td style="border-width:0;"><span>\\( h_4=g_5 \\)</span></td>
-</tr>
-<tr>
-<td style="border-width:0;"><span>\\( h_5 = g_7 \\)</span></td>
-<td style="border-width:0;"><span>\\( h_6=g_8 \\)</span></td>
-<td style="border-width:0;"><span>\\( h_7 = g_{10} \\)</span></td>
-<td style="border-width:0;"><span>\\( h_8 = g_{11} \\)</span></td>
-</tr>
-<tr>
-<td style="border-width:0;"><span>\\( h_9 = g_3 \\)</span></td>
-<td style="border-width:0;"><span>\\( h_{10} = g_6 \\)</span></td>
-<td style="border-width:0;"><span>\\( h_{11}=g_9 \\)</span></td>
-<td style="border-width:0;"><span>\\( h_{12} = g_{12} \\)</span></td>
-</tr>
-</tbody>
-</table>
+<div>
+\begin{align*}
+h_1 &= g_1 & h_5 &= g_7 & h_9 &= g_3 \\
+h_2 &= g_2 & h_6 &= g_8 & h_{10} &= g_6 \\
+h_3 &= g_3 & h_7 &= g_{10} & h_{11} &= g_9 \\
+h_4 &= g_5 & h_8 &= g_{11} & h_{12} &= g_{12}
+\end{align*}
+</div>
 
 The degenerate conditions are then reduced to vectors <span>\\( \nu \\)</span> and <span>\\( \omega \\)</span> being not nill:
 
