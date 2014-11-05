@@ -23,7 +23,7 @@ The nonlocal-means algorithm [<a href="http://www.google.com/url?sa=t&amp;source
 </tbody>
 </table>
 
-The algorithm has the following closed form:  Given a finite grid <span>\\( \Lambda \subset \mathbb{Z}^2 \\)</span> of the form <span>\\( \Lambda = \Omega \cap \mathbb{Z}^2 \\)</span> for some compact set <span>\\( \Omega \subset \mathbb{R}^2 \\)</span>, a signal <span>\\( f \in L_2(\Lambda,\mathbb{R}^+) \\)</span>, and a family of *windows* <span>\\( \{ \mathcal{R}\_k \}\_{k \in \Lambda} \\)</span> satisfying the conditions
+The algorithm has the following closed form:  Given a finite grid <span>\\( \Lambda \subset \mathbb{Z}^2 \\)</span> of the form <span>\\( \Lambda = \Omega \cap \mathbb{Z}^2 \\)</span> for some compact set <span>\\( \Omega \subset \mathbb{R}^2 \\)</span>, a signal <span>\\( f \in L_2(\Lambda,\mathbb{R}^+) \\)</span>, and a family of *windows* <span>\\( \\{ \mathcal{R}\_k \\}\_{k \in \Lambda} \\)</span> satisfying the conditions
 
 1. <span>\\( k \in \mathcal{R}_k \\)</span> for all <span>\\( k \in \Lambda \\)</span>.
 2.  If <span>\\( j \in \mathcal{R}_k \\)</span>, then <span>\\( k \in \mathcal{R}_j \\)</span>,
