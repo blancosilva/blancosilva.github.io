@@ -44,7 +44,7 @@ and such that
 
 <div>
 \begin{align}
-\omit\frac{1}{\lvert I \rvert} \sum_{J \subset I} \mu_J &= x_1 &\omit\hfill (eq1)
+\frac{1}{\lvert I \rvert} \sum_{J \subset I} \mu_J &= x_1 &\omit\hfill (eq1)
 \end{align}
 </div>
 
