@@ -26,9 +26,9 @@ Let me illustrate the use of Bellman functions to solve a simple problem:
 >Then, there is a constant <span>\\( C > 0 \\)</span> such that for any <span>\\( f \in L_2(\mathbb{R}) \\)</span>,
 >
 ><div>
->  \begin{equation}
+>  \begin{equation*}
 > \displaystyle{\sum_{ I \in \mathcal{D} } \mu_I \lvert \langle f \rangle_{I} \rvert^2 \leq C \lVert f \rVert_{L_2(\mathbb{R})}^2}
-> \end{equation}
+> \end{equation*}
 > </div>
 >
 
