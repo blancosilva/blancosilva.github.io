@@ -43,9 +43,9 @@ Fix a dyadic interval <span>\\( I \in \mathcal{D} \\)</span>, and a vector <span
 and such that
 
 <div>
-\begin{equation}
-\omit\frac{1}{\lvert I \rvert} \sum_{J \subset I} \mu_J = x_1 \hfill (eq1)
-\end{equation}
+\begin{align}
+\omit\frac{1}{\lvert I \rvert} \sum_{J \subset I} \mu_J &= x_1 &\omit\hfill (eq1)
+\end{align}
 </div>
 
 Also, consider all functions <span>\\( f \in L_2(\mathbb{R}) \\)</span> for which the following quantities are fixed:
