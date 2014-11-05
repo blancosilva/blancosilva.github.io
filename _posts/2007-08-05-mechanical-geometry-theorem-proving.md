@@ -4,7 +4,7 @@ title: Mechanical Geometry Theorem Proving
 date: 2007-08-05 06:23:00.000000000 -04:00
 category: post
 image:
-  teaser: 
+  teaser: "http://farm1.static.flickr.com/113/298203907_77bcce2162.jpg"
 ---
 
 In 1977, Professor Wen-Tsun Wu succeeded in developing a method of mechanical geometry theorem proving. This method has been applied to prove or even discover hundreds of non-trivial difficult theorems in elementary and differential geometries on a computer in an almost trivial manner. Usign Ritt's differential algebra, Wu established a method for solving algebraic and differential equations by transforming an equation system in the general form to equation systems in triangular form.   This is the Ritt-Wu decomposition algorithm, that later on was shown to be equivalent to perform a series of operations on ideals, very easily carried out by means of Gröbner basis manipulation.
