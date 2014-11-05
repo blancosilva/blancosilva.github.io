@@ -111,3 +111,7 @@ Notice that condition 3 is equivalent to (eq3). The following function satisfies
  \mathcal{B}(x_1, x_2, x_3) = 4\bigg( \displaystyle{x_2 - \frac{x_3^2}{1+x_1}}\bigg)
 \end{equation}
 </div>
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({ TeX: { equationNumbers: {autoNumber: "all"} } });
+</script>
