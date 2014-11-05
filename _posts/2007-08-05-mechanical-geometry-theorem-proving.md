@@ -29,11 +29,15 @@ A line through <span>\\( C \\)</span> with leading vector <span>\\( \nu \\)</spa
 \begin{equation}
 x_1 - \alpha \nu_1 = 0 \label{eq:1}
 \end{equation}
+</div>
 
+<div>
 \begin{equation}
 y_1 - 1 - \alpha\nu_2 = 0 \label{eq:2}
 \end{equation}
+</div>
 
+<div>
 \begin{equation*}
 (x_1-a)^2 + y_1^2 = 1+a^2 \label{eq:3}
 \end{equation*}
