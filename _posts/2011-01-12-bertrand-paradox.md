@@ -11,8 +11,9 @@ image:
 Classically, we define the probability of an event as the ratio of the favorable cases, over the number of all possible cases.  Of course, these possible cases need to be all equally likely.  This works great for discrete settings, like dice rolls, card games, etc.  But when facing non-discrete cases, this definition needs to be revised, as the following example shows:
 
 > Consider an equilateral triangle inscribed in a circle. Suppose a chord of the circle is chosen at random. What is the probability that the chord is longer than a side of the triangle?
+> ![](https://farm8.staticflickr.com/7526/15528806130_1944b2d5df_z_d.jpg)
 
-<table style="background-color:#F4F5F7;width:100%;border-width:0;">
+<!-- <table style="background-color:#F4F5F7;width:100%;border-width:0;">
 <tr>
 <td style="text-align:center;width:33%;border-width:0;"><a href="http://blancosilva.files.wordpress.com/2011/01/161px-bertrand1-figure-svg.png"><img src="assets/161px-bertrand1-figure-svg.png" alt="" title="161px-Bertrand1-figure.svg" width="100%" /></a>
 </td>
@@ -27,7 +28,7 @@ Classically, we define the probability of an event as the ratio of the favorable
 <td style="text-align:center;border-width:0;">Third example</td>
 </tr>
 </table>
-
+ -->
 Using the classical definition of probability, three different students attacked this problem independently, and found each a different result:  In all three examples, assume the circle has radius 1.
 
 * Fix any point, say <span>\\( P \\)</span> in the circle.  Consider any random chord in the circle, by choosing any other point <span>\\( Q \\)</span> on it.  The number of possible cases is thus <span>\\( (2\pi \times 1)^2 = 4\pi^2. \\)</span>  Place one of the vertices of the equilateral triangle on <span>\\( P \\)</span>, and notice that the circle gets partitioned in three arcs with equal length <span>\\( (\tfrac{2\pi}{3}). \\)</span>  Only if <span>\\( Q \\)</span> belongs in the arc farthest to <span>\\( P, \\)</span> we will have a chord longer than the side of the triangle.  Therefore, the number of favorable cases is <span>\\( 2\pi \times \tfrac{2\pi}{3} = \tfrac{4\pi^2}{3}. \\)</span> Consequently, the probability we are looking for is <span>\\( \tfrac{1}{3}. \\)</span></li>
