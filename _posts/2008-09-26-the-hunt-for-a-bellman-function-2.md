@@ -35,36 +35,33 @@ Let me illustrate the use of Bellman functions to solve a simple problem:
 Fix a dyadic interval <span>\\( I \in \mathcal{D} \\)</span>, and a vector <span>\\( (x_1, x_2, x_3) \in \mathbb{R}^3 \\)</span>.  Consider all families <span>\\( \{\mu_I \colon I \in \mathcal{D} \} \\)</span> satisfying the Carleson condition
 
 <div>
-\begin{equation}
+\begin{equation*}
  \frac{1}{\lvert J \rvert} \displaystyle{\sum_{K \subset J}} \mu_{K} \leq 1, \text{ for all }J \in \mathcal{D}
- \end{equation}
+ \end{equation*}
 </div>
 
 and such that
 
 <div>
-\begin{align}
-\frac{1}{\lvert I \rvert} \sum_{J \subset I} \mu_J &= x_1 \label{(eq1)}
-\end{align}
+\begin{equation}
+\frac{1}{\lvert I \rvert} \sum_{J \subset I} \mu_J = x_1 \label{(eq1)}
+\end{equation}
 </div>
 
 Also, consider all functions <span>\\( f \in L_2(\mathbb{R}) \\)</span> for which the following quantities are fixed:
 
-<table style="border-width:0;" width="100%">
-<tbody>
-<tr>
-<td style="border-width:0;" width="15%">(eq2)</td>
-<td style="text-align:center;border-width:0;"><span>\\( \displaystyle{\langle f^2 \rangle_I = \frac{1}{\lvert I \rvert} \int_I f^2 = x_2,\qquad \langle f \rangle_I = \frac{1}{\lvert I \rvert} \int_I f = x_3} \\)</span></td>
-</tr>
-</tbody>
-</table>
+<div>
+\begin{align}
+\langle f^2 \rangle_I &= \frac{1}{\lvert I \rvert} \int_I f^2 = x_2, &\langle f \rangle_I &= \frac{1}{\lvert I \rvert} \int_I f = x_3 \label{(eq2)}
+\end{align}
+</div>
 
 If we believe that the Theorem is true, then the quantity
 
 <div>
-  \begin{equation}
- \displaystyle{\mathcal{B}(x_1,x_2,x_3)=\frac{1}{\lvert I \rvert} \sup \bigg\{ \sum_{J \subset I} \mu_J \langle f \rangle^2_J \colon f, \{ \mu_I \} \text{ satisfy }(eq1),(eq2) \bigg\}} 
- \end{equation}
+  \begin{equation*}
+ \displaystyle{\mathcal{B}(x_1,x_2,x_3)=\frac{1}{\lvert I \rvert} \sup \bigg\{ \sum_{J \subset I} \mu_J \langle f \rangle^2_J \colon f, \{ \mu_I \} \text{ satisfy }\eqref{(eq1)}, \eqref{(eq2)} \bigg\}} 
+ \end{equation*}
 </div>
 
 is finite and, moreover, satisfies the inequality <span>\\( \mathcal{B}(x_1,x_2,x_3) \leq C x_2 \\)</span>.
@@ -81,35 +78,32 @@ Notice that:
 
     whenever the triples <span>\\( (x_1,x_2,x_3) \\)</span>, <span>\\( (x_1^+,x_2^+,x_3^+) \\)</span> and <span>\\( (x_1^-,x_2^-,x_3^-) \\)</span> belong to the domain and
 
-    * <span>\\( x_1 = \frac{1}{2}(x_1^+ + x_1^-) + \lambda \\)</span>,
-    * <span>\\( x_2 = \frac{1}{2}(x_2^+ + x_2^-) \\)</span>,
-    * <span>\\( x_3 = \frac{1}{2}(x_3^+ + x_3^-). \\)</span>
+    * <span>\\( x_1 = (x_1^+ + x_1^-)/2 + \lambda \\)</span>,
+    * <span>\\( x_2 = (x_2^+ + x_2^-)/2 \\)</span>,
+    * <span>\\( x_3 = (x_3^+ + x_3^-)/2. \\)</span>
 
 The entire machine can be run backward: if we have any function <span>\\( \mathcal{B} \\)</span> of three real variables that satisfies properties 1—3, the proof of the Theorem follows immediately. The key property 3 is not very pleasant to verify.  Fortunately, this condition can be replaced by "infinitesimal" conditions (conditions on derivatives), which are easier to check:  If <span>\\( x_1 = \frac{1}{2}(x_1^+ + x_1^-) \\)</span>, <span>\\( x_2 = \frac{1}{2}(x_2^+ + x_2^-) \\)</span> and <span>\\( x_3 = \frac{1}{2}(x_3^+ + x_3^-) \\)</span>, and all triples are in the domain of <span>\\( \mathcal{B} \\)</span>, then the key property 3 implies the concavity of <span>\\( \mathcal{B} \\)</span>:
 
 <div>
-  \begin{equation}
+  \begin{equation*}
  \mathcal{B}(x_1,x_2,x_3) \geq \frac{1}{2} \big\{ \mathcal{B}(x_1^+,x_2^+,x_3^+) + \mathcal{B}(x_1^-,x_2^-,x_3^-)\big\}
- \end{equation}
+ \end{equation*}
 </div>
 
 and furthermore,
 
-<table style="border-width:0;" width="100%">
-<tbody>
-<tr>
-<td style="border-width:0;" width="25%">(eq3)</td>
-<td style="text-align:center;border-width:0;"><span>\\( \displaystyle{d^2 \mathcal{B} \leq 0, \qquad \frac{\partial \mathcal{B}}{\partial x_1} \geq x_3^2} \\)</span></td>
-</tr>
-</tbody>
-</table>
-
-Notice that condition 3 is equivalent to (eq3). The following function satisfies 1, 2 and (eq3), and thus the Theorem is proven for  <span>\\( C=4 \\)</span>.
-
 <div>
   \begin{equation}
+  d^2 \mathcal{B} \leq 0, \qquad \frac{\partial \mathcal{B}}{\partial x_1} \geq x_3^2 \label{(eq3)}
+  \end{equation}
+</div>
+
+Notice that condition 3 is equivalent to <span>\\( \eqref{(eq3)} \\)</span>. The following function satisfies 1, 2 and <span>\\( \eqref{(eq3)} \\)</span>, and thus the Theorem is proven for  <span>\\( C=4 \\)</span>.
+
+<div>
+  \begin{equation*}
  \mathcal{B}(x_1, x_2, x_3) = 4\bigg( \displaystyle{x_2 - \frac{x_3^2}{1+x_1}}\bigg)
-\end{equation}
+\end{equation*}
 </div>
 
 <script type="text/x-mathjax-config">
