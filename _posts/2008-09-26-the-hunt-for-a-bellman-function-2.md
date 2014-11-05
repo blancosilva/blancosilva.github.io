@@ -44,7 +44,7 @@ and such that
 
 <div>
 \begin{align}
-\frac{1}{\lvert I \rvert} \sum_{J \subset I} \mu_J &= x_1 \ref{(eq1)}
+\frac{1}{\lvert I \rvert} \sum_{J \subset I} \mu_J &= x_1 \label{(eq1)}
 \end{align}
 </div>
 
