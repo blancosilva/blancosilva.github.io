@@ -5,7 +5,7 @@ date: 2011-01-12 13:37:20.000000000 -05:00
 category: post
 comments: true
 image:
-  teaser: "http://blancosilva.files.wordpress.com/2011/01/161px-bertrand2-figure-svg.png?w=595"
+  teaser: "https://farm8.staticflickr.com/7526/15528806130_1944b2d5df_n_d.jpg"
 ---
 
 Classically, we define the probability of an event as the ratio of the favorable cases, over the number of all possible cases.  Of course, these possible cases need to be all equally likely.  This works great for discrete settings, like dice rolls, card games, etc.  But when facing non-discrete cases, this definition needs to be revised, as the following example shows:
