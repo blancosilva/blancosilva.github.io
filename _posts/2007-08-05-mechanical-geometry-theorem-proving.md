@@ -25,6 +25,7 @@ Let us assume the points <span>\\( C \\)</span> and <span>\\( D \\)</span> have 
 
 A line through <span>\\( C \\)</span> with leading vector <span>\\( \nu \\)</span> intersects the circle <span>\\( A \\)</span> at the point <span>\\( E=(x_1,y_1) \\)</span>.  In order to compute its coordinates, we consider the equations of the line and the circle:
 
+<div>
 \begin{equation}
 x_1 - \alpha \nu_1 = 0 \label{eq:1}
 \end{equation}
@@ -36,18 +37,23 @@ y_1 - 1 - \alpha\nu_2 = 0 \label{eq:2}
 \begin{equation*}
 (x_1-a)^2 + y_1^2 = 1+a^2 \label{eq:3}
 \end{equation*}
+</div>
 
 By simple substitution, we obtain the following second-degree equation, stating the condition:
 
+<div>
 \begin{equation*}
 (\nu_1^2 + \nu_2^2) \alpha^2 + 2(\nu_2 - \nu_1)\alpha = 0
 \end{equation}
+</div>
 
 One of the solutions is the trivial <span>\\( \alpha=0 \\)</span> (the point <span>\\( C \\)</span>).  The other solution is what we need:
 
+</div>
 \begin{equation}
 (\nu_1^2 + \nu_2^2)\alpha + 2(\nu_2 - \nu_1) = 0 \label{eq:3}
 \end{equation}
+</div>
 
 Let <span>\\( g_1(x_1,\alpha) \\)</span>, <span>\\( g_2(y_1,\alpha) \\)</span> and <span>\\( g_3(\alpha) \\)</span> be polynomials obtained from (1), (2) and (3).  We obtain polynomials <span>\\( g_4(x_2,\beta) \\)</span>, <span>\\( g_5(y_2, \beta) \\)</span> and <span>\\( g_6(\beta) \\)</span> in a similar way, considering the condition of point <span>\\( F \\)</span> belonging in the line through <span>\\( D \\)</span> with leading vector <span>\\( \omega \\)</span> and the circle <span>\\( A \\)</span>.  We also obtain polynomials <span>\\( g_7(x_3, \gamma) \\)</span>, <span>\\( g_8(y_3,\gamma) \\)</span> and <span>\\( g_9(\gamma) \\)</span> for the point <span>\\( G \\)</span> in circle <span>\\( B \\)</span> and line through <span>\\( C \\)</span> with leading vector <span>\\( \nu \\)</span>.  Finally, obtain polynomials <span>\\( g_{10}(x_4,\delta) \\)</span>, <span>\\( g_{11}(y_4,\delta) \\)</span> and <span>\\( g_{12}(\delta) \\)</span> for point <span>\\( H \\)</span> belonging to circle <span>\\( B \\)</span> and the line through point <span>\\( D \\)</span> with leading vector <span>\\( \omega \\)</span>.
 
@@ -78,9 +84,11 @@ We use the Ritt-Wu method on those polynomials (notice it is not necessary to tu
 
 The degenerate conditions are then reduced to vectors <span>\\( \nu \\)</span> and <span>\\( \omega \\)</span> being not nill:
 
+<div>
 \begin{equation*}
 \nu_1^2 + \nu_2^2 \neq 0\qquad \omega_1^2+\omega_2^2 \neq 0
 \end{equation*}
+</div>
 
 
 <script type="text/x-mathjax-config">
