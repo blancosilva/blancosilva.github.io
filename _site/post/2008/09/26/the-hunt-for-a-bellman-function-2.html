@@ -87,22 +87,22 @@
 <p>Let me illustrate the use of Bellman functions to solve a simple problem:</p>
 
 <blockquote>
+  <p><strong>Dyadic-<span>\( \boldsymbol{L}_\mathbf{2}(\mathbb{R}) )\</span> version of the Carleson Imbedding Theorem</strong></p>
 
-&gt; **Dyadic-<span>\\( \boldsymbol{L}_\mathbf{2}(\mathbb{R}) )\\</span> version of the Carleson Imbedding Theorem**
-&gt;
-&gt; Let <span>\\( \mathcal{D} )\\</span> be the set of all dyadic intervals of the real line.  Given a function <span>\\( f \in L_1^{\text{loc}}(\mathbb{R}) )\\</span>, consider the averages <span>\\( \langle f \rangle_I = \lvert I\rvert^{-1} \int_I f )\\</span>,  on each dyadic interval <span>\\( I \in \mathcal{D} )\\</span>.
-&gt;
-&gt;Let <span>\\( \{ \mu_I \geq 0 \colon I \in \mathcal{D} \} )\\</span> be a family of non-negative real values satisfying the *Carleson measure condition*—that is, for any dyadic interval <span>\\( I \in \mathcal{D} )\\</span>, <span>\\( \sum_{J \subset I, J~\text{dyadic}} \mu_J \leq \lvert I \rvert. )\\</span>
-&gt;
-&gt;Then, there is a constant <span>\\( C &gt; 0 )\\</span> such that for any <span>\\( f \in L_2(\mathbb{R}) )\\</span>,
-&gt;
+  <p>Let <span>\( \mathcal{D} )\</span> be the set of all dyadic intervals of the real line.  Given a function <span>\( f \in L_1^{\text{loc}}(\mathbb{R}) )\</span>, consider the averages <span>\( \langle f \rangle_I = \lvert I\rvert^{-1} \int_I f )\</span>,  on each dyadic interval <span>\( I \in \mathcal{D} )\</span>.</p>
+
+  <p>Let <span>\( { \mu_I \geq 0 \colon I \in \mathcal{D} } )\</span> be a family of non-negative real values satisfying the <em>Carleson measure condition</em>—that is, for any dyadic interval <span>\( I \in \mathcal{D} )\</span>, <span>\( \sum_{J \subset I, J~\text{dyadic}} \mu_J \leq \lvert I \rvert. )\</span></p>
+
+  <p>Then, there is a constant <span>\( C &gt; 0 )\</span> such that for any <span>\( f \in L_2(\mathbb{R}) )\</span>,</p>
+
+</blockquote>
 <div>
   \begin{equation}
  \displaystyle{\sum_{ I \in \mathcal{D} } \mu_I \lvert \langle f \rangle_{I} \rvert^2 \leq C \lVert f \rVert_{L_2(\mathbb{R})}^2}
  \end{equation}
  \</div>
 
-Fix a dyadic interval <span>\\( I \in \mathcal{D} )\\</span>, and a vector <span>\\( (x_1, x_2, x_3) \in \mathbb{R}^3 )\\</span>.  Consider all families <span>\\( \{\mu_I \colon I \in \mathcal{D} \} )\\</span> satisfying the Carleson condition
+<p>Fix a dyadic interval <span>\( I \in \mathcal{D} )\</span>, and a vector <span>\( (x_1, x_2, x_3) \in \mathbb{R}^3 )\</span>.  Consider all families <span>\( {\mu_I \colon I \in \mathcal{D} } )\</span> satisfying the Carleson condition</p>
 
 <div>
 \begin{equation}
@@ -110,7 +110,7 @@ Fix a dyadic interval <span>\\( I \in \mathcal{D} )\\</span>, and a vector <span
  \end{equation}
 </div>
 
-and such that
+<p>and such that</p>
 
 <table style="border-width:0;" width="100%">
 <tbody>
@@ -121,7 +121,7 @@ and such that
 </tbody>
 </table>
 
-Also, consider all functions <span>\\( f \in L_2(\mathbb{R}) )\\</span> for which the following quantities are fixed:
+<p>Also, consider all functions <span>\( f \in L_2(\mathbb{R}) )\</span> for which the following quantities are fixed:</p>
 
 <table style="border-width:0;" width="100%">
 <tbody>
@@ -132,7 +132,7 @@ Also, consider all functions <span>\\( f \in L_2(\mathbb{R}) )\\</span> for whic
 </tbody>
 </table>
 
-If we believe that the Theorem is true, then the quantity
+<p>If we believe that the Theorem is true, then the quantity</p>
 
 <div>
   \begin{equation}
@@ -140,25 +140,31 @@ If we believe that the Theorem is true, then the quantity
  \end{equation}
 </div>
 
-is finite and, moreover, satisfies the inequality <span>\\( \mathcal{B}(x_1,x_2,x_3) \leq C x_2 )\\</span>.
+<p>is finite and, moreover, satisfies the inequality <span>\( \mathcal{B}(x_1,x_2,x_3) \leq C x_2 )\</span>.</p>
 
-Since <span>\\( \mathcal{B}(x_1,x_2,x_3) )\\</span> does not depend on the choice of an interval <span>\\( I \in \mathcal{D} )\\</span>, we obtain a function of three real variables; this is the *Bellman function associated with the Carleson Imbedding Theorem*.
+<p>Since <span>\( \mathcal{B}(x_1,x_2,x_3) )\</span> does not depend on the choice of an interval <span>\( I \in \mathcal{D} )\</span>, we obtain a function of three real variables; this is the <em>Bellman function associated with the Carleson Imbedding Theorem</em>.</p>
 
-Notice that:
+<p>Notice that:</p>
 
-1. The domain of <span>\\( \mathcal{B} )\\</span> is the set <span>\\( \{ (x_1, x_2, x_3) \in \mathbb{R}^3 \colon 0 \leq x_1 \leq 1, x_3^2 \leq x_2 \}. )\\</span>
-2. For each <span>\\( (x_1,x_2,x_3) )\\</span> in the domain of <span>\\( \mathcal{B} )\\</span>, it is <span>\\( 0 \leq \mathcal{B}(x_1, x_2, x_3) \leq C x_2. )\\</span>
-3.  If <span>\\( 0 \leq \lambda \leq x_1 )\\</span>, then
+<ol>
+  <li>The domain of <span>\( \mathcal{B} )\</span> is the set <span>\( { (x_1, x_2, x_3) \in \mathbb{R}^3 \colon 0 \leq x_1 \leq 1, x_3^2 \leq x_2 }. )\</span></li>
+  <li>For each <span>\( (x_1,x_2,x_3) )\</span> in the domain of <span>\( \mathcal{B} )\</span>, it is <span>\( 0 \leq \mathcal{B}(x_1, x_2, x_3) \leq C x_2. )\</span></li>
+  <li>
+    <p>If <span>\( 0 \leq \lambda \leq x_1 )\</span>, then</p>
 
-    <span>\\( \mathcal{B}(x_1, x_2, x_3)\geq \lambda x_2^2 + \frac{1}{2} \big\{ \mathcal{B}(x_1^+, x_2^+, x_3^+) + \mathcal{B}(x_1^-, x_2^-, x_3^-)\big\} )\\</span>
+    <p><span>\( \mathcal{B}(x_1, x_2, x_3)\geq \lambda x_2^2 + \frac{1}{2} \big{ \mathcal{B}(x_1^+, x_2^+, x_3^+) + \mathcal{B}(x_1^-, x_2^-, x_3^-)\big} )\</span></p>
 
-    whenever the triples <span>\\( (x_1,x_2,x_3) )\\</span>, <span>\\( (x_1^+,x_2^+,x_3^+) )\\</span> and <span>\\( (x_1^-,x_2^-,x_3^-) )\\</span> belong to the domain and
+    <p>whenever the triples <span>\( (x_1,x_2,x_3) )\</span>, <span>\( (x_1^+,x_2^+,x_3^+) )\</span> and <span>\( (x_1^-,x_2^-,x_3^-) )\</span> belong to the domain and</p>
 
-    * <span>\\( x_1 = \frac{1}{2}(x_1^+ + x_1^-) + \lambda )\\</span>,
-    * <span>\\( x_2 = \frac{1}{2}(x_2^+ + x_2^-) )\\</span>,
-    * <span>\\( x_3 = \frac{1}{2}(x_3^+ + x_3^-). )\\</span>
+    <ul>
+      <li><span>\( x_1 = \frac{1}{2}(x_1^+ + x_1^-) + \lambda )\</span>,</li>
+      <li><span>\( x_2 = \frac{1}{2}(x_2^+ + x_2^-) )\</span>,</li>
+      <li><span>\( x_3 = \frac{1}{2}(x_3^+ + x_3^-). )\</span></li>
+    </ul>
+  </li>
+</ol>
 
-The entire machine can be run backward: if we have any function <span>\\( \mathcal{B} )\\</span> of three real variables that satisfies properties 1—3, the proof of the Theorem follows immediately. The key property 3 is not very pleasant to verify.  Fortunately, this condition can be replaced by "infinitesimal" conditions (conditions on derivatives), which are easier to check:  If <span>\\( x_1 = \frac{1}{2}(x_1^+ + x_1^-) )\\</span>, <span>\\( x_2 = \frac{1}{2}(x_2^+ + x_2^-) )\\</span> and <span>\\( x_3 = \frac{1}{2}(x_3^+ + x_3^-) )\\</span>, and all triples are in the domain of <span>\\( \mathcal{B} )\\</span>, then the key property 3 implies the concavity of <span>\\( \mathcal{B} )\\</span>:
+<p>The entire machine can be run backward: if we have any function <span>\( \mathcal{B} )\</span> of three real variables that satisfies properties 1—3, the proof of the Theorem follows immediately. The key property 3 is not very pleasant to verify.  Fortunately, this condition can be replaced by “infinitesimal” conditions (conditions on derivatives), which are easier to check:  If <span>\( x_1 = \frac{1}{2}(x_1^+ + x_1^-) )\</span>, <span>\( x_2 = \frac{1}{2}(x_2^+ + x_2^-) )\</span> and <span>\( x_3 = \frac{1}{2}(x_3^+ + x_3^-) )\</span>, and all triples are in the domain of <span>\( \mathcal{B} )\</span>, then the key property 3 implies the concavity of <span>\( \mathcal{B} )\</span>:</p>
 
 <div>
   \begin{equation}
@@ -166,7 +172,7 @@ The entire machine can be run backward: if we have any function <span>\\( \mathc
  \end{equation}
 </div>
 
-and furthermore,
+<p>and furthermore,</p>
 
 <table style="border-width:0;" width="100%">
 <tbody>
@@ -177,14 +183,13 @@ and furthermore,
 </tbody>
 </table>
 
-Notice that condition 3 is equivalent to (eq3). The following function satisfies 1, 2 and (eq3), and thus the Theorem is proven for  <span>\\( C=4 )\\</span>.
+<p>Notice that condition 3 is equivalent to (eq3). The following function satisfies 1, 2 and (eq3), and thus the Theorem is proven for  <span>\( C=4 )\</span>.</p>
 
 <div>
   \begin{equation}
  \mathcal{B}(x_1, x_2, x_3) = 4\bigg( \displaystyle{x_2 - \frac{x_3^2}{1+x_1}}\bigg)
 \end{equation}
 </div>
-</blockquote>
 
 	</article>
 

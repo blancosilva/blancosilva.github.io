@@ -16,7 +16,6 @@ Copies of the original paper can be found at the authors' pages; e.g. [<a href="
 
 Let me illustrate the use of Bellman functions to solve a simple problem:
 
-<blockquote>
 
 > **Dyadic-<span>\\( \boldsymbol{L}_\mathbf{2}(\mathbb{R}) )\\</span> version of the Carleson Imbedding Theorem**
 >
