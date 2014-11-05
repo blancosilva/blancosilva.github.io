@@ -25,11 +25,12 @@ Let me illustrate the use of Bellman functions to solve a simple problem:
 >
 >Then, there is a constant <span>\\( C > 0 \\)</span> such that for any <span>\\( f \in L_2(\mathbb{R}) \\)</span>,
 >
-<div>
-  \begin{equation}
- \displaystyle{\sum_{ I \in \mathcal{D} } \mu_I \lvert \langle f \rangle_{I} \rvert^2 \leq C \lVert f \rVert_{L_2(\mathbb{R})}^2}
- \end{equation}
- \</div>
+><div>
+>  \begin{equation}
+> \displaystyle{\sum_{ I \in \mathcal{D} } \mu_I \lvert \langle f \rangle_{I} \rvert^2 \leq C \lVert f \rVert_{L_2(\mathbb{R})}^2}
+> \end{equation}
+> </div>
+>
 
 Fix a dyadic interval <span>\\( I \in \mathcal{D} \\)</span>, and a vector <span>\\( (x_1, x_2, x_3) \in \mathbb{R}^3 \\)</span>.  Consider all families <span>\\( \{\mu_I \colon I \in \mathcal{D} \} \\)</span> satisfying the Carleson condition
 
