@@ -6,8 +6,8 @@
 </description>
     <link>http://blancosilva.github.io//</link>
     <atom:link href="http://blancosilva.github.io//feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Thu, 06 Nov 2014 00:40:21 -0500</pubDate>
-    <lastBuildDate>Thu, 06 Nov 2014 00:40:21 -0500</lastBuildDate>
+    <pubDate>Thu, 06 Nov 2014 00:47:21 -0500</pubDate>
+    <lastBuildDate>Thu, 06 Nov 2014 00:47:21 -0500</lastBuildDate>
     <generator>Jekyll v2.4.0</generator>
     
       <item>
@@ -22,29 +22,30 @@
 
 &lt;p&gt;After three steps of this process we already observe an elegant geometrical marvel.&lt;/p&gt;
 
-&lt;p style=&quot;text-align:center;&quot;&gt;&lt;img src=&quot;https://farm7.staticflickr.com/6227/6315682009_3f42068116_n_d.jpg&quot; style=&quot;width:75%; border:2px solid black;&quot; /&gt;&lt;br /&gt;(Copyright)  All rights reserved by &lt;a href=&quot;https://www.flickr.com/photos/rougeux/&quot;&gt;Nick Rogeux&lt;/a&gt;&lt;/p&gt;
+&lt;p style=&quot;text-align:center;&quot;&gt;&lt;img src=&quot;https://farm7.staticflickr.com/6227/6315682009_3f42068116_n_d.jpg&quot; style=&quot;width:75%; border:2px solid black;&quot; /&gt;&lt;br /&gt;&lt;a href=&quot;https://www.flickr.com/photos/rougeux/sets/72157621702780335/&quot;&gt;Level 3 Menger Sponge folded with &lt;em&gt;Post-its&lt;/em&gt;&lt;/a&gt;&lt;br /&gt;(Copyright)  All rights reserved by &lt;a href=&quot;https://www.flickr.com/photos/rougeux/&quot;&gt;Nick Rogeux&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;This object was first described by Karl Menger in the 1920’s, while a student at the University of Vienna.  After the end of World War II, Menger accepted a position at the Illinois Institute of Technology, where he contributed to beautiful mathematics in the fields of probabilistic and hyperbolic geometry.&lt;/p&gt;
 
-&lt;p&gt;In the early 1990’s, Dr. Jeannine Mosley—an electrical engineer from MIT, with vast experience in computer graphics designing 3D modeling software—had the brilliant idea of creating the level 3 of this sponge by paper folding.  The building blocks of this monster being simple cubes, that one could carefully craft from six light-yet-sturdy small pieces of paper.  All these pieces needed to have exactly the same shape and size, naturally.  For ten years, from 1995 to 2005, she patiently coordinated a very ambitious project where several teams carefully folded, linked, and assembled tens of thousands of business cards into more and more complex shapes.  The result was briefly on display in June 2005 at the Origami USA annual convention in Manhattan.  &lt;/p&gt;
+&lt;p&gt;In the early 1990’s, Dr. Jeannine Mosley—an electrical engineer from MIT, with vast experience in computer graphics designing 3D modeling software—had the brilliant idea of creating the level 3 of this sponge by paper folding.  The building blocks of this monster being simple cubes, that one could carefully craft from six light-yet-sturdy small pieces of paper.  All these pieces needed to have exactly the same shape and size, naturally.  For ten years, from 1995 to 2005, she patiently coordinated a very ambitious project where several teams carefully folded, linked, and assembled tens of thousands of business cards into more and more complex shapes.  The result was briefly on display in June 2005 at the Origami USA annual convention in Manhattan.&lt;/p&gt;
 
-&lt;p&gt;To give you an idea of the magnitude of this enterprise—and at the same time pose a fun puzzle if you are mathematically inclined:&lt;/p&gt;
+&lt;p style=&quot;text-align:center;&quot;&gt;&lt;img src=&quot;http://www.theiff.org/images/paper/mosleypic2.jpg&quot; style=&quot;border:2px solid black; width:75%;&quot; /&gt;&lt;br /&gt;Dr. Mosley, in front of her &lt;em&gt;Business Card Menger Sponge&lt;br /&gt;Photo by Ravi Apte
 
-&lt;ul&gt;
-  &lt;li&gt;A small cube formed with six business cards measures \( 6’’ \times 6’’ \times 6’’ \).&lt;/li&gt;
-  &lt;li&gt;A level-2 Menger sponge measures \( 18’’ \times 18’’ \times 18’’ \).  How many cards are necessary for this level?&lt;/li&gt;
-  &lt;li&gt;The level-3 Menger sponge measures \( 54’’ \times 54’’ \times 54’’ \).  If 500 business cards weight 18 ounces, how heavy will this object be at the end?&lt;/li&gt;
-  &lt;li&gt;This one for the engineers and architects out there: This construction barely supports its own weight.  It does thanks to the &lt;em&gt;sparsity&lt;/em&gt; of the cubes.  Think of the different horizontal layers, and the different columns.   Which layers and columns are more dense?  What is the weight of the heaviest columns?  Can a single cube carry such weight?&lt;/li&gt;
-  &lt;li&gt;And for an A+:  How heavy would a level-4 sponge be?  Will it be possible to construct such an animal with business cards?&lt;/li&gt;
-&lt;/ul&gt;
+To give you an idea of the magnitude of this enterprise---and at the same time pose a fun puzzle if you are mathematically inclined:
+
+* A small cube formed with six business cards measures \\( 6&#39;&#39; \times 6&#39;&#39; \times 6&#39;&#39; \\).
+* A level-2 Menger sponge measures \\( 18&#39;&#39; \times 18&#39;&#39; \times 18&#39;&#39; \\).  How many cards are necessary for this level?
+* The level-3 Menger sponge measures \\( 54&#39;&#39; \times 54&#39;&#39; \times 54&#39;&#39; \\).  If 500 business cards weight 18 ounces, how heavy will this object be at the end?
+* This one for the engineers and architects out there: This construction barely supports its own weight.  It does thanks to the _sparsity_ of the cubes.  Think of the different horizontal layers, and the different columns.   Which layers and columns are more dense?  What is the weight of the heaviest columns?  Can a single cube carry such weight?
+* And for an A+:  How heavy would a level-4 sponge be?  Will it be possible to construct such an animal with business cards?
 
 &lt;hr /&gt;
 
-&lt;p&gt;There are currently 13 more level-3 Menger Sponges in the United States.  Another 9 in Europe, one in Asia, and one more in New Zealand.  &lt;/p&gt;
+There are currently 13 more level-3 Menger Sponges in the United States.  Another 9 in Europe, one in Asia, and one more in New Zealand.  
 
-&lt;p&gt;We, at the Department of Mathematics of the University of South Carolina, are determined to build the next one.  We will start slow: First, taking advantage of our annual &lt;a href=&quot;http://www.math.sc.edu/contest&quot;&gt;USC High School Math Contest&lt;/a&gt; on January 31st, 2015, we will recruit the help of all high school students, instructors and relatives in attendance.  We plan to build that day as many level 2 sponges as we can afford.  At a later date, we mean to organize a larger group of volunteers, so we can assemble the final level 3 sponge.&lt;/p&gt;
+We, at the Department of Mathematics of the University of South Carolina, are determined to build the next one.  We will start slow: First, taking advantage of our annual &lt;a href=&quot;http://www.math.sc.edu/contest&quot;&gt;USC High School Math Contest&lt;/a&gt; on January 31st, 2015, we will recruit the help of all high school students, instructors and relatives in attendance.  We plan to build that day as many level 2 sponges as we can afford.  At a later date, we mean to organize a larger group of volunteers, so we can assemble the final level 3 sponge.
 
-&lt;p&gt;But success of this enterprise starts, obviously, by gathering enough business cards.  Just in one week we have been able to gather enough material for &lt;em&gt;almost&lt;/em&gt; one level 2 Menger sponge.  Where are we going to obtain all those 48,000+ cards?  Do you have any you could spare?  We would love to get our hands on them.  Bring them to room 411 in LeConte or, if it is easier for you, e-mail me at &lt;a href=&quot;mailto:blanco@math.sc.edu&quot;&gt;&lt;tt&gt;blanco at math dot sc dot edu&lt;/tt&gt;&lt;/a&gt; so I can arrange for pick-up.&lt;/p&gt;
+But success of this enterprise starts, obviously, by gathering enough business cards.  Just in one week we have been able to gather enough material for _almost_ one level 2 Menger sponge.  Where are we going to obtain all those 48,000+ cards?  Do you have any you could spare?  We would love to get our hands on them.  Bring them to room 411 in LeConte or, if it is easier for you, e-mail me at &lt;a href=&quot;mailto:blanco@math.sc.edu&quot;&gt;&lt;tt&gt;blanco at math dot sc dot edu&lt;/tt&gt;&lt;/a&gt; so I can arrange for pick-up.
+&lt;/em&gt;&lt;/p&gt;
 </description>
         <pubDate>Wed, 05 Nov 2014 00:00:00 -0500</pubDate>
         <link>http://blancosilva.github.io//post/2014/11/05/Menger-Sponges.html</link>
