@@ -6,8 +6,8 @@
 </description>
     <link>http://blancosilva.github.io//</link>
     <atom:link href="http://blancosilva.github.io//feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Thu, 06 Nov 2014 10:34:54 -0500</pubDate>
-    <lastBuildDate>Thu, 06 Nov 2014 10:34:54 -0500</lastBuildDate>
+    <pubDate>Thu, 06 Nov 2014 10:40:41 -0500</pubDate>
+    <lastBuildDate>Thu, 06 Nov 2014 10:40:41 -0500</lastBuildDate>
     <generator>Jekyll v2.4.0</generator>
     
       <item>
@@ -33,7 +33,7 @@
 &lt;p&gt;To give you an idea of the magnitude of this enterprise—and at the same time pose a fun puzzle if you are mathematically inclined:&lt;/p&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;A small cube formed with six business cards measures \( 6’’ \times 6’’ \times 6’’ \).&lt;/li&gt;
+  &lt;li&gt;A level-1 Menger sponge measures \( 6’’ \times 6’’ \times 6’’ \).&lt;/li&gt;
   &lt;li&gt;A level-2 Menger sponge measures \( 18’’ \times 18’’ \times 18’’ \).  How many cards are necessary for this level?&lt;/li&gt;
   &lt;li&gt;The level-3 Menger sponge measures \( 54’’ \times 54’’ \times 54’’ \).  If 500 business cards weight 18 ounces, how heavy will this object be at the end?&lt;/li&gt;
   &lt;li&gt;This one for the engineers and architects out there: This construction barely supports its own weight.  It does so thanks to the &lt;em&gt;sparsity&lt;/em&gt; of the cubes.  Think of the different horizontal layers, and the different columns.   Which layers and columns are more densely packed?  What is the weight of the heaviest columns?  Can a single cube carry such weight?&lt;/li&gt;

@@ -26,7 +26,7 @@ In the early 1990's, Dr. Jeannine Mosley---an electrical engineer from MIT, with
 
 To give you an idea of the magnitude of this enterprise---and at the same time pose a fun puzzle if you are mathematically inclined:
 
-* A small cube formed with six business cards measures \\( 6'' \times 6'' \times 6'' \\).
+* A level-1 Menger sponge measures \\( 6'' \times 6'' \times 6'' \\).
 * A level-2 Menger sponge measures \\( 18'' \times 18'' \times 18'' \\).  How many cards are necessary for this level?
 * The level-3 Menger sponge measures \\( 54'' \times 54'' \times 54'' \\).  If 500 business cards weight 18 ounces, how heavy will this object be at the end?
 * This one for the engineers and architects out there: This construction barely supports its own weight.  It does so thanks to the _sparsity_ of the cubes.  Think of the different horizontal layers, and the different columns.   Which layers and columns are more densely packed?  What is the weight of the heaviest columns?  Can a single cube carry such weight?
