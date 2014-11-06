@@ -32,13 +32,13 @@ To give you an idea of the magnitude of this enterprise---and at the same time p
 * This one for the engineers and architects out there: This construction barely supports its own weight.  It does thanks to the _sparsity_ of the cubes.  Think of the different horizontal layers, and the different columns.   Which layers and columns are more dense?  What is the weight of the heaviest columns?  Can a single cube carry such weight?
 * And for an A+:  How heavy would a level-4 sponge be?  Will it be possible to construct such an animal with business cards?
 
-<hr />
-
 There are currently 13 more level-3 Menger Sponges in the United States.  Another 9 in Europe, one in Asia, and one more in New Zealand.  
 
 <p style="text-align:center;"><img src="https://farm4.staticflickr.com/3942/15537012918_fe73ee1412_c_d.jpg" style="width:75%; border:solid 2px black;"></a></p>
 
-We, at the Department of Mathematics of the University of South Carolina, **are determined to build the next one**.  We will start slow: First, taking advantage of our annual <a href="http://www.math.sc.edu/contest">USC High School Math Contest</a> on January 31st, 2015, we will recruit the help of all high school students, instructors and relatives in attendance.  We plan to build that day as many level 2 sponges as we can afford.  At a later date, we mean to organize a larger group of volunteers, so we can assemble the final level 3 sponge.
+### We, at the Department of Mathematics of the University of South Carolina, are determined to build the next one.
+
+We will start slow: First, taking advantage of our annual <a href="http://www.math.sc.edu/contest">USC High School Math Contest</a> on January 31st, 2015, we will recruit the help of all high school students, instructors and relatives in attendance.  We plan to build that day as many level 2 sponges as we can afford.  At a later date, we mean to organize a larger group of volunteers, so we can assemble the final level 3 sponge.
 
 But success of this enterprise starts, obviously, by collecting enough business cards.  Just in one week we have been able to gather enough material for _almost_ one level 2 Menger sponge.  Where are we going to obtain all those remaining 48,000+ cards?  Do you have any you could spare?  We would love to get our hands on them.  Bring them to room 411 in LeConte or, if it is easier for you, e-mail us at [<a href="mailto:blanco@math.sc.edu"><tt>blanco at math dot sc dot edu</tt></a>] so we can arrange for pick-up.
 
