@@ -34,7 +34,7 @@ To give you an idea of the magnitude of this enterprise---and at the same time p
 
 There are currently 13 more level-3 Menger Sponges in the United States alone.  There are other 9 in Europe, one in Asia, and one more in New Zealand.  The following (static) Google map shows their locations as of November 6th, 2014.
 
-<p style="text-align:center;"><img src="https://farm4.staticflickr.com/3942/15537012918_fe73ee1412_c_d.jpg" style="width:75%; border:solid 2px black;"></a></p>
+<p style="text-align:center;"><img src="https://farm4.staticflickr.com/3955/15722547185_f32cd314a4_z_d.jpg" style="width:75%; border:solid 2px black;"></a></p>
 
 ### We, at the Department of Mathematics of the University of South Carolina, are determined to build the next one.
 
