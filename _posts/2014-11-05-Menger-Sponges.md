@@ -36,6 +36,20 @@ To give you an idea of the magnitude of this enterprise---and at the same time p
 
 There are currently 13 more level-3 Menger Sponges in the United States.  Another 9 in Europe, one in Asia, and one more in New Zealand.  
 
-We, at the Department of Mathematics of the University of South Carolina, are determined to build the next one.  We will start slow: First, taking advantage of our annual <a href="http://www.math.sc.edu/contest">USC High School Math Contest</a> on January 31st, 2015, we will recruit the help of all high school students, instructors and relatives in attendance.  We plan to build that day as many level 2 sponges as we can afford.  At a later date, we mean to organize a larger group of volunteers, so we can assemble the final level 3 sponge.
+<div id="menger-map" class="map-container">
+        <!-- Google map will be rendered here, do not delete div holder. -->
+    </div>
+
+    <div class="map-key group">
+        <h3>Key</h3>
+        <ul>
+        	<li><img src="images/map-pins/lvl-0.png" alt="Level 0" /> Level 0 build site</li>
+           <li><img src="images/map-pins/default.png" alt="Level 1" /> Level 1 build site</li>
+            <li><img src="images/map-pins/lvl-2.png" alt="Level 2" /> Level 2 build site</li>
+            <li><img src="images/map-pins/lvl-3.png" alt="Level 3" /> Level 3 build site</li>
+        </ul>
+    </div>
+
+We, at the Department of Mathematics of the University of South Carolina, **are determined to build the next one**.  We will start slow: First, taking advantage of our annual <a href="http://www.math.sc.edu/contest">USC High School Math Contest</a> on January 31st, 2015, we will recruit the help of all high school students, instructors and relatives in attendance.  We plan to build that day as many level 2 sponges as we can afford.  At a later date, we mean to organize a larger group of volunteers, so we can assemble the final level 3 sponge.
 
 But success of this enterprise starts, obviously, by gathering enough business cards.  Just in one week we have been able to gather enough material for _almost_ one level 2 Menger sponge.  Where are we going to obtain all those 48,000+ cards?  Do you have any you could spare?  We would love to get our hands on them.  Bring them to room 411 in LeConte or, if it is easier for you, e-mail me at <a href="mailto:blanco@math.sc.edu"><tt>blanco at math dot sc dot edu</tt></a> so I can arrange for pick-up.

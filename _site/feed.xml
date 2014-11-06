@@ -6,8 +6,8 @@
 </description>
     <link>http://blancosilva.github.io//</link>
     <atom:link href="http://blancosilva.github.io//feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Thu, 06 Nov 2014 00:48:35 -0500</pubDate>
-    <lastBuildDate>Thu, 06 Nov 2014 00:48:35 -0500</lastBuildDate>
+    <pubDate>Thu, 06 Nov 2014 00:50:39 -0500</pubDate>
+    <lastBuildDate>Thu, 06 Nov 2014 00:50:39 -0500</lastBuildDate>
     <generator>Jekyll v2.4.0</generator>
     
       <item>
@@ -44,7 +44,22 @@
 
 &lt;p&gt;There are currently 13 more level-3 Menger Sponges in the United States.  Another 9 in Europe, one in Asia, and one more in New Zealand.  &lt;/p&gt;
 
-&lt;p&gt;We, at the Department of Mathematics of the University of South Carolina, are determined to build the next one.  We will start slow: First, taking advantage of our annual &lt;a href=&quot;http://www.math.sc.edu/contest&quot;&gt;USC High School Math Contest&lt;/a&gt; on January 31st, 2015, we will recruit the help of all high school students, instructors and relatives in attendance.  We plan to build that day as many level 2 sponges as we can afford.  At a later date, we mean to organize a larger group of volunteers, so we can assemble the final level 3 sponge.&lt;/p&gt;
+&lt;div id=&quot;menger-map&quot; class=&quot;map-container&quot;&gt;
+        &lt;!-- Google map will be rendered here, do not delete div holder. --&gt;
+    &lt;/div&gt;
+
+&lt;pre&gt;&lt;code&gt;&amp;lt;div class=&quot;map-key group&quot;&amp;gt;
+    &amp;lt;h3&amp;gt;Key&amp;lt;/h3&amp;gt;
+    &amp;lt;ul&amp;gt;
+    	&amp;lt;li&amp;gt;&amp;lt;img src=&quot;images/map-pins/lvl-0.png&quot; alt=&quot;Level 0&quot; /&amp;gt; Level 0 build site&amp;lt;/li&amp;gt;
+       &amp;lt;li&amp;gt;&amp;lt;img src=&quot;images/map-pins/default.png&quot; alt=&quot;Level 1&quot; /&amp;gt; Level 1 build site&amp;lt;/li&amp;gt;
+        &amp;lt;li&amp;gt;&amp;lt;img src=&quot;images/map-pins/lvl-2.png&quot; alt=&quot;Level 2&quot; /&amp;gt; Level 2 build site&amp;lt;/li&amp;gt;
+        &amp;lt;li&amp;gt;&amp;lt;img src=&quot;images/map-pins/lvl-3.png&quot; alt=&quot;Level 3&quot; /&amp;gt; Level 3 build site&amp;lt;/li&amp;gt;
+    &amp;lt;/ul&amp;gt;
+&amp;lt;/div&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;We, at the Department of Mathematics of the University of South Carolina, &lt;strong&gt;are determined to build the next one&lt;/strong&gt;.  We will start slow: First, taking advantage of our annual &lt;a href=&quot;http://www.math.sc.edu/contest&quot;&gt;USC High School Math Contest&lt;/a&gt; on January 31st, 2015, we will recruit the help of all high school students, instructors and relatives in attendance.  We plan to build that day as many level 2 sponges as we can afford.  At a later date, we mean to organize a larger group of volunteers, so we can assemble the final level 3 sponge.&lt;/p&gt;
 
 &lt;p&gt;But success of this enterprise starts, obviously, by gathering enough business cards.  Just in one week we have been able to gather enough material for &lt;em&gt;almost&lt;/em&gt; one level 2 Menger sponge.  Where are we going to obtain all those 48,000+ cards?  Do you have any you could spare?  We would love to get our hands on them.  Bring them to room 411 in LeConte or, if it is easier for you, e-mail me at &lt;a href=&quot;mailto:blanco@math.sc.edu&quot;&gt;&lt;tt&gt;blanco at math dot sc dot edu&lt;/tt&gt;&lt;/a&gt; so I can arrange for pick-up.&lt;/p&gt;
 </description>
