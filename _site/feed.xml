@@ -6,8 +6,8 @@
 </description>
     <link>http://blancosilva.github.io//</link>
     <atom:link href="http://blancosilva.github.io//feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Thu, 06 Nov 2014 00:16:21 -0500</pubDate>
-    <lastBuildDate>Thu, 06 Nov 2014 00:16:21 -0500</lastBuildDate>
+    <pubDate>Thu, 06 Nov 2014 00:17:33 -0500</pubDate>
+    <lastBuildDate>Thu, 06 Nov 2014 00:17:33 -0500</lastBuildDate>
     <generator>Jekyll v2.4.0</generator>
     
       <item>
@@ -33,7 +33,7 @@
 &lt;ul&gt;
   &lt;li&gt;A small cube formed with six business cards measures \( 6’’ \times 6’’ \times 6’’ \).&lt;/li&gt;
   &lt;li&gt;A level-2 Menger sponge measures \( 18’’ \times 18’’ \times 18’’ \).  How many cards are necessary for this level?&lt;/li&gt;
-  &lt;li&gt;The level-3 Menger sponge measures \( 54’’ \times 54’’ \times 54’’ \).  If 500 business cards weight 18 ounces, how heavy will be this object at the end?&lt;/li&gt;
+  &lt;li&gt;The level-3 Menger sponge measures \( 54’’ \times 54’’ \times 54’’ \).  If 500 business cards weight 18 ounces, how heavy will this object be at the end?&lt;/li&gt;
   &lt;li&gt;This one for the engineers and architects out there: This construction barely supports its own weight.  It does thanks to the &lt;em&gt;sparsity&lt;/em&gt; of the cubes.  Think of the different horizontal layers, and the different columns.   Which layers and columns are more dense?  What is the weight of the heaviest columns?  Can a single cube carry such weight?&lt;/li&gt;
   &lt;li&gt;And for A+.  How heavy would a level-4 sponge be, and will it be possible to construct such an animal with business cards?&lt;/li&gt;
 &lt;/ul&gt;

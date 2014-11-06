@@ -25,6 +25,6 @@ To give you an idea of the magnitude of this enterprise---and at the same time p
 
 * A small cube formed with six business cards measures \\( 6'' \times 6'' \times 6'' \\).
 * A level-2 Menger sponge measures \\( 18'' \times 18'' \times 18'' \\).  How many cards are necessary for this level?
-* The level-3 Menger sponge measures \\( 54'' \times 54'' \times 54'' \\).  If 500 business cards weight 18 ounces, how heavy will be this object at the end?
+* The level-3 Menger sponge measures \\( 54'' \times 54'' \times 54'' \\).  If 500 business cards weight 18 ounces, how heavy will this object be at the end?
 * This one for the engineers and architects out there: This construction barely supports its own weight.  It does thanks to the _sparsity_ of the cubes.  Think of the different horizontal layers, and the different columns.   Which layers and columns are more dense?  What is the weight of the heaviest columns?  Can a single cube carry such weight?
 * And for A+.  How heavy would a level-4 sponge be, and will it be possible to construct such an animal with business cards?
