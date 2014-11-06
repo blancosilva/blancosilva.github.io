@@ -6,9 +6,37 @@
 </description>
     <link>http://blancosilva.github.io//</link>
     <atom:link href="http://blancosilva.github.io//feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Wed, 05 Nov 2014 21:00:37 -0500</pubDate>
-    <lastBuildDate>Wed, 05 Nov 2014 21:00:37 -0500</lastBuildDate>
+    <pubDate>Wed, 05 Nov 2014 23:50:42 -0500</pubDate>
+    <lastBuildDate>Wed, 05 Nov 2014 23:50:42 -0500</lastBuildDate>
     <generator>Jekyll v2.4.0</generator>
+    
+      <item>
+        <title>Menger Sponges</title>
+        <description>&lt;p&gt;I know it is hard to grasp, but it is a &lt;em&gt;mathematically viable&lt;/em&gt;: there are solids that require an infinite amount of material to construct, yet they have no volume!  Of course, the obvious infinity surface area make it impossible to actually construct these objects physically, but it is feasible to come up with reasonable approximations.  One approximation to such a construction—the so-called Menger sponge—goes like this:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Start with a big cube.  Visualize this cube as \( 3 \times 3 \times = 27 \) smaller cubes with the same shape and size—like a Rubik’s cube!  Remove now the small center cube of each side, and the small cube at the center.  We are left with a structure consisting on 20 cubes: those at the corners and the &lt;em&gt;edge cubes&lt;/em&gt; connecting them.&lt;/li&gt;
+  &lt;li&gt;Repeat this process on each of these 20 cubes.  We are left with 400 smaller cubes.&lt;/li&gt;
+  &lt;li&gt;Repeat again (8,000 cubes), and again (160,000 cubes), and again (3,200,000 cubes), …&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;After three steps of this process we already observe an elegant geometrical marvel.&lt;/p&gt;
+
+&lt;p style=&quot;text-align:center;&quot;&gt;&lt;img src=&quot;https://farm7.staticflickr.com/6227/6315682009_3f42068116_n_d.jpg&quot; style=&quot;width:75%; border:2px solid black;&quot; /&gt;&lt;br /&gt;(Copyright)  All rights reserved by &lt;a href=&quot;https://www.flickr.com/photos/rougeux/&quot;&gt;Nick Rogeux&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;This object was first described by Karl Menger in the 1920’s, while a student at the University of Vienna.  After the end of World War II, Menger accepted a position at the Illinois Institute of Technology, where he contributed to beautiful mathematics in the fields of probabilistic and hyperbolic geometry.&lt;/p&gt;
+
+&lt;p&gt;In the early 1990’s Dr. Jeannine Mosley—an electrical engineer from MIT, with bast experience in computer graphics designing 3D modeling software—had the brilliant idea of creating the level 3 of this sponge by paper folding.  The building blocks of this monster being simple cubes, that one could carefully assemble from six pieces of sturdy-enough pieces of paper.  All these pieces needed to have exactly the same shape and size, naturally.  For ten years, she patiently coordinated a very ambitious project where several teams carefully folded thousands of business cards into more and more complex shapes.&lt;/p&gt;
+
+</description>
+        <pubDate>Wed, 05 Nov 2014 00:00:00 -0500</pubDate>
+        <link>http://blancosilva.github.io//post/2014/11/05/Menger-Sponges.html</link>
+        <guid isPermaLink="true">http://blancosilva.github.io//post/2014/11/05/Menger-Sponges.html</guid>
+        
+        
+        <category>post</category>
+        
+      </item>
     
       <item>
         <title>Searching for the SS Central America</title>
@@ -34318,243 +34346,6 @@ Astro: Wonderful, I found it in 4 attempts!&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
         
         
         <category>post</category>
-        
-      </item>
-    
-      <item>
-        <title>MA241—Spring 2014</title>
-        <description>&lt;h2&gt;Instructor&lt;/h2&gt;
-&lt;p&gt;Francisco Blanco-Silva&lt;br /&gt;
-&lt;strong&gt;e-mail:&lt;/strong&gt; &lt;tt&gt;&lt;a href=&quot;mailto:blanco@math.sc.edu&quot;&gt;blanco at math dot sc dot edu&lt;/a&gt;&lt;/tt&gt;&lt;br /&gt;
-&lt;strong&gt;office:&lt;/strong&gt; LeConte 307&lt;/p&gt;
-&lt;h2&gt;Meeting Times and Office Hours&lt;/h2&gt;
-&lt;table style=&quot;margin-left:auto;margin-right:auto;font-family:courier;&quot;&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;strong&gt;Lectures&lt;/strong&gt;:&lt;/td&gt;
-&lt;td bgcolor=&quot;#bb9999&quot; style=&quot;text-align:right;&quot; colspan=&quot;2&quot;&gt;&lt;strong&gt;MWF&lt;/strong&gt;&lt;/td&gt;
-&lt;td bgcolor=&quot;#bb9999&quot; style=&quot;text-align:right;&quot;&gt;10:50 AM - 11:40 AM&lt;/td&gt;
-&lt;td bgcolor=&quot;#bb9999&quot; style=&quot;text-align:right;&quot;&gt;LeConte 112&lt;/td&gt;
-&lt;/tr&gt;
-&lt;td&gt;&lt;strong&gt;Office Hours&lt;/strong&gt;:&lt;/td&gt;
-&lt;td bgcolor=&quot;#fedebe&quot; style=&quot;text-align:right;&quot; colspan=&quot;2&quot;&gt;&lt;strong&gt;MWF&lt;/strong&gt;&lt;/td&gt;
-&lt;td bgcolor=&quot;#fedebe&quot; style=&quot;text-align:right;&quot;&gt;9:30 AM -10:45 AM&lt;/td&gt;
-&lt;td style=&quot;text-align:right;&quot; bgcolor=&quot;#fedebe&quot;&gt;LeConte 307&lt;/td&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-&lt;h2&gt;Important deadlines you need to know&lt;/h2&gt;
-&lt;p style=&quot;text-align:justify;&quot;&gt;The semester begins Monday, January 13&lt;sup&gt;rd&lt;/sup&gt;, and ends Monday, April 28&lt;sup&gt;th&lt;/sup&gt;.  The last day to obtain a &quot;W&quot; grade or to elect a pass/fail grade is Monday, March 3&lt;sup&gt;rd&lt;/sup&gt;. The first day in which a &quot;WF&quot; grade is assigned is therefore Tuesday, March 4&lt;sup&gt;th&lt;/sup&gt;.&lt;/p&gt;
-&lt;p&gt;&lt;/p&gt;
-&lt;h2&gt;Prerequisites&lt;/h2&gt;
-&lt;p style=&quot;text-align:justify;&quot;&gt;Qualifications through [&lt;a href=&quot;https://assess.math.sc.edu&quot;&gt;Placement&lt;/a&gt;] or a grade of &lt;strong&gt;C&lt;/strong&gt; or better in MATH 142&lt;/p&gt;
-&lt;h2&gt;Text&lt;/h2&gt;
-&lt;p style=&quot;text-align:justify;&quot;&gt;&lt;em&gt;Calculus. Early Transcendentals&lt;/em&gt; by James Stewart. &lt;strong&gt;Thompson Brooks/Cole&lt;/strong&gt; 2008 (sixth edition)&lt;/p&gt;
-&lt;table style=&quot;margin-left:auto;margin-right:auto;border:0 white;&quot;&gt;
-&lt;tr&gt;
-&lt;td style=&quot;text-align:center;border:0 white;&quot;&gt;
-&lt;a href=&quot;http://www.amazon.com/gp/product/0495011665/ref=as_li_tf_il?ie=UTF8&amp;amp;tag=blancosilva-20&amp;amp;linkCode=as2&amp;amp;camp=217145&amp;amp;creative=399377&amp;amp;creativeASIN=0495011665&quot;&gt;&lt;img border=&quot;0&quot; src=&quot;assets/q?_encoding=UTF8&amp;amp;Format=_SL160_&amp;amp;ASIN=0495011665&amp;amp;MarketPlace=US&amp;amp;ID=AsinImage&amp;amp;WS=1&amp;amp;tag=blancosilva-20&amp;amp;ServiceVersion=20070822&quot; /&gt;&lt;/a&gt;&lt;img src=&quot;assets/ir?t=blancosilva-20&amp;amp;l=as2&amp;amp;o=1&amp;amp;a=0495011665&amp;amp;camp=217145&amp;amp;creative=399377&quot; width=&quot;1&quot; height=&quot;1&quot; border=&quot;0&quot; alt=&quot;&quot; style=&quot;border:none !important;margin:0!important;&quot; /&gt;&lt;/td&gt;
-&lt;td style=&quot;text-align:center;border:0 white;&quot;&gt;
-&lt;a href=&quot;http://www.amazon.com/gp/product/084004934X/ref=as_li_qf_sp_asin_il?ie=UTF8&amp;amp;camp=1789&amp;amp;creative=9325&amp;amp;creativeASIN=084004934X&amp;amp;linkCode=as2&amp;amp;tag=blancosilva-20&quot;&gt;&lt;img border=&quot;0&quot; src=&quot;assets/q?_encoding=UTF8&amp;amp;ASIN=084004934X&amp;amp;Format=_SL160_&amp;amp;ID=AsinImage&amp;amp;MarketPlace=US&amp;amp;ServiceVersion=20070822&amp;amp;WS=1&amp;amp;tag=blancosilva-20&quot; /&gt;&lt;/a&gt;&lt;img src=&quot;assets/ir?t=blancosilva-20&amp;amp;l=as2&amp;amp;o=1&amp;amp;a=084004934X&quot; width=&quot;1&quot; height=&quot;1&quot; border=&quot;0&quot; alt=&quot;&quot; style=&quot;border:none !important;margin:0!important;&quot; /&gt;
-&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td style=&quot;text-align:center;border:0 white;&quot;&gt;
-&lt;a href=&quot;http://www.amazon.com/gp/product/0495011665/ref=as_li_tf_tl?ie=UTF8&amp;amp;tag=blancosilva-20&amp;amp;linkCode=as2&amp;amp;camp=217145&amp;amp;creative=399377&amp;amp;creativeASIN=0495011665&quot;&gt;Calculus: Early Transcendentals&lt;/a&gt;&lt;img src=&quot;assets/ir?t=blancosilva-20&amp;amp;l=as2&amp;amp;o=1&amp;amp;a=0495011665&amp;amp;camp=217145&amp;amp;creative=399377&quot; width=&quot;1&quot; height=&quot;1&quot; border=&quot;0&quot; alt=&quot;&quot; style=&quot;border:none !important;margin:0!important;&quot; /&gt; &lt;img src=&quot;assets/ir?t=blancosilva-20&amp;amp;l=as2&amp;amp;o=1&amp;amp;a=0495011665&amp;amp;camp=217145&amp;amp;creative=399385&quot; width=&quot;1&quot; height=&quot;1&quot; border=&quot;0&quot; alt=&quot;&quot; style=&quot;border:none !important;margin:0!important;&quot; /&gt;&lt;/td&gt;
-&lt;td style=&quot;text-align:center;border:0 white;&quot;&gt;
-&lt;a href=&quot;http://www.amazon.com/gp/product/084004934X/ref=as_li_qf_sp_asin_tl?ie=UTF8&amp;amp;camp=1789&amp;amp;creative=9325&amp;amp;creativeASIN=084004934X&amp;amp;linkCode=as2&amp;amp;tag=blancosilva-20&quot;&gt;Student Solutions Manual&lt;/a&gt;&lt;img src=&quot;assets/ir?t=blancosilva-20&amp;amp;l=as2&amp;amp;o=1&amp;amp;a=084004934X&quot; width=&quot;1&quot; height=&quot;1&quot; border=&quot;0&quot; alt=&quot;&quot; style=&quot;border:none !important;margin:0!important;&quot; /&gt;
-&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/table&gt;
-&lt;p style=&quot;text-align:justify;&quot;&gt;You will be required to use Enhanced WebAssign, the online homework system that accompanies your textbook, for my course.  If you choose to purchase a hard copy of the textbook, you need to purchase the bundle that comes with the Enhanced WebAssign code.&lt;/p&gt;
-&lt;h2&gt;Course Structure and Grading Policies&lt;/h2&gt;
-&lt;p style=&quot;text-align:justify;&quot;&gt;Your final score for the course will be computed as follows:&lt;/p&gt;
-&lt;table style=&quot;text-align:center;border:1px solid black;margin-left:auto;margin-right:auto;padding:8px;&quot;&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;strong&gt;&lt;tt&gt;F = 0.15 * (HW + ME1 + ME2 + ME3) + 0.40 * FE&lt;/tt&gt;&lt;/strong&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/table&gt;
-&lt;ul&gt;
-&lt;li style=&quot;text-align:justify;&quot;&gt;&lt;strong&gt;Homework assignments&lt;/strong&gt;: (up to 100 points) 15% of the course grade.  Homework problems have been assigned for each lecture (you can see them at the end of this page, under &lt;strong&gt;Lesson Plan&lt;/strong&gt;). A selection of those problems are posted on &lt;a href=&quot;http://www.webassign.net&quot;&gt;WebAssign&lt;/a&gt; on the day of the lecture, and will be graded.  You will have until the end of the following day to complete the assignment (e.g. what is posted on Monday is due on Wednesday at 11:59PM; what is posted on Friday is due on Monday at 11:59PM)
-&lt;p style=&quot;text-align:justify;&quot;&gt;In order to sign up for your section of the course on WebAssign, visit &lt;a href=&quot;http://www.webassign.net&quot;&gt;www.webassign.net&lt;/a&gt; and click on [&lt;strong&gt;I have a Class Key&lt;/strong&gt;].  The class key for this section is&lt;/p&gt;
-&lt;p style=&quot;text-align:center;font-size:14pt;&quot;&gt;&lt;strong&gt;&lt;tt&gt;sc 5273 7839&lt;/tt&gt;&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;Click [&lt;a href=&quot;https://www.dropbox.com/s/xcw0gedtl2x2qhp/EWA%20SRI.doc&quot;&gt;here&lt;/a&gt;] to retrieve further registration instructions.&lt;/li&gt;
-&lt;li style=&quot;text-align:justify;&quot;&gt;&lt;strong&gt;Midterm Exams&lt;/strong&gt;: (up to 100 points each) 45% of the course grade (15% each midterm).  There will be three in-class midterm exams scheduled as follows:&lt;br /&gt;
-&lt;table style=&quot;margin-left:auto;margin-right:auto;&quot;&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td bgcolor=&quot;#bb9999&quot;&gt;Test #&lt;/td&gt;
-&lt;td bgcolor=&quot;#bb9999&quot;&gt;Date&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&quot;center&quot;&gt;&lt;strong&gt;1&lt;/strong&gt;&lt;/td&gt;
-&lt;td align=&quot;center&quot;&gt;Wed, Feb 05&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&quot;center&quot;&gt;&lt;strong&gt;2&lt;/strong&gt;&lt;/td&gt;
-&lt;td align=&quot;center&quot;&gt;Wed, Mar 07&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&quot;center&quot;&gt;&lt;strong&gt;3&lt;/strong&gt;&lt;/td&gt;
-&lt;td align=&quot;center&quot;&gt;Fri, Apr 11&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-&lt;p style=&quot;text-align:justify;&quot;&gt;No make-up tests will be given. Only medical, death in the family, religious or official USC business reasons are valid excuses for missing a test and must be verified by letter from a doctor, guardian or supervisor to the instructor.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li style=&quot;text-align:justify;&quot;&gt;&lt;strong&gt;Final Exam&lt;/strong&gt;: (up to 100 points) 40% of the course grade.  The final exam is scheduled on Monday, May 5&lt;sup&gt;th&lt;/sup&gt; from 9:00 AM to 11:30 AM.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;The course grade will be determined as follows:&lt;/p&gt;
-&lt;table style=&quot;margin-left:auto;margin-right:auto;&quot;&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td bgcolor=&quot;#bb9999&quot;&gt;GRADE&lt;/td&gt;
-&lt;td bgcolor=&quot;#bb9999&quot;&gt;RANGE&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&quot;center&quot;&gt;&lt;strong&gt;A&lt;/strong&gt;&lt;/td&gt;
-&lt;td&gt;90%-100%&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&quot;center&quot;&gt;&lt;strong&gt;B+&lt;/strong&gt;&lt;/td&gt;
-&lt;td&gt;85%-89%&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&quot;center&quot;&gt;&lt;strong&gt;B&lt;/strong&gt;&lt;/td&gt;
-&lt;td&gt;80%-84%&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&quot;center&quot;&gt;&lt;strong&gt;C+&lt;/strong&gt;&lt;/td&gt;
-&lt;td&gt;75%-79%&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&quot;center&quot;&gt;&lt;strong&gt;C&lt;/strong&gt;&lt;/td&gt;
-&lt;td&gt;70%-74%&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&quot;center&quot;&gt;&lt;strong&gt;D+&lt;/strong&gt;&lt;/td&gt;
-&lt;td&gt;65%-69%&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&quot;center&quot;&gt;&lt;strong&gt;D&lt;/strong&gt;&lt;/td&gt;
-&lt;td&gt;60%-64%&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&quot;center&quot;&gt;&lt;strong&gt;F&lt;/strong&gt;&lt;/td&gt;
-&lt;td&gt;below 60%&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-&lt;h2&gt;Further Information&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li style=&quot;text-align:justify;&quot;&gt;Remember to change your e-mail address on Blackboard if necessary [&lt;a href=&quot;http://blackboard.sc.edu/&quot;&gt;blackboard.sc.edu&lt;/a&gt;]&lt;/li&gt;
-&lt;li style=&quot;text-align:justify;&quot;&gt;&lt;strong&gt;ADA&lt;/strong&gt;: If you have special needs as addressed by the &lt;em&gt;Americans with Dissabilities Act&lt;/em&gt; and need any assistance, please notify the instructor immediately.&lt;/li&gt;
-&lt;li style=&quot;text-align:justify;&quot;&gt;&lt;strong&gt;Math Tutoring Center:&lt;/strong&gt; The Math Tutoring Center is a free tutoring service for MATH 111, 115, 122, 141, 142, 170, 221, 222, and 241. The center also maintains a list of private tutors for math and statistics. The center is located in LeConte, room 105, and the schedule is available at the Department of Mathematics website (&lt;a href=&quot;http://www.math.sc.edu&quot;&gt;www.math.sc.edu&lt;/a&gt;). No appointment is necessary.&lt;/li&gt;
-&lt;li style=&quot;text-align:justify;&quot;&gt;&lt;strong&gt;Peer Tutoring:&lt;/strong&gt; Tutoring is available for this course to assist you in better understanding the course material. The Peer Tutoring Program at the Student Success Center provides free peer-facilitated study sessions led by qualified and trained undergraduate tutors who have previously taken and excelled in this course. Sessions are open to all students who want to improve their understanding of the material, as well as their grades.  Tutoring is offered Sunday 6-10pm and Monday through Thursday 2-9pm.  All tutoring sessions will take place on the Mezzanine Level of the Thomas Copper Library unless otherwise noted.  Please visit &lt;a href=&quot;http://www.sc.edu/tutoring&quot;&gt;www.sc.edu/tutoring&lt;/a&gt; to find the complete tutoring schedule and make an appointment.  You may also contact the Student Success Center at 803-777-1000 and &lt;a href=&quot;mailto:tutoring@sc.edu&quot;&gt;tutoring@sc.edu&lt;/a&gt; with additional questions.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2&gt;Learning Outcomes&lt;/h2&gt;
-&lt;p style=&quot;text-align:justify;&quot;&gt;A student who successfully completes Vector Calculus (MATH 241) should continue to develop as an independent learner with the ability to approach problems from a conceptual viewpoint, to utilize more than one idea in a single problem, and to apply appropriate calculus skills to problems in context. In particular, the successful student will master concepts and gain skills needed to solve problems related to:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Vectors and vector functions&lt;/li&gt;
-&lt;li&gt;Finding equations of lines and planes&lt;/li&gt;
-&lt;li&gt;Parametric curves&lt;/li&gt;
-&lt;li&gt;Differentiability, continuity and limits of functions of two or more variables.&lt;/li&gt;
-&lt;li&gt;Directional derivatives and gradients.&lt;/li&gt;
-&lt;li&gt;Maxima and minima of functions of more than one variable.&lt;/li&gt;
-&lt;li&gt;Double integrals
-&lt;ul&gt;
-&lt;li&gt;Over rectangular regions
-&lt;/li&gt;
-&lt;li&gt;Over non-rectangular regions
-&lt;/li&gt;
-&lt;li&gt;In polar coordinates
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Triple Integrals
-&lt;ul&gt;
-&lt;li&gt;Over rectangular regions
-&lt;/li&gt;
-&lt;li&gt;In Cylindrical coordinates
-&lt;/li&gt;
-&lt;li&gt;In Spherical coordinates
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Line Integrals&lt;/li&gt;
-&lt;li&gt;Green’s Theorem&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2&gt;Lesson plan, HW Assignments, Quizzes, Exams&lt;/h2&gt;
-&lt;ul style=&quot;font-family:Courier;font-size:10pt;&quot;&gt;
-&lt;li&gt;&lt;strong&gt;First part: Vector functions&lt;/strong&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Mon Jan 13&lt;/strong&gt;: 12.1: Coordinates in 3-space, distance [p.769 #1--8, 10--18, 20--22]&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Wed Jan 15&lt;/strong&gt;: 12.2: Vectors [p.777 #2-23]&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Fri Jan 17&lt;/strong&gt;: 12.3: Dot product, projections [p.784 #3--10, 15--24, 29--33, 35--40]&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Wed Jan 22&lt;/strong&gt;: 12.4: Cross and triple products [p.792 #1--5, 17--20, 27--38]&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Fri Jan 24&lt;/strong&gt;: 12.5: Equations of lines and planes [p.802 #1--38, 43--46, 49--58, 67--72]&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Mon Jan 27&lt;/strong&gt;: 12.5: Equations of lines and planes II&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Wed Jan 29&lt;/strong&gt;: &lt;font color=&quot;red&quot;&gt;Winter weather advisory: Classes cancelled&lt;/font&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Fri Jan 31&lt;/strong&gt;: 12.6: Cylinders and Quadratic surfaces [p.810 #3--8, 29--36]&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Mon Feb 03&lt;/strong&gt;: 13.1: Intro to Vector functions [No HW today]&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Wed Feb 05&lt;/strong&gt;: &lt;font color=&quot;red&quot;&gt;First Midterm---sections 12.1--12.5&lt;/font&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Fri Feb 07&lt;/strong&gt;: 13.2: Derivatives and integrals of vector functions [p.822 #2, 4, 5, 7, 10--18, 26--28, 35--38]&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Mon Feb 10&lt;/strong&gt;: 13.3: Curvature, principal normal [p.828 #3--26; p.836 #1--6, 11, 12, 17--20, 27--29, 43, 44]&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Wed Feb 12&lt;/strong&gt;: &lt;font color=&quot;red&quot;&gt;Winter weather advisory: Classes cancelled&lt;/font&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Fri Feb 14&lt;/strong&gt;: &lt;font color=&quot;red&quot;&gt;Winter weather advisory: Classes cancelled&lt;/font&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Second Part: Functions of several variables&lt;/strong&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Mon Feb 17&lt;/strong&gt;: 14.1 and 14.2: Intro to functions of several variables, limits [p.866 #6, 8, 10--17, 21--29, 35--48]&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Wed Feb 19&lt;/strong&gt;: 14.2 and 14.3: Limits and Continuity [p.877 #5--18, 29--34, 37, 38]&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Fri Feb 21&lt;/strong&gt;: 14.3: Partial derivatives, higher order partials, mixed partials [p.889 #15--38, 43--48, 51--56, 77--85]&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Mon Feb 24&lt;/strong&gt;: 14.4: Tangent planes, linear approximation [p.899 #1--6, 18, 19, 25--27, 31--37]&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Wed Feb 26&lt;/strong&gt;: 14.5: Chain rule, Implicit differentiation [p.907 #1--12, 27--34]&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Fri Feb 28&lt;/strong&gt;: 14.6: Directional derivatives, gradients [p.920 #4--35]&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Mon Mar 03&lt;/strong&gt;: 14.7: Maxima and minima [p.930 #5--20, 29--36, 39--54]&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Wed Mar 05&lt;/strong&gt;: 14.7: Maxima and minima II&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Fri Mar 07&lt;/strong&gt;: &lt;font color=&quot;red&quot;&gt;Second Midterm---sections 13.1--13.4, 14.1--14.7&lt;/font&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Mon Mar 17&lt;/strong&gt;: 14.8: Lagrange multipliers [all story problems (39--54) from last section can be done with Lagrange multipliers. That&#39;s today&#39;s HW]&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Wed Mar 19&lt;/strong&gt;: 14.8: Lagrange multipliers II&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Third Part: Integration&lt;/strong&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Fri Mar 21&lt;/strong&gt;: 15.1 and 15.2: Double integrals over rectangles, Iterated integrals [p.964 #3--22]
-&lt;div style=&quot;text-align:center;&quot;&gt;[&lt;a href=&quot;https://blancosilva.wordpress.com/teaching/ma241section-5/review-integration/&quot;&gt;Review: Integration&lt;/a&gt;]&lt;/div&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Mon Mar 24&lt;/strong&gt;: 15.3: Double integrals over general regions [p.972 #1--18]&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Wed Mar 26&lt;/strong&gt;: 15.4: Double integrals in polar coordinates [p.978 #5--27]&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Fri Mar 28&lt;/strong&gt;: 15.5: Applications [p.988 #3--20]&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Mon Mar 31&lt;/strong&gt;: 15.6: Intro to Triple integrals [p.998 #9--22]&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Wed Apr 02&lt;/strong&gt;: 15.7 and 15.8: Cylindrical and Spherical coordinates [No HW today]&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Fri Apr 04&lt;/strong&gt;: 15.7: Triple integrals in cylindrical coordinates&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Mon Apr 07&lt;/strong&gt;: 15.8: Triple integrals in spherical coordinates [p.1010 #11--14, 21--27, 39, 40]&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Wed Apr 09&lt;/strong&gt;: 15.9: Change of variables in multiple integrals [p.1020 #1--15, 19--22]&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Fri Apr 11&lt;/strong&gt;: &lt;font color=&quot;red&quot;&gt;Third Midterm---sections 15.1--15.9&lt;/font&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Fourth Part: Green&#39;s Theorem&lt;/strong&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Mon Apr 14&lt;/strong&gt;: 16.1: Intro to Vector fields [p.1032 #1--4, 21--24]&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Wed Apr 16&lt;/strong&gt;: 16.2: Line integrals I [p.1043 #1--16]&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Fri Apr 18&lt;/strong&gt;: 16.2: Line integrals II [p.1043 #19--22]&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Mon Apr 21&lt;/strong&gt;: 16.3: The Fundamental Theorem for Line integrals [p. 1053 #12--18]&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Wed Apr 23&lt;/strong&gt;: 16.4: Green&#39;s Theorem [p.1060 #1--14]&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Fri Apr 25&lt;/strong&gt;: Overview of the course: putting it all together.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Mon Apr 28&lt;/strong&gt;: Review&lt;/li&gt;
-&lt;/ul&gt;
-&lt;hr /&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Mon May 05&lt;/strong&gt;: 9:00 AM--11:30 AM&lt;br /&gt;&lt;font color=&quot;red&quot;&gt;Comprehensive exam---Chapters 12, 13, 14, and 15&lt;/font&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</description>
-        <pubDate>Sat, 11 Jan 2014 18:22:48 -0500</pubDate>
-        <link>http://blancosilva.github.io//course/2014/01/11/ma-241-spring-2014.html</link>
-        <guid isPermaLink="true">http://blancosilva.github.io//course/2014/01/11/ma-241-spring-2014.html</guid>
-        
-        
-        <category>course</category>
         
       </item>
     
