@@ -36,7 +36,7 @@ To give you an idea of the magnitude of this enterprise---and at the same time p
 
 There are currently 13 more level-3 Menger Sponges in the United States.  Another 9 in Europe, one in Asia, and one more in New Zealand.  
 
-<p style="text-align:center;"><img src="https://farm4.staticflickr.com/3942/15537012918_fe73ee1412_c_d.jpg" style="width:75%; border:solid 2px black;"></a>
+<p style="text-align:center;"><img src="https://farm4.staticflickr.com/3942/15537012918_fe73ee1412_c_d.jpg" style="width:75%; border:solid 2px black;"></a></p>
 
 We, at the Department of Mathematics of the University of South Carolina, **are determined to build the next one**.  We will start slow: First, taking advantage of our annual <a href="http://www.math.sc.edu/contest">USC High School Math Contest</a> on January 31st, 2015, we will recruit the help of all high school students, instructors and relatives in attendance.  We plan to build that day as many level 2 sponges as we can afford.  At a later date, we mean to organize a larger group of volunteers, so we can assemble the final level 3 sponge.
 
