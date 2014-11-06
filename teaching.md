@@ -3,18 +3,15 @@ layout: page
 title: Teaching
 ---
 
-Current classes
-===
+### Current classes
 
 {% for post in site.posts %}
 {% if post.category == "course"  and  post.current == true %}
-{% include post-grid.html %}
-<!-- [{{ post.title }}]({{ post.url | prepend: side.baseurl }}) -->
+[{{ post.title }}]({{ post.url | prepend: side.baseurl }})
 {% endif %}
 {% endfor %}
 
-Past classes
-===
+### Past classes
 
 {% for post in site.posts %}
 {% if post.category == "course"  and  post.current == false %}
