@@ -38,6 +38,8 @@ There are currently 13 more level-3 Menger Sponges in the United States alone.  
 
 ### We, at the Department of Mathematics of the University of South Carolina, are determined to build the next one.
 
+But there is no need to wait 10 years to get this done.  Some folks at the Queen Mary University of London figured out a way to reduce the assembly time to just a few days, and posted detailed instructions at <a href="http://megamenger.com">megamenger.com</a>.
+
 We will start slow: First, taking advantage of our annual <a href="http://www.math.sc.edu/contest">USC High School Math Contest</a> on January 31st, 2015, where we will recruit the help of all high school students, instructors and relatives in attendance.  We plan to build that day as many level 2 sponges as we can afford.  At a later date, we mean to organize a larger group of volunteers, so we can assemble the final level 3 sponge.
 
 But success of this enterprise starts, obviously, by collecting enough business cards.  Just in one week we have been able to gather enough material for _almost_ one level 2 Menger sponge.  Where are we going to obtain all those remaining 48,000+ cards?  Do you have any you could spare?  We would love to get our hands on them.  Bring them to room 411 in LeConte or, even better, e-mail us at [<a href="mailto:blanco@math.sc.edu"><tt>blanco at math dot sc dot edu</tt></a>] so we can arrange for pick-up.
