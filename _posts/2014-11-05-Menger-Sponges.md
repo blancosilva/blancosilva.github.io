@@ -13,7 +13,7 @@ I know it is hard to grasp, but it is _mathematically viable_: there are solids 
 2. Repeat this process on each of these 20 cubes.  We are left with 400 smaller cubes.
 3. Repeat again (8,000 cubes), and again (160,000 cubes), and again (3,200,000 cubes), ...
 
-After three steps of this process we already observe an elegant geometrical marvel.
+After three steps of this process we already observe an elegant geometrical wonder.
 
 <p style="text-align:center;"><img src="https://farm7.staticflickr.com/6227/6315682009_3f42068116_n_d.jpg" style="width:75%; border:2px solid black;"><br /><a href="https://www.flickr.com/photos/rougeux/sets/72157621702780335/">Level 3 Menger Sponge folded with <em>Post-its</em></a><br/>(Copyright)  All rights reserved by <a href="https://www.flickr.com/photos/rougeux/">Nick Rogeux</a></p>
 
