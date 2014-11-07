@@ -4,10 +4,10 @@
     <title>Francisco Blanco-Silva</title>
     <description>Useless math is useful math. It can be used to generate more useless math.
 </description>
-    <link>http://blancosilva.github.io//</link>
-    <atom:link href="http://blancosilva.github.io//feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Thu, 06 Nov 2014 10:40:41 -0500</pubDate>
-    <lastBuildDate>Thu, 06 Nov 2014 10:40:41 -0500</lastBuildDate>
+    <link>http://localhost:4000/</link>
+    <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
+    <pubDate>Fri, 07 Nov 2014 03:09:38 -0500</pubDate>
+    <lastBuildDate>Fri, 07 Nov 2014 03:09:38 -0500</lastBuildDate>
     <generator>Jekyll v2.4.0</generator>
     
       <item>
@@ -56,8 +56,8 @@
 
 </description>
         <pubDate>Wed, 05 Nov 2014 00:00:00 -0500</pubDate>
-        <link>http://blancosilva.github.io//post/2014/11/05/Menger-Sponges.html</link>
-        <guid isPermaLink="true">http://blancosilva.github.io//post/2014/11/05/Menger-Sponges.html</guid>
+        <link>http://localhost:4000/post/2014/11/05/Menger-Sponges.html</link>
+        <guid isPermaLink="true">http://localhost:4000/post/2014/11/05/Menger-Sponges.html</guid>
         
         
         <category>post</category>
@@ -240,8 +240,8 @@ max    31.605647  31.605175  31.556127
 &lt;p style=&quot;text-align:center;&quot;&gt;&lt;img src=&quot;https://farm4.staticflickr.com/3901/14909109417_304514a8ae_c_d.jpg&quot; style=&quot;width:100%;&quot; /&gt;&lt;/p&gt;
 </description>
         <pubDate>Thu, 30 Oct 2014 00:00:00 -0400</pubDate>
-        <link>http://blancosilva.github.io//post/2014/10/30/searching-for-the-ss-central-america.html</link>
-        <guid isPermaLink="true">http://blancosilva.github.io//post/2014/10/30/searching-for-the-ss-central-america.html</guid>
+        <link>http://localhost:4000/post/2014/10/30/searching-for-the-ss-central-america.html</link>
+        <guid isPermaLink="true">http://localhost:4000/post/2014/10/30/searching-for-the-ss-central-america.html</guid>
         
         
         <category>post</category>
@@ -5581,8 +5581,8 @@ UoEXERGJQCrwIiIiEUgFXkREJAKpwIuIiESg/w8PMJd+8cpMGgAAAABJRU5ErkJggg==
 &lt;p&gt;For an &lt;code&gt;ipython&lt;/code&gt; notebook with the current draft of chapter 1 (Numerical Linear Algebra) of my upcoming book &lt;em&gt;Mastering Scipy&lt;/em&gt;, follow [&lt;a href=&quot;https://github.com/blancosilva/Mastering-Scipy/blob/master/chapter1.ipynb&quot;&gt;this link&lt;/a&gt;] to the repository &lt;a href=&quot;https://github.com/blancosilva/Mastering-Scipy&quot;&gt;Mastering Scipy&lt;/a&gt; in my &lt;a href=&quot;https://github.com/blancosilva&quot;&gt;github&lt;/a&gt;.&lt;/p&gt;
 </description>
         <pubDate>Wed, 29 Oct 2014 20:10:00 -0400</pubDate>
-        <link>http://blancosilva.github.io//post/2014/10/29/Numerical-Linear-Algebra.html</link>
-        <guid isPermaLink="true">http://blancosilva.github.io//post/2014/10/29/Numerical-Linear-Algebra.html</guid>
+        <link>http://localhost:4000/post/2014/10/29/Numerical-Linear-Algebra.html</link>
+        <guid isPermaLink="true">http://localhost:4000/post/2014/10/29/Numerical-Linear-Algebra.html</guid>
         
         
         <category>post</category>
@@ -33085,8 +33085,8 @@ In&amp;nbsp;[105]:
 &lt;/html&gt;
 </description>
         <pubDate>Tue, 28 Oct 2014 00:00:00 -0400</pubDate>
-        <link>http://blancosilva.github.io//post/2014/10/28/Computational-Geometry-in-Python.html</link>
-        <guid isPermaLink="true">http://blancosilva.github.io//post/2014/10/28/Computational-Geometry-in-Python.html</guid>
+        <link>http://localhost:4000/post/2014/10/28/Computational-Geometry-in-Python.html</link>
+        <guid isPermaLink="true">http://localhost:4000/post/2014/10/28/Computational-Geometry-in-Python.html</guid>
         
         
         <category>post</category>
@@ -33469,8 +33469,8 @@ In order to sign up for your section of the course on WebAssign, visit &lt;a hre
 &lt;/code&gt;&lt;/pre&gt;
 </description>
         <pubDate>Tue, 19 Aug 2014 11:50:44 -0400</pubDate>
-        <link>http://blancosilva.github.io//course/2014/08/19/ma141-fall-2014.html</link>
-        <guid isPermaLink="true">http://blancosilva.github.io//course/2014/08/19/ma141-fall-2014.html</guid>
+        <link>http://localhost:4000/course/2014/08/19/ma141-fall-2014.html</link>
+        <guid isPermaLink="true">http://localhost:4000/course/2014/08/19/ma141-fall-2014.html</guid>
         
         
         <category>course</category>
@@ -33681,8 +33681,8 @@ Francisco Blanco-Silva&lt;br /&gt;
 &lt;/ul&gt;
 </description>
         <pubDate>Mon, 18 Aug 2014 17:49:25 -0400</pubDate>
-        <link>http://blancosilva.github.io//course/2014/08/18/math-122-fall-2014.html</link>
-        <guid isPermaLink="true">http://blancosilva.github.io//course/2014/08/18/math-122-fall-2014.html</guid>
+        <link>http://localhost:4000/course/2014/08/18/math-122-fall-2014.html</link>
+        <guid isPermaLink="true">http://localhost:4000/course/2014/08/18/math-122-fall-2014.html</guid>
         
         
         <category>course</category>
@@ -33894,8 +33894,8 @@ Francisco Blanco-Silva&lt;br /&gt;
 
 </description>
         <pubDate>Wed, 09 Jul 2014 00:00:00 -0400</pubDate>
-        <link>http://blancosilva.github.io//post/2014/07/09/jotto-5-letter-mastermind-in-the-nao-robot.html</link>
-        <guid isPermaLink="true">http://blancosilva.github.io//post/2014/07/09/jotto-5-letter-mastermind-in-the-nao-robot.html</guid>
+        <link>http://localhost:4000/post/2014/07/09/jotto-5-letter-mastermind-in-the-nao-robot.html</link>
+        <guid isPermaLink="true">http://localhost:4000/post/2014/07/09/jotto-5-letter-mastermind-in-the-nao-robot.html</guid>
         
         
         <category>post</category>
@@ -34046,8 +34046,8 @@ Astro: Wonderful, I found it in 4 attempts!&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;The only thing left is an actual performance.  Danielle will be leading Fabian and Wes, and with the assistance of Mr. Simpson’s awesome students Erica and Robert, Astro will hopefully learn to physically approach the piano, choose the right keys, and play them in the correct order and speed.  Talent show, anyone?&lt;/p&gt;
 </description>
         <pubDate>Sun, 29 Jun 2014 00:00:00 -0400</pubDate>
-        <link>http://blancosilva.github.io//post/2014/06/29/robot-stories.html</link>
-        <guid isPermaLink="true">http://blancosilva.github.io//post/2014/06/29/robot-stories.html</guid>
+        <link>http://localhost:4000/post/2014/06/29/robot-stories.html</link>
+        <guid isPermaLink="true">http://localhost:4000/post/2014/06/29/robot-stories.html</guid>
         
         
         <category>post</category>
@@ -34334,8 +34334,8 @@ Astro: Wonderful, I found it in 4 attempts!&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;/ul&gt;
 </description>
         <pubDate>Sat, 31 May 2014 14:35:48 -0400</pubDate>
-        <link>http://blancosilva.github.io//course/2014/05/31/ma141-summer-2014.html</link>
-        <guid isPermaLink="true">http://blancosilva.github.io//course/2014/05/31/ma141-summer-2014.html</guid>
+        <link>http://localhost:4000/course/2014/05/31/ma141-summer-2014.html</link>
+        <guid isPermaLink="true">http://localhost:4000/course/2014/05/31/ma141-summer-2014.html</guid>
         
         
         <category>course</category>
@@ -34367,8 +34367,8 @@ Astro: Wonderful, I found it in 4 attempts!&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;We have thus proven that \(f \in L_1(\mathbb{R})\) with \(\lVert f \rVert_1 \leq \sqrt{2\lambda} \lVert f \rVert_2 + \sqrt{\tfrac{2}{\lambda}} \lVert g \rVert_2.\)  At this point, all you have to do is pick \(\lambda = \lVert g \rVert_2 / \lVert f \rVert_2\) (provided the denominator is not zero) and you are done.&lt;/p&gt;
 </description>
         <pubDate>Tue, 04 Mar 2014 00:00:00 -0500</pubDate>
-        <link>http://blancosilva.github.io//post/2014/03/04/advanced-problem-18.html</link>
-        <guid isPermaLink="true">http://blancosilva.github.io//post/2014/03/04/advanced-problem-18.html</guid>
+        <link>http://localhost:4000/post/2014/03/04/advanced-problem-18.html</link>
+        <guid isPermaLink="true">http://localhost:4000/post/2014/03/04/advanced-problem-18.html</guid>
         
         
         <category>post</category>

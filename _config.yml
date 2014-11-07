@@ -4,7 +4,7 @@ email: francisco.blanco.silva@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
   Useless math is useful math. It can be used to generate more useless math.
 baseurl: # the subpath of your site, e.g. /blog/
-url: "http://blancosilva.github.io/" # the base hostname & protocol for your site
+url: "http://localhost:4000" # the base hostname & protocol for your site
 twitter_username: eseprimo
 github_username:  blancosilva
 
