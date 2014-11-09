@@ -32,7 +32,7 @@ We refer to this function as a *hard thresholding*.  But we might want to decrea
 
 Other thresholding functions are of course possible, and the reader is encouraged to come up with different examples, and experiment with them.
 
-The wavelet module `PyWavelet` is <a href="http://blancosilva.wordpress.com/teaching/mathematical-imaging/wavelets-in-sage/">easily embedded in `sage`</a>, and allows us to perform very fast and elegant denoising codes.  The following session shows an example: We load the image of Lena as an array of size <span>\\( 512 \times 512 \\)</span> containing values between `0` and `255`.   We contaminate the image with white noise <span>\\( (\sigma=16.0) \\)</span> and perform denoising with this technique.  Since <span>\\( 512 = 2^9, \\)</span> we require all nine levels of the Haar wavelet coefficients of the image.
+The wavelet module `PyWavelet` is <a href="http://blancosilva.github.io/course-material/2011/01/23/wavelets-in-sage.html">easily embedded in `sage`</a>, and allows us to perform very fast and elegant denoising codes.  The following session shows an example: We load the image of Lena as an array of size <span>\\( 512 \times 512 \\)</span> containing values between `0` and `255`.   We contaminate the image with white noise <span>\\( (\sigma=16.0) \\)</span> and perform denoising with this technique.  Since <span>\\( 512 = 2^9, \\)</span> we require all nine levels of the Haar wavelet coefficients of the image.
 
 {% highlight python linenos %}
 from numpy import *
