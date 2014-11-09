@@ -106,7 +106,7 @@ for wlt in pywt.wavelist():
 
 The  four images below are the respective denoising by soft thresholding of wavelet coefficients on the same image with the same level of noise <span>\\( (\sigma = 16.0), \\)</span> for the symlet `sym15`, the Daubechies wavelet `db6`, the biorthogonal wavelet `bior2.8`, and the coiflet `coif2`.  Note that, except in the case of the denoising by biorthogonal wavelet, all of the others present clear artifacts:
 
-<table style="width:100%;border-width:0;">
+<table style="width:75%;border-width:0;">
 <tbody>
 <tr>
 <td style="width:50%;border-width:0;"><img src="https://i0.wp.com/farm6.static.flickr.com/5170/5381872501_e9296eb13c_o_d.png" alt="" width="100%" /></td>
