@@ -9,9 +9,6 @@ title: Mathematical Imaging
 Mathematical Imaging (or Image Processing) is a very broad field: it encompasses four main disciplines: *Image Compression*, *Edition/Restoration*, *Image Analysis*, and *Acquisition*.  Each of these disciplines are big fields on their own—for instance, within *Restoration* we have different problems (noise reduction, intensity adjustment, inpainting, sharpening, deblurring, correction of local distorsions…) and different techniques (based on PDEs, handling of coefficients in different frames, variational techniques, etc).  In the following pages we will explore some basic ideas and show some examples to illustrate how different branches of Mathematics can help you accomplish these tasks.
 
 <p style="text-align:center;">
-	<a href="http://www.amazon.com/gp/product/1439840458/ref=as_li_tf_il?ie=UTF8&amp;tag=blancosilva-20&amp;linkCode=as2&amp;camp=217145&amp;creative=399373&amp;creativeASIN=1439840458"><img border="0" src="http://ws.assoc-amazon.com/widgets/q?_encoding=UTF8&amp;Format=_SL160_&amp;ASIN=1439840458&amp;MarketPlace=US&amp;ID=AsinImage&amp;WS=1&amp;tag=blancosilva-20&amp;ServiceVersion=20070822"></a><img src="http://www.assoc-amazon.com/e/ir?t=blancosilva-20&amp;l=as2&amp;o=1&amp;a=1439840458&amp;camp=217145&amp;creative=399373" width="1" height="1" border="0" alt="" style="border:none!important;margin:0!important;" /><br /><a href="http://www.amazon.com/gp/product/1439840458/ref=as_li_tf_tl?ie=UTF8&amp;tag=blancosilva-20&amp;linkCode=as2&amp;camp=217145&amp;creative=399373&amp;creativeASIN=1439840458">The Image Processing Handbook, Sixth Edition</a><img src="http://www.assoc-amazon.com/e/ir?t=blancosilva-20&amp;l=as2&amp;o=1&amp;a=1439840458&amp;camp=217145&amp;creative=399373" width="1" height="1" border="0" alt="" style="border:none!important;margin:0!important;" />
-</p>
-
 <div class="col-sm-8">
 	<div class="list-group">
 		<a href="#" class="list-group-item active">Selected Lectures — Click on each title below for corresponding material</a>
@@ -24,3 +21,8 @@ Mathematical Imaging (or Image Processing) is a very broad field: it encompasses
 		{% endfor %}
 	</div>
 </div>
+<div>
+<iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=US&source=ac&ref=tf_til&ad_type=product_link&tracking_id=blancosilva-20&marketplace=amazon&region=US&placement=1439840458&asins=1439840458&linkId=FLHP4DLYSOTMF7XN&show_border=false&link_opens_in_new_window=true">
+</iframe>
+</div>
+</p>
