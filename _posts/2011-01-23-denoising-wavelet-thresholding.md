@@ -110,15 +110,15 @@ The  four images below are the respective denoising by soft thresholding of wav
 <tbody>
 <tr>
 <td style="width:50%;border-width:0;"><img src="https://i0.wp.com/farm6.static.flickr.com/5170/5381872501_e9296eb13c_o_d.png" alt="" width="100%" /></td>
-<td style="width:50%;border-width:0;"><img src="https://i0.wp.com/farm6.static.flickr.com/5382434292_891d198cdd_o_d.png" alt="" width="100%" /></td>
+<td style="width:50%;border-width:0;"><img src="https://i0.wp.com/farm6.static.flickr.com/5047/5382434292_891d198cdd_o_d.png" alt="" width="100%" /></td>
 </tr>
 <tr>
 <td style="text-align:center;border-width:0;">denoised (`sym15`)</td>
 <td style="text-align:center;border-width:0;">denoised (`db6`)</td>
 </tr>
 <tr>
-<td style="width:50%;border-width:0;"><img src="https://i0.wp.com/farm6.static.flickr.com/5382484863_5a054f4f3f_o_d.png" alt="" width="100%" /></td>
-<td style="width:50%;border-width:0;"><img src="https://i0.wp.com/farm6.static.flickr.com/5382485013_0683a07128_o_d.png" alt="" width="100%" /></td>
+<td style="width:50%;border-width:0;"><img src="https://i0.wp.com/farm6.static.flickr.com/5047/5382484863_5a054f4f3f_o_d.png" alt="" width="100%" /></td>
+<td style="width:50%;border-width:0;"><img src="https://i0.wp.com/farm6.static.flickr.com/5284/5382485013_0683a07128_o_d.png" alt="" width="100%" /></td>
 </tr>
 <tr>
 <td style="text-align:center;border-width:0;">denoised (`bior2.8`)</td>
