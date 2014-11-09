@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width initial-scale=1">
+	<meta name="description" content="Useless math is useful math. It can be used to generate more useless math.
+">
+	<meta name="author" content="">
+
+	<title>Edge detection: The Scale Space Theory</title>
+
+	<!-- Bootstrap core CSS -->
+	<link href="/css/bootstrap.min.css" rel="stylesheet">
+	<!-- Bootstrap theme -->
+	<link href="/css/bootstrap-theme.min.css" rel="stylesheet">
+
+	<!-- Custom styles for this template -->
+	<link href="/css/blog.css" rel="stylesheet">
+	<link rel="stylesheet" href="/css/pygments.css">
+
+
+	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+<![endif]-->
+</head>
+
+<body role="document">
+
+	<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+	<div class="container">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a class="navbar-brand" href="/">Francisco Blanco-Silva</a>
+		</div>
+		<div id="navbar" class="navbar-collapse collapse">
+			<ul class="nav navbar-nav">
+				<li class="active"><a href="/">Home</a></li>
+				
+				
+				<li><a class="page-link" href="/about/">About me</a></li>
+				
+				
+				
+				<li><a class="page-link" href="/books/">Books</a></li>
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				<li><a class="page-link" href="/presentations.html">Presentations</a></li>
+				
+				
+				
+				<li><a class="page-link" href="/resume.html">Résumé</a></li>
+				
+				
+				<li class="dropdown">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown">Teaching <span class="caret"></span></a>
+					<ul class="dropdown-menu" role="menu">
+						<li class="dropdown-header">Current classes</li>
+						
+						
+						
+						
+						<li><a href="/course/2014/11/08/Mathematical-Imaging.html">Mathematical Imaging</a></li>
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						<li><a href="/course/2014/08/19/ma141-fall-2014.html">MA141—Fall 2014</a></li>
+						
+						
+						
+						<li><a href="/course/2014/08/18/math-122-fall-2014.html">MA122—Fall 2014</a></li>
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						<li class="divider"></li>
+						<li class="dropdown-header">Selected Class Material</li>
+						
+						
+						<li><a href="/teaching/2014/11/08/past-classes.html">Past Sections of Undergraduate Calculus</a></li>
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						<!-- <li>Mathematical Imaging</li>
+						<li>Introduction to the Theory of Distributions</li>
+						<li>An Introduction to Algebraic Topology</li>
+						<li>MA598R: Measure Theory</li>
+						<li>The Basic Practice of Statistics</li> -->
+					</ul>
+				</li>
+			</ul>
+		</div><!--/.nav-collapse -->
+	</div>
+</nav>
+
+
+
+	<div class="page-content">
+		<div class="wrapper">
+			<br />
+<br />
+<br />
+<br />
+
+<div class="container theme-showcase" role="main" style="font-size: 16px; base-line-height: 1.5; font-family: Helvetica, Arial, sans-serif; spacing-unit: 30px; line-height: 20px;">
+
+  <header class="post-header">
+    <h1 class="post-title">Edge detection: The Scale Space Theory</h1>
+  </header>
+
+  <article class="post-content">
+    <p>Consider an image as a bounded function <span>\( f: \square_2 \to \mathbb{R} \)</span> with no smoothness or structure assumptions a priori.  Most relevant information of a given image is contained in the contours of the mapped objects: Think for example of a bright object against a dark background—the area where these two meet presents a curve where the intensity <span>\( f(\boldsymbol{x}) \)</span> varies strongly.  This is what we refer to as an “edge.”</p>
+
+<p>Initially, we may consider the process of detection of an edge by the simple computation of the gradient <span>\( \nabla f(\boldsymbol{x}) = \big( \tfrac{\partial f}{\partial x_1}, \tfrac{\partial f}{\partial x_2} \big): \)</span>  This gradient should have a large intensity <span>\( \lVert \nabla f(\boldsymbol{x}) \rVert \)</span> and a direction <span>\( \tfrac{\nabla f(\boldsymbol{x})}{\lVert \nabla f(\boldsymbol{x}) \rVert} \)</span> which indicates the perpendicular to the curve.  It therefore looks sound to simply compute the gradient of <span>\( f \)</span> and choose the points where these values are <em>large</em>.   This conclusion is a bit unrealistic for two reasons:</p>
+
+<ol>
+  <li>The points where the gradient is larger than a given threshold are open sets, and thus don’t have the structure of curves.</li>
+  <li>Large gradient may arise in certain locations of the image due to tiny oscillations or noise, but completely unrelated to the objects being mapped.  As a matter of fact, there is no reason to assume the existence or computability of any gradient at all in a given digital image.</li>
+</ol>
+
+<p>The second objection is solved by defining a smoothing process:  We associate with the image a smoothed version <span>\( f_t(\boldsymbol{x}) \)</span> depending upon a scale parameter <span>\( t \)</span> measuring the amount of smoothing.  This smoothing can be made by convolution of the image with a gaussian kernel of increasing width:</p>
+
+<div>
+\begin{equation}
+ f_t(\boldsymbol{x}) = \big( f \ast G_t \big)(\boldsymbol{x}), \text{ where } G_t(\boldsymbol{x}) = \dfrac{1}{4\pi t} \exp \bigg( -\dfrac{x^2+y^2}{4t} \bigg). 
+ \end{equation}
+</div>
+
+<p>The first objection is solved by defining edge points not as points where the gradient is large alone, but as points where some maximality property of the gradient is observed.  Let us take an example in dimension one:</p>
+
+<blockquote>
+  <p>Let <span>\( f: \mathbb{R} \to \mathbb{R} \)</span> be a <span>\( C^2 \)</span> function and consider points where <span>\( \lvert f’(x) \rvert \)</span> is maximal.  At these points, the second derivative might change sign.  Thus, we can look for the “edge points” of the smooth signal among the points where <span>\( f’‘(x) \)</span> crosses zero.</p>
+</blockquote>
+
+<p>Generalizing this idea in two dimensions leads to the Hildreth-Marr edge detection theory, or alternatively to the Canny edge detection theory.  The only difference is that Hildreth and Marr replace, in dimension two, <span>\( f’‘(x) \)</span> by the Laplacian of <span>\( f: \)</span></p>
+
+<div>
+\begin{equation} \mathop{\Delta}f(\boldsymbol{x}) = \dfrac{\partial^2 f}{\partial x_1^2}(\boldsymbol{x})+\dfrac{\partial^2 f}{\partial x_2^2}(\boldsymbol{x}). 
+\end{equation}
+</div>
+
+<p>Canny instead, gives up the linearity of the Laplacian and defines edge points as points where <em>the gradient is maximal in the direction of the gradient</em>.  This means that an edge point satisfies <span>\( g’(0)=0, \)</span> where</p>
+
+<div>
+\begin{equation} g(t) = \bigg\lVert \nabla f \big( \boldsymbol{x} + t \tfrac{\nabla f(\boldsymbol{x})}{\lVert \nabla f(\boldsymbol{x}) \rVert} \big) \bigg\rVert. 
+\end{equation}
+</div>
+
+<p>Note that this condition is equivalent to the simpler:</p>
+
+<div>
+\begin{equation} \begin{pmatrix} \dfrac{\partial f}{\partial x_1} &amp; \dfrac{\partial f}{\partial x_2} \end{pmatrix} \cdot \begin{pmatrix}   \dfrac{\partial^2 f}{\partial x_1^2}&amp; \dfrac{\partial^2 f}{\partial x_1 \partial x_2}\\ \\ \dfrac{\partial^2 f}{\partial x_1 \partial x_2}&amp; \dfrac{\partial^2 f}{\partial x_2^2} \end{pmatrix} \cdot \begin{pmatrix}  \dfrac{\partial f}{\partial x_1}\\ \\ \dfrac{\partial f}{\partial x_2}\end{pmatrix} = 0. 
+\end{equation}
+</div>
+
+<p>Let us proceed to code these two edge detection algorithms:  In both cases, we start by convolving the image with Gaussians <span>\( G_t \)</span> of increasing widths (usually for a sequence of dyadic scales <span>\( t=2, 4, 8, 16, \dotsc, 2^m \)</span>) [see <a href="http://blancosilva.github.io/course-material/2011/01/18/convolution-with-gaussian-kernels.html">Convolution with Gaussian kernels</a>]</p>
+
+<hr />
+
+<h2 id="hildreth-marr">Hildreth-Marr</h2>
+
+<ul>
+  <li>At each scale <span>\( t, \)</span> compute the <em>zero-crossings</em> of the Laplacian: those points <span>\( \boldsymbol{x} \)</span> where <span>\( \nabla f(\boldsymbol{x}) \neq \boldsymbol{0}, \)</span> and <span>\( \mathop{\Delta}f \)</span> changes sign.</li>
+  <li>Eliminate zero-crossings with small gradient.</li>
+</ul>
+
+<hr />
+
+<p>Both gradient and Laplacian are easy to compute in <code>sage</code>:</p>
+
+<div class="highlight"><pre><code class="language-python" data-lang="python"><span class="lineno"> 1</span> <span class="kn">from</span> <span class="nn">numpy</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="lineno"> 2</span> <span class="kn">import</span> <span class="nn">scipy.ndimage</span>
+<span class="lineno"> 3</span> <span class="kn">import</span> <span class="nn">scipy.signal</span>
+<span class="lineno"> 4</span> 
+<span class="lineno"> 5</span> <span class="n">image</span> <span class="o">=</span> <span class="n">scipy</span><span class="o">.</span><span class="n">misc</span><span class="o">.</span><span class="n">lena</span><span class="p">()</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="n">float32</span><span class="p">)</span>
+<span class="lineno"> 6</span> 
+<span class="lineno"> 7</span> <span class="c"># Convolve with a Gaussian Gt for t=2</span>
+<span class="lineno"> 8</span> <span class="p">[</span><span class="n">X</span><span class="p">,</span><span class="n">Y</span><span class="p">]</span><span class="o">=</span><span class="n">numpy</span><span class="o">.</span><span class="n">mgrid</span><span class="p">[</span><span class="o">-</span><span class="mi">6</span><span class="p">:</span><span class="mi">7</span><span class="p">,</span><span class="o">-</span><span class="mi">6</span><span class="p">:</span><span class="mi">7</span><span class="p">]</span>
+<span class="lineno"> 9</span> <span class="n">A</span><span class="o">=</span><span class="n">X</span><span class="o">+</span><span class="n">i</span><span class="o">*</span><span class="n">Y</span>
+<span class="lineno">10</span> <span class="n">R</span><span class="o">=</span><span class="nb">abs</span><span class="p">(</span><span class="n">A</span><span class="p">)</span>
+<span class="lineno">11</span> <span class="n">t</span><span class="o">=</span><span class="mf">2.0</span>
+<span class="lineno">12</span> <span class="n">Gt</span><span class="o">=</span><span class="n">exp</span><span class="p">(</span><span class="o">-</span><span class="n">R</span><span class="o">*</span><span class="n">R</span><span class="o">/</span><span class="mf">4.0</span><span class="o">/</span><span class="n">t</span><span class="p">)</span><span class="o">/</span><span class="mf">4.0</span><span class="o">/</span><span class="n">pi</span><span class="o">/</span><span class="n">t</span>
+<span class="lineno">13</span> <span class="n">convImage</span> <span class="o">=</span> <span class="n">scipy</span><span class="o">.</span><span class="n">signal</span><span class="o">.</span><span class="n">convolve</span><span class="p">(</span><span class="n">image</span><span class="p">,</span><span class="n">Gt</span><span class="p">)</span>
+<span class="lineno">14</span> 
+<span class="lineno">15</span> <span class="c"># Gradient</span>
+<span class="lineno">16</span> <span class="n">Grdnt</span> <span class="o">=</span> <span class="n">numpy</span><span class="o">.</span><span class="n">gradient</span><span class="p">(</span><span class="n">convImage</span><span class="p">)</span>
+<span class="lineno">17</span> <span class="c"># Magnitude of the gradient</span>
+<span class="lineno">18</span> <span class="n">magn</span>  <span class="o">=</span> <span class="n">sqrt</span><span class="p">(</span> <span class="n">Grdnt</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">*</span><span class="n">Grdnt</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">+</span> <span class="n">Grdnt</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">*</span><span class="n">Grdnt</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="p">)</span>
+<span class="lineno">19</span> <span class="c"># Laplacian</span>
+<span class="lineno">20</span> <span class="n">Lplz</span>  <span class="o">=</span> <span class="n">scipy</span><span class="o">.</span><span class="n">ndimage</span><span class="o">.</span><span class="n">laplace</span><span class="p">(</span><span class="n">float32</span><span class="p">(</span><span class="n">convImage</span><span class="p">))</span></code></pre></div>
+
+<table style="width:100%;border-width:0;">
+<tbody>
+<tr>
+<td style="width:100%;text-align:center;border-width:0;" colspan="2"><img src="https://i0.wp.com/farm6.static.flickr.com/5082/5373118608_ca48a3009e_o_d.png" alt="" width="50%" /></td>
+</tr>
+<tr>
+<td style="width:100%;text-align:center;border-width:0;" colspan="2">Gradient (in blue) and perpendicular to the gradient (in red); detail from the center of the image</td>
+</tr>
+<tr>
+<td style="width:50%;border-width:0;"><img src="https://i0.wp.com/farm6.static.flickr.com/5083/5372795316_ecbbfca9bc_o_d.png" alt="" width="100%" /></td>
+<td style="width:50%;border-width:0;"><img src="https://i0.wp.com/farm6.static.flickr.com/5201/5369466100_ec687f8de5_o_d.png" alt="" width="100%" /></td>
+</tr>
+<tr>
+<td style="width:50%;text-align:center;border-width:0;">Magnitude of the gradient (`magn`)</td>
+<td style="width:50%;text-align:center;border-width:0;">Laplacian of the image (`Lplz`)</td>
+</tr>
+</tbody>
+</table>
+
+<p>For the purposes of this post, we will consider that a pixel <span>\( (x_1,x_2) \)</span> is a zero-crossing, provided at least one of the following conditions holds:</p>
+
+<ul>
+  <li><em>Horizontal crossing</em>:</li>
+</ul>
+<div>
+\begin{equation}
+ \mathop{\Delta} f(x_1-1,x_2) \cdot \mathop{\Delta} f(x_1+1,x_2) &gt; 0. 
+ \end{equation}
+</div>
+
+<ul>
+  <li><em>Vertical crossing</em>:</li>
+</ul>
+<div>
+\begin{equation}
+ \mathop{\Delta} f(x_1,x_2-1) \cdot \mathop{\Delta} f(x_1,x_2+1) &gt;0. 
+ \end{equation}
+</div>
+
+<ul>
+  <li><em>NW-SE crossing</em>:</li>
+</ul>
+<div>
+\begin{equation}
+ \mathop{\Delta} f(x_1-1,x_2-1) \cdot \mathop{\Delta} f(x_1+1,x_2+1) &gt; 0. 
+ \end{equation}
+</div>
+
+<ul>
+  <li><em>NE-SW crossing</em>:</li>
+</ul>
+<div>
+\begin{equation}
+ \mathop{\Delta} f(x_1+1,x_2-1) \cdot \mathop{\Delta} f(x_1-1,x_2+1) &gt;0. 
+ \end{equation}
+</div>
+
+<p>A quick way to code a matrix that collects all the pixels where any of these crossings occur can be done as follows:</p>
+
+<div class="highlight"><pre><code class="language-python" data-lang="python"><span class="lineno"> 1</span> <span class="c"># Four matrices holding the crossings...</span>
+<span class="lineno"> 2</span> <span class="n">WWEE</span> <span class="o">=</span> <span class="n">zeros</span><span class="p">(</span><span class="n">Lplz</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>
+<span class="lineno"> 3</span> <span class="n">NNSS</span> <span class="o">=</span> <span class="n">zeros</span><span class="p">(</span><span class="n">Lplz</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>
+<span class="lineno"> 4</span> <span class="n">NWSE</span> <span class="o">=</span> <span class="n">zeros</span><span class="p">(</span><span class="n">Lplz</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>
+<span class="lineno"> 5</span> <span class="n">NESW</span> <span class="o">=</span> <span class="n">zeros</span><span class="p">(</span><span class="n">Lplz</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span> 
+<span class="lineno"> 6</span> 
+<span class="lineno"> 7</span> <span class="n">WWEE</span><span class="p">[</span><span class="mi">1</span><span class="p">:</span><span class="n">Lplz</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">-</span><span class="mi">1</span><span class="p">,:]</span> <span class="o">=</span> <span class="n">sign</span><span class="p">(</span><span class="n">multiply</span><span class="p">(</span><span class="n">Lplz</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="n">Lplz</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">-</span><span class="mi">2</span><span class="p">,:],</span>
+<span class="lineno"> 8</span>                                           <span class="n">Lplz</span><span class="p">[</span><span class="mi">2</span><span class="p">:</span><span class="n">Lplz</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">],:]))</span><span class="o">&gt;</span><span class="mi">0</span>
+<span class="lineno"> 9</span> <span class="n">NNSS</span><span class="p">[:,</span><span class="mi">1</span><span class="p">:</span><span class="n">Lplz</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="n">sign</span><span class="p">(</span><span class="n">multiply</span><span class="p">(</span><span class="n">Lplz</span><span class="p">[:,</span><span class="mi">0</span><span class="p">:</span><span class="n">Lplz</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">-</span><span class="mi">2</span><span class="p">],</span>
+<span class="lineno">10</span>                                           <span class="n">Lplz</span><span class="p">[:,</span><span class="mi">2</span><span class="p">:</span><span class="n">Lplz</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">1</span><span class="p">]]))</span><span class="o">&gt;</span><span class="mi">0</span>
+<span class="lineno">11</span> <span class="n">NWSE</span><span class="p">[</span><span class="mi">1</span><span class="p">:</span><span class="n">Lplz</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">:</span><span class="n">Lplz</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span>
+<span class="lineno">12</span>          <span class="n">sign</span><span class="p">(</span><span class="n">multiply</span><span class="p">(</span><span class="n">Lplz</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="n">Lplz</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">-</span><span class="mi">2</span><span class="p">,</span><span class="mi">0</span><span class="p">:</span><span class="n">Lplz</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">-</span><span class="mi">2</span><span class="p">],</span>
+<span class="lineno">13</span>                        <span class="n">Lplz</span><span class="p">[</span><span class="mi">2</span><span class="p">:</span><span class="n">Lplz</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span><span class="mi">2</span><span class="p">:</span><span class="n">Lplz</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">1</span><span class="p">]]))</span><span class="o">&gt;</span><span class="mi">0</span>
+<span class="lineno">14</span> <span class="n">NESW</span><span class="p">[</span><span class="mi">1</span><span class="p">:</span><span class="n">Lplz</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">:</span><span class="n">Lplz</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span>
+<span class="lineno">15</span>          <span class="n">sign</span><span class="p">(</span><span class="n">multiply</span><span class="p">(</span><span class="n">Lplz</span><span class="p">[</span><span class="mi">2</span><span class="p">:</span><span class="n">Lplz</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span><span class="mi">0</span><span class="p">:</span><span class="n">Lplz</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">-</span><span class="mi">2</span><span class="p">],</span>
+<span class="lineno">16</span>                        <span class="n">Lplz</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="n">Lplz</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">-</span><span class="mi">2</span><span class="p">,</span><span class="mi">2</span><span class="p">:</span><span class="n">Lplz</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">1</span><span class="p">]]))</span><span class="o">&gt;</span><span class="mi">0</span>
+<span class="lineno">17</span> 
+<span class="lineno">18</span> <span class="c"># ...combined into a single matrix holding all the crossings</span>
+<span class="lineno">19</span> <span class="n">ZeroCrossings</span> <span class="o">=</span> <span class="n">maximum</span><span class="p">(</span> <span class="n">maximum</span><span class="p">(</span> <span class="n">maximum</span><span class="p">(</span><span class="n">NNSS</span><span class="p">,</span> <span class="n">WWEE</span><span class="p">),</span> <span class="n">NWSE</span><span class="p">),</span> <span class="n">NESW</span><span class="p">)</span></code></pre></div>
+
+<p>It only remains to throw away those zero-crossings (below, left) where the magnitude of the gradient is small.  I decided to set as threshold <span>\( \theta = 3. \)</span>   In that case, the edge map (below, right) is computed as follows:</p>
+
+<div class="highlight"><pre><code class="language-python" data-lang="python"><span class="lineno">1</span> <span class="n">theta</span><span class="o">=</span><span class="mf">3.0</span>
+<span class="lineno">2</span> <span class="n">Edges</span> <span class="o">=</span> <span class="n">multiply</span><span class="p">(</span><span class="n">ZeroCrossings</span><span class="p">,</span> <span class="n">magn</span><span class="o">&gt;</span><span class="n">theta</span><span class="p">)</span></code></pre></div>
+
+<table style="width:100%;border-width:0;">
+<tbody>
+<tr>
+<td style="width:50%;border-width:0;"><img src="https://i0.wp.com/farm2.static.flickr.com/1416/5369723851_3df658ddbc_o_d.png" alt="" width="100%" /></td>
+<td style="width:50%;border-width:0;"><img src="https://i0.wp.com/farm6.static.flickr.com/5282/5372231161_dc4628f77e_o_d.png" alt="" width="100%" /></td>
+</tr>
+<tr>
+<td style="width:50%;text-align:center;border-width:0;">`ZeroCrossings`</td>
+<td style="width:50%;text-align:center;border-width:0;">`Edges`</td>
+</tr>
+</tbody>
+</table>
+
+<p>We need to repeat the same procedure on the smoothing <span>\( f_t \)</span> for different scales, say the dyadic <span>\( t=2^k \)</span> for <span>\( k=2, \dotsc, 5, \)</span> and then collect all the corresponding results.  Note that the same threshold <span>\( \theta=3 \)</span> must be applied to the magnitude of the different gradients.</p>
+
+<hr />
+
+<h2 id="canny">Canny</h2>
+
+<ul>
+  <li>At each scale <span>\( t, \)</span> compute points <span>\( \boldsymbol{x} \)</span> satisfying <span>\( \nabla f(\boldsymbol{x})\neq \boldsymbol{0}, \)</span> and where the expression below changes sign:</li>
+</ul>
+
+<div>
+  \begin{equation}
+  \begin{pmatrix} \dfrac{\partial f}{\partial x_1} &amp; \dfrac{\partial f}{\partial x_2} \end{pmatrix} \cdot \begin{pmatrix}   \dfrac{\partial^2 f}{\partial x_1^2}&amp; \dfrac{\partial^2 f}{\partial x_1 \partial x_2}\\ \\ \dfrac{\partial^2 f}{\partial x_1 \partial x_2}&amp; \dfrac{\partial^2 f}{\partial x_2^2} \end{pmatrix} \cdot \begin{pmatrix}  \dfrac{\partial f}{\partial x_1}\\ \\ \dfrac{\partial f}{\partial x_2}\end{pmatrix}. 
+  \end{equation}
+</div>
+
+<ul>
+  <li>At each scale <span>\( t \)</span> fix a threshold <span>\( \theta(t) \)</span> and discard the points <span>\( \boldsymbol{x} \)</span> computed in the previous step that satisfy <span>\( \lVert \nabla f(\boldsymbol{x}) \rVert \leq \theta(t). \)</span></li>
+</ul>
+
+<hr />
+
+<p>We start by computing a matrix <code>N</code> where we collect, for each index <span>\( (x_1,x_2), \)</span> the corresponding value of the expression above.  We perform on this matrix a similar search for zero-crossings as we computed for the algorithm of Hildreth-Marr:</p>
+
+<div class="highlight"><pre><code class="language-python" data-lang="python"><span class="lineno"> 1</span> <span class="n">D1</span><span class="p">,</span><span class="n">D2</span><span class="o">=</span><span class="n">numpy</span><span class="o">.</span><span class="n">gradient</span><span class="p">(</span><span class="n">convImage</span><span class="p">)</span>
+<span class="lineno"> 2</span> <span class="n">D11</span><span class="p">,</span><span class="n">D12</span><span class="o">=</span><span class="n">numpy</span><span class="o">.</span><span class="n">gradient</span><span class="p">(</span><span class="n">D1</span><span class="p">)</span>
+<span class="lineno"> 3</span> <span class="n">D21</span><span class="p">,</span><span class="n">D22</span><span class="o">=</span><span class="n">numpy</span><span class="o">.</span><span class="n">gradient</span><span class="p">(</span><span class="n">D2</span><span class="p">)</span>
+<span class="lineno"> 4</span> <span class="n">N</span> <span class="o">=</span> <span class="n">D1</span><span class="o">*</span><span class="n">D11</span><span class="o">*</span><span class="n">D1</span> <span class="o">+</span> <span class="n">D1</span><span class="o">*</span><span class="n">D12</span><span class="o">*</span><span class="n">D2</span> <span class="o">+</span> <span class="n">D2</span><span class="o">*</span><span class="n">D21</span><span class="o">*</span><span class="n">D1</span> <span class="o">+</span> <span class="n">D2</span><span class="o">*</span><span class="n">D22</span><span class="o">*</span><span class="n">D2</span>
+<span class="lineno"> 5</span> 
+<span class="lineno"> 6</span> <span class="n">WWEE</span><span class="p">[</span><span class="mi">1</span><span class="p">:</span><span class="n">N</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">-</span><span class="mi">1</span><span class="p">,:]</span> <span class="o">=</span> <span class="n">sign</span><span class="p">(</span><span class="n">N</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="n">N</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">-</span><span class="mi">2</span><span class="p">,:]</span><span class="o">*</span><span class="n">N</span><span class="p">[</span><span class="mi">2</span><span class="p">:</span><span class="n">N</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">],:])</span><span class="o">&gt;</span><span class="mi">0</span>
+<span class="lineno"> 7</span> <span class="n">NNSS</span><span class="p">[:,</span><span class="mi">1</span><span class="p">:</span><span class="n">N</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="n">sign</span><span class="p">(</span><span class="n">N</span><span class="p">[:,</span><span class="mi">0</span><span class="p">:</span><span class="n">N</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">-</span><span class="mi">2</span><span class="p">]</span><span class="o">*</span><span class="n">N</span><span class="p">[:,</span><span class="mi">2</span><span class="p">:</span><span class="n">N</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">1</span><span class="p">]])</span><span class="o">&gt;</span><span class="mi">0</span>
+<span class="lineno"> 8</span> <span class="n">NWSE</span><span class="p">[</span><span class="mi">1</span><span class="p">:</span><span class="n">N</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">:</span><span class="n">N</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span>
+<span class="lineno"> 9</span>           <span class="n">sign</span><span class="p">(</span><span class="n">N</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="n">N</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">-</span><span class="mi">2</span><span class="p">,</span><span class="mi">0</span><span class="p">:</span><span class="n">N</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">-</span><span class="mi">2</span><span class="p">]</span><span class="o">*</span>
+<span class="lineno">10</span>                <span class="n">N</span><span class="p">[</span><span class="mi">2</span><span class="p">:</span><span class="n">N</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span><span class="mi">2</span><span class="p">:</span><span class="n">N</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">1</span><span class="p">]])</span><span class="o">&gt;</span><span class="mi">0</span>
+<span class="lineno">11</span> <span class="n">NESW</span><span class="p">[</span><span class="mi">1</span><span class="p">:</span><span class="n">N</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">:</span><span class="n">N</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span>
+<span class="lineno">12</span>           <span class="n">sign</span><span class="p">(</span><span class="n">N</span><span class="p">[</span><span class="mi">2</span><span class="p">:</span><span class="n">N</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span><span class="mi">0</span><span class="p">:</span><span class="n">N</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">-</span><span class="mi">2</span><span class="p">]</span><span class="o">*</span>
+<span class="lineno">13</span>                <span class="n">N</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="n">N</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">-</span><span class="mi">2</span><span class="p">,</span><span class="mi">2</span><span class="p">:</span><span class="n">N</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">1</span><span class="p">]])</span><span class="o">&gt;</span><span class="mi">0</span>
+<span class="lineno">14</span> 
+<span class="lineno">15</span> <span class="n">ZeroCrossings</span> <span class="o">=</span> <span class="n">maximum</span><span class="p">(</span> <span class="n">maximum</span><span class="p">(</span> <span class="n">maximum</span><span class="p">(</span><span class="n">NNSS</span><span class="p">,</span> <span class="n">WWEE</span><span class="p">),</span> <span class="n">NWSE</span><span class="p">),</span> <span class="n">NESW</span><span class="p">)</span>
+<span class="lineno">16</span> 
+<span class="lineno">17</span> <span class="n">theta</span><span class="o">=</span><span class="mf">3.0</span>
+<span class="lineno">18</span> <span class="n">Edges</span><span class="o">=</span><span class="n">multiply</span><span class="p">(</span><span class="n">ZeroCrossings</span><span class="p">,</span> <span class="n">magn</span><span class="o">&gt;</span><span class="n">theta</span><span class="p">)</span></code></pre></div>
+
+<table style="width:100%;border-width:0;">
+<tbody>
+<tr>
+<td style="width:50%;border-width:0;"><img src="https://i0.wp.com/farm6.static.flickr.com/5006/5373382878_5d902f615a_o_d.png" alt="" width="100%" /></td>
+<td style="width:50%;border-width:0;"><img src="https://i0.wp.com/farm6.static.flickr.com/5001/5372783863_4db21d4754_o_d.png" alt="" width="100%" /></td>
+</tr>
+<tr>
+<td style="width:50%;text-align:center;border-width:0;">`ZeroCrossings (Canny)`</td>
+<td style="width:50%;text-align:center;border-width:0;">`Edges (Canny)`</td>
+</tr>
+</tbody>
+</table>
+
+<p>As in the algorithm of Hildreth-Marr, we need to repeat the same procedure on the smoothing <span>\( f_t \)</span> for different dyadic scales and collect all the corresponding results.  The difference is that here we allow a scale-dependent threshold <span>\( \theta(t). \)</span>  A selection that works well is, for example, to choose the mean value of the magnitudes of the gradient of <span>\( f_t. \)</span>  I encourage you to play around with different images, and investigate what characteristics will dictate a good choice in this case.</p>
+
+<h2 id="miscellaneous">Miscellaneous</h2>
+
+<h3 id="the-scale-space-theory">The Scale Space Theory</h3>
+
+<p>What do we do with all different edge maps at different scales?  For most images it is enough to “choose” the edge map at a certain scale—that one that visually satisfies whatever constraints we might require for a particular problem.  Sometimes it pays off to collect them all, or start with the edges at the lowest level scale, and add a selection of the new edges from the larger scales… There is no single best method, as far as I am concerned.</p>
+
+<h3 id="codes-for-graphics">Codes for graphics</h3>
+
+<p>The code that produced most of the images above is straightforward, except maybe the addition of the vector fields of the gradient and its normal on top of the windowed image.  This was accomplished with the following commands:</p>
+
+<div class="highlight"><pre><code class="language-python" data-lang="python"><span class="lineno"> 1</span> <span class="n">matplotlib</span><span class="o">.</span><span class="n">pyplot</span><span class="o">.</span><span class="n">figure</span><span class="p">()</span>
+<span class="lineno"> 2</span> <span class="c"># Plot the Gradient (note the switching of derivatives and sign)</span>
+<span class="lineno"> 3</span> <span class="n">matplotlib</span><span class="o">.</span><span class="n">pyplot</span><span class="o">.</span><span class="n">quiver</span><span class="p">(</span><span class="o">-</span><span class="n">D2</span><span class="p">[</span><span class="mi">300</span><span class="p">:</span><span class="mi">450</span><span class="p">:</span><span class="mi">4</span><span class="p">,</span><span class="mi">300</span><span class="p">:</span><span class="mi">450</span><span class="p">:</span><span class="mi">4</span><span class="p">],</span><span class="n">D1</span><span class="p">[</span><span class="mi">300</span><span class="p">:</span><span class="mi">450</span><span class="p">:</span><span class="mi">4</span><span class="p">,</span><span class="mi">300</span><span class="p">:</span><span class="mi">450</span><span class="p">:</span><span class="mi">4</span><span class="p">],</span>
+<span class="lineno"> 4</span>                                   <span class="n">color</span><span class="o">=</span><span class="s">&#39;b&#39;</span><span class="p">,</span> <span class="n">pivot</span><span class="o">=</span><span class="s">&#39;mid&#39;</span><span class="p">,</span> <span class="n">units</span><span class="o">=</span><span class="s">&#39;x&#39;</span><span class="p">)</span>
+<span class="lineno"> 5</span> <span class="c"># Plot the perpendicular to the Gradient</span>
+<span class="lineno"> 6</span> <span class="n">matplotlib</span><span class="o">.</span><span class="n">pyplot</span><span class="o">.</span><span class="n">quiver</span><span class="p">(</span><span class="n">D1</span><span class="p">[</span><span class="mi">300</span><span class="p">:</span><span class="mi">450</span><span class="p">:</span><span class="mi">4</span><span class="p">,</span><span class="mi">300</span><span class="p">:</span><span class="mi">450</span><span class="p">:</span><span class="mi">4</span><span class="p">],</span><span class="n">D2</span><span class="p">[</span><span class="mi">300</span><span class="p">:</span><span class="mi">450</span><span class="p">:</span><span class="mi">4</span><span class="p">,</span><span class="mi">300</span><span class="p">:</span><span class="mi">450</span><span class="p">:</span><span class="mi">4</span><span class="p">],</span>
+<span class="lineno"> 7</span>                                   <span class="n">color</span><span class="o">=</span><span class="s">&#39;r&#39;</span><span class="p">,</span> <span class="n">pivot</span><span class="o">=</span><span class="s">&#39;mid&#39;</span><span class="p">,</span> <span class="n">units</span><span class="o">=</span><span class="s">&#39;x&#39;</span><span class="p">)</span>
+<span class="lineno"> 8</span> <span class="n">matplotlib</span><span class="o">.</span><span class="n">pyplot</span><span class="o">.</span><span class="n">quiver</span><span class="p">(</span><span class="o">-</span><span class="n">D1</span><span class="p">[</span><span class="mi">300</span><span class="p">:</span><span class="mi">450</span><span class="p">:</span><span class="mi">4</span><span class="p">,</span><span class="mi">300</span><span class="p">:</span><span class="mi">450</span><span class="p">:</span><span class="mi">4</span><span class="p">],</span><span class="o">-</span><span class="n">D2</span><span class="p">[</span><span class="mi">300</span><span class="p">:</span><span class="mi">450</span><span class="p">:</span><span class="mi">4</span><span class="p">,</span><span class="mi">300</span><span class="p">:</span><span class="mi">450</span><span class="p">:</span><span class="mi">4</span><span class="p">],</span>
+<span class="lineno"> 9</span>                                   <span class="n">color</span><span class="o">=</span><span class="s">&#39;r&#39;</span><span class="p">,</span> <span class="n">pivot</span><span class="o">=</span><span class="s">&#39;mid&#39;</span><span class="p">,</span> <span class="n">units</span><span class="o">=</span><span class="s">&#39;x&#39;</span><span class="p">)</span>
+<span class="lineno">10</span> <span class="c"># Place the corresponding window of the image as background</span>
+<span class="lineno">11</span> <span class="n">matplotlib</span><span class="o">.</span><span class="n">pyplot</span><span class="o">.</span><span class="n">gray</span><span class="p">()</span>
+<span class="lineno">12</span> <span class="n">matplotlib</span><span class="o">.</span><span class="n">pyplot</span><span class="o">.</span><span class="n">imshow</span><span class="p">(</span><span class="n">float32</span><span class="p">(</span><span class="n">convImage</span><span class="p">[</span><span class="mi">300</span><span class="p">:</span><span class="mi">450</span><span class="p">:</span><span class="mi">4</span><span class="p">,</span><span class="mi">300</span><span class="p">:</span><span class="mi">450</span><span class="p">:</span><span class="mi">4</span><span class="p">]))</span>
+<span class="lineno">13</span> <span class="n">matplotlib</span><span class="o">.</span><span class="n">pyplot</span><span class="o">.</span><span class="n">savefig</span><span class="p">(</span><span class="s">&#39;/Users/blanco/Desktop/quiver.png&#39;</span><span class="p">)</span></code></pre></div>
+
+<p>Note that the first and second derivatives <em>seem to have switched places</em>.  One needs to be very careful when dealing with matrices of numbers, since the logical position of the pixels depends very heavily the software/language/libraries that handles them.  With <code>sage</code> this is a constant issue, especially since we might be using different (and unrelated) libraries to deal with the same objects.</p>
+
+  </article>
+
+</div>
+
+<script type="text/javascript"
+src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+		</div>
+	</div>
+
+	<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-56262970-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+	<!-- Start of StatCounter Code for Default Guide -->
+<script type="text/javascript">
+var sc_project=10117038; 
+var sc_invisible=1; 
+var sc_security="1fd852f3"; 
+var scJsHost = (("https:" == document.location.protocol) ?
+"https://secure." : "http://www.");
+document.write("<sc"+"ript type='text/javascript' src='" +
+scJsHost+
+"statcounter.com/counter/counter.js'></"+"script>");
+</script>
+<noscript><div class="statcounter"><a title="free hit
+counters" href="http://statcounter.com/"
+target="_blank"><img class="statcounter"
+src="http://c.statcounter.com/10117038/0/1fd852f3/1/"
+alt="free hit counters"></a></div></noscript>
+<!-- End of StatCounter Code for Default Guide -->
+
+	    <!-- Bootstrap core JavaScript
+	    ================================================== -->
+	    <!-- Placed at the end of the document so the pages load faster -->
+	    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	    <script src="/js/bootstrap.min.js"></script>
+	    <script src="/assets/js/docs.min.js"></script>
+	    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+	    <script src="/assets/js/ie10-viewport-bug-workaround.js"></script>
+	</body>
+	</html>
