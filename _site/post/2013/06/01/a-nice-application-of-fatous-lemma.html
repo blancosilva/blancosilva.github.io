@@ -279,17 +279,17 @@
 	</header>
 
 	<article class="post-content">
-		<p>Let me show you an exciting technique to prove some convergence statements using exclusively functional inequalities and Fatou&#39;s Lemma. The following are two classic problems solved this way. Enjoy!</p>
+		<p>Let me show you an exciting technique to prove some convergence statements using exclusively functional inequalities and Fatou’s Lemma. The following are two classic problems solved this way. Enjoy!</p>
 
 <blockquote>
-<p><strong>Exercise 1.</strong> Let \( {(X, \mathcal{F}, \mu)}\)  be a measurable space and suppose <span>\( \{f<em>n\}</em>{n\in \mathbb{N}} \)</span>  is a sequence of measurable functions in \( {L<em>1(\mu)}\)  that converge almost everywhere to a function \( {f \in L</em>1(\mu)},\)  and such that the sequence of norms <span>\( \big\{\lVert f<em>n\rVert</em>1\big\}<em>{n \in \mathbb{N}} \)</span>  converges to \( {\lVert f \rVert</em>1}\) . Prove that the sequence of integrals \( {\int<em>E \lvert f</em>n \rvert\, d\mu}\)  converges to the integral \( {\int_E \lvert f \rvert\, d\mu}\)  for every measurable set \( {E}\).</p>
+  <p><strong>Exercise 1.</strong> Let \( {(X, \mathcal{F}, \mu)}\)  be a measurable space and suppose <span>\( \{f_n\}_{n\in \mathbb{N}} \)</span>  is a sequence of measurable functions in \( {L_1(\mu)}\)  that converge almost everywhere to a function \( {f \in L_1(\mu)},\)  and such that the sequence of norms <span>\( \big\{\lVert f_n\rVert_1\big\}_{n \in \mathbb{N}} \)</span>  converges to \( {\lVert f \rVert_1}\) . Prove that the sequence of integrals \( {\int_E \lvert f_n \rvert\, d\mu}\)  converges to the integral \( {\int_E \lvert f \rvert\, d\mu}\)  for every measurable set \( {E}\).</p>
 </blockquote>
 
 <p><em>Proof:</em>  Note first that</p>
 
-<p>\[ \displaystyle  \begin{array}{rcl}  \lvert f<em>n - f\rvert\, \boldsymbol{1}</em>E \leq \lvert f<em>n - f \rvert \leq \lvert f</em>n \rvert + \lvert f \rvert. \end{array}  \]</p>
+<p>\[ \displaystyle  \begin{array}{rcl}  \lvert f_n - f\rvert\, \boldsymbol{1}_E \leq \lvert f_n - f \rvert \leq \lvert f_n \rvert + \lvert f \rvert. \end{array}  \]</p>
 
-<p>Set then \( {g<em>n = \lvert f</em>n \rvert + \lvert f \rvert - \lvert f<em>n-f \rvert\, \boldsymbol{1}</em>E} \) (which are non-negative functions) and apply Fatou&#39;s Lemma to that sequence. We have then</p>
+<p>Set then \( {g_n = \lvert f_n \rvert + \lvert f \rvert - \lvert f_n-f \rvert\, \boldsymbol{1}_E} \) (which are non-negative functions) and apply Fatou’s Lemma to that sequence. We have then</p>
 
 <div>
 \begin{gather}
@@ -302,33 +302,34 @@
 
 <p>which implies</p>
 
-<p>\[ 0 \leq \liminf<em>n \int</em>E \lvert f<em>n-f \rvert\, d\mu \leq \limsup</em>n \int<em>E \lvert f</em>n-f \rvert\, d\mu \leq 0. \]</p>
+<p>\[ 0 \leq \liminf_n \int_E \lvert f_n-f \rvert\, d\mu \leq \limsup_n \int_E \lvert f_n-f \rvert\, d\mu \leq 0. \]</p>
 
-<p>It must then be \( {\int<em>E \lvert f</em>n - f \rvert\, d\mu = 0} \). But this proves the statement, since</p>
+<p>It must then be \( {\int_E \lvert f_n - f \rvert\, d\mu = 0} \). But this proves the statement, since</p>
 
-<p>\[ \bigg\lvert \int<em>E \lvert f</em>n\rvert\, d\mu - \int<em>E \lvert f \rvert\, d\mu \bigg\rvert = \bigg\lvert \int</em>E \big( \lvert f<em>n \rvert - \lvert f \rvert \big)\, d\mu \bigg\rvert \  \leq \int</em>E \Big\lvert \lvert f<em>n \rvert - \lvert f \rvert \Big\rvert\, d\mu \leq \int</em>E \lvert f_n - f \rvert\, d\mu \]</p>
+<p>\[ \bigg\lvert \int_E \lvert f_n\rvert\, d\mu - \int_E \lvert f \rvert\, d\mu \bigg\rvert = \bigg\lvert \int_E \big( \lvert f_n \rvert - \lvert f \rvert \big)\, d\mu \bigg\rvert \  \leq \int_E \Big\lvert \lvert f_n \rvert - \lvert f \rvert \Big\rvert\, d\mu \leq \int_E \lvert f_n - f \rvert\, d\mu \]</p>
 
 <p>\( \Box \)</p>
 
 <blockquote>
-<p><strong>Exercise 2.</strong> Let \( {(X, \mathcal{F}, \mu)}\)  be a finite measure space and let \(  1&lt;p&lt;\infty \) . Suppose that <span>\( \{f<em>n\}</em>{n \in\mathbb{N}} \)</span> is a sequence of measurable functions in \( L<em>p(\mu) \)  whose norms are uniformly bounded in \( n \)  and which converges almost everywhere to a function \( f \) . Prove that the sequence <span>\( \big\{ \int</em>X f<em>n g\, d\mu \big\}</em>{n \in \mathbb{N}} \)</span> converges to \( \int<em>X fg\, d\mu \) for all \( g \in L</em>q(\mu) \), where \( q \) is the conjugate exponent of \( p \).</p>
+  <p><strong>Exercise 2.</strong> Let \( {(X, \mathcal{F}, \mu)}\)  be a finite measure space and let \(  1&lt;p&lt;\infty \) . Suppose that <span>\( \{f_n\}_{n \in\mathbb{N}} \)</span> is a sequence of measurable functions in \( L_p(\mu) \)  whose norms are uniformly bounded in \( n \)  and which converges almost everywhere to a function \( f \) . Prove that the sequence <span>\( \big\{ \int_X f_n g\, d\mu \big\}_{n \in \mathbb{N}} \)</span> converges to \( \int_X fg\, d\mu \) for all \( g \in L_q(\mu) \), where \( q \) is the conjugate exponent of \( p \).</p>
 </blockquote>
 
 <p><em>Proof:</em>  The proof is very similar to the previous problem. We start by noticing that under the hypotheses of the problem,</p>
 
-<p>\[ \bigg\lvert \int<em>x f</em>ng\, d\mu - \int<em>X fg\, d\mu \bigg\rvert = \bigg\lvert \int</em>X (f<em>n -f)g\, d\mu \bigg\rvert \ \leq \lVert (f</em>n-f)g \rVert<em>1 \leq \lVert f</em>n - f \rVert<em>p\, \lVert g \rVert</em>q. \]</p>
+<p>\[ \bigg\lvert \int_x f_ng\, d\mu - \int_X fg\, d\mu \bigg\rvert = \bigg\lvert \int_X (f_n -f)g\, d\mu \bigg\rvert \ \leq \lVert (f_n-f)g \rVert_1 \leq \lVert f_n - f \rVert_p\, \lVert g \rVert_q. \]</p>
 
-<p>If we prove that \( {\lim<em>n \lVert f</em>n-f \rVert_p = 0} \), we are done.</p>
+<p>If we prove that \( {\lim_n \lVert f_n-f \rVert_p = 0} \), we are done.</p>
 
 <p>We will achieve this by using the convexity of \( {\lvert \cdot \rvert^p} \), since in that case it is</p>
 
-<p>\[ \frac{\lvert f<em>n - f \rvert^p}{2^p} \leq \tfrac{1}{2} \lvert f</em>n \rvert^p + \tfrac{1}{2} \lvert f \rvert^p. \]</p>
+<p>\[ \frac{\lvert f_n - f \rvert^p}{2^p} \leq \tfrac{1}{2} \lvert f_n \rvert^p + \tfrac{1}{2} \lvert f \rvert^p. \]</p>
 
 <p>hence,</p>
 
-<p>\[ \lvert f<em>n -f \rvert^p \leq 2^{p-1} \big( \lvert f</em>n \rvert^p + \lvert f \rvert^p \big). \]</p>
+<p>\[ \lvert f_n -f \rvert^p \leq 2^{p-1} \big( \lvert f_n \rvert^p + \lvert f \rvert^p \big). \]</p>
 
-<p>Set then \( {g<em>n = 2^{p-1} \big( \lvert f</em>n\rvert^p + \lvert f \rvert^p\big) - \lvert f_n-f \rvert^p} \) (which are non-negative functions) and apply Fatou&#39;s Lemma as before. \( \Box \)</p>
+<p>Set then \( {g_n = 2^{p-1} \big( \lvert f_n\rvert^p + \lvert f \rvert^p\big) - \lvert f_n-f \rvert^p} \) (which are non-negative functions) and apply Fatou’s Lemma as before. \( \Box \)</p>
+
 
 	</article>
 

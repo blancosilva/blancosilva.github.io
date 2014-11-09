@@ -282,102 +282,101 @@
     <p>Mathematical Imaging (or Image Processing) is a very broad field: it encompasses three main disciplines: <em>Image Compression</em>, <em>Restoration</em> and <em>Image Analysis</em>.  Each of these disciplines are big fields on their own—for instance, within <em>Restoration</em> we have different problems (noise reduction, intensity adjustment, inpainting, sharpening, deblurring, correction of local distorsions…) and different techniques (based on PDEs, handling of coefficients in different frames, variational techniques, etc).  In the following pages we will explore some basic ideas and show some examples to illustrate how different branches of Mathematics can help you accomplish these tasks.</p>
 
 <p style="text-align:center;">
-    <a href="http://www.amazon.com/gp/product/1439840458/ref=as_li_tf_il?ie=UTF8&amp;tag=blancosilva-20&amp;linkCode=as2&amp;camp=217145&amp;creative=399373&amp;creativeASIN=1439840458"><img border="0" src="http://ws.assoc-amazon.com/widgets/q?_encoding=UTF8&amp;Format=_SL160_&amp;ASIN=1439840458&amp;MarketPlace=US&amp;ID=AsinImage&amp;WS=1&amp;tag=blancosilva-20&amp;ServiceVersion=20070822"></a><img src="http://www.assoc-amazon.com/e/ir?t=blancosilva-20&amp;l=as2&amp;o=1&amp;a=1439840458&amp;camp=217145&amp;creative=399373" width="1" height="1" border="0" alt="" style="border:none!important;margin:0!important;" /><br /><a href="http://www.amazon.com/gp/product/1439840458/ref=as_li_tf_tl?ie=UTF8&amp;tag=blancosilva-20&amp;linkCode=as2&amp;camp=217145&amp;creative=399373&amp;creativeASIN=1439840458">The Image Processing Handbook, Sixth Edition</a><img src="http://www.assoc-amazon.com/e/ir?t=blancosilva-20&amp;l=as2&amp;o=1&amp;a=1439840458&amp;camp=217145&amp;creative=399373" width="1" height="1" border="0" alt="" style="border:none!important;margin:0!important;" />
+	<a href="http://www.amazon.com/gp/product/1439840458/ref=as_li_tf_il?ie=UTF8&amp;tag=blancosilva-20&amp;linkCode=as2&amp;camp=217145&amp;creative=399373&amp;creativeASIN=1439840458"><img border="0" src="http://ws.assoc-amazon.com/widgets/q?_encoding=UTF8&amp;Format=_SL160_&amp;ASIN=1439840458&amp;MarketPlace=US&amp;ID=AsinImage&amp;WS=1&amp;tag=blancosilva-20&amp;ServiceVersion=20070822" /></a><img src="http://www.assoc-amazon.com/e/ir?t=blancosilva-20&amp;l=as2&amp;o=1&amp;a=1439840458&amp;camp=217145&amp;creative=399373" width="1" height="1" border="0" alt="" style="border:none!important;margin:0!important;" /><br /><a href="http://www.amazon.com/gp/product/1439840458/ref=as_li_tf_tl?ie=UTF8&amp;tag=blancosilva-20&amp;linkCode=as2&amp;camp=217145&amp;creative=399373&amp;creativeASIN=1439840458">The Image Processing Handbook, Sixth Edition</a><img src="http://www.assoc-amazon.com/e/ir?t=blancosilva-20&amp;l=as2&amp;o=1&amp;a=1439840458&amp;camp=217145&amp;creative=399373" width="1" height="1" border="0" alt="" style="border:none!important;margin:0!important;" />
 </p>
 
 <div class="col-sm-8">
-    <div class="list-group">
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        <a href="/course-material/2011/01/18/convolution-with-gaussian-kernels.html#" class="list-group-item">
-            <h4 class="list-group-item-heading">Convolution with Gaussian kernels</h4>
-            <p class="list-group-item-text">In the case of *good enough* functions in real spaces, one is able to perform this operation by passing to the Fourier domain, multiplying, and coming back through the inverse Fourier transform.   In the setting of digital signals one can also profit from this principle, but by using instead the *discrete and inverse discrete Fourier transforms*.  With the aid of the `fft` algorithms to calculate the discrete Fourier transform, convolution via the frequency domain can be faster than directly convolving the time domain signals (`scipy.ndimage.convolve` in `sage`), and the final result is the same except maybe at the borders of the image.  Some care must be taken when producing the convolution this way, since zero-padding needs to be applied.</p>
-        </a>
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-    </div>
+	<div class="list-group">
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		<a href="/course-material/2011/01/18/convolution-with-gaussian-kernels.html" class="list-group-item">
+			<h4 class="list-group-item-heading">Convolution with Gaussian kernels</h4>
+		</a>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	</div>
 </div>
 
   </article>

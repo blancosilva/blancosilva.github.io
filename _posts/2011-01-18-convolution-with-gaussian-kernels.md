@@ -5,8 +5,6 @@ date: 2011-01-18 15:11:30.000000000 -05:00
 category: course-material
 topic: imaging
 comments: false
-description: In the case of *good enough* functions in real spaces, one is able to perform this operation by passing to the Fourier domain, multiplying, and coming back through the inverse Fourier transform.   In the setting of digital signals one can also profit from this principle, but by using instead the *discrete and inverse discrete Fourier transforms*.  With the aid of the `fft` algorithms to calculate the discrete Fourier transform, convolution via the frequency domain can be faster than directly convolving the time domain signals (`scipy.ndimage.convolve` in `sage`), and the final result is the same except maybe at the borders of the image.  Some care must be taken when producing the convolution this way, since zero-padding needs to be applied.
-
 ---
 
 Recall the definition of <a href="http://blancosilva.wordpress.com/teaching/distributions/convolution-of-integrable-functions/">convolution of integrable functions</a>.  In the case of *good enough* functions in real spaces, one is able to perform this operation by passing to the Fourier domain, multiplying, and coming back through the inverse Fourier transform.   In the setting of digital signals one can also profit from this principle, but by using instead the *discrete and inverse discrete Fourier transforms*.  With the aid of the `fft` algorithms to calculate the discrete Fourier transform, convolution via the frequency domain can be faster than directly convolving the time domain signals (`scipy.ndimage.convolve` in `sage`), and the final result is the same except maybe at the borders of the image.  Some care must be taken when producing the convolution this way, since zero-padding needs to be applied.
@@ -50,7 +48,6 @@ result4 = fft.ifft2( multiply(fft.fft2(image,[l,w]), fft.fft2(kern,[l,w])) )
 </tr>
 </tbody>
 </table>
-
 
 
 **[Note:** Both `result1` and `result2` are matrices with size <span>\\( 6\times 6, \\)</span> while the matrices `result3` and `result4`, which are identical, have size <span>\\( 8\times 8. \\)</span>**]**

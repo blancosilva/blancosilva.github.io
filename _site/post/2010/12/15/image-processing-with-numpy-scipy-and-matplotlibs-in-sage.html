@@ -282,7 +282,8 @@
 		<p>In this post, I would like to show how to use  a few different features of <code>numpy</code>, <code>scipy</code> and <code>matplotlibs</code> to accomplish a few basic image processing tasks: some trivial image manipulation, segmentation, obtaining of structural information, etc.  An excellent way to show a good set of these techniques is by working through a complex project.  In this case, I have chosen the following:</p>
 
 <blockquote>
-<p>Given a HAADF-STEM micrograph of a bronze-type Niobium Tungsten oxide <span>\( Nb<em>4W</em>{13}O_{47} \)</span> (left), find a script that constructs a good approximation to its structural model (right).</p>
+  <p>Given a HAADF-STEM micrograph of a bronze-type Niobium Tungsten oxide <span>\( Nb_4W<em>{13}O</em>{47} \)</span> (left), find a script that constructs a good approximation to its structural model (right).</p>
+
 </blockquote>
 
 <table style="width:80%;margin-left:auto;margin-right:auto;background-color:#f4f5f7;border-width:0;">
@@ -300,15 +301,15 @@
 <p>For pedagogical purposes, I took the following approach to solving this problem:</p>
 
 <ol>
-<li><strong>Segmentation of the atoms</strong> by thresholding and morphological operations.</li>
-<li><strong>Connected component labeling</strong> to extract each single atom for posterior examination.</li>
-<li><strong>Computation of the centers of mass</strong> of each label identified as an atom.  This presents us with a lattice of points in the plane that shows a first insight in the structural model of the oxide.</li>
-<li>Computation of <strong>Delaunay triangulation</strong> and <strong>Voronoi diagram</strong> of the previous lattice of points.  The combination of information from these two graphs will lead us to a decent (approximation to the actual)  structural model of our sample.</li>
+  <li><strong>Segmentation of the atoms</strong> by thresholding and morphological operations.</li>
+  <li><strong>Connected component labeling</strong> to extract each single atom for posterior examination.</li>
+  <li><strong>Computation of the centers of mass</strong> of each label identified as an atom.  This presents us with a lattice of points in the plane that shows a first insight in the structural model of the oxide.</li>
+  <li>Computation of <strong>Delaunay triangulation</strong> and <strong>Voronoi diagram</strong> of the previous lattice of points.  The combination of information from these two graphs will lead us to a decent (approximation to the actual)  structural model of our sample.</li>
 </ol>
 
 <p>Let us proceed in this direction:</p>
 
-<h4>Needed libraries and packages</h4>
+<h4 id="needed-libraries-and-packages">Needed libraries and packages</h4>
 
 <p>Once retrieved, our HAADF-STEM images will be stored as big matrices with <code>float32</code> precission.  We will be doing some heavy computations on them, so it makes sense to use the <code>numpy</code> and <code>scipy</code> libraries.  From the first module we will retrieve all the functions; from the second, it is enough to retrieve the tools in the <code>scipy.ndimage</code> package (multi-dimensional image processing).  The procedures that load those images into matrices, as well as some really good tools to manipulate plots and present them are in the <code>matplotlib</code> libraries; more concretely, <code>matplotlib.image</code> and <code>matplotlib.pyplot</code>.  We will use them too.  The preamble then looks like this:</p>
 
@@ -317,7 +318,7 @@
 <span class="lineno">3</span> <span class="kn">import</span> <span class="nn">matplotlib.image</span>
 <span class="lineno">4</span> <span class="kn">import</span> <span class="nn">matplotlib.pyplot</span></code></pre></div>
 
-<h4>Loading the image</h4>
+<h4 id="loading-the-image">Loading the image</h4>
 
 <p>The image is loaded with the command <code>matplotlib.imread(filename)</code>.  It stores the image as a <code>numpy.ndarray</code> with <code>dtype=float32</code>.  Notice that the maxima and minima are respectively <code>1.0</code> and <code>0.0</code>.  Other interesting information about the image can be retrieved:</p>
 
@@ -347,21 +348,21 @@ Standard deviation: 0.16062</code></pre></div>
 <td style="width:50%;border-width:0;"><img src="http://farm6.static.flickr.com/5081/5264059122_ebd6a55259_o_d.png" alt="" width="100%" /></td>
 </tr>
 <tr>
-<td style="width:50%;text-align:center;border-width:0;"><code>img > 0.2</code></td>
-<td style="width:50%;text-align:center;border-width:0;"><code>img > 0.7</code></td>
+<td style="width:50%;text-align:center;border-width:0;"><code>img &gt; 0.2</code></td>
+<td style="width:50%;text-align:center;border-width:0;"><code>img &gt; 0.7</code></td>
 </tr>
 <tr>
 <td style="width:50%;border-width:0;"><img src="http://farm6.static.flickr.com/5046/5263447021_b1cbff99a5_o_d.png" alt="" width="100%" /></td>
 <td style="width:50%;border-width:0;"><img src="http://farm6.static.flickr.com/5203/5264059274_2ec7849e8d_o_d.png" alt="" width="100%" /></td>
 </tr>
 <tr>
-<td style="width:50%;text-align:center;border-width:0;"><code>multiply(img < 0.5,img > 0.25)</code></td>
-<td style="width:50%;text-align:center;border-width:0;"><code>multiply(img, img > 0.62)</code></td>
+<td style="width:50%;text-align:center;border-width:0;"><code>multiply(img &lt; 0.5,img &gt; 0.25)</code></td>
+<td style="width:50%;text-align:center;border-width:0;"><code>multiply(img, img &gt; 0.62)</code></td>
 </tr>
 </tbody>
 </table>
 
-<p>By visual inspection of several different thresholds, I chose <code>0.62</code> as one that gives me a good map showing what I need for segmentation.  I need to get rid of &quot;outliers&quot;, though: small particles that might fulfill the given threshold, but are small enough not to be considered an actual atom.  Therefore, in the next step I perform a morphological operation of opening to get rid of those small particles: I decided than anything smaller than a quare of size <span>\( 2 \times 2 \)</span> is to be eliminated from the output of thresholding:</p>
+<p>By visual inspection of several different thresholds, I chose <code>0.62</code> as one that gives me a good map showing what I need for segmentation.  I need to get rid of “outliers”, though: small particles that might fulfill the given threshold, but are small enough not to be considered an actual atom.  Therefore, in the next step I perform a morphological operation of opening to get rid of those small particles: I decided than anything smaller than a quare of size <span>\( 2 \times 2 \)</span> is to be eliminated from the output of thresholding:</p>
 
 <div class="highlight"><pre><code class="language-python" data-lang="python"><span class="lineno">1</span> <span class="n">BWatoms</span> <span class="o">=</span> <span class="p">(</span><span class="n">img</span>  <span class="o">&gt;</span>  <span class="mf">0.62</span><span class="p">)</span>
 <span class="lineno">2</span> <span class="n">BWatoms</span> <span class="o">=</span> <span class="n">scipy</span><span class="o">.</span><span class="n">ndimage</span><span class="o">.</span><span class="n">binary_opening</span><span class="p">(</span><span class="n">BWatoms</span><span class="p">,</span> <span class="n">structure</span><span class="o">=</span><span class="n">ones</span><span class="p">((</span><span class="mi">2</span><span class="p">,</span><span class="mi">2</span><span class="p">)))</span></code></pre></div>
@@ -370,7 +371,7 @@ Standard deviation: 0.16062</code></pre></div>
 
 <p style="text-align:center;"><img src="http://farm6.static.flickr.com/5088/5264416962_2f1aed00b0_o_d.jpg" alt="" /></p>
 
-<p>It all depends: I&#39;d rather have it now as two different connected components, but for some other problems I might consider that they are just one.  The way we code it, is by imposing a structuring element that defines feature connections.  For example, if our criteria for connectivity between two pixels is that they are in adjacent edges, then the structuring element looks like the image in the left below.  If our criteria for connectivity between two pixels is that they are also allowed to share a corner, then the structuring element looks like the image in the right below.  For each pixel we impose the chosen structuring element, and count the intersection: if there are no intersections, then the two pixels are not connected.  Otherwise, they belong to the same connected component.</p>
+<p>It all depends: I’d rather have it now as two different connected components, but for some other problems I might consider that they are just one.  The way we code it, is by imposing a structuring element that defines feature connections.  For example, if our criteria for connectivity between two pixels is that they are in adjacent edges, then the structuring element looks like the image in the left below.  If our criteria for connectivity between two pixels is that they are also allowed to share a corner, then the structuring element looks like the image in the right below.  For each pixel we impose the chosen structuring element, and count the intersection: if there are no intersections, then the two pixels are not connected.  Otherwise, they belong to the same connected component.</p>
 
 <p style="text-align:center;"><img src="http://farm6.static.flickr.com/5203/5263858489_fb5f537793_o_d.jpg" alt="" /></p>
 
@@ -379,7 +380,7 @@ Standard deviation: 0.16062</code></pre></div>
 <div class="highlight"><pre><code class="language-python" data-lang="python"><span class="lineno">1</span> <span class="n">structuring_element</span> <span class="o">=</span> <span class="p">[[</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">0</span><span class="p">],[</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">],[</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">0</span><span class="p">]]</span>
 <span class="lineno">2</span> <span class="n">segmentation</span><span class="p">,</span> <span class="n">segments</span> <span class="o">=</span> <span class="n">scipy</span><span class="o">.</span><span class="n">ndimage</span><span class="o">.</span><span class="n">label</span><span class="p">(</span><span class="n">BWatoms</span><span class="p">,</span> <span class="n">structuring_element</span><span class="p">)</span></code></pre></div>
 
-<h4>Generation of the lattice of the oxide</h4>
+<h4 id="generation-of-the-lattice-of-the-oxide">Generation of the lattice of the oxide</h4>
 
 <p>The object <code>segmentation</code> contains a list of slices, each of them with a <code>True-False</code> matrix containing each of the found atoms of the oxide.  We can obtain for each slice a great deal of useful information.  For example, the coordinates of the centers of mass of each atom can be retrieved by</p>
 
@@ -413,7 +414,7 @@ Standard deviation: 0.16062</code></pre></div>
 </tbody>
 </table>
 
-<h4>Structural Model of the sample</h4>
+<h4 id="structural-model-of-the-sample">Structural Model of the sample</h4>
 
 <p>For the purposes of this post, we will be happy providing the Voronoi diagram and Delaunay triangulation of the previous lattice of points.  With <code>matplotlib</code> we can take care of the latter with a simple command:</p>
 
@@ -428,7 +429,7 @@ Standard deviation: 0.16062</code></pre></div>
 <div class="highlight"><pre><code class="language-python" data-lang="python"><span class="lineno">1</span> <span class="n">L1</span><span class="p">,</span> <span class="n">L2</span> <span class="o">=</span> <span class="n">scipy</span><span class="o">.</span><span class="n">ndimage</span><span class="o">.</span><span class="n">distance_transform_edt</span><span class="p">(</span><span class="n">segmentation</span><span class="o">==</span><span class="mi">0</span><span class="p">,</span> <span class="n">return_distances</span><span class="o">=</span><span class="bp">False</span><span class="p">,</span> <span class="n">return_indices</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
 <span class="lineno">2</span> <span class="n">voronoi</span> <span class="o">=</span> <span class="n">segmentation</span><span class="p">[</span><span class="n">L1</span><span class="p">,</span> <span class="n">L2</span><span class="p">]</span></code></pre></div>
 
-<p>Note that, since there are so many atoms (about 1600), the array stored in <code>voronoi</code> will have those many different colors.  A raw visualization of that array will give us little insight on the structural model of the sample (below, left).  Instead, we want to reduce the number of &quot;colors&quot;, so that visualization is meaningful.  I chose 64 different colors, and used an appropriate colormap for this task (below, center).  Another possibility is, of course, to plot the edges of the Voronoi map (not to confuse it with the actual Voronoi diagram!): We can compute these with the simple command</p>
+<p>Note that, since there are so many atoms (about 1600), the array stored in <code>voronoi</code> will have those many different colors.  A raw visualization of that array will give us little insight on the structural model of the sample (below, left).  Instead, we want to reduce the number of “colors”, so that visualization is meaningful.  I chose 64 different colors, and used an appropriate colormap for this task (below, center).  Another possibility is, of course, to plot the edges of the Voronoi map (not to confuse it with the actual Voronoi diagram!): We can compute these with the simple command</p>
 
 <div class="highlight"><pre><code class="language-python" data-lang="python"><span class="lineno">1</span> <span class="n">edges</span> <span class="o">=</span> <span class="n">scipy</span><span class="o">.</span><span class="n">misc</span><span class="o">.</span><span class="n">imfilter</span><span class="p">(</span><span class="n">voronoi</span><span class="p">,</span> <span class="s">&#39;find_edges&#39;</span><span class="p">)</span>
 <span class="lineno">2</span> <span class="n">edges</span> <span class="o">=</span> <span class="p">(</span><span class="n">edges</span>  <span class="o">&gt;</span>  <span class="mi">0</span><span class="p">)</span></code></pre></div>
@@ -449,7 +450,7 @@ Standard deviation: 0.16062</code></pre></div>
 
 <p>All the computational tools are amazingly fast and, more importantly, freely available.  This was simply unthinkable several years ago.</p>
 
-<h4>Generation of figures</h4>
+<h4 id="generation-of-figures">Generation of figures</h4>
 
 <p>One example will suffice.  For instance, the commands used to save to <code>png</code> format the last image are given by:</p>
 
@@ -459,6 +460,7 @@ Standard deviation: 0.16062</code></pre></div>
 <span class="lineno">4</span> <span class="n">matplotlib</span><span class="o">.</span><span class="n">pyplot</span><span class="o">.</span><span class="n">gray</span><span class="p">()</span>
 <span class="lineno">5</span> <span class="n">matplotlib</span><span class="o">.</span><span class="n">pyplot</span><span class="o">.</span><span class="n">imshow</span><span class="p">(</span><span class="n">edges</span><span class="p">)</span>
 <span class="lineno">6</span> <span class="n">matplotlib</span><span class="o">.</span><span class="n">pyplot</span><span class="o">.</span><span class="n">savefig</span><span class="p">(</span><span class="s">&#39;/Users/blanco/Desktop/output.png&#39;</span><span class="p">)</span></code></pre></div>
+
 
 	</article>
 

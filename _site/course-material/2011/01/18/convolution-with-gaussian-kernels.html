@@ -297,7 +297,6 @@
 <span class="lineno">12</span> <span class="n">l</span><span class="p">,</span> <span class="n">w</span> <span class="o">=</span> <span class="n">image</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">+</span> <span class="n">kern</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">-</span> <span class="mi">1</span><span class="p">,</span> <span class="n">image</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">+</span> <span class="n">kern</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">-</span> <span class="mi">1</span>
 <span class="lineno">13</span> 
 <span class="lineno">14</span> <span class="n">result4</span> <span class="o">=</span> <span class="n">fft</span><span class="o">.</span><span class="n">ifft2</span><span class="p">(</span> <span class="n">multiply</span><span class="p">(</span><span class="n">fft</span><span class="o">.</span><span class="n">fft2</span><span class="p">(</span><span class="n">image</span><span class="p">,[</span><span class="n">l</span><span class="p">,</span><span class="n">w</span><span class="p">]),</span> <span class="n">fft</span><span class="o">.</span><span class="n">fft2</span><span class="p">(</span><span class="n">kern</span><span class="p">,[</span><span class="n">l</span><span class="p">,</span><span class="n">w</span><span class="p">]))</span> <span class="p">)</span></code></pre></div>
- 
 
 <table style="margin-left:auto;margin-right:auto;width:75%;">
 <tbody>
@@ -320,12 +319,9 @@
 </tbody>
 </table>
 
+<p><strong>[Note:</strong> Both <code>result1</code> and <code>result2</code> are matrices with size <span>\( 6\times 6, \)</span> while the matrices <code>result3</code> and <code>result4</code>, which are identical, have size <span>\( 8\times 8. \)</span><strong>]</strong></p>
 
-
-**[Note:** Both `result1` and `result2` are matrices with size <span>\\( 6\times 6, \\)</span> while the matrices `result3` and `result4`, which are identical, have size <span>\\( 8\times 8. \\)</span>**]**
-
-Another word of advise: one might feel tempted to create a Gaussian of the same size and shape of the original image.  For example, if the original image has size <span>\\( 512 \times 512, \\)</span> to create the Gaussian <span>\\( G_{16} \\)</span> one could proceed in `sage` as follows:
-
+<p>Another word of advise: one might feel tempted to create a Gaussian of the same size and shape of the original image.  For example, if the original image has size <span>\( 512 \times 512, \)</span> to create the Gaussian <span>\( G_{16} \)</span> one could proceed in <code>sage</code> as follows:</p>
 
 <div class="highlight"><pre><code class="language-python" data-lang="python"><span class="lineno"> 1</span> <span class="kn">from</span> <span class="nn">numpy</span> <span class="kn">import</span> <span class="o">*</span>
 <span class="lineno"> 2</span> <span class="kn">import</span> <span class="nn">scipy</span>
@@ -340,9 +336,7 @@ Another word of advise: one might feel tempted to create a Gaussian of the same 
 <span class="lineno">11</span> <span class="n">Gt</span> <span class="o">=</span> <span class="n">exp</span><span class="p">(</span><span class="o">-</span><span class="n">multiply</span><span class="p">(</span><span class="n">R</span><span class="p">,</span><span class="n">R</span><span class="p">)</span><span class="o">/</span><span class="mf">4.0</span><span class="o">/</span><span class="n">t</span><span class="p">)</span><span class="o">/</span><span class="mf">4.0</span><span class="o">/</span><span class="n">pi</span><span class="o">/</span><span class="n">t</span>
 <span class="lineno">12</span> <span class="n">Gt</span> <span class="o">=</span> <span class="n">float32</span><span class="p">(</span><span class="n">Gt</span><span class="p">)</span></code></pre></div>
 
-
-The procedure of convolution of a noisy version of an image with this kernel could be done as follows:
-
+<p>The procedure of convolution of a noisy version of an image with this kernel could be done as follows:</p>
 
 <div class="highlight"><pre><code class="language-python" data-lang="python"><span class="lineno"> 1</span> <span class="c"># Consider the lena image</span>
 <span class="lineno"> 2</span> <span class="n">image</span> <span class="o">=</span> <span class="n">scipy</span><span class="o">.</span><span class="n">misc</span><span class="o">.</span><span class="n">lena</span><span class="p">()</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="n">float32</span><span class="p">)</span>
@@ -354,7 +348,6 @@ The procedure of convolution of a noisy version of an image with this kernel cou
 <span class="lineno"> 8</span> 
 <span class="lineno"> 9</span> <span class="c"># Compute the convolution of lena with Gt.</span>
 <span class="lineno">10</span> <span class="n">convImageGt</span> <span class="o">=</span> <span class="n">scipy</span><span class="o">.</span><span class="n">ndimage</span><span class="o">.</span><span class="n">convolve</span><span class="p">(</span><span class="n">NoisyImage</span><span class="p">,</span> <span class="n">Gt</span><span class="p">)</span></code></pre></div>
-
 
 <table style="width:100%;">
 <tbody>
@@ -371,15 +364,15 @@ The procedure of convolution of a noisy version of an image with this kernel cou
 </tbody>
 </table>
 
-Granted:  It accomplishes the requested operation, but at the expense of too many computations and storing unnecessary data—especially in cases where the original image contains millions of pixels!
+<p>Granted:  It accomplishes the requested operation, but at the expense of too many computations and storing unnecessary data—especially in cases where the original image contains millions of pixels!</p>
 
-Note the structure of the Gaussian kernel <span>\\( G_{1} \\)</span> (below, left).  This function is effectively zero more than about three standard deviations from the mean, so it does not make sense to store more than a small center window (below, right).  We therefore collect the important values in a small matrix and use it as a kernel instead, at the time of computing the convolution.
+<p>Note the structure of the Gaussian kernel <span>\( G_{1} \)</span> (below, left).  This function is effectively zero more than about three standard deviations from the mean, so it does not make sense to store more than a small center window (below, right).  We therefore collect the important values in a small matrix and use it as a kernel instead, at the time of computing the convolution.</p>
 
 <p style="text-align:center;"><img src="https://i0.wp.com/farm6.static.flickr.com/5005/5367837394_f3c2d026fe_o_d.png" alt="" width="300px" /></p>
 
 <div>
 \begin{equation}
- \texttt{Gt} = \dfrac{1}{273} \begin{pmatrix} 1&4&7&4&1\\ 4&16&26&16&4\\ 7&26&41&26&7\\ 4&16&26&16&4\\ 1&4&7&4&1 \end{pmatrix}
+ \texttt{Gt} = \dfrac{1}{273} \begin{pmatrix} 1&amp;4&amp;7&amp;4&amp;1\\ 4&amp;16&amp;26&amp;16&amp;4\\ 7&amp;26&amp;41&amp;26&amp;7\\ 4&amp;16&amp;26&amp;16&amp;4\\ 1&amp;4&amp;7&amp;4&amp;1 \end{pmatrix}
  \end{equation}
 </div>
 

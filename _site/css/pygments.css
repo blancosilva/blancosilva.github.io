@@ -1,6 +1,4 @@
 .highlight pre code { display: block; white-space: pre; overflow-x: auto; word-wrap: normal; }
-
-
 .highlight  { background: #ffffff; }
 .highlight .c { color: #999988; font-style: italic } /* Comment */
 .highlight .err { color: #a61717; background-color: #e3d2d2 } /* Error */

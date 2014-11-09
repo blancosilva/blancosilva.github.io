@@ -299,19 +299,19 @@
 <p>The algorithm has the following closed form:  Given a finite grid <span>\( \Lambda \subset \mathbb{Z}^2 \)</span> of the form <span>\( \Lambda = \Omega \cap \mathbb{Z}^2 \)</span> for some compact set <span>\( \Omega \subset \mathbb{R}^2 \)</span>, a signal <span>\( f \in L_2(\Lambda,\mathbb{R}^+) \)</span>, and a family of <em>windows</em> <span>\( \{ \mathcal{R}_k \}_{k \in \Lambda} \)</span> satisfying the conditions</p>
 
 <ol>
-<li><span>\( k \in \mathcal{R}_k \)</span> for all <span>\( k \in \Lambda \)</span>.</li>
-<li> If <span>\( j \in \mathcal{R}<em>k \)</span>, then <span>\( k \in \mathcal{R}</em>j \)</span>,</li>
+  <li><span>\( k \in \mathcal{R}_k \)</span> for all <span>\( k \in \Lambda \)</span>.</li>
+  <li>If <span>\( j \in \mathcal{R}_k \)</span>, then <span>\( k \in \mathcal{R}_j \)</span>,</li>
 </ol>
 
-<p>the nonlocal-means operator <span>\( \text{NL}<em>h\colon \ell</em>2(\Lambda,\mathbb{R}) \to \ell_2(\Lambda,\mathbb{R}) \)</span> with filtering parameter <span>\( h&gt;0 \)</span>, is defined by</p>
+<p>the nonlocal-means operator <span>\( \text{NL}_h\colon \ell_2(\Lambda,\mathbb{R}) \to \ell_2(\Lambda,\mathbb{R}) \)</span> with filtering parameter <span>\( h&gt;0 \)</span>, is defined by</p>
 
 <div>
-    \begin{equation}
+	\begin{equation}
 \text{NL}_h f(k) = \sum_{j \in \Lambda} \omega_h(j,k) f(j),
 \end{equation}
 </div>
 
-<p>where the weights <span>\( { \omega<em>h(j,k) }</em>{j,k \in \Lambda} \)</span> are defined by</p>
+<p>where the weights <span>\( { \omega_h(j,k) }_{j,k \in \Lambda} \)</span> are defined by</p>
 
 <div>
 \begin{equation}
@@ -324,7 +324,7 @@
 <p>Notice that the <em>similarity</em> between patches is nothing but a simple Gaussian weighted Euclidean distance, which accounts for difference of grayscales alone. <a href="http://www.google.com/url?sa=t&amp;source=web&amp;ct=res&amp;cd=1&amp;ved=0CAgQFjAA&amp;url=http%3A%2F%2Fgraphics.cs.cmu.edu%2Fpeople%2Fefros%2Fresearch%2FNPS%2Fefros-iccv99.pdf&amp;ei=w7vZS8udFZLK8ATlr-DYAQ&amp;usg=AFQjCNHVEBaLtGLRS97qyp56MEPJ1aeRXg&amp;sig2=b_w4DZt33t0wWIkY0zW6jQ">Efros and Leung</a> prove that this distance is a reliable measure for the comparison of texture patches, and at the same time copes very well with additive white noise; in particular, if <span>\( f \)</span> and <span>\( g \)</span> are respectively the noisy and original images, and <span>\( \sigma^2 \)</span> is the noise variance, then the most similar patches in the noisy image are also expected to be the most similar in the original:</p>
 
 <div>
-    \begin{equation}
+	\begin{equation}
  \mathbb{E} \left\lVert f(\mathcal{R}_j) - f(\mathcal{R}_k) \right\rVert_{2,a}^2 = \left\lVert g(\mathcal{R}_j) - g(\mathcal{R}_k) \right\rVert_{2,a}^2 + 2\sigma^2 .
  \end{equation}
 </div>

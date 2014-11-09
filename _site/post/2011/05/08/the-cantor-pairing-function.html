@@ -282,9 +282,9 @@
 		<p>The objective of this post is to construct a pairing function, that presents us with a bijection between the set of natural numbers, and the lattice of points in the plane with non-negative integer coordinates.</p>
 
 <div>
-    \begin{equation}
-    \pi\colon \mathbb{N} \cup \{ 0 \} \to \big( \mathbb{N} \cup \{ 0 \} \big)^2.
-    \end{equation}
+	\begin{equation}
+	\pi\colon \mathbb{N} \cup \{ 0 \} \to \big( \mathbb{N} \cup \{ 0 \} \big)^2.
+	\end{equation}
 </div>
 
 <p>We will accomplish this by creating the corresponding map (and its inverse), that takes each natural number <span>\( z \)</span> and drops it at a location in the lattice, as the following diagram suggests:</p>
@@ -297,7 +297,7 @@
 
 <p>In particular, note that the triangular numbers <span>\( t_n = 1 + 2 + \dotsb + n \)</span> occupy all the positions in the <span>\( x \)</span>–axis, precisely where this one intersects the lines <span>\( x+y=n\)</span>.</p>
 
-<p>This is the key ingredient to construct the required bijection: Given a natural number <span>\( z \in \mathbb{N}, \)</span> there is a <strong>unique</strong> value <span>\( n = n(z) \)</span> such that <span>\( t<em>n \leq z &lt; t</em>{n+1} \)</span> (since the sequence of triangular numbers is strictly increasing).  The number <span>\( z \)</span> then belongs to the intersection of the lattice with the diagonal line <span>\( x+y=n, \)</span> and it only remains to know how far from the <span>\( x \)</span>–axis: the <strong>offset</strong> <span>\( z-t_n \)</span> actually indicates the <span>\( y \)</span> coordinate of the position of <span>\( z \)</span> in the lattice.  We can now find the precise position of <span>\( z \)</span> by solving the following simple system of two equations with two variables:</p>
+<p>This is the key ingredient to construct the required bijection: Given a natural number <span>\( z \in \mathbb{N}, \)</span> there is a <strong>unique</strong> value <span>\( n = n(z) \)</span> such that <span>\( t_n \leq z &lt; t_{n+1} \)</span> (since the sequence of triangular numbers is strictly increasing).  The number <span>\( z \)</span> then belongs to the intersection of the lattice with the diagonal line <span>\( x+y=n, \)</span> and it only remains to know how far from the <span>\( x \)</span>–axis: the <strong>offset</strong> <span>\( z-t_n \)</span> actually indicates the <span>\( y \)</span> coordinate of the position of <span>\( z \)</span> in the lattice.  We can now find the precise position of <span>\( z \)</span> by solving the following simple system of two equations with two variables:</p>
 
 <div>
 \begin{equation}
@@ -305,13 +305,13 @@
 \end{equation}
 </div>
 
-<p>Or simply put, the coordinates are given by <span>\( x=n(z)-z+t<em>{n(z)} \)</span>, <span>\( y=z-t</em>{n(z)}. \)</span>  The question remaining is, of course, how to find the value of <span>\( n(z). \)</span></p>
+<p>Or simply put, the coordinates are given by <span>\( x=n(z)-z+t_{n(z)} \)</span>, <span>\( y=z-t_{n(z)}. \)</span>  The question remaining is, of course, how to find the value of <span>\( n(z). \)</span></p>
 
 <p>We need to look for the value of <span>\( n \)</span> such that</p>
 
 <div>
 \begin{equation}
- \displaystyle{\frac{n(n+1)}{2}} \leq z < \displaystyle{\frac{(n+1)(n+2)}{2}}. 
+ \displaystyle{\frac{n(n+1)}{2}} \leq z &lt; \displaystyle{\frac{(n+1)(n+2)}{2}}. 
 \end{equation}
 </div>
 
@@ -333,7 +333,7 @@
 \end{equation}
 </div>
 
-<h3>Miscellaneous</h3>
+<h3 id="miscellaneous">Miscellaneous</h3>
 
 <p>Antoine Flattot suggests using this construction to find a proof that the natural numbers are also in bijection with the rational numbers, and thus they both have the same cardinality.  How would the reader go about it?</p>
 
@@ -346,14 +346,14 @@
 <span class="lineno"> 5</span> <span class="k">\let\width\pgfmathresult</span>
 <span class="lineno"> 6</span> <span class="c">% Generate a grid with the corresponding width</span>
 <span class="lineno"> 7</span> <span class="k">\draw</span> (-0.25cm,-0.25cm) grid[step=2cm,ultra thin,gray]
-<span class="lineno"> 8</span>  (2*<span class="k">\width</span> cm+0.25cm, 2*<span class="k">\width</span> cm+0.25cm);
+<span class="lineno"> 8</span> 	(2*<span class="k">\width</span> cm+0.25cm, 2*<span class="k">\width</span> cm+0.25cm);
 <span class="lineno"> 9</span> <span class="k">\foreach</span> <span class="k">\x</span> in <span class="nb">{</span>0,...,<span class="k">\width</span><span class="nb">}</span> <span class="nb">{</span>
-<span class="lineno">10</span>  <span class="k">\draw</span><span class="na">[gray,ultra thin]</span> (2*<span class="k">\x</span>,0.2cm-0.25cm) --
-<span class="lineno">11</span>      (2*<span class="k">\x</span>, -0.2cm-0.25cm) node[below]
-<span class="lineno">12</span>      <span class="nb">{</span><span class="k">\large</span> <span class="s">$</span><span class="nv">\boldsymbol</span><span class="nb">{</span><span class="nv">\x</span><span class="nb">} </span><span class="s">$</span><span class="nb">}</span>;
-<span class="lineno">13</span>  <span class="k">\draw</span><span class="na">[gray,ultra thin]</span> (0.2cm-0.25cm,2*<span class="k">\x</span>) --
-<span class="lineno">14</span>      (-0.2cm-0.25cm,2*<span class="k">\x</span>) node[left]
-<span class="lineno">15</span>      <span class="nb">{</span><span class="k">\large</span> <span class="s">$</span><span class="nv">\boldsymbol</span><span class="nb">{</span><span class="nv">\x</span><span class="nb">} </span><span class="s">$</span><span class="nb">}</span>;
+<span class="lineno">10</span> 	<span class="k">\draw</span><span class="na">[gray,ultra thin]</span> (2*<span class="k">\x</span>,0.2cm-0.25cm) --
+<span class="lineno">11</span> 		(2*<span class="k">\x</span>, -0.2cm-0.25cm) node[below]
+<span class="lineno">12</span> 		<span class="nb">{</span><span class="k">\large</span> <span class="s">$</span><span class="nv">\boldsymbol</span><span class="nb">{</span><span class="nv">\x</span><span class="nb">} </span><span class="s">$</span><span class="nb">}</span>;
+<span class="lineno">13</span> 	<span class="k">\draw</span><span class="na">[gray,ultra thin]</span> (0.2cm-0.25cm,2*<span class="k">\x</span>) --
+<span class="lineno">14</span> 		(-0.2cm-0.25cm,2*<span class="k">\x</span>) node[left]
+<span class="lineno">15</span> 		<span class="nb">{</span><span class="k">\large</span> <span class="s">$</span><span class="nv">\boldsymbol</span><span class="nb">{</span><span class="nv">\x</span><span class="nb">} </span><span class="s">$</span><span class="nb">}</span>;
 <span class="lineno">16</span> <span class="c">% First node, always at the origin</span>
 <span class="lineno">17</span> <span class="k">\filldraw</span>(0,0) circle (2pt);
 <span class="lineno">18</span> <span class="k">\draw</span>(10pt,8pt) node<span class="nb">{</span><span class="k">\large</span> <span class="s">$</span><span class="m">0</span><span class="nb"> </span><span class="s">$</span><span class="nb">}</span>;
@@ -361,38 +361,38 @@
 <span class="lineno">20</span> <span class="c">% For each number z between 1 and #1...</span>
 <span class="lineno">21</span> <span class="k">\foreach</span> <span class="k">\n</span> in <span class="nb">{</span>1,..., #1<span class="nb">}</span>
 <span class="lineno">22</span> <span class="nb">{</span>
-<span class="lineno">23</span>  <span class="c">% Compute the diagonal number n(z) and the previous</span>
-<span class="lineno">24</span>  <span class="k">\pgfmathparse</span><span class="nb">{</span>floor(0.5*(sqrt(8*<span class="k">\n</span>+1)-1))<span class="nb">}</span>
-<span class="lineno">25</span>  <span class="k">\let\thisn\pgfmathresult</span>
-<span class="lineno">26</span>  <span class="k">\pgfmathparse</span><span class="nb">{</span>floor(0.5*(sqrt(8*<span class="k">\n</span>-7)-1))<span class="nb">}</span>
-<span class="lineno">27</span>  <span class="k">\let\prevn\pgfmathresult</span>
-<span class="lineno">28</span>  <span class="c">%Compute the triangular number t_n and the previous</span>
-<span class="lineno">29</span>  <span class="k">\pgfmathparse</span><span class="nb">{</span>0.5*(<span class="k">\thisn</span><span class="nb">^</span>2+<span class="k">\thisn</span>)<span class="nb">}</span>
-<span class="lineno">30</span>  <span class="k">\let\thist\pgfmathresult</span>
-<span class="lineno">31</span>  <span class="k">\pgfmathparse</span><span class="nb">{</span>0.5*(<span class="k">\prevn</span><span class="nb">^</span>2+<span class="k">\prevn</span>)<span class="nb">}</span>
-<span class="lineno">32</span>  <span class="k">\let\prevt\pgfmathresult</span>
-<span class="lineno">33</span>  <span class="c">% Compute the y coords of this and the previous</span>
-<span class="lineno">34</span>  <span class="k">\pgfmathparse</span><span class="nb">{</span><span class="k">\n</span>-<span class="k">\thist</span><span class="nb">}</span>
-<span class="lineno">35</span>  <span class="k">\let\thisy\pgfmathresult</span>
-<span class="lineno">36</span>  <span class="k">\pgfmathparse</span><span class="nb">{</span><span class="k">\n</span>-1-<span class="k">\prevt</span><span class="nb">}</span>
-<span class="lineno">37</span>  <span class="k">\let\prevy\pgfmathresult</span>
-<span class="lineno">38</span>  <span class="c">% Compute the x coords of this and the previous</span>
-<span class="lineno">39</span>  <span class="k">\pgfmathparse</span><span class="nb">{</span><span class="k">\thisn</span>-<span class="k">\thisy</span><span class="nb">}</span>
-<span class="lineno">40</span>  <span class="k">\let\thisx\pgfmathresult</span>
-<span class="lineno">41</span>  <span class="k">\pgfmathparse</span><span class="nb">{</span><span class="k">\prevn</span>-<span class="k">\prevy</span><span class="nb">}</span>
-<span class="lineno">42</span>  <span class="k">\let\prevx\pgfmathresult</span>
-<span class="lineno">43</span>  <span class="c">% Done.  Let&#39;s place the nodes at their locations</span>
-<span class="lineno">44</span>  <span class="k">\node</span> (this) at (2*<span class="k">\thisx</span>,2*<span class="k">\thisy</span>) [inner sep=6pt] <span class="nb">{}</span>;
-<span class="lineno">45</span>  <span class="k">\node</span> (prev) at (2*<span class="k">\prevx</span>,2*<span class="k">\prevy</span>) [inner sep=6pt] <span class="nb">{}</span>;
-<span class="lineno">46</span>  <span class="k">\draw</span> (2*<span class="k">\thisx</span> cm+10pt,2*<span class="k">\thisy</span> cm+8pt) node<span class="nb">{</span><span class="k">\large</span> <span class="s">$</span><span class="nv">\n</span><span class="nb"> </span><span class="s">$</span><span class="nb">}</span>;
-<span class="lineno">47</span>  <span class="k">\filldraw</span> (2*<span class="k">\thisx</span> cm,2*<span class="k">\thisy</span> cm) circle (2pt);
-<span class="lineno">48</span>  <span class="c">% If the node belongs in the x-axis, receive a red arrow</span>
-<span class="lineno">49</span>  <span class="c">% Otherwise, a black arrow</span>
-<span class="lineno">50</span>  <span class="k">\ifthenelse</span><span class="nb">{</span><span class="k">\lengthtest</span><span class="nb">{</span><span class="k">\thisy</span> cm = 0 cm<span class="nb">}}{</span>
-<span class="lineno">51</span>      <span class="k">\draw</span><span class="na">[-&gt;,thick,red]</span> (prev) -- (this);
-<span class="lineno">52</span>  <span class="nb">}{</span>
-<span class="lineno">53</span>      <span class="k">\draw</span><span class="na">[-&gt;]</span> (prev) -- (this);
-<span class="lineno">54</span>  <span class="nb">}</span>
+<span class="lineno">23</span> 	<span class="c">% Compute the diagonal number n(z) and the previous</span>
+<span class="lineno">24</span> 	<span class="k">\pgfmathparse</span><span class="nb">{</span>floor(0.5*(sqrt(8*<span class="k">\n</span>+1)-1))<span class="nb">}</span>
+<span class="lineno">25</span> 	<span class="k">\let\thisn\pgfmathresult</span>
+<span class="lineno">26</span> 	<span class="k">\pgfmathparse</span><span class="nb">{</span>floor(0.5*(sqrt(8*<span class="k">\n</span>-7)-1))<span class="nb">}</span>
+<span class="lineno">27</span> 	<span class="k">\let\prevn\pgfmathresult</span>
+<span class="lineno">28</span> 	<span class="c">%Compute the triangular number t_n and the previous</span>
+<span class="lineno">29</span> 	<span class="k">\pgfmathparse</span><span class="nb">{</span>0.5*(<span class="k">\thisn</span><span class="nb">^</span>2+<span class="k">\thisn</span>)<span class="nb">}</span>
+<span class="lineno">30</span> 	<span class="k">\let\thist\pgfmathresult</span>
+<span class="lineno">31</span> 	<span class="k">\pgfmathparse</span><span class="nb">{</span>0.5*(<span class="k">\prevn</span><span class="nb">^</span>2+<span class="k">\prevn</span>)<span class="nb">}</span>
+<span class="lineno">32</span> 	<span class="k">\let\prevt\pgfmathresult</span>
+<span class="lineno">33</span> 	<span class="c">% Compute the y coords of this and the previous</span>
+<span class="lineno">34</span> 	<span class="k">\pgfmathparse</span><span class="nb">{</span><span class="k">\n</span>-<span class="k">\thist</span><span class="nb">}</span>
+<span class="lineno">35</span> 	<span class="k">\let\thisy\pgfmathresult</span>
+<span class="lineno">36</span> 	<span class="k">\pgfmathparse</span><span class="nb">{</span><span class="k">\n</span>-1-<span class="k">\prevt</span><span class="nb">}</span>
+<span class="lineno">37</span> 	<span class="k">\let\prevy\pgfmathresult</span>
+<span class="lineno">38</span> 	<span class="c">% Compute the x coords of this and the previous</span>
+<span class="lineno">39</span> 	<span class="k">\pgfmathparse</span><span class="nb">{</span><span class="k">\thisn</span>-<span class="k">\thisy</span><span class="nb">}</span>
+<span class="lineno">40</span> 	<span class="k">\let\thisx\pgfmathresult</span>
+<span class="lineno">41</span> 	<span class="k">\pgfmathparse</span><span class="nb">{</span><span class="k">\prevn</span>-<span class="k">\prevy</span><span class="nb">}</span>
+<span class="lineno">42</span> 	<span class="k">\let\prevx\pgfmathresult</span>
+<span class="lineno">43</span> 	<span class="c">% Done.  Let&#39;s place the nodes at their locations</span>
+<span class="lineno">44</span> 	<span class="k">\node</span> (this) at (2*<span class="k">\thisx</span>,2*<span class="k">\thisy</span>) [inner sep=6pt] <span class="nb">{}</span>;
+<span class="lineno">45</span> 	<span class="k">\node</span> (prev) at (2*<span class="k">\prevx</span>,2*<span class="k">\prevy</span>) [inner sep=6pt] <span class="nb">{}</span>;
+<span class="lineno">46</span> 	<span class="k">\draw</span> (2*<span class="k">\thisx</span> cm+10pt,2*<span class="k">\thisy</span> cm+8pt) node<span class="nb">{</span><span class="k">\large</span> <span class="s">$</span><span class="nv">\n</span><span class="nb"> </span><span class="s">$</span><span class="nb">}</span>;
+<span class="lineno">47</span> 	<span class="k">\filldraw</span> (2*<span class="k">\thisx</span> cm,2*<span class="k">\thisy</span> cm) circle (2pt);
+<span class="lineno">48</span> 	<span class="c">% If the node belongs in the x-axis, receive a red arrow</span>
+<span class="lineno">49</span> 	<span class="c">% Otherwise, a black arrow</span>
+<span class="lineno">50</span> 	<span class="k">\ifthenelse</span><span class="nb">{</span><span class="k">\lengthtest</span><span class="nb">{</span><span class="k">\thisy</span> cm = 0 cm<span class="nb">}}{</span>
+<span class="lineno">51</span> 		<span class="k">\draw</span><span class="na">[-&gt;,thick,red]</span> (prev) -- (this);
+<span class="lineno">52</span> 	<span class="nb">}{</span>
+<span class="lineno">53</span> 		<span class="k">\draw</span><span class="na">[-&gt;]</span> (prev) -- (this);
+<span class="lineno">54</span> 	<span class="nb">}</span>
 <span class="lineno">55</span> <span class="nb">}</span></code></pre></div>
 
 <p>Note that the <span>\( \LaTeX \)</span> libraries <code>calc</code> and <code>ifthen</code> need to be loaded previously, to be able to handle some of the commands.</p>
