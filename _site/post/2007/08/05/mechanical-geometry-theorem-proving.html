@@ -18,6 +18,7 @@
 
 	<!-- Custom styles for this template -->
 	<link href="/css/blog.css" rel="stylesheet">
+	<link rel="stylesheet" href="/css/pygments.css">
 
 
 	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -71,6 +72,10 @@
 					<ul class="dropdown-menu" role="menu">
 						<li class="dropdown-header">Current classes</li>
 						
+						
+						
+						
+						<li><a href="/course/2014/11/08/Mathematical-Imaging.html">Mathematical Imaging</a></li>
 						
 						
 						
@@ -155,14 +160,102 @@
 						
 						
 						
+						
+						
 						<li class="divider"></li>
 						<li class="dropdown-header">Selected Class Material</li>
-						<li>Mathematical Imaging</li>
+						
+						
+						<li><a href="/teaching/2014/11/08/past-classes.html">Past Sections of Undergraduate Calculus</a></li>
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						<!-- <li>Mathematical Imaging</li>
 						<li>Introduction to the Theory of Distributions</li>
 						<li>An Introduction to Algebraic Topology</li>
 						<li>MA598R: Measure Theory</li>
-						<li>The Basic Practice of Statistics</li>
-						<li><a href="http://blancosilva.github.io/2014-11-08-past-classes.md">Past Undergraduate Class Sections</a></li>
+						<li>The Basic Practice of Statistics</li> -->
 					</ul>
 				</li>
 			</ul>
@@ -186,25 +279,25 @@
 	</header>
 
 	<article class="post-content">
-		<p>In 1977, Professor Wen-Tsun Wu succeeded in developing a method of mechanical geometry theorem proving. This method has been applied to prove or even discover hundreds of non-trivial difficult theorems in elementary and differential geometries on a computer in an almost trivial manner. Usign Ritt’s differential algebra, Wu established a method for solving algebraic and differential equations by transforming an equation system in the general form to equation systems in triangular form.   This is the Ritt-Wu decomposition algorithm, that later on was shown to be equivalent to perform a series of operations on ideals, very easily carried out by means of Gröbner basis manipulation.</p>
+		<p>In 1977, Professor Wen-Tsun Wu succeeded in developing a method of mechanical geometry theorem proving. This method has been applied to prove or even discover hundreds of non-trivial difficult theorems in elementary and differential geometries on a computer in an almost trivial manner. Usign Ritt&#39;s differential algebra, Wu established a method for solving algebraic and differential equations by transforming an equation system in the general form to equation systems in triangular form.   This is the Ritt-Wu decomposition algorithm, that later on was shown to be equivalent to perform a series of operations on ideals, very easily carried out by means of Gröbner basis manipulation.</p>
 
-<p>I wrote a script in <code>MAPLE</code> to perform evaluations of the validity of some simple theorems in Euclidean Geometry, and wrote a small paper (in Spanish) on one of my findings, that was published in Bol. Asoc. Prof. Puig Adams, in October’99: “<a href="http://www.math.sc.edu/~blanco/m13chou/m13chou.html">Sobre demostración automática de un problema geométrico</a>”.</p>
+<p>I wrote a script in <code>MAPLE</code> to perform evaluations of the validity of some simple theorems in Euclidean Geometry, and wrote a small paper (in Spanish) on one of my findings, that was published in Bol. Asoc. Prof. Puig Adams, in October&#39;99: &quot;<a href="http://www.math.sc.edu/~blanco/m13chou/m13chou.html">Sobre demostración automática de un problema geométrico</a>&quot;.</p>
 
 <p>The example I cover in that short article can be seen below.</p>
 
 <blockquote>
-  <p><strong>Given</strong>: Circles <span>\( A \)</span>, <span>\( B \)</span> that intersect each other in points <span>\( C \)</span> and <span>\( D \)</span>, and given points <span>\( E \)</span>, <span>\( F \)</span> in circle <span>\( A \)</span>, consider line <span>\( a \)</span> through <span>\( E \)</span> and <span>\( C \)</span>, and line <span>\( b \)</span> through <span>\( F \)</span> and <span>\( D \)</span>.  The intersections of line <span>\( a \)</span> with circle <span>\( A \)</span> are <span>\( C \)</span> and <span>\( G \)</span>.  The intersections of line <span>\( b \)</span> with circle <span>\( B \)</span> are <span>\( D \)</span> and <span>\( H \)</span>.  Consider the segments <span>\( c \)</span> (connecting <span>\( E \)</span> with <span>\( F \)</span>) and <span>\( d \)</span> (connecting <span>\( G \)</span> with <span>\( H \)</span>).</p>
+<p><strong>Given</strong>: Circles <span>\( A \)</span>, <span>\( B \)</span> that intersect each other in points <span>\( C \)</span> and <span>\( D \)</span>, and given points <span>\( E \)</span>, <span>\( F \)</span> in circle <span>\( A \)</span>, consider line <span>\( a \)</span> through <span>\( E \)</span> and <span>\( C \)</span>, and line <span>\( b \)</span> through <span>\( F \)</span> and <span>\( D \)</span>.  The intersections of line <span>\( a \)</span> with circle <span>\( A \)</span> are <span>\( C \)</span> and <span>\( G \)</span>.  The intersections of line <span>\( b \)</span> with circle <span>\( B \)</span> are <span>\( D \)</span> and <span>\( H \)</span>.  Consider the segments <span>\( c \)</span> (connecting <span>\( E \)</span> with <span>\( F \)</span>) and <span>\( d \)</span> (connecting <span>\( G \)</span> with <span>\( H \)</span>).</p>
 
-  <p><strong>To prove</strong>: Segments <span>\( c \)</span> and <span>\( d \)</span> are parallel.</p>
+<p><strong>To prove</strong>: Segments <span>\( c \)</span> and <span>\( d \)</span> are parallel.</p>
 </blockquote>
 
 <p style="text-align:center;"><a href="http://www.flickr.com/photos/eseprimo/298203907/" title="circulos by eseprimo, on Flickr"><img src="http://farm1.static.flickr.com/113/298203907_77bcce2162.jpg" width="75%" alt="circulos" /></a></p>
 
-<h3 id="proposed-solution">Proposed Solution</h3>
+<h3>Proposed Solution</h3>
 
-<p>Let us assume the points <span>\( C \)</span> and <span>\( D \)</span> have coordinates <span>\( C=(0,1) \)</span> and <span>\( D=(0,-1) \)</span>, and the centers of the circles are <span>\( A=(a,0) \)</span>, <span>\( B=(b,0) \)</span>.  Let us consider a vector <span>\( \nu = (\nu_1, \nu_2) \)</span> supported in the point <span>\( C \)</span>, and a vector <span>\( \omega = (\omega_1, \omega_2) \)</span> supported in the point <span>\( D \)</span>.</p>
+<p>Let us assume the points <span>\( C \)</span> and <span>\( D \)</span> have coordinates <span>\( C=(0,1) \)</span> and <span>\( D=(0,-1) \)</span>, and the centers of the circles are <span>\( A=(a,0) \)</span>, <span>\( B=(b,0) \)</span>.  Let us consider a vector <span>\( \nu = (\nu<em>1, \nu</em>2) \)</span> supported in the point <span>\( C \)</span>, and a vector <span>\( \omega = (\omega<em>1, \omega</em>2) \)</span> supported in the point <span>\( D \)</span>.</p>
 
-<p>A line through <span>\( C \)</span> with leading vector <span>\( \nu \)</span> intersects the circle <span>\( A \)</span> at the point <span>\( E=(x_1,y_1) \)</span>.  In order to compute its coordinates, we consider the equations of the line and the circle:</p>
+<p>A line through <span>\( C \)</span> with leading vector <span>\( \nu \)</span> intersects the circle <span>\( A \)</span> at the point <span>\( E=(x<em>1,y</em>1) \)</span>.  In order to compute its coordinates, we consider the equations of the line and the circle:</p>
 
 <div>
 \begin{equation}
@@ -240,16 +333,16 @@ y_1 - 1 - \alpha\nu_2 = 0 \label{eq:2}
 \end{equation}
 </div>
 
-<p>Let <span>\( g_1(x_1,\alpha) \)</span>, <span>\( g_2(y_1,\alpha) \)</span> and <span>\( g_3(\alpha) \)</span> be polynomials obtained from <span>\( \eqref{eq:1}, \eqref{eq:2}, \eqref{eq:3}. \)</span>  We obtain polynomials <span>\( g_4(x_2,\beta) \)</span>, <span>\( g_5(y_2, \beta) \)</span> and <span>\( g_6(\beta) \)</span> in a similar way, considering the condition of point <span>\( F \)</span> belonging in the line through <span>\( D \)</span> with leading vector <span>\( \omega \)</span> and the circle <span>\( A \)</span>.  We also obtain polynomials <span>\( g_7(x_3, \gamma) \)</span>, <span>\( g_8(y_3,\gamma) \)</span> and <span>\( g_9(\gamma) \)</span> for the point <span>\( G \)</span> in circle <span>\( B \)</span> and line through <span>\( C \)</span> with leading vector <span>\( \nu \)</span>.  Finally, obtain polynomials <span>\( g_{10}(x_4,\delta) \)</span>, <span>\( g_{11}(y_4,\delta) \)</span> and <span>\( g_{12}(\delta) \)</span> for point <span>\( H \)</span> belonging to circle <span>\( B \)</span> and the line through point <span>\( D \)</span> with leading vector <span>\( \omega \)</span>.</p>
+<p>Let <span>\( g<em>1(x</em>1,\alpha) \)</span>, <span>\( g<em>2(y</em>1,\alpha) \)</span> and <span>\( g<em>3(\alpha) \)</span> be polynomials obtained from <span>\( \eqref{eq:1}, \eqref{eq:2}, \eqref{eq:3}. \)</span>  We obtain polynomials <span>\( g</em>4(x<em>2,\beta) \)</span>, <span>\( g</em>5(y<em>2, \beta) \)</span> and <span>\( g</em>6(\beta) \)</span> in a similar way, considering the condition of point <span>\( F \)</span> belonging in the line through <span>\( D \)</span> with leading vector <span>\( \omega \)</span> and the circle <span>\( A \)</span>.  We also obtain polynomials <span>\( g<em>7(x</em>3, \gamma) \)</span>, <span>\( g<em>8(y</em>3,\gamma) \)</span> and <span>\( g<em>9(\gamma) \)</span> for the point <span>\( G \)</span> in circle <span>\( B \)</span> and line through <span>\( C \)</span> with leading vector <span>\( \nu \)</span>.  Finally, obtain polynomials <span>\( g</em>{10}(x<em>4,\delta) \)</span>, <span>\( g</em>{11}(y<em>4,\delta) \)</span> and <span>\( g</em>{12}(\delta) \)</span> for point <span>\( H \)</span> belonging to circle <span>\( B \)</span> and the line through point <span>\( D \)</span> with leading vector <span>\( \omega \)</span>.</p>
 
 <p>We use the Ritt-Wu method on those polynomials (notice it is not necessary to turn the system in triangular, since by a simple re-ordering of the polynomials we accomplish this state).  The proof follows:</p>
 
 <div>
 \begin{align*}
-h_1 &amp;= g_1 &amp; h_5 &amp;= g_7 &amp; h_9 &amp;= g_3 \\
-h_2 &amp;= g_2 &amp; h_6 &amp;= g_8 &amp; h_{10} &amp;= g_6 \\
-h_3 &amp;= g_3 &amp; h_7 &amp;= g_{10} &amp; h_{11} &amp;= g_9 \\
-h_4 &amp;= g_5 &amp; h_8 &amp;= g_{11} &amp; h_{12} &amp;= g_{12}
+h_1 &= g_1 & h_5 &= g_7 & h_9 &= g_3 \\
+h_2 &= g_2 & h_6 &= g_8 & h_{10} &= g_6 \\
+h_3 &= g_3 & h_7 &= g_{10} & h_{11} &= g_9 \\
+h_4 &= g_5 & h_8 &= g_{11} & h_{12} &= g_{12}
 \end{align*}
 </div>
 
@@ -261,10 +354,9 @@ h_4 &amp;= g_5 &amp; h_8 &amp;= g_{11} &amp; h_{12} &amp;= g_{12}
 \end{equation*}
 </div>
 
-<script type="text/x-mathjax-config">
-  MathJax.Hub.Config({ TeX: { equationNumbers: {autoNumber: "all"} } });
-</script>
-
+<p><script type="text/x-mathjax-config">
+  MathJax.Hub.Config({ TeX: { equationNumbers: {autoNumber: &quot;all&quot;} } });
+</script></p>
 
 	</article>
 

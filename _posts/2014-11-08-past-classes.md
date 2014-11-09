@@ -1,13 +1,23 @@
 ---
 layout: page
-title: Past Sections of MATH 122, MATH 141, MATH 142, MATH 241, and MATH 242
+title: Past Sections of Undergraduate Calculus
 comments: false
-category: page
-current: false
+category: teaching
 ---
 
-{% for post in site.posts %}
-{% if post.category == "course"  and  post.current == false %}
-<li><a href="{{ post.url | prepend: side.baseurl }}">{{ post.title }}</a></li>
-{% endif %}
-{% endfor %}
+<div class="alert alert-success" role="alert">
+	Click on each course to retrieve corresponding syllabus and lesson plan.
+</div>
+
+<div class="col-sm-8">
+	<div class="list-group">
+		{% for post in site.posts %}
+		{% if post.category == "course"  and  post.current == false %}
+		<a href="{{ post.url | prepend: side.baseurl }}#" class="list-group-item">
+			<h4 class="list-group-item-heading">{{ post.title }}</h4>
+			<p class="list-group-item-text">{{ post.description }}</p>
+		</a>
+		{% endif %}
+		{% endfor %}
+	</div>
+</div>

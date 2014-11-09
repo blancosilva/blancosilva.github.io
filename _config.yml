@@ -13,4 +13,6 @@ flickr_username: eseprimo
 linkedin_username: francisco-blanco-silva/1b/887/870
 
 # Build settings
-markdown: kramdown
+# markdown: kramdown
+markdown: redcarpet
+highlighter: pygments

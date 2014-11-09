@@ -6,84 +6,327 @@
 </description>
     <link>http://blancosilva.github.io/</link>
     <atom:link href="http://blancosilva.github.io/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Sat, 08 Nov 2014 22:14:49 -0500</pubDate>
-    <lastBuildDate>Sat, 08 Nov 2014 22:14:49 -0500</lastBuildDate>
+    <pubDate>Sat, 08 Nov 2014 23:32:05 -0500</pubDate>
+    <lastBuildDate>Sat, 08 Nov 2014 23:32:05 -0500</lastBuildDate>
     <generator>Jekyll v2.4.0</generator>
     
       <item>
-        <title>Past Sections of MATH 122, MATH 141, MATH 142, MATH 241, and MATH 242</title>
-        <description>
-&lt;li&gt;&lt;a href=&quot;/course/2014/05/31/ma141-summer-2014.html&quot;&gt;MA141—Summer 2014&lt;/a&gt;&lt;/li&gt;
+        <title>Past Sections of Undergraduate Calculus</title>
+        <description>&lt;div class=&quot;alert alert-success&quot; role=&quot;alert&quot;&gt;
+    Click on each course to retrieve corresponding syllabus and lesson plan.
+&lt;/div&gt;
 
-&lt;li&gt;&lt;a href=&quot;/course/2014/01/11/ma-241-spring-2014.html&quot;&gt;MA241—Spring 2014&lt;/a&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;a href=&quot;/course/2014/01/06/ma141-spring-2014.html&quot;&gt;MA141—Spring 2014&lt;/a&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;a href=&quot;/course/2013/08/22/ma242-fall-2013.html&quot;&gt;MA242—Fall 2013&lt;/a&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;a href=&quot;/course/2013/08/20/ma141-fall-2013.html&quot;&gt;MA141—Fall 2013&lt;/a&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;a href=&quot;/course/2013/08/19/ma122-fall-2013.html&quot;&gt;MA122—Fall 2013&lt;/a&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;a href=&quot;/course/2013/01/10/ma122-spring-2013.html&quot;&gt;MA122—Spring 2013&lt;/a&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;a href=&quot;/course/2013/01/10/ma141-spring-2013.html&quot;&gt;MA141—Spring 2013&lt;/a&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;a href=&quot;/course/2013/01/08/ma241-spring-2013.html&quot;&gt;MA241—Spring 2013&lt;/a&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;a href=&quot;/course/2012/08/17/ma242-fall-2012.html&quot;&gt;MA242—Fall 2012&lt;/a&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;a href=&quot;/course/2012/08/17/ma241-fall-2012.html&quot;&gt;MA241—Fall 2012&lt;/a&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;a href=&quot;/course/2012/08/15/ma141-fall-2012.html&quot;&gt;MA141—Fall 2012&lt;/a&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;a href=&quot;/course/2012/06/26/ma142-summer-ii-2012.html&quot;&gt;MA142—Summer II 2012&lt;/a&gt;&lt;/li&gt;
-
+&lt;div class=&quot;col-sm-8&quot;&gt;
+    &lt;div class=&quot;list-group&quot;&gt;
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        &lt;a href=&quot;/course/2014/05/31/ma141-summer-2014.html#&quot; class=&quot;list-group-item&quot;&gt;
+            &lt;h4 class=&quot;list-group-item-heading&quot;&gt;MA141—Summer 2014&lt;/h4&gt;
+            &lt;p class=&quot;list-group-item-text&quot;&gt;Calculus I&lt;/p&gt;
+        &lt;/a&gt;
+        
+        
+        
+        
+        
+        &lt;a href=&quot;/course/2014/01/11/ma-241-spring-2014.html#&quot; class=&quot;list-group-item&quot;&gt;
+            &lt;h4 class=&quot;list-group-item-heading&quot;&gt;MA241—Spring 2014&lt;/h4&gt;
+            &lt;p class=&quot;list-group-item-text&quot;&gt;Vector Calculus&lt;/p&gt;
+        &lt;/a&gt;
+        
+        
+        
+        &lt;a href=&quot;/course/2014/01/06/ma141-spring-2014.html#&quot; class=&quot;list-group-item&quot;&gt;
+            &lt;h4 class=&quot;list-group-item-heading&quot;&gt;MA141—Spring 2014&lt;/h4&gt;
+            &lt;p class=&quot;list-group-item-text&quot;&gt;Calculus I&lt;/p&gt;
+        &lt;/a&gt;
+        
+        
+        
+        
+        
+        
+        
+        &lt;a href=&quot;/course/2013/08/22/ma242-fall-2013.html#&quot; class=&quot;list-group-item&quot;&gt;
+            &lt;h4 class=&quot;list-group-item-heading&quot;&gt;MA242—Fall 2013&lt;/h4&gt;
+            &lt;p class=&quot;list-group-item-text&quot;&gt;Differential Equations&lt;/p&gt;
+        &lt;/a&gt;
+        
+        
+        
+        &lt;a href=&quot;/course/2013/08/20/ma141-fall-2013.html#&quot; class=&quot;list-group-item&quot;&gt;
+            &lt;h4 class=&quot;list-group-item-heading&quot;&gt;MA141—Fall 2013&lt;/h4&gt;
+            &lt;p class=&quot;list-group-item-text&quot;&gt;Calculus I&lt;/p&gt;
+        &lt;/a&gt;
+        
+        
+        
+        &lt;a href=&quot;/course/2013/08/19/ma122-fall-2013.html#&quot; class=&quot;list-group-item&quot;&gt;
+            &lt;h4 class=&quot;list-group-item-heading&quot;&gt;MA122—Fall 2013&lt;/h4&gt;
+            &lt;p class=&quot;list-group-item-text&quot;&gt;Applied Calculus for Business and Life Sciences&lt;/p&gt;
+        &lt;/a&gt;
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        &lt;a href=&quot;/course/2013/01/10/ma122-spring-2013.html#&quot; class=&quot;list-group-item&quot;&gt;
+            &lt;h4 class=&quot;list-group-item-heading&quot;&gt;MA122—Spring 2013&lt;/h4&gt;
+            &lt;p class=&quot;list-group-item-text&quot;&gt;Applied Calculus for Business and Life Sciences&lt;/p&gt;
+        &lt;/a&gt;
+        
+        
+        
+        &lt;a href=&quot;/course/2013/01/10/ma141-spring-2013.html#&quot; class=&quot;list-group-item&quot;&gt;
+            &lt;h4 class=&quot;list-group-item-heading&quot;&gt;MA141—Spring 2013&lt;/h4&gt;
+            &lt;p class=&quot;list-group-item-text&quot;&gt;Calculus I&lt;/p&gt;
+        &lt;/a&gt;
+        
+        
+        
+        &lt;a href=&quot;/course/2013/01/08/ma241-spring-2013.html#&quot; class=&quot;list-group-item&quot;&gt;
+            &lt;h4 class=&quot;list-group-item-heading&quot;&gt;MA241—Spring 2013&lt;/h4&gt;
+            &lt;p class=&quot;list-group-item-text&quot;&gt;Vector Calculus&lt;/p&gt;
+        &lt;/a&gt;
+        
+        
+        
+        &lt;a href=&quot;/course/2012/08/17/ma242-fall-2012.html#&quot; class=&quot;list-group-item&quot;&gt;
+            &lt;h4 class=&quot;list-group-item-heading&quot;&gt;MA242—Fall 2012&lt;/h4&gt;
+            &lt;p class=&quot;list-group-item-text&quot;&gt;Differential Equations&lt;/p&gt;
+        &lt;/a&gt;
+        
+        
+        
+        &lt;a href=&quot;/course/2012/08/17/ma241-fall-2012.html#&quot; class=&quot;list-group-item&quot;&gt;
+            &lt;h4 class=&quot;list-group-item-heading&quot;&gt;MA241—Fall 2012&lt;/h4&gt;
+            &lt;p class=&quot;list-group-item-text&quot;&gt;Vector Calculus&lt;/p&gt;
+        &lt;/a&gt;
+        
+        
+        
+        &lt;a href=&quot;/course/2012/08/15/ma141-fall-2012.html#&quot; class=&quot;list-group-item&quot;&gt;
+            &lt;h4 class=&quot;list-group-item-heading&quot;&gt;MA141—Fall 2012&lt;/h4&gt;
+            &lt;p class=&quot;list-group-item-text&quot;&gt;Calculus I&lt;/p&gt;
+        &lt;/a&gt;
+        
+        
+        
+        
+        
+        &lt;a href=&quot;/course/2012/06/26/ma142-summer-ii-2012.html#&quot; class=&quot;list-group-item&quot;&gt;
+            &lt;h4 class=&quot;list-group-item-heading&quot;&gt;MA142—Summer II 2012&lt;/h4&gt;
+            &lt;p class=&quot;list-group-item-text&quot;&gt;Calculus II&lt;/p&gt;
+        &lt;/a&gt;
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+    &lt;/div&gt;
+&lt;/div&gt;
 </description>
         <pubDate>Sat, 08 Nov 2014 00:00:00 -0500</pubDate>
-        <link>http://blancosilva.github.io/page/2014/11/08/past-classes.html</link>
-        <guid isPermaLink="true">http://blancosilva.github.io/page/2014/11/08/past-classes.html</guid>
+        <link>http://blancosilva.github.io/teaching/2014/11/08/past-classes.html</link>
+        <guid isPermaLink="true">http://blancosilva.github.io/teaching/2014/11/08/past-classes.html</guid>
         
         
-        <category>page</category>
+        <category>teaching</category>
+        
+      </item>
+    
+      <item>
+        <title>Mathematical Imaging</title>
+        <description>&lt;p&gt;Mathematical Imaging (or Image Processing) is a very broad field: it encompasses three main disciplines: &lt;em&gt;Image Compression&lt;/em&gt;, &lt;em&gt;Restoration&lt;/em&gt; and &lt;em&gt;Image Analysis&lt;/em&gt;.  Each of these disciplines are big fields on their own—for instance, within &lt;em&gt;Restoration&lt;/em&gt; we have different problems (noise reduction, intensity adjustment, inpainting, sharpening, deblurring, correction of local distorsions…) and different techniques (based on PDEs, handling of coefficients in different frames, variational techniques, etc).  In the following pages we will explore some basic ideas and show some examples to illustrate how different branches of Mathematics can help you accomplish these tasks.&lt;/p&gt;
+
+&lt;p style=&quot;text-align:center;&quot;&gt;
+    &lt;a href=&quot;http://www.amazon.com/gp/product/1439840458/ref=as_li_tf_il?ie=UTF8&amp;amp;tag=blancosilva-20&amp;amp;linkCode=as2&amp;amp;camp=217145&amp;amp;creative=399373&amp;amp;creativeASIN=1439840458&quot;&gt;&lt;img border=&quot;0&quot; src=&quot;http://ws.assoc-amazon.com/widgets/q?_encoding=UTF8&amp;amp;Format=_SL160_&amp;amp;ASIN=1439840458&amp;amp;MarketPlace=US&amp;amp;ID=AsinImage&amp;amp;WS=1&amp;amp;tag=blancosilva-20&amp;amp;ServiceVersion=20070822&quot;&gt;&lt;/a&gt;&lt;img src=&quot;http://www.assoc-amazon.com/e/ir?t=blancosilva-20&amp;amp;l=as2&amp;amp;o=1&amp;amp;a=1439840458&amp;amp;camp=217145&amp;amp;creative=399373&quot; width=&quot;1&quot; height=&quot;1&quot; border=&quot;0&quot; alt=&quot;&quot; style=&quot;border:none!important;margin:0!important;&quot; /&gt;&lt;br /&gt;&lt;a href=&quot;http://www.amazon.com/gp/product/1439840458/ref=as_li_tf_tl?ie=UTF8&amp;amp;tag=blancosilva-20&amp;amp;linkCode=as2&amp;amp;camp=217145&amp;amp;creative=399373&amp;amp;creativeASIN=1439840458&quot;&gt;The Image Processing Handbook, Sixth Edition&lt;/a&gt;&lt;img src=&quot;http://www.assoc-amazon.com/e/ir?t=blancosilva-20&amp;amp;l=as2&amp;amp;o=1&amp;amp;a=1439840458&amp;amp;camp=217145&amp;amp;creative=399373&quot; width=&quot;1&quot; height=&quot;1&quot; border=&quot;0&quot; alt=&quot;&quot; style=&quot;border:none!important;margin:0!important;&quot; /&gt;
+&lt;/p&gt;
+
+&lt;div class=&quot;col-sm-8&quot;&gt;
+    &lt;div class=&quot;list-group&quot;&gt;
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        &lt;a href=&quot;/course-material/2011/01/18/convolution-with-gaussian-kernels.html#&quot; class=&quot;list-group-item&quot;&gt;
+            &lt;h4 class=&quot;list-group-item-heading&quot;&gt;Convolution with Gaussian kernels&lt;/h4&gt;
+            &lt;p class=&quot;list-group-item-text&quot;&gt;In the case of *good enough* functions in real spaces, one is able to perform this operation by passing to the Fourier domain, multiplying, and coming back through the inverse Fourier transform.   In the setting of digital signals one can also profit from this principle, but by using instead the *discrete and inverse discrete Fourier transforms*.  With the aid of the `fft` algorithms to calculate the discrete Fourier transform, convolution via the frequency domain can be faster than directly convolving the time domain signals (`scipy.ndimage.convolve` in `sage`), and the final result is the same except maybe at the borders of the image.  Some care must be taken when producing the convolution this way, since zero-padding needs to be applied.&lt;/p&gt;
+        &lt;/a&gt;
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+    &lt;/div&gt;
+&lt;/div&gt;
+</description>
+        <pubDate>Sat, 08 Nov 2014 00:00:00 -0500</pubDate>
+        <link>http://blancosilva.github.io/course/2014/11/08/Mathematical-Imaging.html</link>
+        <guid isPermaLink="true">http://blancosilva.github.io/course/2014/11/08/Mathematical-Imaging.html</guid>
+        
+        
+        <category>course</category>
         
       </item>
     
       <item>
         <title>Menger Sponges</title>
-        <description>&lt;p&gt;I know it is hard to grasp, but it is &lt;em&gt;mathematically viable&lt;/em&gt;: there are solids that require an infinite amount of material to construct, yet they have no volume!  Of course, the obvious infinity surface area makes it impossible to actually construct these objects physically, but it is feasible to come up with reasonable approximations.  One approximation to such a construction—the so-called Menger sponge—goes like this:&lt;/p&gt;
+        <description>&lt;p&gt;I know it is hard to grasp, but it is &lt;em&gt;mathematically viable&lt;/em&gt;: there are solids that require an infinite amount of material to construct, yet they have no volume!  Of course, the obvious infinity surface area makes it impossible to actually construct these objects physically, but it is feasible to come up with reasonable approximations.  One approximation to such a construction---the so-called Menger sponge---goes like this:&lt;/p&gt;
 
 &lt;ol&gt;
-  &lt;li&gt;Start with a big cube.  Visualize this cube as \( 3 \times 3 \times 3 = 27 \) smaller cubes with the same shape and size—like a Rubik’s cube!  Remove now the small center cube of each side, and the small cube at the center.  We are left with a structure consisting on 20 cubes: those at the corners and the &lt;em&gt;edge cubes&lt;/em&gt; connecting them.&lt;/li&gt;
-  &lt;li&gt;Repeat this process on each of these 20 cubes.  We are left with 400 smaller cubes.&lt;/li&gt;
-  &lt;li&gt;Repeat again (8,000 cubes), and again (160,000 cubes), and again (3,200,000 cubes), …&lt;/li&gt;
+&lt;li&gt;Start with a big cube.  Visualize this cube as \( 3 \times 3 \times 3 = 27 \) smaller cubes with the same shape and size---like a Rubik&amp;#39;s cube!  Remove now the small center cube of each side, and the small cube at the center.  We are left with a structure consisting on 20 cubes: those at the corners and the &lt;em&gt;edge cubes&lt;/em&gt; connecting them.&lt;/li&gt;
+&lt;li&gt;Repeat this process on each of these 20 cubes.  We are left with 400 smaller cubes.&lt;/li&gt;
+&lt;li&gt;Repeat again (8,000 cubes), and again (160,000 cubes), and again (3,200,000 cubes), ...&lt;/li&gt;
 &lt;/ol&gt;
 
 &lt;p&gt;After three steps of this process we already observe an elegant geometrical wonder.&lt;/p&gt;
 
-&lt;p style=&quot;text-align:center;&quot;&gt;&lt;img src=&quot;https://farm7.staticflickr.com/6227/6315682009_3f42068116_n_d.jpg&quot; style=&quot;width:50%; border:2px solid black;&quot; /&gt;&lt;br /&gt;&lt;a href=&quot;https://www.flickr.com/photos/rougeux/sets/72157621702780335/&quot;&gt;Level 3 Menger Sponge folded with &lt;em&gt;Post-its&lt;/em&gt;&lt;/a&gt;&lt;br /&gt;(Copyright)  All rights reserved by &lt;a href=&quot;https://www.flickr.com/photos/rougeux/&quot;&gt;Nick Rogeux&lt;/a&gt;&lt;/p&gt;
+&lt;p style=&quot;text-align:center;&quot;&gt;&lt;img src=&quot;https://farm7.staticflickr.com/6227/6315682009_3f42068116_n_d.jpg&quot; style=&quot;width:50%; border:2px solid black;&quot;&gt;&lt;br /&gt;&lt;a href=&quot;https://www.flickr.com/photos/rougeux/sets/72157621702780335/&quot;&gt;Level 3 Menger Sponge folded with &lt;em&gt;Post-its&lt;/em&gt;&lt;/a&gt;&lt;br/&gt;(Copyright)  All rights reserved by &lt;a href=&quot;https://www.flickr.com/photos/rougeux/&quot;&gt;Nick Rogeux&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;This object was first described by Karl Menger in the 1920’s, while a student at the University of Vienna.  After the end of World War II, Menger accepted a position at the Illinois Institute of Technology, where he contributed to beautiful mathematics in the fields of probabilistic and hyperbolic geometry.&lt;/p&gt;
+&lt;p&gt;This object was first described by Karl Menger in the 1920&amp;#39;s, while a student at the University of Vienna.  After the end of World War II, Menger accepted a position at the Illinois Institute of Technology, where he contributed to beautiful mathematics in the fields of probabilistic and hyperbolic geometry.&lt;/p&gt;
 
-&lt;p&gt;In the early 1990’s, Dr. Jeannine Mosley—an electrical engineer from MIT, with vast experience in computer graphics designing 3D modeling software—had the brilliant idea of creating the level 3 of this sponge by paper folding.  The building blocks of this monster being simple cubes, that one could carefully craft from six light-yet-sturdy small pieces of paper.  All these pieces needed to have exactly the same shape and size, naturally.  For ten years, from 1995 to 2005, she patiently coordinated a very ambitious project where several teams carefully folded, linked, and assembled tens of thousands of business cards into more and more complex shapes.  The result was briefly on display in June 2005 at the Origami USA annual convention in Manhattan.&lt;/p&gt;
+&lt;p&gt;In the early 1990&amp;#39;s, Dr. Jeannine Mosley---an electrical engineer from MIT, with vast experience in computer graphics designing 3D modeling software---had the brilliant idea of creating the level 3 of this sponge by paper folding.  The building blocks of this monster being simple cubes, that one could carefully craft from six light-yet-sturdy small pieces of paper.  All these pieces needed to have exactly the same shape and size, naturally.  For ten years, from 1995 to 2005, she patiently coordinated a very ambitious project where several teams carefully folded, linked, and assembled tens of thousands of business cards into more and more complex shapes.  The result was briefly on display in June 2005 at the Origami USA annual convention in Manhattan.&lt;/p&gt;
 
-&lt;p style=&quot;text-align:center;&quot;&gt;&lt;img src=&quot;http://www.theiff.org/images/paper/mosleypic.jpg&quot; style=&quot;border:2px solid black; width:50%;&quot; /&gt;&lt;br /&gt;Dr. Mosley, inside of her &lt;em&gt;Business Card Menger Sponge&lt;/em&gt;&lt;br /&gt;(Photo by Ravi Apte)&lt;/p&gt;
+&lt;p style=&quot;text-align:center;&quot;&gt;&lt;img src=&quot;http://www.theiff.org/images/paper/mosleypic.jpg&quot; style=&quot;border:2px solid black; width:50%;&quot;&gt;&lt;br /&gt;Dr. Mosley, inside of her &lt;em&gt;Business Card Menger Sponge&lt;/em&gt;&lt;br /&gt;(Photo by Ravi Apte)&lt;/p&gt;
 
-&lt;p&gt;To give you an idea of the magnitude of this enterprise—and at the same time pose a fun puzzle if you are mathematically inclined:&lt;/p&gt;
+&lt;p&gt;To give you an idea of the magnitude of this enterprise---and at the same time pose a fun puzzle if you are mathematically inclined:&lt;/p&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;A level-1 Menger sponge measures \( 6’’ \times 6’’ \times 6’’ \).&lt;/li&gt;
-  &lt;li&gt;A level-2 Menger sponge measures \( 18’’ \times 18’’ \times 18’’ \).  How many cards are necessary for this level?&lt;/li&gt;
-  &lt;li&gt;The level-3 Menger sponge measures \( 54’’ \times 54’’ \times 54’’ \).  If 500 business cards weight 18 ounces, how heavy will this object be at the end?&lt;/li&gt;
-  &lt;li&gt;This one for the engineers and architects out there: This construction barely supports its own weight.  It does so thanks to the &lt;em&gt;sparsity&lt;/em&gt; of the cubes.  Think of the different horizontal layers, and the different columns.   Which layers and columns are more densely packed?  What is the weight of the heaviest columns?  Can a single cube carry such weight?&lt;/li&gt;
-  &lt;li&gt;And for an A+:  How heavy would a level-4 sponge be?  Will it be possible to construct such an animal with business cards?&lt;/li&gt;
+&lt;li&gt;A level-1 Menger sponge measures \( 6&amp;#39;&amp;#39; \times 6&amp;#39;&amp;#39; \times 6&amp;#39;&amp;#39; \).&lt;/li&gt;
+&lt;li&gt;A level-2 Menger sponge measures \( 18&amp;#39;&amp;#39; \times 18&amp;#39;&amp;#39; \times 18&amp;#39;&amp;#39; \).  How many cards are necessary for this level?&lt;/li&gt;
+&lt;li&gt;The level-3 Menger sponge measures \( 54&amp;#39;&amp;#39; \times 54&amp;#39;&amp;#39; \times 54&amp;#39;&amp;#39; \).  If 500 business cards weight 18 ounces, how heavy will this object be at the end?&lt;/li&gt;
+&lt;li&gt;This one for the engineers and architects out there: This construction barely supports its own weight.  It does so thanks to the &lt;em&gt;sparsity&lt;/em&gt; of the cubes.  Think of the different horizontal layers, and the different columns.   Which layers and columns are more densely packed?  What is the weight of the heaviest columns?  Can a single cube carry such weight?&lt;/li&gt;
+&lt;li&gt;And for an A+:  How heavy would a level-4 sponge be?  Will it be possible to construct such an animal with business cards?&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;There are currently 13 more level-3 Menger Sponges in the United States alone.  There are other 9 in Europe, one in Asia, and one more in New Zealand.  The following (static) Google map shows their locations as of November 6th, 2014.&lt;/p&gt;
 
-&lt;p style=&quot;text-align:center;&quot;&gt;&lt;img src=&quot;https://farm4.staticflickr.com/3955/15722547185_f32cd314a4_z_d.jpg&quot; style=&quot;width:75%; border:solid 2px black;&quot; /&gt;&lt;/p&gt;
+&lt;p style=&quot;text-align:center;&quot;&gt;&lt;img src=&quot;https://farm4.staticflickr.com/3955/15722547185_f32cd314a4_z_d.jpg&quot; style=&quot;width:75%; border:solid 2px black;&quot;&gt;&lt;/a&gt;&lt;/p&gt;
 
-&lt;h3 id=&quot;we-at-the-department-of-mathematics-of-the-university-of-south-carolina-are-determined-to-build-the-next-one&quot;&gt;We, at the Department of Mathematics of the University of South Carolina, are determined to build the next one.&lt;/h3&gt;
+&lt;h3&gt;We, at the Department of Mathematics of the University of South Carolina, are determined to build the next one.&lt;/h3&gt;
 
 &lt;p&gt;But there is no need to wait 10 years to get this done.  Some folks at the Queen Mary University of London figured out a way to reduce the assembly time to just a few days, and posted detailed instructions at &lt;a href=&quot;http://megamenger.com&quot;&gt;megamenger.com&lt;/a&gt;.&lt;/p&gt;
 
@@ -91,8 +334,7 @@
 
 &lt;p&gt;But success of this enterprise starts, obviously, by collecting enough business cards.  Just in one week we have been able to gather enough material for &lt;em&gt;almost&lt;/em&gt; one level 2 Menger sponge.  Where are we going to obtain all those remaining 48,000+ cards?  Do you have any you could spare?  We would love to get our hands on them.  Bring them to room 411 in LeConte or, even better, e-mail us at [&lt;a href=&quot;mailto:blanco@math.sc.edu&quot;&gt;&lt;tt&gt;blanco at math dot sc dot edu&lt;/tt&gt;&lt;/a&gt;] so we can arrange for pick-up.&lt;/p&gt;
 
-&lt;script type=&quot;text/javascript&quot; src=&quot;http://maps.googleapis.com/maps/api/js?sensor=false&quot;&gt;&lt;/script&gt;
-
+&lt;p&gt;&lt;script type=&quot;text/javascript&quot; src=&quot;http://maps.googleapis.com/maps/api/js?sensor=false&quot;&gt;&lt;/script&gt;&lt;/p&gt;
 </description>
         <pubDate>Wed, 05 Nov 2014 00:00:00 -0500</pubDate>
         <link>http://blancosilva.github.io/post/2014/11/05/Menger-Sponges.html</link>
@@ -107,13 +349,13 @@
         <title>Searching for the SS Central America</title>
         <description>&lt;p&gt;On Tuesday, September 8th 1857, the steamboat SS Central America left Havana at 9 AM for New York, carrying about 600 passengers and crew members.   Inside of this vessel, there was stowed a very precious cargo: a set of manuscripts by John James Audubon, and three tons of gold bars and coins.  The manuscripts documented an expedition through the yet uncharted southwestern United States and California, and contained 200 sketches and paintings of its wildlife.  The gold, fruit of many years of prospecting and mining during the California Gold Rush, was meant to start anew the lives of many of the passengers aboard.&lt;/p&gt;
 
-&lt;p style=&quot;text-align:center;&quot;&gt;&lt;img src=&quot;https://farm6.staticflickr.com/5582/15072819006_39df81b2a6_d.jpg&quot; style=&quot;width:100%; border:2px solid black;&quot; /&gt;&lt;/p&gt;
+&lt;p style=&quot;text-align:center;&quot;&gt;&lt;img src=&quot;https://farm6.staticflickr.com/5582/15072819006_39df81b2a6_d.jpg&quot; style=&quot;width:100%; border:2px solid black;&quot; /&gt;&lt;/p&gt; 
 
 &lt;p&gt;On the 9th, the vessel ran into a storm which developed into a hurricane.  The steamboat endured four hard days at sea, and by Saturday morning the ship was doomed.  The captain arranged to have women and children taken off to the brig Marine, which offered them assistance at about noon.  In spite of the efforts of the remaining crew and passengers to save the ship, the inevitable happened at about 8 PM that same day.  The wreck claimed the lives of 425 men, and carried the valuable cargo to the bottom of the sea.&lt;/p&gt;
 
 &lt;p&gt;It was not until late 1980s that technology allowed recovery of shipwrecks at deep sea.  But no technology would be of any help without an accurate location of the site.  In the following paragraphs we would like to illustrate the power of the &lt;code&gt;scipy&lt;/code&gt; stack by performing a simple simulation, that ultimately creates a dataset of possible locations for the wreck of the SS Central America, and mines the data to attempt to pinpoint the most probable target.&lt;/p&gt;
 
-&lt;p&gt;We simulate several possible paths of the steamboat (say 10,000 randomly generated possibilities), between 7:00 AM on Saturday, and 13 hours later, at 8:00 pm on Sunday. At 7:00 AM on that Saturday the ship’s captain, William Herndon, took a celestial fix and verbally relayed the position to the schooner &lt;em&gt;El Dorado&lt;/em&gt;.  The fix was 31º25’ North, 77º10’ West.  Because the ship was not operative at that point—no engine, no sails—, for the next thirteen hours its course was solely subjected to the effect of ocean current and winds.  With enough information, it is possible to model the drift and leeway on different possible paths.&lt;/p&gt;
+&lt;p&gt;We simulate several possible paths of the steamboat (say 10,000 randomly generated possibilities), between 7:00 AM on Saturday, and 13 hours later, at 8:00 pm on Sunday. At 7:00 AM on that Saturday the ship&amp;#39;s captain, William Herndon, took a celestial fix and verbally relayed the position to the schooner &lt;em&gt;El Dorado&lt;/em&gt;.  The fix was 31º25&amp;#39; North, 77º10&amp;#39; West.  Because the ship was not operative at that point—no engine, no sails—, for the next thirteen hours its course was solely subjected to the effect of ocean current and winds.  With enough information, it is possible to model the drift and leeway on different possible paths.&lt;/p&gt;
 
 &lt;p&gt;We start by creating a &lt;strong&gt;data frame&lt;/strong&gt;—a computational structure that will hold all the values we need in a very efficient way.  We do so with the help of the &lt;code&gt;pandas&lt;/code&gt; libraries.&lt;/p&gt;
 
@@ -139,9 +381,9 @@
 
 &lt;p&gt;To estimate the corresponding celestial fixes, as well as all further geodetic computations, we will use the accurate &lt;a href=&quot;en.wikipedia.org/wiki/Vincenty&#39;s_formulae&quot;&gt;formulas of Vincenty for ellipsoids&lt;/a&gt;, assuming a radius at the Equator of \(a = 63781374\) meters, and a flattening of the ellipsoid of \(f = 1/298.257223563\) (these figures are regarded as one of the standards for use in cartography, geodesy and navigation, and are referred by the community as the &lt;a href=&quot;http://en.wikipedia.org/wiki/World_Geodetic_System&quot;&gt;World Geodetic System WGS-84 ellipsoid&lt;/a&gt;)&lt;/p&gt;
 
-&lt;p&gt;A very good set of Vincenty’s formulas coded in &lt;code&gt;python&lt;/code&gt; can be found at &lt;a href=&quot;http://wegener.mechanik.tu-darmstadt.de/GMT-Help/Archiv/att-8710/Geodetic_py&quot;&gt;wegener.mechanik.tu-darmstadt.de/GMT-Help/Archiv/att-8710/Geodetic_py&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;A very good set of Vincenty&amp;#39;s formulas coded in &lt;code&gt;python&lt;/code&gt; can be found at &lt;a href=&quot;http://wegener.mechanik.tu-darmstadt.de/GMT-Help/Archiv/att-8710/Geodetic_py&quot;&gt;wegener.mechanik.tu-darmstadt.de/GMT-Help/Archiv/att-8710/Geodetic_py&lt;/a&gt;.&lt;/p&gt;
 
-&lt;p&gt;In particular, for this example we will be using &lt;em&gt;Vincenty’s direct formula&lt;/em&gt;, that computes the resulting latitude \(\phi_2\), longitude \(\lambda_2\), and azimuth \(\alpha_2\) of an object starting at latitude \(\phi_1\), longitude \(\lambda_1\), and traveling \(s\) meters with initial azimuth \(\alpha_1\).  Latitudes, longitudes and azimuths are given in degrees, and distances in meters.  We also use the convention of assigning negative values to the latitudes to the West.  To apply the conversion from nautical miles or knots to their respective units in SI, we employ the system of units in &lt;code&gt;scipy.constants&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;In particular, for this example we will be using &lt;em&gt;Vincenty&amp;#39;s direct formula&lt;/em&gt;, that computes the resulting latitude \(\phi&lt;em&gt;2\), longitude \(\lambda&lt;/em&gt;2\), and azimuth \(\alpha&lt;em&gt;2\) of an object starting at latitude \(\phi&lt;/em&gt;1\), longitude \(\lambda&lt;em&gt;1\), and traveling \(s\) meters with initial azimuth \(\alpha&lt;/em&gt;1\).  Latitudes, longitudes and azimuths are given in degrees, and distances in meters.  We also use the convention of assigning negative values to the latitudes to the West.  To apply the conversion from nautical miles or knots to their respective units in SI, we employ the system of units in &lt;code&gt;scipy.constants&lt;/code&gt;.&lt;/p&gt;
 
 &lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-python&quot; data-lang=&quot;python&quot;&gt;&lt;span class=&quot;lineno&quot;&gt; 1&lt;/span&gt; &lt;span class=&quot;kn&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;Geodetic_py&lt;/span&gt; &lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;vinc_pt&lt;/span&gt;
 &lt;span class=&quot;lineno&quot;&gt; 2&lt;/span&gt; &lt;span class=&quot;kn&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;scipy.constants&lt;/span&gt; &lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;nautical_mile&lt;/span&gt;
@@ -154,7 +396,7 @@
 &lt;span class=&quot;lineno&quot;&gt; 9&lt;/span&gt;     &lt;span class=&quot;n&quot;&gt;output&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;vinc_pt&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;f&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;31&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;mf&quot;&gt;25.&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;60&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;77&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;mf&quot;&gt;10.&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;60&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;azimuth&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;distance&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
 &lt;span class=&quot;lineno&quot;&gt;10&lt;/span&gt;     &lt;span class=&quot;n&quot;&gt;herndon&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ix&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;#39;1857-09-12 07:00:00&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,:][&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;k&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;output&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
-&lt;p&gt;Issuing now the command &lt;code&gt;herndon.ix[&#39;1857-09-12 07:00:00&#39;,:]&lt;/code&gt; gives us the following output:&lt;/p&gt;
+&lt;p&gt;Issuing now the command &lt;code&gt;herndon.ix[&amp;#39;1857-09-12 07:00:00&amp;#39;,:]&lt;/code&gt; gives us the following output:&lt;/p&gt;
 
 &lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;--------------------------------------------------------------------------------
           0          1          2          3          4          5     \
@@ -215,7 +457,7 @@ Lon -77.169504 -77.151137 -77.134298
 
 &lt;p&gt;As expected they observe a North-Easterly general direction, in occasion showing deviations from the effect of the strong winds.&lt;/p&gt;
 
-&lt;p&gt;The advantage of storing all the different steps in these paths becomes apparent if we need to perform some further study—and maybe filtering—on the data obtained.  We could impose additional conditions to paths, and use only those filtered according to the extra rules, for example.  Another advantage is the possibility of performing different analysis on the paths with very little coding.  By issuing the command &lt;code&gt;herndon.loc(axis=0)[:,&#39;Lat&#39;].describe()&lt;/code&gt;, we obtain quick statistics on the computed latitudes for all 10000 paths (number of items, mean, standard deviation, min, max and the quartiles of the data).&lt;/p&gt;
+&lt;p&gt;The advantage of storing all the different steps in these paths becomes apparent if we need to perform some further study—and maybe filtering—on the data obtained.  We could impose additional conditions to paths, and use only those filtered according to the extra rules, for example.  Another advantage is the possibility of performing different analysis on the paths with very little coding.  By issuing the command &lt;code&gt;herndon.loc(axis=0)[:,&amp;#39;Lat&amp;#39;].describe()&lt;/code&gt;, we obtain quick statistics on the computed latitudes for all 10000 paths (number of items, mean, standard deviation, min, max and the quartiles of the data).&lt;/p&gt;
 
 &lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;--------------------------------------------------------------------------------
             0          1          2          3          4          5     \
@@ -291,25 +533,25 @@ max    31.605647  31.605175  31.556127
         <title>Numerical Linear Algebra</title>
         <description>&lt;p&gt;The following diagram shows a graph that represents a series of web pages (numbered from 1 to 8).&lt;/p&gt;
 
-&lt;p style=&quot;text-align:center;&quot;&gt;&lt;img src=&quot;https://raw.githubusercontent.com/blancosilva/Mastering-Scipy/master/4749_01_01.png&quot; style=&quot;text-align:center; width:50%&quot; /&gt;&lt;/p&gt;
+&lt;p style=&quot;text-align:center;&quot;&gt;&lt;img src=&quot;https://raw.githubusercontent.com/blancosilva/Mastering-Scipy/master/4749_01_01.png&quot; style=&quot;text-align:center; width:50%&quot;&gt;&lt;/p&gt;
 
 &lt;p&gt;An arrow from a node to another indicates the existence of a link from the web page represented by the sending node, to the page represented by the receiving node. For example, the arrow from node 2 to node 1 indicates that there is a link in web page 2 pointing to web page 1. Notice how web page 4 has two outer links (to pages 2 and 8), and there are three pages that link to web page 4 (pages 2, 6 and 7). The pages represented by nodes 2, 4 and 8 seem to be the most &lt;em&gt;popular&lt;/em&gt; at first sight.&lt;/p&gt;
 
 &lt;p&gt;Is there a mathematical way to actually express the popularity of a web page within a network? Researchers at Google came up with the idea of a &lt;strong&gt;PageRank&lt;/strong&gt; to roughly estimate this concept by counting the number and quality of links to a page. It goes like this:&lt;/p&gt;
 
-&lt;p&gt;We construct a &lt;em&gt;transition matrix&lt;/em&gt; of this graph &lt;span&gt;\( T=\big( a_{i,j} \big) \)&lt;/span&gt; in the following fashion: the entry 
- &lt;span&gt;\( a_{i,j} \)&lt;/span&gt; is \( 1/k \) if there is a link from web page \( i \) to web page \( j \), and the total number of outer links in web page \( i \) amounts to \( k \). Otherwise, the entry is just zero. The size of a transition matrix of \( N \) web pages is always \( N \times N \). In our case, the matrix has size \( 8 \times 8 \):&lt;/p&gt;
+&lt;p&gt;We construct a &lt;em&gt;transition matrix&lt;/em&gt; of this graph &lt;span&gt;\( T=\big( a&lt;em&gt;{i,j} \big) \)&lt;/span&gt; in the following fashion: the entry 
+ &lt;span&gt;\( a&lt;/em&gt;{i,j} \)&lt;/span&gt; is \( 1/k \) if there is a link from web page \( i \) to web page \( j \), and the total number of outer links in web page \( i \) amounts to \( k \). Otherwise, the entry is just zero. The size of a transition matrix of \( N \) web pages is always \( N \times N \). In our case, the matrix has size \( 8 \times 8 \):&lt;/p&gt;
 
 &lt;div&gt;
 \begin{equation} \begin{pmatrix}
-0  &amp;amp; 1/2  &amp;amp; 0   &amp;amp; 0    &amp;amp; 0   &amp;amp; 0   &amp;amp; 0   &amp;amp; 0 \\
-1  &amp;amp; 0   &amp;amp; 1/2  &amp;amp; 1/2   &amp;amp; 0   &amp;amp; 0   &amp;amp; 0   &amp;amp; 0 \\
-0  &amp;amp; 0   &amp;amp; 0   &amp;amp; 0    &amp;amp; 0   &amp;amp; 0   &amp;amp; 1/3  &amp;amp; 0 \\
-0  &amp;amp; 1/2  &amp;amp; 0   &amp;amp; 0    &amp;amp; 0   &amp;amp; 1   &amp;amp; 1/3  &amp;amp; 0 \\
-0  &amp;amp; 0   &amp;amp; 1/2  &amp;amp; 0    &amp;amp; 0   &amp;amp; 0   &amp;amp; 0   &amp;amp; 0 \\
-0  &amp;amp; 0   &amp;amp; 0   &amp;amp; 0    &amp;amp; 0   &amp;amp; 0   &amp;amp; 0   &amp;amp; 1/2\\
-0  &amp;amp; 0   &amp;amp; 0   &amp;amp; 0    &amp;amp; 1/2  &amp;amp; 0   &amp;amp; 0   &amp;amp; 1/2\\
-0  &amp;amp; 0   &amp;amp; 0   &amp;amp; 1/2   &amp;amp; 1/2  &amp;amp; 0   &amp;amp; 1/3  &amp;amp; 0
+0  &amp; 1/2  &amp; 0   &amp; 0    &amp; 0   &amp; 0   &amp; 0   &amp; 0 \\
+1  &amp; 0   &amp; 1/2  &amp; 1/2   &amp; 0   &amp; 0   &amp; 0   &amp; 0 \\
+0  &amp; 0   &amp; 0   &amp; 0    &amp; 0   &amp; 0   &amp; 1/3  &amp; 0 \\
+0  &amp; 1/2  &amp; 0   &amp; 0    &amp; 0   &amp; 1   &amp; 1/3  &amp; 0 \\
+0  &amp; 0   &amp; 1/2  &amp; 0    &amp; 0   &amp; 0   &amp; 0   &amp; 0 \\
+0  &amp; 0   &amp; 0   &amp; 0    &amp; 0   &amp; 0   &amp; 0   &amp; 1/2\\
+0  &amp; 0   &amp; 0   &amp; 0    &amp; 1/2  &amp; 0   &amp; 0   &amp; 1/2\\
+0  &amp; 0   &amp; 0   &amp; 1/2   &amp; 1/2  &amp; 0   &amp; 1/3  &amp; 0
 \end{pmatrix} \end{equation}
 &lt;/div&gt;
 
@@ -344,9 +586,9 @@ max    31.605647  31.605175  31.556127
 &lt;p&gt;Google matrices have some interesting properties: &lt;/p&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;1 is an eigenvalue of multiplicity one. &lt;/li&gt;
-  &lt;li&gt;1 is actually the largest eigenvalue: all the other eigenvalues are in modulus smaller than 1. &lt;/li&gt;
-  &lt;li&gt;The eigenvector corresponding to eigenvalue 1 has all entries positive. In particular, for the eigenvalue 1 there exists a unique eigenvector with the sum of its entries equal to one. This is what we call the &lt;strong&gt;Page Rank vector&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;1 is an eigenvalue of multiplicity one. &lt;/li&gt;
+&lt;li&gt;1 is actually the largest eigenvalue: all the other eigenvalues are in modulus smaller than 1. &lt;/li&gt;
+&lt;li&gt;The eigenvector corresponding to eigenvalue 1 has all entries positive. In particular, for the eigenvalue 1 there exists a unique eigenvector with the sum of its entries equal to one. This is what we call the &lt;strong&gt;Page Rank vector&lt;/strong&gt;.&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;A quick computation with &lt;code&gt;scipy.linalg.eig&lt;/code&gt; finds that eigenvector for us:&lt;/p&gt;
@@ -368,7 +610,7 @@ max    31.605647  31.605175  31.556127
 &lt;p&gt;Those values correspond to the Page Ranks of each of the eight web pages depicted on the graph. As expected, the maximum value of those is associated to the second web page (0.232), closely followed by the fourth (0.219), and then the eighth web page (0.157).&lt;/p&gt;
 
 &lt;blockquote&gt;
-  &lt;p&gt;Note how this problem of networks of web pages has been translated into mathematical objects, to an equivalent problem involving matrices, eigenvalues and eigenvectors, and has been solved with techniques of Linear Algebra.&lt;/p&gt;
+&lt;p&gt;Note how this problem of networks of web pages has been translated into mathematical objects, to an equivalent problem involving matrices, eigenvalues and eigenvectors, and has been solved with techniques of Linear Algebra.&lt;/p&gt;
 &lt;/blockquote&gt;
 
 &lt;p&gt;The transition matrix is &lt;strong&gt;sparse&lt;/strong&gt;: most of its entries are zeros. Sparse matrices with extremely large size are of special importance in &lt;em&gt;Numerical Linear Algebra&lt;/em&gt;, not only because they encode challenging scientific problems, but also because it is extremely hard to manipulate them with basic algorithms.&lt;/p&gt;
@@ -378,7 +620,7 @@ max    31.605647  31.605175  31.556127
 &lt;p&gt;The &lt;strong&gt;University of Florida Sparse Matrix Collection&lt;/strong&gt; is the largest database of matrices accessible online. As of January 2014, it contains 157 groups of matrices arising from all sorts of scientific disciplines. The sizes of the matrices range from very small (1-by-2) to insanely large (28-million-by-28-million). More matrices are expected to be added constantly, as they arise in different engineering problems.&lt;/p&gt;
 
 &lt;blockquote&gt;
-  &lt;p&gt;More information about this database can be found in ACM Transactions on Mathematical Software, vol 38, Issue 1, 2011, pp 1:1 - 1:25, by T.A. Davis and Y.Hu, or online at &lt;a href=&quot;www.cise.ufl.edu/research/sparse/matrices&quot; class=&quot;uri&quot;&gt;www.cise.ufl.edu/research/sparse/matrices&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;More information about this database can be found in ACM Transactions on Mathematical Software, vol 38, Issue 1, 2011, pp 1:1 - 1:25, by T.A. Davis and Y.Hu, or online at &lt;a href=&quot;www.cise.ufl.edu/research/sparse/matrices&quot; class=&quot;uri&quot;&gt;www.cise.ufl.edu/research/sparse/matrices&lt;/a&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 
 &lt;p&gt;For example, the group with the most matrices in the database is the original Harwell-Boeing Collection, with 292 different sparse matrices. This group can also be accessed online at the &lt;strong&gt;Matrix Market&lt;/strong&gt;: &lt;a href=&quot;math.nist.gov/MatrixMarket&quot; class=&quot;uri&quot;&gt;math.nist.gov/MatrixMarket&lt;/a&gt;&lt;/p&gt;
@@ -386,9 +628,9 @@ max    31.605647  31.605175  31.556127
 &lt;p&gt;Each matrix in the database comes in three formats: &lt;/p&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;&lt;strong&gt;Matrix Market Exchange Format&lt;/strong&gt; [Boisvert et al. 1997]&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Rutherford-Boeing Exchange Format&lt;/strong&gt; [Duff et al. 1997]&lt;/li&gt;
-  &lt;li&gt;Proprietary &lt;strong&gt;matlab&lt;/strong&gt; &lt;code&gt;.mat&lt;/code&gt; format&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Matrix Market Exchange Format&lt;/strong&gt; [Boisvert et al. 1997]&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Rutherford-Boeing Exchange Format&lt;/strong&gt; [Duff et al. 1997]&lt;/li&gt;
+&lt;li&gt;Proprietary &lt;strong&gt;matlab&lt;/strong&gt; &lt;code&gt;.mat&lt;/code&gt; format&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;Let us import to our &lt;code&gt;ipython&lt;/code&gt; session two matrices in Matrix Market Exchange format from the Collection, meant to be used in a solution of a least squares problem. These matrices are located at &lt;a href=&quot;www.cise.ufl.edu/research/sparse/matrices/Bydder/mri2.html&quot; class=&quot;uri&quot;&gt;www.cise.ufl.edu/research/sparse/matrices/Bydder/mri2.html&lt;/a&gt;&lt;/p&gt;
@@ -396,8 +638,8 @@ max    31.605647  31.605175  31.556127
 &lt;p&gt;We download the corresponding &lt;code&gt;tar&lt;/code&gt; bundle and &lt;code&gt;untar&lt;/code&gt; it to get two &lt;code&gt;ASCII&lt;/code&gt; files: &lt;/p&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;&lt;code&gt;mri2.mtx&lt;/code&gt; (the main matrix in the least squares problem)&lt;/li&gt;
-  &lt;li&gt;&lt;code&gt;mri2_b.mtx&lt;/code&gt; (the right-hand side of the equation)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;mri2.mtx&lt;/code&gt; (the main matrix in the least squares problem)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;mri2_b.mtx&lt;/code&gt; (the right-hand side of the equation)&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;The first twenty lines of the file mri2.mtx read as follows:&lt;/p&gt;
@@ -426,9 +668,9 @@ max    31.605647  31.605175  31.556127
 &lt;p&gt;The first sixteen lines are comments, and give us some information about the generation of the matrix.&lt;/p&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;The computer vision problem where it arose: An MRI reconstruction.&lt;/li&gt;
-  &lt;li&gt;Author information: Mark Bydder, UCSD.&lt;/li&gt;
-  &lt;li&gt;Procedures to apply to the data: Solve a least square problem \( A x - b \), and posterior visualization of the result.&lt;/li&gt;
+&lt;li&gt;The computer vision problem where it arose: An MRI reconstruction.&lt;/li&gt;
+&lt;li&gt;Author information: Mark Bydder, UCSD.&lt;/li&gt;
+&lt;li&gt;Procedures to apply to the data: Solve a least square problem \( A x - b \), and posterior visualization of the result.&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;The seventeenth line indicates the size of the matrix: 63240 rows by 147456 columns, as well as the number of non-zero entries in the data: 569160.&lt;/p&gt;
@@ -436,7 +678,7 @@ max    31.605647  31.605175  31.556127
 &lt;p&gt;The rest of the file includes precisely 569160 lines, each containing two integer numbers, and a floating point number: These are the locations of the non-zero elements in the matrix, together with the corresponding values.&lt;/p&gt;
 
 &lt;blockquote&gt;
-  &lt;p&gt;We need to take into account that these files use the &lt;code&gt;Fortran&lt;/code&gt; convention of starting arrays from 1, not from 0.&lt;/p&gt;
+&lt;p&gt;We need to take into account that these files use the &lt;code&gt;Fortran&lt;/code&gt; convention of starting arrays from 1, not from 0.&lt;/p&gt;
 &lt;/blockquote&gt;
 
 &lt;p&gt;A good way to read this file into an ndarray is by means of the function &lt;code&gt;loadtxt&lt;/code&gt; in &lt;code&gt;numpy&lt;/code&gt;. We can then use &lt;code&gt;scipy&lt;/code&gt; to transform the array into a sparse matrix with the function &lt;code&gt;coo_matrix&lt;/code&gt; in the module &lt;code&gt;scipy.sparse&lt;/code&gt; (&lt;code&gt;coo&lt;/code&gt; stands for &lt;em&gt;coordinate&lt;/em&gt; internal format).&lt;/p&gt;
@@ -788,7 +1030,7 @@ fgP4cA9990Z9h+nM6O71mtDMWJsYz+GSvip6Hc+e6J6HgVN0LrfaJHkx77YoS2jmIWP4UwzHRnnv
 /pZFDP9vPDbK2zAMwxgEbXJhA3xv1APogvZ8dmOjvA8dOjTqIQyVffva9jTaPCbzNDBdHjRH22Tu
 xbLshkHK2x5l6Sj67Ib/N64s0tIW7rzzTp2m6WI7duyYuulxJvPkM23ywvTJPG3yQrMyFxVpGRvl
 bRiGYRiGY2zc5oZhGIZhOEx5G4ZhGMaYYcrbMAzDMMYMU96GYRiGMWaY8jYMwzCMMeP/B/xI7JJm
-LJEDAAAAAElFTkSuQmCC &quot; /&gt;
+LJEDAAAAAElFTkSuQmCC &quot;&gt;
 &lt;/p&gt;
 
 &lt;p&gt;These are the first ten lines from the second file, &lt;code&gt;mri2_b.mtx&lt;/code&gt;, which does not represent a sparse matrix, but a column vector:&lt;/p&gt;
@@ -4903,44 +5145,44 @@ Bd5m9ObzY/spYyPIozmfDxsdhoVt38MS57/+sO//KfbrBIbQWwbeVd+wSrDfxYpNvw5MHnRb/wp9
 5zdGbU6x01Z+EPp5Dvgn4fVRm88H9fORn8+0xGUqqaSSSiqpHKCklbVSSSWVVFJJ5QAlVcSppJJK
 KqmkcoCSKuJUUkkllVRSOUBJFXEqqaSSSiqpHKCkijiVVFJJJZVUDlBSRZxKKqmkkkoqByipIk4l
 lVRSSSWVA5RUEaeSSiqppJLKAcr/BkPRYCZW2y4rAAAAAElFTkSuQmCC
-&quot; /&gt; 
+&quot;&gt; 
 &lt;/p&gt;
 
 &lt;blockquote&gt;
-  &lt;p&gt;If interested in the theory behind the creation of this matrix and the particulars of this problem, read the article &lt;em&gt;On the optimality of the Gridding Reconstruction Algorithm&lt;/em&gt;, by H. Sedarat and D. G. Nishimura, published in IEEE Trans. Medical Imaging, vol 19, no 4, pp. 306-317, 2000.&lt;/p&gt;
+&lt;p&gt;If interested in the theory behind the creation of this matrix and the particulars of this problem, read the article &lt;em&gt;On the optimality of the Gridding Reconstruction Algorithm&lt;/em&gt;, by H. Sedarat and D. G. Nishimura, published in IEEE Trans. Medical Imaging, vol 19, no 4, pp. 306-317, 2000.&lt;/p&gt;
 &lt;/blockquote&gt;
 
 &lt;p&gt;For matrices with a good structure, which are going to be exclusively involved in matrix multiplications, it is often possible to store the objects without allocating almost any space. Consider the following example:&lt;/p&gt;
 
-&lt;p&gt;A horizontal earthquake oscillation affects each floor of a tall building, depending on the natural frequencies of oscillation of the floors. If we make certain assumptions, a model to quantize the oscillations on buildings with N floors can be obtained as a second-order system of N differential equations by &lt;em&gt;competition&lt;/em&gt;: the Newton’s second law force is set equal to the sum of Hooke’s forces, and the external force due to the earthquake wave.&lt;/p&gt;
+&lt;p&gt;A horizontal earthquake oscillation affects each floor of a tall building, depending on the natural frequencies of oscillation of the floors. If we make certain assumptions, a model to quantize the oscillations on buildings with N floors can be obtained as a second-order system of N differential equations by &lt;em&gt;competition&lt;/em&gt;: the Newton&amp;#39;s second law force is set equal to the sum of Hooke&amp;#39;s forces, and the external force due to the earthquake wave.&lt;/p&gt;
 
 &lt;p&gt;These are the assumptions we need: &lt;/p&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;Each floor is considered a point of mass located at its center-of-mass. The floors have masses \( m_1, m_2, …, m_N \). &lt;/li&gt;
-  &lt;li&gt;Each floor is restored to its equilibrium position by a linear restoring force (Hooke’s \( -k \times \text{elongation} \)). The Hooke’s constants for the floors are \( k_1, k_2, …, k_N \). &lt;/li&gt;
-  &lt;li&gt;The locations of masses representing the oscillation of the floors are \( x_1, x_2, …, x_N \). We assume all of them functions of time, and that at equilibrium they are all equal to zero. &lt;/li&gt;
-  &lt;li&gt;For simplicity of exposition, we are going to assume no friction: all damping effects on the floors are ignored. &lt;/li&gt;
-  &lt;li&gt;The equations of a floor depend only on the neighboring floors.&lt;/li&gt;
+&lt;li&gt;Each floor is considered a point of mass located at its center-of-mass. The floors have masses \( m&lt;em&gt;1, m&lt;/em&gt;2, ..., m_N \). &lt;/li&gt;
+&lt;li&gt;Each floor is restored to its equilibrium position by a linear restoring force (Hooke&amp;#39;s \( -k \times \text{elongation} \)). The Hooke&amp;#39;s constants for the floors are \( k&lt;em&gt;1, k&lt;/em&gt;2, ..., k_N \). &lt;/li&gt;
+&lt;li&gt;The locations of masses representing the oscillation of the floors are \( x&lt;em&gt;1, x&lt;/em&gt;2, ..., x_N \). We assume all of them functions of time, and that at equilibrium they are all equal to zero. &lt;/li&gt;
+&lt;li&gt;For simplicity of exposition, we are going to assume no friction: all damping effects on the floors are ignored. &lt;/li&gt;
+&lt;li&gt;The equations of a floor depend only on the neighboring floors.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;Set \( M \), the mass matrix, to be a diagonal matrix containing the floor masses on its diagonal. Set \( K \), the Hooke’s matrix, to be a tri-diagonal matrix with the following structure: for each row \( j \), all the entries are zero except &lt;/p&gt;
+&lt;p&gt;Set \( M \), the mass matrix, to be a diagonal matrix containing the floor masses on its diagonal. Set \( K \), the Hooke&amp;#39;s matrix, to be a tri-diagonal matrix with the following structure: for each row \( j \), all the entries are zero except &lt;/p&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;Column \( j-1 \), which we set to be \( k_{j+1} \),&lt;/li&gt;
-  &lt;li&gt;Column \( j \), which we set to \( -k_{j+1}-k_j \), and&lt;/li&gt;
-  &lt;li&gt;Column \( j+1 \), which we set to \( k_{j+2} \).&lt;/li&gt;
+&lt;li&gt;Column \( j-1 \), which we set to be \( k_{j+1} \),&lt;/li&gt;
+&lt;li&gt;Column \( j \), which we set to \( -k&lt;em&gt;{j+1}-k&lt;/em&gt;j \), and&lt;/li&gt;
+&lt;li&gt;Column \( j+1 \), which we set to \( k_{j+2} \).&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;Set \( H \) to be a column vector containing the external force on each floor due to the earthquake, and \( X \) the column vector containing the functions \( x_j \).&lt;/p&gt;
 
 &lt;p&gt;We have then the system \( M \cdot X^{\prime\prime} = K \cdot X + H \). The Homogeneous part of this system is the product of the inverse of \( M \) with \( K \), which we denote \( A \).&lt;/p&gt;
 
-&lt;p&gt;To solve the homogeneous linear second-order system \( X^{\prime\prime} = A \cdot X \), we define the variable \( Y \) to contain \( 2N \) entries: all \( N \) functions \( x_j \), followed by their derivatives \( x^\prime_j \). Any solution of this second-order linear system has a corresponding solution on the first-order linear system \( Y^\prime = C \cdot Y \), where \( C \) is a block matrix of size \( 2N \times 2N \). This matrix \( C \) is composed by a block of size \( N \times N \) containing only zeros, followed horizontally by the identity (of size \( N \times N \)), and below these two, the matrix \( A \) followed horizontally by another \( N \times N \) block of zeros.&lt;/p&gt;
+&lt;p&gt;To solve the homogeneous linear second-order system \( X^{\prime\prime} = A \cdot X \), we define the variable \( Y \) to contain \( 2N \) entries: all \( N \) functions \( x&lt;em&gt;j \), followed by their derivatives \( x^\prime&lt;/em&gt;j \). Any solution of this second-order linear system has a corresponding solution on the first-order linear system \( Y^\prime = C \cdot Y \), where \( C \) is a block matrix of size \( 2N \times 2N \). This matrix \( C \) is composed by a block of size \( N \times N \) containing only zeros, followed horizontally by the identity (of size \( N \times N \)), and below these two, the matrix \( A \) followed horizontally by another \( N \times N \) block of zeros.&lt;/p&gt;
 
-&lt;p&gt;It is not necessary to store this matrix \( C \) into memory, or any of its factors or blocks. Instead, we will make use of its structure, and use a &lt;strong&gt;Linear Operator&lt;/strong&gt; to represent it. Minimal data is then needed to generate this operator (only the values of the masses and the Hooke’s coefficients): much less than any matrix representation of it.&lt;/p&gt;
+&lt;p&gt;It is not necessary to store this matrix \( C \) into memory, or any of its factors or blocks. Instead, we will make use of its structure, and use a &lt;strong&gt;Linear Operator&lt;/strong&gt; to represent it. Minimal data is then needed to generate this operator (only the values of the masses and the Hooke&amp;#39;s coefficients): much less than any matrix representation of it.&lt;/p&gt;
 
-&lt;p&gt;Let us show a concrete example with 6 floors. We indicate first their masses and Hooke’s constants, and proceed to construct a representation of \( A \) as a linear operator:&lt;/p&gt;
+&lt;p&gt;Let us show a concrete example with 6 floors. We indicate first their masses and Hooke&amp;#39;s constants, and proceed to construct a representation of \( A \) as a linear operator:&lt;/p&gt;
 
 &lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-python&quot; data-lang=&quot;python&quot;&gt;&lt;span class=&quot;lineno&quot;&gt; 1&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;m&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;np&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;array&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;([&lt;/span&gt;&lt;span class=&quot;mf&quot;&gt;56.&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;56.&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;56.&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;54.&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;54.&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;53.&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;])&lt;/span&gt;
 &lt;span class=&quot;lineno&quot;&gt; 2&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;k&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;np&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;array&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;([&lt;/span&gt;&lt;span class=&quot;mf&quot;&gt;561.&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;562.&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;560.&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;541.&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;542.&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;530.&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;])&lt;/span&gt;
@@ -4970,7 +5212,7 @@ lVRSSSWVA5RUEaeSSiqppJLKAcr/BkPRYCZW2y4rAAAAAElFTkSuQmCC
 
 &lt;p&gt;A solution of this homogeneous system comes in the form of an &lt;em&gt;action of the exponential&lt;/em&gt; of \( C \): \( Y(t) = \operatorname{expm}(C t) \cdot Y(0) \), where \( \operatorname{expm}() \) here denotes a matrix exponential function. In &lt;code&gt;scipy&lt;/code&gt;, this operation is performed with the routine &lt;code&gt;expm_multiply&lt;/code&gt; in the module &lt;code&gt;scipy.sparse.linalg&lt;/code&gt;.&lt;/p&gt;
 
-&lt;p&gt;For example, in our case, given the initial value containing the values \( x_1(0)=0, \dots, x_N(0)=0, x^\prime_1(0)=1, \dots, x^\prime_N(0)=1 \), if we require a solution \( Y(t) \) for values of \( t \) between 0 and 1 in steps of size 0.1, we could issue the following:&lt;/p&gt;
+&lt;p&gt;For example, in our case, given the initial value containing the values \( x&lt;em&gt;1(0)=0, \dots, x&lt;/em&gt;N(0)=0, x^\prime&lt;em&gt;1(0)=1, \dots, x^\prime&lt;/em&gt;N(0)=1 \), if we require a solution \( Y(t) \) for values of \( t \) between 0 and 1 in steps of size 0.1, we could issue the following:&lt;/p&gt;
 
 &lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-python&quot; data-lang=&quot;python&quot;&gt;&lt;span class=&quot;lineno&quot;&gt;1&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;initial_condition&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;np&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;zeros&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;12&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
 &lt;span class=&quot;lineno&quot;&gt;2&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;initial_condition&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;6&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;
@@ -4978,7 +5220,7 @@ lVRSSSWVA5RUEaeSSiqppJLKAcr/BkPRYCZW2y4rAAAAAElFTkSuQmCC
 &lt;span class=&quot;lineno&quot;&gt;4&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Y&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;spspla&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;expm_multiply&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;C&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;matmat&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;np&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;eye&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;12&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)),&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;np&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ones&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;12&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;start&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;stop&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;num&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;10&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;blockquote&gt;
-  &lt;p&gt;It has been reported in some installations that, in the next step, a matrix for \( C \) must be given instead of the actual linear operator (thus contradicting the manual). If this is the case in your system, simply change \( C \) in the next lines, to its matrix representation.&lt;/p&gt;
+&lt;p&gt;It has been reported in some installations that, in the next step, a matrix for \( C \) must be given instead of the actual linear operator (thus contradicting the manual). If this is the case in your system, simply change \( C \) in the next lines, to its matrix representation.&lt;/p&gt;
 &lt;/blockquote&gt;
 
 &lt;p&gt;The oscillations of the six floors during the first second can then be calculated and plotted as follows.&lt;/p&gt;
@@ -5563,26 +5805,26 @@ E7e8CxQYY7J2sa9A9r1FPr4L/KqBacBfrLVfWWu9+K4NGAosB8qA5/i5NfAYvv75x/iK7fNAvL8P
 fzK+i/A24Ds7cLL/8d3GZq2dD1wB/Aff0fwmfGcKtjge+MkYUw08DpxjrW3w/+5XwDO7+BtFIoqJ
 zDkvRATAGHMJMMhae12oYwk1Y0wm8CUw1H9xnkhEU4EXERGJQDpFLyIiEoFU4EVERCKQCryIiEgE
 UoEXERGJQCrwIiIiEUgFXkREJAKpwIuIiESg/w8PMJd+8cpMGgAAAABJRU5ErkJggg==
-&quot; /&gt;
+&quot;&gt;
 &lt;/p&gt;
 
 &lt;blockquote&gt;
-  &lt;p&gt;For more details about systems of differential equations, and how to solve them with actions of exponentials, read for example the excellent book &lt;em&gt;Elementary Differential Equations&lt;/em&gt; 10 ed., by William E. Boyce and Richard C. DiPrima. Wiley, 2012.&lt;/p&gt;
+&lt;p&gt;For more details about systems of differential equations, and how to solve them with actions of exponentials, read for example the excellent book &lt;em&gt;Elementary Differential Equations&lt;/em&gt; 10 ed., by William E. Boyce and Richard C. DiPrima. Wiley, 2012.&lt;/p&gt;
 &lt;/blockquote&gt;
 
 &lt;p&gt;These three examples illustrate the goal of this first chapter: &lt;strong&gt;Numerical Linear Algebra&lt;/strong&gt;. In &lt;code&gt;python&lt;/code&gt; this is accomplished first by storing the data in matrix form, or as a related linear operator, by means of any of the following classes: &lt;/p&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;&lt;code&gt;numpy.ndarray&lt;/code&gt; (making sure that they are two-dimensional) &lt;/li&gt;
-  &lt;li&gt;&lt;code&gt;numpy.matrix&lt;/code&gt; &lt;/li&gt;
-  &lt;li&gt;&lt;code&gt;scipy.sparse.bsr_matrix&lt;/code&gt; (Block Sparse Row matrix) &lt;/li&gt;
-  &lt;li&gt;&lt;code&gt;scipy.sparse.coo_matrix&lt;/code&gt; (Sparse Matrix in &lt;strong&gt;COO&lt;/strong&gt;rdinate format) &lt;/li&gt;
-  &lt;li&gt;&lt;code&gt;scipy.sparse.csc_matrix&lt;/code&gt; (Compressed Sparse Column matrix) &lt;/li&gt;
-  &lt;li&gt;&lt;code&gt;scipy.sparse.csr_matrix&lt;/code&gt; (Compressed Sparse Row matrix) &lt;/li&gt;
-  &lt;li&gt;&lt;code&gt;scipy.sparse.dia_matrix&lt;/code&gt; (Sparse matrix with &lt;strong&gt;DIA&lt;/strong&gt;gonal storage) &lt;/li&gt;
-  &lt;li&gt;&lt;code&gt;scipy.sparse.dok_matrix&lt;/code&gt; (Sparse matrix based on a Dictionary of Keys) &lt;/li&gt;
-  &lt;li&gt;&lt;code&gt;scipy.sparse.lil_matrix&lt;/code&gt; (Sparse matrix based on a linked list) &lt;/li&gt;
-  &lt;li&gt;&lt;code&gt;scipy.sparse.linalg.LinearOperator&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;numpy.ndarray&lt;/code&gt; (making sure that they are two-dimensional) &lt;/li&gt;
+&lt;li&gt;&lt;code&gt;numpy.matrix&lt;/code&gt; &lt;/li&gt;
+&lt;li&gt;&lt;code&gt;scipy.sparse.bsr_matrix&lt;/code&gt; (Block Sparse Row matrix) &lt;/li&gt;
+&lt;li&gt;&lt;code&gt;scipy.sparse.coo_matrix&lt;/code&gt; (Sparse Matrix in &lt;strong&gt;COO&lt;/strong&gt;rdinate format) &lt;/li&gt;
+&lt;li&gt;&lt;code&gt;scipy.sparse.csc_matrix&lt;/code&gt; (Compressed Sparse Column matrix) &lt;/li&gt;
+&lt;li&gt;&lt;code&gt;scipy.sparse.csr_matrix&lt;/code&gt; (Compressed Sparse Row matrix) &lt;/li&gt;
+&lt;li&gt;&lt;code&gt;scipy.sparse.dia_matrix&lt;/code&gt; (Sparse matrix with &lt;strong&gt;DIA&lt;/strong&gt;gonal storage) &lt;/li&gt;
+&lt;li&gt;&lt;code&gt;scipy.sparse.dok_matrix&lt;/code&gt; (Sparse matrix based on a Dictionary of Keys) &lt;/li&gt;
+&lt;li&gt;&lt;code&gt;scipy.sparse.lil_matrix&lt;/code&gt; (Sparse matrix based on a linked list) &lt;/li&gt;
+&lt;li&gt;&lt;code&gt;scipy.sparse.linalg.LinearOperator&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;As we have seen in the examples, the choice of different classes obeys mainly to the sparsity of the data, and the algorithms we are to apply on them.&lt;/p&gt;
@@ -5590,21 +5832,21 @@ UoEXERGJQCrwIiIiEUgFXkREJAKpwIuIiESg/w8PMJd+8cpMGgAAAABJRU5ErkJggg==
 &lt;p&gt;This choice then dictates the modules that we use for the different algorithms: &lt;code&gt;scipy.linalg&lt;/code&gt; for generic matrices, and both &lt;code&gt;scipy.sparse&lt;/code&gt;, &lt;code&gt;scipy.sparse.linalg&lt;/code&gt;, for sparse matrices or linear operators. These three &lt;code&gt;scipy&lt;/code&gt; modules are compiled on top of the highly optimized computer libraries &lt;code&gt;BLAS&lt;/code&gt; (written in &lt;code&gt;Fortran77&lt;/code&gt;), &lt;code&gt;LAPACK&lt;/code&gt; (in &lt;code&gt;Fortran90&lt;/code&gt;), &lt;code&gt;ARPACK&lt;/code&gt; (in &lt;code&gt;Fortran77&lt;/code&gt;), and &lt;code&gt;SuperLU&lt;/code&gt; (in &lt;code&gt;C&lt;/code&gt;).&lt;/p&gt;
 
 &lt;blockquote&gt;
-  &lt;p&gt;For a better understanding of these underlying packages, read the description and documentation from their creators: &lt;/p&gt;
+&lt;p&gt;For a better understanding of these underlying packages, read the description and documentation from their creators: &lt;/p&gt;
 
-  &lt;ul&gt;
-    &lt;li&gt;&lt;code&gt;BLAS&lt;/code&gt;: &lt;a href=&quot;netlib.org/blas/faq.html&quot; class=&quot;uri&quot;&gt;netlib.org/blas/faq.html&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;code&gt;LAPACK&lt;/code&gt;: &lt;a href=&quot;netlib.org/lapack/lapack-3.2.html&quot; class=&quot;uri&quot;&gt;netlib.org/lapack/lapack-3.2.html&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;code&gt;ARPACK&lt;/code&gt;: &lt;a href=&quot;www.caam.rice.edu/software/ARPACK/&quot; class=&quot;uri&quot;&gt;www.caam.rice.edu/software/ARPACK/&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;code&gt;SuperLU&lt;/code&gt;: &lt;a href=&quot;crd-legacy.lbl.gov/~xiaoye/SuperLU/&quot; class=&quot;uri&quot;&gt;crd-legacy.lbl.gov/~xiaoye/SuperLU/&lt;/a&gt;&lt;/li&gt;
-  &lt;/ul&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;BLAS&lt;/code&gt;: &lt;a href=&quot;netlib.org/blas/faq.html&quot; class=&quot;uri&quot;&gt;netlib.org/blas/faq.html&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;LAPACK&lt;/code&gt;: &lt;a href=&quot;netlib.org/lapack/lapack-3.2.html&quot; class=&quot;uri&quot;&gt;netlib.org/lapack/lapack-3.2.html&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;ARPACK&lt;/code&gt;: &lt;a href=&quot;www.caam.rice.edu/software/ARPACK/&quot; class=&quot;uri&quot;&gt;www.caam.rice.edu/software/ARPACK/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;SuperLU&lt;/code&gt;: &lt;a href=&quot;crd-legacy.lbl.gov/~xiaoye/SuperLU/&quot; class=&quot;uri&quot;&gt;crd-legacy.lbl.gov/~xiaoye/SuperLU/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
 &lt;/blockquote&gt;
 
 &lt;p&gt;Most of the routines in these three &lt;code&gt;scipy&lt;/code&gt; modules are wrappers to functions in the mentioned libraries. If we so desire, we also have the possibility to call the underlying functions directly. In the module &lt;code&gt;scipy.linalg&lt;/code&gt;, we have &lt;/p&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;&lt;code&gt;scipy.linalg.get_blas_funcs&lt;/code&gt; to call routines from &lt;code&gt;BLAS&lt;/code&gt;. &lt;/li&gt;
-  &lt;li&gt;&lt;code&gt;scipy.linalg.get_lapack_funcs&lt;/code&gt; to call routines from &lt;code&gt;LAPACK&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;scipy.linalg.get_blas_funcs&lt;/code&gt; to call routines from &lt;code&gt;BLAS&lt;/code&gt;. &lt;/li&gt;
+&lt;li&gt;&lt;code&gt;scipy.linalg.get_lapack_funcs&lt;/code&gt; to call routines from &lt;code&gt;LAPACK&lt;/code&gt;.&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;For example, if we want to use the &lt;code&gt;BLAS&lt;/code&gt; function &lt;code&gt;NRM2&lt;/code&gt; to compute Frobenius norms:&lt;/p&gt;
@@ -5615,7 +5857,7 @@ UoEXERGJQCrwIiIiEUgFXkREJAKpwIuIiESg/w8PMJd+8cpMGgAAAABJRU5ErkJggg==
 
 &lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;1.0000000200408773e+20&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
-&lt;h2 id=&quot;notebook&quot;&gt;Notebook&lt;/h2&gt;
+&lt;h2&gt;Notebook&lt;/h2&gt;
 
 &lt;p&gt;For an &lt;code&gt;ipython&lt;/code&gt; notebook with the current draft of chapter 1 (Numerical Linear Algebra) of my upcoming book &lt;em&gt;Mastering Scipy&lt;/em&gt;, follow [&lt;a href=&quot;https://github.com/blancosilva/Mastering-Scipy/blob/master/chapter1.ipynb&quot;&gt;this link&lt;/a&gt;] to the repository &lt;a href=&quot;https://github.com/blancosilva/Mastering-Scipy&quot;&gt;Mastering Scipy&lt;/a&gt; in my &lt;a href=&quot;https://github.com/blancosilva&quot;&gt;github&lt;/a&gt;.&lt;/p&gt;
 </description>
@@ -33134,7 +33376,7 @@ In&amp;nbsp;[105]:
     
       <item>
         <title>MA141—Fall 2014</title>
-        <description>&lt;h1 id=&quot;sections-011-012-015-016&quot;&gt;Sections 011, 012, 015, 016&lt;/h1&gt;
+        <description>&lt;h1&gt;Sections 011, 012, 015, 016&lt;/h1&gt;
 
 &lt;table style=&quot;width:100%;border:0; verical-align:top;&quot;&gt;
 &lt;tr&gt;
@@ -33159,7 +33401,7 @@ Francisco Blanco-Silva&lt;br /&gt;
 &lt;/tr&gt;
 &lt;/table&gt;
 
-&lt;h2 id=&quot;meeting-times-and-office-hours&quot;&gt;Meeting Times and Office Hours&lt;/h2&gt;
+&lt;h2&gt;Meeting Times and Office Hours&lt;/h2&gt;
 
 &lt;table style=&quot;margin-left:auto;margin-right:auto;font-family:courier;&quot;&gt;
 &lt;tbody&gt;
@@ -33246,43 +33488,44 @@ Francisco Blanco-Silva&lt;br /&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
 
-&lt;h2 id=&quot;important-deadlines-you-need-to-know&quot;&gt;Important deadlines you need to know&lt;/h2&gt;
+&lt;h2&gt;Important deadlines you need to know&lt;/h2&gt;
 
-&lt;p&gt;The semester begins Thursday, August 21st, and ends Friday, December 5th.  The last day to obtain a “W” grade or to elect a pass/fail grade is Wednesday, August 27th. The first day in which a “WF” grade is assigned is therefore Thursday, August 28th.  The last day to drop a course or withdraw without a grade of “WF” being recorded is Thursday, October 9th.&lt;/p&gt;
+&lt;p&gt;The semester begins Thursday, August 21st, and ends Friday, December 5th.  The last day to obtain a &amp;quot;W&amp;quot; grade or to elect a pass/fail grade is Wednesday, August 27th. The first day in which a &amp;quot;WF&amp;quot; grade is assigned is therefore Thursday, August 28th.  The last day to drop a course or withdraw without a grade of &amp;quot;WF&amp;quot; being recorded is Thursday, October 9th.&lt;/p&gt;
 
-&lt;h2 id=&quot;prerequisites&quot;&gt;Prerequisites&lt;/h2&gt;
+&lt;h2&gt;Prerequisites&lt;/h2&gt;
 
 &lt;p&gt;Qualifications earned by grade of &lt;strong&gt;C&lt;/strong&gt; or better in MATH 112, 115, 116 or by a &lt;a href=&quot;https://assess.math.sc.edu&quot;&gt;PreCalculus Placement Test.&lt;/a&gt;&lt;/p&gt;
 
-&lt;h2 id=&quot;text&quot;&gt;Text&lt;/h2&gt;
+&lt;h2&gt;Text&lt;/h2&gt;
 
 &lt;p&gt;&lt;em&gt;Calculus. Early Transcendentals&lt;/em&gt; by James Stewart. &lt;strong&gt;Thompson Brooks/Cole&lt;/strong&gt; 2008 (sixth edition)&lt;/p&gt;
 
 &lt;table style=&quot;margin-left:auto;margin-right:auto;border:0 white;&quot;&gt;
 &lt;tr&gt;
 &lt;td style=&quot;text-align:center;border:0 white;&quot;&gt;
-&lt;a href=&quot;http://www.amazon.com/gp/product/0495011665/ref=as_li_tl?ie=UTF8&amp;amp;camp=1789&amp;amp;creative=9325&amp;amp;creativeASIN=0495011665&amp;amp;linkCode=as2&amp;amp;tag=blancosilva-20&amp;amp;linkId=JYVEWI7H44MSFTN5&quot;&gt;&lt;img border=&quot;0&quot; src=&quot;http://ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&amp;amp;ASIN=0495011665&amp;amp;Format=_SL250_&amp;amp;ID=AsinImage&amp;amp;MarketPlace=US&amp;amp;ServiceVersion=20070822&amp;amp;WS=1&amp;amp;tag=blancosilva-20&quot; /&gt;&lt;/a&gt;&lt;img src=&quot;http://ir-na.amazon-adsystem.com/e/ir?t=blancosilva-20&amp;amp;l=as2&amp;amp;o=1&amp;amp;a=0495011665&quot; width=&quot;1&quot; height=&quot;1&quot; border=&quot;0&quot; alt=&quot;&quot; style=&quot;border:none !important; margin:0px !important;&quot; /&gt;
+&lt;a href=&quot;http://www.amazon.com/gp/product/0495011665/ref=as_li_tl?ie=UTF8&amp;camp=1789&amp;creative=9325&amp;creativeASIN=0495011665&amp;linkCode=as2&amp;tag=blancosilva-20&amp;linkId=JYVEWI7H44MSFTN5&quot;&gt;&lt;img border=&quot;0&quot; src=&quot;http://ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&amp;ASIN=0495011665&amp;Format=_SL250_&amp;ID=AsinImage&amp;MarketPlace=US&amp;ServiceVersion=20070822&amp;WS=1&amp;tag=blancosilva-20&quot; &gt;&lt;/a&gt;&lt;img src=&quot;http://ir-na.amazon-adsystem.com/e/ir?t=blancosilva-20&amp;l=as2&amp;o=1&amp;a=0495011665&quot; width=&quot;1&quot; height=&quot;1&quot; border=&quot;0&quot; alt=&quot;&quot; style=&quot;border:none !important; margin:0px !important;&quot; /&gt;
 
 
 &lt;/td&gt;
 &lt;td style=&quot;text-align:center;border:0 white;&quot;&gt;
-&lt;a href=&quot;http://www.amazon.com/gp/product/0495012289/ref=as_li_tl?ie=UTF8&amp;amp;camp=1789&amp;amp;creative=9325&amp;amp;creativeASIN=0495012289&amp;amp;linkCode=as2&amp;amp;tag=blancosilva-20&amp;amp;linkId=X3JMYHI2ZHG3KHYR&quot;&gt;&lt;img border=&quot;0&quot; src=&quot;http://ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&amp;amp;ASIN=0495012289&amp;amp;Format=_SL250_&amp;amp;ID=AsinImage&amp;amp;MarketPlace=US&amp;amp;ServiceVersion=20070822&amp;amp;WS=1&amp;amp;tag=blancosilva-20&quot; /&gt;&lt;/a&gt;&lt;img src=&quot;http://ir-na.amazon-adsystem.com/e/ir?t=blancosilva-20&amp;amp;l=as2&amp;amp;o=1&amp;amp;a=0495012289&quot; width=&quot;1&quot; height=&quot;1&quot; border=&quot;0&quot; alt=&quot;&quot; style=&quot;border:none !important; margin:0px !important;&quot; /&gt;
+&lt;a href=&quot;http://www.amazon.com/gp/product/0495012289/ref=as_li_tl?ie=UTF8&amp;camp=1789&amp;creative=9325&amp;creativeASIN=0495012289&amp;linkCode=as2&amp;tag=blancosilva-20&amp;linkId=X3JMYHI2ZHG3KHYR&quot;&gt;&lt;img border=&quot;0&quot; src=&quot;http://ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&amp;ASIN=0495012289&amp;Format=_SL250_&amp;ID=AsinImage&amp;MarketPlace=US&amp;ServiceVersion=20070822&amp;WS=1&amp;tag=blancosilva-20&quot; &gt;&lt;/a&gt;&lt;img src=&quot;http://ir-na.amazon-adsystem.com/e/ir?t=blancosilva-20&amp;l=as2&amp;o=1&amp;a=0495012289&quot; width=&quot;1&quot; height=&quot;1&quot; border=&quot;0&quot; alt=&quot;&quot; style=&quot;border:none !important; margin:0px !important;&quot; /&gt;
 &lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td style=&quot;text-align:center;border:0 white;&quot;&gt;
-&lt;a href=&quot;http://www.amazon.com/gp/product/0495012289/ref=as_li_tl?ie=UTF8&amp;amp;camp=1789&amp;amp;creative=9325&amp;amp;creativeASIN=0495012289&amp;amp;linkCode=as2&amp;amp;tag=blancosilva-20&amp;amp;linkId=CASF3UEODJWBVAPC&quot;&gt;Student Solutions Manual for Stewart&#39;s Multivariable Calculus, 6th Edition&lt;/a&gt;&lt;img src=&quot;http://ir-na.amazon-adsystem.com/e/ir?t=blancosilva-20&amp;amp;l=as2&amp;amp;o=1&amp;amp;a=0495012289&quot; width=&quot;1&quot; height=&quot;1&quot; border=&quot;0&quot; alt=&quot;&quot; style=&quot;border:none !important; margin:0px !important;&quot; /&gt;
+&lt;a href=&quot;http://www.amazon.com/gp/product/0495012289/ref=as_li_tl?ie=UTF8&amp;camp=1789&amp;creative=9325&amp;creativeASIN=0495012289&amp;linkCode=as2&amp;tag=blancosilva-20&amp;linkId=CASF3UEODJWBVAPC&quot;&gt;Student Solutions Manual for Stewart&#39;s Multivariable Calculus, 6th Edition&lt;/a&gt;&lt;img src=&quot;http://ir-na.amazon-adsystem.com/e/ir?t=blancosilva-20&amp;l=as2&amp;o=1&amp;a=0495012289&quot; width=&quot;1&quot; height=&quot;1&quot; border=&quot;0&quot; alt=&quot;&quot; style=&quot;border:none !important; margin:0px !important;&quot; /&gt;
 &lt;/td&gt;
 &lt;td style=&quot;text-align:center;border:0 white;&quot;&gt;
-&lt;a href=&quot;http://www.amazon.com/gp/product/0495011665/ref=as_li_tl?ie=UTF8&amp;amp;camp=1789&amp;amp;creative=9325&amp;amp;creativeASIN=0495011665&amp;amp;linkCode=as2&amp;amp;tag=blancosilva-20&amp;amp;linkId=WYEDJZIE7UPXTT5Q&quot;&gt;Calculus: Early Transcendentals (Stewart&#39;s Calculus Series)&lt;/a&gt;&lt;img src=&quot;http://ir-na.amazon-adsystem.com/e/ir?t=blancosilva-20&amp;amp;l=as2&amp;amp;o=1&amp;amp;a=0495011665&quot; width=&quot;1&quot; height=&quot;1&quot; border=&quot;0&quot; alt=&quot;&quot; style=&quot;border:none !important; margin:0px !important;&quot; /&gt;
+&lt;a href=&quot;http://www.amazon.com/gp/product/0495011665/ref=as_li_tl?ie=UTF8&amp;camp=1789&amp;creative=9325&amp;creativeASIN=0495011665&amp;linkCode=as2&amp;tag=blancosilva-20&amp;linkId=WYEDJZIE7UPXTT5Q&quot;&gt;Calculus: Early Transcendentals (Stewart&#39;s Calculus Series)&lt;/a&gt;&lt;img src=&quot;http://ir-na.amazon-adsystem.com/e/ir?t=blancosilva-20&amp;l=as2&amp;o=1&amp;a=0495011665&quot; width=&quot;1&quot; height=&quot;1&quot; border=&quot;0&quot; alt=&quot;&quot; style=&quot;border:none !important; margin:0px !important;&quot; /&gt;
 
 
 &lt;/td&gt;
 &lt;/tr&gt;
 &lt;/table&gt;
+
 &lt;p&gt;You will be required to use Enhanced WebAssign, the online homework system that accompanies your textbook, for my course.  If you choose to purchase a hard copy of the textbook, you need to purchase the bundle that comes with the Enhanced WebAssign code.&lt;/p&gt;
 
-&lt;h2 id=&quot;course-structure-and-grading-policies&quot;&gt;Course Structure and Grading Policies&lt;/h2&gt;
+&lt;h2&gt;Course Structure and Grading Policies&lt;/h2&gt;
 
 &lt;p&gt;Your final score for the course will be computed as follows:&lt;/p&gt;
 
@@ -33293,17 +33536,15 @@ Francisco Blanco-Silva&lt;br /&gt;
 &lt;/table&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;Homework assignments&lt;/strong&gt;: (up to 100 points) 10% of the course grade.  Homework problems have been assigned for each lecture (you can see them at the end of this page, under &lt;strong&gt;Lesson Plan&lt;/strong&gt;). A selection of those problems are posted on &lt;a href=&quot;http://www.webassign.net&quot;&gt;WebAssign&lt;/a&gt; on the day of the lecture, and will be graded.  You will have until the end of the next class day to complete the assignment (e.g. what is posted on Monday is due on Wednesday at 11:59PM; what is posted on Friday is due on Monday at 11:59PM)
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;Homework assignments&lt;/strong&gt;: (up to 100 points) 10% of the course grade.  Homework problems have been assigned for each lecture (you can see them at the end of this page, under &lt;strong&gt;Lesson Plan&lt;/strong&gt;). A selection of those problems are posted on &lt;a href=&quot;http://www.webassign.net&quot;&gt;WebAssign&lt;/a&gt; on the day of the lecture, and will be graded.  You will have until the end of the next class day to complete the assignment (e.g. what is posted on Monday is due on Wednesday at 11:59PM; what is posted on Friday is due on Monday at 11:59PM)
 In order to sign up for your section of the course on WebAssign, visit &lt;a href=&quot;http://www.webassign.net&quot;&gt;www.webassign.net&lt;/a&gt; and click on [&lt;strong&gt;Enter Class Key&lt;/strong&gt;].  The class key is&lt;/p&gt;
 
-    &lt;p style=&quot;text-align:center;font-size:14pt;&quot;&gt;&lt;strong&gt;&lt;tt&gt;sc 7564 8382&lt;/tt&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;p style=&quot;text-align:center;font-size:14pt;&quot;&gt;&lt;strong&gt;&lt;tt&gt;sc 7564 8382&lt;/tt&gt;&lt;/strong&gt;&lt;/p&gt;
 
-    &lt;p&gt;Click [&lt;a href=&quot;http://www.webassign.net/manual/WA_Student_Quick_Start.pdf&quot;&gt;here&lt;/a&gt;] to retrieve further registration instructions.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Quizzes&lt;/strong&gt;: (up to 100 points) 10% of the course grade.  A 15-minute quiz will be given in every recitation, except on the week of a midterm exam, or the last week of classes.  At the end of the course, hopefully you will have taken at least 10 quizzes (if that is the case, only the 10 best scores will count toward your quiz average).  No make-up quizzes will be given.  Only medical, death in the family, religious or official USC business reasons are valid excuses for missing a quiz and must be verified by letter from a doctor, guardian or supervisor.&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Computer Labs&lt;/strong&gt;: (up to 100 points) 10% of the course grade.&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Midterm Exams&lt;/strong&gt;: (up to 100 points each) 50% of the course grade (10% each midterm).  There will be five in-class midterm exams scheduled as follows:&lt;/li&gt;
+&lt;p&gt;Click [&lt;a href=&quot;http://www.webassign.net/manual/WA_Student_Quick_Start.pdf&quot;&gt;here&lt;/a&gt;] to retrieve further registration instructions.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;Quizzes&lt;/strong&gt;: (up to 100 points) 10% of the course grade.  A 15-minute quiz will be given in every recitation, except on the week of a midterm exam, or the last week of classes.  At the end of the course, hopefully you will have taken at least 10 quizzes (if that is the case, only the 10 best scores will count toward your quiz average).  No make-up quizzes will be given.  Only medical, death in the family, religious or official USC business reasons are valid excuses for missing a quiz and must be verified by letter from a doctor, guardian or supervisor.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;Computer Labs&lt;/strong&gt;: (up to 100 points) 10% of the course grade.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;Midterm Exams&lt;/strong&gt;: (up to 100 points each) 50% of the course grade (10% each midterm).  There will be five in-class midterm exams scheduled as follows:&lt;/p&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;table style=&quot;margin-left:auto;margin-right:auto;&quot;&gt;
@@ -33338,16 +33579,14 @@ In order to sign up for your section of the course on WebAssign, visit &lt;a hre
 &lt;p&gt;No make-up tests will be given. Only medical, death in the family, religious or official USC business reasons are valid excuses for missing a test and must be verified by letter from a doctor, guardian or supervisor.&lt;/p&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;Final Exam&lt;/strong&gt;: (up to 100 points) 20% of the course grade.  The final exams are scheduled as follows:&lt;/p&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;Final Exam&lt;/strong&gt;: (up to 100 points) 20% of the course grade.  The final exams are scheduled as follows:&lt;/p&gt;
 
-    &lt;ul&gt;
-      &lt;li&gt;Sections 011 &amp;amp; 012:  Friday, December 12th at 12:30 PM.&lt;/li&gt;
-      &lt;li&gt;Sections 015 &amp;amp; 016: Monday, December 8th at 12:30 PM.&lt;/li&gt;
-    &lt;/ul&gt;
+&lt;ul&gt;
+&lt;li&gt;Sections 011 &amp;amp; 012:  Friday, December 12th at 12:30 PM.&lt;/li&gt;
+&lt;li&gt;Sections 015 &amp;amp; 016: Monday, December 8th at 12:30 PM.&lt;/li&gt;
+&lt;/ul&gt;
 
-    &lt;p&gt;No make-up final exam will be given.  Only medical, death in the family, religious or official USC business reasons are valid excuses for missing the Final Exam, and must be verified by letter from a doctor, guardian or supervisor.&lt;/p&gt;
-  &lt;/li&gt;
+&lt;p&gt;No make-up final exam will be given.  Only medical, death in the family, religious or official USC business reasons are valid excuses for missing the Final Exam, and must be verified by letter from a doctor, guardian or supervisor.&lt;/p&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;The course grade will be determined as follows:&lt;/p&gt;
@@ -33393,72 +33632,71 @@ In order to sign up for your section of the course on WebAssign, visit &lt;a hre
 &lt;/tbody&gt;
 &lt;/table&gt;
 
-&lt;h2 id=&quot;further-information&quot;&gt;Further Information&lt;/h2&gt;
+&lt;h2&gt;Further Information&lt;/h2&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;&lt;strong&gt;Honor Code:&lt;/strong&gt; The Honor Code applies to all work for this course.  Please review the Honor Code at [&lt;a href=&quot;http://www.sc.edu/academicintegrity&quot;&gt;this link&lt;/a&gt;].  Students found violating the Honor Code will be subject to discipline.&lt;/li&gt;
-  &lt;li&gt;Some material will be stored in Dropbox. In that case, you will need an account to retrieve it. If you do not have one already, sign-in through [&lt;a href=&quot;http://db.tt/Mtz4IUP&quot;&gt;this link&lt;/a&gt;] with your academic e-mail address to receive a base 4GB storage, plus an extra 500MB, free of charge.&lt;/li&gt;
-  &lt;li&gt;Remember to change your e-mail address on Blackboard if necessary [&lt;a href=&quot;http://blackboard.sc.edu/&quot;&gt;blackboard.sc.edu&lt;/a&gt;]&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Office of Disability Services&lt;/strong&gt;: If you have special needs as addressed by the &lt;em&gt;Americans with Disabilities Act&lt;/em&gt; and need any assistance, please notify the instructor immediately.&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Math Tutoring Center:&lt;/strong&gt; The Math Tutoring Center is a free tutoring service for MATH 111, 115, 122, 141, 142, and 170. The center also maintains a list of private tutors for math and statistics. The center is located in LeConte, room 105, and the schedule is available at the Department of Mathematics website (&lt;a href=&quot;http://www.math.sc.edu&quot;&gt;www.math.sc.edu&lt;/a&gt;). No appointment is necessary.&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;ACE centers:&lt;/strong&gt; Tutoring for 100-Level Math is offered Monday through Thursday 7-9pm in the ACE centers in Bates Hall and Columbia Hall and Monday through Thursday 6-9pm in Sims Hall.  No appointment is needed.  You may contact the Student Success Center at 803-777-0684 and &lt;a href=&quot;mailto:tutoring@sc.edu&quot;&gt;tutoring@sc.edu&lt;/a&gt; with additional questions.&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Supplemental Instruction:&lt;/strong&gt; SI is available for this course to assist you in better understanding the course material. The SI program provides peer-facilitated study sessions led by qualified and trained undergraduate SI leaders who attend classes with students and encourage students to practice and discuss course concepts in sessions. Sessions are open to all students who want to improve their understanding of the material, as well as their grades. SI sessions will focus on the most recent material covered in class. Each SI leader holds three sessions per week. Your SI leader is &lt;a href=&quot;mailto:hernants@email.sc.edu&quot;&gt;Tyler Hernandez&lt;/a&gt; and you can find the schedule online at &lt;a href=&quot;http://www.sa.sc.edu/supplementalinstruction/&quot;&gt;www.sa.sc.edu/supplementalinstruction/&lt;/a&gt;.  You can contact the Student Success Center at (803) 777-0684 if you have questions about the SI session schedule.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Honor Code:&lt;/strong&gt; The Honor Code applies to all work for this course.  Please review the Honor Code at [&lt;a href=&quot;http://www.sc.edu/academicintegrity&quot;&gt;this link&lt;/a&gt;].  Students found violating the Honor Code will be subject to discipline.&lt;/li&gt;
+&lt;li&gt;Some material will be stored in Dropbox. In that case, you will need an account to retrieve it. If you do not have one already, sign-in through [&lt;a href=&quot;http://db.tt/Mtz4IUP&quot;&gt;this link&lt;/a&gt;] with your academic e-mail address to receive a base 4GB storage, plus an extra 500MB, free of charge.&lt;/li&gt;
+&lt;li&gt;Remember to change your e-mail address on Blackboard if necessary [&lt;a href=&quot;http://blackboard.sc.edu/&quot;&gt;blackboard.sc.edu&lt;/a&gt;]&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Office of Disability Services&lt;/strong&gt;: If you have special needs as addressed by the &lt;em&gt;Americans with Disabilities Act&lt;/em&gt; and need any assistance, please notify the instructor immediately.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Math Tutoring Center:&lt;/strong&gt; The Math Tutoring Center is a free tutoring service for MATH 111, 115, 122, 141, 142, and 170. The center also maintains a list of private tutors for math and statistics. The center is located in LeConte, room 105, and the schedule is available at the Department of Mathematics website (&lt;a href=&quot;http://www.math.sc.edu&quot;&gt;www.math.sc.edu&lt;/a&gt;). No appointment is necessary.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;ACE centers:&lt;/strong&gt; Tutoring for 100-Level Math is offered Monday through Thursday 7-9pm in the ACE centers in Bates Hall and Columbia Hall and Monday through Thursday 6-9pm in Sims Hall.  No appointment is needed.  You may contact the Student Success Center at 803-777-0684 and &lt;a href=&quot;mailto:tutoring@sc.edu&quot;&gt;tutoring@sc.edu&lt;/a&gt; with additional questions.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Supplemental Instruction:&lt;/strong&gt; SI is available for this course to assist you in better understanding the course material. The SI program provides peer-facilitated study sessions led by qualified and trained undergraduate SI leaders who attend classes with students and encourage students to practice and discuss course concepts in sessions. Sessions are open to all students who want to improve their understanding of the material, as well as their grades. SI sessions will focus on the most recent material covered in class. Each SI leader holds three sessions per week. Your SI leader is &lt;a href=&quot;mailto:hernants@email.sc.edu&quot;&gt;Tyler Hernandez&lt;/a&gt; and you can find the schedule online at &lt;a href=&quot;http://www.sa.sc.edu/supplementalinstruction/&quot;&gt;www.sa.sc.edu/supplementalinstruction/&lt;/a&gt;.  You can contact the Student Success Center at (803) 777-0684 if you have questions about the SI session schedule.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&quot;learning-outcomes&quot;&gt;Learning Outcomes&lt;/h2&gt;
+&lt;h2&gt;Learning Outcomes&lt;/h2&gt;
 
 &lt;p&gt;A student who successfully completes Calculus I (MATH 141) should continue to develop as an independent learner with the ability to approach problems from a conceptual viewpoint, to utilize more than one idea in a single problem, and to apply appropriate calculus skills to problems in context. In particular, the successful student will master concepts and gain skills needed to solve problems related to:&lt;/p&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;Handling Functions
-    &lt;ul&gt;
-      &lt;li&gt;Functions and their graphs&lt;/li&gt;
-      &lt;li&gt;Finding limits graphically, numerically and analytically&lt;/li&gt;
-      &lt;li&gt;Continuity and one-sided limits&lt;/li&gt;
-      &lt;li&gt;Infinite limits and limits at infinity&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Differentiation
-    &lt;ul&gt;
-      &lt;li&gt;The derivative and rates of change&lt;/li&gt;
-      &lt;li&gt;Basic differentiation rules
-        &lt;ul&gt;
-          &lt;li&gt;Polynomials&lt;/li&gt;
-          &lt;li&gt;Exponentials&lt;/li&gt;
-          &lt;li&gt;Trigonometric functions&lt;/li&gt;
-          &lt;li&gt;Logarithmic functions&lt;/li&gt;
-          &lt;li&gt;The product and quotient rule&lt;/li&gt;
-          &lt;li&gt;Chain rule&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-      &lt;li&gt;Implicit differentiation&lt;/li&gt;
-      &lt;li&gt;Logarithmic differentiation&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Applications of differentiation
-    &lt;ul&gt;
-      &lt;li&gt;Related rates&lt;/li&gt;
-      &lt;li&gt;Extrema on an interval&lt;/li&gt;
-      &lt;li&gt;Mean Value Theorem&lt;/li&gt;
-      &lt;li&gt;Curve sketching&lt;/li&gt;
-      &lt;li&gt;L’Hospital’s Rule&lt;/li&gt;
-      &lt;li&gt;Optimization problems&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Integration
-    &lt;ul&gt;
-      &lt;li&gt;Antiderivatives and indeterminate integrals&lt;/li&gt;
-      &lt;li&gt;Definite Integrals&lt;/li&gt;
-      &lt;li&gt;The Fundamental Theorem of Calculus&lt;/li&gt;
-      &lt;li&gt;Basic computation of area between curves&lt;/li&gt;
-      &lt;li&gt;Basic computation of volume of solids of revolution&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
+&lt;li&gt;Handling Functions
+
+&lt;ul&gt;
+&lt;li&gt;Functions and their graphs&lt;/li&gt;
+&lt;li&gt;Finding limits graphically, numerically and analytically&lt;/li&gt;
+&lt;li&gt;Continuity and one-sided limits&lt;/li&gt;
+&lt;li&gt;Infinite limits and limits at infinity&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Differentiation
+
+&lt;ul&gt;
+&lt;li&gt;The derivative and rates of change&lt;/li&gt;
+&lt;li&gt;Basic differentiation rules
+
+&lt;ul&gt;
+&lt;li&gt;Polynomials&lt;/li&gt;
+&lt;li&gt;Exponentials&lt;/li&gt;
+&lt;li&gt;Trigonometric functions&lt;/li&gt;
+&lt;li&gt;Logarithmic functions&lt;/li&gt;
+&lt;li&gt;The product and quotient rule&lt;/li&gt;
+&lt;li&gt;Chain rule&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Implicit differentiation&lt;/li&gt;
+&lt;li&gt;Logarithmic differentiation&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Applications of differentiation
+
+&lt;ul&gt;
+&lt;li&gt;Related rates&lt;/li&gt;
+&lt;li&gt;Extrema on an interval&lt;/li&gt;
+&lt;li&gt;Mean Value Theorem&lt;/li&gt;
+&lt;li&gt;Curve sketching&lt;/li&gt;
+&lt;li&gt;L&amp;#39;Hospital&amp;#39;s Rule&lt;/li&gt;
+&lt;li&gt;Optimization problems&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Integration
+
+&lt;ul&gt;
+&lt;li&gt;Antiderivatives and indeterminate integrals&lt;/li&gt;
+&lt;li&gt;Definite Integrals&lt;/li&gt;
+&lt;li&gt;The Fundamental Theorem of Calculus&lt;/li&gt;
+&lt;li&gt;Basic computation of area between curves&lt;/li&gt;
+&lt;li&gt;Basic computation of volume of solids of revolution&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&quot;lesson-plan&quot;&gt;Lesson plan&lt;/h2&gt;
-
-&lt;pre&gt;&lt;code&gt;* First part---Functions; graphs, limits and continuity
+&lt;h2&gt;Lesson plan&lt;/h2&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;* First part---Functions; graphs, limits and continuity
     * Fri Aug 22: 1.2: Intro to Functions [pp.20--22: 1abcde, 2abcef, 5, 6, 7, 27, 28, 30, 38, 41, 42]
     * Mon Aug 25: 1.3: New functions from old functions [pp.43--44: 1, 2, 3, 4, 5, 31, 32, 33, 34, 35, 36, 37, 38, 41, 42]
     * Wed Aug 27: 1.5 and 1.6: Exponential and Logarithmic Functions [p.58: 3, 4, 7, 8, 9, 10, 15, 17, 18. p.71: 33--39, 47--52]
@@ -33478,8 +33716,8 @@ In order to sign up for your section of the course on WebAssign, visit &lt;a hre
 * Third Part: Applications of Differentiation
     * Mon Sep 29: 4.1: Maximum and Minimum values I [p.277: 6, 8, 10, 29--44, 47--62], 4.3: First and Second Derivative Test [p.295: 5, 6, 7, 9--22, 33--50] &amp;lt;s&amp;gt;4.2: The Mean Value Theorem [see assignment online in webassign]&amp;lt;/s&amp;gt;
     * Wed Oct 01: 4.1: Maximum and Minimum values II
-    * Fri Oct 03: 4.4: L&#39;Hopital&#39;s Rule I [p.304: 5--64]
-    * Mon Oct 06: 4.4: L&#39;Hopital&#39;s Rule II
+    * Fri Oct 03: 4.4: L&amp;#39;Hopital&amp;#39;s Rule I [p.304: 5--64]
+    * Mon Oct 06: 4.4: L&amp;#39;Hopital&amp;#39;s Rule II
     * Wed Oct 08: Curve Sketching [p.314: 1--27]
     * Fri Oct 10: Curve Sketching II
     * Mon Oct 13: Curve Sketching III
@@ -33505,8 +33743,7 @@ In order to sign up for your section of the course on WebAssign, visit &lt;a hre
     * Wed Dec 02: Review for Final Exam (1/3)
     * Fri Dec 04: Review for Final Exam (2/3)
     * Mon Dec 06: Review for Final Exam (3/3)
-&lt;/code&gt;&lt;/pre&gt;
-</description>
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
         <pubDate>Tue, 19 Aug 2014 11:50:44 -0400</pubDate>
         <link>http://blancosilva.github.io/course/2014/08/19/ma141-fall-2014.html</link>
         <guid isPermaLink="true">http://blancosilva.github.io/course/2014/08/19/ma141-fall-2014.html</guid>
@@ -33733,33 +33970,33 @@ Francisco Blanco-Silva&lt;br /&gt;
         <description>&lt;p&gt;I would like to show how to code the NAO robot to beat us at &lt;em&gt;Jotto&lt;/em&gt; (5-letter Mastermind) with &lt;code&gt;python&lt;/code&gt; in &lt;code&gt;Choregraphe&lt;/code&gt;. I will employ a brute force technique that does not require any knowledge of the English language, the frequency of its letters, or smart combinations of vowels and consonants to try to minimize the number of attempts. It goes like this:&lt;/p&gt;
 
 &lt;ol&gt;
-  &lt;li&gt;Gather all 5-letter words with no repeated letters in a list.&lt;/li&gt;
-  &lt;li&gt;Choose a random word from that list—your guess—, and ask it to be scored ala Mastermind.&lt;/li&gt;
-  &lt;li&gt;Filter through the list all words that share the same score with your guess; discard the rest.&lt;/li&gt;
-  &lt;li&gt;Go back to step 2 and repeat until the target word is found.&lt;/li&gt;
+&lt;li&gt;Gather all 5-letter words with no repeated letters in a list.&lt;/li&gt;
+&lt;li&gt;Choose a random word from that list---your guess---, and ask it to be scored ala Mastermind.&lt;/li&gt;
+&lt;li&gt;Filter through the list all words that share the same score with your guess; discard the rest.&lt;/li&gt;
+&lt;li&gt;Go back to step 2 and repeat until the target word is found.&lt;/li&gt;
 &lt;/ol&gt;
 
 &lt;p&gt;Coding this strategy in &lt;code&gt;python&lt;/code&gt; requires only four variables:&lt;/p&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;&lt;code&gt;whole_dict&lt;/code&gt;: the list with all the words&lt;/li&gt;
-  &lt;li&gt;&lt;code&gt;step = [x for x in whole_dict]&lt;/code&gt;: A copy of &lt;code&gt;whole_dict&lt;/code&gt;, which is going to be shortened on each step (hence the name). Note that stating &lt;code&gt;step = whole_dict&lt;/code&gt; will change the contents of &lt;code&gt;whole_dict&lt;/code&gt; when we change the contents of &lt;code&gt;step&lt;/code&gt; — not a good idea.&lt;/li&gt;
-  &lt;li&gt;&lt;code&gt;guess = random.choice(step)&lt;/code&gt;: A random choice from the list &lt;code&gt;step&lt;/code&gt;.&lt;/li&gt;
-  &lt;li&gt;&lt;code&gt;score&lt;/code&gt;: A string containing the two digits we obtain after scoring the guess. The first digit indicates the number of correct letters in the same position as the target word; the second digit indicates the number of correct letters in the wrong position.&lt;/li&gt;
-  &lt;li&gt;&lt;code&gt;attempts&lt;/code&gt;: optional. The number of attempts at guessing words. For quality control purposes.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;whole_dict&lt;/code&gt;: the list with all the words&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;step = [x for x in whole_dict]&lt;/code&gt;: A copy of &lt;code&gt;whole_dict&lt;/code&gt;, which is going to be shortened on each step (hence the name). Note that stating &lt;code&gt;step = whole_dict&lt;/code&gt; will change the contents of &lt;code&gt;whole_dict&lt;/code&gt; when we change the contents of &lt;code&gt;step&lt;/code&gt; --- not a good idea.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;guess = random.choice(step)&lt;/code&gt;: A random choice from the list &lt;code&gt;step&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;score&lt;/code&gt;: A string containing the two digits we obtain after scoring the guess. The first digit indicates the number of correct letters in the same position as the target word; the second digit indicates the number of correct letters in the wrong position.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;attempts&lt;/code&gt;: optional. The number of attempts at guessing words. For quality control purposes.&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;At this point, I urge the reader to stop reading the post and try to implement this strategy as a simple script. When done, come back to see how it can be coded in the NAO robot.&lt;/p&gt;
 
 &lt;p style=&quot;text-align:center;&quot;&gt;
-    &lt;iframe width=&quot;595&quot; height=&quot;365&quot; src=&quot;//www.youtube.com/embed/xQVjHmyD770&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+    &lt;iframe width=&quot;595&quot; height=&quot;365&quot; src=&quot;//www.youtube.com/embed/xQVjHmyD770&quot; frameborder=&quot;0&quot; allowfullscreen&gt;&lt;/iframe&gt;
 &lt;/p&gt;
 
 &lt;p&gt;First, a screenshot of the &lt;code&gt;root&lt;/code&gt; view in choregraph. Note the simplicity of the code.&lt;/p&gt;
 
-&lt;p style=&quot;text-align:center;&quot;&gt;&lt;img src=&quot;https://farm4.staticflickr.com/3910/14425999857_b6500621b4_d.jpg&quot; alt=&quot;mastermind.png&quot; style=&quot;width:75% border:2px solid black;&quot; /&gt;&lt;/p&gt;
+&lt;p style=&quot;text-align:center;&quot;&gt;&lt;img src=&quot;https://farm4.staticflickr.com/3910/14425999857_b6500621b4_d.jpg&quot; alt=&quot;mastermind.png&quot; style=&quot;width:75% border:2px solid black;&quot;&gt;&lt;/p&gt;
 
-&lt;p&gt;The first box, &lt;code&gt;ALMemory starter&lt;/code&gt;, is a &lt;em&gt;script box&lt;/em&gt; where we define all variables needed to run the program — old school. This is the code of that box:&lt;/p&gt;
+&lt;p&gt;The first box, &lt;code&gt;ALMemory starter&lt;/code&gt;, is a &lt;em&gt;script box&lt;/em&gt; where we define all variables needed to run the program --- old school. This is the code of that box:&lt;/p&gt;
 
 &lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-python&quot; data-lang=&quot;python&quot;&gt;&lt;span class=&quot;kn&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;urllib2&lt;/span&gt; &lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;urlopen&lt;/span&gt;
 
@@ -33811,11 +34048,11 @@ Francisco Blanco-Silva&lt;br /&gt;
 &lt;p&gt;The second box, &lt;code&gt;Deal with my word&lt;/code&gt;, is a &lt;em&gt;flow diagram&lt;/em&gt; containing two boxes:&lt;/p&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;One simple &lt;em&gt;script box&lt;/em&gt;, &lt;code&gt;Say the word&lt;/code&gt;. This box performs the random choice from &lt;code&gt;step&lt;/code&gt;, stores it in the variable &lt;code&gt;guess&lt;/code&gt;, and increments the value of &lt;code&gt;attempts&lt;/code&gt; by one. It asks then the player if &lt;code&gt;guess&lt;/code&gt; is the correct word — and spells it, just in case.&lt;/li&gt;
-  &lt;li&gt;A &lt;em&gt;speech recognition box&lt;/em&gt; that expects a yes/no answer.&lt;/li&gt;
+&lt;li&gt;One simple &lt;em&gt;script box&lt;/em&gt;, &lt;code&gt;Say the word&lt;/code&gt;. This box performs the random choice from &lt;code&gt;step&lt;/code&gt;, stores it in the variable &lt;code&gt;guess&lt;/code&gt;, and increments the value of &lt;code&gt;attempts&lt;/code&gt; by one. It asks then the player if &lt;code&gt;guess&lt;/code&gt; is the correct word --- and spells it, just in case.&lt;/li&gt;
+&lt;li&gt;A &lt;em&gt;speech recognition box&lt;/em&gt; that expects a yes/no answer.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p style=&quot;text-align:center;&quot;&gt;&lt;img src=&quot;https://farm4.staticflickr.com/3898/14610327804_466959a9a5_d.jpg&quot; alt=&quot;deal.png&quot; style=&quot;width:75% border:2px solid black;&quot; /&gt;&lt;/p&gt;
+&lt;p style=&quot;text-align:center;&quot;&gt;&lt;img src=&quot;https://farm4.staticflickr.com/3898/14610327804_466959a9a5_d.jpg&quot; alt=&quot;deal.png&quot; style=&quot;width:75% border:2px solid black;&quot;&gt;&lt;/p&gt;
 
 &lt;p&gt;This is the code of &lt;code&gt;Say the word&lt;/code&gt;:&lt;/p&gt;
 
@@ -33853,7 +34090,7 @@ Francisco Blanco-Silva&lt;br /&gt;
         &lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;onUnload&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
         &lt;span class=&quot;k&quot;&gt;pass&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
-&lt;p&gt;A &lt;em&gt;switch case&lt;/em&gt; is next: if the player says “yes”, the program concludes with the &lt;em&gt;script box&lt;/em&gt; &lt;code&gt;Success!&lt;/code&gt;, that states the number of attempts. The code is simple, and it illustrates once again the way to access data from &lt;code&gt;ALMemory&lt;/code&gt;. The only relevant portions of the code on that box are the methods &lt;code&gt;onLoad&lt;/code&gt; and &lt;code&gt;onInput_osStart&lt;/code&gt;:&lt;/p&gt;
+&lt;p&gt;A &lt;em&gt;switch case&lt;/em&gt; is next: if the player says &amp;quot;yes&amp;quot;, the program concludes with the &lt;em&gt;script box&lt;/em&gt; &lt;code&gt;Success!&lt;/code&gt;, that states the number of attempts. The code is simple, and it illustrates once again the way to access data from &lt;code&gt;ALMemory&lt;/code&gt;. The only relevant portions of the code on that box are the methods &lt;code&gt;onLoad&lt;/code&gt; and &lt;code&gt;onInput_osStart&lt;/code&gt;:&lt;/p&gt;
 
 &lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-python&quot; data-lang=&quot;python&quot;&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;onLoad&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
         &lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;talkProxy&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ALProxy&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;ALTextToSpeech&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
@@ -33865,9 +34102,9 @@ Francisco Blanco-Silva&lt;br /&gt;
         &lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;talkProxy&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;say&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;Wonderful!  I got it in &lt;/span&gt;&lt;span class=&quot;si&quot;&gt;%s&lt;/span&gt;&lt;span class=&quot;s&quot;&gt; attempts!&amp;quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;%&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;str&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;attempts&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
         &lt;span class=&quot;k&quot;&gt;pass&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
-&lt;p&gt;If the player says “no”, we retrieve the two scores with two &lt;em&gt;flow diagram&lt;/em&gt; boxes: &lt;code&gt;First Score&lt;/code&gt; and &lt;code&gt;Second Score&lt;/code&gt;. I will present the structure and code of the latter, and leave the code of the former as an exercise.&lt;/p&gt;
+&lt;p&gt;If the player says &amp;quot;no&amp;quot;, we retrieve the two scores with two &lt;em&gt;flow diagram&lt;/em&gt; boxes: &lt;code&gt;First Score&lt;/code&gt; and &lt;code&gt;Second Score&lt;/code&gt;. I will present the structure and code of the latter, and leave the code of the former as an exercise.&lt;/p&gt;
 
-&lt;p style=&quot;text-align:center;&quot;&gt;&lt;img src=&quot;https://farm4.staticflickr.com/3900/14425751180_279c59f295_d.jpg&quot; alt=&quot;secondscore.png&quot; style=&quot;width:75% border:2px solid black;&quot; /&gt;&lt;/p&gt;
+&lt;p style=&quot;text-align:center;&quot;&gt;&lt;img src=&quot;https://farm4.staticflickr.com/3900/14425751180_279c59f295_d.jpg&quot; alt=&quot;secondscore.png&quot; style=&quot;width:75% border:2px solid black;&quot;&gt;&lt;/p&gt;
 
 &lt;p&gt;The first box is a simple &lt;em&gt;Say&lt;/em&gt; that asks for the score. The second box is a &lt;em&gt;Speech Recognition&lt;/em&gt; box that expects any digit from 0 to 5. The third is a &lt;em&gt;script box&lt;/em&gt; that receives the second box output (as a &lt;code&gt;string&lt;/code&gt;), and performs the following operation (only &lt;code&gt;onLoad&lt;/code&gt; and &lt;code&gt;onInput_onStart&lt;/code&gt; are shown):&lt;/p&gt;
 
@@ -33930,7 +34167,6 @@ Francisco Blanco-Silva&lt;br /&gt;
         &lt;span class=&quot;k&quot;&gt;pass&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;That is all! I hope you enjoy playing &lt;em&gt;Jotto&lt;/em&gt; with your NAO. The code can be greatly improved by adding motions in the different steps, or implementing better winning strategies. With brute force, NAO is able to find your word in about 5 attempts (as average, of course). Do you think you can find a strategy that brings this number down to 4 attempts? If so, I would love to hear about it.&lt;/p&gt;
-
 </description>
         <pubDate>Wed, 09 Jul 2014 00:00:00 -0400</pubDate>
         <link>http://blancosilva.github.io/post/2014/07/09/jotto-5-letter-mastermind-in-the-nao-robot.html</link>
@@ -33943,19 +34179,19 @@ Francisco Blanco-Silva&lt;br /&gt;
     
       <item>
         <title>Robot stories</title>
-        <description>&lt;p&gt;Every summer before school was over, I was assigned a list of books to read.  Mostly nonfiction and historical fiction, but in fourth grade there that was that first science fiction book.  I often remember how that book made me feel, and marvel at the impact that it had in my life.  I had read some science fiction before—Well’s &lt;em&gt;Time Traveller&lt;/em&gt; and &lt;em&gt;War of the Worlds&lt;/em&gt;—but this was different.  This was a book with  witty and thought-provoking short stories by Isaac Asimov.  Each of them delivered drama, comedy, mystery and a surprise ending in about ten pages.  And they had robots.  And those robots had personalities, in spite of their very simple programming: &lt;em&gt;The Three Laws of Robotics&lt;/em&gt;.&lt;/p&gt;
+        <description>&lt;p&gt;Every summer before school was over, I was assigned a list of books to read.  Mostly nonfiction and historical fiction, but in fourth grade there that was that first science fiction book.  I often remember how that book made me feel, and marvel at the impact that it had in my life.  I had read some science fiction before—Well&amp;#39;s &lt;em&gt;Time Traveller&lt;/em&gt; and &lt;em&gt;War of the Worlds&lt;/em&gt;—but this was different.  This was a book with  witty and thought-provoking short stories by Isaac Asimov.  Each of them delivered drama, comedy, mystery and a surprise ending in about ten pages.  And they had robots.  And those robots had personalities, in spite of their very simple programming: &lt;em&gt;The Three Laws of Robotics&lt;/em&gt;.&lt;/p&gt;
 
 &lt;blockquote&gt;
-  &lt;ol&gt;
-    &lt;li&gt;A robot may not injure a human being or, through inaction, allow a human being to come to harm.&lt;/li&gt;
-    &lt;li&gt;A robot must obey the orders given to it by human beings, except where such orders would conflict with the First Law.&lt;/li&gt;
-    &lt;li&gt;A robot must protect its own existence as long as such protection does not conflict with the First or Second Law.&lt;/li&gt;
-  &lt;/ol&gt;
+&lt;ol&gt;
+&lt;li&gt;A robot may not injure a human being or, through inaction, allow a human being to come to harm.&lt;/li&gt;
+&lt;li&gt;A robot must obey the orders given to it by human beings, except where such orders would conflict with the First Law.&lt;/li&gt;
+&lt;li&gt;A robot must protect its own existence as long as such protection does not conflict with the First or Second Law.&lt;/li&gt;
+&lt;/ol&gt;
 &lt;/blockquote&gt;
 
-&lt;p&gt;Back in the 1980s, robotics—understood as autonomous mechanical thinking—was no more than a dream.  A wonderful dream that fueled many children’s imaginations and probably shaped the career choices of some.  I know in my case it did.&lt;/p&gt;
+&lt;p&gt;Back in the 1980s, robotics—understood as autonomous mechanical thinking—was no more than a dream.  A wonderful dream that fueled many children&amp;#39;s imaginations and probably shaped the career choices of some.  I know in my case it did.&lt;/p&gt;
 
-&lt;p&gt;Fast forward some thirty-odd years, when I met &lt;em&gt;Astro&lt;/em&gt;: one of three research robots manufactured by the French company &lt;a href=&quot;http://www.aldebaran.com/en&quot;&gt;Aldebaran&lt;/a&gt;.  This NAO robot found its way into the computer science classroom of Tom Simpson in Heathwood Hall Episcopal School, and quickly learned to navigate mazes, recognize some student’s faces and names, and even dance the Macarena!  It did so with effortless coding: a basic command of the computer language &lt;code&gt;python&lt;/code&gt;, and some idea of object oriented programming.&lt;/p&gt;
+&lt;p&gt;Fast forward some thirty-odd years, when I met &lt;em&gt;Astro&lt;/em&gt;: one of three research robots manufactured by the French company &lt;a href=&quot;http://www.aldebaran.com/en&quot;&gt;Aldebaran&lt;/a&gt;.  This NAO robot found its way into the computer science classroom of Tom Simpson in Heathwood Hall Episcopal School, and quickly learned to navigate mazes, recognize some student&amp;#39;s faces and names, and even dance the Macarena!  It did so with effortless coding: a basic command of the computer language &lt;code&gt;python&lt;/code&gt;, and some idea of object oriented programming.&lt;/p&gt;
 
 &lt;p&gt;I could not let this opportunity pass.  I created a small undergraduate team with Danielle Talley from USC (a brilliant sophomore in computer engineering, with a minor in music), and two math majors from Morris College: my Geometry expert Fabian Maple, and a McGyver-style problem solver, Wesley Alexander.  Wesley and Fabian are supported by a Department of Energy-Environmental Management grant to Morris College, which funds their summer research experience at USC.   Danielle is funded by the National Science Foundation through the Louis Stokes South Carolina-Alliance for Minority Participation (LS-SCAMP).&lt;/p&gt;
 
@@ -33965,32 +34201,30 @@ Francisco Blanco-Silva&lt;br /&gt;
 &lt;img src=&quot;https://farm4.staticflickr.com/3921/14343225109_6d4c70558e_d.jpg&quot; /&gt;
 &lt;/p&gt;
 
-&lt;h3 id=&quot;talk-the-talk&quot;&gt;Talk the talk&lt;/h3&gt;
+&lt;h3&gt;Talk the talk&lt;/h3&gt;
 
 &lt;blockquote&gt;
-  &lt;p&gt;The psychologist seated herself and watched Herbie narrowly as he took a chair at the other side of the table and went through the three books systematically.&lt;/p&gt;
+&lt;p&gt;The psychologist seated herself and watched Herbie narrowly as he took a chair at the other side of the table and went through the three books systematically.&lt;/p&gt;
 
-  &lt;p&gt;At the end of half an hour, he put them down, “Of course, I know why you brought these.”&lt;/p&gt;
+&lt;p&gt;At the end of half an hour, he put them down, &amp;quot;Of course, I know why you brought these.&amp;quot;&lt;/p&gt;
 
-  &lt;p&gt;The corner of Dr. Calvin’s lip twitched, “I was afraid you would.  It’s difficult to work with you, Herbie.  You’re always a step ahead of me.”&lt;/p&gt;
+&lt;p&gt;The corner of Dr. Calvin&amp;#39;s lip twitched, &amp;quot;I was afraid you would.  It&amp;#39;s difficult to work with you, Herbie.  You&amp;#39;re always a step ahead of me.&amp;quot;&lt;/p&gt;
 
-  &lt;p&gt;“It’s the same with these books, you know, as with the others.  They just don’t interest me.  There’s nothing to your textbooks.  Your science is just a mass of collected data plastered together by makeshift theory — and all so incredibly simple, that it’s scarcely worth bothering about.”&lt;/p&gt;
+&lt;p&gt;&amp;quot;It&amp;#39;s the same with these books, you know, as with the others.  They just don&amp;#39;t interest me.  There&amp;#39;s nothing to your textbooks.  Your science is just a mass of collected data plastered together by makeshift theory — and all so incredibly simple, that it&amp;#39;s scarcely worth bothering about.&amp;quot;&lt;/p&gt;
 
-  &lt;p&gt;“It’s your fiction that interests me.  Your studies of the interplay of human motives and emotions” – his mighty hand gestured vaguely as he sought the proper words.&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;&amp;quot;It&amp;#39;s your fiction that interests me.  Your studies of the interplay of human motives and emotions&amp;quot; &amp;#8211; his mighty hand gestured vaguely as he sought the proper words.&lt;/p&gt;
 
-&lt;blockquote&gt;
-  &lt;p&gt;&lt;em&gt;Liar!&lt;/em&gt;
+&lt;p&gt;&lt;em&gt;Liar!&lt;/em&gt;
 — Isaac Asimov&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;p&gt;Astro can understand what I say, and maintain conversations with me.  He has four microphones for voice recognition and sound localization, and two speakers for text-to-speech synthesis.  But he sometimes gets confused: I say “acute”, and he understands “abide,” for example.  This might sound frustrating by all standards.  But mathematicians can’t be judged by any reasonable standard.  Far from seeing this as a shortcoming, my team used as motivation the mechanics behind his &lt;em&gt;speech recognition&lt;/em&gt; functionality, and they wrote some code to turn him into an expert Mastermind player.&lt;/p&gt;
+&lt;p&gt;Astro can understand what I say, and maintain conversations with me.  He has four microphones for voice recognition and sound localization, and two speakers for text-to-speech synthesis.  But he sometimes gets confused: I say &amp;quot;acute&amp;quot;, and he understands &amp;quot;abide,&amp;quot; for example.  This might sound frustrating by all standards.  But mathematicians can&amp;#39;t be judged by any reasonable standard.  Far from seeing this as a shortcoming, my team used as motivation the mechanics behind his &lt;em&gt;speech recognition&lt;/em&gt; functionality, and they wrote some code to turn him into an expert Mastermind player.&lt;/p&gt;
 
 &lt;p&gt;&lt;em&gt;Wait, what?  How are these two things possibly connected?&lt;/em&gt;&lt;/p&gt;
 
-&lt;p&gt;Since Astro’s hearing is far from perfect, when he hears a word which is not clear, he gathers a short list of possible candidates.   He then chooses the most likely guess based upon different considerations—using clues from context, for example.   Based on similar strategies, he can be taught to be a perfect player of 5-letter-word Mastermind: Pick any five-letter word in the English language.  Any word, provided it has no repeated letters.  Astro chooses one random word as his first guess, and requests a score like in Mastermind.&lt;/p&gt;
+&lt;p&gt;Since Astro&amp;#39;s hearing is far from perfect, when he hears a word which is not clear, he gathers a short list of possible candidates.   He then chooses the most likely guess based upon different considerations—using clues from context, for example.   Based on similar strategies, he can be taught to be a perfect player of 5-letter-word Mastermind: Pick any five-letter word in the English language.  Any word, provided it has no repeated letters.  Astro chooses one random word as his first guess, and requests a score like in Mastermind.&lt;/p&gt;
 
-&lt;p&gt;To illustrate this process, I will show you how the game went when I chose Fabian’s favorite word: “acute.”&lt;/p&gt;
+&lt;p&gt;To illustrate this process, I will show you how the game went when I chose Fabian&amp;#39;s favorite word: &amp;quot;acute.&amp;quot;&lt;/p&gt;
 
 &lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;Astro: Is it firth?
 Me   : NO
@@ -34011,30 +34245,28 @@ Astro: Is it acute?
 Me   : YES
 Astro: Wonderful, I found it in 4 attempts!&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
-&lt;p&gt;I don’t want to get too technical here, but will mention some of the ideas.  The main algorithm is based on techniques of numerical root finding and solving nonlinear equations — nothing complex: high-school level bracketing by bisection, or Newton’s method.  To design better winning strategies, my team exploits the benefits of randomness.   The analysis of this part is done with basic probability and statistics.&lt;/p&gt;
+&lt;p&gt;I don&amp;#39;t want to get too technical here, but will mention some of the ideas.  The main algorithm is based on techniques of numerical root finding and solving nonlinear equations — nothing complex: high-school level bracketing by bisection, or Newton&amp;#39;s method.  To design better winning strategies, my team exploits the benefits of randomness.   The analysis of this part is done with basic probability and statistics.&lt;/p&gt;
 
-&lt;h3 id=&quot;walk-the-walk&quot;&gt;Walk the walk&lt;/h3&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;Donovan’s pencil pointed nervously.  “The red cross is the selenium pool.  You marked it yourself.”&lt;/p&gt;
-
-  &lt;p&gt;“Which one is it?” interrupted Powell.  “There were three that MacDougal located for us before he left.”&lt;/p&gt;
-
-  &lt;p&gt;“I sent Speedy to the nearest, naturally; seventeen miles away.  But what difference does that make?”  There was tension in his voice.  “There are penciled dots that mark Speedy’s position.”&lt;/p&gt;
-
-  &lt;p&gt;And for the first time Powell’s artificial aplomb was shaken and his hands shot forward for the man.&lt;/p&gt;
-
-  &lt;p&gt;“Are you serious?  This is impossible.”&lt;/p&gt;
-
-  &lt;p&gt;“There it is,” growled Donovan.&lt;/p&gt;
-
-  &lt;p&gt;The little dots that marked the position formed a rough circle about the red cross of the selenium pool.  And Powell’s fingers went to his brown mustache, the unfailing signal of anxiety.&lt;/p&gt;
-
-  &lt;p&gt;Donovan added: “In the two hours I checked on him, he circled that damned pool four times.  It seems likely to me that he’ll keep that up forever.  Do you realize the position we’re in?”&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;h3&gt;Walk the walk&lt;/h3&gt;
 
 &lt;blockquote&gt;
-  &lt;p&gt;&lt;em&gt;Runaround&lt;/em&gt;
+&lt;p&gt;Donovan&amp;#39;s pencil pointed nervously.  &amp;quot;The red cross is the selenium pool.  You marked it yourself.&amp;quot;&lt;/p&gt;
+
+&lt;p&gt;&amp;quot;Which one is it?&amp;quot; interrupted Powell.  &amp;quot;There were three that MacDougal located for us before he left.&amp;quot;&lt;/p&gt;
+
+&lt;p&gt;&amp;quot;I sent Speedy to the nearest, naturally; seventeen miles away.  But what difference does that make?&amp;quot;  There was tension in his voice.  &amp;quot;There are penciled dots that mark Speedy&amp;#39;s position.&amp;quot;&lt;/p&gt;
+
+&lt;p&gt;And for the first time Powell&amp;#39;s artificial aplomb was shaken and his hands shot forward for the man.&lt;/p&gt;
+
+&lt;p&gt;&amp;quot;Are you serious?  This is impossible.&amp;quot;&lt;/p&gt;
+
+&lt;p&gt;&amp;quot;There it is,&amp;quot; growled Donovan.&lt;/p&gt;
+
+&lt;p&gt;The little dots that marked the position formed a rough circle about the red cross of the selenium pool.  And Powell&amp;#39;s fingers went to his brown mustache, the unfailing signal of anxiety.&lt;/p&gt;
+
+&lt;p&gt;Donovan added: &amp;quot;In the two hours I checked on him, he circled that damned pool four times.  It seems likely to me that he&amp;#39;ll keep that up forever.  Do you realize the position we&amp;#39;re in?&amp;quot;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Runaround&lt;/em&gt;
 — Isaac Asimov&lt;/p&gt;
 &lt;/blockquote&gt;
 
@@ -34044,28 +34276,26 @@ Astro: Wonderful, I found it in 4 attempts!&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;img src=&quot;https://farm4.staticflickr.com/3884/14506683656_32784c832d_d.jpg&quot; /&gt;
 &lt;/p&gt;
 
-&lt;p&gt;Fabian and Wesley devised a different way to code Astro taking full advantage of his inertial measurement unit.  This will allow him to move around smoothly, almost like a human would.  The key to their success?  Polynomial interpolation and plane geometry.  For advanced solutions, they need to learn about splines, curvature, and optimization.  Nothing they can’t handle.&lt;/p&gt;
+&lt;p&gt;Fabian and Wesley devised a different way to code Astro taking full advantage of his inertial measurement unit.  This will allow him to move around smoothly, almost like a human would.  The key to their success?  Polynomial interpolation and plane geometry.  For advanced solutions, they need to learn about splines, curvature, and optimization.  Nothing they can&amp;#39;t handle.&lt;/p&gt;
 
 &lt;p style=&quot;text-align:center;&quot;&gt;
 &lt;img src=&quot;https://farm6.staticflickr.com/5595/14344128330_bb4845a89d_d.jpg&quot; /&gt;
 &lt;/p&gt;
 
-&lt;h3 id=&quot;sing-me-a-song&quot;&gt;Sing me a song&lt;/h3&gt;
+&lt;h3&gt;Sing me a song&lt;/h3&gt;
 
 &lt;blockquote&gt;
-  &lt;p&gt;He said he could manage three hours and Mortenson said that would be perfect when I gave him the news. We picked a night when she was going to be singing Bach or Handel or one of those old piano-bangers, and was going to have a long and impressive solo.&lt;/p&gt;
+&lt;p&gt;He said he could manage three hours and Mortenson said that would be perfect when I gave him the news. We picked a night when she was going to be singing Bach or Handel or one of those old piano-bangers, and was going to have a long and impressive solo.&lt;/p&gt;
 
-  &lt;p&gt;Mortenson went to the church that night and, of course, I went too. I felt responsible for what was going to happen and I thought I had better oversee the situation.&lt;/p&gt;
+&lt;p&gt;Mortenson went to the church that night and, of course, I went too. I felt responsible for what was going to happen and I thought I had better oversee the situation.&lt;/p&gt;
 
-  &lt;p&gt;Mortenson said, gloomily, “I attended the rehearsals. She was just singing the same way she always did; you know, as though she had a tail and someone was stepping on it.”&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;Mortenson said, gloomily, &amp;quot;I attended the rehearsals. She was just singing the same way she always did; you know, as though she had a tail and someone was stepping on it.&amp;quot;&lt;/p&gt;
 
-&lt;blockquote&gt;
-  &lt;p&gt;&lt;em&gt;One Night of Song&lt;/em&gt;
+&lt;p&gt;&lt;em&gt;One Night of Song&lt;/em&gt;
 — Isaac Asimov&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;p&gt;Astro has excellent eyesight and understanding of the world around him.  He is equipped with two HD cameras, and a bunch of computer vision algorithms, including facial and shape recognition.   Danielle’s dream is to have him read from a music sheet and sing or play the song in a toy piano.  She is very close to completing this project:  Astro is able now to identify partitures, and extract from them the location of the pentagrams.  Danielle is currently working on identifying the notes and the clefs.  This is one of her test images, and the result of one of her early experiments:&lt;/p&gt;
+&lt;p&gt;Astro has excellent eyesight and understanding of the world around him.  He is equipped with two HD cameras, and a bunch of computer vision algorithms, including facial and shape recognition.   Danielle&amp;#39;s dream is to have him read from a music sheet and sing or play the song in a toy piano.  She is very close to completing this project:  Astro is able now to identify partitures, and extract from them the location of the pentagrams.  Danielle is currently working on identifying the notes and the clefs.  This is one of her test images, and the result of one of her early experiments:&lt;/p&gt;
 
 &lt;p style=&quot;text-align:center;&quot;&gt;
 &lt;table style=&quot;border:0;width:100%;background-color:white;&quot;&gt;
@@ -34082,7 +34312,7 @@ Astro: Wonderful, I found it in 4 attempts!&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;Most of the techniques Danielle is using are accessible to any student with a decent command of vector calculus, and enough scientific maturity.  The extraction of pentagrams and the different notes on them, for example, is performed with the &lt;a href=&quot;http://en.wikipedia.org/wiki/Hough_transform&quot;&gt;Hough transform&lt;/a&gt;.  This is a fancy term for an algorithm that basically searches for straight lines and circles by solving an optimization problem in two or three variables.&lt;/p&gt;
 
-&lt;p&gt;The only thing left is an actual performance.  Danielle will be leading Fabian and Wes, and with the assistance of Mr. Simpson’s awesome students Erica and Robert, Astro will hopefully learn to physically approach the piano, choose the right keys, and play them in the correct order and speed.  Talent show, anyone?&lt;/p&gt;
+&lt;p&gt;The only thing left is an actual performance.  Danielle will be leading Fabian and Wes, and with the assistance of Mr. Simpson&amp;#39;s awesome students Erica and Robert, Astro will hopefully learn to physically approach the piano, choose the right keys, and play them in the correct order and speed.  Talent show, anyone?&lt;/p&gt;
 </description>
         <pubDate>Sun, 29 Jun 2014 00:00:00 -0400</pubDate>
         <link>http://blancosilva.github.io/post/2014/06/29/robot-stories.html</link>
@@ -34090,294 +34320,6 @@ Astro: Wonderful, I found it in 4 attempts!&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
         
         
         <category>post</category>
-        
-      </item>
-    
-      <item>
-        <title>MA141—Summer 2014</title>
-        <description>&lt;h1&gt;Section 002&lt;/h1&gt;
-&lt;table style=&quot;width:100%;border:0;&quot;&gt;
-&lt;tr&gt;
-&lt;td style=&quot;width:50%;border:0;&quot;&gt;
-&lt;h2&gt;Instructor&lt;/h2&gt;
-&lt;p&gt;Francisco Blanco-Silva&lt;br /&gt;
-&lt;strong&gt;e-mail:&lt;/strong&gt; &lt;tt&gt;&lt;a href=&quot;mailto:blanco@math.sc.edu&quot;&gt;blanco at math dot sc dot edu&lt;/a&gt;&lt;/tt&gt;&lt;br /&gt;
-&lt;strong&gt;office:&lt;/strong&gt; LeConte 307
-&lt;/td&gt;
-&lt;td style=&quot;width:50%;border:0;&quot;&gt;
-&lt;h2&gt;Teaching Assistant&lt;/h2&gt;
-&lt;p&gt;Shuliang Bai&lt;br /&gt;
-&lt;strong&gt;e-mail&lt;/strong&gt;: &lt;tt&gt;&lt;a href=&quot;mailto:sbai@math.sc.edu&quot;&gt; sbai at math dot sc dot edu&lt;/a&gt;&lt;/tt&gt;&lt;br /&gt;
-&lt;strong&gt;office:&lt;/strong&gt; LeConte 107A
-&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/table&gt;
-&lt;h2&gt;Meeting Times and Office Hours&lt;/h2&gt;
-&lt;table style=&quot;margin-left:auto;margin-right:auto;font-family:courier;&quot;&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td rowspan=&quot;2&quot;&gt;&lt;strong&gt;Lectures&lt;/strong&gt;:&lt;/td&gt;
-&lt;td bgcolor=&quot;#bb9999&quot; style=&quot;text-align:left;&quot;&gt;Morning session&lt;/td&gt;
-&lt;td bgcolor=&quot;#bb9999&quot; style=&quot;text-align:center;&quot;&gt;&lt;strong&gt;MTWThF&lt;/strong&gt;&lt;/td&gt;
-&lt;td bgcolor=&quot;#bb9999&quot; style=&quot;text-align:right;&quot;&gt;&amp;nbsp;8:30 AM - 10:30 AM&lt;/td&gt;
-&lt;td bgcolor=&quot;#bb9999&quot; style=&quot;text-align:left;&quot;&gt;Humanities 104&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td bgcolor=&quot;#bb9999&quot; style=&quot;text-align:left;&quot;&gt;Evening session&lt;/td&gt;
-&lt;td bgcolor=&quot;#bb9999&quot; style=&quot;text-align:center;&quot;&gt;&lt;strong&gt;MWF&lt;/strong&gt;&lt;/td&gt;
-&lt;td bgcolor=&quot;#bb9999&quot; style=&quot;text-align:right;&quot;&gt;&amp;nbsp;2:50 PM - &amp;nbsp;4:05 PM&lt;/td&gt;
-&lt;td bgcolor=&quot;#bb9999&quot; style=&quot;text-align:left;&quot;&gt;LeConte 412&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;strong&gt;Computer Labs&lt;/strong&gt;:&lt;/td&gt;
-&lt;td colspan=&quot;2&quot; bgcolor=&quot;#f4f5f7&quot; style=&quot;text-align:right;&quot;&gt;&lt;strong&gt;TTh&lt;/strong&gt;&lt;/td&gt;
-&lt;td bgcolor=&quot;#f4f5f7&quot; style=&quot;text-align:right;&quot;&gt;&amp;nbsp;2:50 PM - &amp;nbsp;4:20 PM&lt;/td&gt;
-&lt;td bgcolor=&quot;#f4f5f7&quot; style=&quot;text-align:left;&quot;&gt;LeConte 102&lt;/td&gt;
-&lt;/tr&gt;
-&lt;td style=&quot;vertical-align:top;&quot; rowspan=&quot;2&quot;&gt;&lt;strong&gt;Office Hours&lt;/strong&gt;:&lt;/td&gt;
-&lt;td bgcolor=&quot;#fedebe&quot; style=&quot;text-align:center;&quot;&gt;Francisco&lt;/td&gt;
-&lt;td bgcolor=&quot;#fedebe&quot; style=&quot;text-align:right;&quot;&gt;&lt;strong&gt;MTWThF&lt;/strong&gt;&lt;/td&gt;
-&lt;td bgcolor=&quot;#fedebe&quot; style=&quot;text-align:right;&quot;&gt;10:45 AM - 11:45 AM&lt;/td&gt;
-&lt;td style=&quot;text-align:left;vertical-align:bottom;&quot; bgcolor=&quot;#fedebe&quot;&gt;LeConte 307&lt;/td&gt;
-&lt;tr&gt;
-&lt;td bgcolor=&quot;#fedebe&quot; style=&quot;text-align:center;&quot;&gt;Shuliang&lt;/td&gt;
-&lt;td bgcolor=&quot;#fedebe&quot; style=&quot;text-align:right;&quot;&gt;&lt;strong&gt;TW&lt;/strong&gt;&lt;/td&gt;
-&lt;td bgcolor=&quot;#fedebe&quot; style=&quot;text-align:right;&quot;&gt;12:00 - &amp;nbsp;1:00 PM&lt;/td&gt;
-&lt;td style=&quot;text-align:left;&quot; bgcolor=&quot;#fedebe&quot;&gt;LeConte 105&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-&lt;h2&gt;Important deadlines you need to know&lt;/h2&gt;
-&lt;p style=&quot;text-align:justify;&quot;&gt;The Columbia Summer E session begins Monday, June 2&lt;sup&gt;nd&lt;/sup&gt;, and ends Thursday, June 26&lt;sup&gt;th&lt;/sup&gt;.  The last day to drop/add is Tuesday, June 3&lt;sup&gt;rd&lt;/sup&gt;.  The deadline to obtain a &quot;W&quot; grade or to elect a pass/fail grade is Friday, June 13&lt;sup&gt;th&lt;/sup&gt;. The first day in which a &quot;WF&quot; grade is assigned is therefore Saturday, June 14&lt;sup&gt;th&lt;/sup&gt;.&lt;/p&gt;
-&lt;p&gt;&lt;/p&gt;
-&lt;h2&gt;Prerequisites&lt;/h2&gt;
-&lt;p style=&quot;text-align:justify;&quot;&gt;Qualifications through Placement code MA4-9 or MD0-9 required: earned by grade of &lt;strong&gt;C&lt;/strong&gt; or better in MATH 112, 115, 116 or by &lt;a href=&quot;https://assess.math.sc.edu&quot;&gt;PreCalculus Placement Test.&lt;/a&gt;&lt;/p&gt;
-&lt;h2&gt;Text&lt;/h2&gt;
-&lt;p style=&quot;text-align:justify;&quot;&gt;&lt;em&gt;Calculus. Early Transcendentals&lt;/em&gt; by James Stewart. &lt;strong&gt;Thompson Brooks/Cole&lt;/strong&gt; 2008 (sixth edition)&lt;/p&gt;
-&lt;table style=&quot;margin-left:auto;margin-right:auto;border:0 white;&quot;&gt;
-&lt;tr&gt;
-&lt;td style=&quot;text-align:center;border:0 white;&quot;&gt;
-&lt;a href=&quot;http://www.amazon.com/gp/product/0495011665/ref=as_li_tf_il?ie=UTF8&amp;amp;tag=blancosilva-20&amp;amp;linkCode=as2&amp;amp;camp=217145&amp;amp;creative=399377&amp;amp;creativeASIN=0495011665&quot;&gt;&lt;img border=&quot;0&quot; src=&quot;assets/q?_encoding=UTF8&amp;amp;Format=_SL160_&amp;amp;ASIN=0495011665&amp;amp;MarketPlace=US&amp;amp;ID=AsinImage&amp;amp;WS=1&amp;amp;tag=blancosilva-20&amp;amp;ServiceVersion=20070822&quot; /&gt;&lt;/a&gt;&lt;img src=&quot;assets/ir?t=blancosilva-20&amp;amp;l=as2&amp;amp;o=1&amp;amp;a=0495011665&amp;amp;camp=217145&amp;amp;creative=399377&quot; width=&quot;1&quot; height=&quot;1&quot; border=&quot;0&quot; alt=&quot;&quot; style=&quot;border:none !important;margin:0!important;&quot; /&gt;&lt;/td&gt;
-&lt;td style=&quot;text-align:center;border:0 white;&quot;&gt;
-&lt;a href=&quot;http://www.amazon.com/gp/product/084004934X/ref=as_li_qf_sp_asin_il?ie=UTF8&amp;amp;camp=1789&amp;amp;creative=9325&amp;amp;creativeASIN=084004934X&amp;amp;linkCode=as2&amp;amp;tag=blancosilva-20&quot;&gt;&lt;img border=&quot;0&quot; src=&quot;assets/q?_encoding=UTF8&amp;amp;ASIN=084004934X&amp;amp;Format=_SL160_&amp;amp;ID=AsinImage&amp;amp;MarketPlace=US&amp;amp;ServiceVersion=20070822&amp;amp;WS=1&amp;amp;tag=blancosilva-20&quot; /&gt;&lt;/a&gt;&lt;img src=&quot;assets/ir?t=blancosilva-20&amp;amp;l=as2&amp;amp;o=1&amp;amp;a=084004934X&quot; width=&quot;1&quot; height=&quot;1&quot; border=&quot;0&quot; alt=&quot;&quot; style=&quot;border:none !important;margin:0!important;&quot; /&gt;
-&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td style=&quot;text-align:center;border:0 white;&quot;&gt;
-&lt;a href=&quot;http://www.amazon.com/gp/product/0495011665/ref=as_li_tf_tl?ie=UTF8&amp;amp;tag=blancosilva-20&amp;amp;linkCode=as2&amp;amp;camp=217145&amp;amp;creative=399377&amp;amp;creativeASIN=0495011665&quot;&gt;Calculus: Early Transcendentals&lt;/a&gt;&lt;img src=&quot;assets/ir?t=blancosilva-20&amp;amp;l=as2&amp;amp;o=1&amp;amp;a=0495011665&amp;amp;camp=217145&amp;amp;creative=399377&quot; width=&quot;1&quot; height=&quot;1&quot; border=&quot;0&quot; alt=&quot;&quot; style=&quot;border:none !important;margin:0!important;&quot; /&gt; &lt;img src=&quot;assets/ir?t=blancosilva-20&amp;amp;l=as2&amp;amp;o=1&amp;amp;a=0495011665&amp;amp;camp=217145&amp;amp;creative=399385&quot; width=&quot;1&quot; height=&quot;1&quot; border=&quot;0&quot; alt=&quot;&quot; style=&quot;border:none !important;margin:0!important;&quot; /&gt;&lt;/td&gt;
-&lt;td style=&quot;text-align:center;border:0 white;&quot;&gt;
-&lt;a href=&quot;http://www.amazon.com/gp/product/084004934X/ref=as_li_qf_sp_asin_tl?ie=UTF8&amp;amp;camp=1789&amp;amp;creative=9325&amp;amp;creativeASIN=084004934X&amp;amp;linkCode=as2&amp;amp;tag=blancosilva-20&quot;&gt;Student Solutions Manual&lt;/a&gt;&lt;img src=&quot;assets/ir?t=blancosilva-20&amp;amp;l=as2&amp;amp;o=1&amp;amp;a=084004934X&quot; width=&quot;1&quot; height=&quot;1&quot; border=&quot;0&quot; alt=&quot;&quot; style=&quot;border:none !important;margin:0!important;&quot; /&gt;
-&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/table&gt;
-&lt;p style=&quot;text-align:justify;&quot;&gt;You will be required to use Enhanced WebAssign, the online homework/quiz system that accompanies your textbook, for my course.  If you choose to purchase a hard copy of the textbook, you need to purchase the bundle that comes with the Enhanced WebAssign code.&lt;/p&gt;
-&lt;h2&gt;Course Structure and Grading Policies&lt;/h2&gt;
-&lt;p style=&quot;text-align:justify;&quot;&gt;Your final score for the course will be computed as follows:&lt;/p&gt;
-&lt;table style=&quot;text-align:center;border:1px solid black;margin-left:auto;margin-right:auto;padding:8px;&quot;&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;strong&gt;&lt;tt&gt;F = 0.1 * (Q + CL) + 0.15 * (ME1 + ME2 + ME3 + ME4) + 0.2 * FE&lt;/tt&gt;&lt;/strong&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/table&gt;
-&lt;ul&gt;
-&lt;li style=&quot;text-align:justify;&quot;&gt;&lt;strong&gt;Quizzes&lt;/strong&gt;: (up to 100 points) 10% of the course grade.  Quizzes have been assigned for each topic (you can see their schedule at the end of this page, under &lt;strong&gt;Lesson Plan&lt;/strong&gt;). The quizzes are posted on &lt;a href=&quot;http://www.webassign.net&quot;&gt;WebAssign&lt;/a&gt;.  They are due at midnight on the announced days, and will be graded online.
-&lt;p style=&quot;text-align:justify;&quot;&gt;In order to sign up for your section of the course on WebAssign, visit &lt;a href=&quot;http://www.webassign.net&quot;&gt;www.webassign.net&lt;/a&gt; and click on [&lt;strong&gt;I have a Class Key&lt;/strong&gt;].  The class key is&lt;/p&gt;
-&lt;p style=&quot;text-align:center;font-size:14pt;&quot;&gt;&lt;strong&gt;&lt;tt&gt;sc 3807 8051&lt;/tt&gt;&lt;/strong&gt;&lt;/p&gt;
-&lt;p style=&quot;text-align:justify;&quot;&gt;Click [&lt;a href=&quot;http://www.webassign.net/manual/WA_Student_Quick_Start.pdf&quot;&gt;here&lt;/a&gt;] to retrieve further registration instructions.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li style=&quot;text-align:justify;&quot;&gt;&lt;strong&gt;Computer Labs&lt;/strong&gt;: (up to 100 points) 10% of the course grade.&lt;/li&gt;
-&lt;li style=&quot;text-align:justify;&quot;&gt;&lt;strong&gt;Midterm Exams&lt;/strong&gt;: (up to 100 points each) 60% of the course grade (15% each midterm).  There will be four in-class midterm exams scheduled as follows:&lt;br /&gt;
-&lt;table style=&quot;margin-left:auto;margin-right:auto;&quot;&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td bgcolor=&quot;#bb9999&quot;&gt;Test #&lt;/td&gt;
-&lt;td bgcolor=&quot;#bb9999&quot;&gt;Date&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&quot;center&quot;&gt;&lt;strong&gt;1&lt;/strong&gt;&lt;/td&gt;
-&lt;td align=&quot;center&quot;&gt;Thu, Jun 05&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&quot;center&quot;&gt;&lt;strong&gt;2&lt;/strong&gt;&lt;/td&gt;
-&lt;td align=&quot;center&quot;&gt;Tue, Jun 10&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&quot;center&quot;&gt;&lt;strong&gt;3&lt;/strong&gt;&lt;/td&gt;
-&lt;td align=&quot;center&quot;&gt;Mon, Jun 16&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&quot;center&quot;&gt;&lt;strong&gt;4&lt;/strong&gt;&lt;/td&gt;
-&lt;td align=&quot;center&quot;&gt;Mon, Jun 23&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-&lt;p style=&quot;text-align:justify;&quot;&gt;No make-up tests will be given. Only medical, death in the family, religious or official USC business reasons are valid excuses for missing a test and must be verified by letter from a doctor, guardian or supervisor.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li style=&quot;text-align:justify;&quot;&gt;&lt;strong&gt;Final Exam&lt;/strong&gt;: (up to 100 points) 20% of the course grade.  The final exam is scheduled on Friday, Jan 27&lt;sup&gt;th&lt;/sup&gt; from 8:30 AM to 10:30 AM.
-&lt;p style=&quot;text-align:justify;&quot;&gt;No make-up final exam will be given.  Only medical, death in the family, religious or official USC business reasons are valid excuses for missing the Final Exam, and must be verified by letter from a doctor, guardian or supervisor.&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;The course grade will be determined as follows:&lt;/p&gt;
-&lt;table style=&quot;margin-left:auto;margin-right:auto;&quot;&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td bgcolor=&quot;#bb9999&quot;&gt;GRADE&lt;/td&gt;
-&lt;td bgcolor=&quot;#bb9999&quot;&gt;RANGE&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&quot;center&quot;&gt;&lt;strong&gt;A&lt;/strong&gt;&lt;/td&gt;
-&lt;td&gt;90%-100%&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&quot;center&quot;&gt;&lt;strong&gt;B+&lt;/strong&gt;&lt;/td&gt;
-&lt;td&gt;85%-89%&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&quot;center&quot;&gt;&lt;strong&gt;B&lt;/strong&gt;&lt;/td&gt;
-&lt;td&gt;80%-84%&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&quot;center&quot;&gt;&lt;strong&gt;C+&lt;/strong&gt;&lt;/td&gt;
-&lt;td&gt;75%-79%&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&quot;center&quot;&gt;&lt;strong&gt;C&lt;/strong&gt;&lt;/td&gt;
-&lt;td&gt;70%-74%&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&quot;center&quot;&gt;&lt;strong&gt;D+&lt;/strong&gt;&lt;/td&gt;
-&lt;td&gt;65%-69%&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&quot;center&quot;&gt;&lt;strong&gt;D&lt;/strong&gt;&lt;/td&gt;
-&lt;td&gt;60%-64%&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&quot;center&quot;&gt;&lt;strong&gt;F&lt;/strong&gt;&lt;/td&gt;
-&lt;td&gt;below 60%&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-&lt;h2&gt;Further Information&lt;/h2&gt;
-&lt;ul style=&quot;text-align:justify;&quot;&gt;
-&lt;li&gt;&lt;strong&gt;Honor Code:&lt;/strong&gt; The Honor Code applies to all work for this course.  Please review the Honor Code at [&lt;a href=&quot;http://www.sc.edu/academicintegrity&quot;&gt;this link&lt;/a&gt;].  Students found violating the Honor Code will be subject to discipline.&lt;/li&gt;
-&lt;li&gt;Some material will be stored in Dropbox. In that case, you will need an account to retrieve it. If you do not have one already, sign-in through [&lt;a href=&quot;http://db.tt/Mtz4IUP&quot;&gt;this link&lt;/a&gt;] with your academic e-mail address to receive a base 4GB storage, plus an extra 500MB, free of charge.&lt;/li&gt;
-&lt;li&gt;Remember to change your e-mail address on Blackboard if necessary [&lt;a href=&quot;http://blackboard.sc.edu/&quot;&gt;blackboard.sc.edu&lt;/a&gt;]&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Office of Disability Services&lt;/strong&gt;: If you have special needs as addressed by the &lt;em&gt;Americans with Disabilities Act&lt;/em&gt; and need any assistance, please notify the instructor immediately.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Summer Tutoring:&lt;/strong&gt; Summer Online Tutoring is available for this class through the Student Success Center at the University of South Carolina.  Tutoring sessions are by appointment only and must be made at least 24 hours in advance.  Please visit &lt;a href=&quot;www.sc.edu/tutoring&quot;&gt;www.sc.edu/tutoring&lt;/a&gt; to make an appointment.  You appointment confirmation email will also include a link to the online tutoring room you will enter at the time of your appointment.  The tutor is a current USC student and Student Success Center peer tutor.  If you have any questions or have trouble making an appointment or accessing the online tutoring room, please email &lt;a href=&quot;mailto:tutoring@sc.edu&quot;&gt;tutoring@sc.edu&lt;/a&gt;.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2&gt;Learning Outcomes&lt;/h2&gt;
-&lt;p style=&quot;text-align:justify;&quot;&gt;A student who successfully completes Calculus I (MATH 141) should continue to develop as an independent learner with the ability to approach problems from a conceptual viewpoint, to utilize more than one idea in a single problem, and to apply appropriate calculus skills to problems in context. In particular, the successful student will master concepts and gain skills needed to solve problems related to:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Handling Functions
-&lt;ul&gt;
-&lt;li&gt;Functions and their graphs&lt;/li&gt;
-&lt;li&gt;Finding limits graphically, numerically and analytically&lt;/li&gt;
-&lt;li&gt;Continuity and one-sided limits&lt;/li&gt;
-&lt;li&gt;Infinite limits and limits at infinity&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Differentiation
-&lt;ul&gt;
-&lt;li&gt;The derivative and rates of change&lt;/li&gt;
-&lt;li&gt;Basic differentiation rules
-&lt;ul&gt;
-&lt;li&gt;Polynomials&lt;/li&gt;
-&lt;li&gt;Exponentials&lt;/li&gt;
-&lt;li&gt;Trigonometric functions&lt;/li&gt;
-&lt;li&gt;Logarithmic functions&lt;/li&gt;
-&lt;li&gt;The product and quotient rule&lt;/li&gt;
-&lt;li&gt;Chain rule&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Implicit differentiation&lt;/li&gt;
-&lt;li&gt;Applications of differentiation
-&lt;ul&gt;
-&lt;li&gt;Related rates&lt;/li&gt;
-&lt;li&gt;Extrema on an interval&lt;/li&gt;
-&lt;li&gt;Mean Value Theorem&lt;/li&gt;
-&lt;li&gt;Curve sketching&lt;/li&gt;
-&lt;li&gt;L&#39;Hospital&#39;s Rule&lt;/li&gt;
-&lt;li&gt;Optimization problems&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Integration
-&lt;ul&gt;
-&lt;li&gt;Antiderivatives and indeterminate integrals&lt;/li&gt;
-&lt;li&gt;Definite Integrals&lt;/li&gt;
-&lt;li&gt;The Fundamental Theorem of Calculus&lt;/li&gt;
-&lt;li&gt;Basic computation of area between curves&lt;/li&gt;
-&lt;li&gt;Basic computation of volume of solids of revolution&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2&gt;Lesson plan&lt;/h2&gt;
-&lt;ul style=&quot;font-family:Courier;font-size:10pt;&quot;&gt;
-&lt;li&gt;&lt;strong&gt;First part: Functions&lt;/strong&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Mon Jun 02&lt;/strong&gt;: 1.2, 1.5 and 1.6: Intro to Functions. Exponential and Logarithmic Functions&lt;br /&gt;
-[pp.20--22: 1abcde, 2abcef, 5, 6, 7, 27, 28, 30, 38, 41, 42;  p.58: 3, 4, 7, 8, 9, 10, 15, 17, 18; p.71: 33--39, 47--52]&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Tue Jun 03&lt;/strong&gt;: 1.3: New functions from old functions&lt;br /&gt;
-[pp.43--44: 1, 2, 3, 4, 5, 31, 32, 33, 34, 35, 36, 37, 38, 41, 42]&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Wed Jun 04&lt;/strong&gt;: 2.2, 2.3 and 2.5: Limits and Continuity&lt;br /&gt;
-[p.97: 4, 5, 6, 25, 26, 27, 29, 32, 34a. p.106: 1, 3--9, 11--27; pp.128: 3a, 4, 10--13, 16--18, 20, 35, 37, 39, 41, 42]&lt;br /&gt;
-&lt;font color=&quot;blue&quot;&gt;[Quiz #1 due today]&lt;/font&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Thu Jun 05&lt;/strong&gt;: &lt;font color=&quot;red&quot;&gt;First Midterm---sections 1.2, 1.3, 1.5, 1.6, 2.2, 2.3, 2.5 and 2.6&lt;/font&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Second Part: Introduction to Differentiation&lt;/strong&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Fri Jun 06&lt;/strong&gt;: Intro to derivatives:&lt;br /&gt;
-2.7 and 2.8: Definition, usage [p.150 :4ab, 5--8, 10ab, 21, 25--30]&lt;br /&gt;
-3.1: Derivatives of Polynomials and Exponential functions [p.180: 3--30, 33, 34, 45, 52, 53, 54]&lt;br /&gt;
-3.3: Derivatives of Trigonometric functions [p.195: 1--6, 9--14, 21, 23, 24, 25a, 34]&lt;br /&gt;
-3.6: Derivatives of Logarithmic functions [p.220: 2--22, 27--30, 33, 34, 37--50]&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Mon Jun 09&lt;/strong&gt;:&lt;br /&gt;
-3.2, 3.4. 3.5 and 3.6: Product, Quotient and Chain Rules. Implicit and Logarithmic differentiation&lt;br /&gt;
-[p.187: 1, 2, 7, 8, 9, 10, 11, 13, 14, 15, 16, 19, 21, 22, 26, 29, 31, 52; p.203: 1---21, 23, 25--30, 32--34, 36, 37, 51--54, 62; p.213: 1--30, 63, 64a, 65, 66]&lt;br /&gt;
-&lt;font color=&quot;blue&quot;&gt;[Quiz #2 due today]&lt;/font&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Tue Jan 10&lt;/strong&gt;: &lt;font color=&quot;red&quot;&gt;Second Midterm---sections 2.7, 2.8, 3.1, 3.2, 3.3, 3.4, 3.5 and 3.6&lt;/font&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Third Part: Applications of Differentiation&lt;/strong&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Wed Jan 11&lt;/strong&gt;: 4.1, 4.2 and 4.3: Maximum and Minimum values. First and Second Derivative Test. The Mean Value Theorem.&lt;br /&gt;
-[p.277: 6, 8, 10, 29--44, 47--62; p.295: 5, 6, 7, 9--22, 33--50]&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Thu Jun 12&lt;/strong&gt;: 4.4: L&#39;Hopital&#39;s Rule&lt;br /&gt;
-[p.304: 5--64]&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Fri Jun 13&lt;/strong&gt;: 4.5: Curve Sketching&lt;br /&gt;
-[p.314: 1--27]&lt;br /&gt;
-&lt;font color=&quot;blue&quot;&gt;[Quiz #3 due today]&lt;/font&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Mon Jan 16&lt;/strong&gt;: &lt;font color=&quot;red&quot;&gt;Third Midterm---sections 4.1, 4.2, 4.3, 4.4, and 4.5&lt;/font&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Tue Jan 17&lt;/strong&gt;: 3.9: Related Rates I&lt;br /&gt;
-[p.245: 1--33]&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Wed Jan 18&lt;/strong&gt;: 4.7: Optimization Problems&lt;br /&gt;
-[see assignment online in webassign]&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Wed Jan 19&lt;/strong&gt;: Review of story problems&lt;br /&gt;
-&lt;font color=&quot;blue&quot;&gt;[Quiz #4 due today]&lt;/font&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Fri Jan 20&lt;/strong&gt;: &lt;font color=&quot;red&quot;&gt;NO CLASSES TODAY&lt;/font&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Mon Jan 23&lt;/strong&gt;: &lt;font color=&quot;red&quot;&gt;Fourth Midterm---sections 3.9, and 4.7&lt;/font&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Fourth Part: Introduction to Integration&lt;/strong&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Tue Jun 24&lt;/strong&gt;: 4.9 and 5.4: Antiderivatives and indefinite integrals&lt;br /&gt;
-[p.345: 1--15, 18, 18, 21; p.397: 5--18]&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Wed Jun 25&lt;/strong&gt;: Appendix E, 5.1 and 5.2: Sigma notation. Intro to Definite Integrals&lt;br /&gt;
-[p.A38: 1--36, 43--46]&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Thu Jun 26&lt;/strong&gt;: 5.3: The Fundamental Theorem of Calculus&lt;br /&gt;
-[p.388: 7--12, 19--33, 35, 36, 39, 40, 65, 66, 68, 74]&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-</description>
-        <pubDate>Sat, 31 May 2014 14:35:48 -0400</pubDate>
-        <link>http://blancosilva.github.io/course/2014/05/31/ma141-summer-2014.html</link>
-        <guid isPermaLink="true">http://blancosilva.github.io/course/2014/05/31/ma141-summer-2014.html</guid>
-        
-        
-        <category>course</category>
         
       </item>
     
