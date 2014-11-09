@@ -14,7 +14,7 @@ We have seen a naïve way to perform denoising on images by a simple <a href="ht
 
 In mathematical terms, all we are doing is *thresholding* the absolute value of wavelet coefficients by an appropriate function. For example, if we chose to eliminate all coefficients with absolute value less than a given threshold <span>\\( \theta \\)</span>, and keep the rest of the coefficients untouched, we end up with the thresholding function <span>\\( \tau_\theta \colon \mathbb{R}^+ \to \mathbb{R} \\)</span> given by:
 
-<p style="text-align:center;"><img src="https://i0.wp.com/farm6.static.flickr.com/5124/5381177149_15bb17a09e_m_d.jpg" style="width:50%"></p>
+<p style="text-align:center;"><img src="https://i0.wp.com/farm6.static.flickr.com/5124/5381177149_15bb17a09e_m_d.jpg" style="width:25%"></p>
 <div>
 	\begin{equation}
 	\tau_\theta (x) = \begin{cases} 0 &\text{if } 0 \leq x\leq \theta \\ x &\text{if } x > \theta\end{cases}
@@ -23,7 +23,7 @@ In mathematical terms, all we are doing is *thresholding* the absolute value of 
 
 We refer to this function as a *hard thresholding*.  But we might want to decrease the impact of the elements with large coefficients in absolute value—this is what we refer as *soft thresholding*.   A common way to perform this thresholding is by simple imposition of continuity of the function; e.g.:
 
-<p style="text-align:center;"><img src="https://i0.wp.com/farm6.static.flickr.com/5047/5381815942_112bef03cf_m_d.jpg" style="width:50%"></p>
+<p style="text-align:center;"><img src="https://i0.wp.com/farm6.static.flickr.com/5047/5381815942_112bef03cf_m_d.jpg" style="width:25%"></p>
 <div>
 	\begin{equation}
 	\tau_\theta (x) = \begin{cases} 0 &\text{if } 0\leq x\leq \theta \\ x-\theta &\text{if }x > \theta \end{cases} 
@@ -72,11 +72,11 @@ WaveletCoeffs)
 NewImage = pywt.waverec2( NewWaveletCoeffs, wavelet)
 {% endhighlight %}
 
-<table style="width:100%;border-width:0;">
+<table style="width:75%;border-width:0;">
 <tbody>
 <tr>
-<td style="width:50%;border-width:0;"><img src="assets/5367475002_4275491e81_o_d.png" alt="" width="100%" /></td>
-<td style="width:50%;border-width:0;"><img src="assets/5382329870_e3ee536df5_o_d.png" alt="" width="100%" /></td>
+<td style="width:50%;border-width:0;"><img src="https://i0.wp.com/farm6.static.flickr.com/5164/5367475002_4275491e81_o_d.png" alt="" width="100%" /></td>
+<td style="width:50%;border-width:0;"><img src="https://i0.wp.com/farm6.static.flickr.com/5045/5382329870_e3ee536df5_o_d.png" alt="" width="100%" /></td>
 </tr>
 <tr>
 <td style="text-align:center;border-width:0;">original + noise</td>
@@ -109,16 +109,16 @@ The  four images below are the respective denoising by soft thresholding of wav
 <table style="width:100%;border-width:0;">
 <tbody>
 <tr>
-<td style="width:50%;border-width:0;"><img src="assets/5381872501_e9296eb13c_o_d.png" alt="" width="100%" /></td>
-<td style="width:50%;border-width:0;"><img src="assets/5382434292_891d198cdd_o_d.png" alt="" width="100%" /></td>
+<td style="width:50%;border-width:0;"><img src="https://i0.wp.com/farm6.static.flickr.com/5170/5381872501_e9296eb13c_o_d.png" alt="" width="100%" /></td>
+<td style="width:50%;border-width:0;"><img src="https://i0.wp.com/farm6.static.flickr.com/5382434292_891d198cdd_o_d.png" alt="" width="100%" /></td>
 </tr>
 <tr>
 <td style="text-align:center;border-width:0;">denoised (`sym15`)</td>
 <td style="text-align:center;border-width:0;">denoised (`db6`)</td>
 </tr>
 <tr>
-<td style="width:50%;border-width:0;"><img src="assets/5382484863_5a054f4f3f_o_d.png" alt="" width="100%" /></td>
-<td style="width:50%;border-width:0;"><img src="assets/5382485013_0683a07128_o_d.png" alt="" width="100%" /></td>
+<td style="width:50%;border-width:0;"><img src="https://i0.wp.com/farm6.static.flickr.com/5382484863_5a054f4f3f_o_d.png" alt="" width="100%" /></td>
+<td style="width:50%;border-width:0;"><img src="https://i0.wp.com/farm6.static.flickr.com/5382485013_0683a07128_o_d.png" alt="" width="100%" /></td>
 </tr>
 <tr>
 <td style="text-align:center;border-width:0;">denoised (`bior2.8`)</td>
