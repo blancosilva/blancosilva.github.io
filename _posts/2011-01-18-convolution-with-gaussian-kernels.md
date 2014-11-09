@@ -84,7 +84,7 @@ NoisyImage = multiply( NoisyImage, NoisyImageBase) + 255*(NoisyImage>255.0)
 convImageGt = scipy.ndimage.convolve(NoisyImage, Gt)
 {% endhighlight %}
 
-<table style="width:100%;">
+<table style="width:75%;margin-left:auto;margin-right:auto;">
 <tbody>
 <tr>
 <td style="width:33%;"><img src="https://i0.wp.com/farm6.static.flickr.com/5042/5366863591_3b00e8f053_o_d.png" alt="" width="100%" /></td>

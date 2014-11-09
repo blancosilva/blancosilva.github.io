@@ -6,8 +6,8 @@
 </description>
     <link>http://blancosilva.github.io/</link>
     <atom:link href="http://blancosilva.github.io/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Sun, 09 Nov 2014 00:23:13 -0500</pubDate>
-    <lastBuildDate>Sun, 09 Nov 2014 00:23:13 -0500</lastBuildDate>
+    <pubDate>Sun, 09 Nov 2014 14:39:42 -0500</pubDate>
+    <lastBuildDate>Sun, 09 Nov 2014 14:39:42 -0500</lastBuildDate>
     <generator>Jekyll v2.4.0</generator>
     
       <item>
@@ -172,6 +172,10 @@
 		
 		
 		
+		
+		
+		
+		
 	&lt;/div&gt;
 &lt;/div&gt;
 </description>
@@ -262,9 +266,25 @@
 		
 		
 		
+		&lt;a href=&quot;/course-material/2011/02/10/edge-detection-the-convolution-approach.html&quot; class=&quot;list-group-item&quot;&gt;
+			&lt;h4 class=&quot;list-group-item-heading&quot;&gt;Edge detection: The Convolution Approach&lt;/h4&gt;
+		&lt;/a&gt;
 		
 		
 		
+		
+		
+		
+		
+		&lt;a href=&quot;/course-material/2011/01/23/denoising-wavelet-thresholding.html&quot; class=&quot;list-group-item&quot;&gt;
+			&lt;h4 class=&quot;list-group-item-heading&quot;&gt;Denoising: wavelet thresholding&lt;/h4&gt;
+		&lt;/a&gt;
+		
+		
+		
+		&lt;a href=&quot;/course-material/2011/01/23/wavelets-in-sage.html&quot; class=&quot;list-group-item&quot;&gt;
+			&lt;h4 class=&quot;list-group-item-heading&quot;&gt;Wavelets in sage&lt;/h4&gt;
+		&lt;/a&gt;
 		
 		
 		

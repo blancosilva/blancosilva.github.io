@@ -83,7 +83,7 @@ magn  = sqrt( Grdnt[0]*Grdnt[0] + Grdnt[1]*Grdnt[1] )
 Lplz  = scipy.ndimage.laplace(float32(convImage))
 {% endhighlight %}
 
-<table style="width:100%;border-width:0;">
+<table style="width:75%;border-width:0;margin-left:auto;margin-right:auto;">
 <tbody>
 <tr>
 <td style="width:100%;text-align:center;border-width:0;" colspan="2"><img src="https://i0.wp.com/farm6.static.flickr.com/5082/5373118608_ca48a3009e_o_d.png" alt="" width="50%" /></td>
@@ -165,7 +165,7 @@ theta=3.0
 Edges = multiply(ZeroCrossings, magn>theta)
 {% endhighlight %}
 
-<table style="width:100%;border-width:0;">
+<table style="width:75%;border-width:0;margin-left:auto;margin-right:auto;">
 <tbody>
 <tr>
 <td style="width:50%;border-width:0;"><img src="https://i0.wp.com/farm2.static.flickr.com/1416/5369723851_3df658ddbc_o_d.png" alt="" width="100%" /></td>
@@ -219,7 +219,7 @@ theta=3.0
 Edges=multiply(ZeroCrossings, magn>theta)
 {% endhighlight %}
 
-<table style="width:100%;border-width:0;">
+<table style="width:75%;border-width:0;margin-left:auto;margin-right:auto;">
 <tbody>
 <tr>
 <td style="width:50%;border-width:0;"><img src="https://i0.wp.com/farm6.static.flickr.com/5006/5373382878_5d902f615a_o_d.png" alt="" width="100%" /></td>

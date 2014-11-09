@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width initial-scale=1">
+	<meta name="description" content="Useless math is useful math. It can be used to generate more useless math.
+">
+	<meta name="author" content="">
+
+	<title>Wavelets in sage</title>
+
+	<!-- Bootstrap core CSS -->
+	<link href="/css/bootstrap.min.css" rel="stylesheet">
+	<!-- Bootstrap theme -->
+	<link href="/css/bootstrap-theme.min.css" rel="stylesheet">
+
+	<!-- Custom styles for this template -->
+	<link href="/css/blog.css" rel="stylesheet">
+	<link rel="stylesheet" href="/css/pygments.css">
+
+
+	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+<![endif]-->
+</head>
+
+<body role="document">
+
+	<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+	<div class="container">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a class="navbar-brand" href="/">Francisco Blanco-Silva</a>
+		</div>
+		<div id="navbar" class="navbar-collapse collapse">
+			<ul class="nav navbar-nav">
+				<li class="active"><a href="/">Home</a></li>
+				
+				
+				<li><a class="page-link" href="/about/">About me</a></li>
+				
+				
+				
+				<li><a class="page-link" href="/books/">Books</a></li>
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				<li><a class="page-link" href="/presentations.html">Presentations</a></li>
+				
+				
+				
+				<li><a class="page-link" href="/resume.html">Résumé</a></li>
+				
+				
+				<li class="dropdown">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown">Teaching <span class="caret"></span></a>
+					<ul class="dropdown-menu" role="menu">
+						<li class="dropdown-header">Current classes</li>
+						
+						
+						
+						
+						<li><a href="/course/2014/11/08/Mathematical-Imaging.html">Mathematical Imaging</a></li>
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						<li><a href="/course/2014/08/19/ma141-fall-2014.html">MA141—Fall 2014</a></li>
+						
+						
+						
+						<li><a href="/course/2014/08/18/math-122-fall-2014.html">MA122—Fall 2014</a></li>
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						<li class="divider"></li>
+						<li class="dropdown-header">Selected Class Material</li>
+						
+						
+						<li><a href="/teaching/2014/11/08/past-classes.html">Past Sections of Undergraduate Calculus</a></li>
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						<!-- <li>Mathematical Imaging</li>
+						<li>Introduction to the Theory of Distributions</li>
+						<li>An Introduction to Algebraic Topology</li>
+						<li>MA598R: Measure Theory</li>
+						<li>The Basic Practice of Statistics</li> -->
+					</ul>
+				</li>
+			</ul>
+		</div><!--/.nav-collapse -->
+	</div>
+</nav>
+
+
+
+	<div class="page-content">
+		<div class="wrapper">
+			<br />
+<br />
+<br />
+<br />
+
+<div class="container theme-showcase" role="main" style="font-size: 16px; base-line-height: 1.5; font-family: Helvetica, Arial, sans-serif; spacing-unit: 30px; line-height: 20px;">
+
+  <header class="post-header">
+    <h1 class="post-title">Wavelets in sage</h1>
+  </header>
+
+  <article class="post-content">
+    <p>There are no native wavelet packages in <code>sage</code>.  But there is a great module in <code>python</code> that contains, among other things, forward and inverse discrete wavelet transforms (for one and two dimensions).  It comes bundled with seventy-six wavelet filters, and allows support to build your own!   The name is PyWavelets, written by Tariq Rashid, and can be retrieved from <a href="http://pypi.python.org/pypi/PyWavelets/">pypi.python.org/pypi/PyWavelets</a>.  In order to install it in <code>sage</code>, take the following steps:</p>
+
+<p>Download the latest version, and unpack it.</p>
+
+<div class="highlight"><pre><code class="language-bash" data-lang="bash">% tar xvfz PyWavelets-0.2.0.tar.bz2</code></pre></div>
+
+<p>Navigate to the top-level directory of the newly created PyWavelets folder, and install the package in <code>sage</code>.</p>
+
+<div class="highlight"><pre><code class="language-bash" data-lang="bash">% /Applications/sage/sage -python setup.py install</code></pre></div>
+
+<p>This should be enough!  Open a <code>sage</code> session, and import the <code>pywt</code> module:</p>
+
+<div class="highlight"><pre><code class="language-text" data-lang="text">&gt;&gt;&gt; import pywt
+&gt;&gt;&gt; dir(pywt)
+[&#39;BaseNode&#39;, &#39;MODES&#39;, &#39;Node&#39;, &#39;Node2D&#39;, &#39;Wavelet&#39;, &#39;WaveletPacket&#39;, &#39;Wavelet
+Packet2D&#39;, &#39;__all__&#39;, &#39;__author__&#39;, &#39;__builtins__&#39;, &#39;__doc__&#39;, &#39;__file__&#39;,
+&#39;__license__&#39;, &#39;__name__&#39;, &#39;__package__&#39;, &#39;__path__&#39;, &#39;__version__&#39;, &#39;_pywt&#39;
+, &#39;centfrq&#39;, &#39;downcoef&#39;, &#39;dwt&#39;, &#39;dwt2&#39;, &#39;dwt_coeff_len&#39;, &#39;dwt_max_level&#39;, &#39;d
+wtn&#39;, &#39;families&#39;, &#39;functions&#39;, &#39;idwt&#39;, &#39;idwt2&#39;, &#39;intwave&#39;, &#39;numerix&#39;, &#39;orthf
+ilt&#39;, &#39;qmf&#39;, &#39;release_details&#39;, &#39;scal2frq&#39;, &#39;swt&#39;, &#39;swt2&#39;, &#39;swt_max_level&#39;,
+&#39;thresholding&#39;, &#39;upcoef&#39;, &#39;wavedec&#39;, &#39;wavedec2&#39;, &#39;wavelist&#39;, &#39;waverec&#39;, &#39;wav
+erec2&#39;]</code></pre></div>
+
+<p>It might happen that the installation is not very clean:</p>
+
+<div class="highlight"><pre><code class="language-text" data-lang="text">&gt;&gt;&gt; import pywt
+---------------------------------------------------------------------------
+ImportError                               Traceback (most recent call last)
+
+/Users/blanco/Documents/Research/PyWavelets-0.2.0/ in ()
+
+/Users/blanco/Documents/Research/PyWavelets-0.2.0/pywt/__init__.py in ()
+     11 &quot;&quot;&quot;
+     12
+---&gt; 13 from _pywt import *
+     14 from multilevel import *
+     15 from multidim import *
+
+ImportError: No module named _pywt</code></pre></div>
+
+<p>In that event, simply find where the <code>_pywt.so</code> library is in your PyWavelet package, and place a link in your <code>sage</code> libraries:</p>
+
+<div class="highlight"><pre><code class="language-bash" data-lang="bash">% sudo ln -sv ./PyWavelets-0.2.0/build/lib.macosx-10.6-i386-2.6/pywt/_pywt.so /Applications/sage/local/lib/.</code></pre></div>
+
+<hr />
+
+<p>Once installed, you can get a flavor of what it means to work with this module by exploring a little.  For example, to find out how many different families of wavelets are implemented, or the names of each of the filters present in the package, simply issue</p>
+
+<div class="highlight"><pre><code class="language-text" data-lang="text">&gt;&gt;&gt; pywt.families()
+[&#39;haar&#39;, &#39;db&#39;, &#39;sym&#39;, &#39;coif&#39;, &#39;bior&#39;, &#39;rbio&#39;, &#39;dmey&#39;]
+
+&gt;&gt;&gt; pywt.wavelist()
+[&#39;bior1.1&#39;, &#39;bior1.3&#39;, &#39;bior1.5&#39;, &#39;bior2.2&#39;, &#39;bior2.4&#39;, &#39;bior2.6&#39;, &#39;bior2.8&#39;, &#39;
+bior3.1&#39;, &#39;bior3.3&#39;, &#39;bior3.5&#39;, &#39;bior3.7&#39;, &#39;bior3.9&#39;, &#39;bior4.4&#39;, &#39;bior5.5&#39;, &#39;bi
+or6.8&#39;, &#39;coif1&#39;, &#39;coif2&#39;, &#39;coif3&#39;, &#39;coif4&#39;, &#39;coif5&#39;, &#39;db1&#39;, &#39;db2&#39;, &#39;db3&#39;, &#39;db4&#39;
+, &#39;db5&#39;, &#39;db6&#39;, &#39;db7&#39;, &#39;db8&#39;, &#39;db9&#39;, &#39;db10&#39;, &#39;db11&#39;, &#39;db12&#39;, &#39;db13&#39;, &#39;db14&#39;, &#39;d
+b15&#39;, &#39;db16&#39;, &#39;db17&#39;, &#39;db18&#39;, &#39;db19&#39;, &#39;db20&#39;, &#39;dmey&#39;, &#39;haar&#39;, &#39;rbio1.1&#39;, &#39;rbio1
+.3&#39;, &#39;rbio1.5&#39;, &#39;rbio2.2&#39;, &#39;rbio2.4&#39;, &#39;rbio2.6&#39;, &#39;rbio2.8&#39;, &#39;rbio3.1&#39;, &#39;rbio3.3
+&#39;, &#39;rbio3.5&#39;, &#39;rbio3.7&#39;, &#39;rbio3.9&#39;, &#39;rbio4.4&#39;, &#39;rbio5.5&#39;, &#39;rbio6.8&#39;, &#39;sym2&#39;, &#39;s
+ym3&#39;, &#39;sym4&#39;, &#39;sym5&#39;, &#39;sym6&#39;, &#39;sym7&#39;, &#39;sym8&#39;, &#39;sym9&#39;, &#39;sym10&#39;, &#39;sym11&#39;, &#39;sym12&#39;
+, &#39;sym13&#39;, &#39;sym14&#39;, &#39;sym15&#39;, &#39;sym16&#39;, &#39;sym17&#39;, &#39;sym18&#39;, &#39;sym19&#39;, &#39;sym20&#39;]</code></pre></div>
+
+<p>To compute one level of the Haar-wavelet coefficients of a given image (the top level alone), we proceed as follows:</p>
+
+<div class="highlight"><pre><code class="language-python" data-lang="python"><span class="lineno">1</span> <span class="kn">from</span> <span class="nn">numpy</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="lineno">2</span> <span class="kn">import</span> <span class="nn">scipy</span>
+<span class="lineno">3</span> 
+<span class="lineno">4</span> <span class="n">image</span><span class="o">=</span><span class="n">scipy</span><span class="o">.</span><span class="n">misc</span><span class="o">.</span><span class="n">lena</span><span class="p">()</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="n">float32</span><span class="p">)</span>
+<span class="lineno">5</span> 
+<span class="lineno">6</span> <span class="n">Aprox</span><span class="p">,</span> <span class="n">Details</span> <span class="o">=</span> <span class="n">pywt</span><span class="o">.</span><span class="n">dwt2</span><span class="p">(</span> <span class="n">image</span><span class="p">,</span> <span class="n">pywt</span><span class="o">.</span><span class="n">Wavelet</span><span class="p">(</span><span class="s">&#39;haar&#39;</span><span class="p">)</span> <span class="p">)</span>
+<span class="lineno">7</span> <span class="n">HorizDetail</span><span class="p">,</span> <span class="n">VertDetail</span><span class="p">,</span> <span class="n">DiagDetail</span> <span class="o">=</span> <span class="n">Details</span></code></pre></div>
+
+<table style="width:75%;border-width:0;margin-left:auto;margin-right:auto;">
+<tbody>
+<tr>
+<td style="width:50%;border-width:0;"><img src="https://i0.wp.com/farm6.static.flickr.com/5090/5380674347_bf597e9638_o_d.png" alt="" width="100%" /></td>
+<td style="width:50%;border-width:0;"><img src="https://i0.wp.com/farm6.static.flickr.com/5164/5381268874_74d710da83_o_d.png" alt="" width="100%" /></td>
+</tr>
+<tr>
+<td style="width:50%;text-align:center;border-width:0;">Approximation</td>
+<td style="width:50%;text-align:center;border-width:0;">Horizontal Detail</td>
+</tr>
+<tr>
+<td style="width:50%;border-width:0;"><img src="https://i0.wp.com/farm6.static.flickr.com/5124/5381268740_d1005150e7_o_d.png" alt="" width="100%" /></td>
+<td style="width:50%;border-width:0;"><img src="https://i0.wp.com/farm6.static.flickr.com/5164/5381277076_7b1d2eb5a7_o_d.png" alt="" width="100%" /></td>
+</tr>
+<tr>
+<td style="width:50%;text-align:center;border-width:0;">Vertical Detail</td>
+<td style="width:50%;text-align:center;border-width:0;">Diagonal Detail</td>
+</tr>
+</tbody>
+</table>
+
+  </article>
+
+</div>
+
+<script type="text/javascript"
+src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+		</div>
+	</div>
+
+	<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-56262970-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+	<!-- Start of StatCounter Code for Default Guide -->
+<script type="text/javascript">
+var sc_project=10117038; 
+var sc_invisible=1; 
+var sc_security="1fd852f3"; 
+var scJsHost = (("https:" == document.location.protocol) ?
+"https://secure." : "http://www.");
+document.write("<sc"+"ript type='text/javascript' src='" +
+scJsHost+
+"statcounter.com/counter/counter.js'></"+"script>");
+</script>
+<noscript><div class="statcounter"><a title="free hit
+counters" href="http://statcounter.com/"
+target="_blank"><img class="statcounter"
+src="http://c.statcounter.com/10117038/0/1fd852f3/1/"
+alt="free hit counters"></a></div></noscript>
+<!-- End of StatCounter Code for Default Guide -->
+
+	    <!-- Bootstrap core JavaScript
+	    ================================================== -->
+	    <!-- Placed at the end of the document so the pages load faster -->
+	    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	    <script src="/js/bootstrap.min.js"></script>
+	    <script src="/assets/js/docs.min.js"></script>
+	    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+	    <script src="/assets/js/ie10-viewport-bug-workaround.js"></script>
+	</body>
+	</html>
