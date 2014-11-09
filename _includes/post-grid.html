@@ -5,7 +5,7 @@
 		<time datetime="{{ post.date | date: "%Y-%m-%d" }}" itemprop="datePublished">{{ post.date | date: "%B %d, %Y" }}</time>
 	</p>
 	{% endif %}
-	<h4 class="post-title" itemprop="name"><a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a></h4>
+	<h3 class="post-title" itemprop="name"><a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a></h3>
 	<p class="post-excerpt" itemprop="description">
 
 		<div class="well">
@@ -18,7 +18,7 @@
 					{% endif %}
 					<td style="vertical-align:top; font-size:18px; font-family:sans-serif;">
 						{{ post.excerpt | strip_html | truncate: 320 }} <br /> <br />
-						<a href="{{ site.url }}{{ post.url }}"><button type="button" class="btn btn-sm btn-default">Read more...</button></a>
+						<a href="{{ site.url }}{{ post.url }}"><button type="button" class="btn btn-sm btn-primary">Read more &raquo;</button></a>
 					</td>
 				</tr>
 			</table>
