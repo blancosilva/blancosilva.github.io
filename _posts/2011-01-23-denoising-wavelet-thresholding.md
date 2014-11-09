@@ -67,8 +67,7 @@ Once computed the new coefficients, we use `pywt.waverec2` to obtain the corresp
 
 {% highlight python linenos %}
 threshold = noiseSigma*sqrt(2*log2(image.size))
-NewWaveletCoeffs = map (lambda x: pywt.thresholding.soft(x,threshold),
-WaveletCoeffs)
+NewWaveletCoeffs = map (lambda x: pywt.thresholding.soft(x,threshold), WaveletCoeffs)
 NewImage = pywt.waverec2( NewWaveletCoeffs, wavelet)
 {% endhighlight %}
 
