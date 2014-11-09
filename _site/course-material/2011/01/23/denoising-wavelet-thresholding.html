@@ -361,7 +361,7 @@
 <span class="lineno">2</span> <span class="n">NewWaveletCoeffs</span> <span class="o">=</span> <span class="nb">map</span> <span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">pywt</span><span class="o">.</span><span class="n">thresholding</span><span class="o">.</span><span class="n">soft</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">threshold</span><span class="p">),</span> <span class="n">WaveletCoeffs</span><span class="p">)</span>
 <span class="lineno">3</span> <span class="n">NewImage</span> <span class="o">=</span> <span class="n">pywt</span><span class="o">.</span><span class="n">waverec2</span><span class="p">(</span> <span class="n">NewWaveletCoeffs</span><span class="p">,</span> <span class="n">wavelet</span><span class="p">)</span></code></pre></div>
 
-<table style="width:75%;border-width:0;">
+<table style="width:75%;border-width:0;margin-left:auto;margin-right:auto;">
 <tbody>
 <tr>
 <td style="width:50%;border-width:0;"><img src="https://i0.wp.com/farm6.static.flickr.com/5164/5367475002_4275491e81_o_d.png" alt="" width="100%" /></td>
@@ -391,7 +391,7 @@
 
 <p>The  four images below are the respective denoising by soft thresholding of wavelet coefficients on the same image with the same level of noise <span>\( (\sigma = 16.0), \)</span> for the symlet <code>sym15</code>, the Daubechies wavelet <code>db6</code>, the biorthogonal wavelet <code>bior2.8</code>, and the coiflet <code>coif2</code>.  Note that, except in the case of the denoising by biorthogonal wavelet, all of the others present clear artifacts:</p>
 
-<table style="width:75%;border-width:0;">
+<table style="width:75%;border-width:0;margin-left:auto;margin-right:auto;">
 <tbody>
 <tr>
 <td style="width:50%;border-width:0;"><img src="https://i0.wp.com/farm6.static.flickr.com/5170/5381872501_e9296eb13c_o_d.png" alt="" width="100%" /></td>
