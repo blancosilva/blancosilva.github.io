@@ -6,9 +6,48 @@
 </description>
     <link>http://blancosilva.github.io/</link>
     <atom:link href="http://blancosilva.github.io/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Sat, 08 Nov 2014 21:58:04 -0500</pubDate>
-    <lastBuildDate>Sat, 08 Nov 2014 21:58:04 -0500</lastBuildDate>
+    <pubDate>Sat, 08 Nov 2014 22:14:49 -0500</pubDate>
+    <lastBuildDate>Sat, 08 Nov 2014 22:14:49 -0500</lastBuildDate>
     <generator>Jekyll v2.4.0</generator>
+    
+      <item>
+        <title>Past Sections of MATH 122, MATH 141, MATH 142, MATH 241, and MATH 242</title>
+        <description>
+&lt;li&gt;&lt;a href=&quot;/course/2014/05/31/ma141-summer-2014.html&quot;&gt;MA141—Summer 2014&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;/course/2014/01/11/ma-241-spring-2014.html&quot;&gt;MA241—Spring 2014&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;/course/2014/01/06/ma141-spring-2014.html&quot;&gt;MA141—Spring 2014&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;/course/2013/08/22/ma242-fall-2013.html&quot;&gt;MA242—Fall 2013&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;/course/2013/08/20/ma141-fall-2013.html&quot;&gt;MA141—Fall 2013&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;/course/2013/08/19/ma122-fall-2013.html&quot;&gt;MA122—Fall 2013&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;/course/2013/01/10/ma122-spring-2013.html&quot;&gt;MA122—Spring 2013&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;/course/2013/01/10/ma141-spring-2013.html&quot;&gt;MA141—Spring 2013&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;/course/2013/01/08/ma241-spring-2013.html&quot;&gt;MA241—Spring 2013&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;/course/2012/08/17/ma242-fall-2012.html&quot;&gt;MA242—Fall 2012&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;/course/2012/08/17/ma241-fall-2012.html&quot;&gt;MA241—Fall 2012&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;/course/2012/08/15/ma141-fall-2012.html&quot;&gt;MA141—Fall 2012&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;/course/2012/06/26/ma142-summer-ii-2012.html&quot;&gt;MA142—Summer II 2012&lt;/a&gt;&lt;/li&gt;
+
+</description>
+        <pubDate>Sat, 08 Nov 2014 00:00:00 -0500</pubDate>
+        <link>http://blancosilva.github.io/page/2014/11/08/past-classes.html</link>
+        <guid isPermaLink="true">http://blancosilva.github.io/page/2014/11/08/past-classes.html</guid>
+        
+        
+        <category>page</category>
+        
+      </item>
     
       <item>
         <title>Menger Sponges</title>
@@ -34339,39 +34378,6 @@ Astro: Wonderful, I found it in 4 attempts!&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
         
         
         <category>course</category>
-        
-      </item>
-    
-      <item>
-        <title>Advanced Problem #18</title>
-        <description>&lt;p&gt;Another fun problem, as requested by &lt;a href=&quot;https://www.facebook.com/right.li.love&quot;&gt;Qinfeng Li&lt;/a&gt; in &lt;a href=&quot;http://blancosilva.wordpress.com/teaching/ma598r/&quot;&gt;MA598R: Measure Theory&lt;/a&gt;&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;Let   \(f \in L_2(\mathbb{R})\) so that \(g(x)=xf(x) \in L_2(\mathbb{R})\) too.  Show that \(f \in L_1(\mathbb{R})\) and \(\lVert f \rVert_1^2 \leq 8 \lVert f \rVert_2 \lVert g \rVert_2.\)&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;I got this problem by picking some strictly positive value \(\lambda\) and breaking the integral \(\int_{\mathbb{R}} \lvert f \rvert\, d\mu\) as follows:&lt;/p&gt;
-
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;% &lt;![CDATA[
-\begin{array}{rl} \displaystyle{\int_{\mathbb{R}} \lvert f \rvert\, d\mu} &amp;= \displaystyle{\int_{\lvert x \rvert \leq \lambda} \lvert f \rvert\, d\mu + \int_{\lvert x \rvert \geq \lambda} \lvert f \rvert\, d\mu} \\ \\
- &amp;= \displaystyle{\int_{-\lambda}^{\lambda} \lvert f \rvert\, d\mu + \int_{\lvert x \rvert \geq \lambda} \tfrac{1}{\lvert x \rvert} \lvert g(x) \rvert\, d\mu} \\ \\
-&amp;= \displaystyle{\int_\mathbb{R} \lvert f \rvert \cdot \boldsymbol{1}_{\lvert x \rvert \leq \lambda}\, d\mu + \int_{\mathbb{R}} \lvert g \rvert \cdot  \big( \tfrac{1}{\lvert x \rvert} \boldsymbol{1}_{\lvert x \rvert \geq \lambda}\big) \, d\mu} \\ \\
-&amp;\leq \lVert f \rVert_2 \cdot \big\lVert \boldsymbol{1}_{\lvert x \rvert \leq \lambda} \big\rVert_2 + \lVert g \rVert_2 \cdot \big\lVert \tfrac{1}{\lvert x \rvert} \boldsymbol{1}_{\lvert x \rvert \geq \lambda} \big\rVert_2 \end{array} %]]&gt;&lt;/script&gt;
-
-&lt;p&gt;Let us examine now the factors &lt;script type=&quot;math/tex&quot;&gt;\big\lVert \boldsymbol{1}_{\lvert x \rvert \leq \lambda} \big\rVert_2&lt;/script&gt; and \( \big\lVert \tfrac{1}{\lvert x \rvert} \boldsymbol{1}_{\lvert x \rvert \geq \lambda} \big\rVert_2 \) above:&lt;/p&gt;
-
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;\big\lVert \boldsymbol{1}_{\lvert x \rvert \leq \lambda} \big\rVert_2 = \sqrt{2\lambda}&lt;/script&gt;
-
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;\big\lVert \tfrac{1}{\lvert x \rvert} \boldsymbol{1}_{\lvert x \rvert \geq \lambda} \big\rVert_2 = \displaystyle{ \sqrt{ 2\int_\lambda^\infty \dfrac{dx}{x^2}} = \sqrt{ \dfrac{2}{\lambda}} }&lt;/script&gt;
-
-&lt;p&gt;We have thus proven that \(f \in L_1(\mathbb{R})\) with \(\lVert f \rVert_1 \leq \sqrt{2\lambda} \lVert f \rVert_2 + \sqrt{\tfrac{2}{\lambda}} \lVert g \rVert_2.\)  At this point, all you have to do is pick \(\lambda = \lVert g \rVert_2 / \lVert f \rVert_2\) (provided the denominator is not zero) and you are done.&lt;/p&gt;
-</description>
-        <pubDate>Tue, 04 Mar 2014 00:00:00 -0500</pubDate>
-        <link>http://blancosilva.github.io/post/2014/03/04/advanced-problem-18.html</link>
-        <guid isPermaLink="true">http://blancosilva.github.io/post/2014/03/04/advanced-problem-18.html</guid>
-        
-        
-        <category>post</category>
         
       </item>
     

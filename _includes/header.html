@@ -23,16 +23,17 @@
 						<li class="dropdown-header">Current classes</li>
 						{% for post in site.posts %}
 						{% if post.category == "course"  and  post.current == true %}
-						<li><a href="{{ post.url | prepend: side.baseurl }}">{{ post.title }}</a></li>
+						<li><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></li>
 						{% endif %}
 						{% endfor %}
 						<li class="divider"></li>
-						<li class="dropdown-header">Past classes</li>
-						{% for post in site.posts %}
-						{% if post.category == "course"  and  post.current == false %}
-						<li><a href="{{ post.url | prepend: side.baseurl }}">{{ post.title }}</a></li>
-						{% endif %}
-						{% endfor %}
+						<li class="dropdown-header">Selected Class Material</li>
+						<li>Mathematical Imaging</li>
+						<li>Introduction to the Theory of Distributions</li>
+						<li>An Introduction to Algebraic Topology</li>
+						<li>MA598R: Measure Theory</li>
+						<li>The Basic Practice of Statistics</li>
+						<li><a href="{{ site.url }}/2014-11-08-past-classes.md">Past Undergraduate Class Sections</a></li>
 					</ul>
 				</li>
 			</ul>
