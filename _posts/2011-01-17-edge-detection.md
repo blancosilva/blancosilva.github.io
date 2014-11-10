@@ -4,7 +4,7 @@ title: 'Edge detection: The Scale Space Theory'
 date: 2011-01-17 13:43:24.000000000 -05:00
 category: course-material
 topic: imaging
-comments: false
+comments: true
 ---
 
 Consider an image as a bounded function <span>\\( f: \square_2 \to \mathbb{R} \\)</span> with no smoothness or structure assumptions a priori.  Most relevant information of a given image is contained in the contours of the mapped objects: Think for example of a bright object against a dark background—the area where these two meet presents a curve where the intensity <span>\\( f(\boldsymbol{x}) \\)</span> varies strongly.  This is what we refer to as an "edge."

@@ -4,7 +4,7 @@ title: Histograms (from scratch)
 date: 2011-02-08 00:44:36.000000000 -05:00
 category: course-material
 topic: imaging
-comments: false
+comments: true
 ---
 
 The purpose of this post is to show how histogram equalization improves the quality of digital images:  After performing this basic procedure, it will look like new gray scales have been brought up.  The truth is that no new gray levels have been introduced: we have simply altered the same gray scales already present in the original, in a way that every value has approximately the same impact.  This gives the illusion of darkening bright images, bringing brightness to dark ones, and discovering hidden texture in a priori flat areas.

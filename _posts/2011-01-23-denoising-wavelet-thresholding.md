@@ -4,7 +4,7 @@ title: 'Denoising: wavelet thresholding'
 date: 2011-01-23 14:25:48.000000000 -05:00
 category: course-material
 topic: imaging
-comments: false
+comments: true
 ---
 
 We have seen a naïve way to perform denoising on images by a simple <a href="http://blancosilva.github.io/course-material/2011/01/18/convolution-with-gaussian-kernels.html">convolution with Gaussian kernels</a>.  In this post I would like to compare that simple method with a more elaborate one: *wavelet thresholding*.  The basic philosophy is based upon the local knowledge that wavelet coefficients offer us: Intuitively, small wavelet coefficients are dominated by noise, while wavelet coefficients with a large absolute value carry more signal information than noise.  Being that the case, it is reasonable to obtain a fast denoising of a given image if we perform two basic operations:

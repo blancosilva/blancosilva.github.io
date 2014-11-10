@@ -4,7 +4,7 @@ title: Wavelets in sage
 date: 2011-01-23 11:56:44.000000000 -05:00
 category: course-material
 topic: imaging
-comments: false
+comments: true
 ---
 
 There are no native wavelet packages in `sage`.  But there is a great module in `python` that contains, among other things, forward and inverse discrete wavelet transforms (for one and two dimensions).  It comes bundled with seventy-six wavelet filters, and allows support to build your own!   The name is PyWavelets, written by Tariq Rashid, and can be retrieved from <a href="http://pypi.python.org/pypi/PyWavelets/">pypi.python.org/pypi/PyWavelets</a>.  In order to install it in `sage`, take the following steps:

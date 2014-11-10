@@ -4,7 +4,7 @@ title: 'Edge detection: The Convolution Approach'
 date: 2011-02-10 14:05:30.000000000 -05:00
 category: course-material
 topic: imaging
-comments: false
+comments: true
 ---
 
 Today I would like to show a very basic technique of detection based on simple convolution of an image with small kernels (masks). The purpose of these kernels is to enhance certain properties of the image at each pixel.  What properties?  Those that define what means to be an edge, in a differential calculus way---exactly as it was defined in the description of the <a href="http://blancosilva.github.io/course-material/2011/01/17/edge-detection.html">Canny edge detector</a>.  The big idea is to assign to each pixel a numerical value that expresses its *strength as an edge*: positive if we suspect that such structure is present at that location, negative if not, and zero if the image is locally flat around that point.  Masks can be designed so that they mimic the effect of differential operators, but these can be terribly complicated and give rise to large matrices.  The first approaches were performed with simple <span>\\( 3 \times 3 \\)</span> kernels.  For example, Faler came up with the following four simple masks that emulate differentiation:
