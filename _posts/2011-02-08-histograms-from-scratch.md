@@ -51,7 +51,8 @@ The way we accomplish it is by:
 
 1. Collecting first the histogram of each gray-scale <span>\\( k \in \{ 0, \dotsc, 255\}: \\)</span> <span>\\( H(k) = \\# \\{ \boldsymbol{x} : f(\boldsymbol{x}) = k \\} \\)</span>
 2. Computing the probability of finding a pixel with each gray-scale in the given image: <span>\\( p(k) = \frac{1}{NM} H(k). \\)</span>
-3. Computing the cumulative-density function for each gray-scale: <div> \begin{equation} P(k) = \frac{1}{NM} \displaystyle{\sum_{j=0}^k} H(j). \end{equation} </div>
+3. Computing the cumulative-density function for each gray-scale: 
+        <div> \begin{equation} P(k) = \frac{1}{NM} \displaystyle{\sum_{j=0}^k} H(j). \end{equation} </div>
 4.  The histogram equalization <span>\\( \mathcal{E} \\)</span> simply takes the propability density function for the values in the image <span>\\( f \\)</span> and multiplies them by the cumulative density function of the values in the image that we seek:
 <div>
 	\begin{equation}
