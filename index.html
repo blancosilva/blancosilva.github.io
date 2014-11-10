@@ -111,22 +111,38 @@ layout: default
 
 <div class="container theme-showcase" role="main">
 
-  <!-- <h1 class="page-heading">Posts</h1> -->
-
-  <ul class="post-list">
-    {% for post in site.posts %}
-    {% if post.category == "post" %}
-    <!-- <li>
-      <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-      <h2>
-        <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-      </h2>
-    </li> -->
-    {% include post-grid.html %}
-    {% endif %}
-    {% endfor %}
-  </ul>
+  <div class="col-sm-12">
+    <div class="list-group">
+      {% for post in site.posts %}
+      {% if post.category == "post" %}
+      <a href="{{ post.url | prepend: site.baseurl }}" class="list-group-item">
+        {% if post.date %}
+        <p class="entry-date date published">
+          <time datetime="{{ post.date | date: "%Y-%m-%d" }}" itemprop="datePublished">{{ post.date | date: "%B %d, %Y" }}</time>
+        </p>
+        {% endif %}
+        <h3 class="list-group-item-heading">{{ post.title }}</h3>
+        <p class="list-group-item-text">
+          <table>
+            <tr>
+          {% if post.image.teaser %}
+          <td style="width:300px"><img src={{ post.image.teaser }} style="width:250px; side-margin:25px;"></td>
+        {% endif %}
+        <td style="vertical-align:top;">
+          {{ post.excerpt | strip_html | truncate: 320 }}<br /> <br />
+            <a href="{{ site.url }}{{ post.url }}"><button type="button" class="btn btn-sm btn-primary">Read more &raquo;</button>
+        </td></tr></table>
+        </p>
+       <!--  {% if post.image.teaser %}
+        <p style="text-align:center; width:50%">
+          <img src={{ post.image.teaser }}>
+        </p>
+        {% endif %} -->
+      </a>
+      {% endif %}
+      {% endfor %}
+    </div>
+  </div>
 </div>
 
 <script type="text/javascript"
