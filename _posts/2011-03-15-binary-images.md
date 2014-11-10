@@ -28,7 +28,7 @@ Correlation = scipy.ndimage.correlate(Img,E)
 matrix_plot(Correlation == Correlation.max())
 {% endhighlight %}
 
-<p style="text-align:center;"><a href="http://www.flickr.com/photos/eseprimo/5529513439/" title="Mcorrelate by eseprimo, on Flickr"><img src="http://farm6.static.flickr.com/5175/5529513439_9972e38b35.jpg" width="500" height="175" alt="Mcorrelate" /></a>
+<p style="text-align:center;"><a href="http://www.flickr.com/photos/eseprimo/5529513439/" title="Mcorrelate by eseprimo, on Flickr"><img src="http://farm6.static.flickr.com/5175/5529513439_9972e38b35.jpg" width="500" height="175" alt="Mcorrelate" /></a></p>
 
 A very natural question to ask is, what is a good approximation by binary images to a given gray-scale image <span>\\( f\colon \\{ 1,\dotsc,N \\} \times \\{  1, \dotsc, M \\} \to \\{ 0, \dotsc, 255 \\}? \\)</span>  Is there any advantage to working with this binary image instead of using the original?  Maybe not in general, but for a certain set of simple-enough images, and certain set of image processing procedures, it could turn extremely useful.  Let us start by answering first the question of turning grey-scale images into binary:
 

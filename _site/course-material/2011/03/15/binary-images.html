@@ -322,11 +322,11 @@
 <span class="lineno">2</span> <span class="n">Correlation</span> <span class="o">=</span> <span class="n">scipy</span><span class="o">.</span><span class="n">ndimage</span><span class="o">.</span><span class="n">correlate</span><span class="p">(</span><span class="n">Img</span><span class="p">,</span><span class="n">E</span><span class="p">)</span>
 <span class="lineno">3</span> <span class="n">matrix_plot</span><span class="p">(</span><span class="n">Correlation</span> <span class="o">==</span> <span class="n">Correlation</span><span class="o">.</span><span class="n">max</span><span class="p">())</span></code></pre></div>
 
-<p style="text-align:center;"><a href="http://www.flickr.com/photos/eseprimo/5529513439/" title="Mcorrelate by eseprimo, on Flickr"><img src="http://farm6.static.flickr.com/5175/5529513439_9972e38b35.jpg" width="500" height="175" alt="Mcorrelate" /></a>
+<p style="text-align:center;"><a href="http://www.flickr.com/photos/eseprimo/5529513439/" title="Mcorrelate by eseprimo, on Flickr"><img src="http://farm6.static.flickr.com/5175/5529513439_9972e38b35.jpg" width="500" height="175" alt="Mcorrelate" /></a></p>
 
-A very natural question to ask is, what is a good approximation by binary images to a given gray-scale image <span>\\( f\colon \\{ 1,\dotsc,N \\} \times \\{  1, \dotsc, M \\} \to \\{ 0, \dotsc, 255 \\}? \\)</span>  Is there any advantage to working with this binary image instead of using the original?  Maybe not in general, but for a certain set of simple-enough images, and certain set of image processing procedures, it could turn extremely useful.  Let us start by answering first the question of turning grey-scale images into binary:
+<p>A very natural question to ask is, what is a good approximation by binary images to a given gray-scale image <span>\( f\colon \{ 1,\dotsc,N \} \times \{  1, \dotsc, M \} \to \{ 0, \dotsc, 255 \}? \)</span>  Is there any advantage to working with this binary image instead of using the original?  Maybe not in general, but for a certain set of simple-enough images, and certain set of image processing procedures, it could turn extremely useful.  Let us start by answering first the question of turning grey-scale images into binary:</p>
 
-### The half-tone algorithm
+<h3 id="the-half-tone-algorithm">The half-tone algorithm</h3>
 
 <table style="width:75%; border:0px; margin-left:auto; margin-right:auto;">
 <tr>
@@ -338,8 +338,7 @@ A very natural question to ask is, what is a good approximation by binary images
 </tr>
 </table>
 
-The code below shows an algorithm that performs a simulation of continuous tone images through the use of white and black dots varying in spacing (the closer to each other, the darker; the farther apart, the lighter).  It is a good exercise to try and interpret what this code does by yourself, and do a write-up.  I helped the process by making the variable names self-explanatory, and dropping small hints.  Give it a go!
-
+<p>The code below shows an algorithm that performs a simulation of continuous tone images through the use of white and black dots varying in spacing (the closer to each other, the darker; the farther apart, the lighter).  It is a good exercise to try and interpret what this code does by yourself, and do a write-up.  I helped the process by making the variable names self-explanatory, and dropping small hints.  Give it a go!</p>
 
 <div class="highlight"><pre><code class="language-python" data-lang="python"><span class="lineno"> 1</span> <span class="n">Img</span> <span class="o">=</span> <span class="n">scipy</span><span class="o">.</span><span class="n">misc</span><span class="o">.</span><span class="n">lena</span><span class="p">()</span>
 <span class="lineno"> 2</span> <span class="n">GlobalError</span>  <span class="o">=</span> <span class="n">zeros</span><span class="p">(</span><span class="n">Img</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>
@@ -370,7 +369,6 @@ The code below shows an algorithm that performs a simulation of continuous tone 
 <span class="lineno">27</span>         <span class="k">else</span><span class="p">:</span>
 <span class="lineno">28</span>             <span class="n">GlobalError</span><span class="p">[</span><span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">]</span><span class="o">=</span><span class="n">t</span></code></pre></div>
 
-</p>
 
   </article>
 
