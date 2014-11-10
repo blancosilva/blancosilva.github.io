@@ -32,7 +32,7 @@ matplotlib.pyplot.bar(grayscales,frequencies,color='g',edgecolor='k')
 matplotlib.pyplot.savefig('/Users/blanco/Desktop/histogram.png')
 {% endhighlight %}
 
-<table style="width:75%;border:0;">
+<table style="width:75%; border:0px; margin-left:auto; margin-right:auto;">
 <tr>
 <td style="border:0;width:42%;vertical-align:middle;"><img src="https://i0.wp.com/farm6.static.flickr.com/5042/5366863591_3b00e8f053_o_d.png" width="100%" /></td>
 <td style="border:0;width:58%;vertical-align:middle;"><img src="https://i0.wp.com/farm6.static.flickr.com/5260/5426847781_48154dbd25_b_d.jpg" width="100%" /> </td>
@@ -73,7 +73,7 @@ histeq /= prod(img.shape)
 histeq *= len(grayscales)
 {% endhighlight %}
 
-<table style="width:75%;border:0;">
+<table style="width:75%; border:0px; margin-left:auto; margin-right:auto;">
 <tr>
 <td style="border:0;width:42%;vertical-align:middle;"><img src="https://i0.wp.com/farm6.static.flickr.com/5213/5426920531_0788598a51_o_d.png" width="100%" /></td>
 <td style="border:0;width:58%;vertical-align:middle;"><img src="https://i0.wp.com/farm6.static.flickr.com/5092/5427524836_1df4bf472d_b_d.jpg" width="100%" /> </td>
@@ -82,7 +82,7 @@ histeq *= len(grayscales)
 
 As proof of concept, let us compare original with its histogram-equalized version:
 
-<table style="width:75%;border:0;">
+<table style="width:75%; border:0px; margin-left:auto; margin-right:auto;">
 <tr>
 <td style="border:0;width:50%;vertical-align:middle;"><img src="https://i0.wp.com/farm6.static.flickr.com/5042/5366863591_3b00e8f053_o_d.png" width="100%" /></td>
 <td style="border:0;width:50%;vertical-align:middle;"><img src="https://i0.wp.com/farm6.static.flickr.com/5213/5426920531_0788598a51_o_d.png" width="100%" /></td>
