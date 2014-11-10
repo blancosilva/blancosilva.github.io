@@ -45,7 +45,7 @@ Of course, there already is a simple (and much faster!) command in `sage` that w
 
 We alter now the value of each grayscale of the original image, in such a way that the final histogram is as flat as possible, and spreads out over the entire range of the gray levels.  We accomplish this by the following procedure:
 
-Assume <span>\\( f \colon \{ 1, \dotsc, N\} \times \{ 1, \dotsc, M\} \to \{ 0, \dotsc, 255\} \\)</span> is a <span>\\( N \times M \\)</span> image with 256 gray-scales.  We are looking for a function <span>\\( \mathcal{E}\colon \{ 0, \dotsc, 255\} \to \{ 0, \dotsc, 255\} \\)</span> that performs the histogram equalization: <span>\\( g(\boldsymbol{x}) = \mathcal{E} \big( f( \boldsymbol{x}) \big) \\)</span>.
+Assume <span>\\( f \colon \{ 1, \dotsc, N\} \times \{ 1, \dotsc, M\} \to \{ 0, \dotsc, 255\} \\)</span> is a <span>\\( N \times M \\)</span> image with 256 gray-scales.  We are looking for a function <span>\\( \mathcal{E}\colon \\{ 0, \dotsc, 255\\} \to \\{ 0, \dotsc, 255\\} \\)</span> that performs the histogram equalization: <span>\\( g(\boldsymbol{x}) = \mathcal{E} \big( f( \boldsymbol{x}) \big) \\)</span>.
 
 The way we accomplish it is by:
 
