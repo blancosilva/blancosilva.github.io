@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width initial-scale=1">
+	<meta name="description" content="Useless math is useful math. It can be used to generate more useless math.
+">
+	<meta name="author" content="">
+
+	<title>Histograms (from scratch)</title>
+
+	<!-- Bootstrap core CSS -->
+	<link href="/css/bootstrap.min.css" rel="stylesheet">
+	<!-- Bootstrap theme -->
+	<link href="/css/bootstrap-theme.min.css" rel="stylesheet">
+
+	<!-- Custom styles for this template -->
+	<link href="/css/blog.css" rel="stylesheet">
+	<link rel="stylesheet" href="/css/pygments.css">
+
+
+	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+<![endif]-->
+</head>
+
+<body role="document">
+
+	<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+	<div class="container">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a class="navbar-brand" href="/">Francisco Blanco-Silva</a>
+		</div>
+		<div id="navbar" class="navbar-collapse collapse">
+			<ul class="nav navbar-nav">
+				<li class="active"><a href="/">Home</a></li>
+				
+				
+				<li><a class="page-link" href="/about/">About me</a></li>
+				
+				
+				
+				<li><a class="page-link" href="/books/">Books</a></li>
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				<li><a class="page-link" href="/presentations.html">Presentations</a></li>
+				
+				
+				
+				<li><a class="page-link" href="/resume.html">Résumé</a></li>
+				
+				
+				<li class="dropdown">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown">Teaching <span class="caret"></span></a>
+					<ul class="dropdown-menu" role="menu">
+						<li class="dropdown-header">Current classes</li>
+						
+						
+						
+						
+						<li><a href="/course/2014/11/08/Mathematical-Imaging.html">Mathematical Imaging</a></li>
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						<li><a href="/course/2014/08/19/ma141-fall-2014.html">MA141—Fall 2014</a></li>
+						
+						
+						
+						<li><a href="/course/2014/08/18/math-122-fall-2014.html">MA122—Fall 2014</a></li>
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						<li class="divider"></li>
+						<li class="dropdown-header">Selected Class Material</li>
+						
+						
+						<li><a href="/teaching/2014/11/08/past-classes.html">Past Sections of Undergraduate Calculus</a></li>
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						<!-- <li>Mathematical Imaging</li>
+						<li>Introduction to the Theory of Distributions</li>
+						<li>An Introduction to Algebraic Topology</li>
+						<li>MA598R: Measure Theory</li>
+						<li>The Basic Practice of Statistics</li> -->
+					</ul>
+				</li>
+			</ul>
+		</div><!--/.nav-collapse -->
+	</div>
+</nav>
+
+
+
+	<div class="page-content">
+		<div class="wrapper">
+			<br />
+<br />
+<br />
+<br />
+
+<div class="container theme-showcase" role="main" style="font-size: 16px; base-line-height: 1.5; font-family: Helvetica, Arial, sans-serif; spacing-unit: 30px; line-height: 20px;">
+
+  <header class="post-header">
+    <h1 class="post-title">Histograms (from scratch)</h1>
+  </header>
+
+  <article class="post-content">
+    <p style="text-align:justify;font-family:modern;font-size:12pt;">The purpose of this post is to show how histogram equalization improves the quality of digital images:  After performing this basic procedure, it will look like new gray scales have been brought up.  The truth is that no new gray levels have been introduced: we have simply altered the same gray scales already present in the original, in a way that every value has approximately the same impact.  This gives the illusion of darkening bright images, bringing brightness to dark ones, and discovering hidden texture in a priori flat areas.</p>
+<p style="text-align:justify;font-family:modern;font-size:12pt;">Let us build the whole project from the ground up, and in the process, illustrate the notion of histogram, as well as the use of many commands for manipulation of arrays and lists in <tt>sage</tt>.</p>
+<h2 style="font-family:modern;">Computing the Histogram</h2>
+<p style="text-align:justify;font-family:modern;font-size:12pt;">A histogram is nothing but a function that takes as input each of the gray levels present in an image, and offers as output the number of pixels that each of those values share.</p>
+<p>[source language="python"]<br />
+from numpy import *<br />
+import scipy<br />
+import matplotlib.pyplot</p>
+<p>image=scipy.misc.lena()</p>
+<p>Hist = image.flatten().tolist()<br />
+grayscales  = uniq(Hist)<br />
+frequencies = [Hist.count(x) for x in grayscales]</p>
+<p>matplotlib.pyplot.figure()<br />
+matplotlib.pyplot.bar(grayscales,frequencies,color='g',edgecolor='k')<br />
+matplotlib.pyplot.savefig('/Users/blanco/Desktop/histogram.png')[/source]</p>
+<table style="width:100%;border:0;">
+<tr>
+<td style="border:0;width:42%;vertical-align:middle;"><img src="assets/5366863591_3b00e8f053_o_d.png" width="100%" /></td>
+<td style="border:0;width:58%;vertical-align:middle;"><img src="assets/5426847781_48154dbd25_b_d.jpg" width="100%" /> </td>
+</tr>
+</table>
+<p style="text-align:justify;font-family:modern;font-size:12pt;">Of course, there already is a simple (and much faster!) command in <tt>sage</tt> that will take care of this computation for us: <tt>matplotlib.pyplot.hist</tt>.</p>
+<h2 style="font-family:modern;">Histogram Equalization</h2>
+<p style="text-align:justify;font-family:modern;font-size:12pt;">We alter now the value of each grayscale of the original image, in such a way that the final histogram is as flat as possible, and spreads out over the entire range of the gray levels.  We accomplish this by the following procedure:</p>
+<p style="text-align:justify;font-family:modern;font-size:12pt;">Assume $latex f \colon \{ 1, \dotsc, N\} \times \{ 1, \dotsc, M\} \to \{ 0, \dotsc, 255\}$ is a $latex N \times M$ image with 256 gray-scales.  We are looking for a function $latex \mathcal{E}\colon \{ 0, \dotsc, 255\} \to \{ 0, \dotsc, 255\}$ that performs the histogram equalization: $latex g(\boldsymbol{x}) = \mathcal{E} \big( f( \boldsymbol{x}) \big)$.</p>
+<p style="text-align:justify;font-family:modern;font-size:12pt;">The way we accomplish it is by:</p>
+<ol style="text-align:justify;font-family:modern;font-size:12pt;">
+<li>Collecting first the histogram of each gray-scale $latex k \in \{ 0, \dotsc, 255\}:$ $latex H(k) = \# \{ \boldsymbol{x} : f(\boldsymbol{x}) = k \}$</li>
+<li>Computing the probability of finding a pixel with each gray-scale in the given image: $latex p(k) = \frac{1}{NM} H(k).$</li>
+<li>Computing the cumulative-density function for each gray-scale:
+<p style="text-align:center;">$latex P(k) = \frac{1}{NM} \displaystyle{\sum_{j=0}^k} H(j).$</p>
+</li>
+<li> The histogram equalization $latex \mathcal{E}$ simply takes the propability density function for the values in the image $latex f$ and multiplies them by the cumulative density function of the values in the image that we seek:
+<p style="text-align:center;">$latex \mathcal{E}(k) = \frac{1}{NMp(k)} \displaystyle{\sum_{j=0}^k} H(k).$</p>
+</li>
+</ol>
+<p style="text-align:justify;font-family:modern;font-size:12pt;">Note that this procedure reduces the number of gray-scales in an image.</p>
+<p>[source language="python"]cumsumfreqs = cumsum(frequencies)</p>
+<p>histeq=zeros(image.shape)<br />
+for index, value in enumerate(grayscales):<br />
+    histeq+=cumsumfreqs[index]*(image==value)</p>
+<p>histeq/=prod(img.shape)<br />
+histeq*=len(grayscales)[/source]</p>
+<table style="width:100%;border:0;">
+<tr>
+<td style="border:0;width:42%;vertical-align:middle;"><img src="assets/5426920531_0788598a51_o_d.png" width="100%" /></td>
+<td style="border:0;width:58%;vertical-align:middle;"><img src="assets/5427524836_1df4bf472d_b_d.jpg" width="100%" /> </td>
+</tr>
+</table>
+<p style="text-align:justify;font-family:modern;font-size:12pt;">As proof of concept, let us compare original with its histogram-equalized version:</p>
+<table style="width:100%;border:0;">
+<tr>
+<td style="border:0;width:50%;vertical-align:middle;"><img src="assets/5366863591_3b00e8f053_o_d.png" width="100%" /></td>
+<td style="border:0;width:50%;vertical-align:middle;"><img src="assets/5426920531_0788598a51_o_d.png" width="100%" /></td>
+</tr>
+<td style="border:0;text-align:center;">Original</td>
+<td style="border:0;text-align:center;">Histogram-equalization</td>
+</table>
+<p style="text-align:justify;font-family:modern;font-size:12pt;">Note the obvious sharpening of details, albeit the apparent presence of noise where before the image seemed flat.  This <em>noise</em>—that we can appreciate for example in the hat or walls—actually reveals a richer texture of the materials photographed.  These tectures were not observable directly in the original.  Note as well the accentuation of the brightest areas, producing an image with better contrast.  I am sure the reader will find some more qualitative improvement in the histogram-equalization version of the image.  Working on a set of dark images will reveal even more surprising benefits of this technique.</p>
+<h3 style="font-family:modern;font-size:12pt;">References</h3>
+<p style="text-align:center;"><a href="http://www.amazon.com/gp/product/1439840458/ref=as_li_tf_il?ie=UTF8&amp;tag=blancosilva-20&amp;linkCode=as2&amp;camp=217145&amp;creative=399373&amp;creativeASIN=1439840458"><img border="0" src="assets/q?_encoding=UTF8&amp;Format=_SL160_&amp;ASIN=1439840458&amp;MarketPlace=US&amp;ID=AsinImage&amp;WS=1&amp;tag=blancosilva-20&amp;ServiceVersion=20070822" /></a><img src="assets/ir?t=blancosilva-20&amp;l=as2&amp;o=1&amp;a=1439840458&amp;camp=217145&amp;creative=399373" width="1" height="1" border="0" alt="" style="border:none!important;margin:0!important;" /><br /><a href="http://www.amazon.com/gp/product/1439840458/ref=as_li_tf_tl?ie=UTF8&amp;tag=blancosilva-20&amp;linkCode=as2&amp;camp=217145&amp;creative=399373&amp;creativeASIN=1439840458">The Image Processing Handbook, Sixth Edition</a><img src="assets/ir?t=blancosilva-20&amp;l=as2&amp;o=1&amp;a=1439840458&amp;camp=217145&amp;creative=399373" width="1" height="1" border="0" alt="" style="border:none!important;margin:0!important;" /></p></p>
+
+  </article>
+
+</div>
+
+<script type="text/javascript"
+src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+		</div>
+	</div>
+
+	<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-56262970-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+	<!-- Start of StatCounter Code for Default Guide -->
+<script type="text/javascript">
+var sc_project=10117038; 
+var sc_invisible=1; 
+var sc_security="1fd852f3"; 
+var scJsHost = (("https:" == document.location.protocol) ?
+"https://secure." : "http://www.");
+document.write("<sc"+"ript type='text/javascript' src='" +
+scJsHost+
+"statcounter.com/counter/counter.js'></"+"script>");
+</script>
+<noscript><div class="statcounter"><a title="free hit
+counters" href="http://statcounter.com/"
+target="_blank"><img class="statcounter"
+src="http://c.statcounter.com/10117038/0/1fd852f3/1/"
+alt="free hit counters"></a></div></noscript>
+<!-- End of StatCounter Code for Default Guide -->
+
+	    <!-- Bootstrap core JavaScript
+	    ================================================== -->
+	    <!-- Placed at the end of the document so the pages load faster -->
+	    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	    <script src="/js/bootstrap.min.js"></script>
+	    <script src="/assets/js/docs.min.js"></script>
+	    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+	    <script src="/assets/js/ie10-viewport-bug-workaround.js"></script>
+	</body>
+	</html>

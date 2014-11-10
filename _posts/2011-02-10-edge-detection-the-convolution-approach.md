@@ -51,7 +51,7 @@ Sobel pushed the technique a little bit further by creating *compass gradients*.
 	\begin{equation}
 	\begin{array}{cccc}
 \begin{pmatrix} 1&2&1\\ 0&0&0\\ -1&-2&-1 \end{pmatrix} &
-\begin{pmatrix} 2&1&0\\ 1&0&-1\\ 0&-2&-2 \end{pmatrix} &
+\begin{pmatrix} 2&1&0\\ 1&0&-1\\ 0&-2&-1 \end{pmatrix} &
 \begin{pmatrix} 1&0&-1\\ 2&0&-2\\ 1&0&-1 \end{pmatrix} &
 \begin{pmatrix} 0&-1&-2\\ 1&0&-1\\ 2&1&0 \end{pmatrix} \\ \\
 \begin{pmatrix} -1&-2&-1\\ 0&0&0\\ 1&2&1 \end{pmatrix} &
