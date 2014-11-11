@@ -3,7 +3,7 @@ layout: page
 title: An Introduction to Algebraic Topology
 date: 2010-10-27 15:06:59.000000000 -04:00
 category: teaching
-current: true
+current: false
 description: Algebraic Topology
 comments: true
 ---
