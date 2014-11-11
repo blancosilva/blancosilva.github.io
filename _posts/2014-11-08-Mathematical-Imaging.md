@@ -13,7 +13,7 @@ Mathematical Imaging (or Image Processing) is a very broad field: it encompasses
 		<a href="#" class="list-group-item active">Selected Lectures — Click on each title below for corresponding material</a>
 		{% for post in site.posts %}
 		{% if post.category == "course-material" and post.topic == "imaging" %}
-		<a href="{{ post.url | prepend: side.baseurl }}#disqus_thread" class="list-group-item">
+		<a href="{{ post.url | prepend: side.baseurl }}" class="list-group-item">
 			<h4 class="list-group-item-heading">{{ post.title }}</h4>
 		</a>
 		{% endif %}
