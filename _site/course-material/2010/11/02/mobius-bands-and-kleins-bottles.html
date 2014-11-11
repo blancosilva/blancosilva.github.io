@@ -9,7 +9,7 @@
 ">
 	<meta name="author" content="">
 
-	<title>Wavelets in sage</title>
+	<title>Möbius bands and Klein bottles</title>
 
 	<!-- Bootstrap core CSS -->
 	<link href="/css/bootstrap.min.css" rel="stylesheet">
@@ -342,102 +342,62 @@
 <div class="container theme-showcase" role="main" style="font-size: 16px; base-line-height: 1.5; font-family: Helvetica, Arial, sans-serif; spacing-unit: 30px; line-height: 20px;">
 
 	<header class="post-header">
-		<h1 class="post-title">Wavelets in sage</h1>
+		<h1 class="post-title">Möbius bands and Klein bottles</h1>
 	</header>
 
 	<article class="post-content">
-		<p>There are no native wavelet packages in <code>sage</code>.  But there is a great module in <code>python</code> that contains, among other things, forward and inverse discrete wavelet transforms (for one and two dimensions).  It comes bundled with seventy-six wavelet filters, and allows support to build your own!   The name is PyWavelets, written by Tariq Rashid, and can be retrieved from <a href="http://pypi.python.org/pypi/PyWavelets/">pypi.python.org/pypi/PyWavelets</a>.  In order to install it in <code>sage</code>, take the following steps:</p>
+		<p>Consider a long and narrow strip of paper, in which we glue the two narrower edges together after performing a half-twist of the strip, hence forming a funny-looking loop.  Topologically, this is equivalent to identifying two parallel edges of a square in the proper way.  Therefore, we can see the Möbius band as the quotient space of <span>\( \square_2 \)</span> with the following equivalence relation: Given <span>\( (x_1,x_2), (y_1,y_2) \in \square_2, \)</span> we write <span>\( (x_1,x_2) \sim (y_1,y_2) \)</span> if</p>
 
-<p>Download the latest version, and unpack it.</p>
+<ol>
+  <li><span>\( x_1=y_1 \)</span> and <span>\( x_2=y_2, \)</span> or</li>
+  <li><span>\( x_2 y_2 = -1 \)</span> and <span>\( x_1 = 1-y_1. \)</span></li>
+</ol>
 
-<div class="highlight"><pre><code class="language-bash" data-lang="bash">% tar xvfz PyWavelets-0.2.0.tar.bz2</code></pre></div>
-
-<p>Navigate to the top-level directory of the newly created PyWavelets folder, and install the package in <code>sage</code>.</p>
-
-<div class="highlight"><pre><code class="language-bash" data-lang="bash">% /Applications/sage/sage -python setup.py install</code></pre></div>
-
-<p>This should be enough!  Open a <code>sage</code> session, and import the <code>pywt</code> module:</p>
-
-<div class="highlight"><pre><code class="language-text" data-lang="text">&gt;&gt;&gt; import pywt
-&gt;&gt;&gt; dir(pywt)
-[&#39;BaseNode&#39;, &#39;MODES&#39;, &#39;Node&#39;, &#39;Node2D&#39;, &#39;Wavelet&#39;, &#39;WaveletPacket&#39;, &#39;Wavelet
-Packet2D&#39;, &#39;__all__&#39;, &#39;__author__&#39;, &#39;__builtins__&#39;, &#39;__doc__&#39;, &#39;__file__&#39;,
-&#39;__license__&#39;, &#39;__name__&#39;, &#39;__package__&#39;, &#39;__path__&#39;, &#39;__version__&#39;, &#39;_pywt&#39;
-, &#39;centfrq&#39;, &#39;downcoef&#39;, &#39;dwt&#39;, &#39;dwt2&#39;, &#39;dwt_coeff_len&#39;, &#39;dwt_max_level&#39;, &#39;d
-wtn&#39;, &#39;families&#39;, &#39;functions&#39;, &#39;idwt&#39;, &#39;idwt2&#39;, &#39;intwave&#39;, &#39;numerix&#39;, &#39;orthf
-ilt&#39;, &#39;qmf&#39;, &#39;release_details&#39;, &#39;scal2frq&#39;, &#39;swt&#39;, &#39;swt2&#39;, &#39;swt_max_level&#39;,
-&#39;thresholding&#39;, &#39;upcoef&#39;, &#39;wavedec&#39;, &#39;wavedec2&#39;, &#39;wavelist&#39;, &#39;waverec&#39;, &#39;wav
-erec2&#39;]</code></pre></div>
-
-<p>It might happen that the installation is not very clean:</p>
-
-<div class="highlight"><pre><code class="language-text" data-lang="text">&gt;&gt;&gt; import pywt
----------------------------------------------------------------------------
-ImportError                               Traceback (most recent call last)
-
-/Users/blanco/Documents/Research/PyWavelets-0.2.0/ in ()
-
-/Users/blanco/Documents/Research/PyWavelets-0.2.0/pywt/__init__.py in ()
-     11 &quot;&quot;&quot;
-     12
----&gt; 13 from _pywt import *
-     14 from multilevel import *
-     15 from multidim import *
-
-ImportError: No module named _pywt</code></pre></div>
-
-<p>In that event, simply find where the <code>_pywt.so</code> library is in your PyWavelet package, and place a link in your <code>sage</code> libraries:</p>
-
-<div class="highlight"><pre><code class="language-bash" data-lang="bash">% sudo ln -sv ./PyWavelets-0.2.0/build/lib.macosx-10.6-i386-2.6/pywt/_pywt.so /Applications/sage/local/lib/.</code></pre></div>
-
-<hr />
-
-<p>Once installed, you can get a flavor of what it means to work with this module by exploring a little.  For example, to find out how many different families of wavelets are implemented, or the names of each of the filters present in the package, simply issue</p>
-
-<div class="highlight"><pre><code class="language-text" data-lang="text">&gt;&gt;&gt; pywt.families()
-[&#39;haar&#39;, &#39;db&#39;, &#39;sym&#39;, &#39;coif&#39;, &#39;bior&#39;, &#39;rbio&#39;, &#39;dmey&#39;]
-
-&gt;&gt;&gt; pywt.wavelist()
-[&#39;bior1.1&#39;, &#39;bior1.3&#39;, &#39;bior1.5&#39;, &#39;bior2.2&#39;, &#39;bior2.4&#39;, &#39;bior2.6&#39;, &#39;bior2.8&#39;, &#39;
-bior3.1&#39;, &#39;bior3.3&#39;, &#39;bior3.5&#39;, &#39;bior3.7&#39;, &#39;bior3.9&#39;, &#39;bior4.4&#39;, &#39;bior5.5&#39;, &#39;bi
-or6.8&#39;, &#39;coif1&#39;, &#39;coif2&#39;, &#39;coif3&#39;, &#39;coif4&#39;, &#39;coif5&#39;, &#39;db1&#39;, &#39;db2&#39;, &#39;db3&#39;, &#39;db4&#39;
-, &#39;db5&#39;, &#39;db6&#39;, &#39;db7&#39;, &#39;db8&#39;, &#39;db9&#39;, &#39;db10&#39;, &#39;db11&#39;, &#39;db12&#39;, &#39;db13&#39;, &#39;db14&#39;, &#39;d
-b15&#39;, &#39;db16&#39;, &#39;db17&#39;, &#39;db18&#39;, &#39;db19&#39;, &#39;db20&#39;, &#39;dmey&#39;, &#39;haar&#39;, &#39;rbio1.1&#39;, &#39;rbio1
-.3&#39;, &#39;rbio1.5&#39;, &#39;rbio2.2&#39;, &#39;rbio2.4&#39;, &#39;rbio2.6&#39;, &#39;rbio2.8&#39;, &#39;rbio3.1&#39;, &#39;rbio3.3
-&#39;, &#39;rbio3.5&#39;, &#39;rbio3.7&#39;, &#39;rbio3.9&#39;, &#39;rbio4.4&#39;, &#39;rbio5.5&#39;, &#39;rbio6.8&#39;, &#39;sym2&#39;, &#39;s
-ym3&#39;, &#39;sym4&#39;, &#39;sym5&#39;, &#39;sym6&#39;, &#39;sym7&#39;, &#39;sym8&#39;, &#39;sym9&#39;, &#39;sym10&#39;, &#39;sym11&#39;, &#39;sym12&#39;
-, &#39;sym13&#39;, &#39;sym14&#39;, &#39;sym15&#39;, &#39;sym16&#39;, &#39;sym17&#39;, &#39;sym18&#39;, &#39;sym19&#39;, &#39;sym20&#39;]</code></pre></div>
-
-<p>To compute one level of the Haar-wavelet coefficients of a given image (the top level alone), we proceed as follows:</p>
-
-<div class="highlight"><pre><code class="language-python" data-lang="python"><span class="lineno">1</span> <span class="kn">from</span> <span class="nn">numpy</span> <span class="kn">import</span> <span class="o">*</span>
-<span class="lineno">2</span> <span class="kn">import</span> <span class="nn">scipy</span>
-<span class="lineno">3</span> 
-<span class="lineno">4</span> <span class="n">image</span><span class="o">=</span><span class="n">scipy</span><span class="o">.</span><span class="n">misc</span><span class="o">.</span><span class="n">lena</span><span class="p">()</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="n">float32</span><span class="p">)</span>
-<span class="lineno">5</span> 
-<span class="lineno">6</span> <span class="n">Aprox</span><span class="p">,</span> <span class="n">Details</span> <span class="o">=</span> <span class="n">pywt</span><span class="o">.</span><span class="n">dwt2</span><span class="p">(</span> <span class="n">image</span><span class="p">,</span> <span class="n">pywt</span><span class="o">.</span><span class="n">Wavelet</span><span class="p">(</span><span class="s">&#39;haar&#39;</span><span class="p">)</span> <span class="p">)</span>
-<span class="lineno">7</span> <span class="n">HorizDetail</span><span class="p">,</span> <span class="n">VertDetail</span><span class="p">,</span> <span class="n">DiagDetail</span> <span class="o">=</span> <span class="n">Details</span></code></pre></div>
-
-<table style="width:75%;border-width:0;margin-left:auto;margin-right:auto;">
+<table style="width:50%;margin-left:auto;margin-right:auto;border-width:0;">
 <tbody>
 <tr>
-<td style="width:50%;border-width:0;"><img src="https://i0.wp.com/farm6.static.flickr.com/5090/5380674347_bf597e9638_o_d.png" alt="" width="100%" /></td>
-<td style="width:50%;border-width:0;"><img src="https://i0.wp.com/farm6.static.flickr.com/5164/5381268874_74d710da83_o_d.png" alt="" width="100%" /></td>
-</tr>
-<tr>
-<td style="width:50%;text-align:center;border-width:0;">Approximation</td>
-<td style="width:50%;text-align:center;border-width:0;">Horizontal Detail</td>
-</tr>
-<tr>
-<td style="width:50%;border-width:0;"><img src="https://i0.wp.com/farm6.static.flickr.com/5124/5381268740_d1005150e7_o_d.png" alt="" width="100%" /></td>
-<td style="width:50%;border-width:0;"><img src="https://i0.wp.com/farm6.static.flickr.com/5164/5381277076_7b1d2eb5a7_o_d.png" alt="" width="100%" /></td>
-</tr>
-<tr>
-<td style="width:50%;text-align:center;border-width:0;">Vertical Detail</td>
-<td style="width:50%;text-align:center;border-width:0;">Diagonal Detail</td>
+<td style="text-align:center;vertical-align:middle;width:50%;border-width:0;"><img src="http://farm5.static.flickr.com/4061/5138306803_a74b9b45e1_o_d.jpg" alt="" width="100%" /></td>
+<td style="text-align:center;vertical-align:middle;width:50%;border-width:0;"><img src="http://farm5.static.flickr.com/4112/5138306843_614839a353_o_d.jpg" alt="" width="100%" /></td>
 </tr>
 </tbody>
 </table>
+
+<p>In a similar fashion, we construct a new surface by identification of two parallel edges of a square to form a cylinder, and a posterior identification of the remaining two edges (which turned into two circles after the first identification).  The second identification will be performed after a “half-twist” (which unfortunately can only be realized in a fourth dimension!).  The equivalence relation in the square <span>\( \square_2 \)</span> is as follows: Given <span>\( (x_1,x_2), (y_1,y_2) \in \square_2, \)</span> we define <span>\( (x_1,x_2) \sim (y_1,y_2) \)</span> provided one of the following conditions are satisfied:</p>
+
+<ol>
+  <li><span>\( x_1=y_1 \)</span> and <span>\( x_2=y_2, \)</span> or</li>
+  <li><span>\( x_1 y_1 = -1 \)</span> and <span>\( x_2 = y_2 \)</span>, or</li>
+  <li><span>\( x_2 y_2 = -1 \)</span> and <span>\( x_1 = 1-y_1. \)</span></li>
+</ol>
+
+<p>A diagram representing this quotient space—which we denote <span>\( \mathbb{K} \)</span> and call Klein bottle—is shown below, together with an interesting way to split and recover the space:  Notice how by cutting three stripes in the manner shown, and adjoining two of the stripes through the proper edge, we can see the Klein’s bottle as the union of two Möbius bands.</p>
+
+<p style="text-align:center;"><img src="http://farm2.static.flickr.com/1210/5139208635_bde30eca52_b_d.jpg" alt="" width="75%" /></p>
+
+<h2 id="miscellaneous">Miscellaneous</h2>
+
+<p>All the images included in this presentation are generated with the aid of the package <code>tikz</code> in <span>\( \LaTeX \)</span>.  The code that created the Möbius strip above, for example, is given by</p>
+
+<div class="highlight"><pre><code class="language-latex" data-lang="latex"><span class="lineno"> 1</span> <span class="k">\documentclass</span><span class="nb">{</span>amsart<span class="nb">}</span>
+<span class="lineno"> 2</span> <span class="k">\usepackage</span><span class="nb">{</span>tikz<span class="nb">}</span>
+<span class="lineno"> 3</span> <span class="k">\usetikzlibrary</span><span class="nb">{</span>calc<span class="nb">}</span>
+<span class="lineno"> 4</span> <span class="k">\begin</span><span class="nb">{</span>document<span class="nb">}</span>
+<span class="lineno"> 5</span> <span class="k">\begin</span><span class="nb">{</span>tikzpicture<span class="nb">}</span>
+<span class="lineno"> 6</span> <span class="k">\coordinate</span> (a) at (0cm,0cm);
+<span class="lineno"> 7</span> <span class="k">\coordinate</span> (b) at (1cm,0cm);
+<span class="lineno"> 8</span> <span class="k">\coordinate</span> (c) at (60:1cm);
+<span class="lineno"> 9</span> <span class="k">\coordinate</span> (ab1) at (<span class="s">$</span><span class="nb"> </span><span class="o">(</span><span class="nb">a</span><span class="o">)!</span><span class="nb">.</span><span class="m">25</span><span class="o">!(</span><span class="nb">b</span><span class="o">)</span><span class="nb"> </span><span class="s">$</span>);
+<span class="lineno">10</span> <span class="k">\coordinate</span> (ab2) at (<span class="s">$</span><span class="nb"> </span><span class="o">(</span><span class="nb">a</span><span class="o">)!</span><span class="nb">.</span><span class="m">75</span><span class="o">!(</span><span class="nb">b</span><span class="o">)</span><span class="nb"> </span><span class="s">$</span>);
+<span class="lineno">11</span> <span class="k">\coordinate</span> (bc1) at (<span class="s">$</span><span class="nb"> </span><span class="o">(</span><span class="nb">b</span><span class="o">)!</span><span class="nb">.</span><span class="m">25</span><span class="o">!(</span><span class="nb">c</span><span class="o">)</span><span class="nb"> </span><span class="s">$</span>);
+<span class="lineno">12</span> <span class="k">\coordinate</span> (bc2) at (<span class="s">$</span><span class="nb"> </span><span class="o">(</span><span class="nb">b</span><span class="o">)!</span><span class="nb">.</span><span class="m">75</span><span class="o">!(</span><span class="nb">c</span><span class="o">)</span><span class="nb"> </span><span class="s">$</span>);
+<span class="lineno">13</span> <span class="k">\coordinate</span> (ac1) at (<span class="s">$</span><span class="nb"> </span><span class="o">(</span><span class="nb">a</span><span class="o">)!</span><span class="nb">.</span><span class="m">25</span><span class="o">!(</span><span class="nb">c</span><span class="o">)</span><span class="nb"> </span><span class="s">$</span>);
+<span class="lineno">14</span> <span class="k">\coordinate</span> (ac2) at (<span class="s">$</span><span class="nb"> </span><span class="o">(</span><span class="nb">a</span><span class="o">)!</span><span class="nb">.</span><span class="m">75</span><span class="o">!(</span><span class="nb">c</span><span class="o">)</span><span class="nb"> </span><span class="s">$</span>);
+<span class="lineno">15</span> <span class="k">\draw</span><span class="na">[fill=red!60!black,thick,rounded corners=2pt]</span> (ab1) -- (bc2) [rounded corners=1pt] --(ac2) -- (ac1) [rounded corners=2pt] --cycle;
+<span class="lineno">16</span> <span class="k">\draw</span><span class="na">[fill=red!80!black,thick]</span> (bc1) [rounded corners=2pt] --(bc2) [rounded corners=1pt]-- (ac2) [rounded corners=2pt]-- (ab2) [rounded corners=1pt] --cycle;
+<span class="lineno">17</span> <span class="k">\draw</span><span class="na">[fill=red,thick]</span> (ab1) [rounded corners=2pt] -- (ab2) [rounded corners=1pt] -- (bc1) -- (ac1) [rounded corners=2pt] -- cycle;
+<span class="lineno">18</span> <span class="k">\end</span><span class="nb">{</span>tikzpicture<span class="nb">}</span>
+<span class="lineno">19</span> <span class="k">\end</span><span class="nb">{</span>document<span class="nb">}</span></code></pre></div>
+
 
 	</article>
 
