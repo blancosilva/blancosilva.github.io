@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width initial-scale=1">
+	<meta name="description" content="Useless math is useful math. It can be used to generate more useless math.
+">
+	<meta name="author" content="">
+
+	<title>MA598R: Measure Theory</title>
+
+	<!-- Bootstrap core CSS -->
+	<link href="/css/bootstrap.min.css" rel="stylesheet">
+	<!-- Bootstrap theme -->
+	<link href="/css/bootstrap-theme.min.css" rel="stylesheet">
+
+	<!-- Custom styles for this template -->
+	<link href="/css/blog.css" rel="stylesheet">
+	<link rel="stylesheet" href="/css/pygments.css">
+
+
+	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+<![endif]-->
+</head>
+
+<body role="document">
+
+	<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+	<div class="container">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a class="navbar-brand" href="/">Francisco Blanco-Silva</a>
+		</div>
+		<div id="navbar" class="navbar-collapse collapse">
+			<ul class="nav navbar-nav">
+				<li class="active"><a href="/">Home</a></li>
+				
+				
+				<li><a class="page-link" href="/about/">About me</a></li>
+				
+				
+				
+				<li><a class="page-link" href="/books/">Books</a></li>
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				<li><a class="page-link" href="/media.html">In the media</a></li>
+				
+				
+				
+				<li><a class="page-link" href="/presentations.html">Presentations</a></li>
+				
+				
+				
+				<li><a class="page-link" href="/resume.html">Résumé</a></li>
+				
+				
+				<li class="dropdown">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown">Teaching <span class="caret"></span></a>
+					<ul class="dropdown-menu" role="menu">
+						<li class="dropdown-header">Current classes</li>
+						
+						
+						
+						
+						<li><a href="/course/2014/11/08/Mathematical-Imaging.html">Mathematical Imaging</a></li>
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						<li><a href="/course/2014/08/19/ma141-fall-2014.html">MA141—Fall 2014</a></li>
+						
+						
+						
+						<li><a href="/course/2014/08/18/math-122-fall-2014.html">MA122—Fall 2014</a></li>
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						<li><a href="/course/2010/07/08/ma598r.html">MA598R: Measure Theory</a></li>
+						
+						
+						
+						
+						
+						
+						
+						
+						<li class="divider"></li>
+						<li class="dropdown-header">Selected Class Material</li>
+						
+						
+						<li><a href="/teaching/2014/11/08/past-classes.html">Past Sections of Undergraduate Calculus</a></li>
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						<!-- <li>Mathematical Imaging</li>
+						<li>Introduction to the Theory of Distributions</li>
+						<li>An Introduction to Algebraic Topology</li>
+						<li>MA598R: Measure Theory</li>
+						<li>The Basic Practice of Statistics</li> -->
+					</ul>
+				</li>
+			</ul>
+		</div><!--/.nav-collapse -->
+	</div>
+</nav>
+
+
+
+	<div class="page-content">
+		<div class="wrapper">
+			<br />
+<br />
+<br />
+<br />
+
+<div class="container theme-showcase" role="main" style="font-size: 16px; base-line-height: 1.5; font-family: Helvetica, Arial, sans-serif; spacing-unit: 30px; line-height: 20px;">
+
+  <header class="post-header">
+    <h1 class="post-title">MA598R: Measure Theory</h1>
+  </header>
+
+  <article class="post-content">
+    <p>In the summer of 2007, I had the pleasure to help a group of graduate students prepare for their Qualifying exams in Measure Theory.  I taught the course MA598R, which was mainly a thorough review of Torchinsky’s “Real Variables”, together with guided sessions of problem-solving from previous Qualifying exams and lists of problems from Rudin, Torchinsky, Lieb-Loss, and other sources.</p>
+
+<table style="border:0px;width:100%;">
+<tr>
+<td style="text-align:center;vertical-align:middle;width:25%;border:0px;">
+<a href="http://www.amazon.com/gp/product/0201483270/ref=as_li_tf_il?ie=UTF8&amp;tag=blancosilva-20&amp;linkCode=as2&amp;camp=217145&amp;creative=399373&amp;creativeASIN=0201483270"><img border="0" src="http://ws.assoc-amazon.com/widgets/q?_encoding=UTF8&amp;Format=_SL160_&amp;ASIN=0201483270&amp;MarketPlace=US&amp;ID=AsinImage&amp;WS=1&amp;tag=blancosilva-20&amp;ServiceVersion=20070822" /></a><img src="http://ws.assoc-amazon.com/widgets/ir?t=blancosilva-20&amp;l=as2&amp;o=1&amp;a=0201483270&amp;camp=217145&amp;creative=399373" width="1" height="1" border="0" alt="" style="border:none!important;margin:0!important;" />
+</td>
+<td style="text-align:center;vertical-align:middle;width:25%;border:0px;">
+<a href="http://www.amazon.com/gp/product/0821827839/ref=as_li_tf_il?ie=UTF8&amp;tag=blancosilva-20&amp;linkCode=as2&amp;camp=217145&amp;creative=399377&amp;creativeASIN=0821827839"><img border="0" src="http://ws.assoc-amazon.com/widgets/q?_encoding=UTF8&amp;Format=_SL160_&amp;ASIN=0821827839&amp;MarketPlace=US&amp;ID=AsinImage&amp;WS=1&amp;tag=blancosilva-20&amp;ServiceVersion=20070822" /></a><img src="http://ws.assoc-amazon.com/widgets/ir?t=blancosilva-20&amp;l=as2&amp;o=1&amp;a=0821827839&amp;camp=217145&amp;creative=399377" width="1" height="1" border="0" alt="" style="border:none!important;margin:0!important;" />
+</td>
+<td style="text-align:center;vertical-align:middle;width:25%;border:0px;">
+<a href="http://www.amazon.com/gp/product/007054235X/ref=as_li_tf_il?ie=UTF8&amp;tag=blancosilva-20&amp;linkCode=as2&amp;camp=217145&amp;creative=399377&amp;creativeASIN=007054235X"><img border="0" src="http://ws.assoc-amazon.com/widgets/q?_encoding=UTF8&amp;Format=_SL160_&amp;ASIN=007054235X&amp;MarketPlace=US&amp;ID=AsinImage&amp;WS=1&amp;tag=blancosilva-20&amp;ServiceVersion=20070822" /></a><img src="http://ws.assoc-amazon.com/widgets/ir?t=blancosilva-20&amp;l=as2&amp;o=1&amp;a=007054235X&amp;camp=217145&amp;creative=399377" width="1" height="1" border="0" alt="" style="border:none!important;margin:0!important;" />
+</td>
+</tr>
+<tr>
+<td style="text-align:center;vertical-align:top;width:25%;border:0px;">
+<a href="http://www.amazon.com/gp/product/0201483270/ref=as_li_tf_tl?ie=UTF8&amp;tag=blancosilva-20&amp;linkCode=as2&amp;camp=217145&amp;creative=399373&amp;creativeASIN=0201483270">Real Variables</a><img src="http://ws.assoc-amazon.com/widgets/ir?t=blancosilva-20&amp;l=as2&amp;o=1&amp;a=0201483270&amp;camp=217145&amp;creative=399373" width="1" height="1" border="0" alt="" style="border:none!important;margin:0!important;" />
+</td>
+<td style="text-align:center;vertical-align:top;width:25%;border:0px;">
+<a href="http://www.amazon.com/gp/product/0821827839/ref=as_li_tf_tl?ie=UTF8&amp;tag=blancosilva-20&amp;linkCode=as2&amp;camp=217145&amp;creative=399377&amp;creativeASIN=0821827839">Analysis (Graduate Studies in Mathematics)</a><img src="http://ws.assoc-amazon.com/widgets/ir?t=blancosilva-20&amp;l=as2&amp;o=1&amp;a=0821827839&amp;camp=217145&amp;creative=399377" width="1" height="1" border="0" alt="" style="border:none!important;margin:0!important;" /> (See all <a href="http://www.amazon.com/Mathematical-Analysis-Mathematics-Science-Books/b/ref=as_li_tf_tl?ie=UTF8&amp;tag=blancosilva-20&amp;linkCode=as2&amp;camp=217145&amp;creative=399385&amp;creativeASIN=0821827839&amp;ie=UTF8&amp;node=13955">Mathematical Analysis Books</a>)<img src="assets/ir?t=blancosilva-20&amp;l=as2&amp;o=1&amp;a=0821827839&amp;camp=217145&amp;creative=399385" width="1" height="1" border="0" alt="" style="border:none!important;margin:0!important;" />
+</td>
+<td style="text-align:center;vertical-align:top;width:25%;border:0px;">
+<a href="http://www.amazon.com/gp/product/007054235X/ref=as_li_tf_tl?ie=UTF8&amp;tag=blancosilva-20&amp;linkCode=as2&amp;camp=217145&amp;creative=399377&amp;creativeASIN=007054235X">Principles of Mathematical Analysis, Third Edition</a><img src="assets/ir?t=blancosilva-20&amp;l=as2&amp;o=1&amp;a=007054235X&amp;camp=217145&amp;creative=399377" width="1" height="1" border="0" alt="" style="border:none!important;margin:0!important;" /> (See all <a href="http://www.amazon.com/Mathematical-Analysis-Mathematics-Science-Books/b/ref=as_li_tf_tl?ie=UTF8&amp;tag=blancosilva-20&amp;linkCode=as2&amp;camp=217145&amp;creative=399385&amp;creativeASIN=007054235X&amp;ie=UTF8&amp;node=13955">Mathematical Analysis Books</a>)<img src="assets/ir?t=blancosilva-20&amp;l=as2&amp;o=1&amp;a=007054235X&amp;camp=217145&amp;creative=399385" width="1" height="1" border="0" alt="" style="border:none!important;margin:0!important;" />
+</td>
+</tr>
+</table>
+
+<h2 id="lesson-plan-and-assignments">Lesson Plan and Assignments</h2>
+
+<p>Feel free to download the different problem sets below.  In a near future I will also present hints and solutions to some of the harder exercises.</p>
+
+<p><strong>Monday, June 11</strong></p>
+
+<table style="border:0px;width:100%;">
+<tr>
+<td style="text-align:center;vertical-align:middle;width:20%;border:0px;padding:10px;"><a href="https://www.dropbox.com/s/re28horunmidppy/lesson3.pdf"><img src="http://farm8.staticflickr.com/7235/7253469920_9e55c3039c_b_d.jpg" style="width:100%;border:1px solid black;" /></a></td>
+<td style="vertical-align:top;width:80%;border:0px;padding:10px;">
+<a href="https://www.dropbox.com/s/re28horunmidppy/lesson3.pdf">Riemann-Stieltjes Integral</a>
+<ul>
+<li>Functions of Bounded Variation</li>
+<li>Existence of the Riemann-Stieltjes Integral</li>
+<li>The Riemann-Stieltjes Integral and Limits</li>
+</ul>
+</td>
+</tr>
+</table>
+
+<p><strong>Wednesday, June 13</strong></p>
+
+<table style="border:0px;width:100%;">
+<tr>
+<td style="text-align:center;vertical-align:middle;width:20%;border:0px;padding:10px;"><a href="https://www.dropbox.com/s/1mccmeltu7m6uvl/lesson1.pdf"><img src="http://farm9.staticflickr.com/8157/7253470470_d6675e2db4_b_d.jpg" style="width:100%;border:1px solid black;" /></a></td>
+<td style="vertical-align:top;width:80%;border:0px;padding:10px;">
+<a href="https://www.dropbox.com/s/1mccmeltu7m6uvl/lesson1.pdf">Abstract Measures. Lebesgue Measure</a>.
+<ul>
+<li>Algebras and σ-algebras of Sets</li>
+<li>Additive Set Functions and Measures</li>
+<li>Properties of Measures</li>
+<li>Lebesgue Measure on R<sup>n</sup></li>
+<li>The Cantor Set</li>
+</ul>
+</td>
+</tr>
+</table>
+
+<p><strong>Monday, June 18</strong></p>
+
+<p>Second chances: review of Measure Theory</p>
+
+<p><strong>Wednesday, June 20</strong></p>
+
+<table style="border:0px;width:100%;">
+<tr>
+<td style="text-align:center;vertical-align:middle;width:20%;border:0px;padding:10px;"><a href="https://www.dropbox.com/s/9gcpjf80c1lod3m/lesson2.pdf"><img src="http://farm8.staticflickr.com/7078/7253470158_d4f12b5a0d_b_d.jpg" style="width:100%;border:1px solid black;" /></a></td>
+<td style="vertical-align:top;width:80%;border:0px;padding:10px;"><a href="https://www.dropbox.com/s/9gcpjf80c1lod3m/lesson2.pdf">Measurable Functions</a>
+<ul>
+<li>Elementary Properties of Measurable Functions</li>
+<li>Structure of Measurable Functions</li>
+<li>Sequences of Measurable Functions</li>
+</ul>
+</td>
+</tr>
+</table>
+
+<p><strong>Monday, June 25</strong></p>
+
+<p>Second chances: review of Measurable Functions.</p>
+
+<p><strong>Wednesday, June 27</strong></p>
+
+<table style="border:0px;width:100%;">
+<tr>
+<td style="text-align:center;vertical-align:middle;width:20%;border:0px;padding:10px;"><a href="https://www.dropbox.com/s/ednncyna6o8kxb6/lesson5.pdf"><img src="http://farm8.staticflickr.com/7077/7253470712_a7e61316ce_b_d.jpg" style="width:100%;border:1px solid black;" /></a></td>
+<td style="vertical-align:top;width:80%;border:0px;padding:10px;"><a href="https://www.dropbox.com/s/ednncyna6o8kxb6/lesson5.pdf">Integration</a>
+<ul>
+<li>The Integral of Nonnegative Functions</li>
+<li>The Integral of Arbitrary Functions</li>
+<li>Riemann and Lebesgue Integrals</li>
+<li>Metric structure of <em>L<sub>1</sub></em></li>
+<li>The Lebesgue Differentiation Theorem</li>
+</ul>
+</td>
+</tr>
+</table>
+
+<p><strong>Monday, July 2</strong></p>
+
+<p>Second chances: review of Integration</p>
+
+<p><strong><span style="color:red;">Wednesday, July 4</span></strong></p>
+
+<p><em><span style="color:red;">No class</span></em></p>
+
+<p><strong>Monday, July 9</strong></p>
+
+<p>Third chances: review of Integration</p>
+
+<p><strong>Wednesday, July 11</strong></p>
+
+<table style="border:0px;width:100%;">
+<tr>
+<td style="text-align:center;vertical-align:middle;width:20%;border:0px;padding:10px;"><a href="https://www.dropbox.com/s/h74ce1m77pm2y68/lesson9.pdf"><img src="http://farm8.staticflickr.com/7238/7253471246_45d30243ab_b_d.jpg" style="width:100%;border:1px solid black;" /></a></td>
+<td style="vertical-align:top;width:80%;border:0px;padding:10px;"><a href="https://www.dropbox.com/s/h74ce1m77pm2y68/lesson9.pdf">L<sub>p</sub> Spaces</a>
+<ul>
+<li>The Lebesque <em>L<sub>p</sub></em> spaces</li>
+<li>Functionals on <em>L<sub>p</sub></em></li>
+<li>Weak convergence</li>
+</ul>
+</td>
+</tr>
+</table>
+
+<p><strong>Monday, July 16</strong></p>
+
+<p>Second chances: review of <em>L<sub>p</sub></em> spaces</p>
+
+<p><strong>Wednesday, July 18</strong></p>
+
+<table style="border:0px;width:100%;">
+<tr>
+<td style="text-align:center;vertical-align:middle;width:20%;border:0px;padding:10px;"><a href="https://www.dropbox.com/s/pelyl5qlahprn0a/lesson10.pdf"><img src="http://farm9.staticflickr.com/8165/7253471012_fd873417e5_b_d.jpg" style="width:100%;border:1px solid black;" /></a></td>
+<td style="text-align:center;vertical-align:middle;width:20%;border:0px;padding:10px;"><a href="https://www.dropbox.com/s/axohvkhi8pc6bcw/lesson8.pdf"><img src="http://farm9.staticflickr.com/8167/7253469568_c189b7be96_b_d.jpg" style="width:100%;border:1px solid black;" /></a></td>
+<td style="vertical-align:top;width:60%;border:0px;padding:10px;">Advanced Topics:
+<ul>
+<li>Covering Lemmas.</li>
+<li>Absolute Continuity.</li>
+<li>Approximations to the Identity.</li>
+<li>The Fourier Transform.</li>
+</ul>
+</td>
+</tr>
+</table>
+
+<p><strong>Monday, July 23</strong></p>
+
+<p>Second chances: review of Advanced Topics.</p>
+
+<p><strong>Wednesday, July 25</strong></p>
+
+<table style="border:0px;width:100%;">
+<tr>
+<td style="text-align:center;vertical-align:middle;width:20%;border:0px;padding:10px;"><a href="https://www.dropbox.com/s/vta8xu4d315cl4k/qual.pdf"><img src="http://farm8.staticflickr.com/7218/7253469310_7459b5a52b_b_d.jpg" style="width:100%;border:1px solid black;" /></a></td>
+<td style="vertical-align:top;width:80%;border:0px;padding:10px;"><a href="https://www.dropbox.com/s/vta8xu4d315cl4k/qual.pdf">Qual frenzy</a></td>
+</tr>
+</table>
+
+<p><strong>Monday, July 30</strong></p>
+
+<p>Qual frenzy</p>
+<hr />
+
+<p style="text-align:center;"><img class="aligncenter" style="border:2px solid black;" src="http://farm5.static.flickr.com/4084/5015427025_fe9a791d1a_o_d.jpg" alt="" width="50%" /></p>
+
+  </article>
+
+</div>
+
+<script type="text/javascript"
+src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+		</div>
+	</div>
+
+	<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-56262970-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+	<!-- Start of StatCounter Code for Default Guide -->
+<script type="text/javascript">
+var sc_project=10117038; 
+var sc_invisible=1; 
+var sc_security="1fd852f3"; 
+var scJsHost = (("https:" == document.location.protocol) ?
+"https://secure." : "http://www.");
+document.write("<sc"+"ript type='text/javascript' src='" +
+scJsHost+
+"statcounter.com/counter/counter.js'></"+"script>");
+</script>
+<noscript><div class="statcounter"><a title="free hit
+counters" href="http://statcounter.com/"
+target="_blank"><img class="statcounter"
+src="http://c.statcounter.com/10117038/0/1fd852f3/1/"
+alt="free hit counters"></a></div></noscript>
+<!-- End of StatCounter Code for Default Guide -->
+
+	    <!-- Bootstrap core JavaScript
+	    ================================================== -->
+	    <!-- Placed at the end of the document so the pages load faster -->
+	    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	    <script src="/js/bootstrap.min.js"></script>
+	    <script src="/assets/js/docs.min.js"></script>
+	    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+	    <script src="/assets/js/ie10-viewport-bug-workaround.js"></script>
+	</body>
+	</html>
