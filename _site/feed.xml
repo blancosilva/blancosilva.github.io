@@ -6,8 +6,8 @@
 </description>
     <link>http://blancosilva.github.io/</link>
     <atom:link href="http://blancosilva.github.io/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Tue, 11 Nov 2014 01:19:06 -0500</pubDate>
-    <lastBuildDate>Tue, 11 Nov 2014 01:19:06 -0500</lastBuildDate>
+    <pubDate>Tue, 11 Nov 2014 07:47:49 -0500</pubDate>
+    <lastBuildDate>Tue, 11 Nov 2014 07:47:49 -0500</lastBuildDate>
     <generator>Jekyll v2.4.0</generator>
     
       <item>
@@ -262,7 +262,7 @@
 		
 		
 		
-		&lt;a href=&quot;/course-material/2011/03/15/binary-images.html&quot; class=&quot;list-group-item&quot;&gt;
+		&lt;a href=&quot;/course-material/2011/03/15/binary-images.html#disqus_thread&quot; class=&quot;list-group-item&quot;&gt;
 			&lt;h4 class=&quot;list-group-item-heading&quot;&gt;Binary Images&lt;/h4&gt;
 		&lt;/a&gt;
 		
@@ -270,13 +270,13 @@
 		
 		
 		
-		&lt;a href=&quot;/course-material/2011/02/10/edge-detection-the-convolution-approach.html&quot; class=&quot;list-group-item&quot;&gt;
+		&lt;a href=&quot;/course-material/2011/02/10/edge-detection-the-convolution-approach.html#disqus_thread&quot; class=&quot;list-group-item&quot;&gt;
 			&lt;h4 class=&quot;list-group-item-heading&quot;&gt;Edge detection: The Convolution Approach&lt;/h4&gt;
 		&lt;/a&gt;
 		
 		
 		
-		&lt;a href=&quot;/course-material/2011/02/08/histograms-from-scratch.html&quot; class=&quot;list-group-item&quot;&gt;
+		&lt;a href=&quot;/course-material/2011/02/08/histograms-from-scratch.html#disqus_thread&quot; class=&quot;list-group-item&quot;&gt;
 			&lt;h4 class=&quot;list-group-item-heading&quot;&gt;Histograms (from scratch)&lt;/h4&gt;
 		&lt;/a&gt;
 		
@@ -286,25 +286,25 @@
 		
 		
 		
-		&lt;a href=&quot;/course-material/2011/01/23/denoising-wavelet-thresholding.html&quot; class=&quot;list-group-item&quot;&gt;
+		&lt;a href=&quot;/course-material/2011/01/23/denoising-wavelet-thresholding.html#disqus_thread&quot; class=&quot;list-group-item&quot;&gt;
 			&lt;h4 class=&quot;list-group-item-heading&quot;&gt;Denoising: wavelet thresholding&lt;/h4&gt;
 		&lt;/a&gt;
 		
 		
 		
-		&lt;a href=&quot;/course-material/2011/01/23/wavelets-in-sage.html&quot; class=&quot;list-group-item&quot;&gt;
+		&lt;a href=&quot;/course-material/2011/01/23/wavelets-in-sage.html#disqus_thread&quot; class=&quot;list-group-item&quot;&gt;
 			&lt;h4 class=&quot;list-group-item-heading&quot;&gt;Wavelets in sage&lt;/h4&gt;
 		&lt;/a&gt;
 		
 		
 		
-		&lt;a href=&quot;/course-material/2011/01/18/convolution-with-gaussian-kernels.html&quot; class=&quot;list-group-item&quot;&gt;
+		&lt;a href=&quot;/course-material/2011/01/18/convolution-with-gaussian-kernels.html#disqus_thread&quot; class=&quot;list-group-item&quot;&gt;
 			&lt;h4 class=&quot;list-group-item-heading&quot;&gt;Convolution with Gaussian kernels&lt;/h4&gt;
 		&lt;/a&gt;
 		
 		
 		
-		&lt;a href=&quot;/course-material/2011/01/17/edge-detection.html&quot; class=&quot;list-group-item&quot;&gt;
+		&lt;a href=&quot;/course-material/2011/01/17/edge-detection.html#disqus_thread&quot; class=&quot;list-group-item&quot;&gt;
 			&lt;h4 class=&quot;list-group-item-heading&quot;&gt;Edge detection: The Scale Space Theory&lt;/h4&gt;
 		&lt;/a&gt;
 		
@@ -334,7 +334,7 @@
 &lt;div class=&quot;col-sm-4&quot;&gt;
 	&lt;iframe style=&quot;width:120px;height:240px;&quot; marginwidth=&quot;0&quot; marginheight=&quot;0&quot; scrolling=&quot;no&quot; frameborder=&quot;0&quot; src=&quot;//ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&amp;amp;OneJS=1&amp;amp;Operation=GetAdHtml&amp;amp;MarketPlace=US&amp;amp;source=ac&amp;amp;ref=tf_til&amp;amp;ad_type=product_link&amp;amp;tracking_id=blancosilva-20&amp;amp;marketplace=amazon&amp;amp;region=US&amp;amp;placement=1439840458&amp;amp;asins=1439840458&amp;amp;linkId=FLHP4DLYSOTMF7XN&amp;amp;show_border=false&amp;amp;link_opens_in_new_window=true&quot;&gt;
 	&lt;/iframe&gt;
-	&lt;iframe style=&quot;width:120px;height:240px;&quot; marginwidth=&quot;0&quot; marginheight=&quot;0&quot; scrolling=&quot;no&quot; frameborder=&quot;0&quot; src=&quot;//ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&amp;amp;OneJS=1&amp;amp;Operation=GetAdHtml&amp;amp;MarketPlace=US&amp;amp;source=ac&amp;amp;ref=tf_til&amp;amp;ad_type=product_link&amp;amp;tracking_id=blancosilva-20&amp;amp;marketplace=amazon&amp;amp;region=US&amp;amp;placement=0898712742&amp;amp;asins=0898712742&amp;amp;linkId=5SAE7JVTIDWJ4NCT&amp;amp;show_border=false&amp;amp;link_opens_in_new_window=true&quot;&gt;
+	&lt;iframe style=&quot;width:120px;height:240px;&quot; marginwidth=&quot;0&quot; marginheight=&quot;0&quot; scrolling=&quot;no&quot; frameborder=&quot;0&quot; src=&quot;//ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&amp;amp;OneJS=1&amp;amp;Operation=GetAdHtml&amp;amp;MarketPlace=US&amp;amp;source=ac&amp;amp;ref=tf_til&amp;amp;ad_type=product_link&amp;amp;tracking_id=blancosilva-20&amp;amp;marketplace=amazon&amp;amp;region=US&amp;amp;placement=0898712742&amp;amp;asins=0898712742&amp;amp;linkId=JO6K6KHKGFFARNC3&amp;amp;show_border=false&amp;amp;link_opens_in_new_window=true&quot;&gt;
 	&lt;/iframe&gt;
 &lt;/div&gt;
 </description>

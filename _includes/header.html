@@ -14,7 +14,7 @@
 				<li class="active"><a href="/">Home</a></li>
 				{% for page in site.pages %}
 				{% if page.title %}
-				<li><a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a></li>
+				<li><a class="page-link" href="{{ page.url | prepend: site.baseurl }}#disqus_thread">{{ page.title }}</a></li>
 				{% endif %}
 				{% endfor %}
 				<li class="dropdown">
@@ -23,14 +23,14 @@
 						<li class="dropdown-header">Current | Most recent classes</li>
 						{% for post in site.posts %}
 						{% if post.category == "course"  and  post.current == true %}
-						<li><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></li>
+						<li><a href="{{ post.url | prepend: site.baseurl }}#disqus_thread">{{ post.title }}</a></li>
 						{% endif %}
 						{% endfor %}
 						<li class="divider"></li>
 						<li class="dropdown-header">Selected Class Material</li>
 						{% for post in site.posts %}
 						{% if post.category == "teaching" %}
-						<li><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></li>
+						<li><a href="{{ post.url | prepend: site.baseurl }}i#disqus_thread">{{ post.title }}</a></li>
 						{% endif %}
 						{% endfor %}
 <!-- 						<li>Introduction to the Theory of Distributions</li>
