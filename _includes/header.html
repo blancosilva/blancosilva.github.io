@@ -30,7 +30,7 @@
 						<li class="dropdown-header">Selected Class Material</li>
 						{% for post in site.posts %}
 						{% if post.category == "teaching" %}
-						<li><a href="{{ post.url | prepend: site.baseurl }}i#disqus_thread">{{ post.title }}</a></li>
+						<li><a href="{{ post.url | prepend: site.baseurl }}#disqus_thread">{{ post.title }}</a></li>
 						{% endif %}
 						{% endfor %}
 <!-- 						<li>Introduction to the Theory of Distributions</li>
