@@ -57,7 +57,7 @@ An inverse to this function is constructed in a similar way, so that each circle
 		\end{equation}
 	</div>
 
-	This is the function we are looking for.  Its continuity is easy to prove, and so are its one-to-one and onto properties.  In order to construct the inverse map, trace back from the real line to the vertical line \(\\{(1,s) : s \in \mathbb{R}\\},\) from there to the unit disk by the inverse of stereographic projection through the point \((-1,0)\), and find the angle of the corresponding image.  Division by \(\pi\) offers you a value in the unit interval \((-1,1).\)  This value is the image of the inverse \(\varphi^{-1}.\)   I leave the construction of the analytical expression of this function to the reader as a nice exercise.
+	This is the function we are looking for.  Its continuity is easy to prove, and so are its one-to-one and onto properties.  In order to construct the inverse map, trace back from the real line to the vertical line \(\{(1,s) : s \in \mathbb{R}\},\) from there to the unit disk by the inverse of stereographic projection through the point \((-1,0)\), and find the angle of the corresponding image.  Division by \(\pi\) offers you a value in the unit interval \((-1,1).\)  This value is the image of the inverse \(\varphi^{-1}.\)   I leave the construction of the analytical expression of this function to the reader as a nice exercise.
 </div>
 <div class="col-sm-4">
 	<img class="alignright" src="http://farm2.static.flickr.com/1053/5122064612_471d0e977d_o_d.jpg" alt="" width="241" height="419" />
