@@ -1,6 +1,6 @@
 ---
 layout: page
-category: course
+category: teaching
 current: true
 comments: false
 title: Mathematical Imaging
