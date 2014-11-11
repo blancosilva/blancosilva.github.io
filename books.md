@@ -5,13 +5,21 @@ date: 2013-06-03 01:48:46.000000000 -04:00
 category: page
 permalink: /books/
 ---
+
 ## Learning SciPy for Numerical and Scientific Computing
 
 
-<a href="http://www.amazon.com/gp/product/1782161627/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=1782161627&linkCode=as2&tag=blancosilva-20&linkId=UBT4TZNXICJ2L47C"><img style="float:left;margin:25px;width:200px;" src="http://ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=1782161627&Format=_SL250_&ID=AsinImage&MarketPlace=US&ServiceVersion=20070822&WS=1&tag=blancosilva-20" ></a><img src="http://ir-na.amazon-adsystem.com/e/ir?t=blancosilva-20&l=as2&o=1&a=1782161627" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />Early 2013 I enjoyed the rare pleasure of having a child (my first!) and publishing a book almost at the same time.  Since this post belongs in my professional blog, I will exclusively comment on the latter: <a href="http://www.amazon.com/gp/product/1782161627/ref=as_li_qf_sp_asin_tl?ie=UTF8&amp;camp=1789&amp;creative=9325&amp;creativeASIN=1782161627&amp;linkCode=as2&amp;tag=blancosilva-20">Learning SciPy for Numerical and Scientific Computing</a><img src="http://www.assoc-amazon.com/e/ir?t=blancosilva-20&amp;l=as2&amp;o=1&amp;a=1782161627" width="1" height="1" border="0" alt="" style="border:none !important;margin:0!important;" />, published by <a href="http://www.packtpub.com/learning-scipy-for-numerical-and-scientific-computing/book">Packt</a> in a series of technical books focusing on Open Source software.
+<div class="row">
 
-Keep in mind that the book is for a very specialized audience: not only do you need a basic knowledge of Python, but also a somewhat advanced command of mathematics/physics, and an interest in engineering or scientific applications.  This is an excerpt of the detailed description of the monograph, as it reads in the publisher's page:
+	<div class="col-sm-2">
+		<a href="http://www.amazon.com/gp/product/1782161627/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=1782161627&linkCode=as2&tag=blancosilva-20&linkId=UBT4TZNXICJ2L47C"><img style="width:100%;" src="http://ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=1782161627&Format=_SL250_&ID=AsinImage&MarketPlace=US&ServiceVersion=20070822&WS=1&tag=blancosilva-20" ></a><img src="http://ir-na.amazon-adsystem.com/e/ir?t=blancosilva-20&l=as2&o=1&a=1782161627" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />
+	</div>
+	<div class="col-sm-10" style="text-align:justify;">
+		Early 2013 I enjoyed the rare pleasure of having a child (my first!) and publishing a book almost at the same time.  Since this post belongs in my professional blog, I will exclusively comment on the latter: <a href="http://www.amazon.com/gp/product/1782161627/ref=as_li_qf_sp_asin_tl?ie=UTF8&amp;camp=1789&amp;creative=9325&amp;creativeASIN=1782161627&amp;linkCode=as2&amp;tag=blancosilva-20">Learning SciPy for Numerical and Scientific Computing</a><img src="http://www.assoc-amazon.com/e/ir?t=blancosilva-20&amp;l=as2&amp;o=1&amp;a=1782161627" width="1" height="1" border="0" alt="" style="border:none !important;margin:0!important;" />, published by <a href="http://www.packtpub.com/learning-scipy-for-numerical-and-scientific-computing/book">Packt</a> in a series of technical books focusing on Open Source software.
 
+		Keep in mind that the book is for a very specialized audience: not only do you need a basic knowledge of Python, but also a somewhat advanced command of mathematics/physics, and an interest in engineering or scientific applications.  This is an excerpt of the detailed description of the monograph, as it reads in the publisher's page:
+	</div>
+</div>
 
 >It is essential to incorporate workflow data and code from various sources in order to create fast and effective algorithms to solve complex problems in science and engineering. Data is coming at us faster, dirtier, and at an ever increasing rate. There is no need to employ difficult-to-maintain code, or expensive mathematical engines to solve your numerical computations anymore.  SciPy guarantees fast, accurate, and easy-to-code solutions to your numerical and scientific computing applications.
 >
@@ -31,11 +39,17 @@ The book is also being sold online in <a href="http://www.amazon.com/gp/product/
 
 ## Modeling Nanoscale Imaging in Electron Microscopy
 
-<a href="http://www.amazon.com/gp/product/146142190X/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=146142190X&linkCode=as2&tag=blancosilva-20&linkId=UQITG3F6LD4HFEQZ"><img style="float:left;margin:25px;width:200px;" src="http://ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=146142190X&Format=_SL250_&ID=AsinImage&MarketPlace=US&ServiceVersion=20070822&WS=1&tag=blancosilva-20" ></a><img src="http://ir-na.amazon-adsystem.com/e/ir?t=blancosilva-20&l=as2&o=1&a=146142190X" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />Well, ok, it is not <em>my book</em> technically, but I am one of the authors of one of the chapters.  And <strong>no</strong>, as far as I know, I don't get a dime of the sales in concept of copyright or anything else.
+<div class="row">
+	<div class="col-sm-2">
+		<a href="http://www.amazon.com/gp/product/146142190X/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=146142190X&linkCode=as2&tag=blancosilva-20&linkId=UQITG3F6LD4HFEQZ"><img style="width:100%" src="http://ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=146142190X&Format=_SL250_&ID=AsinImage&MarketPlace=US&ServiceVersion=20070822&WS=1&tag=blancosilva-20" ></a><img src="http://ir-na.amazon-adsystem.com/e/ir?t=blancosilva-20&l=as2&o=1&a=146142190X" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />
+	</div>
+	<div class="col-sm-10" style="text-align:justify;">Well, ok, it is not <em>my book</em> technically, but I am one of the authors of one of the chapters.  And <strong>no</strong>, as far as I know, I don't get a dime of the sales in concept of copyright or anything else.
 
-As the title suggests (<a href="http://www.amazon.com/gp/product/146142190X/ref=as_li_tf_tl?ie=UTF8&amp;camp=1789&amp;creative=9325&amp;creativeASIN=146142190X&amp;linkCode=as2&amp;tag=blancosilva-20">Modeling Nanoscale Imaging in Electron Microscopy</a><img src="assets/ir?t=blancosilva-20&amp;l=as2&amp;o=1&amp;a=146142190X" width="1" height="1" border="0" alt="" style="border:none !important;margin:0!important;" />), this book presents some recent advances that have been made using mathematical methods to resolve problems in electron microscopy. With improvements in hardware-based aberration software significantly expanding the nanoscale imaging capabilities of scanning transmission electron microscopes (STEM), these mathematical models can replace some labor intensive procedures used to operate and maintain STEMs. This book, the first in its field since 1998,   covers relevant concepts such as super-resolution techniques (<em>that's my contribution!</em>), special de-noising methods, application of mathematical/statistical learning theory, and compressed sensing.
+		As the title suggests (<a href="http://www.amazon.com/gp/product/146142190X/ref=as_li_tf_tl?ie=UTF8&amp;camp=1789&amp;creative=9325&amp;creativeASIN=146142190X&amp;linkCode=as2&amp;tag=blancosilva-20">Modeling Nanoscale Imaging in Electron Microscopy</a><img src="assets/ir?t=blancosilva-20&amp;l=as2&amp;o=1&amp;a=146142190X" width="1" height="1" border="0" alt="" style="border:none !important;margin:0!important;" />), this book presents some recent advances that have been made using mathematical methods to resolve problems in electron microscopy. With improvements in hardware-based aberration software significantly expanding the nanoscale imaging capabilities of scanning transmission electron microscopes (STEM), these mathematical models can replace some labor intensive procedures used to operate and maintain STEMs. This book, the first in its field since 1998,   covers relevant concepts such as super-resolution techniques (<em>that's my contribution!</em>), special de-noising methods, application of mathematical/statistical learning theory, and compressed sensing.
 
-We even got a nice review in <a href="http://www.physicstoday.org/resource/1/phtoad/v65/i5/p54_s2?bypassSSO=1">Physics Today</a> by Les Allen, no less!
+		We even got a nice review in <a href="http://www.physicstoday.org/resource/1/phtoad/v65/i5/p54_s2?bypassSSO=1">Physics Today</a> by Les Allen, no less!
+	</div>
+</div>
 
 >Imaging with electrons, in particular scanning transmission electron microscopy (STEM), is now in widespread use in the physical and biological sciences. And its importance will only grow as nanotechnology and nano-Biology continue to flourish. Many applications of electron microscopy are testing the limits of current imaging capabilities and highlight the need for further technological improvements. For example, high throughput in the combinatorial chemical synthesis of catalysts demands automated imaging. The handling of noisy data also calls for new approaches, particularly because low electron doses are used for sensitive samples such as biological and organic specimens.
 >
@@ -59,20 +73,20 @@ We even got a nice review in <a href="http://www.physicstoday.org/resource/1/pht
 >(Les J. Allen, Physics Today, Vol. 65 (5), May, 2012)
 
 <table style="border:0;width:60%;background-color:white;margin-left:auto;margin-right:auto;">
-<tr>
-<td style="text-align:center;border:0;"><a href="https://www.dropbox.com/s/r0km64pjww3t2ad/9781461421900-t1.pdf">Table of contents</a></td>
-<td style="text-align:center;border:0;"><a href="https://www.dropbox.com/s/1pht0o9phgrqxs2/9781461421900-p1.pdf">Preface</a></td>
-<td style="text-align:center;border:0;"><a href="https://www.dropbox.com/s/jvls6m0u71xg9m1/9781461421900-c1.pdf">Sample chapter</a></td>
-</tr>
-<tr>
-<td style="border:0px solid black;width:30%;text-align:center;vertical-align:middle; padding:5px;">
-<a href="https://www.dropbox.com/s/r0km64pjww3t2ad/9781461421900-t1.pdf"><img src="http://farm9.staticflickr.com/8164/7610051032_3c31b79cd0_o_d.jpg" style="width:100%; border:1px solid black;"></a>
-</td>
-<td style="border:0px solid black;width:30%;text-align:center;vertical-align:middle; padding:5px;">
-<a href="https://www.dropbox.com/s/1pht0o9phgrqxs2/9781461421900-p1.pdf"><img src="http://farm8.staticflickr.com/7107/7610052080_8f18b01651_o_d.jpg" style="width:100%; border:1px solid black;"></a>
-</td>
-<td style="border:0px solid black;width:30%;text-align:center;vertical-align:middle; padding:5px;">
-<a href="https://www.dropbox.com/s/jvls6m0u71xg9m1/9781461421900-c1.pdf"><img src="http://farm9.staticflickr.com/8428/7610053198_a9797bc43e_o_d.jpg" style="width:100%; border:1px solid black;"></a>
-</td>
-</tr>
+	<tr>
+		<td style="text-align:center;border:0;"><a href="https://www.dropbox.com/s/r0km64pjww3t2ad/9781461421900-t1.pdf">Table of contents</a></td>
+		<td style="text-align:center;border:0;"><a href="https://www.dropbox.com/s/1pht0o9phgrqxs2/9781461421900-p1.pdf">Preface</a></td>
+		<td style="text-align:center;border:0;"><a href="https://www.dropbox.com/s/jvls6m0u71xg9m1/9781461421900-c1.pdf">Sample chapter</a></td>
+	</tr>
+	<tr>
+		<td style="border:0px solid black;width:30%;text-align:center;vertical-align:middle; padding:5px;">
+			<a href="https://www.dropbox.com/s/r0km64pjww3t2ad/9781461421900-t1.pdf"><img src="http://farm9.staticflickr.com/8164/7610051032_3c31b79cd0_o_d.jpg" style="width:100%; border:1px solid black;"></a>
+		</td>
+		<td style="border:0px solid black;width:30%;text-align:center;vertical-align:middle; padding:5px;">
+			<a href="https://www.dropbox.com/s/1pht0o9phgrqxs2/9781461421900-p1.pdf"><img src="http://farm8.staticflickr.com/7107/7610052080_8f18b01651_o_d.jpg" style="width:100%; border:1px solid black;"></a>
+		</td>
+		<td style="border:0px solid black;width:30%;text-align:center;vertical-align:middle; padding:5px;">
+			<a href="https://www.dropbox.com/s/jvls6m0u71xg9m1/9781461421900-c1.pdf"><img src="http://farm9.staticflickr.com/8428/7610053198_a9797bc43e_o_d.jpg" style="width:100%; border:1px solid black;"></a>
+		</td>
+	</tr>
 </table>
