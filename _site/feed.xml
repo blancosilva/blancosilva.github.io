@@ -6,8 +6,8 @@
 </description>
     <link>http://blancosilva.github.io/</link>
     <atom:link href="http://blancosilva.github.io/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Mon, 10 Nov 2014 21:26:07 -0500</pubDate>
-    <lastBuildDate>Mon, 10 Nov 2014 21:26:07 -0500</lastBuildDate>
+    <pubDate>Mon, 10 Nov 2014 23:29:41 -0500</pubDate>
+    <lastBuildDate>Mon, 10 Nov 2014 23:29:41 -0500</lastBuildDate>
     <generator>Jekyll v2.4.0</generator>
     
       <item>
@@ -172,6 +172,10 @@
 		
 		
 		
+		
+		
+		
+		
 	&lt;/div&gt;
 &lt;/div&gt;
 </description>
@@ -188,7 +192,6 @@
         <title>Mathematical Imaging</title>
         <description>&lt;p&gt;Mathematical Imaging (or Image Processing) is a very broad field: it encompasses four main disciplines: &lt;em&gt;Image Compression&lt;/em&gt;, &lt;em&gt;Edition/Restoration&lt;/em&gt;, &lt;em&gt;Image Analysis&lt;/em&gt;, and &lt;em&gt;Acquisition&lt;/em&gt;.  Each of these disciplines are big fields on their own—for instance, within &lt;em&gt;Restoration&lt;/em&gt; we have different problems (noise reduction, intensity adjustment, inpainting, sharpening, deblurring, correction of local distorsions…) and different techniques (based on PDEs, handling of coefficients in different frames, variational techniques, etc).  In the following pages we will explore some basic ideas and show some examples to illustrate how different branches of Mathematics can help you accomplish these tasks.&lt;/p&gt;
 
-&lt;p style=&quot;text-align:center;&quot;&gt;
 &lt;div class=&quot;col-sm-8&quot;&gt;
 	&lt;div class=&quot;list-group&quot;&gt;
 		&lt;a href=&quot;#&quot; class=&quot;list-group-item active&quot;&gt;Selected Lectures — Click on each title below for corresponding material&lt;/a&gt;
@@ -319,15 +322,18 @@
 		
 		
 		
+		
+		
+		
+		
 	&lt;/div&gt;
 &lt;/div&gt;
-&lt;div&gt;
-&lt;iframe style=&quot;width:120px;height:240px;&quot; marginwidth=&quot;0&quot; marginheight=&quot;0&quot; scrolling=&quot;no&quot; frameborder=&quot;0&quot; src=&quot;//ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&amp;amp;OneJS=1&amp;amp;Operation=GetAdHtml&amp;amp;MarketPlace=US&amp;amp;source=ac&amp;amp;ref=tf_til&amp;amp;ad_type=product_link&amp;amp;tracking_id=blancosilva-20&amp;amp;marketplace=amazon&amp;amp;region=US&amp;amp;placement=1439840458&amp;amp;asins=1439840458&amp;amp;linkId=FLHP4DLYSOTMF7XN&amp;amp;show_border=false&amp;amp;link_opens_in_new_window=true&quot;&gt;
-&lt;/iframe&gt;
-&lt;iframe style=&quot;width:120px;height:240px;&quot; marginwidth=&quot;0&quot; marginheight=&quot;0&quot; scrolling=&quot;no&quot; frameborder=&quot;0&quot; src=&quot;//ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&amp;amp;OneJS=1&amp;amp;Operation=GetAdHtml&amp;amp;MarketPlace=US&amp;amp;source=ac&amp;amp;ref=tf_til&amp;amp;ad_type=product_link&amp;amp;tracking_id=blancosilva-20&amp;amp;marketplace=amazon&amp;amp;region=US&amp;amp;placement=0898712742&amp;amp;asins=0898712742&amp;amp;linkId=5SAE7JVTIDWJ4NCT&amp;amp;show_border=false&amp;amp;link_opens_in_new_window=true&quot;&gt;
-&lt;/iframe&gt;
+&lt;div class=&quot;col-sm-4&quot;&gt;
+	&lt;iframe style=&quot;width:120px;height:240px;&quot; marginwidth=&quot;0&quot; marginheight=&quot;0&quot; scrolling=&quot;no&quot; frameborder=&quot;0&quot; src=&quot;//ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&amp;amp;OneJS=1&amp;amp;Operation=GetAdHtml&amp;amp;MarketPlace=US&amp;amp;source=ac&amp;amp;ref=tf_til&amp;amp;ad_type=product_link&amp;amp;tracking_id=blancosilva-20&amp;amp;marketplace=amazon&amp;amp;region=US&amp;amp;placement=1439840458&amp;amp;asins=1439840458&amp;amp;linkId=FLHP4DLYSOTMF7XN&amp;amp;show_border=false&amp;amp;link_opens_in_new_window=true&quot;&gt;
+	&lt;/iframe&gt;
+	&lt;iframe style=&quot;width:120px;height:240px;&quot; marginwidth=&quot;0&quot; marginheight=&quot;0&quot; scrolling=&quot;no&quot; frameborder=&quot;0&quot; src=&quot;//ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&amp;amp;OneJS=1&amp;amp;Operation=GetAdHtml&amp;amp;MarketPlace=US&amp;amp;source=ac&amp;amp;ref=tf_til&amp;amp;ad_type=product_link&amp;amp;tracking_id=blancosilva-20&amp;amp;marketplace=amazon&amp;amp;region=US&amp;amp;placement=0898712742&amp;amp;asins=0898712742&amp;amp;linkId=5SAE7JVTIDWJ4NCT&amp;amp;show_border=false&amp;amp;link_opens_in_new_window=true&quot;&gt;
+	&lt;/iframe&gt;
 &lt;/div&gt;
-&lt;/p&gt;
 </description>
         <pubDate>Sat, 08 Nov 2014 00:00:00 -0500</pubDate>
         <link>http://blancosilva.github.io/course/2014/11/08/Mathematical-Imaging.html</link>
