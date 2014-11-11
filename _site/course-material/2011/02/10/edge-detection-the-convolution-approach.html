@@ -327,12 +327,12 @@
 
 <div class="container theme-showcase" role="main" style="font-size: 16px; base-line-height: 1.5; font-family: Helvetica, Arial, sans-serif; spacing-unit: 30px; line-height: 20px;">
 
-  <header class="post-header">
-    <h1 class="post-title">Edge detection: The Convolution Approach</h1>
-  </header>
+	<header class="post-header">
+		<h1 class="post-title">Edge detection: The Convolution Approach</h1>
+	</header>
 
-  <article class="post-content">
-    <p>Today I would like to show a very basic technique of detection based on simple convolution of an image with small kernels (masks). The purpose of these kernels is to enhance certain properties of the image at each pixel.  What properties?  Those that define what means to be an edge, in a differential calculus way—exactly as it was defined in the description of the <a href="http://blancosilva.github.io/course-material/2011/01/17/edge-detection.html">Canny edge detector</a>.  The big idea is to assign to each pixel a numerical value that expresses its <em>strength as an edge</em>: positive if we suspect that such structure is present at that location, negative if not, and zero if the image is locally flat around that point.  Masks can be designed so that they mimic the effect of differential operators, but these can be terribly complicated and give rise to large matrices.  The first approaches were performed with simple <span>\( 3 \times 3 \)</span> kernels.  For example, Faler came up with the following four simple masks that emulate differentiation:</p>
+	<article class="post-content">
+		<p>Today I would like to show a very basic technique of detection based on simple convolution of an image with small kernels (masks). The purpose of these kernels is to enhance certain properties of the image at each pixel.  What properties?  Those that define what means to be an edge, in a differential calculus way—exactly as it was defined in the description of the <a href="http://blancosilva.github.io/course-material/2011/01/17/edge-detection.html">Canny edge detector</a>.  The big idea is to assign to each pixel a numerical value that expresses its <em>strength as an edge</em>: positive if we suspect that such structure is present at that location, negative if not, and zero if the image is locally flat around that point.  Masks can be designed so that they mimic the effect of differential operators, but these can be terribly complicated and give rise to large matrices.  The first approaches were performed with simple <span>\( 3 \times 3 \)</span> kernels.  For example, Faler came up with the following four simple masks that emulate differentiation:</p>
 
 <div>
 	\begin{equation}
@@ -405,7 +405,25 @@ Prewitt = [ [[1,1,1],[1,-2,1],[-1,-1,-1]],
 	    [[1,1,1],[-1,-2,1],[-1,-1,1]] ]</code></pre></div>
 
 
-  </article>
+	</article>
+
+	
+	<!-- Add Disqus comments. -->
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+  /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+  var disqus_shortname = 'eseprimo'; 
+
+  /* * * DON'T EDIT BELOW THIS LINE * * */
+  (function() {
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+  })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+	
 
 </div>
 

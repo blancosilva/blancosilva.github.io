@@ -327,12 +327,12 @@
 
 <div class="container theme-showcase" role="main" style="font-size: 16px; base-line-height: 1.5; font-family: Helvetica, Arial, sans-serif; spacing-unit: 30px; line-height: 20px;">
 
-  <header class="post-header">
-    <h1 class="post-title">Edge detection: The Scale Space Theory</h1>
-  </header>
+	<header class="post-header">
+		<h1 class="post-title">Edge detection: The Scale Space Theory</h1>
+	</header>
 
-  <article class="post-content">
-    <p>Consider an image as a bounded function <span>\( f: \square_2 \to \mathbb{R} \)</span> with no smoothness or structure assumptions a priori.  Most relevant information of a given image is contained in the contours of the mapped objects: Think for example of a bright object against a dark background—the area where these two meet presents a curve where the intensity <span>\( f(\boldsymbol{x}) \)</span> varies strongly.  This is what we refer to as an “edge.”</p>
+	<article class="post-content">
+		<p>Consider an image as a bounded function <span>\( f: \square_2 \to \mathbb{R} \)</span> with no smoothness or structure assumptions a priori.  Most relevant information of a given image is contained in the contours of the mapped objects: Think for example of a bright object against a dark background—the area where these two meet presents a curve where the intensity <span>\( f(\boldsymbol{x}) \)</span> varies strongly.  This is what we refer to as an “edge.”</p>
 
 <p>Initially, we may consider the process of detection of an edge by the simple computation of the gradient <span>\( \nabla f(\boldsymbol{x}) = \big( \tfrac{\partial f}{\partial x_1}, \tfrac{\partial f}{\partial x_2} \big): \)</span>  This gradient should have a large intensity <span>\( \lVert \nabla f(\boldsymbol{x}) \rVert \)</span> and a direction <span>\( \tfrac{\nabla f(\boldsymbol{x})}{\lVert \nabla f(\boldsymbol{x}) \rVert} \)</span> which indicates the perpendicular to the curve.  It therefore looks sound to simply compute the gradient of <span>\( f \)</span> and choose the points where these values are <em>large</em>.   This conclusion is a bit unrealistic for two reasons:</p>
 
@@ -593,7 +593,25 @@
 
 <p>Note that the first and second derivatives <em>seem to have switched places</em>.  One needs to be very careful when dealing with matrices of numbers, since the logical position of the pixels depends very heavily the software/language/libraries that handles them.  With <code>sage</code> this is a constant issue, especially since we might be using different (and unrelated) libraries to deal with the same objects.</p>
 
-  </article>
+	</article>
+
+	
+	<!-- Add Disqus comments. -->
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+  /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+  var disqus_shortname = 'eseprimo'; 
+
+  /* * * DON'T EDIT BELOW THIS LINE * * */
+  (function() {
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+  })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+	
 
 </div>
 

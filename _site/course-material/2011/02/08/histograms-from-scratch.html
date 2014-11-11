@@ -327,12 +327,12 @@
 
 <div class="container theme-showcase" role="main" style="font-size: 16px; base-line-height: 1.5; font-family: Helvetica, Arial, sans-serif; spacing-unit: 30px; line-height: 20px;">
 
-  <header class="post-header">
-    <h1 class="post-title">Histograms (from scratch)</h1>
-  </header>
+	<header class="post-header">
+		<h1 class="post-title">Histograms (from scratch)</h1>
+	</header>
 
-  <article class="post-content">
-    <p>The purpose of this post is to show how histogram equalization improves the quality of digital images:  After performing this basic procedure, it will look like new gray scales have been brought up.  The truth is that no new gray levels have been introduced: we have simply altered the same gray scales already present in the original, in a way that every value has approximately the same impact.  This gives the illusion of darkening bright images, bringing brightness to dark ones, and discovering hidden texture in a priori flat areas.</p>
+	<article class="post-content">
+		<p>The purpose of this post is to show how histogram equalization improves the quality of digital images:  After performing this basic procedure, it will look like new gray scales have been brought up.  The truth is that no new gray levels have been introduced: we have simply altered the same gray scales already present in the original, in a way that every value has approximately the same impact.  This gives the illusion of darkening bright images, bringing brightness to dark ones, and discovering hidden texture in a priori flat areas.</p>
 
 <p>Let us build the whole project from the ground up, and in the process, illustrate the notion of histogram, as well as the use of many commands for manipulation of arrays and lists in <code>sage</code>.</p>
 
@@ -415,7 +415,25 @@
 
 <p>Note the obvious sharpening of details, albeit the apparent presence of noise where before the image seemed flat.  This <em>noise</em>—that we can appreciate for example in the hat or walls—actually reveals a richer texture of the materials photographed.  These tectures were not observable directly in the original.  Note as well the accentuation of the brightest areas, producing an image with better contrast.  I am sure the reader will find some more qualitative improvement in the histogram-equalization version of the image.  Working on a set of dark images will reveal even more surprising benefits of this technique.</p>
 
-  </article>
+	</article>
+
+	
+	<!-- Add Disqus comments. -->
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+  /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+  var disqus_shortname = 'eseprimo'; 
+
+  /* * * DON'T EDIT BELOW THIS LINE * * */
+  (function() {
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+  })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+	
 
 </div>
 
