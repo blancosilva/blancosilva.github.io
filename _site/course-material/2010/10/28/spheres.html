@@ -9,7 +9,7 @@
 ">
 	<meta name="author" content="">
 
-	<title>Past Sections of Undergraduate Calculus</title>
+	<title>Spheres</title>
 
 	<!-- Bootstrap core CSS -->
 	<link href="/css/bootstrap.min.css" rel="stylesheet">
@@ -331,180 +331,46 @@
 <div class="container theme-showcase" role="main" style="font-size: 16px; base-line-height: 1.5; font-family: Helvetica, Arial, sans-serif; spacing-unit: 30px; line-height: 20px;">
 
   <header class="post-header">
-    <h1 class="post-title">Past Sections of Undergraduate Calculus</h1>
+    <h1 class="post-title">Spheres</h1>
   </header>
 
   <article class="post-content">
-    <div class="alert alert-success" role="alert">
-	Click on each course to retrieve corresponding syllabus and lesson plan.
+    <p>The unit sphere in any <span>\( d \)</span>–dimensional space <span>\( \mathbb{R}^d \)</span> is defined to be the set <span>\( \mathbb{S}_{d-1} = \big\{ (x_1,x_2,\dotsc,x_d) \in \mathbb{R}^d : \sum_{k=1}^d x_k^2=1 \big\}. \)</span>  The 1-dimensional sphere is, of course, the circle, that we can parametrize by angles:</p>
+
+<div>
+\begin{equation}
+ \varphi \colon [0,2\pi) \in \theta \mapsto e^{i\theta} = \cos \theta + i \sin \theta \equiv (\cos \theta, \sin \theta) \in \mathbb{S}_1 
+ \end{equation}
 </div>
 
-<div class="col-sm-8">
-	<div class="list-group">
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		<a href="/course/2014/05/31/ma141-summer-2014.html#" class="list-group-item">
-			<h4 class="list-group-item-heading">MA141—Summer 2014</h4>
-			<p class="list-group-item-text">Calculus I</p>
-		</a>
-		
-		
-		
-		
-		
-		
-		
-		<a href="/course/2014/01/06/ma141-spring-2014.html#" class="list-group-item">
-			<h4 class="list-group-item-heading">MA141—Spring 2014</h4>
-			<p class="list-group-item-text">Calculus I</p>
-		</a>
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		<a href="/course/2013/08/20/ma141-fall-2013.html#" class="list-group-item">
-			<h4 class="list-group-item-heading">MA141—Fall 2013</h4>
-			<p class="list-group-item-text">Calculus I</p>
-		</a>
-		
-		
-		
-		<a href="/course/2013/08/19/ma122-fall-2013.html#" class="list-group-item">
-			<h4 class="list-group-item-heading">MA122—Fall 2013</h4>
-			<p class="list-group-item-text">Applied Calculus for Business and Life Sciences</p>
-		</a>
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		<a href="/course/2013/01/10/ma122-spring-2013.html#" class="list-group-item">
-			<h4 class="list-group-item-heading">MA122—Spring 2013</h4>
-			<p class="list-group-item-text">Applied Calculus for Business and Life Sciences</p>
-		</a>
-		
-		
-		
-		<a href="/course/2013/01/10/ma141-spring-2013.html#" class="list-group-item">
-			<h4 class="list-group-item-heading">MA141—Spring 2013</h4>
-			<p class="list-group-item-text">Calculus I</p>
-		</a>
-		
-		
-		
-		<a href="/course/2013/01/08/ma241-spring-2013.html#" class="list-group-item">
-			<h4 class="list-group-item-heading">MA241—Spring 2013</h4>
-			<p class="list-group-item-text">Vector Calculus</p>
-		</a>
-		
-		
-		
-		<a href="/course/2012/08/17/ma242-fall-2012.html#" class="list-group-item">
-			<h4 class="list-group-item-heading">MA242—Fall 2012</h4>
-			<p class="list-group-item-text">Differential Equations</p>
-		</a>
-		
-		
-		
-		<a href="/course/2012/08/17/ma241-fall-2012.html#" class="list-group-item">
-			<h4 class="list-group-item-heading">MA241—Fall 2012</h4>
-			<p class="list-group-item-text">Vector Calculus</p>
-		</a>
-		
-		
-		
-		<a href="/course/2012/08/15/ma141-fall-2012.html#" class="list-group-item">
-			<h4 class="list-group-item-heading">MA141—Fall 2012</h4>
-			<p class="list-group-item-text">Calculus I</p>
-		</a>
-		
-		
-		
-		
-		
-		<a href="/course/2012/06/26/ma142-summer-ii-2012.html#" class="list-group-item">
-			<h4 class="list-group-item-heading">MA142—Summer II 2012</h4>
-			<p class="list-group-item-text">Calculus II</p>
-		</a>
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-	</div>
-</div>
+<p>While understanding the definition of homeomorphism, we worked on such a map from a disk <span>\( D_2 \)</span> to a square <span>\( \square_2. \)</span>  In this section we are going to use this idea to establish a homeomorphism between the 2-dimensional sphere <span>\( \mathbb{S}_2 \subset \mathbb{R}^3 \)</span>, and the quotient space formed by a proper identification of points in the border of a square <span>\( \square_2 \subset \mathbb{R}^2. \)</span>  The construction goes as follows:</p>
+
+<ol>
+  <li>Scale the unit sphere by a half, and shift it vertically up by half unit, so the center is at <span>\( (0,0,\frac{1}{2}). \)</span></li>
+  <li>The plane <span>\( { x_3=0} \)</span> intersects this sphere at the origin.  We identify this point with the center of the disk <span>\( D_2. \)</span></li>
+  <li>For each <span>\( 0 \leq \lambda &lt; 1, \)</span> the horizontal plane <span>\( {x_3=\lambda} \)</span> intersects this sphere in the circle <span>\( \big\{ (x_1,x_2,\lambda) \in \mathbb{R}^3 : x_1^2 + x_2^2 + (\lambda - \frac{1}{2})^2 = \frac{1}{4} \big\}: \)</span> the center is at <span>\( (0,0,\lambda), \)</span> and the radius is <span>\( \sqrt{\frac{1}{4}-(\lambda-\frac{1}{2})^2}. \)</span><br />
+We consider a map that scales this circle to that of radius <span>\( \lambda, \)</span> and “places it” on the unit disk <span>\( D_2 \)</span> in a natural way.  So far, the map so constructed is injective, onto and continuous.</li>
+  <li>
+    <p>The issue now is what to do with the last non-void intersection of the sphere with horizontal planes.  This happens at the horizontal plane <span>\( { x_3 = 1}, \)</span> and the result is the only point <span>\( (0,0,1). \)</span>  We overcome this situation by mapping the whole point into the last circle in <span>\( D_2 \)</span>, and identifying the whole circle.  We accomplish this by creating the equivalence relation <span>\( (x_1,x_2) \sim (y_1,y_2) \)</span> defined by the following rules:</p>
+
+    <ol>
+      <li><span>\( x_1=y_1 \)</span> and <span>\( x_2=y_2, \)</span> or</li>
+      <li><span>\( x_1^2+x_2^2=y_1^2+y_2^2=1. \)</span></li>
+    </ol>
+  </li>
+</ol>
+
+<p>We have thus created a homeomorphism <span>\( \varphi_1 \colon \mathbb{S}_2 \to D_2. \)</span>  Compose this with an homeomorphism <span>\( \varphi \colon D_2 \to \square_2, \)</span> and notice that the equivalence relation defined above turns into the equivalence relation <span>\( (x_1,x_2) \sim (y_1,y_2) \)</span> defined by the following rules:</p>
+
+<ol>
+  <li><span>\( x_1=y_1 \)</span> and <span>\( x_2=y_2 \)</span>, or</li>
+  <li><span>\( \mathop{\text{max}}\big(\lvert x_1\rvert, \lvert x_2\rvert \big) = \mathop{\text{max}}\big( \lvert y_1\rvert, \lvert y_2\rvert \big) = 1. \)</span></li>
+</ol>
+
+<p>Graphically, we represent this set with the diagram below:</p>
+
+<p style="text-align:center;"><img src="http://farm2.static.flickr.com/1411/5124471675_8a5419827d_o_d.jpg" />
+</p>
 
   </article>
 
