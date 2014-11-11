@@ -11,6 +11,10 @@ stackoverflow_username: users/4159070/francisco-javier-blanco-silva
 facebook_username: eseprimo
 flickr_username: eseprimo
 linkedin_username: francisco-blanco-silva/1b/887/870
+comments:
+  provider: disqus
+  disqus:
+    short_name: eseprimo
 
 # Build settings
 markdown: kramdown
