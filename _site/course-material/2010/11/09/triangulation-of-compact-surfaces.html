@@ -9,7 +9,7 @@
 ">
 	<meta name="author" content="">
 
-	<title>A nice application of Fatou's Lemma</title>
+	<title>Triangulation of compact surfaces</title>
 
 	<!-- Bootstrap core CSS -->
 	<link href="/css/bootstrap.min.css" rel="stylesheet">
@@ -346,65 +346,50 @@
 <br />
 <br />
 <br />
-<div class="container theme-showcase" role="main" style="font-size:16px; font-family: Helvetica; width:750px; text-align:justify;">
+
+<div class="container theme-showcase" role="main" style="font-size: 16px; base-line-height: 1.5; font-family: Helvetica, Arial, sans-serif; spacing-unit: 30px; line-height: 20px; width:750px; text-align:justify;">
 
 	<header class="post-header">
-		<h1 class="post-title">A nice application of Fatou's Lemma</h1>
-		<p class="post-meta">Jun 1, 2013</p>
+		<h1 class="post-title">Triangulation of compact surfaces</h1>
 	</header>
 
 	<article class="post-content">
-		<p>Let me show you an exciting technique to prove some convergence statements using exclusively functional inequalities and Fatou’s Lemma. The following are two classic problems solved this way. Enjoy!</p>
+		<p>A triangulation of a compact surface <span>\( S \)</span> is a finite family of closed subsets <span>\( { T_1, T_2, \dotsc, T_m} \)</span> that cover <span>\( S, \)</span> and a family of homeomorphisms <span>\( \varphi_k: \mathcal{T} \to T_k \)</span>, where <span>\( \mathcal{T} \subset \mathbb{R}^2 \)</span> is a proper triangle in the plane.  We say that the sets <span>\( T_k \)</span> are triangles as well, and the images by <span>\( \varphi_k \)</span> of a vertex (resp. edge) of the triangle <span>\( \mathcal{T} \)</span> is also called a vertex (resp. edge).  We impose one condition: Given two different triangles <span>\( T_k \)</span> and <span>\( T_j, \)</span> their intersection must be either void, or a common vertex, or a common edge.</p>
 
 <blockquote>
-  <p><strong>Exercise 1.</strong> Let \( {(X, \mathcal{F}, \mu)}\)  be a measurable space and suppose <span>\( \{f_n\}_{n\in \mathbb{N}} \)</span>  is a sequence of measurable functions in \( {L_1(\mu)}\)  that converge almost everywhere to a function \( {f \in L_1(\mu)},\)  and such that the sequence of norms <span>\( \big\{\lVert f_n\rVert_1\big\}_{n \in \mathbb{N}} \)</span>  converges to \( {\lVert f \rVert_1}\) . Prove that the sequence of integrals \( {\int_E \lvert f_n \rvert\, d\mu}\)  converges to the integral \( {\int_E \lvert f \rvert\, d\mu}\)  for every measurable set \( {E}\).</p>
-</blockquote>
+Since the (surface of a) tetrahedron is homeomorphic to the sphere \( \mathbb{S}_2, \) we may consider this as a valid triangulation for the latter.  This triangulation is formed basically by four triangles, four vertices and six edges.
 
-<p><em>Proof:</em>  Note first that</p>
+<table style="width:75%; margin-left:auto; margin-right:auto;">
+<tr>
+<td style="text-align:center;vertical-align:middle;width:50%;"><img src="http://farm5.static.flickr.com/4001/5163063660_2c03604d19_o_d.jpg" width="100%" /></td>
+<td style="text-align:center;vertical-align:middle;width:50%;"><img src="http://farm5.static.flickr.com/4147/5162456723_b2980d9744_o_d.jpg" width="100%" /></td>
+</tr>
+</table>
 
-<p>\[ \displaystyle  \begin{array}{rcl}  \lvert f_n - f\rvert\, \boldsymbol{1}_E \leq \lvert f_n - f \rvert \leq \lvert f_n \rvert + \lvert f \rvert. \end{array}  \]</p>
+The following example shows a triangulation of a torus, performed on the representation of \( \mathbb{T} \) given by the quotient space of the square \( \square_2 \) by the proper identification in the border.  Note that in this representation, all of the vertices of the square are actually the same vertex, which we denote \( P_1. \)  We construct a triangulation by placing two more vertices on the horizontal borders, \( P_2, P_3, \) two more vertices in the vertical borders, \( P_4, P_5, \), four more vertices inside the square, \( P_6, P_7, P_8, P_9, \), and joining all of them with edges, as shown in the image below:
+<table style="width:75%; margin-left:auto; margin-right:auto;">
+<tr>
+<td style="text-align:center;vertical-align:top;width:40%;border-width:0;">
+<img src="http://farm5.static.flickr.com/4086/5161919213_ebf564f5f7_o_d.jpg" width="100%" /></td>
+<td style="text-align:center;vertical-align:middle;width:60%;border-width:0;">
+<img src="http://farm2.static.flickr.com/1202/5165763462_91305e8e7e_o_d.jpg" width="100%" /></td>
+</tr>
+</table>
 
-<p>Set then \( {g_n = \lvert f_n \rvert + \lvert f \rvert - \lvert f_n-f \rvert\, \boldsymbol{1}_E} \) (which are non-negative functions) and apply Fatou’s Lemma to that sequence. We have then</p>
+This gives the following triangles:
 
 <div>
-\begin{gather}
-\int_X \liminf_n g_n\, d\mu \leq \liminf_n \int_X g_n\, d\mu \\ 
-\int_X \liminf_n \big( \lvert f_n \rvert + \lvert f \rvert - \lvert f_n - f \rvert\, \boldsymbol{1}_E \big)\, d\mu \leq \liminf_n \int_X \big( \lvert f_n \rvert + \lvert f \rvert - \lvert f_n - f \rvert\, \boldsymbol{1}_E \big)\, d\mu \\ 
-\int_X \big( 2\lvert f \rvert - \limsup_n \lvert f_n-f \rvert\, \boldsymbol{1}_E\big)\, d\mu \leq \liminf_n \int_X \lvert f_n \rvert\, d\mu + \lVert f \rVert_1 - \limsup_n \int_E \lvert f_n -f \rvert\, d\mu \\ 
-2\lVert f\rVert_1 \leq 2\lVert f \rVert_1 - \limsup_n \int_E \lvert f_n - f\rvert\, d\mu,
-\end{gather}
+\begin{equation} \begin{array}{ccc}P_1P_2P_5 &amp; P_2P_5P_6 &amp; P_2P_3P_6\\P_3P_6P_7 &amp; P_1P_3P_6 &amp; P_1P_5P_7\\P_4P_5P_6 &amp; P_4P_6P_8 &amp; P_6P_7P_8\\P_7P_8P_9 &amp; P_4P_7P_9 &amp; P_4P_5P_7\\P_1P_2P_4 &amp; P_2P_4P_8 &amp; P_2P_3P_8\\P_3P_8P_9 &amp; P_3P_4P_9 &amp; P_1P_3P_4\end{array} 
+\end{equation}
 </div>
-
-<p>which implies</p>
-
-<p>\[ 0 \leq \liminf_n \int_E \lvert f_n-f \rvert\, d\mu \leq \limsup_n \int_E \lvert f_n-f \rvert\, d\mu \leq 0. \]</p>
-
-<p>It must then be \( {\int_E \lvert f_n - f \rvert\, d\mu = 0} \). But this proves the statement, since</p>
-
-<p>\[ \bigg\lvert \int_E \lvert f_n\rvert\, d\mu - \int_E \lvert f \rvert\, d\mu \bigg\rvert = \bigg\lvert \int_E \big( \lvert f_n \rvert - \lvert f \rvert \big)\, d\mu \bigg\rvert \  \leq \int_E \Big\lvert \lvert f_n \rvert - \lvert f \rvert \Big\rvert\, d\mu \leq \int_E \lvert f_n - f \rvert\, d\mu \]</p>
-
-<p>\( \Box \)</p>
-
-<blockquote>
-  <p><strong>Exercise 2.</strong> Let \( {(X, \mathcal{F}, \mu)}\)  be a finite measure space and let \(  1&lt;p&lt;\infty \) . Suppose that <span>\( \{f_n\}_{n \in\mathbb{N}} \)</span> is a sequence of measurable functions in \( L_p(\mu) \)  whose norms are uniformly bounded in \( n \)  and which converges almost everywhere to a function \( f \) . Prove that the sequence <span>\( \big\{ \int_X f_n g\, d\mu \big\}_{n \in \mathbb{N}} \)</span> converges to \( \int_X fg\, d\mu \) for all \( g \in L_q(\mu) \), where \( q \) is the conjugate exponent of \( p \).</p>
 </blockquote>
 
-<p><em>Proof:</em>  The proof is very similar to the previous problem. We start by noticing that under the hypotheses of the problem,</p>
+<p>Two important observations about triangulations of <strong>any</strong> compact surface:</p>
 
-<p>\[ \bigg\lvert \int_x f_ng\, d\mu - \int_X fg\, d\mu \bigg\rvert = \bigg\lvert \int_X (f_n -f)g\, d\mu \bigg\rvert \ \leq \lVert (f_n-f)g \rVert_1 \leq \lVert f_n - f \rVert_p\, \lVert g \rVert_q. \]</p>
-
-<p>If we prove that \( {\lim_n \lVert f_n-f \rVert_p = 0} \), we are done.</p>
-
-<p>We will achieve this by using the convexity of \( {\lvert \cdot \rvert^p} \), since in that case it is</p>
-
-<p>\[ \frac{\lvert f_n - f \rvert^p}{2^p} \leq \tfrac{1}{2} \lvert f_n \rvert^p + \tfrac{1}{2} \lvert f \rvert^p. \]</p>
-
-<p>hence,</p>
-
-<p>\[ \lvert f_n -f \rvert^p \leq 2^{p-1} \big( \lvert f_n \rvert^p + \lvert f \rvert^p \big). \]</p>
-
-<p>Set then \( {g_n = 2^{p-1} \big( \lvert f_n\rvert^p + \lvert f \rvert^p\big) - \lvert f_n-f \rvert^p} \) (which are non-negative functions) and apply Fatou’s Lemma as before. \( \Box \)</p>
-
+<ul>
+  <li>Each edge belongs to exactly two triangles.  This is due to the fact that the surfaces have at every point, a neighborhood that is homeomorphic to an open ball.</li>
+  <li>Given a vertex <span>\( v \)</span> in a proper triangulation, it is possible to sort all the triangles that share than vertex, say clock or counterclockwise, in such a way that two consecutive triangles share a common edge. This is a direct consequence of the previous observation, and the fact that the union of all the triangles sharing a common vertex must be a connected set.</li>
+</ul>
 
 	</article>
 
@@ -424,8 +409,8 @@
         <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
         
 	
-</div>
 
+</div>
 
 <script type="text/javascript"
 src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">

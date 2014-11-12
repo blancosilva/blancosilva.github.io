@@ -1,7 +1,6 @@
 ---
 layout: page
 title: The Real Projective Plane
-date: 2010-10-28 16:08:19.000000000 -04:00
 category: course-material
 comments: true
 topic: topology

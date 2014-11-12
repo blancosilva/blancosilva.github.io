@@ -12,22 +12,17 @@ For any topological space <span>\\( X \\)</span> and any point <span>\\( x_0 \in
 
 This helps us construct a solid theory where (some) topological properties are turned into algebraic properties of the corresponding groups, hence establishing some sort of dictionary between different mathematical languages. This is the basic strategy of Algebraic Topology.
 
-<div class="col-sm-8">
-	<div class="list-group">
-		<a href="#" class="list-group-item active">Selected Lectures — Click on each title below for corresponding material</a>
-		{% for post in site.posts %}
-		{% if post.category == "course-material" and post.topic == "topology" %}
-		<a href="{{ post.url | prepend: side.baseurl }}" class="list-group-item">
-			<h4 class="list-group-item-heading">{{ post.title }}</h4>
-		</a>
-		{% endif %}
-		{% endfor %}
+<div class="row">
+	<div class="col-sm-12">
+		<div class="list-group">
+			<a href="#" class="list-group-item active">Selected Lectures — Click on each title below for corresponding material</a>
+			{% for post in site.posts %}
+			{% if post.category == "course-material" and post.topic == "topology" %}
+			<a href="{{ post.url | prepend: side.baseurl }}" class="list-group-item">
+				<h4 class="list-group-item-heading">{{ post.title }}</h4>
+			</a>
+			{% endif %}
+			{% endfor %}
+		</div>
 	</div>
 </div>
-<div class="col-sm-4">
-	<iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=US&source=ac&ref=tf_til&ad_type=product_link&tracking_id=blancosilva-20&marketplace=amazon&region=US&placement=038797430X&asins=038797430X&linkId=UZP4SPXT5RVNSESG&show_border=false&link_opens_in_new_window=true">
-	</iframe>
-	<iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=US&source=ac&ref=tf_til&ad_type=product_link&tracking_id=blancosilva-20&marketplace=amazon&region=US&placement=0387902716&asins=0387902716&linkId=XJSHYGQNUKYI6ESG&show_border=false&link_opens_in_new_window=true">
-	</iframe>
-</div>
-

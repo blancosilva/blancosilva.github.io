@@ -1,7 +1,6 @@
 ---
 layout: page
 title: Homeomorphisms
-date: 2010-10-27 15:28:47.000000000 -04:00
 category: course-material
 topic: topology
 comments: true
