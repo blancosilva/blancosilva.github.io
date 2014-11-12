@@ -9,7 +9,7 @@
 ">
 	<meta name="author" content="">
 
-	<title>The Cantor Set</title>
+	<title>Sequence of right triangles</title>
 
 	<!-- Bootstrap core CSS -->
 	<link href="/css/bootstrap.min.css" rel="stylesheet">
@@ -389,82 +389,97 @@
 <div class="container theme-showcase" role="main" style="font-size:16px; font-family: Helvetica; width:750px; text-align:justify;">
 
 	<header class="post-header">
-		<h1 class="post-title">The Cantor Set</h1>
-		<p class="post-meta">Oct 22, 2010</p>
+		<h1 class="post-title">Sequence of right triangles</h1>
+		<p class="post-meta">Nov 22, 2010</p>
 	</header>
 
 	<article class="post-content">
-		<p>Consider the unit interval in the real line, <span>\( [0,1] \)</span>, and remove the <em>middle third open subinterval</em> <span>\( (1/3, 2/3) \)</span>.  We have the closed set <span>\( C_1 = [0,1/3] \cup [2/3,1] \)</span>, which is the union of two closed intervals.  In a second step, remove the <em>middle third open subintervals</em> of each of the previous two intervals in <span>\( C_1 \)</span>, to obtain the closed set <span>\( C_2 = [0,1/9] \cup [2/9,1/3] \cup [2/3, 7/9] \cup [8/9,1] \)</span>.</p>
-
-<p>The image below illustrates this procedure with the three sets constructed so far.</p>
-
-<p style="margin-left:auto; margin-right:auto; text-align:center;"><img title="Three steps into the Cantor set" src="http://farm2.static.flickr.com/1155/5105641217_ec5cf35a93_o_d.jpg" alt="" /></p>
-
-<p>We iterate this procedure, thus constructing on each step a new closed set <span>\( C_n \)</span> by removal of <em>middle third open subintervals</em> from the previous set <span>\( C_{n-1} \)</span>.  Equivalently, the operation can be described as: <em>take the union of the previous set, with a shift of it by two units, and scale them down by one-third.</em>  We can write then <span>\( C_{n+1} = \frac{1}{3} \big( C_n \cup (2+C_n) \big) \)</span> for each <span>\( n \in \mathbb{N}. \)</span>  Notice that <span>\( C_{n+1} \subset C_n. \)</span></p>
-
-<p>This process is permitted to continue indefinitely.  At the limit, we have removed from the unit interval a countable number of open subintervals; therefore, the resulting set <span>\( \mathfrak{C} = \cap_{n \in \mathbb{N}} C_n \)</span> must be closed.  This is what we call the <strong>Cantor set.</strong></p>
-
-<h3 id="structure-of-the-cantor-set">Structure of the Cantor set</h3>
-
-<h4 id="empty">Empty?</h4>
-
-<p>Notice that the Cantor set is not empty: the numbers <span>\( 0 \)</span>, <span>\( \frac{1}{9} \)</span>, <span>\( \frac{2}{9} \)</span>, <span>\( \frac{1}{3} \)</span>, <span>\( \frac{2}{3} \)</span>, <span>\( \frac{7}{9} \)</span>, <span>\( \frac{8}{9} \)</span> and <span>\( 1 \)</span> all belong in <span>\( \mathfrak{C} \)</span>.  As a matter of fact, if <span>\( x \in \mathfrak{C} \)</span>, then either <span>\( 3x \in \mathfrak{C} \)</span> or <span>\( 3x-2 \in \mathfrak{C}, \)</span> (or both!) which indicates that there are infinitely many elements in the Cantor set.  We will use this fact below.</p>
-
-<h4 id="measure">Measure</h4>
-
-<p>Let us measure the Cantor set: The unit interval measures one unit.  In the first step, we have removed a subinterval of size <span>\( \frac{1}{3} \)</span>; hence, <span>\( C_1 \)</span> measures <span>\( 1 - \frac{1}{3} = \frac{2}{3} \)</span>.  In the second step, we have removed from <span>\( C_1 \)</span> two subintervals of size <span>\( \frac{1}{9} \)</span>; hence <span>\( C_2 \)</span> measures <span>\( 1 - \frac{1}{3} - \frac{2}{9} = \frac{4}{9} \)</span> units. In the <span>\( n \)</span>th step, we remove from <span>\( C_{n-1} \)</span> as many as <span>\( 2^{n-1} \)</span> subintervals of size <span>\( \frac{1}{3^n} \)</span>; therefore, the size of <span>\( C_n \)</span> is <span>\( 1 - \sum_{k=1}^n \frac{2^{k-1}}{3^k} \)</span> units.  At the limit, the Cantor set has therefore size</p>
-
-<div>
-\begin{equation}
- 1 - \displaystyle{\sum_{k=1}^\infty \frac{1}{2} \bigg( \frac{2}{3} \bigg)^k} = 1 - \frac{1}{2}\cdot \frac{\frac{2}{3}}{1 - \frac{2}{3}} = 0. 
- \end{equation}
-</div>
-
-<p>How is that possible?</p>
-
-<h4 id="cardinality">Cardinality</h4>
-
-<p>By definition, <span>\( z \in \mathfrak{C} \)</span> if and only if <span>\( z \in C_n \)</span> for all <span>\( n \in \mathbb{N}. \)</span>  This means, in particular, that we can find <span>\( x \in [0,1] \)</span> such that  for any <span>\( n \in \mathbb{N} \)</span>, there will be an <span>\( n \)</span>–tuple <span>\( (\lambda_1, \lambda_2, \dotsc, \lambda_n) \)</span> with <span>\( \lambda_k \in\{0,2\} \)</span> satisfying</p>
-
-<div>
-\begin{equation}
- z = \displaystyle{ \frac{x}{3^n} + \frac{1}{3^n} \sum_{k=1}^n 3^{k-1}\lambda_k }. 
- \end{equation}
-</div>
-
-<p>Equivalently, for each <span>\( z \in \mathfrak{C} \)</span> and any <span>\( \varepsilon &gt; 0 \)</span> there is some <span>\( N=N(z,\varepsilon) \in \mathbb{N} \)</span> and an <span>\( N \)</span>-tuple <span>\( (\lambda_1, \lambda_2, \dotsc, \lambda_N) \)</span> with <span>\( \lambda_k \in \{0,2\}, \)</span> such that <span>\( \big\lvert z - 3^{-N}\sum_{k=1}^N 3^{k-1}\lambda_k \big\rvert &lt; \varepsilon. \)</span>   It should be no trouble to prove that this property defines every element of the Cantor set.</p>
-
-<p>For example, consider the sequence <span>\( \{ \lambda_n \}_{n \in \mathbb{N}} \)</span> with <span>\( \lambda_{2k}=2 \)</span> and <span>\( \lambda_{2k+1}=0 \)</span> for all <span>\( k \in \mathbb{N} \)</span>.  The sequence of partial sums <span>\( x_n = 3^{-n} \sum_{k=1}^n 3^{k-1}\lambda_k \)</span> is convergent, with <span>\( \lim_n x_n = \frac{3}{4}. \)</span></p>
-
-<p>Indeed, notice that</p>
-
-<div>
-\begin{align} 
-x_{2n} &amp;= \displaystyle{3^{-2n}\sum_{k=1}^{2n}3^{k-1}\lambda_{2k}} = \displaystyle{2\cdot 3^{-2n}\sum_{k=1}^n 3^{2k-1}}\\
-&amp;= \displaystyle{2\cdot 3^{-2n-1}\sum_{k=1}^n 9^k} = \displaystyle{2\cdot 3^{-2n-1}\frac{9^{n+1}-9}{8}}\\
-&amp;= \displaystyle{\frac{3}{4} \bigg(1-\frac{1}{3^{2n}}\bigg)}.
-\end{align}
-</div>
-
-<p>We have them proven that <span>\( \frac{3}{4} \)</span> is in the Cantor set, although it is not the endpoint of any of the removed subintervals in the original construction!</p>
-
-<p>This is an alternative way to describe all numbers in the Cantor set:</p>
-
-<blockquote>
-  <p>\( z \in \mathfrak{C} \) if and only there exists a sequence \( (\lambda_n)_{n \in \mathbb{N}} \) with \( \lambda_n \in \{0,2\} \) for all \( n \in \mathbb{N} \), such that the partial sum sequence \( x_n = 3^{-n} \sum_{k=1}^n 3^{k-1}\lambda_k \) converges to \( z. \)</p>
+		<blockquote>
+<p>Consider the right triangle \\(\triangle_1 \\) with vertices at \\((0,0) \\), \\((0,1) \\), and \\((1,1). \\)  Note that the angle at the origin is \\(\frac{\pi}{4}. \\)  Use the hypotenuse of \\(\triangle_1 \\) as one of the legs of another right triangle, \\(\triangle_2, \\) with an angle of \\(\frac{\pi}{8} \\) at the origin, and whose second leg extends towards the \\(x \\)–axis.  Continue constructing adjacent right triangles \\(\triangle_n \\) in the same fashion, with one leg supported on the hypothenuse of the previous right triangle \\(\triangle_{n-1}, \\) with angle \\(\frac{\pi}{2^{n+1}} \\) at the origin, and with a second leg extending towards the \\(x \\)–axis.</p>
+<p>Note that, since the angles at the origin form the series \\(\sum_{n=2}^\infty \frac{\pi}{2^n}, \\) (that add up to \\(\frac{\pi}{2} \\)) the limit of the previous process is an actual segment on the \\(x \\)–axis.</p>
+<ol>
+<li>What is the length of this segment?</li>
+<li>Find an equation in polar coordinates \\((\rho,\theta) \\) of a curve passing through all the vertices of the resulting triangles, except possibly \\((0,0). \\)</li>
+<li>Find an equation for that curve in rectangular coordinates.</li>
+</ol>
 </blockquote>
 
-<p>We will use this description to construct an injective map <span>\( \phi \colon [0,1] \to \mathfrak{C}, \)</span> thus proving that the cardinality of the Cantor set is the same as that of the unit interval (and therefore, the Cantor set is uncountable!)</p>
+<p style="text-align:center;"><img src="http://farm6.static.flickr.com/5127/5200460444_a4f4b16a39_o_d.jpg" alt="" width="60%" /></p>
 
-<p>Let us use the density of dyadic fractions: for each <span>\( x\in [0,1) \)</span> and <span>\( \varepsilon&gt; 0 \)</span>, find a dyadic number <span>\( d_{k,n}=k2^{-n} \)</span> with <span>\( k \in \{0,1,2,\dotsc, 2^n-1\} \)</span> such that <span>\( \lvert x-k2^{-n} \rvert &lt; \varepsilon. \)</span>  We write <span>\( k \)</span> in its (unique) base-two expression as <span>\( k=\mu_0 + 2\mu_1+ \dotsb + 2^{n-1}\mu_{n-1} \)</span> with values <span>\( \mu_j \in \{0,1\} \)</span> for all <span>\( j\in \{0,1, \dotsc,n-1\}. \)</span>  It is then <span>\( d_{k,n} = 2^{-n}\sum_{k=1}^{n-1} 2^k\mu_k. \)</span></p>
-
-<p>A similar reasoning as above shows that any number in the unit interval can be realized as the limit of a partial sum of a sequence <span>\( x_n = 2^{-n} \sum_{k=0}^{n-1} 2^k\mu_k \)</span> for a sequence <span>\( (\mu_n)_{n \in \mathbb{N}} \)</span> satisfying <span>\( \mu_k \in \{0,1\} \)</span> for all <span>\( k \in \mathbb{N}. \)</span>  We construct the function <span>\( \phi \colon [0,1] \to \mathfrak{C} \)</span> as follows:</p>
+<p>Let us denote <span>\( h_n \)</span> the hypotenuse of triangle <span>\( \triangle_n. \)</span>  By construction we have <span>\( h_1=\sqrt{2} \)</span> and, for each consecutive steps, the definition of cosine in our setup gives us that</p>
 
 <div>
-\begin{equation}
- [0,1] \ni x \mapsto \bigg( 2^{-n} \sum_{k=0}^{n-1} 2^k\mu_k \bigg)_{n \in \mathbb{N}} \mapsto \bigg( 3^{-n} \sum_{k=0}^{n-1} 3^{k} (2\cdot \mu_k) \bigg)_{n \in \mathbb{N}} \in \mathfrak{C}
- \end{equation}
+  \begin{equation}
+  \cos \dfrac{\pi}{2^{n+1}} = \dfrac{h_{n-1}}{h_n}.
+  \end{equation}
 </div>
+
+<p>We may solve the recurrence with the aid of the formula of sine of double angles: <span>\( \sin 2\alpha = 2 \sin \alpha \cos \alpha. \)</span>  In our case, setting <span>\( \alpha = \frac{\pi}{2^{n+1}} \)</span>, we have</p>
+
+<div>
+  \begin{equation}
+  \dfrac{h_{n-1}}{h_n} = \cos \dfrac{\pi}{2^{n+1}} = \dfrac{\sin \frac{\pi}{2^n}}{2\sin \frac{\pi}{2^{n+1}}}
+  \end{equation}
+</div>
+
+<p>or equivalently,</p>
+
+<div>
+  \begin{equation}
+  h_n = \dfrac{2\sin \frac{\pi}{2^{n+1}}}{\sin \frac{\pi}{2^n}}\,  h_{n-1} = \dfrac{2\sin \frac{\pi}{2^{n+1}}}{\sin \frac{\pi}{2^n}}\, \dfrac{2\sin \frac{\pi}{2^n}}{\sin \frac{\pi}{2^{n-1}}}\, h_{n-2} = \dotsb = 2^{n-1} \dfrac{\sin \frac{\pi}{2^{n+1}}}{\sin \frac{\pi}{2^2}} h_1
+  \end{equation}
+</div>
+
+<p>which is the same as</p>
+
+<div>
+  \begin{equation}
+  h_n = 2^n \sin \frac{\pi}{2^{n+1}} = \dfrac{\pi}{2}\, \dfrac{2^{n+1}}{\pi}\, \sin \frac{\pi}{2^{n+1}}.
+  \end{equation}
+</div>
+
+<p>We use this identity to obtain the answer to the first two questions.  For instance, an expression in polar coordinates of a function that goes through all the vertices of the triangles could be given by</p>
+
+<div>
+  \begin{equation}
+  \rho(\theta) = \dfrac{\pi}{2}\, \dfrac{\sin \theta}{\theta}.
+  \end{equation}
+</div>
+
+<p>And in that case, the length of the segment at the limit is given by</p>
+
+<div>
+  \begin{equation}
+  \displaystyle{\lim_n h_n = \lim_{\theta\to 0} \rho(\theta) = \frac{\pi}{2}}.
+  \end{equation}
+</div>
+
+<p>I leave the third part of the puzzle an an exercise to the reader.</p>
+
+<h2 id="miscellaneous">Miscellaneous</h2>
+
+<p>This is the <span>\( \LaTeX \)</span> code used with <code>tikz</code> to produce the diagram above.  Note the power of the <code>plot</code> command, that allows us to obtain a very accurate graph of any function.</p>
+
+<div class="highlight"><pre><code class="language-latex" data-lang="latex"><span class="lineno"> 1</span> <span class="k">\begin</span><span class="nb">{</span>tikzpicture<span class="nb">}</span>[scale=2]
+<span class="lineno"> 2</span>  <span class="k">\draw</span><span class="na">[very thick,-&gt;]</span> (-0.49,0) -- (1.99,0) node[right]<span class="nb">{</span> <span class="s">$</span><span class="nb">x</span><span class="s">$</span> <span class="nb">}</span>;
+<span class="lineno"> 3</span>   <span class="k">\draw</span><span class="na">[fill=red]</span> (0,0) -- (0,1) -- (1,1) -- cycle;
+<span class="lineno"> 4</span>   <span class="k">\draw</span><span class="na">[fill=red!60!white]</span> (0,0) -- (22.5:1.5307) -- (1,1) -- cycle;
+<span class="lineno"> 5</span>   <span class="k">\draw</span><span class="na">[fill=red!30!white]</span> (0,0) -- (11.25:1.5607) -- (22.5:1.5307) -- cycle;
+<span class="lineno"> 6</span>   <span class="k">\draw</span><span class="na">[fill=red!10!white]</span> (0,0) -- (5.625:1.56827) -- (11.25:1.5607) -- cycle;
+<span class="lineno"> 7</span>   <span class="k">\draw</span><span class="na">[domain=0.001:3.141,smooth,variable=\t,very thick,blue]</span> <span class="c">%</span>
+<span class="lineno"> 8</span>       plot (<span class="nb">{</span><span class="k">\t</span> r<span class="nb">}</span>:1.570796*<span class="nb">{</span>sin(<span class="k">\t</span> r)<span class="nb">}</span>/<span class="k">\t</span>);
+<span class="lineno"> 9</span>   <span class="k">\draw</span> (90:0.2) arc (90:45:0.2);
+<span class="lineno">10</span>   <span class="k">\draw</span> (45:0.3) arc (45:22.5:0.3);
+<span class="lineno">11</span>   <span class="k">\draw</span> (22.5:0.4) arc (22.5:11.25:0.4);
+<span class="lineno">12</span>   <span class="k">\draw</span> (11.25:0.5) arc (11.25:5.625:0.5);
+<span class="lineno">13</span>   <span class="k">\draw</span><span class="na">[very thick,-&gt;]</span> (0,-0.49) -- (0,1.49) node[above]<span class="nb">{</span> <span class="s">$</span><span class="nb">y</span><span class="s">$</span> <span class="nb">}</span>;
+<span class="lineno">14</span>   <span class="k">\draw</span><span class="na">[fill=white]</span> (0,1) circle (0.5pt);
+<span class="lineno">15</span>   <span class="k">\draw</span><span class="na">[fill=white]</span> (1,1) circle (0.5pt);
+<span class="lineno">16</span>   <span class="k">\draw</span><span class="na">[fill=white]</span> (22.5:1.5307) circle (0.5pt);
+<span class="lineno">17</span>   <span class="k">\draw</span><span class="na">[fill=white]</span> (11.25:1.5607) circle (0.5pt);
+<span class="lineno">18</span>   <span class="k">\draw</span><span class="na">[fill=white]</span> (5.625:1.56827) circle (0.5pt);
+<span class="lineno">19</span> <span class="k">\end</span><span class="nb">{</span>tikzpicture<span class="nb">}</span></code></pre></div>
+
 
 	</article>
 
