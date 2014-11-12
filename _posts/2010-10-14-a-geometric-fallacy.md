@@ -5,7 +5,7 @@ date: 2010-10-14 09:15:12.000000000 -04:00
 category: post
 comments: true
 image:
-  teaser: 
+  teaser: http://farm5.static.flickr.com/4041/5081312425_6ebb5b2376_o_d.jpg
 ---
 
 A geometric fallacy is basically a geometric construction that leads to a false result.  I once found an obscure russian treatise on this matter (published by мир), that kept me entertained for weeks: Ya.S.Dubnov's *Errores en las demostraciones geométricas*.  The edition I have is a decent translation into Spanish, made by K.Medkov in 1993, although unfortunately some of the translated statements had to be treated with a grain of salt.  Nonetheless, I did enjoy greatly browsing through the different geometric problems, and learned quite a bit about mathematical reasoning.
