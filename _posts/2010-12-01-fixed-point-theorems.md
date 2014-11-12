@@ -18,13 +18,13 @@ The implications of this Theorem are huge.  Some of the most useful are cited be
 
 But the most useful application of Borsuk-Ulam is without a doubt the Brouwer Fixed Point Theorem.
 
-> Every continuous function \( f\colon K \to K \) from a convex compact subset \( K\subset \mathbb{R}^d \) of a Euclidean space to itself has a fixed point.
+> Every continuous function \\( f\colon K \to K \\) from a convex compact subset \\( K\subset \mathbb{R}^d \\) of a Euclidean space to itself has a fixed point.
 
 The proof of Brouwer Fixed Point from Borsuk-Ulam is immediate, and I urge the readers to find it by themselves as a nice exercise.  There are many different proofs of Brouwer Fixed Point without Borsuk-Ulam, the simplest of them all, done by C.A.Rogers as a simplification of a previous proof by J.W.Milnor: it uses the most basic of mathematics, accessible to students with knowledge of elementary integral Calculus.
 
 A version of this proof starts by showing that there are no differentiable maps with continuous derivative, from a closed ball to its border, that fixes all points in that sphere:
 
-> Let \( B_d\subset \mathbb{R}^d \) denote the unit ball in the Euclidean \( d \)-space, whose border is the \( (d-1) \)-dimensional sphere \( \mathbb{S}_{d-1}. \)   There is no \( C^1 \) map (once-differentiable with continuous derivative) \( f\colon \overline{B_d} \to \mathbb{S}^{d-1} \) such that \( f(x) = x \) for all \( x \in \mathbb{S}_{d-1}. \)
+> Let \\( B_d\subset \mathbb{R}^d \\) denote the unit ball in the Euclidean \\( d \\)-space, whose border is the \\( (d-1) \\)-dimensional sphere \\( \mathbb{S}\_{d-1}. \\)   There is no \\( C^1 \\) map (once-differentiable with continuous derivative) \\( f\colon \overline{B\_d} \to \mathbb{S}^{d-1} \\) such that \\( f(x) = x \\) for all \\( x \in \mathbb{S}\_{d-1}. \\)
 
 The use of the previous result together with the Stone-Weierstrass Theorem guarantees the existence of fixed points for any continuous function <span>\\( f\colon \overline{B_d} \to \overline{B_d}. \\)</span>
 
@@ -35,8 +35,8 @@ We claim that each function <span>\\( h_n \\)</span> has a fixed point <span>\\(
 <table style="width:99%;margin-left:auto;margin-right:auto;border-style:dotted;border-width:1pt;">
 <tbody>
 <tr>
-<td style="vertical-align:middle;width:50%;border-width:0;"><img src="http://farm6.static.flickr.com/5208/5224985241_813dab62b3_o_d.jpg" alt="" width="100%" /></td>
-<td style="width:50%;">If \( h_n \) has no fixed point, then it is possible to draw, for each \( x \in \overline{B_d} \), a ray through \( x \) emanating from \( h_n(x) \).  This ray intersects \( \mathbb{S}_{d-1} \) at a single point, which we denote \( f_n(x). \)  The function \( f_n\colon \overline{B_d} \to \mathbb{S}_{d-1} \) thus defined is \( C^1 \) and satisfies \( f_n(x) = x \) for all \( x \in \mathbb{S}_{d-1}, \) contradicting the previous result.</td>
+<td style="vertical-align:middle;width:40%;border-width:0;"><img src="http://farm6.static.flickr.com/5208/5224985241_813dab62b3_o_d.jpg" alt="" width="100%" /></td>
+<td style="width:60%;padding:10px;">If \( h_n \) has no fixed point, then it is possible to draw, for each \( x \in \overline{B_d} \), a ray through \( x \) emanating from \( h_n(x) \).  This ray intersects \( \mathbb{S}_{d-1} \) at a single point, which we denote \( f_n(x). \)  The function \( f_n\colon \overline{B_d} \to \mathbb{S}_{d-1} \) thus defined is \( C^1 \) and satisfies \( f_n(x) = x \) for all \( x \in \mathbb{S}_{d-1}, \) contradicting the previous result.</td>
 </tr>
 </tbody>
 </table>
@@ -61,10 +61,10 @@ Note that the Brouwer Fixed Point Theorem is not constructive: although the proo
 
 We can find nonetheless a constructive version of a Fixed Point Theorem in the field of Analysis: the Banach Fixed Point Theorem.  This result gives a general criterion that guaranties that, if satisfied, the procedure of iterating a function will yield a fixed point.
 
-> Let \( (X, \lVert \cdot \rVert) \) be a non-empty complete metric space. Let \( T \colon X \to X \) be a contraction mapping on \( X \), i.e.: there is a nonnegative real number \( q < 1 \) such that
+> Let \\( (X, \lVert \cdot \rVert) \\) be a non-empty complete metric space. Let \\( T \colon X \to X \\) be a contraction mapping on \\( X \\), i.e.: there is a nonnegative real number \\( q < 1 \\) such that
 >
 > \begin{equation} \lVert T(x) - T(y) \rVert \leq q\lVert x-y\rVert  \text{ for all } x,y \in X. \end{equation}
 >
-> for all \( x, y \in X. \) Then the map \( T \) admits one and only one fixed point in \( X. \) Furthermore, this fixed point can be found as follows: start with an arbitrary element \( x_0 \) in \( X \) and define an iterative sequence by \( x_n=T(x_{n-1}) \) for \( n \in \mathbb{N}. \) This sequence converges, and its limit is the fixed point of \( T. \)
+> for all \\( x, y \in X. \\) Then the map \\( T \\) admits one and only one fixed point in \\( X. \\) Furthermore, this fixed point can be found as follows: start with an arbitrary element \\( x_0 \\) in \\( X \\) and define an iterative sequence by \\( x\_n=T(x\_{n-1}) \\) for \\( n \in \mathbb{N}. \\) This sequence converges, and its limit is the fixed point of \\( T. \\)
 
 Other versions also allow us to count how many fixed points will be for a given function.  That is the case of both the Lefschetz and the Nielsen Fixed Point Theorems.
