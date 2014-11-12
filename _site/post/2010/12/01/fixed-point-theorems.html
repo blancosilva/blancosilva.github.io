@@ -9,7 +9,7 @@
 ">
 	<meta name="author" content="">
 
-	<title>Mechanical Geometry Theorem Proving</title>
+	<title>Borsuk-Ulam and Fixed Point Theorems</title>
 
 	<!-- Bootstrap core CSS -->
 	<link href="/css/bootstrap.min.css" rel="stylesheet">
@@ -377,90 +377,86 @@
 <div class="container theme-showcase" role="main" style="font-size:16px; font-family: Helvetica; width:750px; text-align:justify;">
 
 	<header class="post-header">
-		<h1 class="post-title">Mechanical Geometry Theorem Proving</h1>
-		<p class="post-meta">Aug 5, 2007</p>
+		<h1 class="post-title">Borsuk-Ulam and Fixed Point Theorems</h1>
+		<p class="post-meta">Dec 1, 2010</p>
 	</header>
 
 	<article class="post-content">
-		<p>In 1977, Professor Wen-Tsun Wu succeeded in developing a method of mechanical geometry theorem proving. This method has been applied to prove or even discover hundreds of non-trivial difficult theorems in elementary and differential geometries on a computer in an almost trivial manner. Usign Ritt’s differential algebra, Wu established a method for solving algebraic and differential equations by transforming an equation system in the general form to equation systems in triangular form.   This is the Ritt-Wu decomposition algorithm, that later on was shown to be equivalent to perform a series of operations on ideals, very easily carried out by means of Gröbner basis manipulation.</p>
-
-<p>I wrote a script in <code>MAPLE</code> to perform evaluations of the validity of some simple theorems in Euclidean Geometry, and wrote a small paper (in Spanish) on one of my findings, that was published in Bol. Asoc. Prof. Puig Adams, in October’99: “<a href="http://www.math.sc.edu/~blanco/m13chou/m13chou.html">Sobre demostración automática de un problema geométrico</a>”.</p>
-
-<p>The example I cover in that short article can be seen below.</p>
+		<p>At any given moment on the surface of the Earth there are always two antipodal points with exactly the same temperature and barometric pressure.  We can go even further: on each longitude (the North and South lines running from pole to pole) there will also be two antipodal points sharing exactly the same temperature.  How is this possible?  The answer is given by the Borsuk-Ulam Theorem: a powerful tool in Topology with a great deal of applications to every branch of science.</p>
 
 <blockquote>
-  <p><strong>Given</strong>: Circles <span>\( A \)</span>, <span>\( B \)</span> that intersect each other in points <span>\( C \)</span> and <span>\( D \)</span>, and given points <span>\( E \)</span>, <span>\( F \)</span> in circle <span>\( A \)</span>, consider line <span>\( a \)</span> through <span>\( E \)</span> and <span>\( C \)</span>, and line <span>\( b \)</span> through <span>\( F \)</span> and <span>\( D \)</span>.  The intersections of line <span>\( a \)</span> with circle <span>\( A \)</span> are <span>\( C \)</span> and <span>\( G \)</span>.  The intersections of line <span>\( b \)</span> with circle <span>\( B \)</span> are <span>\( D \)</span> and <span>\( H \)</span>.  Consider the segments <span>\( c \)</span> (connecting <span>\( E \)</span> with <span>\( F \)</span>) and <span>\( d \)</span> (connecting <span>\( G \)</span> with <span>\( H \)</span>).</p>
-
-  <p><strong>To prove</strong>: Segments <span>\( c \)</span> and <span>\( d \)</span> are parallel.</p>
+  <p>A continuous function ( f\colon \mathbb{S}<em>{d} \to \mathbb{R}^d) from a ( d)-dimensional sphere into the Euclidean space of dimension ( d) maps some pair of antipodal points ( \pm \xi \in \mathbb{S}</em>{d}) to the same point ( \boldsymbol{x} \in \mathbb{R}^d.)</p>
 </blockquote>
 
-<p style="text-align:center;"><a href="http://www.flickr.com/photos/eseprimo/298203907/" title="circulos by eseprimo, on Flickr"><img src="http://farm1.static.flickr.com/113/298203907_77bcce2162.jpg" width="75%" alt="circulos" /></a></p>
+<p>The implications of this Theorem are huge.  Some of the most useful are cited below:</p>
 
-<h3 id="proposed-solution">Proposed Solution</h3>
+<ul>
+  <li>No subset of <span>\( \mathbb{R}^d \)</span> can be homeomorphic to a <span>\( d \)</span>-dimensional sphere <span>\( \mathbb{S}_{d}. \)</span></li>
+  <li>If we cover the sphere <span>\( \mathbb{S}_d \)</span> with a family of <span>\( d+1 \)</span> open sets,  then at least one of these sets must contain a pair of antipodal points <span>\( \pm\xi. \)</span></li>
+</ul>
 
-<p>Let us assume the points <span>\( C \)</span> and <span>\( D \)</span> have coordinates <span>\( C=(0,1) \)</span> and <span>\( D=(0,-1) \)</span>, and the centers of the circles are <span>\( A=(a,0) \)</span>, <span>\( B=(b,0) \)</span>.  Let us consider a vector <span>\( \nu = (\nu_1, \nu_2) \)</span> supported in the point <span>\( C \)</span>, and a vector <span>\( \omega = (\omega_1, \omega_2) \)</span> supported in the point <span>\( D \)</span>.</p>
+<p>But the most useful application of Borsuk-Ulam is without a doubt the Brouwer Fixed Point Theorem.</p>
 
-<p>A line through <span>\( C \)</span> with leading vector <span>\( \nu \)</span> intersects the circle <span>\( A \)</span> at the point <span>\( E=(x_1,y_1) \)</span>.  In order to compute its coordinates, we consider the equations of the line and the circle:</p>
+<blockquote>
+  <p>Every continuous function ( f\colon K \to K ) from a convex compact subset ( K\subset \mathbb{R}^d ) of a Euclidean space to itself has a fixed point.</p>
+</blockquote>
 
-<div>
-\begin{equation}
-x_1 - \alpha \nu_1 = 0 \label{eq:1}
-\end{equation}
-</div>
+<p>The proof of Brouwer Fixed Point from Borsuk-Ulam is immediate, and I urge the readers to find it by themselves as a nice exercise.  There are many different proofs of Brouwer Fixed Point without Borsuk-Ulam, the simplest of them all, done by C.A.Rogers as a simplification of a previous proof by J.W.Milnor: it uses the most basic of mathematics, accessible to students with knowledge of elementary integral Calculus.</p>
 
-<div>
-\begin{equation}
-y_1 - 1 - \alpha\nu_2 = 0 \label{eq:2}
-\end{equation}
-</div>
+<p>A version of this proof starts by showing that there are no differentiable maps with continuous derivative, from a closed ball to its border, that fixes all points in that sphere:</p>
 
-<div>
-\begin{equation*}
-(x_1-a)^2 + y_1^2 = 1+a^2 
-\end{equation*}
-</div>
+<blockquote>
+  <p>Let ( B_d\subset \mathbb{R}^d ) denote the unit ball in the Euclidean ( d )-space, whose border is the ( (d-1) )-dimensional sphere ( \mathbb{S}<em>{d-1}. )   There is no ( C^1 ) map (once-differentiable with continuous derivative) ( f\colon \overline{B_d} \to \mathbb{S}^{d-1} ) such that ( f(x) = x ) for all ( x \in \mathbb{S}</em>{d-1}. )</p>
+</blockquote>
 
-<p>By simple substitution, we obtain the following second-degree equation, stating the condition:</p>
+<p>The use of the previous result together with the Stone-Weierstrass Theorem guarantees the existence of fixed points for any continuous function <span>\( f\colon \overline{B_d} \to \overline{B_d}. \)</span></p>
 
-<div>
-\begin{equation*}
-(\nu_1^2 + \nu_2^2) \alpha^2 + 2(\nu_2 - \nu_1)\alpha = 0
-\end{equation*}
-</div>
+<p>Indeed, the Stone-Weierstrass Theorem gives the existence, for each <span>\( n\in \mathbb{N}, \)</span> of a polynomial <span>\( P_n\colon \overline{B_d} \to \mathbb{R}^d \)</span> satisfying <span>\( \lVert f-P_n \rVert_2 \leq \tfrac{1}{n}. \)</span>  Consider the sequence of functions <span>\( h_n(x) = \tfrac{n}{n+1}P_n\colon \overline{B_d} \to \overline{B_d}, \)</span> which converges uniformly to <span>\( f. \)</span></p>
 
-<p>One of the solutions is the trivial <span>\( \alpha=0 \)</span> (the point <span>\( C \)</span>).  The other solution is what we need:</p>
+<p>We claim that each function <span>\( h_n \)</span> has a fixed point <span>\( x_n \in \overline{B_d}, \)</span> <span>\( h_n(x_n) = x_n. \)</span>  If this were not true, we would be able to construct <span>\( C^1 \)</span> functions <span>\( f_n\colon \overline{B_d} \to \mathbb{S}_{d-1} \)</span> satisfying <span>\( f_n(x) = x \)</span> for all <span>\( x \in \mathbb{S}_{d-1}. \)</span>  Such a construction could be as follows:</p>
 
-<div>
-\begin{equation}
-(\nu_1^2 + \nu_2^2)\alpha + 2(\nu_2 - \nu_1) = 0 \label{eq:3}
-\end{equation}
-</div>
+<table style="width:99%;margin-left:auto;margin-right:auto;border-style:dotted;border-width:1pt;">
+<tbody>
+<tr>
+<td style="vertical-align:middle;width:50%;border-width:0;"><img src="http://farm6.static.flickr.com/5208/5224985241_813dab62b3_o_d.jpg" alt="" width="100%" /></td>
+<td style="width:50%;">If \( h_n \) has no fixed point, then it is possible to draw, for each \( x \in \overline{B_d} \), a ray through \( x \) emanating from \( h_n(x) \).  This ray intersects \( \mathbb{S}_{d-1} \) at a single point, which we denote \( f_n(x). \)  The function \( f_n\colon \overline{B_d} \to \mathbb{S}_{d-1} \) thus defined is \( C^1 \) and satisfies \( f_n(x) = x \) for all \( x \in \mathbb{S}_{d-1}, \) contradicting the previous result.</td>
+</tr>
+</tbody>
+</table>
 
-<p>Let <span>\( g_1(x_1,\alpha) \)</span>, <span>\( g_2(y_1,\alpha) \)</span> and <span>\( g_3(\alpha) \)</span> be polynomials obtained from <span>\( \eqref{eq:1}, \eqref{eq:2}, \eqref{eq:3}. \)</span>  We obtain polynomials <span>\( g_4(x_2,\beta) \)</span>, <span>\( g_5(y_2, \beta) \)</span> and <span>\( g_6(\beta) \)</span> in a similar way, considering the condition of point <span>\( F \)</span> belonging in the line through <span>\( D \)</span> with leading vector <span>\( \omega \)</span> and the circle <span>\( A \)</span>.  We also obtain polynomials <span>\( g_7(x_3, \gamma) \)</span>, <span>\( g_8(y_3,\gamma) \)</span> and <span>\( g_9(\gamma) \)</span> for the point <span>\( G \)</span> in circle <span>\( B \)</span> and line through <span>\( C \)</span> with leading vector <span>\( \nu \)</span>.  Finally, obtain polynomials <span>\( g_{10}(x_4,\delta) \)</span>, <span>\( g_{11}(y_4,\delta) \)</span> and <span>\( g_{12}(\delta) \)</span> for point <span>\( H \)</span> belonging to circle <span>\( B \)</span> and the line through point <span>\( D \)</span> with leading vector <span>\( \omega \)</span>.</p>
+<p><br /></p>
 
-<p>We use the Ritt-Wu method on those polynomials (notice it is not necessary to turn the system in triangular, since by a simple re-ordering of the polynomials we accomplish this state).  The proof follows:</p>
+<p>This implies, as we announced before, the existence of a sequence of points <span>\( x_n \in \overline{B_d} \)</span> satisfying <span>\( h_n(x_n) = x_n. \)</span> The compactness of <span>\( \overline{B_d} \)</span> guarantees a convergent subsequence <span>\( \big( x<em>{n_r} \big)</em>{r \in \mathbb{N}} \)</span>.  Let <span>\( x_0 \in \overline{B_d} \)</span> be its limit.  It must be then</p>
 
 <div>
-\begin{align*}
-h_1 &amp;= g_1 &amp; h_5 &amp;= g_7 &amp; h_9 &amp;= g_3 \\
-h_2 &amp;= g_2 &amp; h_6 &amp;= g_8 &amp; h_{10} &amp;= g_6 \\
-h_3 &amp;= g_3 &amp; h_7 &amp;= g_{10} &amp; h_{11} &amp;= g_9 \\
-h_4 &amp;= g_5 &amp; h_8 &amp;= g_{11} &amp; h_{12} &amp;= g_{12}
-\end{align*}
+	\begin{equation}
+	\displaystyle{f(x_0) = \lim_r f(x_{n_r}) = \lim_r h_{n_r}(x_{n_r}) = \lim_r x_{n_r} = x_0}, 
+	\end{equation}
 </div>
 
-<p>The degenerate conditions are then reduced to vectors <span>\( \nu \)</span> and <span>\( \omega \)</span> being not nill:</p>
+<p>and we have just found a fixed point for <span>\( f. \)</span></p>
 
-<div>
-\begin{equation*}
-\nu_1^2 + \nu_2^2 \neq 0\qquad \omega_1^2+\omega_2^2 \neq 0
-\end{equation*}
-</div>
+<p>The proof of the Theorem for continuous functions <span>\( f\colon K \to K \)</span> for a given convex compact set <span>\( K\subset\mathbb{R}^d \)</span> is done through an appropriate homeomorphism <span>\( \varphi\colon B_d \to K. \)</span></p>
 
-<script type="text/x-mathjax-config">
-  MathJax.Hub.Config({ TeX: { equationNumbers: {autoNumber: "all"} } });
-</script>
+<h3 id="miscellaneous">Miscellaneous</h3>
 
+<p>Note that the Brouwer Fixed Point Theorem is not constructive: although the proof indicates how to come up with a fixed point, there is no explicit construction that finds such point.  The key here is the Stone-Weierstrass Theorem, that claims the existence of a sequence of polynomials, but does not compute them.</p>
+
+<p>We can find nonetheless a constructive version of a Fixed Point Theorem in the field of Analysis: the Banach Fixed Point Theorem.  This result gives a general criterion that guaranties that, if satisfied, the procedure of iterating a function will yield a fixed point.</p>
+
+<blockquote>
+  <p>Let ( (X, \lVert \cdot \rVert) ) be a non-empty complete metric space. Let ( T \colon X \to X ) be a contraction mapping on ( X ), i.e.: there is a nonnegative real number ( q &lt; 1 ) such that</p>
+</blockquote>
+
+<blockquote>
+  <p>\begin{equation} \lVert T(x) - T(y) \rVert \leq q\lVert x-y\rVert  \text{ for all } x,y \in X. \end{equation}</p>
+</blockquote>
+
+<blockquote>
+  <p>for all ( x, y \in X. ) Then the map ( T ) admits one and only one fixed point in ( X. ) Furthermore, this fixed point can be found as follows: start with an arbitrary element ( x_0 ) in ( X ) and define an iterative sequence by ( x_n=T(x_{n-1}) ) for ( n \in \mathbb{N}. ) This sequence converges, and its limit is the fixed point of ( T. )</p>
+</blockquote>
+
+<p>Other versions also allow us to count how many fixed points will be for a given function.  That is the case of both the Lefschetz and the Nielsen Fixed Point Theorems.</p>
 
 	</article>
 
