@@ -43,7 +43,7 @@ We claim that each function <span>\\( h_n \\)</span> has a fixed point <span>\\(
 
 <br />
 
-This implies, as we announced before, the existence of a sequence of points <span>\\( x_n \in \overline{B_d} \\)</span> satisfying <span>\\( h_n(x_n) = x_n. \\)</span> The compactness of <span>\\( \overline{B_d} \\)</span> guarantees a convergent subsequence <span>\\( \big( x_{n_r} \big)_{r \in \mathbb{N}} \\)</span>.  Let <span>\\( x_0 \in \overline{B_d} \\)</span> be its limit.  It must be then
+This implies, as we announced before, the existence of a sequence of points <span>\\( x_n \in \overline{B_d} \\)</span> satisfying <span>\\( h_n(x_n) = x_n. \\)</span> The compactness of <span>\\( \overline{B_d} \\)</span> guarantees a convergent subsequence <span>\\( \big( x\_{n\_r} \big)\_{r \in \mathbb{N}} \\)</span>.  Let <span>\\( x_0 \in \overline{B_d} \\)</span> be its limit.  It must be then
 
 <div>
 	\begin{equation}
