@@ -9,7 +9,7 @@ image:
 
 At any given moment on the surface of the Earth there are always two antipodal points with exactly the same temperature and barometric pressure.  We can go even further: on each longitude (the North and South lines running from pole to pole) there will also be two antipodal points sharing exactly the same temperature.  How is this possible?  The answer is given by the Borsuk-Ulam Theorem: a powerful tool in Topology with a great deal of applications to every branch of science.
 
-> A continuous function \\( f\colon \mathbb{S}_{d} \to \mathbb{R}^d\\) from a \\( d \\)-dimensional sphere into the Euclidean space of dimension \\( d \\) maps some pair of antipodal points \\( \pm \xi \in \mathbb{S}_{d} \\) to the same point \\( \boldsymbol{x} \in \mathbb{R}^d. \\)
+> A continuous function \\( f\colon \mathbb{S}\_{d} \to \mathbb{R}^d\\) from a \\( d \\)-dimensional sphere into the Euclidean space of dimension \\( d \\) maps some pair of antipodal points \\( \pm \xi \in \mathbb{S}\_{d} \\) to the same point \\( \boldsymbol{x} \in \mathbb{R}^d. \\)
 
 The implications of this Theorem are huge.  Some of the most useful are cited below:
 
