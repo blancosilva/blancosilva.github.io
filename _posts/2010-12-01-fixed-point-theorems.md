@@ -32,7 +32,7 @@ Indeed, the Stone-Weierstrass Theorem gives the existence, for each <span>\\( n\
 
 We claim that each function <span>\\( h_n \\)</span> has a fixed point <span>\\( x_n \in \overline{B_d}, \\)</span> <span>\\( h_n(x_n) = x_n. \\)</span>  If this were not true, we would be able to construct <span>\\( C^1 \\)</span> functions <span>\\( f_n\colon \overline{B_d} \to \mathbb{S}_{d-1} \\)</span> satisfying <span>\\( f_n(x) = x \\)</span> for all <span>\\( x \in \mathbb{S}_{d-1}. \\)</span>  Such a construction could be as follows:
 
-<table style="width:99%;margin-left:auto;margin-right:auto;">
+<table style="width:75%;margin-left:auto;margin-right:auto;">
 <tbody>
 <tr>
 <td style="vertical-align:middle;width:40%;border-width:0;"><img src="http://farm6.static.flickr.com/5208/5224985241_813dab62b3_o_d.jpg" alt="" width="100%" /></td>
