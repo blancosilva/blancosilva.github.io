@@ -9,7 +9,7 @@
 ">
 	<meta name="author" content="">
 
-	<title>Triangulation of compact surfaces</title>
+	<title>Homeomorphisms</title>
 
 	<!-- Bootstrap core CSS -->
 	<link href="/css/bootstrap.min.css" rel="stylesheet">
@@ -312,9 +312,9 @@
 						
 						
 						
+						
+						
 						<li><a href="/teaching/2010/10/27/an-introduction-to-algebraic-topology.html">An Introduction to Algebraic Topology</a></li>
-						
-						
 						
 						
 						
@@ -350,46 +350,68 @@
 <div class="container theme-showcase" role="main" style="font-size: 16px; base-line-height: 1.5; font-family: Helvetica, Arial, sans-serif; spacing-unit: 30px; line-height: 20px; width:750px; text-align:justify;">
 
 	<header class="post-header">
-		<h1 class="post-title">Triangulation of compact surfaces</h1>
+		<h1 class="post-title">Homeomorphisms</h1>
 	</header>
 
 	<article class="post-content">
-		<p>A triangulation of a compact surface <span>\( S \)</span> is a finite family of closed subsets <span>\( { T_1, T_2, \dotsc, T_m} \)</span> that cover <span>\( S, \)</span> and a family of homeomorphisms <span>\( \varphi_k: \mathcal{T} \to T_k \)</span>, where <span>\( \mathcal{T} \subset \mathbb{R}^2 \)</span> is a proper triangle in the plane.  We say that the sets <span>\( T_k \)</span> are triangles as well, and the images by <span>\( \varphi_k \)</span> of a vertex (resp. edge) of the triangle <span>\( \mathcal{T} \)</span> is also called a vertex (resp. edge).  We impose one condition: Given two different triangles <span>\( T_k \)</span> and <span>\( T_j, \)</span> their intersection must be either void, or a common vertex, or a common edge.</p>
+		<blockquote>
+  <p>Given two topological spaces, <span>\( (X,T_X) \)</span> and <span>\( (Y,T_Y), \)</span> we say that a map <span>\( \varphi \colon X \to Y \)</span> is a <strong>homeomorphism</strong> if it satisfies the three properties below:</p>
 
-<blockquote>
-Since the (surface of a) tetrahedron is homeomorphic to the sphere \( \mathbb{S}_2, \) we may consider this as a valid triangulation for the latter.  This triangulation is formed basically by four triangles, four vertices and six edges.
-
-<table style="width:75%; margin-left:auto; margin-right:auto;">
-<tr>
-<td style="text-align:center;vertical-align:middle;width:50%;"><img src="http://farm5.static.flickr.com/4001/5163063660_2c03604d19_o_d.jpg" width="100%" /></td>
-<td style="text-align:center;vertical-align:middle;width:50%;"><img src="http://farm5.static.flickr.com/4147/5162456723_b2980d9744_o_d.jpg" width="100%" /></td>
-</tr>
-</table>
-
-The following example shows a triangulation of a torus, performed on the representation of \( \mathbb{T} \) given by the quotient space of the square \( \square_2 \) by the proper identification in the border.  Note that in this representation, all of the vertices of the square are actually the same vertex, which we denote \( P_1. \)  We construct a triangulation by placing two more vertices on the horizontal borders, \( P_2, P_3, \) two more vertices in the vertical borders, \( P_4, P_5, \), four more vertices inside the square, \( P_6, P_7, P_8, P_9, \), and joining all of them with edges, as shown in the image below:
-<table style="width:75%; margin-left:auto; margin-right:auto;">
-<tr>
-<td style="text-align:center;vertical-align:top;width:40%;border-width:0;">
-<img src="http://farm5.static.flickr.com/4086/5161919213_ebf564f5f7_o_d.jpg" width="100%" /></td>
-<td style="text-align:center;vertical-align:middle;width:60%;border-width:0;">
-<img src="http://farm2.static.flickr.com/1202/5165763462_91305e8e7e_o_d.jpg" width="100%" /></td>
-</tr>
-</table>
-
-This gives the following triangles:
-
-<div>
-\begin{equation} \begin{array}{ccc}P_1P_2P_5 &amp; P_2P_5P_6 &amp; P_2P_3P_6\\P_3P_6P_7 &amp; P_1P_3P_6 &amp; P_1P_5P_7\\P_4P_5P_6 &amp; P_4P_6P_8 &amp; P_6P_7P_8\\P_7P_8P_9 &amp; P_4P_7P_9 &amp; P_4P_5P_7\\P_1P_2P_4 &amp; P_2P_4P_8 &amp; P_2P_3P_8\\P_3P_8P_9 &amp; P_3P_4P_9 &amp; P_1P_3P_4\end{array} 
-\end{equation}
-</div>
+  <ol>
+    <li>It is a <em>bijection</em> (that is, both injective and surjective),</li>
+    <li>it is <em>continuous</em>, and</li>
+    <li>it has a continuous inverse <span>\( \varphi^{-1} \colon Y \to X. \)</span></li>
+  </ol>
 </blockquote>
 
-<p>Two important observations about triangulations of <strong>any</strong> compact surface:</p>
+<p>Two spaces for which there is such a homeomorphism are called <strong>homeomorphic</strong>.  As it turns out, homeomorphic spaces have the same topological properties.</p>
 
-<ul>
-  <li>Each edge belongs to exactly two triangles.  This is due to the fact that the surfaces have at every point, a neighborhood that is homeomorphic to an open ball.</li>
-  <li>Given a vertex <span>\( v \)</span> in a proper triangulation, it is possible to sort all the triangles that share than vertex, say clock or counterclockwise, in such a way that two consecutive triangles share a common edge. This is a direct consequence of the previous observation, and the fact that the union of all the triangles sharing a common vertex must be a connected set.</li>
-</ul>
+<p>In what follows, we will construct several interesting homeomorphisms to train our skills:</p>
+
+<h3 id="disks-and-squares">Disks and squares</h3>
+
+<p>Consider the unit disk <span>\( D_2 \)</span> and the unit square <span>\( \square_2 \)</span> defined by</p>
+
+<div>
+	\begin{equation}
+	\begin{array}{l} D_2 = \{ x=(x_1,x_2) \in \mathbb{R}^2 : x_1^2 + x_2^2 \leq 1 \} \\ \square_2 =\{ x=(x_1,x_2) \in \mathbb{R}^2 : \lvert x_1 \rvert \leq 1, \lvert x_2 \rvert \leq 1 \}  \end{array}
+	\end{equation}
+</div>
+
+<p>We construct a homeomorphism <span>\( \varphi \colon \square_2 \to D_2 \)</span> as follows:</p>
+
+<div>
+	\begin{equation}
+	\varphi(x_1,x_2) = \begin{cases} 0 &amp; \text{if } (x_1,x_2) = (0,0),\\ \displaystyle{\frac{\text{max}(\lvert x_1 \rvert, \lvert x_2 \rvert )}{\sqrt{x_1^2 + x_2^2}}} ( x_1,x_2)&amp; \text{otherwise.} \end{cases} 
+	\end{equation}
+</div>
+
+<p>This function maps for each <span>\( 0 &lt; d \leq 1 \)</span>, the border of each square <span>\( \{ (x_1,x_2) \in \mathbb{R}^2 : \text{max}( \lvert x_1 \rvert, \lvert x_2 \rvert) \leq d \} \)</span> into the circle of radius <span>\( d \)</span> centered at the origin; the manner in which these sets map into each other indicates why the function <span>\( \varphi \)</span> is a bijection.  It is very easy to check its continuity as well, and I leave that task to the reader.</p>
+
+<p>An inverse to this function is constructed in a similar way, so that each circle is mapped to the border of a square:</p>
+
+<div>
+	\begin{equation}
+	\varphi^{-1}(y_1,y_2) = \begin{cases} 0 &amp; \text{if } (y_1,y_2) = (0,0),\\ \displaystyle{\frac{\sqrt{y_1^2+y_2^2}}{\text{max}(\lvert y_1\rvert, \lvert y_2\rvert)}}(y_1,y_2) &amp; \text{otherwise.}\end{cases} 
+	\end{equation}
+</div>
+
+<h3 id="an-open-interval-and-the-real-line">An open interval and the real line</h3>
+
+<div class="col-sm-8" style="text-align:justify;">
+	Let us find an homeomorphism from the unit interval \((-1,1)\) into the real line \(\mathbb{R}\) based in an interesting construction called stereographic projection.  We start by mapping each \(t \in (-1,1)\) into an angle \(\theta \in (-\pi, \pi)\) by simple multiplication: \(\theta = \pi t\).  This angle gives a single element in the unit circle \((\cos \pi t, \sin \pi t)\), except the point \((-1,0).\)  The stereographic projection turns each point of the circle different than \((-1,0)\) into a unique point in the plane with coordinates \(\big(1,\varphi(t) \big),\)  where
+
+	<div>
+		\begin{equation}
+		\varphi(t) = \displaystyle{ \frac{2\sin \pi t}{\cos \pi t +1} }. 
+		\end{equation}
+	</div>
+
+	This is the function we are looking for.  Its continuity is easy to prove, and so are its one-to-one and onto properties.  In order to construct the inverse map, trace back from the real line to the vertical line \(\{(1,s) : s \in \mathbb{R}\},\) from there to the unit disk by the inverse of stereographic projection through the point \((-1,0)\), and find the angle of the corresponding image.  Division by \(\pi\) offers you a value in the unit interval \((-1,1).\)  This value is the image of the inverse \(\varphi^{-1}.\)   I leave the construction of the analytical expression of this function to the reader as a nice exercise.
+</div>
+<div class="col-sm-4">
+	<img class="alignright" src="http://farm2.static.flickr.com/1053/5122064612_471d0e977d_o_d.jpg" alt="" width="241" height="419" />
+</div>
 
 	</article>
 

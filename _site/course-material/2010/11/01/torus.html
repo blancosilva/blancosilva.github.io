@@ -9,7 +9,7 @@
 ">
 	<meta name="author" content="">
 
-	<title>Homeomorphisms</title>
+	<title>Torus</title>
 
 	<!-- Bootstrap core CSS -->
 	<link href="/css/bootstrap.min.css" rel="stylesheet">
@@ -312,9 +312,9 @@
 						
 						
 						
+						
+						
 						<li><a href="/teaching/2010/10/27/an-introduction-to-algebraic-topology.html">An Introduction to Algebraic Topology</a></li>
-						
-						
 						
 						
 						
@@ -350,68 +350,56 @@
 <div class="container theme-showcase" role="main" style="font-size: 16px; base-line-height: 1.5; font-family: Helvetica, Arial, sans-serif; spacing-unit: 30px; line-height: 20px; width:750px; text-align:justify;">
 
 	<header class="post-header">
-		<h1 class="post-title">Homeomorphisms</h1>
+		<h1 class="post-title">Torus</h1>
 	</header>
 
 	<article class="post-content">
-		<blockquote>
-  <p>Given two topological spaces, <span>\( (X,T_X) \)</span> and <span>\( (Y,T_Y), \)</span> we say that a map <span>\( \varphi \colon X \to Y \)</span> is a <strong>homeomorphism</strong> if it satisfies the three properties below:</p>
-
-  <ol>
-    <li>It is a <em>bijection</em> (that is, both injective and surjective),</li>
-    <li>it is <em>continuous</em>, and</li>
-    <li>it has a continuous inverse <span>\( \varphi^{-1} \colon Y \to X. \)</span></li>
-  </ol>
-</blockquote>
-
-<p>Two spaces for which there is such a homeomorphism are called <strong>homeomorphic</strong>.  As it turns out, homeomorphic spaces have the same topological properties.</p>
-
-<p>In what follows, we will construct several interesting homeomorphisms to train our skills:</p>
-
-<h3 id="disks-and-squares">Disks and squares</h3>
-
-<p>Consider the unit disk <span>\( D_2 \)</span> and the unit square <span>\( \square_2 \)</span> defined by</p>
+		<p>Let <span>\( A=\mathbb{S}_1 \times \mathbb{S}_1 \)</span>, the product of two circles, and <span>\( B \subset \mathbb{R}^3 \)</span> the surface of revolution formed by rotation of the circle <span>\( (x_1-2)^2+x_3^2=1 \)</span> in the plane <span>\( {x_2=0} \)</span> around the <span>\( z \)</span>–axis:</p>
 
 <div>
-	\begin{equation}
-	\begin{array}{l} D_2 = \{ x=(x_1,x_2) \in \mathbb{R}^2 : x_1^2 + x_2^2 \leq 1 \} \\ \square_2 =\{ x=(x_1,x_2) \in \mathbb{R}^2 : \lvert x_1 \rvert \leq 1, \lvert x_2 \rvert \leq 1 \}  \end{array}
-	\end{equation}
+\begin{equation}
+ B=\big\{ (x_1,x_2,x_3) \in \mathbb{R}^3 : \big( \sqrt{x_1^2 + x_2^2}-2 \big)^2 + x_3^2 =1 \big\}. 
+ \end{equation}
 </div>
 
-<p>We construct a homeomorphism <span>\( \varphi \colon \square_2 \to D_2 \)</span> as follows:</p>
+<p>And last, consider in the unit square <span>\( \square_2 = \{ (x_1,x_2) \in \mathbb{R}^2 : \lvert x_1 \rvert \leq 1, \lvert x_2 \rvert \leq 1\} \)</span> the equivalence relation defined by <span>\( (x_1,x_2) \sim (y_1,y_2) \)</span> if one of the following is satisfied:</p>
 
-<div>
-	\begin{equation}
-	\varphi(x_1,x_2) = \begin{cases} 0 &amp; \text{if } (x_1,x_2) = (0,0),\\ \displaystyle{\frac{\text{max}(\lvert x_1 \rvert, \lvert x_2 \rvert )}{\sqrt{x_1^2 + x_2^2}}} ( x_1,x_2)&amp; \text{otherwise.} \end{cases} 
-	\end{equation}
-</div>
+<ul>
+  <li><span>\( x_1=y_1 \)</span> and <span>\( x_2=y_2 \)</span>, or</li>
+  <li><span>\( \lvert x_1 \rvert = \lvert y_1 \rvert = 1 \)</span> and <span>\( x_2=y_2, \)</span> or</li>
+  <li><span>\( \lvert x_2 \rvert = \lvert y_2 \rvert = 1 \)</span> and <span>\( x_1=y_1. \)</span></li>
+</ul>
 
-<p>This function maps for each <span>\( 0 &lt; d \leq 1 \)</span>, the border of each square <span>\( \{ (x_1,x_2) \in \mathbb{R}^2 : \text{max}( \lvert x_1 \rvert, \lvert x_2 \rvert) \leq d \} \)</span> into the circle of radius <span>\( d \)</span> centered at the origin; the manner in which these sets map into each other indicates why the function <span>\( \varphi \)</span> is a bijection.  It is very easy to check its continuity as well, and I leave that task to the reader.</p>
+<p>Let <span>\( C = \big( \square_2 / \sim \big), \)</span> be the quotient set defined through equivalence classes from the relation above.</p>
 
-<p>An inverse to this function is constructed in a similar way, so that each circle is mapped to the border of a square:</p>
+<p>We want to prove that these three spaces <span>\( A \)</span>, <span>\( B \)</span> and <span>\( C \)</span> are actually homeomorphic.  In order to construct the corresponding homeomorphisms we will use the following intuitive ideas, as illustrated in the images of the sets below:</p>
 
-<div>
-	\begin{equation}
-	\varphi^{-1}(y_1,y_2) = \begin{cases} 0 &amp; \text{if } (y_1,y_2) = (0,0),\\ \displaystyle{\frac{\sqrt{y_1^2+y_2^2}}{\text{max}(\lvert y_1\rvert, \lvert y_2\rvert)}}(y_1,y_2) &amp; \text{otherwise.}\end{cases} 
-	\end{equation}
-</div>
+<table style="margin-left:auto;margin-right:auto;width:50%;border-width:0;">
+<tbody>
+<tr>
+<td style="text-align:center;width:100%;vertical-align:middle;border-width:1px;" colspan="2"><img src="http://farm5.static.flickr.com/4067/5122274220_340a4e8a10_o_d.jpg" alt="" width="100%" /></td>
+</tr>
+<tr>
+<td style="text-align:center;width:50%;vertical-align:middle;border-width:1px;"><img src="http://farm2.static.flickr.com/1245/5121670907_cc110feb62_o_d.jpg" alt="" width="100%" /></td>
+<td style="text-align:center;width:50%;vertical-align:middle;border-width:1px;"><img src="http://farm2.static.flickr.com/1203/5121670945_883530fc43_o_d.jpg" alt="" width="100%" /></td>
+</tr>
+</tbody>
+</table>
 
-<h3 id="an-open-interval-and-the-real-line">An open interval and the real line</h3>
+<p>For example, to find a homeomorphism <span>\( \varphi_{AB} \colon A \to B, \)</span> we consider a construction based on the following facts:</p>
 
-<div class="col-sm-8" style="text-align:justify;">
-	Let us find an homeomorphism from the unit interval \((-1,1)\) into the real line \(\mathbb{R}\) based in an interesting construction called stereographic projection.  We start by mapping each \(t \in (-1,1)\) into an angle \(\theta \in (-\pi, \pi)\) by simple multiplication: \(\theta = \pi t\).  This angle gives a single element in the unit circle \((\cos \pi t, \sin \pi t)\), except the point \((-1,0).\)  The stereographic projection turns each point of the circle different than \((-1,0)\) into a unique point in the plane with coordinates \(\big(1,\varphi(t) \big),\)  where
+<ul>
+  <li>The horizontal plane <span>\( { z = 1 } \)</span> intersects the torus <span>\( B \)</span> in a single circle (represented in pink).  We identify the first copy of <span>\( \mathbb{S}_1 \)</span> in <span>\( A=\mathbb{S}_1 \times \mathbb{S}_1 \)</span> with this circle.  Let us denote that pink circle <span>\( B_1. \)</span></li>
+  <li>Once chosen an element <span>\( z_1 \)</span> in the first copy of <span>\( \mathbb{S}_1 \)</span> from <span>\( A \)</span>, we consider the corresponding point in <span>\( B_1 \)</span> from a suitable homeomorphism between <span>\( \mathbb{S}_1 \)</span> and <span>\( B_1. \)</span>  Let us write <span>\( z_1^\ast \in B_1. \)</span></li>
+  <li>Consider the intersection of the torus <span>\( B \)</span> with a plane that goes through the origin, the point <span>\( z_1^\ast \)</span>, and that is vertical.  This intersections consists on two different circles, only one of which goes through the point <span>\( z_1^\ast \)</span> (represented in red); let us denote <span>\( B_{z_1} \)</span> this new circle, which we want to identify with the second copy of <span>\( \mathbb{S}_1 \)</span> in <span>\( A. \)</span></li>
+  <li>Once chosen an element <span>\( z_2 \)</span> in the second copy of <span>\( \mathbb{S}_1 \)</span> from <span>\( A, \)</span> consider the corresponding point in <span>\( B_{z_1} \)</span> from another suitable homeomorphism.  We write <span>\( z_2^\ast \in B_{z_1}. \)</span></li>
+</ul>
 
-	<div>
-		\begin{equation}
-		\varphi(t) = \displaystyle{ \frac{2\sin \pi t}{\cos \pi t +1} }. 
-		\end{equation}
-	</div>
+<p>I leave to the reader the pleasure of finding an analytic expression for this homeomorphism <span>\( \varphi_{AB}. \)</span></p>
 
-	This is the function we are looking for.  Its continuity is easy to prove, and so are its one-to-one and onto properties.  In order to construct the inverse map, trace back from the real line to the vertical line \(\{(1,s) : s \in \mathbb{R}\},\) from there to the unit disk by the inverse of stereographic projection through the point \((-1,0)\), and find the angle of the corresponding image.  Division by \(\pi\) offers you a value in the unit interval \((-1,1).\)  This value is the image of the inverse \(\varphi^{-1}.\)   I leave the construction of the analytical expression of this function to the reader as a nice exercise.
-</div>
-<div class="col-sm-4">
-	<img class="alignright" src="http://farm2.static.flickr.com/1053/5122064612_471d0e977d_o_d.jpg" alt="" width="241" height="419" />
-</div>
+<p>To construct an homeomorphism <span>\( \varphi_{CB} \colon C \to B \)</span>, we can proceed intuitively from a square piece of elastic material, and glue two parallel sides together as indicated in the diagram, thus forming a cylinder.  It should not be too hard to construct a homeomorphism that turns a square into a cylinder in the Euclidean 3–dimensional space (use the correct coordinate system!)  Notice that the bases of such cylinder (which correspond to the other parallel sides of the previous square) turned into circles.  We can then glue both circles together as indicated in the diagram, thus forming a surface similar to that of <span>\( B. \)</span>  This operation has also a nice analytic expression as a map from the cylinder to the torus, which once chosen the right coordinate system, should be no trouble to compute for the reader.  The composition of these two homeomorphisms is, of course, an homeomorphism <span>\( \varphi_{CB}. \)</span></p>
+
+<p>Of course, to come up with the homeomorphism between <span>\( A \)</span> and <span>\( C, \)</span> we can make use of the two previous: <span>\( \varphi_{AC} = \varphi_{CB}^{-1} \circ \varphi_{AB}, \)</span> for example.</p>
 
 	</article>
 

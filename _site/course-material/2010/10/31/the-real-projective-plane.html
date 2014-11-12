@@ -9,7 +9,7 @@
 ">
 	<meta name="author" content="">
 
-	<title>Spheres</title>
+	<title>The Real Projective Plane</title>
 
 	<!-- Bootstrap core CSS -->
 	<link href="/css/bootstrap.min.css" rel="stylesheet">
@@ -312,9 +312,9 @@
 						
 						
 						
+						
+						
 						<li><a href="/teaching/2010/10/27/an-introduction-to-algebraic-topology.html">An Introduction to Algebraic Topology</a></li>
-						
-						
 						
 						
 						
@@ -350,46 +350,39 @@
 <div class="container theme-showcase" role="main" style="font-size: 16px; base-line-height: 1.5; font-family: Helvetica, Arial, sans-serif; spacing-unit: 30px; line-height: 20px; width:750px; text-align:justify;">
 
 	<header class="post-header">
-		<h1 class="post-title">Spheres</h1>
+		<h1 class="post-title">The Real Projective Plane</h1>
 	</header>
 
 	<article class="post-content">
-		<p>The unit sphere in any <span>\( d \)</span>–dimensional space <span>\( \mathbb{R}^d \)</span> is defined to be the set <span>\( \mathbb{S}_{d-1} = \big\{ (x_1,x_2,\dotsc,x_d) \in \mathbb{R}^d : \sum_{k=1}^d x_k^2=1 \big\}. \)</span>  The 1-dimensional sphere is, of course, the circle, that we can parametrize by angles:</p>
+		<p>Consider in the sphere <span>\( \mathbb{S}_2 \subset \mathbb{R}^3, \)</span> the relation induced by identification of antipodal points; that is, given <span>\( z_1, z_2 \in \mathbb{S}_2 \)</span>, set <span>\( z_1 \sim z_2 \)</span> if and only <span>\( z_1 = \pm z_1. \)</span>  The corresponding quotient space <span>\( \mathbb{P} = \big( \mathbb{S}_2 / \sim \big) \)</span> is what we call <strong>real projective space.</strong></p>
 
-<div>
-\begin{equation}
- \varphi \colon [0,2\pi) \in \theta \mapsto e^{i\theta} = \cos \theta + i \sin \theta \equiv (\cos \theta, \sin \theta) \in \mathbb{S}_1 
- \end{equation}
-</div>
+<p>Since we are interested in the topological properties of this space, we actually define a real projective space to be any homeomorphic set to <span>\( \mathbb{P}. \)</span>  Among those, we are interested in one that can be realized from a square, by identification of its sides (in a similar manner as we did with the <a href="http://blancosilva.github.io/course-material/2010/10/28/torus.html" target="_self">torus</a>).  We proceed as follows:</p>
 
-<p>While understanding the definition of homeomorphism, we worked on such a map from a disk <span>\( D_2 \)</span> to a square <span>\( \square_2. \)</span>  In this section we are going to use this idea to establish a homeomorphism between the 2-dimensional sphere <span>\( \mathbb{S}_2 \subset \mathbb{R}^3 \)</span>, and the quotient space formed by a proper identification of points in the border of a square <span>\( \square_2 \subset \mathbb{R}^2. \)</span>  The construction goes as follows:</p>
+<p>Assume that we start from the unit sphere <span>\( \{ (x_1,x_2,x_3) \in \mathbb{R}^3 : x_1^2+x_2^2+x_3^2=1 \} \)</span>, and note that the upper hemisphere <span>\( H=\{ (x_1,x_2,x_3) \in \mathbb{R}^3 : x_1^2+x_2^2+x_3^2=1, x_3 \geq 0  \} \)</span> contains at least one of each pair of antipodal points.  If both antipodal points occur in <span>\( H \)</span>, they will necessarily lie over the circle <span>\( \{ (x_1, x_2, 0) \in \mathbb{R}^3 : x_1^2+x_2^2=1 \}. \)</span>  The hemisphere <span>\( H \)</span> is obviously homeomorphic to a disk (by a simple vertical projection onto the plane <span>\( \{x_3=0 \}, \)</span> for example).  And <a href="http://blancosilva.github.io/course-material/2010/10/27/homeomorphisms.html" target="_self">the disk is homeomorphic to a square</a>, so we may use a composition of both to realize a homomorphism from <span>\( H \)</span> to <span>\( \square_2. \)</span></p>
 
-<ol>
-  <li>Scale the unit sphere by a half, and shift it vertically up by half unit, so the center is at <span>\( (0,0,\frac{1}{2}). \)</span></li>
-  <li>The plane <span>\( { x_3=0} \)</span> intersects this sphere at the origin.  We identify this point with the center of the disk <span>\( D_2. \)</span></li>
-  <li>For each <span>\( 0 \leq \lambda &lt; 1, \)</span> the horizontal plane <span>\( {x_3=\lambda} \)</span> intersects this sphere in the circle <span>\( \big\{ (x_1,x_2,\lambda) \in \mathbb{R}^3 : x_1^2 + x_2^2 + (\lambda - \frac{1}{2})^2 = \frac{1}{4} \big\}: \)</span> the center is at <span>\( (0,0,\lambda), \)</span> and the radius is <span>\( \sqrt{\frac{1}{4}-(\lambda-\frac{1}{2})^2}. \)</span><br />
-We consider a map that scales this circle to that of radius <span>\( \lambda, \)</span> and “places it” on the unit disk <span>\( D_2 \)</span> in a natural way.  So far, the map so constructed is injective, onto and continuous.</li>
-  <li>
-    <p>The issue now is what to do with the last non-void intersection of the sphere with horizontal planes.  This happens at the horizontal plane <span>\( { x_3 = 1}, \)</span> and the result is the only point <span>\( (0,0,1). \)</span>  We overcome this situation by mapping the whole point into the last circle in <span>\( D_2 \)</span>, and identifying the whole circle.  We accomplish this by creating the equivalence relation <span>\( (x_1,x_2) \sim (y_1,y_2) \)</span> defined by the following rules:</p>
+<p>Define in <span>\( H \)</span> an equivalence relation that identifies two antipodal points on the border, and notice that the homeomorphism just computed takes that identification to the following: Given <span>\( (x_1,x_2), (y_1,y_2) \in \square_2 \)</span>, it is <span>\( (x_1,x_2) \sim (y_,y_2) \)</span> if</p>
 
-    <ol>
-      <li><span>\( x_1=y_1 \)</span> and <span>\( x_2=y_2, \)</span> or</li>
-      <li><span>\( x_1^2+x_2^2=y_1^2+y_2^2=1. \)</span></li>
-    </ol>
-  </li>
-</ol>
-
-<p>We have thus created a homeomorphism <span>\( \varphi_1 \colon \mathbb{S}_2 \to D_2. \)</span>  Compose this with an homeomorphism <span>\( \varphi \colon D_2 \to \square_2, \)</span> and notice that the equivalence relation defined above turns into the equivalence relation <span>\( (x_1,x_2) \sim (y_1,y_2) \)</span> defined by the following rules:</p>
-
-<ol>
+<ul>
   <li><span>\( x_1=y_1 \)</span> and <span>\( x_2=y_2 \)</span>, or</li>
-  <li><span>\( \mathop{\text{max}}\big(\lvert x_1\rvert, \lvert x_2\rvert \big) = \mathop{\text{max}}\big( \lvert y_1\rvert, \lvert y_2\rvert \big) = 1. \)</span></li>
-</ol>
+  <li><span>\( x_1y_1 = -1 \)</span> and  <span>\( x_2=1-y_2 \)</span>, or</li>
+  <li><span>\( x_2y_2=-1 \)</span> and <span>\( x_1=1-y_1 \)</span>.</li>
+</ul>
 
-<p>Graphically, we represent this set with the diagram below:</p>
+<p>A diagram representing the quotient space <span>\( \big( \square_2 / \sim \big) \)</span> is presented below:</p>
 
-<p style="text-align:center;"><img src="http://farm2.static.flickr.com/1411/5124471675_8a5419827d_o_d.jpg" />
-</p>
+<table style="width:50%;margin-right:auto;margin-left:auto;border-width:0;">
+<tbody>
+<tr>
+<td style="width:100%;text-align:center;vertical-align:middle;border-width:0;" colspan="2"><img src="http://farm2.static.flickr.com/1352/5124398882_1bfac0cf77_o_d.jpg" alt="" /></td>
+</tr>
+<tr>
+<td style="width:50%;text-align:center;vertical-align:middle;border-width:0;padding:0;"><img src="http://farm2.static.flickr.com/1097/5123795475_95c3b86753_o_d.jpg" alt="" /></td>
+<td style="width:50%;text-align:center;vertical-align:middle;border-width:0;padding:0;"><img src="http://farm5.static.flickr.com/4008/5124399028_810a059e36_o_d.jpg" alt="" /></td>
+</tr>
+</tbody>
+</table>
+
+<p>The punch-line is, of course, to construct a homeomorphism from the real projective plane <span>\( \mathbb{P} \)</span> as defined above, to the quotient space <span>\( \big( \square_2 / \sim \big). \)</span>  The reader should not have much trouble to give an analytic expression of such a map following the steps above.</p>
 
 	</article>
 

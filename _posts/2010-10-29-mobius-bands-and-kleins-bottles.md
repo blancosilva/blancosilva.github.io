@@ -1,7 +1,6 @@
 ---
 layout: page
 title: Möbius bands and Klein bottles
-date: 2010-11-02 00:59:51.000000000 -04:00
 category: course-material
 topic: topology
 comments: true

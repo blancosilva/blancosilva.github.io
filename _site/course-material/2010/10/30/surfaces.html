@@ -9,7 +9,7 @@
 ">
 	<meta name="author" content="">
 
-	<title>Möbius bands and Klein bottles</title>
+	<title>Surfaces</title>
 
 	<!-- Bootstrap core CSS -->
 	<link href="/css/bootstrap.min.css" rel="stylesheet">
@@ -312,9 +312,9 @@
 						
 						
 						
+						
+						
 						<li><a href="/teaching/2010/10/27/an-introduction-to-algebraic-topology.html">An Introduction to Algebraic Topology</a></li>
-						
-						
 						
 						
 						
@@ -350,62 +350,85 @@
 <div class="container theme-showcase" role="main" style="font-size: 16px; base-line-height: 1.5; font-family: Helvetica, Arial, sans-serif; spacing-unit: 30px; line-height: 20px; width:750px; text-align:justify;">
 
 	<header class="post-header">
-		<h1 class="post-title">Möbius bands and Klein bottles</h1>
+		<h1 class="post-title">Surfaces</h1>
 	</header>
 
 	<article class="post-content">
-		<p>Consider a long and narrow strip of paper, in which we glue the two narrower edges together after performing a half-twist of the strip, hence forming a funny-looking loop.  Topologically, this is equivalent to identifying two parallel edges of a square in the proper way.  Therefore, we can see the Möbius band as the quotient space of <span>\( \square_2 \)</span> with the following equivalence relation: Given <span>\( (x_1,x_2), (y_1,y_2) \in \square_2, \)</span> we write <span>\( (x_1,x_2) \sim (y_1,y_2) \)</span> if</p>
+		<p>A Hausdorff space <span>\( X \)</span> is said to be a <span>\( d \)</span><strong>–dimensional manifold</strong> if, for each <span>\( p \in X \)</span> there exists an open neighborhood of <span>\( p \)</span> which is homeomorphic to the unit <span>\( d \)</span>–dimensional Euclidean ball <span>\( D_d = \big\{ (x_1,\dotsc, x_d) \in \mathbb{R}^d : \sum_{k=1}^d x_k^2 &lt; 1 \big\}. \)</span>  We also refer to them as <span>\( d \)</span><strong>–manifolds</strong> and, in the case <span>\( d=2 \)</span>, by the name of <strong>surfaces</strong>.</p>
 
-<ol>
-  <li><span>\( x_1=y_1 \)</span> and <span>\( x_2=y_2, \)</span> or</li>
-  <li><span>\( x_2 y_2 = -1 \)</span> and <span>\( x_1 = 1-y_1. \)</span></li>
-</ol>
+<p>The <a href="http://blancosilva.github.io/course-material/2010/10/29/spheres.html" target="_self">sphere</a> <span>\( \mathbb{S}_2 \)</span>, the <a href="http://blancosilva.github.io/course-material/2010/10/28/torus.html" target="_self">torus</a> <span>\( \mathbb{T} \)</span> and the <a href="http://blancosilva.github.io/course-material/2010/10/28/the-real-projective-plane.html" target="_self">real projective plane</a> <span>\( \mathbb{P} \)</span> are all well-defined surfaces, as the reader will surely have no trouble proving.  The three share several topological properties: they are all connected and compact.  The sphere and the torus differ, nonetheless, in the number of “holes” that they present (we will make this notion more precise later on).  The real projective plane, unlike the other two, is non-orientable (we will work on this idea later too).  These three are fundamentally different surfaces.  A natural question then arises: What are all the possible compact-connected surfaces?</p>
 
-<table style="width:50%;margin-left:auto;margin-right:auto;border-width:0;">
-<tbody>
+<p>But “gluing” together two or more surfaces, we can construct new examples.  Let us give a formal definition of this intuitive “gluing” of surfaces, and explore its properties: Let <span>\( S \)</span> and <span>\( S’ \)</span> be two surfaces, and let <span>\( D \subset S \)</span>, <span>\( D’ \subset S’ \)</span> two sets homeomorphic to a closed disk <span>\( \overline{D_2} \)</span>.  The borders of both sets—<span>\( \delta D \)</span> and <span>\( \delta D’ \)</span> respectively—are homeomorphic to a circle, and thus we can find a homeomorphism <span>\( \varphi \colon \delta D \to \delta D’. \)</span>  We then define the <strong>connected sum</strong> of the surfaces <span>\( S \)</span> and <span>\( S’, \)</span> to be the quotient set obtained on the union</p>
+
+<div>
+\begin{equation}
+ \big( S \setminus \overset{\circ}{D} \big) \cup \big( S' \setminus \overset{\circ}{D'} \big),
+ \end{equation}
+</div>
+
+<p>after identification of the borders <span>\( \delta D \)</span> and <span>\( \delta D’ \)</span> via the previous homeomorphism <span>\( \varphi. \)</span>  This is:
+If <span>\( p,q\in\big(S\setminus\overset{\circ}{D}\big)\cup\big(S’\setminus\overset{\circ}{D’}\big), \) </span> then <span>\( p \sim q \)</span> provided</p>
+
+<ul>
+  <li><span>\( p = q \)</span>, or</li>
+  <li><span>\( p \in \delta D, q \in \delta D’, \)</span> and <span>\( q=\varphi(p), \)</span> or</li>
+  <li><span>\( p \in \delta D’, q \in \delta D, \)</span> and <span>\( p = \varphi(q). \)</span></li>
+</ul>
+
+<p>We denote <span>\( S \mathop{\#} S’=\bigg(\big(S\setminus\overset{\circ}{D}\big)\cup\big(S’\setminus\overset{\circ}{D’}\big)/\sim\bigg) \)</span>.</p>
+
+<p>Let us show with an example the connected sum of two torii:</p>
+
+<table style="width:75%; margin-left:auto; margin-right:auto; border:4px solid black;">
+	<tbody>
 <tr>
-<td style="text-align:center;vertical-align:middle;width:50%;border-width:0;"><img src="http://farm5.static.flickr.com/4061/5138306803_a74b9b45e1_o_d.jpg" alt="" width="100%" /></td>
-<td style="text-align:center;vertical-align:middle;width:50%;border-width:0;"><img src="http://farm5.static.flickr.com/4112/5138306843_614839a353_o_d.jpg" alt="" width="100%" /></td>
+<td style="width:33%;text-align:center;vertical-align:middle;border-width:0;"><img src="http://farm5.static.flickr.com/4112/5127794052_6d89be203b_o_d.jpg" alt="" width="100%" /></td>
+<td style="width:33%;text-align:center;vertical-align:middle;border-width:0;"><img src="http://farm5.static.flickr.com/4112/5127794052_6d89be203b_o_d.jpg" alt="" width="100%" /></td>
+<td style="padding:10px; width:33%;vertical-align:top;font-family:modern;font-size:12pt;text-align:justify;border-width:0;" rowspan="2">The connected sum of two tori start with the two surfaces next to each other.  The diagram below represents the corresponding homeomorphic squares, with the edges identified according to the proper equivalence relation.</td>
+</tr>
+<tr>
+<td style="width:33%;text-align:center;vertical-align:middle;border-width:0;"><img src="http://farm5.static.flickr.com/4011/5127212155_711f3cd063_o_d.jpg" alt="" width="100%" /></td>
+<td style="width:33%;text-align:center;vertical-align:middle;border-width:0;"><img src="http://farm5.static.flickr.com/4011/5127212155_711f3cd063_o_d.jpg" alt="" width="100%" /></td>
 </tr>
 </tbody>
 </table>
 
-<p>In a similar fashion, we construct a new surface by identification of two parallel edges of a square to form a cylinder, and a posterior identification of the remaining two edges (which turned into two circles after the first identification).  The second identification will be performed after a “half-twist” (which unfortunately can only be realized in a fourth dimension!).  The equivalence relation in the square <span>\( \square_2 \)</span> is as follows: Given <span>\( (x_1,x_2), (y_1,y_2) \in \square_2, \)</span> we define <span>\( (x_1,x_2) \sim (y_1,y_2) \)</span> provided one of the following conditions are satisfied:</p>
+<p><br /></p>
 
-<ol>
-  <li><span>\( x_1=y_1 \)</span> and <span>\( x_2=y_2, \)</span> or</li>
-  <li><span>\( x_1 y_1 = -1 \)</span> and <span>\( x_2 = y_2 \)</span>, or</li>
-  <li><span>\( x_2 y_2 = -1 \)</span> and <span>\( x_1 = 1-y_1. \)</span></li>
-</ol>
+<table style="width:75%; margin-left:auto; margin-right:auto; border:4px solid black;">
+	<tbody>
+<tr>
+<td style="padding:10px; width:33%;vertical-align:top;font-family:modern;font-size:12pt;text-align:justify;border-width:0;" rowspan="3">In the second step, we remove from each torus a set homeomorphic to a closed disk.  The borders of each disk are homeomorphic, and we consider such an homeomorphism for the gluing of the surfaces in the next step.  We indicate this in the diagram by specifying a direction in both borders.</td>
+<td style="width:33%;text-align:center;vertical-align:middle;border-width:0;"><img src="http://farm5.static.flickr.com/4125/5127794080_295d802707_o_d.jpg" alt="" width="100%" /></td>
+<td style="width:33%;text-align:center;vertical-align:middle;border-width:0;"><img src="http://farm2.static.flickr.com/1120/5127188305_3401f74d2c_o_d.jpg" alt="" width="100%" /></td>
+</tr>
+<tr>
+<td style="width:33%;text-align:center;vertical-align:middle;border-width:0;"><img src="http://farm2.static.flickr.com/1196/5127919908_ace2ce95f1_o_d.jpg" alt="" width="100%" /></td>
+<td style="width:33%;text-align:center;vertical-align:middle;border-width:0;"><img src="http://farm2.static.flickr.com/1321/5127314303_152ff8763c_o_d.jpg" alt="" width="100%" /></td>
+</tr>
+<tr>
+<td style="width:66%;vertical-align:middle;border-width:0;" colspan="2"><img src="http://farm2.static.flickr.com/1157/5136494837_109ab99a8c_b_d.jpg" alt="" width="100%" /></td>
+</tr>
+</tbody>
+</table>
 
-<p>A diagram representing this quotient space—which we denote <span>\( \mathbb{K} \)</span> and call Klein bottle—is shown below, together with an interesting way to split and recover the space:  Notice how by cutting three stripes in the manner shown, and adjoining two of the stripes through the proper edge, we can see the Klein’s bottle as the union of two Möbius bands.</p>
+<p><br /></p>
 
-<p style="text-align:center;"><img src="http://farm2.static.flickr.com/1210/5139208635_bde30eca52_b_d.jpg" alt="" width="75%" /></p>
+<table style="width:75%; margin-left:auto; margin-right:auto; border:4px solid black;">
+	<tbody>
+<tr>
+<td style="width:40%;text-align:center;vertical-align:middle;border-width:0;"><img src="http://farm5.static.flickr.com/4124/5135962570_1ab3beaa2f_o_d.jpg" alt="" width="100%" /></td>
+<td style="padding:10px; width:60%;vertical-align:top;font-family:modern;font-size:12pt;text-align:justify ;border-width:0;" rowspan="2">The result is a torus with two <em>holes</em> (we prefer to use the word  <strong>genus</strong> to refer to them).  The diagram shows how to obtain the corresponding polygon, after identification of the paths \( c \) and \( c'. \)  It is not hard to prove that the polygon with identified sides as shown is indeed homeomorphic to the genus-two torus above, via the homeomorphisms constructed in previous pages.</td>
+</tr>
+<tr>
+<td style="width:40%;text-align:center;vertical-align:middle;border-width:0;"><img src="http://farm2.static.flickr.com/1111/5135719991_d0356411dd_o_d.jpg" alt="" width="100%" /></td>
+</tr>
+</tbody>
+</table>
 
-<h2 id="miscellaneous">Miscellaneous</h2>
+<p><br /></p>
 
-<p>All the images included in this presentation are generated with the aid of the package <code>tikz</code> in <span>\( \LaTeX \)</span>.  The code that created the Möbius strip above, for example, is given by</p>
-
-<div class="highlight"><pre><code class="language-latex" data-lang="latex"><span class="lineno"> 1</span> <span class="k">\documentclass</span><span class="nb">{</span>amsart<span class="nb">}</span>
-<span class="lineno"> 2</span> <span class="k">\usepackage</span><span class="nb">{</span>tikz<span class="nb">}</span>
-<span class="lineno"> 3</span> <span class="k">\usetikzlibrary</span><span class="nb">{</span>calc<span class="nb">}</span>
-<span class="lineno"> 4</span> <span class="k">\begin</span><span class="nb">{</span>document<span class="nb">}</span>
-<span class="lineno"> 5</span> <span class="k">\begin</span><span class="nb">{</span>tikzpicture<span class="nb">}</span>
-<span class="lineno"> 6</span> <span class="k">\coordinate</span> (a) at (0cm,0cm);
-<span class="lineno"> 7</span> <span class="k">\coordinate</span> (b) at (1cm,0cm);
-<span class="lineno"> 8</span> <span class="k">\coordinate</span> (c) at (60:1cm);
-<span class="lineno"> 9</span> <span class="k">\coordinate</span> (ab1) at (<span class="s">$</span><span class="nb"> </span><span class="o">(</span><span class="nb">a</span><span class="o">)!</span><span class="nb">.</span><span class="m">25</span><span class="o">!(</span><span class="nb">b</span><span class="o">)</span><span class="nb"> </span><span class="s">$</span>);
-<span class="lineno">10</span> <span class="k">\coordinate</span> (ab2) at (<span class="s">$</span><span class="nb"> </span><span class="o">(</span><span class="nb">a</span><span class="o">)!</span><span class="nb">.</span><span class="m">75</span><span class="o">!(</span><span class="nb">b</span><span class="o">)</span><span class="nb"> </span><span class="s">$</span>);
-<span class="lineno">11</span> <span class="k">\coordinate</span> (bc1) at (<span class="s">$</span><span class="nb"> </span><span class="o">(</span><span class="nb">b</span><span class="o">)!</span><span class="nb">.</span><span class="m">25</span><span class="o">!(</span><span class="nb">c</span><span class="o">)</span><span class="nb"> </span><span class="s">$</span>);
-<span class="lineno">12</span> <span class="k">\coordinate</span> (bc2) at (<span class="s">$</span><span class="nb"> </span><span class="o">(</span><span class="nb">b</span><span class="o">)!</span><span class="nb">.</span><span class="m">75</span><span class="o">!(</span><span class="nb">c</span><span class="o">)</span><span class="nb"> </span><span class="s">$</span>);
-<span class="lineno">13</span> <span class="k">\coordinate</span> (ac1) at (<span class="s">$</span><span class="nb"> </span><span class="o">(</span><span class="nb">a</span><span class="o">)!</span><span class="nb">.</span><span class="m">25</span><span class="o">!(</span><span class="nb">c</span><span class="o">)</span><span class="nb"> </span><span class="s">$</span>);
-<span class="lineno">14</span> <span class="k">\coordinate</span> (ac2) at (<span class="s">$</span><span class="nb"> </span><span class="o">(</span><span class="nb">a</span><span class="o">)!</span><span class="nb">.</span><span class="m">75</span><span class="o">!(</span><span class="nb">c</span><span class="o">)</span><span class="nb"> </span><span class="s">$</span>);
-<span class="lineno">15</span> <span class="k">\draw</span><span class="na">[fill=red!60!black,thick,rounded corners=2pt]</span> (ab1) -- (bc2) [rounded corners=1pt] --(ac2) -- (ac1) [rounded corners=2pt] --cycle;
-<span class="lineno">16</span> <span class="k">\draw</span><span class="na">[fill=red!80!black,thick]</span> (bc1) [rounded corners=2pt] --(bc2) [rounded corners=1pt]-- (ac2) [rounded corners=2pt]-- (ab2) [rounded corners=1pt] --cycle;
-<span class="lineno">17</span> <span class="k">\draw</span><span class="na">[fill=red,thick]</span> (ab1) [rounded corners=2pt] -- (ab2) [rounded corners=1pt] -- (bc1) -- (ac1) [rounded corners=2pt] -- cycle;
-<span class="lineno">18</span> <span class="k">\end</span><span class="nb">{</span>tikzpicture<span class="nb">}</span>
-<span class="lineno">19</span> <span class="k">\end</span><span class="nb">{</span>document<span class="nb">}</span></code></pre></div>
-
+<p>The reader will notice that all of the vertices of this polygon are actually the same vertex! Pick any vertex, say <span>\( P \)</span> between edges <span>\( a \)</span> and <span>\( a’. \)</span>  Since it is at the end of (directed) edge <span>\( a, \)</span> this vertex <span>\( P \)</span> is also the same as the one between edges <span>\( a \)</span> and <span>\( b. \)</span>  As it is now at the beginning of edge <span>\( b, \)</span> it must be also <span>\( P \)</span> between the edges <span>\( b \)</span> and <span>\( a. \)</span>  This proves that <span>\( P \)</span> is also at the beginning of edge <span>\( a. \)</span>  We can continue in this fashion to realize that, indeed, we can safely label <span>\( P \)</span> all of the vertices of this polygon.</p>
 
 	</article>
 

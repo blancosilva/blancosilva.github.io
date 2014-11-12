@@ -9,7 +9,7 @@
 ">
 	<meta name="author" content="">
 
-	<title>Surfaces</title>
+	<title>Triangulation of compact surfaces</title>
 
 	<!-- Bootstrap core CSS -->
 	<link href="/css/bootstrap.min.css" rel="stylesheet">
@@ -312,9 +312,9 @@
 						
 						
 						
+						
+						
 						<li><a href="/teaching/2010/10/27/an-introduction-to-algebraic-topology.html">An Introduction to Algebraic Topology</a></li>
-						
-						
 						
 						
 						
@@ -350,85 +350,46 @@
 <div class="container theme-showcase" role="main" style="font-size: 16px; base-line-height: 1.5; font-family: Helvetica, Arial, sans-serif; spacing-unit: 30px; line-height: 20px; width:750px; text-align:justify;">
 
 	<header class="post-header">
-		<h1 class="post-title">Surfaces</h1>
+		<h1 class="post-title">Triangulation of compact surfaces</h1>
 	</header>
 
 	<article class="post-content">
-		<p>A Hausdorff space <span>\( X \)</span> is said to be a <span>\( d \)</span><strong>–dimensional manifold</strong> if, for each <span>\( p \in X \)</span> there exists an open neighborhood of <span>\( p \)</span> which is homeomorphic to the unit <span>\( d \)</span>–dimensional Euclidean ball <span>\( D_d = \big\{ (x_1,\dotsc, x_d) \in \mathbb{R}^d : \sum_{k=1}^d x_k^2 &lt; 1 \big\}. \)</span>  We also refer to them as <span>\( d \)</span><strong>–manifolds</strong> and, in the case <span>\( d=2 \)</span>, by the name of <strong>surfaces</strong>.</p>
+		<p>A triangulation of a compact surface <span>\( S \)</span> is a finite family of closed subsets <span>\( { T_1, T_2, \dotsc, T_m} \)</span> that cover <span>\( S, \)</span> and a family of homeomorphisms <span>\( \varphi_k: \mathcal{T} \to T_k \)</span>, where <span>\( \mathcal{T} \subset \mathbb{R}^2 \)</span> is a proper triangle in the plane.  We say that the sets <span>\( T_k \)</span> are triangles as well, and the images by <span>\( \varphi_k \)</span> of a vertex (resp. edge) of the triangle <span>\( \mathcal{T} \)</span> is also called a vertex (resp. edge).  We impose one condition: Given two different triangles <span>\( T_k \)</span> and <span>\( T_j, \)</span> their intersection must be either void, or a common vertex, or a common edge.</p>
 
-<p>The <a href="http://blancosilva.github.io/course-material/2010/10/29/spheres.html" target="_self">sphere</a> <span>\( \mathbb{S}_2 \)</span>, the <a href="http://blancosilva.github.io/course-material/2010/10/28/torus.html" target="_self">torus</a> <span>\( \mathbb{T} \)</span> and the <a href="http://blancosilva.github.io/course-material/2010/10/28/the-real-projective-plane.html" target="_self">real projective plane</a> <span>\( \mathbb{P} \)</span> are all well-defined surfaces, as the reader will surely have no trouble proving.  The three share several topological properties: they are all connected and compact.  The sphere and the torus differ, nonetheless, in the number of “holes” that they present (we will make this notion more precise later on).  The real projective plane, unlike the other two, is non-orientable (we will work on this idea later too).  These three are fundamentally different surfaces.  A natural question then arises: What are all the possible compact-connected surfaces?</p>
+<blockquote>
+Since the (surface of a) tetrahedron is homeomorphic to the sphere \( \mathbb{S}_2, \) we may consider this as a valid triangulation for the latter.  This triangulation is formed basically by four triangles, four vertices and six edges.
 
-<p>But “gluing” together two or more surfaces, we can construct new examples.  Let us give a formal definition of this intuitive “gluing” of surfaces, and explore its properties: Let <span>\( S \)</span> and <span>\( S’ \)</span> be two surfaces, and let <span>\( D \subset S \)</span>, <span>\( D’ \subset S’ \)</span> two sets homeomorphic to a closed disk <span>\( \overline{D_2} \)</span>.  The borders of both sets—<span>\( \delta D \)</span> and <span>\( \delta D’ \)</span> respectively—are homeomorphic to a circle, and thus we can find a homeomorphism <span>\( \varphi \colon \delta D \to \delta D’. \)</span>  We then define the <strong>connected sum</strong> of the surfaces <span>\( S \)</span> and <span>\( S’, \)</span> to be the quotient set obtained on the union</p>
+<table style="width:75%; margin-left:auto; margin-right:auto;">
+<tr>
+<td style="text-align:center;vertical-align:middle;width:50%;"><img src="http://farm5.static.flickr.com/4001/5163063660_2c03604d19_o_d.jpg" width="100%" /></td>
+<td style="text-align:center;vertical-align:middle;width:50%;"><img src="http://farm5.static.flickr.com/4147/5162456723_b2980d9744_o_d.jpg" width="100%" /></td>
+</tr>
+</table>
+
+The following example shows a triangulation of a torus, performed on the representation of \( \mathbb{T} \) given by the quotient space of the square \( \square_2 \) by the proper identification in the border.  Note that in this representation, all of the vertices of the square are actually the same vertex, which we denote \( P_1. \)  We construct a triangulation by placing two more vertices on the horizontal borders, \( P_2, P_3, \) two more vertices in the vertical borders, \( P_4, P_5, \), four more vertices inside the square, \( P_6, P_7, P_8, P_9, \), and joining all of them with edges, as shown in the image below:
+<table style="width:75%; margin-left:auto; margin-right:auto;">
+<tr>
+<td style="text-align:center;vertical-align:top;width:40%;border-width:0;">
+<img src="http://farm5.static.flickr.com/4086/5161919213_ebf564f5f7_o_d.jpg" width="100%" /></td>
+<td style="text-align:center;vertical-align:middle;width:60%;border-width:0;">
+<img src="http://farm2.static.flickr.com/1202/5165763462_91305e8e7e_o_d.jpg" width="100%" /></td>
+</tr>
+</table>
+
+This gives the following triangles:
 
 <div>
-\begin{equation}
- \big( S \setminus \overset{\circ}{D} \big) \cup \big( S' \setminus \overset{\circ}{D'} \big),
- \end{equation}
+\begin{equation} \begin{array}{ccc}P_1P_2P_5 &amp; P_2P_5P_6 &amp; P_2P_3P_6\\P_3P_6P_7 &amp; P_1P_3P_6 &amp; P_1P_5P_7\\P_4P_5P_6 &amp; P_4P_6P_8 &amp; P_6P_7P_8\\P_7P_8P_9 &amp; P_4P_7P_9 &amp; P_4P_5P_7\\P_1P_2P_4 &amp; P_2P_4P_8 &amp; P_2P_3P_8\\P_3P_8P_9 &amp; P_3P_4P_9 &amp; P_1P_3P_4\end{array} 
+\end{equation}
 </div>
+</blockquote>
 
-<p>after identification of the borders <span>\( \delta D \)</span> and <span>\( \delta D’ \)</span> via the previous homeomorphism <span>\( \varphi. \)</span>  This is:
-If <span>\( p,q\in\big(S\setminus\overset{\circ}{D}\big)\cup\big(S’\setminus\overset{\circ}{D’}\big), \) </span> then <span>\( p \sim q \)</span> provided</p>
+<p>Two important observations about triangulations of <strong>any</strong> compact surface:</p>
 
 <ul>
-  <li><span>\( p = q \)</span>, or</li>
-  <li><span>\( p \in \delta D, q \in \delta D’, \)</span> and <span>\( q=\varphi(p), \)</span> or</li>
-  <li><span>\( p \in \delta D’, q \in \delta D, \)</span> and <span>\( p = \varphi(q). \)</span></li>
+  <li>Each edge belongs to exactly two triangles.  This is due to the fact that the surfaces have at every point, a neighborhood that is homeomorphic to an open ball.</li>
+  <li>Given a vertex <span>\( v \)</span> in a proper triangulation, it is possible to sort all the triangles that share than vertex, say clock or counterclockwise, in such a way that two consecutive triangles share a common edge. This is a direct consequence of the previous observation, and the fact that the union of all the triangles sharing a common vertex must be a connected set.</li>
 </ul>
-
-<p>We denote <span>\( S \mathop{\#} S’=\bigg(\big(S\setminus\overset{\circ}{D}\big)\cup\big(S’\setminus\overset{\circ}{D’}\big)/\sim\bigg) \)</span>.</p>
-
-<p>Let us show with an example the connected sum of two torii:</p>
-
-<table style="width:75%; margin-left:auto; margin-right:auto; border:4px solid black;">
-	<tbody>
-<tr>
-<td style="width:33%;text-align:center;vertical-align:middle;border-width:0;"><img src="http://farm5.static.flickr.com/4112/5127794052_6d89be203b_o_d.jpg" alt="" width="100%" /></td>
-<td style="width:33%;text-align:center;vertical-align:middle;border-width:0;"><img src="http://farm5.static.flickr.com/4112/5127794052_6d89be203b_o_d.jpg" alt="" width="100%" /></td>
-<td style="padding:10px; width:33%;vertical-align:top;font-family:modern;font-size:12pt;text-align:justify;border-width:0;" rowspan="2">The connected sum of two tori start with the two surfaces next to each other.  The diagram below represents the corresponding homeomorphic squares, with the edges identified according to the proper equivalence relation.</td>
-</tr>
-<tr>
-<td style="width:33%;text-align:center;vertical-align:middle;border-width:0;"><img src="http://farm5.static.flickr.com/4011/5127212155_711f3cd063_o_d.jpg" alt="" width="100%" /></td>
-<td style="width:33%;text-align:center;vertical-align:middle;border-width:0;"><img src="http://farm5.static.flickr.com/4011/5127212155_711f3cd063_o_d.jpg" alt="" width="100%" /></td>
-</tr>
-</tbody>
-</table>
-
-<p><br /></p>
-
-<table style="width:75%; margin-left:auto; margin-right:auto; border:4px solid black;">
-	<tbody>
-<tr>
-<td style="padding:10px; width:33%;vertical-align:top;font-family:modern;font-size:12pt;text-align:justify;border-width:0;" rowspan="3">In the second step, we remove from each torus a set homeomorphic to a closed disk.  The borders of each disk are homeomorphic, and we consider such an homeomorphism for the gluing of the surfaces in the next step.  We indicate this in the diagram by specifying a direction in both borders.</td>
-<td style="width:33%;text-align:center;vertical-align:middle;border-width:0;"><img src="http://farm5.static.flickr.com/4125/5127794080_295d802707_o_d.jpg" alt="" width="100%" /></td>
-<td style="width:33%;text-align:center;vertical-align:middle;border-width:0;"><img src="http://farm2.static.flickr.com/1120/5127188305_3401f74d2c_o_d.jpg" alt="" width="100%" /></td>
-</tr>
-<tr>
-<td style="width:33%;text-align:center;vertical-align:middle;border-width:0;"><img src="http://farm2.static.flickr.com/1196/5127919908_ace2ce95f1_o_d.jpg" alt="" width="100%" /></td>
-<td style="width:33%;text-align:center;vertical-align:middle;border-width:0;"><img src="http://farm2.static.flickr.com/1321/5127314303_152ff8763c_o_d.jpg" alt="" width="100%" /></td>
-</tr>
-<tr>
-<td style="width:66%;vertical-align:middle;border-width:0;" colspan="2"><img src="http://farm2.static.flickr.com/1157/5136494837_109ab99a8c_b_d.jpg" alt="" width="100%" /></td>
-</tr>
-</tbody>
-</table>
-
-<p><br /></p>
-
-<table style="width:75%; margin-left:auto; margin-right:auto; border:4px solid black;">
-	<tbody>
-<tr>
-<td style="width:40%;text-align:center;vertical-align:middle;border-width:0;"><img src="http://farm5.static.flickr.com/4124/5135962570_1ab3beaa2f_o_d.jpg" alt="" width="100%" /></td>
-<td style="padding:10px; width:60%;vertical-align:top;font-family:modern;font-size:12pt;text-align:justify ;border-width:0;" rowspan="2">The result is a torus with two <em>holes</em> (we prefer to use the word  <strong>genus</strong> to refer to them).  The diagram shows how to obtain the corresponding polygon, after identification of the paths \( c \) and \( c'. \)  It is not hard to prove that the polygon with identified sides as shown is indeed homeomorphic to the genus-two torus above, via the homeomorphisms constructed in previous pages.</td>
-</tr>
-<tr>
-<td style="width:40%;text-align:center;vertical-align:middle;border-width:0;"><img src="http://farm2.static.flickr.com/1111/5135719991_d0356411dd_o_d.jpg" alt="" width="100%" /></td>
-</tr>
-</tbody>
-</table>
-
-<p><br /></p>
-
-<p>The reader will notice that all of the vertices of this polygon are actually the same vertex! Pick any vertex, say <span>\( P \)</span> between edges <span>\( a \)</span> and <span>\( a’. \)</span>  Since it is at the end of (directed) edge <span>\( a, \)</span> this vertex <span>\( P \)</span> is also the same as the one between edges <span>\( a \)</span> and <span>\( b. \)</span>  As it is now at the beginning of edge <span>\( b, \)</span> it must be also <span>\( P \)</span> between the edges <span>\( b \)</span> and <span>\( a. \)</span>  This proves that <span>\( P \)</span> is also at the beginning of edge <span>\( a. \)</span>  We can continue in this fashion to realize that, indeed, we can safely label <span>\( P \)</span> all of the vertices of this polygon.</p>
 
 	</article>
 

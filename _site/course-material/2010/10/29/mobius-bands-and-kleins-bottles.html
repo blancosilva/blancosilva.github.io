@@ -9,7 +9,7 @@
 ">
 	<meta name="author" content="">
 
-	<title>Algebra of connected sums of surfaces</title>
+	<title>Möbius bands and Klein bottles</title>
 
 	<!-- Bootstrap core CSS -->
 	<link href="/css/bootstrap.min.css" rel="stylesheet">
@@ -312,9 +312,9 @@
 						
 						
 						
+						
+						
 						<li><a href="/teaching/2010/10/27/an-introduction-to-algebraic-topology.html">An Introduction to Algebraic Topology</a></li>
-						
-						
 						
 						
 						
@@ -350,77 +350,62 @@
 <div class="container theme-showcase" role="main" style="font-size: 16px; base-line-height: 1.5; font-family: Helvetica, Arial, sans-serif; spacing-unit: 30px; line-height: 20px; width:750px; text-align:justify;">
 
 	<header class="post-header">
-		<h1 class="post-title">Algebra of connected sums of surfaces</h1>
+		<h1 class="post-title">Möbius bands and Klein bottles</h1>
 	</header>
 
 	<article class="post-content">
-		<p>Let us explore the algebraic properties of connected sums.  We immediately realize that the operation is both commutative</p>
+		<p>Consider a long and narrow strip of paper, in which we glue the two narrower edges together after performing a half-twist of the strip, hence forming a funny-looking loop.  Topologically, this is equivalent to identifying two parallel edges of a square in the proper way.  Therefore, we can see the Möbius band as the quotient space of <span>\( \square_2 \)</span> with the following equivalence relation: Given <span>\( (x_1,x_2), (y_1,y_2) \in \square_2, \)</span> we write <span>\( (x_1,x_2) \sim (y_1,y_2) \)</span> if</p>
 
-<blockquote>
-  <p><span>\( S \mathop{\#} S’ = S’ \mathop{\#} S \)</span> for any two surfaces <span>\( S \)<span> and <span>\( S’ \)<span>,</span></span></span></span></p>
-</blockquote>
+<ol>
+  <li><span>\( x_1=y_1 \)</span> and <span>\( x_2=y_2, \)</span> or</li>
+  <li><span>\( x_2 y_2 = -1 \)</span> and <span>\( x_1 = 1-y_1. \)</span></li>
+</ol>
 
-<p>and associative</p>
-
-<blockquote>
-  <p><span>\( ( S \mathop{\#} S’) \mathop{\#} S’’ = S \mathop{\#} (S’ \mathop{\#} S’’) \)<span> for any three surfaces <span>\( S \)<span>, <span>\( S’ \)<span> and <span>\( S’’ \)<span>.</span></span></span></span></span></span></span></span></p>
-</blockquote>
-
-<p>The sphere acts a neutral element (like the zero for the addition of numbers):</p>
-
-<blockquote>
-  <p><span>\( S \mathop{\#} \mathbb{S}_2 = S \)<span> for all surfaces <span>\( S \)<span>.</span></span></span></span></p>
-</blockquote>
-
-<p>Notice that, unlike addition of numbers, we do not necessarily have “negative surfaces”: we cannot guarantee, for a given surface <span>\( S \)<span>, the existence of another surface <span>\( S’ \)<span> such that <span>\( S \mathop{\#} S’ = \mathbb{S}_2 \)<span>.</span></span></span></span></span></span></p>
-
-<p><a href="http://blancosilva.github.io/course-material/2010/10/29/surfaces.html">We have already seen</a> that the connected sum of two tori results in a two-genus torus.  In general, for any natural number <span>\( n \in \mathbb{N}, \)<span> the connected sum of <span>\( n \)<span> tori is a torus with genus <span>\( n, \)<span> wich we denote <span>\( n \mathbb{T} = \mathbb{T} \mathop{\#} \overset{n}{\dotsb} \mathop{\#} \mathbb{T}. \)<span></span></span></span></span></span></span></span></span></p>
-
-<p>The connected sum of two real projective spaces is a Klein bottle, <span>\( \mathbb{K}. \)<span>  To construct this connected sum from the representation of real projective planes as squares with sides identifies, note first what happens when we cut such a diagram into three stripes:</span></span></p>
-
-<table style="width:75%;border:4px solid black; margin-left:auto; margin-right:auto;">
+<table style="width:50%;margin-left:auto;margin-right:auto;border-width:0;">
 <tbody>
 <tr>
-<td style="width:30%;text-align:center;vertical-align:middle;border-width:0;padding:10px;"><img src="http://farm5.static.flickr.com/4086/5138692210_2f2974cca8_o_d.jpg" alt="" width="100%" /></td>
-<td style="width:70%;text-align:justify;vertical-align:top;padding:10px;" rowspan="2">Notice that the central stripe (in <span style="color:red;">red</span>) is a <a href="http://blancosilva.github.io/course-material/2010/11/02/mobius-bands-and-kleins-bottles.html" target="_self">Möbius band</a>.  Gluing the remaining two stripes through the common edge \( b \) properly, and identifying the other edges of these stripes accordingly, gives a disk.  We have thus proved that the removal of a (closed) disk from a projective space gives us a Möbius band.
-
-We may consider this to be the disk that we remove prior to the gluing of the two real projective planes. Therefore, a connected sum of these two surfaces is equivalent to the union of two Möbius bands, with no need to perform any identification on edges a priori.
-
-The statement is then proven, since we know that a given <a href="http://blancosilva.github.io/course-material/2010/11/02/mobius-bands-and-kleins-bottles.html" target="_self">Klein bottle can be split into a union of two Möbius bands</a>.</td>
-</tr>
-<tr>
-<td style="width:30%;text-align:center;vertical-align:middle;border-width:0;padding:10px;"><img src="http://farm2.static.flickr.com/1233/5138692258_3e355a2e11_o_d.jpg" alt="" width="100%" /></td>
+<td style="text-align:center;vertical-align:middle;width:50%;border-width:0;"><img src="http://farm5.static.flickr.com/4061/5138306803_a74b9b45e1_o_d.jpg" alt="" width="100%" /></td>
+<td style="text-align:center;vertical-align:middle;width:50%;border-width:0;"><img src="http://farm5.static.flickr.com/4112/5138306843_614839a353_o_d.jpg" alt="" width="100%" /></td>
 </tr>
 </tbody>
 </table>
 
-<p><br /></p>
+<p>In a similar fashion, we construct a new surface by identification of two parallel edges of a square to form a cylinder, and a posterior identification of the remaining two edges (which turned into two circles after the first identification).  The second identification will be performed after a “half-twist” (which unfortunately can only be realized in a fourth dimension!).  The equivalence relation in the square <span>\( \square_2 \)</span> is as follows: Given <span>\( (x_1,x_2), (y_1,y_2) \in \square_2, \)</span> we define <span>\( (x_1,x_2) \sim (y_1,y_2) \)</span> provided one of the following conditions are satisfied:</p>
 
-<p>The following property is very useful to understand topological simplification to the description of complicated connected sums:</p>
+<ol>
+  <li><span>\( x_1=y_1 \)</span> and <span>\( x_2=y_2, \)</span> or</li>
+  <li><span>\( x_1 y_1 = -1 \)</span> and <span>\( x_2 = y_2 \)</span>, or</li>
+  <li><span>\( x_2 y_2 = -1 \)</span> and <span>\( x_1 = 1-y_1. \)</span></li>
+</ol>
 
-<blockquote>
-  <p><span>\( 3\mathbb{P} = \mathbb{T} \mathop{\#} \mathbb{P} \)<span>; that is, the connected sum of three real projective planes is homeomorphic to the connected sum of a torus with a real projective plane.</span></span></p>
-</blockquote>
+<p>A diagram representing this quotient space—which we denote <span>\( \mathbb{K} \)</span> and call Klein bottle—is shown below, together with an interesting way to split and recover the space:  Notice how by cutting three stripes in the manner shown, and adjoining two of the stripes through the proper edge, we can see the Klein’s bottle as the union of two Möbius bands.</p>
 
-<p>Or in other words, <span>\( \mathbb{K} \mathop{\#} \mathbb{P} = \mathbb{T} \mathop{\#} \mathbb{P}. \)<span> The proof of this result is a nice exercise, and I urge the reader to enjoy finding it by manipulation of the proper polygons.</span></span></p>
+<p style="text-align:center;"><img src="http://farm2.static.flickr.com/1210/5139208635_bde30eca52_b_d.jpg" alt="" width="75%" /></p>
 
-<p>We are at an excellent point to test our algebraic skills with the connected sum.  For example, consider the surface <span>\( M \)<span> constructed as the connected sum</span></span></p>
+<h2 id="miscellaneous">Miscellaneous</h2>
 
-<div>
-\begin{equation}
- M = \mathbb{P} \mathop{\#} \mathbb{T} \mathop{\#} \mathbb{P} \mathop{\#} \mathbb{S}_2 \mathop{\#} \mathbb{P} \mathop{\#} \mathbb{K}.
- \end{equation}
-</div>
+<p>All the images included in this presentation are generated with the aid of the package <code>tikz</code> in <span>\( \LaTeX \)</span>.  The code that created the Möbius strip above, for example, is given by</p>
 
-<p>The basic algebraic properties above allow us to give a simplified description of this surface:</p>
+<div class="highlight"><pre><code class="language-latex" data-lang="latex"><span class="lineno"> 1</span> <span class="k">\documentclass</span><span class="nb">{</span>amsart<span class="nb">}</span>
+<span class="lineno"> 2</span> <span class="k">\usepackage</span><span class="nb">{</span>tikz<span class="nb">}</span>
+<span class="lineno"> 3</span> <span class="k">\usetikzlibrary</span><span class="nb">{</span>calc<span class="nb">}</span>
+<span class="lineno"> 4</span> <span class="k">\begin</span><span class="nb">{</span>document<span class="nb">}</span>
+<span class="lineno"> 5</span> <span class="k">\begin</span><span class="nb">{</span>tikzpicture<span class="nb">}</span>
+<span class="lineno"> 6</span> <span class="k">\coordinate</span> (a) at (0cm,0cm);
+<span class="lineno"> 7</span> <span class="k">\coordinate</span> (b) at (1cm,0cm);
+<span class="lineno"> 8</span> <span class="k">\coordinate</span> (c) at (60:1cm);
+<span class="lineno"> 9</span> <span class="k">\coordinate</span> (ab1) at (<span class="s">$</span><span class="nb"> </span><span class="o">(</span><span class="nb">a</span><span class="o">)!</span><span class="nb">.</span><span class="m">25</span><span class="o">!(</span><span class="nb">b</span><span class="o">)</span><span class="nb"> </span><span class="s">$</span>);
+<span class="lineno">10</span> <span class="k">\coordinate</span> (ab2) at (<span class="s">$</span><span class="nb"> </span><span class="o">(</span><span class="nb">a</span><span class="o">)!</span><span class="nb">.</span><span class="m">75</span><span class="o">!(</span><span class="nb">b</span><span class="o">)</span><span class="nb"> </span><span class="s">$</span>);
+<span class="lineno">11</span> <span class="k">\coordinate</span> (bc1) at (<span class="s">$</span><span class="nb"> </span><span class="o">(</span><span class="nb">b</span><span class="o">)!</span><span class="nb">.</span><span class="m">25</span><span class="o">!(</span><span class="nb">c</span><span class="o">)</span><span class="nb"> </span><span class="s">$</span>);
+<span class="lineno">12</span> <span class="k">\coordinate</span> (bc2) at (<span class="s">$</span><span class="nb"> </span><span class="o">(</span><span class="nb">b</span><span class="o">)!</span><span class="nb">.</span><span class="m">75</span><span class="o">!(</span><span class="nb">c</span><span class="o">)</span><span class="nb"> </span><span class="s">$</span>);
+<span class="lineno">13</span> <span class="k">\coordinate</span> (ac1) at (<span class="s">$</span><span class="nb"> </span><span class="o">(</span><span class="nb">a</span><span class="o">)!</span><span class="nb">.</span><span class="m">25</span><span class="o">!(</span><span class="nb">c</span><span class="o">)</span><span class="nb"> </span><span class="s">$</span>);
+<span class="lineno">14</span> <span class="k">\coordinate</span> (ac2) at (<span class="s">$</span><span class="nb"> </span><span class="o">(</span><span class="nb">a</span><span class="o">)!</span><span class="nb">.</span><span class="m">75</span><span class="o">!(</span><span class="nb">c</span><span class="o">)</span><span class="nb"> </span><span class="s">$</span>);
+<span class="lineno">15</span> <span class="k">\draw</span><span class="na">[fill=red!60!black,thick,rounded corners=2pt]</span> (ab1) -- (bc2) [rounded corners=1pt] --(ac2) -- (ac1) [rounded corners=2pt] --cycle;
+<span class="lineno">16</span> <span class="k">\draw</span><span class="na">[fill=red!80!black,thick]</span> (bc1) [rounded corners=2pt] --(bc2) [rounded corners=1pt]-- (ac2) [rounded corners=2pt]-- (ab2) [rounded corners=1pt] --cycle;
+<span class="lineno">17</span> <span class="k">\draw</span><span class="na">[fill=red,thick]</span> (ab1) [rounded corners=2pt] -- (ab2) [rounded corners=1pt] -- (bc1) -- (ac1) [rounded corners=2pt] -- cycle;
+<span class="lineno">18</span> <span class="k">\end</span><span class="nb">{</span>tikzpicture<span class="nb">}</span>
+<span class="lineno">19</span> <span class="k">\end</span><span class="nb">{</span>document<span class="nb">}</span></code></pre></div>
 
-<div>
-\begin{align}
- M &amp; = \mathbb{P}\mathop{\#}\mathbb{T}\mathop{\#}\mathbb{P}\mathop{\#}\mathbb{S}_2\mathop{\#}\mathbb{P}\mathop{\#}\mathbb{K} &amp;&amp; \text{(group in pairs)}\\  
- &amp; =  \big(\underbrace{\mathbb{P}\mathop{\#}\mathbb{T}}_{\mathbb{T}\mathop{\#}\mathbb{P}=3\mathbb{P}}\big)\mathop{\#}\big(\underbrace{\mathbb{P}\mathop{\#}\mathbb{S}_2}_{S\mathop{\#}\mathbb{S}_2=S}\big)\mathop{\#}\big(\mathbb{P}\mathop{\#}\underbrace{\mathbb{K}}_{2\mathbb{P}}\big) &amp;&amp; \text{(simplify each pair)}\\  
- &amp; = 3\mathbb{P}\mathop{\#}\mathbb{P}\mathop{\#}3\mathbb{P}=7\mathbb{P} 
- \end{align}
-</div>
 
 	</article>
 
