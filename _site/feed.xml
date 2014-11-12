@@ -6,16 +6,18 @@
 </description>
     <link>http://blancosilva.github.io/</link>
     <atom:link href="http://blancosilva.github.io/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Tue, 11 Nov 2014 23:39:04 -0500</pubDate>
-    <lastBuildDate>Tue, 11 Nov 2014 23:39:04 -0500</lastBuildDate>
+    <pubDate>Wed, 12 Nov 2014 00:12:26 -0500</pubDate>
+    <lastBuildDate>Wed, 12 Nov 2014 00:12:26 -0500</lastBuildDate>
     <generator>Jekyll v2.4.0</generator>
     
       <item>
         <title>Past Sections of Undergraduate Calculus</title>
-        <description>&lt;div class=&quot;row&quot;&gt;
-	&lt;div class=&quot;col-sm-12&quot;&gt;
+        <description>&lt;p&gt;Click on each title to retrieve corresponding syllabus and lesson plans&lt;/p&gt;
+
+&lt;div class=&quot;row&quot;&gt;
+	&lt;div class=&quot;col-sm-6&quot;&gt;
 		&lt;div class=&quot;list-group&quot;&gt;
-			&lt;a href=&quot;#&quot; class=&quot;list-group-item active&quot;&gt;Click on each course to retrieve corresponding syllabus and lesson plan&lt;/a&gt;
+			&lt;a href=&quot;#&quot; class=&quot;list-group-item active&quot;&gt;Freshman Calculus&lt;/a&gt;
 			
 			
 			
@@ -71,7 +73,7 @@
 			
 			&lt;a href=&quot;/course/2013/08/19/ma122-fall-2013.html#&quot; class=&quot;list-group-item&quot;&gt;
 				&lt;h4 class=&quot;list-group-item-heading&quot;&gt;MA122—Fall 2013&lt;/h4&gt;
-				&lt;p class=&quot;list-group-item-text&quot;&gt;Applied Calculus for Business and Life Sciences&lt;/p&gt;
+				&lt;p class=&quot;list-group-item-text&quot;&gt;Applied Calculus&lt;/p&gt;
 			&lt;/a&gt;
 			
 			
@@ -84,7 +86,7 @@
 			
 			&lt;a href=&quot;/course/2013/01/10/ma122-spring-2013.html#&quot; class=&quot;list-group-item&quot;&gt;
 				&lt;h4 class=&quot;list-group-item-heading&quot;&gt;MA122—Spring 2013&lt;/h4&gt;
-				&lt;p class=&quot;list-group-item-text&quot;&gt;Applied Calculus for Business and Life Sciences&lt;/p&gt;
+				&lt;p class=&quot;list-group-item-text&quot;&gt;Applied Calculus&lt;/p&gt;
 			&lt;/a&gt;
 			
 			
@@ -93,6 +95,155 @@
 				&lt;h4 class=&quot;list-group-item-heading&quot;&gt;MA141—Spring 2013&lt;/h4&gt;
 				&lt;p class=&quot;list-group-item-text&quot;&gt;Calculus I&lt;/p&gt;
 			&lt;/a&gt;
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			&lt;a href=&quot;/course/2012/08/15/ma141-fall-2012.html#&quot; class=&quot;list-group-item&quot;&gt;
+				&lt;h4 class=&quot;list-group-item-heading&quot;&gt;MA141—Fall 2012&lt;/h4&gt;
+				&lt;p class=&quot;list-group-item-text&quot;&gt;Calculus I&lt;/p&gt;
+			&lt;/a&gt;
+			
+			
+			
+			
+			
+			
+			
+			&lt;a href=&quot;/course/2012/01/01/ma122-section-22.html#&quot; class=&quot;list-group-item&quot;&gt;
+				&lt;h4 class=&quot;list-group-item-heading&quot;&gt;MA122—Spring 2012&lt;/h4&gt;
+				&lt;p class=&quot;list-group-item-text&quot;&gt;Applied Calculus&lt;/p&gt;
+			&lt;/a&gt;
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			&lt;a href=&quot;/course/2010/07/08/ma141%25e2%2580%2594sections-7-and-8.html#&quot; class=&quot;list-group-item&quot;&gt;
+				&lt;h4 class=&quot;list-group-item-heading&quot;&gt;MA141—Spring 2010&lt;/h4&gt;
+				&lt;p class=&quot;list-group-item-text&quot;&gt;Calculus I&lt;/p&gt;
+			&lt;/a&gt;
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+		&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;div class=&quot;col-sm-6&quot;&gt;
+		&lt;div class=&quot;list-group&quot;&gt;
+			&lt;a href=&quot;#&quot; class=&quot;list-group-item active&quot;&gt;Intermediate Undergraduate classes&lt;/a&gt;
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
 			
 			
 			
@@ -117,9 +268,24 @@
 			
 			
 			
-			&lt;a href=&quot;/course/2012/08/15/ma141-fall-2012.html#&quot; class=&quot;list-group-item&quot;&gt;
-				&lt;h4 class=&quot;list-group-item-heading&quot;&gt;MA141—Fall 2012&lt;/h4&gt;
-				&lt;p class=&quot;list-group-item-text&quot;&gt;Calculus I&lt;/p&gt;
+			
+			
+			
+			
+			
+			
+			
+			
+			&lt;a href=&quot;/course/2012/01/01/ma242-section-3.html#&quot; class=&quot;list-group-item&quot;&gt;
+				&lt;h4 class=&quot;list-group-item-heading&quot;&gt;MA242—Spring 2012&lt;/h4&gt;
+				&lt;p class=&quot;list-group-item-text&quot;&gt;Differential Equations&lt;/p&gt;
+			&lt;/a&gt;
+			
+			
+			
+			&lt;a href=&quot;/course/2011/12/31/ma142-section-12.html#&quot; class=&quot;list-group-item&quot;&gt;
+				&lt;h4 class=&quot;list-group-item-heading&quot;&gt;MA142—Spring 2012&lt;/h4&gt;
+				&lt;p class=&quot;list-group-item-text&quot;&gt;Calculus II&lt;/p&gt;
 			&lt;/a&gt;
 			
 			
@@ -127,6 +293,18 @@
 			
 			
 			
+			
+			&lt;a href=&quot;/course/2011/08/10/ma241section-5.html#&quot; class=&quot;list-group-item&quot;&gt;
+				&lt;h4 class=&quot;list-group-item-heading&quot;&gt;MA241—Fall 2011&lt;/h4&gt;
+				&lt;p class=&quot;list-group-item-text&quot;&gt;Vector Calculus&lt;/p&gt;
+			&lt;/a&gt;
+			
+			
+			
+			&lt;a href=&quot;/course/2011/08/10/ma142sections-1-and-2.html#&quot; class=&quot;list-group-item&quot;&gt;
+				&lt;h4 class=&quot;list-group-item-heading&quot;&gt;MA142—Fall 2011&lt;/h4&gt;
+				&lt;p class=&quot;list-group-item-text&quot;&gt;Calculus II&lt;/p&gt;
+			&lt;/a&gt;
 			
 			
 			
@@ -272,6 +450,16 @@
 		
 		
 		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
 		&lt;a href=&quot;/course-material/2011/03/15/binary-images.html&quot; class=&quot;list-group-item&quot;&gt;
 			&lt;h4 class=&quot;list-group-item-heading&quot;&gt;Binary Images&lt;/h4&gt;
 		&lt;/a&gt;
@@ -317,6 +505,8 @@
 		&lt;a href=&quot;/course-material/2011/01/17/edge-detection.html&quot; class=&quot;list-group-item&quot;&gt;
 			&lt;h4 class=&quot;list-group-item-heading&quot;&gt;Edge detection: The Scale Space Theory&lt;/h4&gt;
 		&lt;/a&gt;
+		
+		
 		
 		
 		
