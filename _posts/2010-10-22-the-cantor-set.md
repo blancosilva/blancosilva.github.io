@@ -8,15 +8,16 @@ image:
   teaser: http://farm2.static.flickr.com/1155/5105641217_ec5cf35a93_o_d.jpg
 ---
 
-Consider the unit interval in the real line, <span>\\( [0,1] \\)</span>, and remove the "middle third open subinterval" <span>\\( (1/3, 2/3) \\)</span>.  We have the closed set <span>\\( C_1 = [0,1/3] \cup [2/3,1] \\)</span>, which is the union of two closed intervals.  In a second step, remove the "middle third open subintervals" of each of the previous two intervals in <span>\\( C_1 \\)</span>, to obtain the closed set <span>\\( C_2 = [0,1/9] \cup [2/9,1/3] \cup [2/3, 7/9] \cup [8/9,1] \\)</span>.
+Consider the unit interval in the real line, <span>\\( [0,1] \\)</span>, and remove the *middle third open subinterval* <span>\\( (1/3, 2/3) \\)</span>.  We have the closed set <span>\\( C_1 = [0,1/3] \cup [2/3,1] \\)</span>, which is the union of two closed intervals.  In a second step, remove the *middle third open subintervals* of each of the previous two intervals in <span>\\( C_1 \\)</span>, to obtain the closed set <span>\\( C_2 = [0,1/9] \cup [2/9,1/3] \cup [2/3, 7/9] \cup [8/9,1] \\)</span>.
 
 The image below illustrates this procedure with the three sets constructed so far.
 
-<img class="aligncenter" title="Three steps into the Cantor set" src="http://farm2.static.flickr.com/1155/5105641217_ec5cf35a93_o_d.jpg" alt="" />
+<img style="text-align:center;" title="Three steps into the Cantor set" src="http://farm2.static.flickr.com/1155/5105641217_ec5cf35a93_o_d.jpg" alt="" />
 
-We iterate this procedure, thus constructing on each step a new closed set <span>\\( C_n \\)</span> by removal of "middle third open subintervals" from the previous set <span>\\( C_{n-1} \\)</span>.  Equivalently, the operation can be described as: "take the union of the previous set, with a shift of it by two units, and scale them down by one-third."  We can write then <span>\\( C_{n+1} = \frac{1}{3} \big( C_n \cup (2+C_n) \big) \\)</span> for each <span>\\( n \in \mathbb{N}. \\)</span>  Notice that <span>\\( C_{n+1} \subset C_n. \\)</span>
+We iterate this procedure, thus constructing on each step a new closed set <span>\\( C_n \\)</span> by removal of *middle third open subintervals* from the previous set <span>\\( C_{n-1} \\)</span>.  Equivalently, the operation can be described as: *take the union of the previous set, with a shift of it by two units, and scale them down by one-third.*  We can write then <span>\\( C_{n+1} = \frac{1}{3} \big( C_n \cup (2+C_n) \big) \\)</span> for each <span>\\( n \in \mathbb{N}. \\)</span>  Notice that <span>\\( C_{n+1} \subset C_n. \\)</span>
 
-This process is permitted to continue indefinitely.  At the limit, we have removed from the unit interval a countable number of open subintervals; therefore, the resulting set <span>\\( \mathfrak{C} = \cap_{n \in \mathbb{N}} C_n \\)</span> must be closed.  This is what we call the "Cantor set."
+This process is permitted to continue indefinitely.  At the limit, we have removed from the unit interval a countable number of open subintervals; therefore, the resulting set <span>\\( \mathfrak{C} = \cap_{n \in \mathbb{N}} C_n \\)</span> must be closed.  This is what we call the **Cantor set.**
+
 ### Structure of the Cantor set
 
 #### Empty?
@@ -37,7 +38,7 @@ How is that possible?
 
 #### Cardinality
 
-By definition, <span>\\( z \in \mathfrak{C} \\)</span> if and only if <span>\\( z \in C_n \\)</span> for all <span>\\( n \in \mathbb{N}. \\)</span>  This means, in particular, that we can find <span>\\( x \in [0,1] \\)</span> such that  for any <span>\\( n \in \mathbb{N} \\)</span>, there will be an <span>\\( n \\)</span>–tuple <span>\\( (\lambda_1, \lambda_2, \dotsc, \lambda_n) \\)</span> with <span>\\( \lambda_k \in\{0,2\} \\)</span> satisfying
+By definition, <span>\\( z \in \mathfrak{C} \\)</span> if and only if <span>\\( z \in C_n \\)</span> for all <span>\\( n \in \mathbb{N}. \\)</span>  This means, in particular, that we can find <span>\\( x \in [0,1] \\)</span> such that  for any <span>\\( n \in \mathbb{N} \\)</span>, there will be an <span>\\( n \\)</span>–tuple <span>\\( (\lambda_1, \lambda_2, \dotsc, \lambda_n) \\)</span> with <span>\\( \lambda_k \in\\{0,2\\} \\)</span> satisfying
 
 <div>
 \begin{equation}
@@ -45,9 +46,9 @@ By definition, <span>\\( z \in \mathfrak{C} \\)</span> if and only if <span>\\( 
  \end{equation}
 </div>
 
-Equivalently, for each <span>\\( z \in \mathfrak{C} \\)</span> and any <span>\\( \varepsilon > 0 \\)</span> there is some <span>\\( N=N(z,\varepsilon) \in \mathbb{N} \\)</span> and an <span>\\( N \\)</span>-tuple <span>\\( (\lambda_1, \lambda_2, \dotsc, \lambda_N) \\)</span> with <span>\\( \lambda_k \in \{0,2\}, \\)</span> such that <span>\\( \big\lvert z - 3^{-N}\sum_{k=1}^N 3^{k-1}\lambda_k \big\rvert < \varepsilon. \\)</span>   It should be no trouble to prove that this property defines every element of the Cantor set.
+Equivalently, for each <span>\\( z \in \mathfrak{C} \\)</span> and any <span>\\( \varepsilon > 0 \\)</span> there is some <span>\\( N=N(z,\varepsilon) \in \mathbb{N} \\)</span> and an <span>\\( N \\)</span>-tuple <span>\\( (\lambda_1, \lambda_2, \dotsc, \lambda_N) \\)</span> with <span>\\( \lambda_k \in \\{0,2\\}, \\)</span> such that <span>\\( \big\lvert z - 3^{-N}\sum_{k=1}^N 3^{k-1}\lambda_k \big\rvert < \varepsilon. \\)</span>   It should be no trouble to prove that this property defines every element of the Cantor set.
 
-For example, consider the sequence <span>\\( \{ \lambda_n \}_{n \in \mathbb{N}} \\)</span> with <span>\\( \lambda_{2k}=2 \\)</span> and <span>\\( \lambda_{2k+1}=0 \\)</span> for all <span>\\( k \in \mathbb{N} \\)</span>.  The sequence of partial sums <span>\\( x_n = 3^{-n} \sum_{k=1}^n 3^{k-1}\lambda_k \\)</span> is convergent, with <span>\\( \lim_n x_n = \frac{3}{4}. \\)</span>
+For example, consider the sequence <span>\\( \\{ \lambda_n \\}_{n \in \mathbb{N}} \\)</span> with <span>\\( \lambda_{2k}=2 \\)</span> and <span>\\( \lambda_{2k+1}=0 \\)</span> for all <span>\\( k \in \mathbb{N} \\)</span>.  The sequence of partial sums <span>\\( x_n = 3^{-n} \sum_{k=1}^n 3^{k-1}\lambda_k \\)</span> is convergent, with <span>\\( \lim_n x_n = \frac{3}{4}. \\)</span>
 
 Indeed, notice that
 
@@ -63,13 +64,13 @@ We have them proven that <span>\\( \frac{3}{4} \\)</span> is in the Cantor set, 
 
 This is an alternative way to describe all numbers in the Cantor set:
 
-> \\( z \in \mathfrak{C} \\) if and only there exists a sequence \\( (\lambda_n)_{n \in \mathbb{N}} \\) with \\( \lambda_n \in \{0,2\} \\) for all \\( n \in \mathbb{N} \\), such that the partial sum sequence \\( x_n = 3^{-n} \sum_{k=1}^n 3^{k-1}\lambda_k \\) converges to \\( z. \\)
+> \\( z \in \mathfrak{C} \\) if and only there exists a sequence \\( (\lambda\_n)\_{n \in \mathbb{N}} \\) with \\( \lambda_n \in \\{0,2\\} \\) for all \\( n \in \mathbb{N} \\), such that the partial sum sequence \\( x\_n = 3^{-n} \sum\_{k=1}^n 3^{k-1}\lambda_k \\) converges to \\( z. \\)
 
 We will use this description to construct an injective map <span>\\( \phi \colon [0,1] \to \mathfrak{C}, \\)</span> thus proving that the cardinality of the Cantor set is the same as that of the unit interval (and therefore, the Cantor set is uncountable!)
 
-Let us use the density of dyadic fractions: for each <span>\\( x\in [0,1) \\)</span> and <span>\\( \varepsilon> 0 \\)</span>, find a dyadic number <span>\\( d_{k,n}=k2^{-n} \\)</span> with <span>\\( k \in \{0,1,2,\dotsc, 2^n-1\} \\)</span> such that <span>\\( \lvert x-k2^{-n} \rvert < \varepsilon. \\)</span>  We write <span>\\( k \\)</span> in its (unique) base-two expression as <span>\\( k=\mu_0 + 2\mu_1+ \dotsb + 2^{n-1}\mu_{n-1} \\)</span> with values <span>\\( \mu_j \in \{0,1\} \\)</span> for all <span>\\( j\in \{0,1, \dotsc,n-1\}. \\)</span>  It is then <span>\\( d_{k,n} = 2^{-n}\sum_{k=1}^{n-1} 2^k\mu_k. \\)</span>
+Let us use the density of dyadic fractions: for each <span>\\( x\in [0,1) \\)</span> and <span>\\( \varepsilon> 0 \\)</span>, find a dyadic number <span>\\( d_{k,n}=k2^{-n} \\)</span> with <span>\\( k \in \\{0,1,2,\dotsc, 2^n-1\\} \\)</span> such that <span>\\( \lvert x-k2^{-n} \rvert < \varepsilon. \\)</span>  We write <span>\\( k \\)</span> in its (unique) base-two expression as <span>\\( k=\mu_0 + 2\mu_1+ \dotsb + 2^{n-1}\mu_{n-1} \\)</span> with values <span>\\( \mu_j \in \\{0,1\\} \\)</span> for all <span>\\( j\in \\{0,1, \dotsc,n-1\\}. \\)</span>  It is then <span>\\( d\_{k,n} = 2^{-n}\sum\_{k=1}^{n-1} 2^k\mu\_k. \\)</span>
 
-A similar reasoning as above shows that any number in the unit interval can be realized as the limit of a partial sum of a sequence <span>\\( x_n = 2^{-n} \sum_{k=0}^{n-1} 2^k\mu_k \\)</span> for a sequence <span>\\( (\mu_n)_{n \in \mathbb{N}} \\)</span> satisfying <span>\\( \mu_k \in \{0,1\} \\)</span> for all <span>\\( k \in \mathbb{N}. \\)</span>  We construct the function <span>\\( \phi \colon [0,1] \to \mathfrak{C} \\)</span> as follows:
+A similar reasoning as above shows that any number in the unit interval can be realized as the limit of a partial sum of a sequence <span>\\( x_n = 2^{-n} \sum_{k=0}^{n-1} 2^k\mu_k \\)</span> for a sequence <span>\\( (\mu_n)_{n \in \mathbb{N}} \\)</span> satisfying <span>\\( \mu_k \in \\{0,1\\} \\)</span> for all <span>\\( k \in \mathbb{N}. \\)</span>  We construct the function <span>\\( \phi \colon [0,1] \to \mathfrak{C} \\)</span> as follows:
 
 <div>
 \begin{equation}
