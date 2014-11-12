@@ -9,7 +9,7 @@ image:
 
 At any given moment on the surface of the Earth there are always two antipodal points with exactly the same temperature and barometric pressure.  We can go even further: on each longitude (the North and South lines running from pole to pole) there will also be two antipodal points sharing exactly the same temperature.  How is this possible?  The answer is given by the Borsuk-Ulam Theorem: a powerful tool in Topology with a great deal of applications to every branch of science.
 
-> A continuous function \( f\colon \mathbb{S}_{d} \to \mathbb{R}^d\) from a \( d\)-dimensional sphere into the Euclidean space of dimension \( d\) maps some pair of antipodal points \( \pm \xi \in \mathbb{S}_{d}\) to the same point \( \boldsymbol{x} \in \mathbb{R}^d.\)
+> A continuous function \\( f\colon \mathbb{S}_{d} \to \mathbb{R}^d\\) from a \\( d \\)-dimensional sphere into the Euclidean space of dimension \\( d \\) maps some pair of antipodal points \\( \pm \xi \in \mathbb{S}_{d} \\) to the same point \\( \boldsymbol{x} \in \mathbb{R}^d. \\)
 
 The implications of this Theorem are huge.  Some of the most useful are cited below:
 
@@ -62,9 +62,9 @@ Note that the Brouwer Fixed Point Theorem is not constructive: although the proo
 We can find nonetheless a constructive version of a Fixed Point Theorem in the field of Analysis: the Banach Fixed Point Theorem.  This result gives a general criterion that guaranties that, if satisfied, the procedure of iterating a function will yield a fixed point.
 
 > Let \( (X, \lVert \cdot \rVert) \) be a non-empty complete metric space. Let \( T \colon X \to X \) be a contraction mapping on \( X \), i.e.: there is a nonnegative real number \( q < 1 \) such that
-
+>
 > \begin{equation} \lVert T(x) - T(y) \rVert \leq q\lVert x-y\rVert  \text{ for all } x,y \in X. \end{equation}
-
+>
 > for all \( x, y \in X. \) Then the map \( T \) admits one and only one fixed point in \( X. \) Furthermore, this fixed point can be found as follows: start with an arbitrary element \( x_0 \) in \( X \) and define an iterative sequence by \( x_n=T(x_{n-1}) \) for \( n \in \mathbb{N}. \) This sequence converges, and its limit is the fixed point of \( T. \)
 
 Other versions also allow us to count how many fixed points will be for a given function.  That is the case of both the Lefschetz and the Nielsen Fixed Point Theorems.
