@@ -8,7 +8,7 @@ image:
 ---
 > Consider the right triangle \\(\triangle_1 \\) with vertices at \\((0,0) \\), \\((0,1) \\), and \\((1,1). \\)  Note that the angle at the origin is \\(\frac{\pi}{4}. \\)  Use the hypotenuse of \\(\triangle_1 \\) as one of the legs of another right triangle, \\(\triangle_2, \\) with an angle of \\(\frac{\pi}{8} \\) at the origin, and whose second leg extends towards the \\(x \\)–axis.  Continue constructing adjacent right triangles \\(\triangle_n \\) in the same fashion, with one leg supported on the hypothenuse of the previous right triangle \\(\triangle_{n-1}, \\) with angle \\(\frac{\pi}{2^{n+1}} \\) at the origin, and with a second leg extending towards the \\(x \\)–axis.
 >
-> Note that, since the angles at the origin form the series \\(\sum_{n=2}^\infty \frac{\pi}{2^n}, \\) (that add up to \\(\frac{\pi}{2} \\)) the limit of the previous process is an actual segment on the \\(x \\)–axis.</p>
+> Note that, since the angles at the origin form the series \\(\sum_{n=2}^\infty \frac{\pi}{2^n}, \\) (that add up to \\(\frac{\pi}{2} \\)) the limit of the previous process is an actual segment on the \\(x \\)–axis.
 >
 >    1. What is the length of this segment?
 >    2. Find an equation in polar coordinates \\((\rho,\theta) \\) of a curve passing through all the vertices of the resulting triangles, except possibly \\((0,0). \\)
