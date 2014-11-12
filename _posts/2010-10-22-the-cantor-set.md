@@ -12,7 +12,7 @@ Consider the unit interval in the real line, <span>\\( [0,1] \\)</span>, and rem
 
 The image below illustrates this procedure with the three sets constructed so far.
 
-<p style="margin-left:auto; margin-right:auto;"><img title="Three steps into the Cantor set" src="http://farm2.static.flickr.com/1155/5105641217_ec5cf35a93_o_d.jpg" alt="" /></p>
+<p style="margin-left:auto; margin-right:auto; text-align:center;"><img title="Three steps into the Cantor set" src="http://farm2.static.flickr.com/1155/5105641217_ec5cf35a93_o_d.jpg" alt="" /></p>
 
 We iterate this procedure, thus constructing on each step a new closed set <span>\\( C_n \\)</span> by removal of *middle third open subintervals* from the previous set <span>\\( C_{n-1} \\)</span>.  Equivalently, the operation can be described as: *take the union of the previous set, with a shift of it by two units, and scale them down by one-third.*  We can write then <span>\\( C_{n+1} = \frac{1}{3} \big( C_n \cup (2+C_n) \big) \\)</span> for each <span>\\( n \in \mathbb{N}. \\)</span>  Notice that <span>\\( C_{n+1} \subset C_n. \\)</span>
 
