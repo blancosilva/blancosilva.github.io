@@ -6,8 +6,8 @@
 </description>
     <link>http://blancosilva.github.io/</link>
     <atom:link href="http://blancosilva.github.io/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Wed, 12 Nov 2014 20:19:03 -0500</pubDate>
-    <lastBuildDate>Wed, 12 Nov 2014 20:19:03 -0500</lastBuildDate>
+    <pubDate>Thu, 13 Nov 2014 09:20:33 -0500</pubDate>
+    <lastBuildDate>Thu, 13 Nov 2014 09:20:33 -0500</lastBuildDate>
     <generator>Jekyll v2.4.0</generator>
     
       <item>
@@ -33667,117 +33667,134 @@ In&amp;nbsp;[105]:
     
       <item>
         <title>MA141—Fall 2014</title>
-        <description>&lt;h1 id=&quot;sections-011-012-015-016&quot;&gt;Sections 011, 012, 015, 016&lt;/h1&gt;
+        <description>&lt;h2 id=&quot;sections-011-012-015-016&quot;&gt;Sections 011, 012, 015, 016&lt;/h2&gt;
 
-&lt;table style=&quot;width:100%;border:0; verical-align:top;&quot;&gt;
-&lt;tr&gt;
-&lt;td style=&quot;width:50%;border:0; vertical-align:top;&quot;&gt;
-&lt;h2&gt;Instructor&lt;/h2&gt;
-Francisco Blanco-Silva&lt;br /&gt;
-&lt;strong&gt;e-mail:&lt;/strong&gt; &lt;tt&gt;&lt;a href=&quot;mailto:blanco@math.sc.edu&quot;&gt;blanco at math dot sc dot edu&lt;/a&gt;&lt;/tt&gt;&lt;br /&gt;
-&lt;strong&gt;phone:&lt;/strong&gt; &lt;tt&gt;777-7514&lt;/tt&gt;&lt;br /&gt;
-&lt;strong&gt;office:&lt;/strong&gt; LeConte 314D
-&lt;/td&gt;
-&lt;td style=&quot;width:50%;border:0;&quot;&gt;
-&lt;h2&gt;Teaching Assistants&lt;/h2&gt;
-&lt;p&gt;Rita Barnwell Hipp&lt;br /&gt;
-&lt;strong&gt;e-mail&lt;/strong&gt;: &lt;tt&gt;&lt;a href=&quot;mailto:hippl@mailbox.sc.edu&quot;&gt;hippl at mailbox dot sc dot edu&lt;/a&gt;&lt;/tt&gt;&lt;br /&gt;
-&lt;strong&gt;phone:&lt;/strong&gt; &lt;tt&gt;777-7477&lt;/tt&gt;&lt;br /&gt;
-&lt;strong&gt;office:&lt;/strong&gt; LeConte 307&lt;/p&gt;
-&lt;p&gt;Christopher David Edgar&lt;br /&gt;
-&lt;strong&gt;e-mail&lt;/strong&gt;: &lt;tt&gt;&lt;a href=&quot;mailto:edgarc@mailbox.sc.edu&quot;&gt; edgarc at mailbox dot sc dot edu&lt;/a&gt;&lt;/tt&gt;&lt;br /&gt;
-&lt;strong&gt;phone&lt;/strong&gt;: &lt;tt&gt;777-7411&lt;/tt&gt;&lt;br /&gt;
-&lt;strong&gt;office:&lt;/strong&gt; LeConte 103A&lt;/p&gt;
-&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/table&gt;
+&lt;div class=&quot;row&quot;&gt;
+    &lt;div class=&quot;col-sm-2&quot;&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;col-sm-8&quot;&gt;
+        &lt;div class=&quot;list-group&quot;&gt;
+            &lt;a href=&quot;mailto:blanco@math.sc.edu&quot; class=&quot;list-group-item active&quot;&gt;
+                &lt;h4 class=&quot;list-group-item-heading&quot;&gt;Instructor: Francisco Blanco-Silva&lt;/h4&gt;
+                &lt;p class=&quot;list-group-item-text&quot;&gt;
+                    &lt;strong&gt;e-mail&lt;/strong&gt;: &lt;tt&gt;blanco at math dot sc dot edu&lt;/tt&gt;&lt;br /&gt;
+                    &lt;strong&gt;phone&lt;/strong&gt;: &lt;tt&gt;777-7514&lt;/tt&gt;&lt;br /&gt;
+                    &lt;strong&gt;Office&lt;/strong&gt;: LeConte 314D
+                &lt;/p&gt;
+            &lt;/a&gt;
+            &lt;a href=&quot;mailto:edgarc@mailbox.sc.edu&quot; class=&quot;list-group-item&quot;&gt;        
+                &lt;h4 class=&quot;list-group-item-heading&quot;&gt;TA (sections 11, 12): Christopher David Edgar&lt;/h4&gt;
+                &lt;p class=&quot;list-group-item-text&quot;&gt;
+                    &lt;strong&gt;e-mail&lt;/strong&gt;: &lt;tt&gt;edgarc at mailbox dot sc dot edu&lt;/tt&gt;&lt;br /&gt;
+                    &lt;strong&gt;phone&lt;/strong&gt;: &lt;tt&gt;777-7411&lt;/tt&gt;&lt;br /&gt;
+                    &lt;strong&gt;Office&lt;/strong&gt;: LeConte 103A
+                &lt;/p&gt;
+            &lt;/a&gt;
+            &lt;a href=&quot;mailto:hippl@mailbox.sc.edu&quot; class=&quot;list-group-item&quot;&gt;        
+                &lt;h4 class=&quot;list-group-item-heading&quot;&gt;TA (sections 15, 16): Rita Barnwell Hipp&lt;/h4&gt;
+                &lt;p class=&quot;list-group-item-text&quot;&gt;
+                    &lt;strong&gt;e-mail&lt;/strong&gt;: &lt;tt&gt;hippl at mailbox dot sc dot edu&lt;/tt&gt;&lt;br /&gt;
+                    &lt;strong&gt;phone&lt;/strong&gt;: &lt;tt&gt;777-7477&lt;/tt&gt;&lt;br /&gt;
+                    &lt;strong&gt;Office&lt;/strong&gt;: LeConte 307
+                &lt;/p&gt;
+            &lt;/a&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;col-sm-2&quot;&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
 
 &lt;h2 id=&quot;meeting-times-and-office-hours&quot;&gt;Meeting Times and Office Hours&lt;/h2&gt;
 
-&lt;table style=&quot;margin-left:auto;margin-right:auto;font-family:courier;&quot;&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td rowspan=&quot;2&quot;&gt;&lt;strong&gt;Lectures&lt;/strong&gt;:&lt;/td&gt;
-&lt;td bgcolor=&quot;#bb9999&quot; style=&quot;text-align:left;&quot;&gt;Sections 011 &amp;amp; 012&lt;/td&gt;
-&lt;td bgcolor=&quot;#bb9999&quot; style=&quot;text-align:center;&quot;&gt;&lt;strong&gt;MWF&lt;/strong&gt;&lt;/td&gt;
-&lt;td bgcolor=&quot;#bb9999&quot; style=&quot;text-align:right;&quot;&gt;11:59 AM - 12:50 PM&lt;/td&gt;
-&lt;td bgcolor=&quot;#bb9999&quot; style=&quot;text-align:left;&quot;&gt;LeConte 113&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td bgcolor=&quot;#bb9999&quot; style=&quot;text-align:left;&quot;&gt;Sections 015 &amp;amp; 016&lt;/td&gt;
-&lt;td bgcolor=&quot;#bb9999&quot; style=&quot;text-align:center;&quot;&gt;&lt;strong&gt;MWF&lt;/strong&gt;&lt;/td&gt;
-&lt;td bgcolor=&quot;#bb9999&quot; style=&quot;text-align:right;&quot;&gt;&amp;nbsp;1:10 PM - &amp;nbsp;2:00 PM&lt;/td&gt;
-&lt;td bgcolor=&quot;#bb9999&quot; style=&quot;text-align:left;&quot;&gt;LeConte 412&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td rowspan=&quot;4&quot;&gt;&lt;strong&gt;Computer Labs&lt;/strong&gt;:&lt;/td&gt;
-&lt;td bgcolor=&quot;#bebebe&quot; style=&quot;text-align:left;&quot;&gt;Section 011&lt;/td&gt;
-&lt;td bgcolor=&quot;#bebebe&quot; style=&quot;text-align:center;&quot;&gt;&lt;strong&gt;&lt;font color=&quot;#bebebe&quot;&gt;Th&lt;/font&gt;T&lt;/strong&gt;&lt;/td&gt;
-&lt;td bgcolor=&quot;#bebebe&quot; style=&quot;text-align:right;&quot;&gt;&amp;nbsp;8:30 AM - &amp;nbsp;9:20 AM&lt;/td&gt;
-&lt;td bgcolor=&quot;#bebebe&quot; style=&quot;text-align:left;&quot;&gt;LeConte 102&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td bgcolor=&quot;#f4f5f7&quot; style=&quot;text-align:left;&quot;&gt;Section 012&lt;/td&gt;
-&lt;td bgcolor=&quot;#f4f5f7&quot; style=&quot;text-align:center;&quot;&gt;&lt;strong&gt;&lt;font color=&quot;#f4f5f7&quot;&gt;Th&lt;/font&gt;T&lt;/strong&gt;&lt;/td&gt;
-&lt;td bgcolor=&quot;#f4f5f7&quot; style=&quot;text-align:right;&quot;&gt;10:05 AM - 10:55 AM&lt;/td&gt;
-&lt;td bgcolor=&quot;#f4f5f7&quot; style=&quot;text-align:left;&quot;&gt;LeConte 102&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td bgcolor=&quot;#bebebe&quot; style=&quot;text-align:left;&quot;&gt;Section 015&lt;/td&gt;
-&lt;td bgcolor=&quot;#bebebe&quot; style=&quot;text-align:center;&quot;&gt;&lt;strong&gt;&lt;font color=&quot;#bebebe&quot;&gt;Th&lt;/font&gt;T&lt;/strong&gt;&lt;/td&gt;
-&lt;td bgcolor=&quot;#bebebe&quot; style=&quot;text-align:right;&quot;&gt;11:40 AM - 12:30 PM&lt;/td&gt;
-&lt;td bgcolor=&quot;#bebebe&quot; style=&quot;text-align:left;&quot;&gt;LeConte 303A&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td bgcolor=&quot;#f4f5f7&quot; style=&quot;text-align:left;&quot;&gt;Section 016&lt;/td&gt;
-&lt;td bgcolor=&quot;#f4f5f7&quot; style=&quot;text-align:center;&quot;&gt;&lt;strong&gt;&lt;font color=&quot;#f4f5f7&quot;&gt;Th&lt;/font&gt;T&lt;/strong&gt;&lt;/td&gt;
-&lt;td bgcolor=&quot;#f4f5f7&quot; style=&quot;text-align:right;&quot;&gt;&amp;nbsp;1:15 PM - &amp;nbsp;2:05 PM&lt;/td&gt;
-&lt;td bgcolor=&quot;#f4f5f7&quot; style=&quot;text-align:left;&quot;&gt;LeConte 303A&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td rowspan=&quot;4&quot;&gt;&lt;strong&gt;Problem Sessions&lt;/strong&gt;:&lt;/td&gt;
-&lt;td bgcolor=&quot;#bebebe&quot; style=&quot;text-align:left;&quot;&gt;Section 011&lt;/td&gt;
-&lt;td bgcolor=&quot;#bebebe&quot; style=&quot;text-align:center;&quot;&gt;&lt;strong&gt;&lt;font color=&quot;#bebebe&quot;&gt;T&lt;/font&gt;Th&lt;/strong&gt;&lt;/td&gt;
-&lt;td bgcolor=&quot;#bebebe&quot; style=&quot;text-align:right;&quot;&gt;&amp;nbsp;8:30 AM - &amp;nbsp;9:20 AM&lt;/td&gt;
-&lt;td bgcolor=&quot;#bebebe&quot; style=&quot;text-align:left;&quot;&gt;LeConte 121&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td bgcolor=&quot;#f4f5f7&quot; style=&quot;text-align:left;&quot;&gt;Section 012&lt;/td&gt;
-&lt;td bgcolor=&quot;#f4f5f7&quot; style=&quot;text-align:center;&quot;&gt;&lt;strong&gt;&lt;font color=&quot;#f4f5f7&quot;&gt;T&lt;/font&gt;Th&lt;/strong&gt;&lt;/td&gt;
-&lt;td bgcolor=&quot;#f4f5f7&quot; style=&quot;text-align:right;&quot;&gt;10:05 AM - 10:55 AM&lt;/td&gt;
-&lt;td style=&quot;text-align:left;&quot; bgcolor=&quot;#f4f5f7&quot;&gt;LeConte 121&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td bgcolor=&quot;#bebebe&quot; style=&quot;text-align:left;&quot;&gt;Section 015&lt;/td&gt;
-&lt;td bgcolor=&quot;#bebebe&quot; style=&quot;text-align:center;&quot;&gt;&lt;strong&gt;&lt;font color=&quot;#bebebe&quot;&gt;T&lt;/font&gt;Th&lt;/strong&gt;&lt;/td&gt;
-&lt;td bgcolor=&quot;#bebebe&quot; style=&quot;text-align:right;&quot;&gt;11:40 AM - 12:30 PM&lt;/td&gt;
-&lt;td bgcolor=&quot;#bebebe&quot; style=&quot;text-align:left;&quot;&gt;LeConte 112&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td bgcolor=&quot;#f4f5f7&quot; style=&quot;text-align:left;&quot;&gt;Section 016&lt;/td&gt;
-&lt;td bgcolor=&quot;#f4f5f7&quot; style=&quot;text-align:center;&quot;&gt;&lt;strong&gt;&lt;font color=&quot;#f4f5f7&quot;&gt;T&lt;/font&gt;Th&lt;/strong&gt;&lt;/td&gt;
-&lt;td bgcolor=&quot;#f4f5f7&quot; style=&quot;text-align:right;&quot;&gt;&amp;nbsp;1:15 PM - &amp;nbsp;2:05 PM&lt;/td&gt;
-&lt;td bgcolor=&quot;#f4f5f7&quot; style=&quot;text-align:left;&quot;&gt;LeConte 112&lt;/td&gt;
-&lt;/tr&gt;
-&lt;td style=&quot;vertical-align:top;&quot; rowspan=&quot;3&quot;&gt;&lt;strong&gt;Office Hours&lt;/strong&gt;:&lt;/td&gt;
-&lt;td bgcolor=&quot;#fedebe&quot; style=&quot;text-align:center;&quot;&gt;Francisco&lt;/td&gt;
-&lt;td bgcolor=&quot;#fedebe&quot; style=&quot;text-align:right;&quot;&gt;&lt;strong&gt;MTWThF&lt;/strong&gt;&lt;/td&gt;
-&lt;td bgcolor=&quot;#fedebe&quot; style=&quot;text-align:right;&quot;&gt;&amp;nbsp;3:00 PM - &amp;nbsp;4:00 PM&lt;/td&gt;
-&lt;td style=&quot;text-align:left;vertical-align:bottom;&quot; bgcolor=&quot;#fedebe&quot;&gt;LeConte 314D&lt;/td&gt;
-&lt;tr&gt;
-&lt;td bgcolor=&quot;#fedebe&quot; style=&quot;text-align:center;&quot;&gt;Rita&lt;/td&gt;
-&lt;td bgcolor=&quot;#fedebe&quot; style=&quot;text-align:right;&quot;&gt;&lt;strong&gt;MWF&lt;/strong&gt;&lt;/td&gt;
-&lt;td bgcolor=&quot;#fedebe&quot; style=&quot;text-align:right;&quot;&gt;&amp;nbsp;9:30 AM - 10:30 AM&lt;/td&gt;
-&lt;td style=&quot;text-align:left;&quot; bgcolor=&quot;#fedebe&quot;&gt;LeConte 307&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td bgcolor=&quot;#fedebe&quot; style=&quot;text-align:center;&quot;&gt;Christopher&lt;/td&gt;
-&lt;td bgcolor=&quot;#fedebe&quot; style=&quot;text-align:right;&quot;&gt;&lt;strong&gt;TTh&lt;/strong&gt;&lt;/td&gt;
-&lt;td bgcolor=&quot;#fedebe&quot; style=&quot;text-align:right;&quot;&gt;11:00 AM - 11:59 AM&lt;/td&gt;
-&lt;td style=&quot;text-align:left;&quot; bgcolor=&quot;#fedebe&quot;&gt;LeConte 103A&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
+&lt;div class=&quot;row&quot;&gt;
+    &lt;div class=&quot;col-sm-12&quot;&gt;
+
+        &lt;table class=&quot;table table-bordered&quot;&gt;
+            &lt;tbody&gt;
+                &lt;tr&gt;
+                    &lt;td rowspan=&quot;2&quot;&gt;&lt;strong&gt;Lectures&lt;/strong&gt;:&lt;/td&gt;
+                    &lt;td bgcolor=&quot;#bb9999&quot; style=&quot;text-align:left;&quot;&gt;Sections 011 &amp;amp; 012&lt;/td&gt;
+                    &lt;td bgcolor=&quot;#bb9999&quot; style=&quot;text-align:center;&quot;&gt;&lt;strong&gt;MWF&lt;/strong&gt;&lt;/td&gt;
+                    &lt;td bgcolor=&quot;#bb9999&quot; style=&quot;text-align:right;&quot;&gt;11:59 AM - 12:50 PM&lt;/td&gt;
+                    &lt;td bgcolor=&quot;#bb9999&quot; style=&quot;text-align:left;&quot;&gt;LeConte 113&lt;/td&gt;
+                &lt;/tr&gt;
+                &lt;tr&gt;
+                    &lt;td bgcolor=&quot;#bb9999&quot; style=&quot;text-align:left;&quot;&gt;Sections 015 &amp;amp; 016&lt;/td&gt;
+                    &lt;td bgcolor=&quot;#bb9999&quot; style=&quot;text-align:center;&quot;&gt;&lt;strong&gt;MWF&lt;/strong&gt;&lt;/td&gt;
+                    &lt;td bgcolor=&quot;#bb9999&quot; style=&quot;text-align:right;&quot;&gt;&amp;nbsp;1:10 PM - &amp;nbsp;2:00 PM&lt;/td&gt;
+                    &lt;td bgcolor=&quot;#bb9999&quot; style=&quot;text-align:left;&quot;&gt;LeConte 412&lt;/td&gt;
+                &lt;/tr&gt;
+                &lt;tr&gt;
+                    &lt;td rowspan=&quot;4&quot;&gt;&lt;strong&gt;Computer Labs&lt;/strong&gt;:&lt;/td&gt;
+                    &lt;td bgcolor=&quot;#bebebe&quot; style=&quot;text-align:left;&quot;&gt;Section 011&lt;/td&gt;
+                    &lt;td bgcolor=&quot;#bebebe&quot; style=&quot;text-align:center;&quot;&gt;&lt;strong&gt;&lt;font color=&quot;#bebebe&quot;&gt;Th&lt;/font&gt;T&lt;/strong&gt;&lt;/td&gt;
+                    &lt;td bgcolor=&quot;#bebebe&quot; style=&quot;text-align:right;&quot;&gt;&amp;nbsp;8:30 AM - &amp;nbsp;9:20 AM&lt;/td&gt;
+                    &lt;td bgcolor=&quot;#bebebe&quot; style=&quot;text-align:left;&quot;&gt;LeConte 102&lt;/td&gt;
+                &lt;/tr&gt;
+                &lt;tr&gt;
+                    &lt;td bgcolor=&quot;#f4f5f7&quot; style=&quot;text-align:left;&quot;&gt;Section 012&lt;/td&gt;
+                    &lt;td bgcolor=&quot;#f4f5f7&quot; style=&quot;text-align:center;&quot;&gt;&lt;strong&gt;&lt;font color=&quot;#f4f5f7&quot;&gt;Th&lt;/font&gt;T&lt;/strong&gt;&lt;/td&gt;
+                    &lt;td bgcolor=&quot;#f4f5f7&quot; style=&quot;text-align:right;&quot;&gt;10:05 AM - 10:55 AM&lt;/td&gt;
+                    &lt;td bgcolor=&quot;#f4f5f7&quot; style=&quot;text-align:left;&quot;&gt;LeConte 102&lt;/td&gt;
+                &lt;/tr&gt;
+                &lt;tr&gt;
+                    &lt;td bgcolor=&quot;#bebebe&quot; style=&quot;text-align:left;&quot;&gt;Section 015&lt;/td&gt;
+                    &lt;td bgcolor=&quot;#bebebe&quot; style=&quot;text-align:center;&quot;&gt;&lt;strong&gt;&lt;font color=&quot;#bebebe&quot;&gt;Th&lt;/font&gt;T&lt;/strong&gt;&lt;/td&gt;
+                    &lt;td bgcolor=&quot;#bebebe&quot; style=&quot;text-align:right;&quot;&gt;11:40 AM - 12:30 PM&lt;/td&gt;
+                    &lt;td bgcolor=&quot;#bebebe&quot; style=&quot;text-align:left;&quot;&gt;LeConte 303A&lt;/td&gt;
+                &lt;/tr&gt;
+                &lt;tr&gt;
+                    &lt;td bgcolor=&quot;#f4f5f7&quot; style=&quot;text-align:left;&quot;&gt;Section 016&lt;/td&gt;
+                    &lt;td bgcolor=&quot;#f4f5f7&quot; style=&quot;text-align:center;&quot;&gt;&lt;strong&gt;&lt;font color=&quot;#f4f5f7&quot;&gt;Th&lt;/font&gt;T&lt;/strong&gt;&lt;/td&gt;
+                    &lt;td bgcolor=&quot;#f4f5f7&quot; style=&quot;text-align:right;&quot;&gt;&amp;nbsp;1:15 PM - &amp;nbsp;2:05 PM&lt;/td&gt;
+                    &lt;td bgcolor=&quot;#f4f5f7&quot; style=&quot;text-align:left;&quot;&gt;LeConte 303A&lt;/td&gt;
+                &lt;/tr&gt;
+                &lt;tr&gt;
+                    &lt;td rowspan=&quot;4&quot;&gt;&lt;strong&gt;Problem Sessions&lt;/strong&gt;:&lt;/td&gt;
+                    &lt;td bgcolor=&quot;#bebebe&quot; style=&quot;text-align:left;&quot;&gt;Section 011&lt;/td&gt;
+                    &lt;td bgcolor=&quot;#bebebe&quot; style=&quot;text-align:center;&quot;&gt;&lt;strong&gt;&lt;font color=&quot;#bebebe&quot;&gt;T&lt;/font&gt;Th&lt;/strong&gt;&lt;/td&gt;
+                    &lt;td bgcolor=&quot;#bebebe&quot; style=&quot;text-align:right;&quot;&gt;&amp;nbsp;8:30 AM - &amp;nbsp;9:20 AM&lt;/td&gt;
+                    &lt;td bgcolor=&quot;#bebebe&quot; style=&quot;text-align:left;&quot;&gt;LeConte 121&lt;/td&gt;
+                &lt;/tr&gt;
+                &lt;tr&gt;
+                    &lt;td bgcolor=&quot;#f4f5f7&quot; style=&quot;text-align:left;&quot;&gt;Section 012&lt;/td&gt;
+                    &lt;td bgcolor=&quot;#f4f5f7&quot; style=&quot;text-align:center;&quot;&gt;&lt;strong&gt;&lt;font color=&quot;#f4f5f7&quot;&gt;T&lt;/font&gt;Th&lt;/strong&gt;&lt;/td&gt;
+                    &lt;td bgcolor=&quot;#f4f5f7&quot; style=&quot;text-align:right;&quot;&gt;10:05 AM - 10:55 AM&lt;/td&gt;
+                    &lt;td style=&quot;text-align:left;&quot; bgcolor=&quot;#f4f5f7&quot;&gt;LeConte 121&lt;/td&gt;
+                &lt;/tr&gt;
+                &lt;tr&gt;
+                    &lt;td bgcolor=&quot;#bebebe&quot; style=&quot;text-align:left;&quot;&gt;Section 015&lt;/td&gt;
+                    &lt;td bgcolor=&quot;#bebebe&quot; style=&quot;text-align:center;&quot;&gt;&lt;strong&gt;&lt;font color=&quot;#bebebe&quot;&gt;T&lt;/font&gt;Th&lt;/strong&gt;&lt;/td&gt;
+                    &lt;td bgcolor=&quot;#bebebe&quot; style=&quot;text-align:right;&quot;&gt;11:40 AM - 12:30 PM&lt;/td&gt;
+                    &lt;td bgcolor=&quot;#bebebe&quot; style=&quot;text-align:left;&quot;&gt;LeConte 112&lt;/td&gt;
+                &lt;/tr&gt;
+                &lt;tr&gt;
+                    &lt;td bgcolor=&quot;#f4f5f7&quot; style=&quot;text-align:left;&quot;&gt;Section 016&lt;/td&gt;
+                    &lt;td bgcolor=&quot;#f4f5f7&quot; style=&quot;text-align:center;&quot;&gt;&lt;strong&gt;&lt;font color=&quot;#f4f5f7&quot;&gt;T&lt;/font&gt;Th&lt;/strong&gt;&lt;/td&gt;
+                    &lt;td bgcolor=&quot;#f4f5f7&quot; style=&quot;text-align:right;&quot;&gt;&amp;nbsp;1:15 PM - &amp;nbsp;2:05 PM&lt;/td&gt;
+                    &lt;td bgcolor=&quot;#f4f5f7&quot; style=&quot;text-align:left;&quot;&gt;LeConte 112&lt;/td&gt;
+                &lt;/tr&gt;
+                &lt;td style=&quot;vertical-align:top;&quot; rowspan=&quot;3&quot;&gt;&lt;strong&gt;Office Hours&lt;/strong&gt;:&lt;/td&gt;
+                &lt;td bgcolor=&quot;#fedebe&quot; style=&quot;text-align:center;&quot;&gt;Francisco&lt;/td&gt;
+                &lt;td bgcolor=&quot;#fedebe&quot; style=&quot;text-align:right;&quot;&gt;&lt;strong&gt;MTWThF&lt;/strong&gt;&lt;/td&gt;
+                &lt;td bgcolor=&quot;#fedebe&quot; style=&quot;text-align:right;&quot;&gt;&amp;nbsp;3:00 PM - &amp;nbsp;4:00 PM&lt;/td&gt;
+                &lt;td style=&quot;text-align:left;vertical-align:bottom;&quot; bgcolor=&quot;#fedebe&quot;&gt;LeConte 314D&lt;/td&gt;
+                &lt;tr&gt;
+                    &lt;td bgcolor=&quot;#fedebe&quot; style=&quot;text-align:center;&quot;&gt;Rita&lt;/td&gt;
+                    &lt;td bgcolor=&quot;#fedebe&quot; style=&quot;text-align:right;&quot;&gt;&lt;strong&gt;MWF&lt;/strong&gt;&lt;/td&gt;
+                    &lt;td bgcolor=&quot;#fedebe&quot; style=&quot;text-align:right;&quot;&gt;&amp;nbsp;9:30 AM - 10:30 AM&lt;/td&gt;
+                    &lt;td style=&quot;text-align:left;&quot; bgcolor=&quot;#fedebe&quot;&gt;LeConte 307&lt;/td&gt;
+                &lt;/tr&gt;
+                &lt;tr&gt;
+                    &lt;td bgcolor=&quot;#fedebe&quot; style=&quot;text-align:center;&quot;&gt;Christopher&lt;/td&gt;
+                    &lt;td bgcolor=&quot;#fedebe&quot; style=&quot;text-align:right;&quot;&gt;&lt;strong&gt;TTh&lt;/strong&gt;&lt;/td&gt;
+                    &lt;td bgcolor=&quot;#fedebe&quot; style=&quot;text-align:right;&quot;&gt;11:00 AM - 11:59 AM&lt;/td&gt;
+                    &lt;td style=&quot;text-align:left;&quot; bgcolor=&quot;#fedebe&quot;&gt;LeConte 103A&lt;/td&gt;
+                &lt;/tr&gt;
+            &lt;/tbody&gt;
+        &lt;/table&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
 
 &lt;h2 id=&quot;important-deadlines-you-need-to-know&quot;&gt;Important deadlines you need to know&lt;/h2&gt;
 
@@ -33819,175 +33836,190 @@ Francisco Blanco-Silva&lt;br /&gt;
 
 &lt;p&gt;Your final score for the course will be computed as follows:&lt;/p&gt;
 
-&lt;table style=&quot;text-align:center;border:1px solid black;margin-left:auto;margin-right:auto;padding:8px;&quot;&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;strong&gt;&lt;tt&gt;F = 0.1 * (HW + Q + CL + ME1 + ME2 + ME3 + ME4 + ME5) + 0.2 * FE&lt;/tt&gt;&lt;/strong&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/table&gt;
+&lt;div class=&quot;alert alert-info&quot; role=&quot;alert&quot; style=&quot;text-align:center;&quot;&gt;
+    &lt;strong&gt;&lt;tt&gt;F = 0.1 * (HW + Q + CL + ME1 + ME2 + ME3 + ME4 + ME5) + 0.2 * FE&lt;/tt&gt;&lt;/strong&gt;
+&lt;/div&gt;
 
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;Homework assignments&lt;/strong&gt;: (up to 100 points) 10% of the course grade.  Homework problems have been assigned for each lecture (you can see them at the end of this page, under &lt;strong&gt;Lesson Plan&lt;/strong&gt;). A selection of those problems are posted on &lt;a href=&quot;http://www.webassign.net&quot;&gt;WebAssign&lt;/a&gt; on the day of the lecture, and will be graded.  You will have until the end of the next class day to complete the assignment (e.g. what is posted on Monday is due on Wednesday at 11:59PM; what is posted on Friday is due on Monday at 11:59PM)
-In order to sign up for your section of the course on WebAssign, visit &lt;a href=&quot;http://www.webassign.net&quot;&gt;www.webassign.net&lt;/a&gt; and click on [&lt;strong&gt;Enter Class Key&lt;/strong&gt;].  The class key is&lt;/p&gt;
+&lt;div class=&quot;row&quot;&gt;
+    &lt;div class=&quot;col-sm-12&quot;&gt;
+        &lt;ul class=&quot;list-group&quot;&gt;
+            &lt;li class=&quot;list-group-item&quot;&gt;
+                &lt;strong&gt;Homework assignments&lt;/strong&gt;: (up to 100 points) 10% of the course grade.&lt;br /&gt;   Homework problems have been assigned for each lecture (you can see them at the end of this page, under &lt;strong&gt;Lesson Plan&lt;/strong&gt;). A selection of those problems are posted on &lt;a href=&quot;http://www.webassign.net&quot;&gt;WebAssign&lt;/a&gt; on the day of the lecture, and will be graded.  You will have until the end of the next class day to complete the assignment (e.g. what is posted on Monday is due on Wednesday at 11:59PM; what is posted on Friday is due on Monday at 11:59PM)
+                In order to sign up for your section of the course on WebAssign, visit &lt;a href=&quot;http://www.webassign.net&quot;&gt;www.webassign.net&lt;/a&gt; and click on [&lt;strong&gt;Enter Class Key&lt;/strong&gt;].  The class key is
 
-    &lt;p style=&quot;text-align:center;font-size:14pt;&quot;&gt;&lt;strong&gt;&lt;tt&gt;sc 7564 8382&lt;/tt&gt;&lt;/strong&gt;&lt;/p&gt;
+                &lt;h3 style=&quot;text-align:center;&quot;&gt;&lt;span class=&quot;label label-primary&quot;&gt;&lt;tt&gt;sc 7564 8382&lt;/tt&gt;&lt;/span&gt;&lt;/h3&gt;
 
-    &lt;p&gt;Click [&lt;a href=&quot;http://www.webassign.net/manual/WA_Student_Quick_Start.pdf&quot;&gt;here&lt;/a&gt;] to retrieve further registration instructions.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Quizzes&lt;/strong&gt;: (up to 100 points) 10% of the course grade.  A 15-minute quiz will be given in every recitation, except on the week of a midterm exam, or the last week of classes.  At the end of the course, hopefully you will have taken at least 10 quizzes (if that is the case, only the 10 best scores will count toward your quiz average).  No make-up quizzes will be given.  Only medical, death in the family, religious or official USC business reasons are valid excuses for missing a quiz and must be verified by letter from a doctor, guardian or supervisor.&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Computer Labs&lt;/strong&gt;: (up to 100 points) 10% of the course grade.&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Midterm Exams&lt;/strong&gt;: (up to 100 points each) 50% of the course grade (10% each midterm).  There will be five in-class midterm exams scheduled as follows:&lt;/li&gt;
-&lt;/ul&gt;
+                Click [&lt;a href=&quot;http://www.webassign.net/manual/WA_Student_Quick_Start.pdf&quot;&gt;here&lt;/a&gt;] to retrieve further registration instructions.
+            &lt;/li&gt;
+            &lt;li class=&quot;list-group-item&quot;&gt;
+                &lt;strong&gt;Quizzes&lt;/strong&gt;: (up to 100 points) 10% of the course grade.&lt;br /&gt;   A 15-minute quiz will be given in every recitation, except on the week of a midterm exam, or the last week of classes.  At the end of the course, hopefully you will have taken at least 10 quizzes (if that is the case, only the 10 best scores will count toward your quiz average).  
+            &lt;/li&gt;
+            &lt;li class=&quot;list-group-item&quot;&gt;
+                &lt;strong&gt;Computer Labs&lt;/strong&gt;: (up to 100 points) 10% of the course grade.
+            &lt;/li&gt;
+            &lt;li class=&quot;list-group-item&quot;&gt;
+                &lt;strong&gt;Midterm Exams&lt;/strong&gt;: (up to 100 points each) 50% of the course grade (10% each midterm).&lt;br /&gt;  There will be five in-class midterm exams scheduled as follows:
 
-&lt;table style=&quot;margin-left:auto;margin-right:auto;&quot;&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td bgcolor=&quot;#bb9999&quot;&gt;Test #&lt;/td&gt;
-&lt;td bgcolor=&quot;#bb9999&quot;&gt;Date&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&quot;center&quot;&gt;&lt;strong&gt;1&lt;/strong&gt;&lt;/td&gt;
-&lt;td align=&quot;center&quot;&gt;Mon, Sep 08&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&quot;center&quot;&gt;&lt;strong&gt;2&lt;/strong&gt;&lt;/td&gt;
-&lt;td align=&quot;center&quot;&gt;Fri, Sep 26&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&quot;center&quot;&gt;&lt;strong&gt;3&lt;/strong&gt;&lt;/td&gt;
-&lt;td align=&quot;center&quot;&gt;Wed, Oct 15&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&quot;center&quot;&gt;&lt;strong&gt;4&lt;/strong&gt;&lt;/td&gt;
-&lt;td align=&quot;center&quot;&gt;Mon, Nov 3&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&quot;center&quot;&gt;&lt;strong&gt;5&lt;/strong&gt;&lt;/td&gt;
-&lt;td align=&quot;center&quot;&gt;Fri, Nov 24&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
+                &lt;table style=&quot;margin-left:auto;margin-right:auto;&quot;&gt;
+                    &lt;tbody&gt;
+                        &lt;tr&gt;
+                            &lt;td bgcolor=&quot;#bb9999&quot;&gt;Test #&lt;/td&gt;
+                            &lt;td bgcolor=&quot;#bb9999&quot;&gt;Date&lt;/td&gt;
+                        &lt;/tr&gt;
+                        &lt;tr&gt;
+                            &lt;td align=&quot;center&quot;&gt;&lt;strong&gt;1&lt;/strong&gt;&lt;/td&gt;
+                            &lt;td align=&quot;center&quot;&gt;Mon, Sep 08&lt;/td&gt;
+                        &lt;/tr&gt;
+                        &lt;tr&gt;
+                            &lt;td align=&quot;center&quot;&gt;&lt;strong&gt;2&lt;/strong&gt;&lt;/td&gt;
+                            &lt;td align=&quot;center&quot;&gt;Fri, Sep 26&lt;/td&gt;
+                        &lt;/tr&gt;
+                        &lt;tr&gt;
+                            &lt;td align=&quot;center&quot;&gt;&lt;strong&gt;3&lt;/strong&gt;&lt;/td&gt;
+                            &lt;td align=&quot;center&quot;&gt;Wed, Oct 15&lt;/td&gt;
+                        &lt;/tr&gt;
+                        &lt;tr&gt;
+                            &lt;td align=&quot;center&quot;&gt;&lt;strong&gt;4&lt;/strong&gt;&lt;/td&gt;
+                            &lt;td align=&quot;center&quot;&gt;Mon, Nov 3&lt;/td&gt;
+                        &lt;/tr&gt;
+                        &lt;tr&gt;
+                            &lt;td align=&quot;center&quot;&gt;&lt;strong&gt;5&lt;/strong&gt;&lt;/td&gt;
+                            &lt;td align=&quot;center&quot;&gt;Fri, Nov 24&lt;/td&gt;
+                        &lt;/tr&gt;
+                    &lt;/tbody&gt;
+                &lt;/table&gt;
+            &lt;/li&gt;
+            &lt;li class=&quot;list-group-item&quot;&gt;
+                &lt;strong&gt;Final Exam&lt;/strong&gt;: (up to 100 points) 20% of the course grade.&lt;br /&gt;  The final exams are scheduled as follows:
+                &lt;ul&gt;
+                    &lt;li&gt; Sections 011 &amp;amp; 012:  Friday, December 12th at 12:30 PM.&lt;/li&gt;
+                    &lt;li&gt;Sections 015 &amp;amp; 016: Monday, December 8th at 12:30 PM.&lt;/li&gt;
+                &lt;/ul&gt;
+            &lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
 
-&lt;p&gt;No make-up tests will be given. Only medical, death in the family, religious or official USC business reasons are valid excuses for missing a test and must be verified by letter from a doctor, guardian or supervisor.&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;Final Exam&lt;/strong&gt;: (up to 100 points) 20% of the course grade.  The final exams are scheduled as follows:&lt;/p&gt;
-
-    &lt;ul&gt;
-      &lt;li&gt;Sections 011 &amp;amp; 012:  Friday, December 12th at 12:30 PM.&lt;/li&gt;
-      &lt;li&gt;Sections 015 &amp;amp; 016: Monday, December 8th at 12:30 PM.&lt;/li&gt;
-    &lt;/ul&gt;
-
-    &lt;p&gt;No make-up final exam will be given.  Only medical, death in the family, religious or official USC business reasons are valid excuses for missing the Final Exam, and must be verified by letter from a doctor, guardian or supervisor.&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
+&lt;div class=&quot;alert alert-danger&quot; role=&quot;alert&quot;&gt;
+    No make-up quizzes or tests will be given. Only medical, death in the family, religious or official USC business reasons are valid excuses for missing class, and must be verified by letter from a doctor, guardian or supervisor.
+&lt;/div&gt;
 
 &lt;p&gt;The course grade will be determined as follows:&lt;/p&gt;
 
-&lt;table style=&quot;margin-left:auto;margin-right:auto;&quot;&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td bgcolor=&quot;#bb9999&quot;&gt;GRADE&lt;/td&gt;
-&lt;td bgcolor=&quot;#bb9999&quot;&gt;RANGE&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&quot;center&quot;&gt;&lt;strong&gt;A&lt;/strong&gt;&lt;/td&gt;
-&lt;td&gt;90%-100%&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&quot;center&quot;&gt;&lt;strong&gt;B+&lt;/strong&gt;&lt;/td&gt;
-&lt;td&gt;85%-89%&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&quot;center&quot;&gt;&lt;strong&gt;B&lt;/strong&gt;&lt;/td&gt;
-&lt;td&gt;80%-84%&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&quot;center&quot;&gt;&lt;strong&gt;C+&lt;/strong&gt;&lt;/td&gt;
-&lt;td&gt;75%-79%&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&quot;center&quot;&gt;&lt;strong&gt;C&lt;/strong&gt;&lt;/td&gt;
-&lt;td&gt;70%-74%&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&quot;center&quot;&gt;&lt;strong&gt;D+&lt;/strong&gt;&lt;/td&gt;
-&lt;td&gt;65%-69%&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&quot;center&quot;&gt;&lt;strong&gt;D&lt;/strong&gt;&lt;/td&gt;
-&lt;td&gt;60%-64%&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&quot;center&quot;&gt;&lt;strong&gt;F&lt;/strong&gt;&lt;/td&gt;
-&lt;td&gt;below 60%&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
+&lt;div class=&quot;row&quot;&gt;
+    &lt;div class=&quot;col-sm-4&quot;&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;col-sm-4&quot;&gt;
+        &lt;table class=&quot;table table-striped&quot;&gt;
+            &lt;thead&gt;
+                &lt;tr&gt;
+                    &lt;th bgcolor=&quot;#bb9999&quot;&gt;GRADE&lt;/th&gt;
+                    &lt;th bgcolor=&quot;#bb9999&quot;&gt;RANGE&lt;/th&gt;
+                &lt;/tr&gt;
+            &lt;/thead&gt;
+            &lt;tbody&gt;
+                &lt;tr&gt;
+                    &lt;td align=&quot;center&quot;&gt;&lt;strong&gt;A&lt;/strong&gt;&lt;/td&gt;
+                    &lt;td&gt;90%-100%&lt;/td&gt;
+                &lt;/tr&gt;
+                &lt;tr&gt;
+                    &lt;td align=&quot;center&quot;&gt;&lt;strong&gt;B+&lt;/strong&gt;&lt;/td&gt;
+                    &lt;td&gt;85%-89%&lt;/td&gt;
+                &lt;/tr&gt;
+                &lt;tr&gt;
+                    &lt;td align=&quot;center&quot;&gt;&lt;strong&gt;B&lt;/strong&gt;&lt;/td&gt;
+                    &lt;td&gt;80%-84%&lt;/td&gt;
+                &lt;/tr&gt;
+                &lt;tr&gt;
+                    &lt;td align=&quot;center&quot;&gt;&lt;strong&gt;C+&lt;/strong&gt;&lt;/td&gt;
+                    &lt;td&gt;75%-79%&lt;/td&gt;
+                &lt;/tr&gt;
+                &lt;tr&gt;
+                    &lt;td align=&quot;center&quot;&gt;&lt;strong&gt;C&lt;/strong&gt;&lt;/td&gt;
+                    &lt;td&gt;70%-74%&lt;/td&gt;
+                &lt;/tr&gt;
+                &lt;tr&gt;
+                    &lt;td align=&quot;center&quot;&gt;&lt;strong&gt;D+&lt;/strong&gt;&lt;/td&gt;
+                    &lt;td&gt;65%-69%&lt;/td&gt;
+                &lt;/tr&gt;
+                &lt;tr&gt;
+                    &lt;td align=&quot;center&quot;&gt;&lt;strong&gt;D&lt;/strong&gt;&lt;/td&gt;
+                    &lt;td&gt;60%-64%&lt;/td&gt;
+                &lt;/tr&gt;
+                &lt;tr&gt;
+                    &lt;td align=&quot;center&quot;&gt;&lt;strong&gt;F&lt;/strong&gt;&lt;/td&gt;
+                    &lt;td&gt;below 60%&lt;/td&gt;
+                &lt;/tr&gt;
+            &lt;/tbody&gt;
+        &lt;/table&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;col-sm-4&quot;&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
 
 &lt;h2 id=&quot;further-information&quot;&gt;Further Information&lt;/h2&gt;
 
-&lt;ul&gt;
-  &lt;li&gt;&lt;strong&gt;Honor Code:&lt;/strong&gt; The Honor Code applies to all work for this course.  Please review the Honor Code at [&lt;a href=&quot;http://www.sc.edu/academicintegrity&quot;&gt;this link&lt;/a&gt;].  Students found violating the Honor Code will be subject to discipline.&lt;/li&gt;
-  &lt;li&gt;Some material will be stored in Dropbox. In that case, you will need an account to retrieve it. If you do not have one already, sign-in through [&lt;a href=&quot;http://db.tt/Mtz4IUP&quot;&gt;this link&lt;/a&gt;] with your academic e-mail address to receive a base 4GB storage, plus an extra 500MB, free of charge.&lt;/li&gt;
-  &lt;li&gt;Remember to change your e-mail address on Blackboard if necessary [&lt;a href=&quot;http://blackboard.sc.edu/&quot;&gt;blackboard.sc.edu&lt;/a&gt;]&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Office of Disability Services&lt;/strong&gt;: If you have special needs as addressed by the &lt;em&gt;Americans with Disabilities Act&lt;/em&gt; and need any assistance, please notify the instructor immediately.&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Math Tutoring Center:&lt;/strong&gt; The Math Tutoring Center is a free tutoring service for MATH 111, 115, 122, 141, 142, and 170. The center also maintains a list of private tutors for math and statistics. The center is located in LeConte, room 105, and the schedule is available at the Department of Mathematics website (&lt;a href=&quot;http://www.math.sc.edu&quot;&gt;www.math.sc.edu&lt;/a&gt;). No appointment is necessary.&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;ACE centers:&lt;/strong&gt; Tutoring for 100-Level Math is offered Monday through Thursday 7-9pm in the ACE centers in Bates Hall and Columbia Hall and Monday through Thursday 6-9pm in Sims Hall.  No appointment is needed.  You may contact the Student Success Center at 803-777-0684 and &lt;a href=&quot;mailto:tutoring@sc.edu&quot;&gt;tutoring@sc.edu&lt;/a&gt; with additional questions.&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Supplemental Instruction:&lt;/strong&gt; SI is available for this course to assist you in better understanding the course material. The SI program provides peer-facilitated study sessions led by qualified and trained undergraduate SI leaders who attend classes with students and encourage students to practice and discuss course concepts in sessions. Sessions are open to all students who want to improve their understanding of the material, as well as their grades. SI sessions will focus on the most recent material covered in class. Each SI leader holds three sessions per week. Your SI leader is &lt;a href=&quot;mailto:hernants@email.sc.edu&quot;&gt;Tyler Hernandez&lt;/a&gt; and you can find the schedule online at &lt;a href=&quot;http://www.sa.sc.edu/supplementalinstruction/&quot;&gt;www.sa.sc.edu/supplementalinstruction/&lt;/a&gt;.  You can contact the Student Success Center at (803) 777-0684 if you have questions about the SI session schedule.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;learning-outcomes&quot;&gt;Learning Outcomes&lt;/h2&gt;
-
-&lt;p&gt;A student who successfully completes Calculus I (MATH 141) should continue to develop as an independent learner with the ability to approach problems from a conceptual viewpoint, to utilize more than one idea in a single problem, and to apply appropriate calculus skills to problems in context. In particular, the successful student will master concepts and gain skills needed to solve problems related to:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Handling Functions
-    &lt;ul&gt;
-      &lt;li&gt;Functions and their graphs&lt;/li&gt;
-      &lt;li&gt;Finding limits graphically, numerically and analytically&lt;/li&gt;
-      &lt;li&gt;Continuity and one-sided limits&lt;/li&gt;
-      &lt;li&gt;Infinite limits and limits at infinity&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Differentiation
-    &lt;ul&gt;
-      &lt;li&gt;The derivative and rates of change&lt;/li&gt;
-      &lt;li&gt;Basic differentiation rules
-        &lt;ul&gt;
-          &lt;li&gt;Polynomials&lt;/li&gt;
-          &lt;li&gt;Exponentials&lt;/li&gt;
-          &lt;li&gt;Trigonometric functions&lt;/li&gt;
-          &lt;li&gt;Logarithmic functions&lt;/li&gt;
-          &lt;li&gt;The product and quotient rule&lt;/li&gt;
-          &lt;li&gt;Chain rule&lt;/li&gt;
+&lt;div class=&quot;row&quot;&gt;
+    &lt;div class=&quot;col-sm-12&quot;&gt;
+        &lt;ul class=&quot;list-group&quot;&gt;
+            &lt;li class=&quot;list-group-item&quot;&gt;&lt;strong&gt;Honor Code:&lt;/strong&gt;&lt;br /&gt; The Honor Code applies to all work for this course.  Please review the Honor Code at [&lt;a href=&quot;http://www.sc.edu/academicintegrity&quot;&gt;this link&lt;/a&gt;].  Students found violating the Honor Code will be subject to discipline.&lt;/li&gt;
+            &lt;li class=&quot;list-group-item&quot;&gt;Some material will be stored in Dropbox. In that case, you will need an account to retrieve it. If you do not have one already, sign-in through [&lt;a href=&quot;http://db.tt/Mtz4IUP&quot;&gt;this link&lt;/a&gt;] with your academic e-mail address to receive a base 4GB storage, plus an extra 500MB, free of charge.&lt;/li&gt;
+            &lt;li class=&quot;list-group-item&quot;&gt;Remember to change your e-mail address on Blackboard if necessary [&lt;a href=&quot;http://blackboard.sc.edu/&quot;&gt;blackboard.sc.edu&lt;/a&gt;]&lt;/li&gt;
+            &lt;li class=&quot;list-group-item&quot;&gt;&lt;strong&gt;Office of Student Disability Services&lt;/strong&gt;:&lt;br /&gt; If you have special needs as addressed by the &lt;em&gt;Americans with Disabilities Act&lt;/em&gt; and need any assistance, please notify the instructor immediately.&lt;/li&gt;
+            &lt;li class=&quot;list-group-item&quot;&gt;&lt;strong&gt;Math Tutoring Center:&lt;/strong&gt;&lt;br /&gt; The Math Tutoring Center is a free tutoring service for MATH 111, 115, 122, 141, 142, and 170. The center also maintains a list of private tutors for math and statistics. The center is located in LeConte, room 105, and the schedule is available at the Department of Mathematics website (&lt;a href=&quot;http://www.math.sc.edu&quot;&gt;www.math.sc.edu&lt;/a&gt;). No appointment is necessary.&lt;/li&gt;
+            &lt;li class=&quot;list-group-item&quot;&gt;&lt;strong&gt;ACE centers:&lt;/strong&gt;&lt;br /&gt; Tutoring for 100-Level Math is offered Monday through Thursday 7-9pm in the ACE centers in Bates Hall and Columbia Hall and Monday through Thursday 6-9pm in Sims Hall.  No appointment is needed.  You may contact the Student Success Center at 803-777-0684 and &lt;a href=&quot;mailto:tutoring@sc.edu&quot;&gt;tutoring@sc.edu&lt;/a&gt; with additional questions.&lt;/li&gt;
+            &lt;li class=&quot;list-group-item&quot;&gt;&lt;strong&gt;Supplemental Instruction:&lt;/strong&gt;&lt;br /&gt; SI is available for this course to assist you in better understanding the course material. The SI program provides peer-facilitated study sessions led by qualified and trained undergraduate SI leaders who attend classes with students and encourage students to practice and discuss course concepts in sessions. Sessions are open to all students who want to improve their understanding of the material, as well as their grades. SI sessions will focus on the most recent material covered in class. Each SI leader holds three sessions per week. Your SI leader is &lt;a href=&quot;mailto:hernants@email.sc.edu&quot;&gt;Tyler Hernandez&lt;/a&gt; and you can find the schedule online at &lt;a href=&quot;http://www.sa.sc.edu/supplementalinstruction/&quot;&gt;www.sa.sc.edu/supplementalinstruction/&lt;/a&gt;.  You can contact the Student Success Center at (803) 777-0684 if you have questions about the SI session schedule.&lt;/li&gt;
         &lt;/ul&gt;
-      &lt;/li&gt;
-      &lt;li&gt;Implicit differentiation&lt;/li&gt;
-      &lt;li&gt;Logarithmic differentiation&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Applications of differentiation
-    &lt;ul&gt;
-      &lt;li&gt;Related rates&lt;/li&gt;
-      &lt;li&gt;Extrema on an interval&lt;/li&gt;
-      &lt;li&gt;Mean Value Theorem&lt;/li&gt;
-      &lt;li&gt;Curve sketching&lt;/li&gt;
-      &lt;li&gt;L’Hospital’s Rule&lt;/li&gt;
-      &lt;li&gt;Optimization problems&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Integration
-    &lt;ul&gt;
-      &lt;li&gt;Antiderivatives and indeterminate integrals&lt;/li&gt;
-      &lt;li&gt;Definite Integrals&lt;/li&gt;
-      &lt;li&gt;The Fundamental Theorem of Calculus&lt;/li&gt;
-      &lt;li&gt;Basic computation of area between curves&lt;/li&gt;
-      &lt;li&gt;Basic computation of volume of solids of revolution&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;well&quot;&gt;
+    &lt;h2&gt;Learning Outcomes&lt;/h2&gt;
+    &lt;p&gt; 
+        A student who successfully completes Calculus I (MATH 141) should continue to develop as an independent learner with the ability to approach problems from a conceptual viewpoint, to utilize more than one idea in a single problem, and to apply appropriate calculus skills to problems in context. In particular, the successful student will master concepts and gain skills needed to solve problems related to:
+        &lt;ul&gt;
+            &lt;li&gt;Handling Functions&lt;/li&gt;
+            &lt;ul&gt;
+                &lt;li&gt;Functions and their graphs&lt;/li&gt;
+                &lt;li&gt;Finding limits graphically, numerically and analytically&lt;/li&gt;
+                &lt;li&gt;Continuity and one-sided limits&lt;/li&gt;
+                &lt;li&gt;Infinite limits and limits at infinity&lt;/li&gt;
+            &lt;/ul&gt;
+            &lt;li&gt;Differentiation&lt;/li&gt;
+            &lt;ul&gt;
+                &lt;li&gt;The derivative and rates of change&lt;/li&gt;
+                &lt;li&gt;Basic differentiation rules&lt;/li&gt;
+                &lt;ul&gt;
+                    &lt;li&gt;Polynomials&lt;/li&gt;
+                    &lt;li&gt;Exponentials&lt;/li&gt;
+                    &lt;li&gt;Trigonometric functions&lt;/li&gt;
+                    &lt;li&gt;Logarithmic functions&lt;/li&gt;
+                    &lt;li&gt;The product and quotient rule&lt;/li&gt;
+                    &lt;li&gt;Chain rule&lt;/li&gt;
+                &lt;/ul&gt;
+                &lt;li&gt;Implicit differentiation&lt;/li&gt;
+                &lt;li&gt;Logarithmic differentiation&lt;/li&gt;
+            &lt;/ul&gt;
+            &lt;li&gt;Applications of differentiation&lt;/li&gt;
+            &lt;ul&gt;
+                &lt;li&gt;Related rates&lt;/li&gt;
+                &lt;li&gt;Extrema on an interval&lt;/li&gt;
+                &lt;li&gt;Mean Value Theorem&lt;/li&gt;
+                &lt;li&gt;Curve sketching&lt;/li&gt;
+                &lt;li&gt;L&#39;Hospital&#39;s Rule&lt;/li&gt;
+                &lt;li&gt;Optimization problems&lt;/li&gt;
+            &lt;/ul&gt;
+            &lt;li&gt;Integration&lt;/li&gt;
+            &lt;ul&gt;
+                &lt;li&gt;Antiderivatives and indeterminate integrals&lt;/li&gt;
+                &lt;li&gt;Definite Integrals&lt;/li&gt;
+                &lt;li&gt;The Fundamental Theorem of Calculus&lt;/li&gt;
+                &lt;li&gt;Basic computation of area between curves&lt;/li&gt;
+                &lt;li&gt;Basic computation of volume of solids of revolution&lt;/li&gt;
+            &lt;/ul&gt;
+        &lt;/ul&gt;
+    &lt;/p&gt;
+&lt;/div&gt;
 
 &lt;h2 id=&quot;lesson-plan&quot;&gt;Lesson plan&lt;/h2&gt;
 
