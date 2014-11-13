@@ -12,7 +12,7 @@ What day of the week was I born?  Getting a calendar of that year could prove an
 
 There is a neat algorithm that, without the aid of pen and paper, will let you find the day of the week for any given date.  It only takes six simple steps.  On each of the first five steps, you come up with a different coefficient.  In the last step, you add all those coefficients together and perform a very simple operation that offers a number between zero and six.  This number indicates the day of the week:
 
-> \begin{equation} \underbrace{\text{August}}_{M} \underbrace{22^{\text{nd}}}_{D} \overbrace{\underbrace{19}_{C}\!\!\!\!\underbrace{73}_{Y}}^{L} \end{equation}
+\begin{equation} \underbrace{\text{August}}_{M} \underbrace{22^{\text{nd}}}_{D} \overbrace{\underbrace{19}_{C}\!\!\!\!\underbrace{73}_{Y}}^{L} \end{equation}
 
 ### The **CENTURY** step.  
 
