@@ -12,11 +12,15 @@ What day of the week was I born?  Getting a calendar of that year could prove an
 
 There is a neat algorithm that, without the aid of pen and paper, will let you find the day of the week for any given date.  It only takes six simple steps.  On each of the first five steps, you come up with a different coefficient.  In the last step, you add all those coefficients together and perform a very simple operation that offers a number between zero and six.  This number indicates the day of the week:
 
-\begin{equation} \underbrace{\text{August}}_{M} \underbrace{22^{\text{nd}}}_{D} \overbrace{\underbrace{19}_{C}\!\!\!\!\underbrace{73}_{Y}}^{L} \end{equation}
+<div>
+\begin{equation} 
+\underbrace{\text{August}}_{M} \underbrace{22^{\text{nd}}}_{D} \overbrace{\underbrace{19}_{C}\!\!\!\!\underbrace{73}_{Y}}^{L} 
+\end{equation}
+</div>
 
 ### The **CENTURY** step.  
 
-The *century* coefficient, which we denote <span>\\( latex C \\)</span>, is computed from the first two digits of the year.  The coefficient for 20 is "minus one", and for any other century, you can obtain the coefficient from the following table:
+The *century* coefficient, which we denote <span>\\( C \\)</span>, is computed from the first two digits of the year.  The coefficient for 20 is "minus one", and for any other century, you can obtain the coefficient from the following table:
 
 <div>
   \begin{equation}
@@ -28,7 +32,7 @@ The *century* coefficient, which we denote <span>\\( latex C \\)</span>, is comp
 
 ### The **YEAR** step.  
 
-The *year* coefficient, which we denote <span>\\( latex Y \\)</span>, is computed from the last two digits of the year as the output of the following formula: if <span>\\( latex x \\)</span> is the last two digits of the year, then <span>\\( latex Y = x + \lfloor \frac{x}{4} \rfloor, \\)</span> where <span>\\( latex \lfloor \cdot \rfloor \\)</span> indicates the integer part of any given real number.
+The *year* coefficient, which we denote <span>\\( Y \\)</span>, is computed from the last two digits of the year as the output of the following formula: if <span>\\( x \\)</span> is the last two digits of the year, then <span>\\( Y = x + \lfloor \frac{x}{4} \rfloor, \\)</span> where <span>\\( \lfloor \cdot \rfloor \\)</span> indicates the integer part of any given real number.
 
 > For example, the last two digits of 1973 are 73.  Since \\( 73 = 4 \times 18+2, \\) the year coefficient is \\( Y = 73 + 18 = 91.\\)
 
@@ -51,7 +55,7 @@ Every year whose two last digits are a multiple of four is a leap year (except i
 
 ### The **DAY** step.  
 
-The corresponding coefficient <span>\\( latex D \\)</span>, is simply the day of the month.
+The corresponding coefficient <span>\\( D \\)</span>, is simply the day of the month.
 
 > For August 22, the coefficient is \\( D = 22.\\)
 
@@ -67,7 +71,7 @@ In the final step, we add up all the previous coefficients, and compute the rema
 
 ## Miscellaneous
 
-With the help of the libraries `calendar` and `folding` of the <span>\\( latex LaTeX \\)</span> package `tikz`, it is possible to generate this fun calendar printed on an unfolded dodecahedron.  The code could not be simpler:
+With the help of the libraries `calendar` and `folding` of the <span>\\( LaTeX \\)</span> package `tikz`, it is possible to generate this fun calendar printed on an unfolded dodecahedron.  The code could not be simpler:
 
 <p><img src="http://farm5.static.flickr.com/4091/5157027232_5364aa4ef0_b_d.jpg" alt="" width="100%" /></p>
 
