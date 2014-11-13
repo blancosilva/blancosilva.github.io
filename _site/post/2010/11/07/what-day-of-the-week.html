@@ -404,7 +404,7 @@
 
 <div>
 \begin{equation} 
-\underbrace{\text{August}}_{M} \underbrace{22^{\text{nd}}}_{D} \overbrace{\underbrace{19}_{C}\!\!\!\!\underbrace{73}_{Y}}^{L} 
+\underbrace{\text{August}}_{M} \underbrace{22^{\text{nd}}}_{D} \overbrace{\underbrace{19}_{C}\underbrace{73}_{Y}}^{L} 
 \end{equation}
 </div>
 
@@ -435,20 +435,19 @@
 <p>This is the part that takes some memorizing. The month coefficient is given by the table below.  Lewis Carroll gave a very nice rule to construct that table:</p>
 
 <blockquote>
-  <p>January is “zero”; February and March are both “three” (the third month); December is “twelve” (the twelfth month).  For each month that starts or ends in a vowel, its month number subtracted from ten.  For the next month to one of those, the previous coefficient plus the number of days of the previous month.</p>
+January is "zero"; February and March are both "three" (the third month); December is "twelve" (the twelfth month).  For each month that starts or ends in a vowel, its month number subtracted from ten.  For the next month to one of those, the previous coefficient plus the number of days of the previous month.
 
-  <table>
-    <tbody>
-      <tr>
-        <td>\begin{equation} \begin{array}{</td>
-        <td>c</td>
-        <td>c</td>
-        <td>c</td>
-        <td>c</td>
-        <td>}\hline Jan &amp; Feb &amp; Mar &amp; Apr\ \hline 0 &amp; 3 &amp; 3 &amp; 10-4=6\ \hline\hline May &amp; Jun &amp; Jul &amp; Aug\ \hline 6+30=36 &amp; 10-6=4 &amp; 4+30=34 &amp; 10-8=2\ \hline\hline Sep &amp; Oct &amp; Nov &amp; Dec\ \hline 2+31=33 &amp; 10-10=0 &amp; 0+31=31 &amp; 12\ \hline\end{array} \end{equation}</td>
-      </tr>
-    </tbody>
-  </table>
+\begin{equation} 
+\begin{array}{|c|c|c|c|}
+\hline Jan &amp; Feb &amp; Mar &amp; Apr\\ 
+\hline 0 &amp; 3 &amp; 3 &amp; 10-4=6\\ 
+\hline\hline May &amp; Jun &amp; Jul &amp; Aug\\ 
+\hline 6+30=36 &amp; 10-6=4 &amp; 4+30=34 &amp; 10-8=2\\ 
+\hline\hline Sep &amp; Oct &amp; Nov &amp; Dec\\ 
+\hline 2+31=33 &amp; 10-10=0 &amp; 0+31=31 &amp; 12\\ 
+\hline
+\end{array} 
+\end{equation}
 </blockquote>
 
 <blockquote>
@@ -491,27 +490,28 @@
 
 <div class="highlight"><pre><code class="language-latex" data-lang="latex"><span class="lineno"> 1</span> <span class="k">\sffamily\scriptsize</span>
 <span class="lineno"> 2</span> <span class="k">\begin</span><span class="nb">{</span>center<span class="nb">}</span>
-<span class="lineno"> 3</span> <span class="k">\begin</span><span class="nb">{</span>tikzpicture<span class="nb">}</span>[transform shape, every calendar/.style= <span class="nb">{</span>at=<span class="nb">{</span>(-8ex,4ex)<span class="nb">}</span>, week list, month label above centered, month text=<span class="k">\bfseries\textcolor</span><span class="nb">{</span>red<span class="nb">}{</span><span class="k">\%</span>mt<span class="nb">}</span> <span class="k">\%</span>y0, if=<span class="nb">{</span>(Sunday) [black!50]<span class="nb">}</span>
-<span class="lineno"> 4</span> <span class="nb">}</span>] 
-<span class="lineno"> 5</span> 
-<span class="lineno"> 6</span> <span class="k">\tikzfoldingdodecahedron</span> [
-<span class="lineno"> 7</span> folding line length=2.5cm,
-<span class="lineno"> 8</span> face 1=<span class="nb">{</span> <span class="k">\calendar</span> [dates=<span class="k">\the\year</span>-01-01 to <span class="k">\the\year</span>-01-last];<span class="nb">}</span>,
-<span class="lineno"> 9</span> face 2=<span class="nb">{</span> <span class="k">\calendar</span> [dates=<span class="k">\the\year</span>-02-01 to <span class="k">\the\year</span>-02-last];<span class="nb">}</span>,
-<span class="lineno">10</span> face 3=<span class="nb">{</span> <span class="k">\calendar</span> [dates=<span class="k">\the\year</span>-03-01 to <span class="k">\the\year</span>-03-last];<span class="nb">}</span>,
-<span class="lineno">11</span> face 4=<span class="nb">{</span> <span class="k">\calendar</span> [dates=<span class="k">\the\year</span>-04-01 to <span class="k">\the\year</span>-04-last];<span class="nb">}</span>,
-<span class="lineno">12</span> face 5=<span class="nb">{</span> <span class="k">\calendar</span> [dates=<span class="k">\the\year</span>-05-01 to <span class="k">\the\year</span>-05-last];<span class="nb">}</span>,
-<span class="lineno">13</span> face 6=<span class="nb">{</span> <span class="k">\calendar</span> [dates=<span class="k">\the\year</span>-06-01 to <span class="k">\the\year</span>-06-last];<span class="nb">}</span>,
-<span class="lineno">14</span> face 7=<span class="nb">{</span> <span class="k">\calendar</span> [dates=<span class="k">\the\year</span>-07-01 to <span class="k">\the\year</span>-07-last];<span class="nb">}</span>,
-<span class="lineno">15</span> face 8=<span class="nb">{</span> <span class="k">\calendar</span> [dates=<span class="k">\the\year</span>-08-01 to <span class="k">\the\year</span>-08-last];<span class="nb">}</span>,
-<span class="lineno">16</span> face 9=<span class="nb">{</span> <span class="k">\calendar</span> [dates=<span class="k">\the\year</span>-09-01 to <span class="k">\the\year</span>-09-last];<span class="nb">}</span>,
-<span class="lineno">17</span> face 10=<span class="nb">{</span><span class="k">\calendar</span> [dates=<span class="k">\the\year</span>-10-01 to <span class="k">\the\year</span>-10-last];<span class="nb">}</span>,
-<span class="lineno">18</span> face 11=<span class="nb">{</span><span class="k">\calendar</span> [dates=<span class="k">\the\year</span>-11-01 to <span class="k">\the\year</span>-11-last];<span class="nb">}</span>,
-<span class="lineno">19</span> face 12=<span class="nb">{</span><span class="k">\calendar</span> [dates=<span class="k">\the\year</span>-12-01 to <span class="k">\the\year</span>-12-last];<span class="nb">}</span>
-<span class="lineno">20</span> ];
-<span class="lineno">21</span> 
-<span class="lineno">22</span> <span class="k">\end</span><span class="nb">{</span>tikzpicture<span class="nb">}</span>
-<span class="lineno">23</span> <span class="k">\end</span><span class="nb">{</span>center<span class="nb">}</span></code></pre></div>
+<span class="lineno"> 3</span> <span class="k">\begin</span><span class="nb">{</span>tikzpicture<span class="nb">}</span>[transform shape, 
+<span class="lineno"> 4</span>     every calendar/.style= <span class="nb">{</span>at=<span class="nb">{</span>(-8ex,4ex)<span class="nb">}</span>, week list, month label above centered, 
+<span class="lineno"> 5</span>                             month text=<span class="k">\bfseries\textcolor</span><span class="nb">{</span>red<span class="nb">}{</span><span class="k">\%</span>mt<span class="nb">}</span> <span class="k">\%</span>y0, 
+<span class="lineno"> 6</span>                             if=<span class="nb">{</span>(Sunday) [black!50]<span class="nb">}</span> <span class="nb">}</span>]
+<span class="lineno"> 7</span> 
+<span class="lineno"> 8</span> <span class="k">\tikzfoldingdodecahedron</span> [folding line length=2.5cm,
+<span class="lineno"> 9</span>   face 1=<span class="nb">{</span> <span class="k">\calendar</span> [dates=<span class="k">\the\year</span>-01-01 to <span class="k">\the\year</span>-01-last];<span class="nb">}</span>,
+<span class="lineno">10</span>   face 2=<span class="nb">{</span> <span class="k">\calendar</span> [dates=<span class="k">\the\year</span>-02-01 to <span class="k">\the\year</span>-02-last];<span class="nb">}</span>,
+<span class="lineno">11</span>   face 3=<span class="nb">{</span> <span class="k">\calendar</span> [dates=<span class="k">\the\year</span>-03-01 to <span class="k">\the\year</span>-03-last];<span class="nb">}</span>,
+<span class="lineno">12</span>   face 4=<span class="nb">{</span> <span class="k">\calendar</span> [dates=<span class="k">\the\year</span>-04-01 to <span class="k">\the\year</span>-04-last];<span class="nb">}</span>,
+<span class="lineno">13</span>   face 5=<span class="nb">{</span> <span class="k">\calendar</span> [dates=<span class="k">\the\year</span>-05-01 to <span class="k">\the\year</span>-05-last];<span class="nb">}</span>,
+<span class="lineno">14</span>   face 6=<span class="nb">{</span> <span class="k">\calendar</span> [dates=<span class="k">\the\year</span>-06-01 to <span class="k">\the\year</span>-06-last];<span class="nb">}</span>,
+<span class="lineno">15</span>   face 7=<span class="nb">{</span> <span class="k">\calendar</span> [dates=<span class="k">\the\year</span>-07-01 to <span class="k">\the\year</span>-07-last];<span class="nb">}</span>,
+<span class="lineno">16</span>   face 8=<span class="nb">{</span> <span class="k">\calendar</span> [dates=<span class="k">\the\year</span>-08-01 to <span class="k">\the\year</span>-08-last];<span class="nb">}</span>,
+<span class="lineno">17</span>   face 9=<span class="nb">{</span> <span class="k">\calendar</span> [dates=<span class="k">\the\year</span>-09-01 to <span class="k">\the\year</span>-09-last];<span class="nb">}</span>,
+<span class="lineno">18</span>   face 10=<span class="nb">{</span><span class="k">\calendar</span> [dates=<span class="k">\the\year</span>-10-01 to <span class="k">\the\year</span>-10-last];<span class="nb">}</span>,
+<span class="lineno">19</span>   face 11=<span class="nb">{</span><span class="k">\calendar</span> [dates=<span class="k">\the\year</span>-11-01 to <span class="k">\the\year</span>-11-last];<span class="nb">}</span>,
+<span class="lineno">20</span>   face 12=<span class="nb">{</span><span class="k">\calendar</span> [dates=<span class="k">\the\year</span>-12-01 to <span class="k">\the\year</span>-12-last];<span class="nb">}</span>
+<span class="lineno">21</span> ];
+<span class="lineno">22</span> 
+<span class="lineno">23</span> <span class="k">\end</span><span class="nb">{</span>tikzpicture<span class="nb">}</span>
+<span class="lineno">24</span> <span class="k">\end</span><span class="nb">{</span>center<span class="nb">}</span></code></pre></div>
 
 
 	</article>

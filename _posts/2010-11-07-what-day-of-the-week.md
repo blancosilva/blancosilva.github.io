@@ -14,7 +14,7 @@ There is a neat algorithm that, without the aid of pen and paper, will let you f
 
 <div>
 \begin{equation} 
-\underbrace{\text{August}}_{M} \underbrace{22^{\text{nd}}}_{D} \overbrace{\underbrace{19}_{C}\!\!\!\!\underbrace{73}_{Y}}^{L} 
+\underbrace{\text{August}}_{M} \underbrace{22^{\text{nd}}}_{D} \overbrace{\underbrace{19}_{C}\underbrace{73}_{Y}}^{L} 
 \end{equation}
 </div>
 
@@ -40,9 +40,21 @@ The *year* coefficient, which we denote <span>\\( Y \\)</span>, is computed from
 
 This is the part that takes some memorizing. The month coefficient is given by the table below.  Lewis Carroll gave a very nice rule to construct that table:
 
-> January is "zero"; February and March are both "three" (the third month); December is "twelve" (the twelfth month).  For each month that starts or ends in a vowel, its month number subtracted from ten.  For the next month to one of those, the previous coefficient plus the number of days of the previous month.
->
->  \begin{equation} \begin{array}{|c|c|c|c|}\hline Jan & Feb & Mar & Apr\\ \hline 0 & 3 & 3 & 10-4=6\\ \hline\hline May & Jun & Jul & Aug\\ \hline 6+30=36 & 10-6=4 & 4+30=34 & 10-8=2\\ \hline\hline Sep & Oct & Nov & Dec\\ \hline 2+31=33 & 10-10=0 & 0+31=31 & 12\\ \hline\end{array} \end{equation}
+<blockquote>
+January is "zero"; February and March are both "three" (the third month); December is "twelve" (the twelfth month).  For each month that starts or ends in a vowel, its month number subtracted from ten.  For the next month to one of those, the previous coefficient plus the number of days of the previous month.
+
+\begin{equation} 
+\begin{array}{|c|c|c|c|}
+\hline Jan & Feb & Mar & Apr\\ 
+\hline 0 & 3 & 3 & 10-4=6\\ 
+\hline\hline May & Jun & Jul & Aug\\ 
+\hline 6+30=36 & 10-6=4 & 4+30=34 & 10-8=2\\ 
+\hline\hline Sep & Oct & Nov & Dec\\ 
+\hline 2+31=33 & 10-10=0 & 0+31=31 & 12\\ 
+\hline
+\end{array} 
+\end{equation}
+</blockquote>
 
 
 > For example, August has a two in the table.  The month coefficient is thus \\( M = 2.\\)
@@ -78,23 +90,24 @@ With the help of the libraries `calendar` and `folding` of the <span>\\( LaTeX \
 {% highlight latex linenos %}
 \sffamily\scriptsize
 \begin{center}
-\begin{tikzpicture}[transform shape, every calendar/.style= {at={(-8ex,4ex)}, week list, month label above centered, month text=\bfseries\textcolor{red}{\%mt} \%y0, if={(Sunday) [black!50]}
-}] 
+\begin{tikzpicture}[transform shape, 
+    every calendar/.style= {at={(-8ex,4ex)}, week list, month label above centered, 
+                            month text=\bfseries\textcolor{red}{\%mt} \%y0, 
+                            if={(Sunday) [black!50]} }]
 
-\tikzfoldingdodecahedron [
-folding line length=2.5cm,
-face 1={ \calendar [dates=\the\year-01-01 to \the\year-01-last];},
-face 2={ \calendar [dates=\the\year-02-01 to \the\year-02-last];},
-face 3={ \calendar [dates=\the\year-03-01 to \the\year-03-last];},
-face 4={ \calendar [dates=\the\year-04-01 to \the\year-04-last];},
-face 5={ \calendar [dates=\the\year-05-01 to \the\year-05-last];},
-face 6={ \calendar [dates=\the\year-06-01 to \the\year-06-last];},
-face 7={ \calendar [dates=\the\year-07-01 to \the\year-07-last];},
-face 8={ \calendar [dates=\the\year-08-01 to \the\year-08-last];},
-face 9={ \calendar [dates=\the\year-09-01 to \the\year-09-last];},
-face 10={\calendar [dates=\the\year-10-01 to \the\year-10-last];},
-face 11={\calendar [dates=\the\year-11-01 to \the\year-11-last];},
-face 12={\calendar [dates=\the\year-12-01 to \the\year-12-last];}
+\tikzfoldingdodecahedron [folding line length=2.5cm,
+  face 1={ \calendar [dates=\the\year-01-01 to \the\year-01-last];},
+  face 2={ \calendar [dates=\the\year-02-01 to \the\year-02-last];},
+  face 3={ \calendar [dates=\the\year-03-01 to \the\year-03-last];},
+  face 4={ \calendar [dates=\the\year-04-01 to \the\year-04-last];},
+  face 5={ \calendar [dates=\the\year-05-01 to \the\year-05-last];},
+  face 6={ \calendar [dates=\the\year-06-01 to \the\year-06-last];},
+  face 7={ \calendar [dates=\the\year-07-01 to \the\year-07-last];},
+  face 8={ \calendar [dates=\the\year-08-01 to \the\year-08-last];},
+  face 9={ \calendar [dates=\the\year-09-01 to \the\year-09-last];},
+  face 10={\calendar [dates=\the\year-10-01 to \the\year-10-last];},
+  face 11={\calendar [dates=\the\year-11-01 to \the\year-11-last];},
+  face 12={\calendar [dates=\the\year-12-01 to \the\year-12-last];}
 ];
 
 \end{tikzpicture}
