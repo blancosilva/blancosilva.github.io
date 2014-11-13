@@ -40,7 +40,7 @@ The *year* coefficient, which we denote <span>\\( Y \\)</span>, is computed from
 
 This is the part that takes some memorizing. The month coefficient is given by the table below.  Lewis Carroll gave a very nice rule to construct that table:
 
-<blockquote>
+<div class="well">
 January is "zero"; February and March are both "three" (the third month); December is "twelve" (the twelfth month).  For each month that starts or ends in a vowel, its month number subtracted from ten.  For the next month to one of those, the previous coefficient plus the number of days of the previous month.
 
 \begin{equation} 
@@ -54,7 +54,7 @@ January is "zero"; February and March are both "three" (the third month); Decemb
 \hline
 \end{array} 
 \end{equation}
-</blockquote>
+</div>
 
 
 > For example, August has a two in the table.  The month coefficient is thus \\( M = 2.\\)
