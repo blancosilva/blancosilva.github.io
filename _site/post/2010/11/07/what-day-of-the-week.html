@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width initial-scale=1">
+	<meta name="description" content="Useless math is useful math. It can be used to generate more useless math.
+">
+	<meta name="author" content="">
+
+	<title>What day of the week?</title>
+
+	<!-- Bootstrap core CSS -->
+	<link href="/css/bootstrap.min.css" rel="stylesheet">
+	<!-- Bootstrap theme -->
+	<link href="/css/bootstrap-theme.min.css" rel="stylesheet">
+
+	<!-- Custom styles for this template -->
+	<link href="/css/blog.css" rel="stylesheet">
+	<link rel="stylesheet" href="/css/pygments.css">
+
+
+	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+<![endif]-->
+</head>
+
+<body role="document">
+
+	<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+	<div class="container">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a class="navbar-brand" href="/">Francisco Blanco-Silva</a>
+		</div>
+		<div id="navbar" class="navbar-collapse collapse">
+			<ul class="nav navbar-nav">
+				<li class="active"><a href="/">Home</a></li>
+				
+				
+				<li><a class="page-link" href="/about/">About me</a></li>
+				
+				
+				
+				<li><a class="page-link" href="/books/">Books</a></li>
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				<li><a class="page-link" href="/media.html">In the media</a></li>
+				
+				
+				
+				<li><a class="page-link" href="/presentations.html">Presentations</a></li>
+				
+				
+				
+				<li><a class="page-link" href="/resume.html">Résumé</a></li>
+				
+				
+				<li class="dropdown">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown">Teaching <span class="caret"></span></a>
+					<ul class="dropdown-menu" role="menu">
+						<li class="dropdown-header">Current | Most recent classes</li>
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						<li><a href="/course/2014/08/19/ma141-fall-2014.html">MA141—Fall 2014</a></li>
+						
+						
+						
+						<li><a href="/course/2014/08/18/math-122-fall-2014.html">MA122—Fall 2014</a></li>
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						<li><a href="/course/2014/01/11/ma-241-spring-2014.html">MA241—Spring 2014</a></li>
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						<li><a href="/course/2013/08/22/ma242-fall-2013.html">MA242—Fall 2013</a></li>
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						<li><a href="/course/2012/06/26/ma142-summer-ii-2012.html">MA142—Summer II 2012</a></li>
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						<li class="divider"></li>
+						<li class="dropdown-header">Selected Class Material</li>
+						
+						
+						<li><a href="/teaching/2014/11/08/past-classes.html">Past Sections of Undergraduate Calculus</a></li>
+						
+						
+						
+						<li><a href="/teaching/2014/11/08/Mathematical-Imaging.html">Mathematical Imaging</a></li>
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						<li><a href="/teaching/2010/10/27/an-introduction-to-algebraic-topology.html">An Introduction to Algebraic Topology</a></li>
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						<li><a href="/teaching/2010/07/08/ma598r.html">MA598R—Summer 2007</a></li>
+						
+						
+						
+						
+						
+						
+						
+						
+<!-- 						<li>Introduction to the Theory of Distributions</li>
+						<li>The Basic Practice of Statistics</li> -->
+					</ul>
+				</li>
+			</ul>
+		</div><!--/.nav-collapse -->
+	</div>
+</nav>
+
+
+
+	<div class="page-content">
+		<div class="wrapper">
+			<br />
+<br />
+<br />
+<br />
+<div class="container theme-showcase" role="main" style="font-size:16px; font-family: Helvetica; width:750px; text-align:justify;">
+
+	<header class="post-header">
+		<h1 class="post-title">What day of the week?</h1>
+		<p class="post-meta">Nov 7, 2010</p>
+	</header>
+
+	<article class="post-content">
+		<p>What day of the week was I born?  Getting a calendar of that year could prove an impossible task, although if you are in front of a computer, there are <code>*nix</code> utilities that will do that for you.  But seriously, who has access to a computer with <code>unix</code> or <code>linux</code> when the question pops?</p>
+
+<p>There is a neat algorithm that, without the aid of pen and paper, will let you find the day of the week for any given date.  It only takes six simple steps.  On each of the first five steps, you come up with a different coefficient.  In the last step, you add all those coefficients together and perform a very simple operation that offers a number between zero and six.  This number indicates the day of the week:</p>
+
+<blockquote>
+  <p>\begin{equation} \underbrace{\text{August}}<em>{M} \underbrace{22^{\text{nd}}}</em>{D} \overbrace{\underbrace{19}<em>{C}!!!!\underbrace{73}</em>{Y}}^{L} \end{equation}</p>
+</blockquote>
+
+<h3 id="the-century-step">The <strong>CENTURY</strong> step.</h3>
+
+<p>The <em>century</em> coefficient, which we denote <span>\( latex C \)</span>, is computed from the first two digits of the year.  The coefficient for 20 is “minus one”, and for any other century, you can obtain the coefficient from the following table:</p>
+
+<div>
+  \begin{equation}
+  \begin{array}{|c|c|c|c|c|c|c|c|} \hline\dotsc &amp; 17 &amp; 18 &amp; 19 &amp; 20 &amp; 21 &amp; 22 &amp; \dotsc\\ \hline\dotsc &amp; +4 &amp; +2 &amp; 0 &amp; -1 &amp; -3 &amp; -5 &amp; \dotsc\\ \hline\end{array}
+  \end{equation}
+</div>
+
+<blockquote>
+  <p>For example, the first two digits of 1973 are 19: the corresponding coefficient is \( C=0. \)</p>
+</blockquote>
+
+<h3 id="the-year-step">The <strong>YEAR</strong> step.</h3>
+
+<p>The <em>year</em> coefficient, which we denote <span>\( latex Y \)</span>, is computed from the last two digits of the year as the output of the following formula: if <span>\( latex x \)</span> is the last two digits of the year, then <span>\( latex Y = x + \lfloor \frac{x}{4} \rfloor, \)</span> where <span>\( latex \lfloor \cdot \rfloor \)</span> indicates the integer part of any given real number.</p>
+
+<blockquote>
+  <p>For example, the last two digits of 1973 are 73.  Since \( 73 = 4 \times 18+2, \) the year coefficient is \( Y = 73 + 18 = 91.\)</p>
+</blockquote>
+
+<h3 id="the-month-step">The <strong>MONTH</strong> step.</h3>
+
+<p>This is the part that takes some memorizing. The month coefficient is given by the table below.  Lewis Carroll gave a very nice rule to construct that table:</p>
+
+<blockquote>
+  <p>January is “zero”; February and March are both “three” (the third month); December is “twelve” (the twelfth month).  For each month that starts or ends in a vowel, its month number subtracted from ten.  For the next month to one of those, the previous coefficient plus the number of days of the previous month.</p>
+
+  <table>
+    <tbody>
+      <tr>
+        <td>\begin{equation} \begin{array}{</td>
+        <td>c</td>
+        <td>c</td>
+        <td>c</td>
+        <td>c</td>
+        <td>}\hline Jan &amp; Feb &amp; Mar &amp; Apr\ \hline 0 &amp; 3 &amp; 3 &amp; 10-4=6\ \hline\hline May &amp; Jun &amp; Jul &amp; Aug\ \hline 6+30=36 &amp; 10-6=4 &amp; 4+30=34 &amp; 10-8=2\ \hline\hline Sep &amp; Oct &amp; Nov &amp; Dec\ \hline 2+31=33 &amp; 10-10=0 &amp; 0+31=31 &amp; 12\ \hline\end{array} \end{equation}</td>
+      </tr>
+    </tbody>
+  </table>
+</blockquote>
+
+<blockquote>
+  <p>For example, August has a two in the table.  The month coefficient is thus \( M = 2.\)</p>
+</blockquote>
+
+<h3 id="the-leap-year-step">The <strong>LEAP YEAR</strong> step.</h3>
+
+<p>Every year whose two last digits are a multiple of four is a leap year (except if those two digits are both zero—in that case, leap year occurs only if the whole year is a multiple of four-hundred).  In case of leap year and the month being either January or February, we subtract one.  Otherwise, zero.</p>
+
+<blockquote>
+  <p>For example, 1973 is not a leap year, so the coefficient is \( L=0.\)</p>
+</blockquote>
+
+<h3 id="the-day-step">The <strong>DAY</strong> step.</h3>
+
+<p>The corresponding coefficient <span>\( latex D \)</span>, is simply the day of the month.</p>
+
+<blockquote>
+  <p>For August 22, the coefficient is \( D = 22.\)</p>
+</blockquote>
+
+<h3 id="final-step">Final Step.</h3>
+
+<p>In the final step, we add up all the previous coefficients, and compute the remainder after division by seven (this is equivalent to add or subtract seven as many times as necessary so we obtain a number between zero and six).  This indicates the day of the week, by the easy correspondence <strong>Sunday</strong> is zero, <strong>Monday</strong> is one, and so on.</p>
+
+<blockquote>
+  <p>For example, for August 22, 1973, we have</p>
+
+  <p>\begin{equation} C + Y + M + L + D = 0 + 91 + 2 + 0 + 22 = 115 = 7 \times 16 + 3. \end{equation}</p>
+
+  <p>The remainder is thus 3, and the day of the week is <strong>Wednesday</strong>.</p>
+</blockquote>
+
+<h2 id="miscellaneous">Miscellaneous</h2>
+
+<p>With the help of the libraries <code>calendar</code> and <code>folding</code> of the <span>\( latex LaTeX \)</span> package <code>tikz</code>, it is possible to generate this fun calendar printed on an unfolded dodecahedron.  The code could not be simpler:</p>
+
+<p><img src="http://farm5.static.flickr.com/4091/5157027232_5364aa4ef0_b_d.jpg" alt="" width="100%" /></p>
+
+<div class="highlight"><pre><code class="language-latex" data-lang="latex"><span class="lineno"> 1</span> <span class="k">\sffamily\scriptsize</span>
+<span class="lineno"> 2</span> <span class="k">\begin</span><span class="nb">{</span>center<span class="nb">}</span>
+<span class="lineno"> 3</span> <span class="k">\begin</span><span class="nb">{</span>tikzpicture<span class="nb">}</span>[transform shape, every calendar/.style= <span class="nb">{</span>at=<span class="nb">{</span>(-8ex,4ex)<span class="nb">}</span>, week list, month label above centered, month text=<span class="k">\bfseries\textcolor</span><span class="nb">{</span>red<span class="nb">}{</span><span class="k">\%</span>mt<span class="nb">}</span> <span class="k">\%</span>y0, if=<span class="nb">{</span>(Sunday) [black!50]<span class="nb">}</span>
+<span class="lineno"> 4</span> <span class="nb">}</span>] 
+<span class="lineno"> 5</span> 
+<span class="lineno"> 6</span> <span class="k">\tikzfoldingdodecahedron</span> [
+<span class="lineno"> 7</span> folding line length=2.5cm,
+<span class="lineno"> 8</span> face 1=<span class="nb">{</span> <span class="k">\calendar</span> [dates=<span class="k">\the\year</span>-01-01 to <span class="k">\the\year</span>-01-last];<span class="nb">}</span>,
+<span class="lineno"> 9</span> face 2=<span class="nb">{</span> <span class="k">\calendar</span> [dates=<span class="k">\the\year</span>-02-01 to <span class="k">\the\year</span>-02-last];<span class="nb">}</span>,
+<span class="lineno">10</span> face 3=<span class="nb">{</span> <span class="k">\calendar</span> [dates=<span class="k">\the\year</span>-03-01 to <span class="k">\the\year</span>-03-last];<span class="nb">}</span>,
+<span class="lineno">11</span> face 4=<span class="nb">{</span> <span class="k">\calendar</span> [dates=<span class="k">\the\year</span>-04-01 to <span class="k">\the\year</span>-04-last];<span class="nb">}</span>,
+<span class="lineno">12</span> face 5=<span class="nb">{</span> <span class="k">\calendar</span> [dates=<span class="k">\the\year</span>-05-01 to <span class="k">\the\year</span>-05-last];<span class="nb">}</span>,
+<span class="lineno">13</span> face 6=<span class="nb">{</span> <span class="k">\calendar</span> [dates=<span class="k">\the\year</span>-06-01 to <span class="k">\the\year</span>-06-last];<span class="nb">}</span>,
+<span class="lineno">14</span> face 7=<span class="nb">{</span> <span class="k">\calendar</span> [dates=<span class="k">\the\year</span>-07-01 to <span class="k">\the\year</span>-07-last];<span class="nb">}</span>,
+<span class="lineno">15</span> face 8=<span class="nb">{</span> <span class="k">\calendar</span> [dates=<span class="k">\the\year</span>-08-01 to <span class="k">\the\year</span>-08-last];<span class="nb">}</span>,
+<span class="lineno">16</span> face 9=<span class="nb">{</span> <span class="k">\calendar</span> [dates=<span class="k">\the\year</span>-09-01 to <span class="k">\the\year</span>-09-last];<span class="nb">}</span>,
+<span class="lineno">17</span> face 10=<span class="nb">{</span><span class="k">\calendar</span> [dates=<span class="k">\the\year</span>-10-01 to <span class="k">\the\year</span>-10-last];<span class="nb">}</span>,
+<span class="lineno">18</span> face 11=<span class="nb">{</span><span class="k">\calendar</span> [dates=<span class="k">\the\year</span>-11-01 to <span class="k">\the\year</span>-11-last];<span class="nb">}</span>,
+<span class="lineno">19</span> face 12=<span class="nb">{</span><span class="k">\calendar</span> [dates=<span class="k">\the\year</span>-12-01 to <span class="k">\the\year</span>-12-last];<span class="nb">}</span>
+<span class="lineno">20</span> ];
+<span class="lineno">21</span> 
+<span class="lineno">22</span> <span class="k">\end</span><span class="nb">{</span>tikzpicture<span class="nb">}</span>
+<span class="lineno">23</span> <span class="k">\end</span><span class="nb">{</span>center<span class="nb">}</span></code></pre></div>
+
+
+	</article>
+
+	
+	<div id="disqus_thread"></div>
+<script type="text/javascript">
+/* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+        var disqus_shortname = 'eseprimo'; // required: replace example with your forum shortname
+        
+        /* * * DON'T EDIT BELOW THIS LINE * * */
+        (function() {
+        	var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        	dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        	(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+        </script>
+        <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+        
+	
+</div>
+
+
+<script type="text/javascript"
+src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+		</div>
+	</div>
+
+	<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-56262970-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+	<!-- Start of StatCounter Code for Default Guide -->
+<script type="text/javascript">
+var sc_project=10117038; 
+var sc_invisible=1; 
+var sc_security="1fd852f3"; 
+var scJsHost = (("https:" == document.location.protocol) ?
+"https://secure." : "http://www.");
+document.write("<sc"+"ript type='text/javascript' src='" +
+scJsHost+
+"statcounter.com/counter/counter.js'></"+"script>");
+</script>
+<noscript><div class="statcounter"><a title="free hit
+counters" href="http://statcounter.com/"
+target="_blank"><img class="statcounter"
+src="http://c.statcounter.com/10117038/0/1fd852f3/1/"
+alt="free hit counters"></a></div></noscript>
+<!-- End of StatCounter Code for Default Guide -->
+
+	    <!-- Bootstrap core JavaScript
+	    ================================================== -->
+	    <!-- Placed at the end of the document so the pages load faster -->
+	    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	    <script src="/js/bootstrap.min.js"></script>
+	    <script src="/assets/js/docs.min.js"></script>
+	    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+	    <script src="/assets/js/ie10-viewport-bug-workaround.js"></script>
+	    <script type="text/javascript">
+	    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'eseprimo'; // required: replace example with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function () {
+    	var s = document.createElement('script'); s.async = true;
+    	s.type = 'text/javascript';
+    	s.src = '//' + disqus_shortname + '.disqus.com/count.js';
+    	(document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+    }());
+    </script>
+    
+</body>
+</html>
