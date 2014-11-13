@@ -6,8 +6,8 @@
 </description>
     <link>http://blancosilva.github.io/</link>
     <atom:link href="http://blancosilva.github.io/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Thu, 13 Nov 2014 09:29:50 -0500</pubDate>
-    <lastBuildDate>Thu, 13 Nov 2014 09:29:50 -0500</lastBuildDate>
+    <pubDate>Thu, 13 Nov 2014 09:33:05 -0500</pubDate>
+    <lastBuildDate>Thu, 13 Nov 2014 09:33:05 -0500</lastBuildDate>
     <generator>Jekyll v2.4.0</generator>
     
       <item>
@@ -33674,7 +33674,7 @@ In&amp;nbsp;[105]:
     &lt;/div&gt;
     &lt;div class=&quot;col-sm-8&quot;&gt;
         &lt;div class=&quot;list-group&quot;&gt;
-            &lt;a href=&quot;mailto:blanco@math.sc.edu&quot; class=&quot;list-group-item active&quot;&gt;
+            &lt;a href=&quot;mailto:blanco@math.sc.edu&quot; class=&quot;list-group-item&quot;&gt;
                 &lt;h4 class=&quot;list-group-item-heading&quot;&gt;Instructor: Francisco Blanco-Silva&lt;/h4&gt;
                 &lt;p class=&quot;list-group-item-text&quot;&gt;
                     &lt;strong&gt;e-mail&lt;/strong&gt;: &lt;tt&gt;blanco at math dot sc dot edu&lt;/tt&gt;&lt;br /&gt;
@@ -33834,7 +33834,7 @@ In&amp;nbsp;[105]:
 
 &lt;p&gt;Your final score for the course will be computed as follows:&lt;/p&gt;
 
-&lt;div class=&quot;alert alert-info&quot; role=&quot;alert&quot; style=&quot;text-align:center;&quot;&gt;
+&lt;div class=&quot;alert alert-warning&quot; role=&quot;alert&quot; style=&quot;text-align:center;&quot;&gt;
     &lt;strong&gt;&lt;tt&gt;F = 0.1 * (HW + Q + CL + ME1 + ME2 + ME3 + ME4 + ME5) + 0.2 * FE&lt;/tt&gt;&lt;/strong&gt;
 &lt;/div&gt;
 
@@ -33845,7 +33845,7 @@ In&amp;nbsp;[105]:
                 &lt;strong&gt;Homework assignments&lt;/strong&gt;: (up to 100 points) 10% of the course grade.&lt;br /&gt;   Homework problems have been assigned for each lecture (you can see them at the end of this page, under &lt;strong&gt;Lesson Plan&lt;/strong&gt;). A selection of those problems are posted on &lt;a href=&quot;http://www.webassign.net&quot;&gt;WebAssign&lt;/a&gt; on the day of the lecture, and will be graded.  You will have until the end of the next class day to complete the assignment (e.g. what is posted on Monday is due on Wednesday at 11:59PM; what is posted on Friday is due on Monday at 11:59PM)
                 In order to sign up for your section of the course on WebAssign, visit &lt;a href=&quot;http://www.webassign.net&quot;&gt;www.webassign.net&lt;/a&gt; and click on [&lt;strong&gt;Enter Class Key&lt;/strong&gt;].  The class key is
 
-                &lt;h3 style=&quot;text-align:center;&quot;&gt;&lt;span class=&quot;label label-primary&quot;&gt;&lt;tt&gt;sc 7564 8382&lt;/tt&gt;&lt;/span&gt;&lt;/h3&gt;
+                &lt;h3 style=&quot;text-align:center;&quot;&gt;&lt;span class=&quot;label label-warning&quot;&gt;&lt;tt&gt;sc 7564 8382&lt;/tt&gt;&lt;/span&gt;&lt;/h3&gt;
 
                 Click [&lt;a href=&quot;http://www.webassign.net/manual/WA_Student_Quick_Start.pdf&quot;&gt;here&lt;/a&gt;] to retrieve further registration instructions.
             &lt;/li&gt;
