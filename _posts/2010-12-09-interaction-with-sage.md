@@ -60,7 +60,7 @@ while (m <=n):
 \end{tikzpicture}
 {% endhighlight %}
 
-<p style="text-align:center;"><img src="https://i0.wp.com/farm6.static.flickr.com/5041/5246735458_d7e745531c_o_d.jpg" alt="" width="60%" />
+<p style="text-align:center;"><img src="https://i0.wp.com/farm6.static.flickr.com/5041/5246735458_d7e745531c_o_d.jpg" alt="" width="60%" /></p>
 
 To make style changes, like adding your own color scheme, filling the triangles with texture, or labeling each vertex, all you need to modify in the code is the `tikz` bit in the declaration of `output+=[...]`.  In order to produce a different number of triangles, simply change the declaration `n=5` to any other value.
 
@@ -86,4 +86,4 @@ for m in range(6):
 
 As before, we place the actual code that constructs the different plots inside of a `sagesilent` environment.  This code simply creates a polar plot of the required function <span>\\( f(\theta) = \tfrac{\sin \theta}{\theta} \\)</span> between the angular values of zero and <span>\\( \pi \\)</span>, and then append to it all the triangles, one at a time, by calling the `polygon2d` command.  We take the liberty to change the shade of the triangle inside.  That is all.  Once the code is finished, we simply call the resulting plot (that was stored in the variable `t`) with the command `\sageplot`.  Easy, right?
 
-<p style="text-align:center;"><img src="https://i0.wp.com/farm6.static.flickr.com/5084/5247220578_248e4aab0d_b_d.jpg" alt="" width="60%" />
+<p style="text-align:center;"><img src="https://i0.wp.com/farm6.static.flickr.com/5084/5247220578_248e4aab0d_b_d.jpg" alt="" width="60%" /></p>
