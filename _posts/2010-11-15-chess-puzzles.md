@@ -20,7 +20,7 @@ It is no surprise that the game of chess generates such an amount of mathematica
 >
 > Can these mixed armies achieve values greater than one?  In each case give the largest possible value (and a setup achieving it).
 
-For example, the setup in the board below has an army value of
+For example, the setup on the board below has an army value of
 
 <div>
 	\begin{equation}
@@ -54,7 +54,7 @@ The diagram on the right shows an example for the second part of the puzzle, wit
 
 I found these problems in Martin Gardner's "*The Unexpected Hanging and Other Mathematical Diversions*."  They were posed in the eighteen hundreds, and some variations are still open for optimal solution.
 
-> **The minimum-attack problem**. Place the eight pieces of one color (king, queen, two bishops, two knights, two rooks) in the board so that the *smallest* possible number of squares are under attack.  A piece does not attack the square on which it rests, but of course it may attack squares occupied by other pieces.
+> **The minimum-attack problem**. Place the eight pieces of one color (king, queen, two bishops, two knights, two rooks) on the board so that the *smallest* possible number of squares are under attack.  A piece does not attack the square on which it rests, but of course it may attack squares occupied by other pieces.
 >
 > **The maximum-attack problem—weak version**.  Place the same eight pieces on the board so that the *largest* possible number of squares are under attack.  In the *weak version*, we do not force both bishops to be on opposite colors.
 >
@@ -67,7 +67,7 @@ I found these problems in Martin Gardner's "*The Unexpected Hanging and Other Ma
 ## Husserl's "Third-man theme"
 <blockquote>
 
-> Notice in the board below, the two sole occupants are the kings of opposite sides.  Add a third piece, creating a position that satisfies the following conditions:
+> Notice on the board below, the two sole occupants are the kings of opposite sides.  Add a third piece, creating a position that satisfies the following conditions:
 >
 >    1. Neither king is in check.
 >    2. The position can be reached in a legal game.
