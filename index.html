@@ -10,9 +10,11 @@ layout: default
 <!-- Main jumbotron for a primary marketing message or call to action -->
 <div class="container theme-showcase" role="main">
   <div class="jumbotron">
+
     <h2>Francisco Blanco-Silva</h2>
+
     <p>{{ site.description }}</p>
-    
+
     <p style="text-align:center;">
       <a href="https://github.com/{{ site.github_username }}" class="btn btn-sm btn-primary" role="button">
         <span class="icon  icon--github">
@@ -22,8 +24,6 @@ layout: default
             <path d="M59.4385483,30 C59.4385483,46.5685433 46.208188,60 29.8877097,60 C23.8348308,60 18.2069954,58.1525134 13.5216148,54.9827754 L47.3818361,5.81941103 C54.6937341,11.2806503 59.4385483,20.0777973 59.4385483,30 Z M59.4385483,30" id="reflec" fill-opacity="0.08" fill="#000000" sketch:type="MSShapeGroup"></path>
           </svg>
         </span>
-<!-- 
-        <span class="username">{{ site.github_username }}</span> -->
       </a>
 
       <a href="https://twitter.com/{{ site.twitter_username }}" class="btn btn-sm btn-primary" role="button">
@@ -34,8 +34,6 @@ layout: default
             <path d="M60.0867052,30 C60.0867052,46.5685433 46.6358389,60 30.0433526,60 C23.8895925,60 18.1679598,58.1525134 13.4044895,54.9827754 L47.8290478,5.81941103 C55.2628108,11.2806503 60.0867052,20.0777973 60.0867052,30 Z M60.0867052,30" id="reflec" fill-opacity="0.08" fill="#000000" sketch:type="MSShapeGroup"></path>
           </svg>
         </span>
-<!-- 
-        <span class="username">{{ site.twitter_username }}</span> -->
       </a>
 
       <a href="https://www.linkedin.com/pub/{{ site.linkedin_username }}" class="btn btn-sm btn-primary" role="button">
@@ -48,8 +46,6 @@ layout: default
             <path d="M59.5508386,30 C59.5508386,46.5685433 46.3204783,60 30,60 C23.9471212,60 18.3192858,58.1525134 13.6339051,54.9827754 L47.4941264,5.81941103 C54.8060245,11.2806503 59.5508386,20.0777973 59.5508386,30 Z M59.5508386,30" id="reflec" fill-opacity="0.08" fill="#000000" sketch:type="MSShapeGroup"></path>
           </svg>
         </span>
-<!-- 
-        <span class="username">{{ site.linkedin_username }}</span> -->
       </a>
 
       <a href="http://flickr.com/people/{{ site.flickr_username }}" class="btn btn-sm btn-primary" role="button">
@@ -61,8 +57,7 @@ layout: default
             <path d="M59.2139676,29.6858252 C59.2139676,45.9827531 45.9836073,59.1940219 29.663129,59.1940219 C23.6102502,59.1940219 17.9824147,57.376822 13.2970341,54.2590469 L47.1572554,5.90163934 C54.4691534,11.2733501 59.2139676,19.9262816 59.2139676,29.6858252 Z M59.2139676,29.6858252" id="reflec" fill-opacity="0.08" fill="#000000" sketch:type="MSShapeGroup"></path>
           </svg>
         </span>
-<!-- 
-        <span class="username">{{ site.flickr_username }}</span> -->
+        <!-- <span class="username">{{ site.flickr_username }}</span> --> 
       </a>
 
       <a href="http://facebook.com/{{ site.facebook_username }}" class="btn btn-sm btn-primary" role="button">
@@ -73,13 +68,9 @@ layout: default
             <path d="M59.2139676,30 C59.2139676,46.5685433 45.9836073,60 29.663129,60 C23.6102502,60 17.9824147,58.1525134 13.2970341,54.9827754 L47.1572554,5.81941103 C54.4691534,11.2806503 59.2139676,20.0777973 59.2139676,30 Z M59.2139676,30" id="reflec" fill-opacity="0.08" fill="#000000" sketch:type="MSShapeGroup"></path>
           </svg>
         </span>
-<!-- 
-        <span class="username">{{ site.facebook_username }}</span> -->
+        <!-- <span class="username">{{ site.facebook_username }}</span> -->
       </a>
- <!--    </p>
 
-    <p style="text-align:center;"> -->
-      
       <a href="mailto:{{ site.email }}" class="btn btn-sm btn-primary" role="button">
         <span class="icon  icon--email">
           <svg width="40" height="40" viewBox="0 0 60 60" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
@@ -88,9 +79,9 @@ layout: default
             <path d="M59.3262579,30 C59.3262579,46.5685433 46.0958976,60 29.7754193,60 C23.7225405,60 18.0947051,58.1525134 13.4093244,54.9827754 L47.2695458,5.81941103 C54.5814438,11.2806503 59.3262579,20.0777973 59.3262579,30 Z M59.3262579,30" id="reflec" fill-opacity="0.08" fill="#000000" sketch:type="MSShapeGroup"></path>
           </svg>
         </span>
-<!-- 
-        <span class="username">{{ site.email }}</span> -->
+        <!-- <span class="username">{{ site.email }}</span> -->
       </a>
+
       <a href="{{ "/feed.xml" | prepend: site.baseurl }}" class="btn btn-sm btn-primary" role="button">
         <span class="icon  icon--rss">     
           <svg width="40" height="40" viewBox="0 0 60 60" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
@@ -100,48 +91,64 @@ layout: default
           </svg>
         </span>
       </a>
-
     </p>
-  </div>
-</div>  
+  </div><!-- jumbotron -->
 
- 
-
-<div class="container theme-showcase" role="main">
-
-  <div class="col-sm-12">
-    <div class="list-group">
-      {% for post in site.posts %}
-      {% if post.category == "post" %}
-      <a href="{{ post.url | prepend: site.baseurl }}" class="list-group-item">
-        {% if post.date %}
-        <p class="entry-date date published">
-          <time datetime="{{ post.date | date: "%Y-%m-%d" }}" itemprop="datePublished">{{ post.date | date: "%B %d, %Y" }}</time>
+  <div class="row">
+    <div class="col-sm-8">
+      <div class="list-group">
+        {% for post in site.posts %}
+        {% if post.category == "post" %}
+        <a href="{{ post.url | prepend: site.baseurl }}" class="list-group-item">
+          {% if post.date %}
+          <p class="entry-date date published">
+            <time datetime="{{ post.date | date: "%Y-%m-%d" }}" itemprop="datePublished">{{ post.date | date: "%B %d, %Y" }}</time>
+          </p>
+          {% endif %}
+          <h3 class="list-group-item-heading">{{ post.title }}</h3>
+          <p class="list-group-item-text">
+            <table>
+              <tr>
+                {% if post.image.teaser %}
+                <td style="width:300px"><img src={{ post.image.teaser }} style="width:250px; side-margin:25px;"></td>
+                {% endif %}
+                <td style="vertical-align:top;">
+                  {{ post.excerpt | strip_html | truncate: 320 }}<br /> <br />
+                  <button type="button" class="btn btn-sm btn-primary">Read more &raquo;</button>
+                </td>
+              </tr>
+            </table>
+          </a>
         </p>
         {% endif %}
-        <h3 class="list-group-item-heading">{{ post.title }}</h3>
-        <p class="list-group-item-text">
-          <table>
-            <tr>
-          {% if post.image.teaser %}
-          <td style="width:300px"><img src={{ post.image.teaser }} style="width:250px; side-margin:25px;"></td>
-        {% endif %}
-        <td style="vertical-align:top;">
-          {{ post.excerpt | strip_html | truncate: 320 }}<br /> <br />
-            <a href="{{ site.url }}{{ post.url }}"><button type="button" class="btn btn-sm btn-primary">Read more &raquo;</button>
-        </td></tr></table>
-        </p>
-       <!--  {% if post.image.teaser %}
-        <p style="text-align:center; width:50%">
-          <img src={{ post.image.teaser }}>
-        </p>
-        {% endif %} -->
-      </a>
-      {% endif %}
-      {% endfor %}
+        {% endfor %}
+      </div>
     </div>
-  </div>
-</div>
+    <div class="col-sm-4">
+      <div class="well">
+        <img src={{ site.avatar }} style="width:100%; padding:10px;">
+
+        <ul class="list-group">
+         <li class="list-group-item">Recent posts:
+          <ul>
+            {% for post in site.posts %}
+            {% if post.category == "post" %}
+            <li><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></li>
+            {% endif %}
+            {% endfor %}
+          </ul>
+        </li>
+        <li class="list-group-item">Dapibus ac facilisis in</li>
+        <li class="list-group-item">Morbi leo risus</li>
+        <li class="list-group-item">Porta ac consectetur ac</li>
+        <li class="list-group-item">Vestibulum at eros</li>
+      </ul>
+    </div> <!-- side column well -->
+
+    </div> <!-- side column -->
+  </div> <!-- row -->
+
+</div> <!-- container theme showcase -->
 
 <script type="text/javascript"
 src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
