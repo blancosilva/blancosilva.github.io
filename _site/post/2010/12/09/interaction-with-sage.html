@@ -454,14 +454,13 @@
 <span class="lineno">21</span> <span class="k">\sagestr</span><span class="nb">{</span>output<span class="nb">}</span>
 <span class="lineno">22</span> <span class="k">\end</span><span class="nb">{</span>tikzpicture<span class="nb">}</span></code></pre></div>
 
-<p style="text-align:center;"><img src="https://i0.wp.com/farm6.static.flickr.com/5041/5246735458_d7e745531c_o_d.jpg" alt="" width="60%" />
+<p style="text-align:center;"><img src="https://i0.wp.com/farm6.static.flickr.com/5041/5246735458_d7e745531c_o_d.jpg" alt="" width="60%" /></p>
 
-To make style changes, like adding your own color scheme, filling the triangles with texture, or labeling each vertex, all you need to modify in the code is the `tikz` bit in the declaration of `output+=[...]`.  In order to produce a different number of triangles, simply change the declaration `n=5` to any other value.
+<p>To make style changes, like adding your own color scheme, filling the triangles with texture, or labeling each vertex, all you need to modify in the code is the <code>tikz</code> bit in the declaration of <code>output+=[...]</code>.  In order to produce a different number of triangles, simply change the declaration <code>n=5</code> to any other value.</p>
 
-### Making the most of the graphing capabilities of `sage`
+<h3 id="making-the-most-of-the-graphing-capabilities-of-sage">Making the most of the graphing capabilities of <code>sage</code></h3>
 
-It is a no-brainer: we have so much more control over the technical details from within `sage`, that we can leave the task of rendering and computation directly, to focus on the writing alone.  A quick <span>\\( \LaTeX \\)</span> script that produces a similar result, could look like this:
-
+<p>It is a no-brainer: we have so much more control over the technical details from within <code>sage</code>, that we can leave the task of rendering and computation directly, to focus on the writing alone.  A quick <span>\( \LaTeX \)</span> script that produces a similar result, could look like this:</p>
 
 <div class="highlight"><pre><code class="language-latex" data-lang="latex"><span class="k">\begin</span><span class="nb">{</span>sagesilent<span class="nb">}</span>
 t=polar<span class="nb">_</span>plot(pi/2*sin(x)/x,(x,0,pi),color=&quot;blue&quot;)
@@ -477,11 +476,9 @@ for m in range(6):
 
 <span class="k">\sageplot</span><span class="nb">{</span>t<span class="nb">}</span></code></pre></div>
 
+<p>As before, we place the actual code that constructs the different plots inside of a <code>sagesilent</code> environment.  This code simply creates a polar plot of the required function <span>\( f(\theta) = \tfrac{\sin \theta}{\theta} \)</span> between the angular values of zero and <span>\( \pi \)</span>, and then append to it all the triangles, one at a time, by calling the <code>polygon2d</code> command.  We take the liberty to change the shade of the triangle inside.  That is all.  Once the code is finished, we simply call the resulting plot (that was stored in the variable <code>t</code>) with the command <code>\sageplot</code>.  Easy, right?</p>
 
-As before, we place the actual code that constructs the different plots inside of a `sagesilent` environment.  This code simply creates a polar plot of the required function <span>\\( f(\theta) = \tfrac{\sin \theta}{\theta} \\)</span> between the angular values of zero and <span>\\( \pi \\)</span>, and then append to it all the triangles, one at a time, by calling the `polygon2d` command.  We take the liberty to change the shade of the triangle inside.  That is all.  Once the code is finished, we simply call the resulting plot (that was stored in the variable `t`) with the command `\sageplot`.  Easy, right?
-
-<p style="text-align:center;"><img src="https://i0.wp.com/farm6.static.flickr.com/5084/5247220578_248e4aab0d_b_d.jpg" alt="" width="60%" />
-</p></p>
+<p style="text-align:center;"><img src="https://i0.wp.com/farm6.static.flickr.com/5084/5247220578_248e4aab0d_b_d.jpg" alt="" width="60%" /></p>
 
 	</article>
 
