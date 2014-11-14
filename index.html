@@ -160,7 +160,7 @@ layout: default
             <ul>
               {% for post in site.posts %}
               {% if post.category == "post" %}
-              <li><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></li>
+              <li><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title | truncate: 26 }}</a></li>
               {% endif %}
               {% endfor %}
             </ul>
