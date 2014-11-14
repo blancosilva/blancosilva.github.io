@@ -9,7 +9,7 @@
 ">
 	<meta name="author" content="">
 
-	<title>The Real Projective Plane</title>
+	<title>Interaction with Sage</title>
 
 	<!-- Bootstrap core CSS -->
 	<link href="/css/bootstrap.min.css" rel="stylesheet">
@@ -402,57 +402,73 @@
 <div class="container theme-showcase" role="main" style="font-size: 16px; base-line-height: 1.5; font-family: Helvetica, Arial, sans-serif; spacing-unit: 30px; line-height: 20px; width:750px; text-align:justify;">
 
 	<header class="post-header">
-		<h1 class="post-title">The Real Projective Plane</h1>
+		<h1 class="post-title">Interaction with Sage</h1>
 	</header>
 
 	<article class="post-content">
-		<p>Consider in the sphere <span>\( \mathbb{S}_2 \subset \mathbb{R}^3, \)</span> the relation induced by identification of antipodal points; that is, given <span>\( z_1, z_2 \in \mathbb{S}_2 \)</span>, set <span>\( z_1 \sim z_2 \)</span> if and only <span>\( z_1 = \pm z_1. \)</span>  The corresponding quotient space <span>\( \mathbb{P} = \big( \mathbb{S}_2 / \sim \big) \)</span> is what we call <strong>real projective space.</strong></p>
-
-<p>Since we are interested in the topological properties of this space, we actually define a real projective space to be any homeomorphic set to <span>\( \mathbb{P}. \)</span>  Among those, we are interested in one that can be realized from a square, by identification of its sides (in a similar manner as we did with the <a href="http://blancosilva.github.io/course-material/2010/10/28/torus.html" target="_self">torus</a>).  We proceed as follows:</p>
-
-<p>Assume that we start from the unit sphere <span>\( \{ (x_1,x_2,x_3) \in \mathbb{R}^3 : x_1^2+x_2^2+x_3^2=1 \} \)</span>, and note that the upper hemisphere <span>\( H=\{ (x_1,x_2,x_3) \in \mathbb{R}^3 : x_1^2+x_2^2+x_3^2=1, x_3 \geq 0  \} \)</span> contains at least one of each pair of antipodal points.  If both antipodal points occur in <span>\( H \)</span>, they will necessarily lie over the circle <span>\( \{ (x_1, x_2, 0) \in \mathbb{R}^3 : x_1^2+x_2^2=1 \}. \)</span>  The hemisphere <span>\( H \)</span> is obviously homeomorphic to a disk (by a simple vertical projection onto the plane <span>\( \{x_3=0 \}, \)</span> for example).  And <a href="http://blancosilva.github.io/course-material/2010/10/27/homeomorphisms.html" target="_self">the disk is homeomorphic to a square</a>, so we may use a composition of both to realize a homomorphism from <span>\( H \)</span> to <span>\( \square_2. \)</span></p>
-
-<p>Define in <span>\( H \)</span> an equivalence relation that identifies two antipodal points on the border, and notice that the homeomorphism just computed takes that identification to the following: Given <span>\( (x_1,x_2), (y_1,y_2) \in \square_2 \)</span>, it is <span>\( (x_1,x_2) \sim (y_,y_2) \)</span> if</p>
-
-<ul>
-  <li><span>\( x_1=y_1 \)</span> and <span>\( x_2=y_2 \)</span>, or</li>
-  <li><span>\( x_1y_1 = -1 \)</span> and  <span>\( x_2=1-y_2 \)</span>, or</li>
-  <li><span>\( x_2y_2=-1 \)</span> and <span>\( x_1=1-y_1 \)</span>.</li>
-</ul>
-
-<p>A diagram representing the quotient space <span>\( \big( \square_2 / \sim \big) \)</span> is presented below:</p>
-
-<table style="width:50%;margin-right:auto;margin-left:auto;border-width:0;">
-<tbody>
-<tr>
-<td style="width:100%;text-align:center;vertical-align:middle;border-width:0;" colspan="2"><img src="http://farm2.static.flickr.com/1352/5124398882_1bfac0cf77_o_d.jpg" alt="" /></td>
-</tr>
-<tr>
-<td style="width:50%;text-align:center;vertical-align:middle;border-width:0;padding:0;"><img src="http://farm2.static.flickr.com/1097/5123795475_95c3b86753_o_d.jpg" alt="" /></td>
-<td style="width:50%;text-align:center;vertical-align:middle;border-width:0;padding:0;"><img src="http://farm5.static.flickr.com/4008/5124399028_810a059e36_o_d.jpg" alt="" /></td>
-</tr>
-</tbody>
-</table>
-
-<p>The punch-line is, of course, to construct a homeomorphism from the real projective plane <span>\( \mathbb{P} \)</span> as defined above, to the quotient space <span>\( \big( \square_2 / \sim \big). \)</span>  The reader should not have much trouble to give an analytic expression of such a map following the steps above.</p>
+		<p style="text-align:justify;font-family:modern;font-size:12pt;">The objective of this post is to show a few examples of interaction of <tt>sage</tt> with $latex \LaTeX$ to produce results that, otherwise, would carry extensive writing and computation on the side.   We will base it on the figure from the post <a href="http://blancosilva.wordpress.com/puzzles/sequence-of-right-triangles/">Sequence of Right Triangles</a>, where right triangles were constructed by halving one of their angles, placing one of the legs on the hypotenuse of the previous triangle, and point the second leg towards the $latex x$–axis.</p>
+<p style="text-align:justify;font-family:modern;font-size:12pt;">In the first example, we show how to get the most of your  skills manipulating strings to produce a <tt>sage</tt> script that generates a <tt>tikz</tt> code.  In the second example, we utilize the full power of the graphing capabilities of <tt>sage</tt> to accomplish a similar result.</p>
+<p style="text-align:justify;font-family:modern;font-size:12pt;">The mathematical background is nonetheless the same for both examples: According to the results shown in the relevant post, we need to concern only with the position of the vertices at the end of the hypotenuses: We can think of those as vectors $latex v_n$ that can be expressed in polar coordinates by $latex \theta=\tfrac{\pi}{2^n}, \rho=2^n \sin\big( \tfrac{\pi}{2^{n+1}} \big).$</p>
+<h3 style="font-family:modern;">Interaction of <tt>sage</tt> with <tt>tikz</tt></h3>
+<p style="text-align:justify;font-family:modern;font-size:12pt;">We are looking for a string of characters that codes the construction of the triangles in <tt>tikz</tt> language: A possible quick <tt>sage</tt>script that would generate such a string holding up to $latex n$ triangles in this fashion, could be something like this:</p>
+<p>[source language="python"]<br />
+m=1<br />
+n=5<br />
+output=&quot;&quot;<br />
+while (m&amp;lt;=n):<br />
+    m=m+1<br />
+    s=pi/2^(m+1)<br />
+    h=2^m*sin(pi/2^(m+1))<br />
+    smo=pi/2^m<br />
+    hmo=2^(m-1)*sin(pi/2^m)<br />
+    output+=r&quot;\draw (0cm,0cm)--(%f r:%fcm)--(%f r:%fcm)--cycle;&quot;%(s,h,smo,hmo)[/source]</p>
+<p style="text-align:justify;font-family:modern;font-size:12pt;">Note that, since I chose a <tt>while</tt> environment, I initialize the counter <tt>m=1</tt> outside, an empty string <tt>output</tt> and for this particular example, chose five steps (<tt>n=5</tt>).  The following four variable declarations simply compute the value of angle (<tt>s, smo</tt>) and length (<tt>h, hmo</tt>) of the vectors $latex v_m$ and $latex v_{m-1}$ respectively, for values of <tt>m</tt> from 2 to 5.  Finally, on each step I append to <tt>output</tt> the corresponding <tt>tikz</tt> code that produces the desired triangle.</p>
+<p style="text-align:justify;font-family:modern;font-size:12pt;">To insert this code in a $latex \LaTeX$ document, all we have to do is wrap it in a <tt>sagesilent</tt> environment (or <tt>sageblock</tt> if you want it displayed), and call <tt>\sagestr{output}</tt> inside of a <tt>tikzpicture</tt> environment.  Something like this:</p>
+<p>[source language="latex"]<br />
+\begin{sagesilent}<br />
+m=1<br />
+n=5<br />
+output=&quot;&quot;<br />
+while (m&amp;lt;=n):<br />
+    m=m+1<br />
+    s=pi/2^(m+1)<br />
+    h=2^m*sin(pi/2^(m+1))<br />
+    smo=pi/2^m<br />
+    hmo=2^(m-1)*sin(pi/2^m)<br />
+    output+=r&quot;\draw (0cm,0cm)--(%f r:%fcm)--(%f r:%fcm)--cycle;&quot;%(s,h,smo,hmo)<br />
+\end{sagesilent}</p>
+<p>\begin{center}<br />
+\begin{tikzpicture}[scale=2]<br />
+\draw[domain=0.001:3.141,smooth,variable=\t,very thick,blue] %<br />
+      plot ({\t r}:1.570796*{sin(\t r)}/\t);<br />
+\draw[ultra thick,-&amp;gt;] (-0.5cm,0cm) -- (2cm,0cm);<br />
+\draw[ultra thick,-&amp;gt;] (0cm,-0.5cm) -- (0cm,1.5cm);<br />
+\draw (0,0) -- (1cm,1cm) -- (0cm,1cm) -- cycle;<br />
+\sagestr{output}<br />
+\end{tikzpicture}[/source]</p>
+<p style="text-align:center;"><img src="assets/5246735458_d7e745531c_o_d.jpg" alt="" width="60%" /></p>
+<p style="text-align:justify;font-family:modern;font-size:12pt;">To make style changes, like adding your own color scheme, filling the triangles with texture, or labeling each vertex, all you need to modify in the code is the <tt>tikz</tt> bit in the declaration of <tt>output+=[...]</tt>.  In order to produce a different number of triangles, simply change the declaration <tt>n=5</tt> to any other value.</p>
+<h3 style="font-family:modern;">Making the most of the graphing capabilities of <tt>sage</tt></h3>
+<p style="text-align:justify;font-family:modern;font-size:12pt;">It is a no-brainer: we have so much more control over the technical details from within <tt>sage</tt>, that we can leave the task of rendering and computation directly, to focus on the writing alone.  A quick $latex \LaTeX$ script that produces a similar result, could look like this:</p>
+<p>[source language="latex"]\begin{sagesilent}<br />
+t=polar_plot(pi/2*sin(x)/x,(x,0,pi),color=&quot;blue&quot;)<br />
+for m in range(6):<br />
+    s=pi/2^(m+1)<br />
+    h=2^m*sin(pi/2^(m+1))<br />
+    smo=pi/2^m<br />
+    hmo=2^(m-1)*sin(pi/2^m)<br />
+    v1=[h*cos(s),h*sin(s)]<br />
+    v2=[hmo*cos(smo),hmo*sin(smo)]<br />
+    t+=polygon2d([[0,0],v1,v2],rgbcolor=(m/6,0,0))<br />
+\end{sagesilent}</p>
+<p>\sageplot{t}[/source]</p>
+<p style="text-align:justify;font-family:modern;font-size:12pt;">As before, we place the actual code that constructs the different plots inside of a <tt>sagesilent</tt> environment.  This code simply creates a polar plot of the required function $latex f(\theta) = \tfrac{\sin \theta}{\theta}$ between the angular values of zero and $latex \pi$, and then append to it all the triangles, one at a time, by calling the <tt>polygon2d</tt> command.  We take the liberty to change the shade of the triangle inside.  That is all.  Once the code is finished, we simply call the resulting plot (that was stored in the variable <tt>t</tt>) with the command <tt>\sageplot</tt>.  Easy, right?</p>
+<p style="text-align:center;"><img src="assets/5247220578_248e4aab0d_b_d.jpg" alt="" width="60%" /></p>
+<h3 style="font-family:modern;font-size:12pt;">References</h3>
+<p style="text-align:center;"><a href="http://www.amazon.com/gp/product/0321514432/ref=as_li_tf_il?ie=UTF8&amp;tag=blancosilva-20&amp;linkCode=as2&amp;camp=217145&amp;creative=399377&amp;creativeASIN=0321514432"><img border="0" src="assets/q?_encoding=UTF8&amp;Format=_SL160_&amp;ASIN=0321514432&amp;MarketPlace=US&amp;ID=AsinImage&amp;WS=1&amp;tag=blancosilva-20&amp;ServiceVersion=20070822" /></a><img src="assets/ir?t=blancosilva-20&amp;l=as2&amp;o=1&amp;a=0321514432&amp;camp=217145&amp;creative=399377" width="1" height="1" border="0" alt="" style="border:none!important;margin:0!important;" /><br /><a href="http://www.amazon.com/gp/product/0321514432/ref=as_li_tf_tl?ie=UTF8&amp;tag=blancosilva-20&amp;linkCode=as2&amp;camp=217145&amp;creative=399377&amp;creativeASIN=0321514432">The LaTeX Companions Third Revised Boxed Set: A Complete Guide and Reference for Preparing,  Illustrating and Publishing Technical Documents (2nd Edition)</a><img src="assets/ir?t=blancosilva-20&amp;l=as2&amp;o=1&amp;a=0321514432&amp;camp=217145&amp;creative=399377" width="1" height="1" border="0" alt="" style="border:none!important;margin:0!important;" /> (See all <a href="http://www.amazon.com/Technical-Writing-Reference-Books/b/ref=as_li_tf_tl?ie=UTF8&amp;tag=blancosilva-20&amp;linkCode=as2&amp;camp=217145&amp;creative=399385&amp;creativeASIN=0321514432&amp;ie=UTF8&amp;node=170945">Technical Writing References</a>)<img src="assets/ir?t=blancosilva-20&amp;l=as2&amp;o=1&amp;a=0321514432&amp;camp=217145&amp;creative=399385" width="1" height="1" border="0" alt="" style="border:none!important;margin:0!important;" /></p>
 
 	</article>
 
-	
-	<div id="disqus_thread"></div>
-<script type="text/javascript">
-/* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
-        var disqus_shortname = 'eseprimo'; // required: replace example with your forum shortname
-        
-        /* * * DON'T EDIT BELOW THIS LINE * * */
-        (function() {
-        	var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-        	dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-        	(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-        })();
-        </script>
-        <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-        
 	
 
 </div>
