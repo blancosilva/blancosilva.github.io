@@ -13,7 +13,7 @@ It is no surprise that the game of chess generates such an amount of mathematica
 
 > It is well known that exactly 8 queens can be placed on a chessboard without attacking each other; similarly 8 rooks, or 14 bishops, or 32 knights, or 16 kings.  But, what if we are allowed to mix pieces?
 >
-> Let us assign values of \( \frac{1}{8} \) to a queen; \( \frac{1}{8} \) to a rook; \( \frac{1}{14} \) to a bishop; \( \frac{1}{32} \) to a knight; and \( \frac{1}{16} \) to a king.
+> Let us assign values of \\( \frac{1}{8} \\) to a queen; \\( \frac{1}{8} \\) to a rook; \\( \frac{1}{14} \\) to a bishop; \\( \frac{1}{32} \\) to a knight; and \\( \frac{1}{16} \\) to a king.
 >
 >    * Construct the most expensive army on a chessboard, using any number of these pieces, so that no piece attacks another. (Here "*any number*" includes zero.)
 >    * Same thing, but disallowing kings (so our army consists only of queens, rooks, bishops and knights).
@@ -28,11 +28,11 @@ For example, the setup in the board below has an army value of
 	\end{equation}
 </div>
 
-<p style="text-align:center;"><img src="https://i0.wp.com/farm5.static.flickr.com/4110/5179749778_7ea6d796a6_o_d.jpg" alt="" width="50%" />
+<p style="text-align:center;"><img src="https://i0.wp.com/farm5.static.flickr.com/4110/5179749778_7ea6d796a6_o_d.jpg" alt="" width="50%" /></p>
 
 I found this problem in <a href="http://domino.research.ibm.com/Comm/wwwr_ponder.nsf/challenges/August2003.html"> August 2003 "**Ponder This**" challenge</a> in the pages of `research.ibm.com`.  They offer a couple of solutions (included in the diagram below), and a note indicating that some puzzle solvers used *integer programming* to prove optimality of those.  Note that neither solution uses a single queen.
 
-<p style="text-align:center;"><img src="https://i0.wp.com/farm2.static.flickr.com/1257/5179790956_17a83f79fd_b_d.jpg" alt="" width="100%" />
+<p style="text-align:center;"><img src="https://i0.wp.com/farm2.static.flickr.com/1257/5179790956_17a83f79fd_b_d.jpg" alt="" width="100%" /></p>
 
 The diagram on the left shows an example for the first part of the puzzle, with an army of value
 
@@ -62,7 +62,7 @@ I found these problems in Martin Gardner's "*The Unexpected Hanging and Other Ma
 >
 > **The maximum-attack problem—strong version II**.  As in *strong version I*, but forcing the king into a non-attacked square!
 
-<p style="text-align:center;"><img src="https://i0.wp.com/farm2.static.flickr.com/1415/5179294019_f7899d7343_b_d.jpg" alt="" width="100%" />
+<p style="text-align:center;"><img src="https://i0.wp.com/farm2.static.flickr.com/1415/5179294019_f7899d7343_b_d.jpg" alt="" width="100%" /></p>
 
 ## Husserl's "Third-man theme"
 <blockquote>
@@ -73,7 +73,7 @@ I found these problems in Martin Gardner's "*The Unexpected Hanging and Other Ma
 >    2. The position can be reached in a legal game.
 >    3. It can be proved that neither side has a legal play
 
-<p style="text-align:center;"><img src="https://i0.wp.com/farm5.static.flickr.com/4132/5179928440_d33204db04_o_d.jpg" alt="" width="50%" />
+<p style="text-align:center;"><img src="https://i0.wp.com/farm5.static.flickr.com/4132/5179928440_d33204db04_o_d.jpg" alt="" width="50%" /></p>
 
 Note the subtlety of the puzzle: we are searching not only for a double stalemate, but one in which neither side can move!  The solution happens to be unique.
 
