@@ -48,6 +48,10 @@ Interesting problem: Let me present a few steps of the construction with detail,
                 <img src="https://i0.wp.com/farm6.static.flickr.com/5287/5266371335_c8bb51da70_o_d.jpg" alt="" width="100%" />
             </td>
         </tr>
+    </tbody>
+</table>
+<table style="width:75%; margin-left:auto; margin-right:auto;">
+    <tbody>
         <tr>
             <td style="width:40%">
                 <img src="https://i0.wp.com/farm6.static.flickr.com/5282/5267011382_155fb2ea9b_o_d.jpg" alt="" width="100%" />
@@ -56,6 +60,10 @@ Interesting problem: Let me present a few steps of the construction with detail,
                 Each triangle has three <em>medians</em>. These are the segments that join each vertex, with the midpoint of the opposite leg of the triangle.  In the figure we have shown the median joining \\(P\\) with the midpoint \\(M_1\\) of the segment \\(\overline{AB}.\\)
             </td>
         </tr>
+    </tbody>
+</table>
+<table style="width:75%; margin-left:auto; margin-right:auto;">
+    <tbody>
         <tr>
             <td style="width:60%">
                 The centroid of a triangle is the intersection of its three medians.  In the figure, the three medians of the triangle \\(\triangle ABP\\) intersect at the point \\(Q_1.\\)
@@ -64,6 +72,10 @@ Interesting problem: Let me present a few steps of the construction with detail,
                 <img src="https://i0.wp.com/farm6.static.flickr.com/5205/5266431323_a6c034ca1a_o_d.jpg" alt="" width="100%" />
             </td>
         </tr>
+    </tbody>
+</table>
+<table style="width:75%; margin-left:auto; margin-right:auto;">
+    <tbody>
         <tr>
             <td style="width:40%">
                 <img src="https://i0.wp.com/farm6.static.flickr.com/5205/5267069074_c59785cf7e_o_d.jpg" alt="" width="100%" />
