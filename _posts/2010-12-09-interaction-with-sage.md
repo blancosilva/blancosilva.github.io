@@ -18,7 +18,7 @@ The mathematical background is nonetheless the same for both examples: According
 
 We are looking for a string of characters that codes the construction of the triangles in `tikz` language: A possible quick `sage` script that would generate such a string holding up to <span>\\( n \\)</span> triangles in this fashion, could be something like this:
 
-{% hightlight python linenos %}
+{% highlight python linenos %}
 m = 1
 n = 5
 output = ""
