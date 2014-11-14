@@ -40,7 +40,7 @@ Interesting problem: Let me present a few steps of the construction with detail,
 
 <div class="row">
     <div class="col-sm-8">
-    Start with a square \\(\square ABCD\\), any point \\( P \\) in its interior and consider the four triangles in which the square is divided.
+    Start with a square <span>\\(\square ABCD\\)</span>, any point \\( P \\) in its interior and consider the four triangles in which the square is divided.
     </div>
     <div class="col-sm-4">
         <img src="https://i0.wp.com/farm6.static.flickr.com/5287/5266371335_c8bb51da70_o_d.jpg" alt="" width="100%" />
@@ -74,7 +74,7 @@ Interesting problem: Let me present a few steps of the construction with detail,
 
 Notice what happens when we draw the quadrilateral with those four centroids as vertices.  The next figure shows the result for several random choices of points <span>\\( P \\)</span> inside of the square <span>\\( \square ABCD: \\)</span>
 
-<p><img src="https://i0.wp.com/farm6.static.flickr.com/5121/5266694869_46b99fd46f_b_d.jpg" alt="" width="100%" />
+<p><img src="https://i0.wp.com/farm6.static.flickr.com/5121/5266694869_46b99fd46f_b_d.jpg" alt="" width="100%" /></p>
 
 #### Miscellaneous
 
