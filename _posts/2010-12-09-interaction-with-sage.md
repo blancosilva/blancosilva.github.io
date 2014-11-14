@@ -5,7 +5,7 @@ date: 2010-12-09 10:20:24.000000000 -05:00
 category: post
 comments: true
 image:
-  teaser: https://i0.wp.com/farm6.static.flickr.com/5084/5247220578_248e4aab0d_b_d.jpg
+  teaser: https://i0.wp.com/farm6.static.flickr.com/5041/5246735458_d7e745531c_o_d.jpg
 ---
 
 The objective of this post is to show a few examples of interaction of `sage` with <span>\\( \LaTeX \\)</span> to produce results that, otherwise, would carry extensive writing and computation on the side.   We will base it on the figure from the post <a href="http://blancosilva.github.io/post/2010/11/22/sequence-of-right-triangles.html">Sequence of Right Triangles</a>, where right triangles were constructed by halving one of their angles, placing one of the legs on the hypotenuse of the previous triangle, and point the second leg towards the <span>\\( x \\)</span>–axis.
