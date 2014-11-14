@@ -27,7 +27,7 @@ The usual way to include such diagrams in <span>\\( \LaTeX \\)</span> is by aski
 Each `tikzpicture` environment is written as a function, and produces a variation of the figure in the post <a href="http://blancosilva.wordpress.com/puzzles/three-circles/">Thee Circles</a>.   It depends on six variables (the coordinates of the point <span>\\( P \\)</span>, and the coordinates of the centers of the circles <span>\\( c_2 \\)</span> and <span>\\( c_3. \\)</span>  It looks like this:
 
 {% highlight latex linenos %}
-\def\construction#1#2#3#4#5#6{%
+\def\construction#1#2#3#4#5#6{
  \begin{tikzpicture}[scale=0.5]
     \coordinate [label=above:$O$] (O) at (0,0);
     \coordinate [label=right:$P$] (P) at ($ ({#1},{#2}) + .2*(rand,rand) $);
