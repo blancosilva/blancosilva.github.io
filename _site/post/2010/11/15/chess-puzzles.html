@@ -414,20 +414,24 @@
 	</header>
 
 	<article class="post-content">
-		It is no surprise that the game of chess generates such an amount of mathematical puzzles.  The amount of riddles of combinatoric nature alone should have the readers busy for a long while, no matter what their chess strength is.  This is a selection of several puzzles designed with that purpose in mind.
+		<p>It is no surprise that the game of chess generates such an amount of mathematical puzzles.  The amount of riddles of combinatoric nature alone should have the readers busy for a long while, no matter what their chess strength is.  This is a selection of several puzzles designed with that purpose in mind.</p>
 
-## Gyozo Nagy's "Expensive Armies"
+<h2 id="gyozo-nagys-expensive-armies">Gyozo Nagy’s “Expensive Armies”</h2>
 
-> It is well known that exactly 8 queens can be placed on a chessboard without attacking each other; similarly 8 rooks, or 14 bishops, or 32 knights, or 16 kings.  But, what if we are allowed to mix pieces?
->
-> Let us assign values of \( \frac{1}{8} \) to a queen; \( \frac{1}{8} \) to a rook; \( \frac{1}{14} \) to a bishop; \( \frac{1}{32} \) to a knight; and \( \frac{1}{16} \) to a king.
->
->    * Construct the most expensive army on a chessboard, using any number of these pieces, so that no piece attacks another. (Here "*any number*" includes zero.)
->    * Same thing, but disallowing kings (so our army consists only of queens, rooks, bishops and knights).
->
-> Can these mixed armies achieve values greater than one?  In each case give the largest possible value (and a setup achieving it).
+<blockquote>
+  <p>It is well known that exactly 8 queens can be placed on a chessboard without attacking each other; similarly 8 rooks, or 14 bishops, or 32 knights, or 16 kings.  But, what if we are allowed to mix pieces?</p>
 
-For example, the setup in the board below has an army value of
+  <p>Let us assign values of ( \frac{1}{8} ) to a queen; ( \frac{1}{8} ) to a rook; ( \frac{1}{14} ) to a bishop; ( \frac{1}{32} ) to a knight; and ( \frac{1}{16} ) to a king.</p>
+
+  <ul>
+    <li>Construct the most expensive army on a chessboard, using any number of these pieces, so that no piece attacks another. (Here “<em>any number</em>” includes zero.)</li>
+    <li>Same thing, but disallowing kings (so our army consists only of queens, rooks, bishops and knights).</li>
+  </ul>
+
+  <p>Can these mixed armies achieve values greater than one?  In each case give the largest possible value (and a setup achieving it).</p>
+</blockquote>
+
+<p>For example, the setup in the board below has an army value of</p>
 
 <div>
 	\begin{equation}
@@ -461,24 +465,24 @@ The diagram on the right shows an example for the second part of the puzzle, wit
 
 I found these problems in Martin Gardner's "*The Unexpected Hanging and Other Mathematical Diversions*."  They were posed in the eighteen hundreds, and some variations are still open for optimal solution.
 
-> **The minimum-attack problem**. Place the eight pieces of one color (king, queen, two bishops, two knights, two rooks) in the board so that the *smallest* possible number of squares are under attack.  A piece does not attack the square on which it rests, but of course it may attack squares occupied by other pieces.
->
-> **The maximum-attack problem—weak version**.  Place the same eight pieces on the board so that the *largest* possible number of squares are under attack.  In the *weak version*, we do not force both bishops to be on opposite colors.
->
-> **The maximum-attack problem—strong version I**.  As before, but forcing the two bishops to be on opposite colors.
->
-> **The maximum-attack problem—strong version II**.  As in *strong version I*, but forcing the king into a non-attacked square!
+&gt; **The minimum-attack problem**. Place the eight pieces of one color (king, queen, two bishops, two knights, two rooks) in the board so that the *smallest* possible number of squares are under attack.  A piece does not attack the square on which it rests, but of course it may attack squares occupied by other pieces.
+&gt;
+&gt; **The maximum-attack problem—weak version**.  Place the same eight pieces on the board so that the *largest* possible number of squares are under attack.  In the *weak version*, we do not force both bishops to be on opposite colors.
+&gt;
+&gt; **The maximum-attack problem—strong version I**.  As before, but forcing the two bishops to be on opposite colors.
+&gt;
+&gt; **The maximum-attack problem—strong version II**.  As in *strong version I*, but forcing the king into a non-attacked square!
 
 <p style="text-align:center;"><img src="https://i0.wp.com/farm2.static.flickr.com/1415/5179294019_f7899d7343_b_d.jpg" alt="" width="100%" />
 
 ## Husserl's "Third-man theme"
 <blockquote>
 
-> Notice in the board below, the two sole occupants are the kings of opposite sides.  Add a third piece, creating a position that satisfies the following conditions:
->
->    1. Neither king is in check.
->    2. The position can be reached in a legal game.
->    3. It can be proved that neither side has a legal play
+&gt; Notice in the board below, the two sole occupants are the kings of opposite sides.  Add a third piece, creating a position that satisfies the following conditions:
+&gt;
+&gt;    1. Neither king is in check.
+&gt;    2. The position can be reached in a legal game.
+&gt;    3. It can be proved that neither side has a legal play
 
 <p style="text-align:center;"><img src="https://i0.wp.com/farm5.static.flickr.com/4132/5179928440_d33204db04_o_d.jpg" alt="" width="50%" />
 
@@ -488,9 +492,11 @@ Note the subtlety of the puzzle: we are searching not only for a double stalemat
 
 All the diagrams in this page are generated in $latex \LaTeX$ with the package `skak`, by using the command `\fenboard` and the <a href="http://en.wikipedia.org/wiki/Forsyth%E2%80%93Edwards_Notation">Forsyth–Edwards notation</a>.  For example, the first diagram above has the (very simple) code
 
+
 <div class="highlight"><pre><code class="language-latex" data-lang="latex"><span class="lineno">1</span> <span class="k">\newgame</span>
 <span class="lineno">2</span> <span class="k">\fenboard</span><span class="nb">{</span>4Q3/R7/3R4/6N1/7R/1K6/5K2/2R5 w - - 0 0<span class="nb">}</span>
 <span class="lineno">3</span> <span class="k">\showboard</span></code></pre></div>
+
 
 The string in the command `\fenboard` is to be interpreted as follows:
 
@@ -507,6 +513,7 @@ The `skak` package is originally designed to create both an annotated game and i
 <tr>
 <td style="width:60%;vertical-align:middle;border-width:0;"><img src="https://farm5.static.flickr.com/4124/5179450691_3aafcb88d2_o_d.jpg" alt="" width="100%" /></td>
 <td style="width:40%;vertical-align:middle;border-width:0;">
+
 <div class="highlight"><pre><code class="language-latex" data-lang="latex"><span class="lineno"> 1</span> <span class="k">\newgame</span>
 <span class="lineno"> 2</span> <span class="k">\mainline</span><span class="nb">{</span>1.e4 e5 2.Nf3 Nc6 3.Bb5<span class="nb">}</span>
 <span class="lineno"> 3</span> <span class="k">\mainline</span><span class="nb">{</span>3...a6<span class="nb">}</span>
@@ -517,10 +524,12 @@ The `skak` package is originally designed to create both an annotated game and i
 <span class="lineno"> 8</span> <span class="k">\mainline</span><span class="nb">{</span>4.Ba4<span class="nb">}</span>
 <span class="lineno"> 9</span> <span class="k">\vspace</span><span class="nb">{</span>0.25cm<span class="nb">}</span>
 <span class="lineno">10</span> 
-<span class="lineno">11</span> <span class="k">\showboard</span></code></pre></div></td>
+<span class="lineno">11</span> <span class="k">\showboard</span></code></pre></div>
+</td>
 </tr>
 </tbody>
 </table>
+</p></blockquote></p></p></p>
 
 	</article>
 
