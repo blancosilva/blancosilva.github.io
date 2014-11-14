@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width initial-scale=1">
+	<meta name="description" content="Useless math is useful math. It can be used to generate more useless math.
+">
+	<meta name="author" content="">
+
+	<title>Pick a point</title>
+
+	<!-- Bootstrap core CSS -->
+	<link href="/css/bootstrap.min.css" rel="stylesheet">
+	<!-- Bootstrap theme -->
+	<link href="/css/bootstrap-theme.min.css" rel="stylesheet">
+
+	<!-- Custom styles for this template -->
+	<link href="/css/blog.css" rel="stylesheet">
+	<link rel="stylesheet" href="/css/pygments.css">
+
+
+	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+<![endif]-->
+</head>
+
+<body role="document">
+
+	<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+	<div class="container">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a class="navbar-brand" href="/">Francisco Blanco-Silva</a>
+		</div>
+		<div id="navbar" class="navbar-collapse collapse">
+			<ul class="nav navbar-nav">
+				<li class="active"><a href="/">Home</a></li>
+				
+				
+				<li><a class="page-link" href="/about/">About me</a></li>
+				
+				
+				
+				<li><a class="page-link" href="/books/">Books</a></li>
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				<li><a class="page-link" href="/media.html">In the media</a></li>
+				
+				
+				
+				<li><a class="page-link" href="/presentations.html">Presentations</a></li>
+				
+				
+				
+				<li><a class="page-link" href="/resume.html">Résumé</a></li>
+				
+				
+				<li class="dropdown">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown">Teaching <span class="caret"></span></a>
+					<ul class="dropdown-menu" role="menu">
+						<li class="dropdown-header">Current | Most recent classes</li>
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						<li><a href="/course/2014/08/19/ma141-fall-2014.html">MA141—Fall 2014</a></li>
+						
+						
+						
+						<li><a href="/course/2014/08/18/math-122-fall-2014.html">MA122—Fall 2014</a></li>
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						<li><a href="/course/2014/01/11/ma-241-spring-2014.html">MA241—Spring 2014</a></li>
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						<li><a href="/course/2013/08/22/ma242-fall-2013.html">MA242—Fall 2013</a></li>
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						<li><a href="/course/2012/06/26/ma142-summer-ii-2012.html">MA142—Summer II 2012</a></li>
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						<li class="divider"></li>
+						<li class="dropdown-header">Selected Class Material</li>
+						
+						
+						<li><a href="/teaching/2014/11/08/past-classes.html">Past Sections of Undergraduate Calculus</a></li>
+						
+						
+						
+						<li><a href="/teaching/2014/11/08/Mathematical-Imaging.html">Mathematical Imaging</a></li>
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						<li><a href="/teaching/2010/10/27/an-introduction-to-algebraic-topology.html">An Introduction to Algebraic Topology</a></li>
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						<li><a href="/teaching/2010/07/08/ma598r.html">MA598R—Summer 2007</a></li>
+						
+						
+						
+						
+						
+						
+						
+						
+<!-- 						<li>Introduction to the Theory of Distributions</li>
+						<li>The Basic Practice of Statistics</li> -->
+					</ul>
+				</li>
+			</ul>
+		</div><!--/.nav-collapse -->
+	</div>
+</nav>
+
+
+
+	<div class="page-content">
+		<div class="wrapper">
+			<br />
+<br />
+<br />
+<br />
+<div class="container theme-showcase" role="main" style="font-size:16px; font-family: Helvetica; width:750px; text-align:justify;">
+
+	<header class="post-header">
+		<h1 class="post-title">Pick a point</h1>
+		<p class="post-meta">Dec 16, 2010</p>
+	</header>
+
+	<article class="post-content">
+		<p>Three problems in Euclidean Geometry with a common denominator:</p>
+
+<blockquote>
+  <p>Given a square with side-length one, consider the circle inscribed on it.  Let \( \boldsymbol{x} \) be a point in the circle, and let \( \lambda_1, \lambda_2, \lambda_3 \) and \( \lambda_4 \) be the distances from this point to each of the sides of the square (in any order).  Prove that \( \lambda_1^2+\lambda_2^2+\lambda_3^2+\lambda_4^2 \) is constant for any point in the circle.</p>
+</blockquote>
+
+<p>A quick solution is obtained by placing the center of the square at the origin of the Euclidean plane.  In this case, the coordinates of any point in the circle can be written as <span>\( (\cos \theta, \sin \theta) \)</span> for different values of <span>\( \theta \in [0,2\pi). \)</span>  The sums of the squares of the four distances to the sides of the square should be:</p>
+
+<div>
+    \begin{equation}
+    (1-\cos\theta)^2 + (-1-\cos\theta)^2 + (1-\sin\theta)^2 + (-1-\sin\theta)^2 = 6.
+    \end{equation}
+</div>
+
+<p>As you can see, the value does not depend on the point in the circle: it is always 6.</p>
+
+<p>The following related problems present the reader with a similar challenge:</p>
+
+<ul>
+  <li>What will be the value of that constant if the square has an arbitrary side-length <span>\( M&gt;0? \)</span></li>
+  <li>A generalization:  Do we have the same property in higher dimensions? For example:</li>
+</ul>
+
+<blockquote>
+  <p>Given a cube with side-length one, consider the sphere inscribed on it.  Let \( \boldsymbol{x} \) be a point in the sphere, and let \( \lambda_1, \dotsc, \lambda_6 \) be the distances from this point to each of the faces of the cube (in any order).  Prove that \( \lambda_1^2+\dotsb+\lambda_6^2 \) is constant for any point in the sphere.</p>
+</blockquote>
+
+<p>One more problem, a little bit trickier:</p>
+
+<blockquote>
+  <p>Start with a square in the plane, and pick any point in its interior.  Consider the quadrilateral constructed with the centroids of the four triangles formed this way.</p>
+
+  <ul>
+    <li>Prove that this quadrilateral is always a square.</li>
+    <li>What is the ratio of the area of the big square divided by the area of the smaller square?</li>
+  </ul>
+</blockquote>
+
+<p>Interesting problem: Let me present a few steps of the construction with detail, to help the reader formulate a strategy for its solution.</p>
+
+<div class="row">
+    <div class="col-sm-8">
+    Start with a square \\(\square ABCD\\), any point <span>\\( P \\)</span> in its interior and consider the four triangles in which the square is divided.
+    </div>
+    <div class="col=sm-4">
+        <img src="https://i0.wp.com/farm6.static.flickr.com/5287/5266371335_c8bb51da70_o_d.jpg" alt="" width="100%" />
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-sm-4">
+        <img src="https://i0.wp.com/farm6.static.flickr.com/5282/5267011382_155fb2ea9b_o_d.jpg" alt="" width="100%" />
+    </div>
+    <div class="col-sm-8">
+        Each triangle has three <em>medians</em>. These are the segments that join each vertex, with the midpoint of the opposite leg of the triangle.  In the figure we have shown the median joining \\(P\\) with the midpoint \\(M_1\\) of the segment \\(\overline{AB}.\\)
+    </div>
+</div>
+<div class="row">
+    <div class="col-sm-8">
+        The centroid of a triangle is the intersection of its three medians.  In the figure, the three medians of the triangle \\(\triangle ABP\\) intersect at the point \\(Q_1.\\)
+    </div>
+    <div class="col-sm-4">
+        <img src="https://i0.wp.com/farm6.static.flickr.com/5205/5266431323_a6c034ca1a_o_d.jpg" alt="" width="100%" />
+    </div>
+</div>
+<div class="row">
+    <div class="col-sm-4">
+        <img src="assets/5267069074_c59785cf7e_o_d.jpg" alt="" width="100%" />
+    </div>
+    <div class="col-sm-8">
+        We repeat the construction of the centroids for the remaining three triangles: This gives us centroid \\( Q_2\\) in triangle \\( \triangle BCP\\), centroid \\( Q_3\\) in triangle \\( \triangle CDP\\) and centroid \\( Q_4\\) in triangle \\( \triangle ADP.\\)
+    </div>
+</div>
+
+<p>Notice what happens when we draw the quadrilateral with those four centroids as vertices.  The next figure shows the result for several random choices of points <span>\( P \)</span> inside of the square <span>\( \square ABCD: \)</span></p>
+
+<p><img src="https://i0.wp.com/farm6.static.flickr.com/5121/5266694869_46b99fd46f_b_d.jpg" alt="" width="100%" />
+
+#### Miscellaneous
+
+This is the `tikz` code that generated the random constructions above:
+
+
+<div class="highlight"><pre><code class="language-latex" data-lang="latex"><span class="lineno"> 1</span> <span class="k">\def\construction</span><span class="nb">{</span>
+<span class="lineno"> 2</span>   <span class="k">\begin</span><span class="nb">{</span>tikzpicture<span class="nb">}</span>
+<span class="lineno"> 3</span>     <span class="k">\coordinate</span> [label=left:<span class="k">\textcolor</span><span class="nb">{</span>red<span class="nb">}{</span> <span class="k">\\</span>)&lt;/span&gt;A <span class="k">\\</span>)&lt;/span&gt;<span class="nb">}</span>] (A) at (0,0);
+<span class="lineno"> 4</span>     <span class="k">\coordinate</span> [label=right:<span class="k">\textcolor</span><span class="nb">{</span>red<span class="nb">}{</span> <span class="k">\\</span>)&lt;/span&gt;B <span class="k">\\</span>)&lt;/span&gt;<span class="nb">}</span>] (B) at (2,0);
+<span class="lineno"> 5</span>     <span class="k">\coordinate</span> [label=right:<span class="k">\textcolor</span><span class="nb">{</span>red<span class="nb">}{</span> <span class="k">\\</span>)&lt;/span&gt;C <span class="k">\\</span>)&lt;/span&gt;<span class="nb">}</span>] (C) at (2,2);
+<span class="lineno"> 6</span>     <span class="k">\coordinate</span> [label=left:<span class="k">\textcolor</span><span class="nb">{</span>red<span class="nb">}{</span> <span class="k">\\</span>)&lt;/span&gt;D <span class="k">\\</span>)&lt;/span&gt;<span class="nb">}</span>] (D) at (0,2);
+<span class="lineno"> 7</span>     <span class="k">\coordinate</span> [label=above: <span class="k">\\</span>)&lt;/span&gt;P <span class="k">\\</span>)&lt;/span&gt;] (P) at ( <span class="k">\\</span>)&lt;/span&gt; (1,1) + 0.5*(rand,rand)  <span class="k">\\</span>)&lt;/span&gt;);
+<span class="lineno"> 8</span>     <span class="k">\draw</span><span class="na">[orange,very thin]</span> (P) -- (A);
+<span class="lineno"> 9</span>     <span class="k">\draw</span><span class="na">[orange,very thin]</span> (P) -- (B);
+<span class="lineno">10</span>     <span class="k">\draw</span><span class="na">[orange,very thin]</span> (P) -- (C);
+<span class="lineno">11</span>     <span class="k">\draw</span><span class="na">[orange,very thin]</span> (P) -- (D);
+<span class="lineno">12</span>     <span class="k">\coordinate</span> (M1) at ( <span class="k">\\</span>)&lt;/span&gt; (A)!0.5!(B)  <span class="k">\\</span>)&lt;/span&gt;);
+<span class="lineno">13</span>     <span class="k">\coordinate</span> (M2) at ( <span class="k">\\</span>)&lt;/span&gt; (A)!0.5!(P)  <span class="k">\\</span>)&lt;/span&gt;);
+<span class="lineno">14</span>     <span class="k">\coordinate</span> (M3) at ( <span class="k">\\</span>)&lt;/span&gt; (B)!0.5!(P)  <span class="k">\\</span>)&lt;/span&gt;);
+<span class="lineno">15</span>     <span class="k">\coordinate</span> (M4) at ( <span class="k">\\</span>)&lt;/span&gt; (B)!0.5!(C)  <span class="k">\\</span>)&lt;/span&gt;);
+<span class="lineno">16</span>     <span class="k">\coordinate</span> (M5) at ( <span class="k">\\</span>)&lt;/span&gt; (C)!0.5!(P)  <span class="k">\\</span>)&lt;/span&gt;);
+<span class="lineno">17</span>     <span class="k">\coordinate</span> (M6) at ( <span class="k">\\</span>)&lt;/span&gt; (C)!0.5!(D)  <span class="k">\\</span>)&lt;/span&gt;);
+<span class="lineno">18</span>     <span class="k">\coordinate</span> (M7) at ( <span class="k">\\</span>)&lt;/span&gt; (D)!0.5!(P)  <span class="k">\\</span>)&lt;/span&gt;);
+<span class="lineno">19</span>     <span class="k">\coordinate</span> (M8) at ( <span class="k">\\</span>)&lt;/span&gt; (A)!0.5!(D)  <span class="k">\\</span>)&lt;/span&gt;);
+<span class="lineno">20</span>     <span class="k">\coordinate</span> (Q1) at (intersection of P--M1 and B--M2);
+<span class="lineno">21</span>     <span class="k">\coordinate</span> (Q2) at (intersection of P--M4 and B--M5);
+<span class="lineno">22</span>     <span class="k">\coordinate</span> (Q3) at (intersection of P--M6 and C--M7);
+<span class="lineno">23</span>     <span class="k">\coordinate</span> (Q4) at (intersection of P--M8 and A--M7);
+<span class="lineno">24</span>     <span class="k">\draw</span> (A) -- (B) -- (C) -- (D) -- cycle;
+<span class="lineno">25</span>     <span class="k">\fill</span><span class="na">[black,opacity=0.5]</span> (Q1) circle (1pt);
+<span class="lineno">26</span>     <span class="k">\fill</span><span class="na">[black,opacity=0.5]</span> (Q2) circle (1pt);
+<span class="lineno">27</span>     <span class="k">\fill</span><span class="na">[black,opacity=0.5]</span> (Q3) circle (1pt);
+<span class="lineno">28</span>     <span class="k">\fill</span><span class="na">[black,opacity=0.5]</span> (Q4) circle (1pt);
+<span class="lineno">29</span>     <span class="k">\fill</span><span class="na">[red,opacity=0.5,draw=brown]</span> (Q1) -- (Q2) -- (Q3) -- (Q4) -- cycle;
+<span class="lineno">30</span>     <span class="k">\fill</span><span class="na">[black,opacity=0.5]</span> (P) circle (1pt);
+<span class="lineno">31</span>   <span class="k">\end</span><span class="nb">{</span>tikzpicture<span class="nb">}</span>
+<span class="lineno">32</span> <span class="nb">}</span>
+<span class="lineno">33</span> <span class="k">\begin</span><span class="nb">{</span>center<span class="nb">}</span>
+<span class="lineno">34</span>   <span class="k">\begin</span><span class="nb">{</span>tabular<span class="nb">}{</span>cccc<span class="nb">}</span>
+<span class="lineno">35</span>     <span class="k">\construction</span> <span class="nb">&amp;</span> <span class="k">\construction</span> <span class="nb">&amp;</span> <span class="k">\construction</span> <span class="nb">&amp;</span> <span class="k">\construction</span> <span class="k">\\</span>
+<span class="lineno">36</span>     <span class="k">\construction</span> <span class="nb">&amp;</span> <span class="k">\construction</span> <span class="nb">&amp;</span> <span class="k">\construction</span> <span class="nb">&amp;</span> <span class="k">\construction</span>
+<span class="lineno">37</span>   <span class="k">\end</span><span class="nb">{</span>tabular<span class="nb">}</span>
+<span class="lineno">38</span> <span class="k">\end</span><span class="nb">{</span>center<span class="nb">}</span></code></pre></div>
+
+</p>
+
+	</article>
+
+	
+	<div id="disqus_thread"></div>
+<script type="text/javascript">
+/* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+        var disqus_shortname = 'eseprimo'; // required: replace example with your forum shortname
+        
+        /* * * DON'T EDIT BELOW THIS LINE * * */
+        (function() {
+        	var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        	dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        	(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+        </script>
+        <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+        
+	
+</div>
+
+
+<script type="text/javascript"
+src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+		</div>
+	</div>
+
+	<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-56262970-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+	<!-- Start of StatCounter Code for Default Guide -->
+<script type="text/javascript">
+var sc_project=10117038; 
+var sc_invisible=1; 
+var sc_security="1fd852f3"; 
+var scJsHost = (("https:" == document.location.protocol) ?
+"https://secure." : "http://www.");
+document.write("<sc"+"ript type='text/javascript' src='" +
+scJsHost+
+"statcounter.com/counter/counter.js'></"+"script>");
+</script>
+<noscript><div class="statcounter"><a title="free hit
+counters" href="http://statcounter.com/"
+target="_blank"><img class="statcounter"
+src="http://c.statcounter.com/10117038/0/1fd852f3/1/"
+alt="free hit counters"></a></div></noscript>
+<!-- End of StatCounter Code for Default Guide -->
+
+	    <!-- Bootstrap core JavaScript
+	    ================================================== -->
+	    <!-- Placed at the end of the document so the pages load faster -->
+	    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	    <script src="/js/bootstrap.min.js"></script>
+	    <script src="/assets/js/docs.min.js"></script>
+	    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+	    <script src="/assets/js/ie10-viewport-bug-workaround.js"></script>
+	    <script type="text/javascript">
+	    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'eseprimo'; // required: replace example with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function () {
+    	var s = document.createElement('script'); s.async = true;
+    	s.type = 'text/javascript';
+    	s.src = '//' + disqus_shortname + '.disqus.com/count.js';
+    	(document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+    }());
+    </script>
+    
+</body>
+</html>
