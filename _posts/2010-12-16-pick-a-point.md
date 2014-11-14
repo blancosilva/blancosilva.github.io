@@ -40,7 +40,7 @@ Interesting problem: Let me present a few steps of the construction with detail,
 
 <div class="row">
     <div class="col-sm-8">
-    Start with a square <span>\\(\square ABCD\\)</span>, any point \\( P \\) in its interior and consider the four triangles in which the square is divided.
+    Start with a square $\square ABCD$, any point \\( P \\) in its interior and consider the four triangles in which the square is divided.
     </div>
     <div class="col-sm-4">
         <img src="https://i0.wp.com/farm6.static.flickr.com/5287/5266371335_c8bb51da70_o_d.jpg" alt="" width="100%" />
