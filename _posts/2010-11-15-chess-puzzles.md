@@ -4,7 +4,7 @@ title: Chess puzzles
 date: 2010-11-15 16:12:15.000000000 -05:00
 category: post
 image:
-  teaser: 
+  teaser: https://i0.wp.com/farm2.static.flickr.com/1257/5179790956_17a83f79fd_b_d.jpg
 ---
 
 It is no surprise that the game of chess generates such an amount of mathematical puzzles.  The amount of riddles of combinatoric nature alone should have the readers busy for a long while, no matter what their chess strength is.  This is a selection of several puzzles designed with that purpose in mind.
