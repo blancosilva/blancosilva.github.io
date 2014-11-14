@@ -65,7 +65,6 @@ I found these problems in Martin Gardner's "*The Unexpected Hanging and Other Ma
 <p style="text-align:center;"><img src="https://i0.wp.com/farm2.static.flickr.com/1415/5179294019_f7899d7343_b_d.jpg" alt="" width="100%" /></p>
 
 ## Husserl's "Third-man theme"
-<blockquote>
 
 > Notice on the board below, the two sole occupants are the kings of opposite sides.  Add a third piece, creating a position that satisfies the following conditions:
 >
