@@ -50,6 +50,7 @@ Interesting problem: Let me present a few steps of the construction with detail,
         </tr>
     </tbody>
 </table>
+
 <table style="width:75%; margin-left:auto; margin-right:auto;">
     <tbody>
         <tr>
@@ -62,6 +63,7 @@ Interesting problem: Let me present a few steps of the construction with detail,
         </tr>
     </tbody>
 </table>
+
 <table style="width:75%; margin-left:auto; margin-right:auto;">
     <tbody>
         <tr>
@@ -74,6 +76,7 @@ Interesting problem: Let me present a few steps of the construction with detail,
         </tr>
     </tbody>
 </table>
+
 <table style="width:75%; margin-left:auto; margin-right:auto;">
     <tbody>
         <tr>
