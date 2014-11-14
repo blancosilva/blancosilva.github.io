@@ -78,7 +78,7 @@ Note the subtlety of the puzzle: we are searching not only for a double stalemat
 
 ## Miscellaneous
 
-All the diagrams in this page are generated in $latex \LaTeX$ with the package `skak`, by using the command `\fenboard` and the <a href="http://en.wikipedia.org/wiki/Forsyth%E2%80%93Edwards_Notation">Forsyth–Edwards notation</a>.  For example, the first diagram above has the (very simple) code
+All the diagrams in this page are generated in <span>\\( \LaTeX \\)</span> with the package `skak`, by using the command `\fenboard` and the <a href="http://en.wikipedia.org/wiki/Forsyth%E2%80%93Edwards_Notation">Forsyth–Edwards notation</a>.  For example, the first diagram above has the (very simple) code
 
 {% highlight latex linenos %}
 \newgame

@@ -478,37 +478,40 @@
 <p style="text-align:center;"><img src="https://i0.wp.com/farm2.static.flickr.com/1415/5179294019_f7899d7343_b_d.jpg" alt="" width="100%" /></p>
 
 <h2 id="husserls-third-man-theme">Husserl’s “Third-man theme”</h2>
-<blockquote>
 
-&gt; Notice on the board below, the two sole occupants are the kings of opposite sides.  Add a third piece, creating a position that satisfies the following conditions:
-&gt;
-&gt;    1. Neither king is in check.
-&gt;    2. The position can be reached in a legal game.
-&gt;    3. It can be proved that neither side has a legal play
+<blockquote>
+  <p>Notice on the board below, the two sole occupants are the kings of opposite sides.  Add a third piece, creating a position that satisfies the following conditions:</p>
+
+  <ol>
+    <li>Neither king is in check.</li>
+    <li>The position can be reached in a legal game.</li>
+    <li>It can be proved that neither side has a legal play</li>
+  </ol>
+</blockquote>
 
 <p style="text-align:center;"><img src="https://i0.wp.com/farm5.static.flickr.com/4132/5179928440_d33204db04_o_d.jpg" alt="" width="50%" /></p>
 
-Note the subtlety of the puzzle: we are searching not only for a double stalemate, but one in which neither side can move!  The solution happens to be unique.
+<p>Note the subtlety of the puzzle: we are searching not only for a double stalemate, but one in which neither side can move!  The solution happens to be unique.</p>
 
-## Miscellaneous
+<h2 id="miscellaneous">Miscellaneous</h2>
 
-All the diagrams in this page are generated in $latex \LaTeX$ with the package `skak`, by using the command `\fenboard` and the <a href="http://en.wikipedia.org/wiki/Forsyth%E2%80%93Edwards_Notation">Forsyth–Edwards notation</a>.  For example, the first diagram above has the (very simple) code
-
+<p>All the diagrams in this page are generated in <span>\( \LaTeX \)</span> with the package <code>skak</code>, by using the command <code>\fenboard</code> and the <a href="http://en.wikipedia.org/wiki/Forsyth%E2%80%93Edwards_Notation">Forsyth–Edwards notation</a>.  For example, the first diagram above has the (very simple) code</p>
 
 <div class="highlight"><pre><code class="language-latex" data-lang="latex"><span class="lineno">1</span> <span class="k">\newgame</span>
 <span class="lineno">2</span> <span class="k">\fenboard</span><span class="nb">{</span>4Q3/R7/3R4/6N1/7R/1K6/5K2/2R5 w - - 0 0<span class="nb">}</span>
 <span class="lineno">3</span> <span class="k">\showboard</span></code></pre></div>
 
+<p>The string in the command <code>\fenboard</code> is to be interpreted as follows:</p>
 
-The string in the command `\fenboard` is to be interpreted as follows:
+<ul>
+  <li>8-th row: start with four empty squares, then place a white queen (<code>Q</code>), followed by three empty squares.</li>
+  <li>7-th row: a white rook (<code>R</code>), followed by seven empty squares.</li>
+  <li>6-th row: three empty squares, one white rook, four empty squares.</li>
+  <li>and so on, until the first row, that reads: two empty squares, then a white rook followed by five empty squares.</li>
+  <li>The remaining commands (which are optional) indicate that white is to move (<code>w</code>), that there are no castling options for neither side (<code>-</code>), no <em>en passant</em> squares (<code>-</code>) no half-moves since the last capture (<code>0</code>) and no move number (<code>0</code>).</li>
+</ul>
 
-* 8-th row: start with four empty squares, then place a white queen (`Q`), followed by three empty squares.
-* 7-th row: a white rook (`R`), followed by seven empty squares.
-* 6-th row: three empty squares, one white rook, four empty squares.
-*  and so on, until the first row, that reads: two empty squares, then a white rook followed by five empty squares.
-* The remaining commands (which are optional) indicate that white is to move (`w`), that there are no castling options for neither side (`-`), no *en passant* squares (`-`) no half-moves since the last capture (`0`) and no move number (`0`).
-
-The `skak` package is originally designed to create both an annotated game and its corresponding diagram.  For example, the following annotation of a variant of the Ruy Lopez opening first moves is generated with the simple list of commands included:
+<p>The <code>skak</code> package is originally designed to create both an annotated game and its corresponding diagram.  For example, the following annotation of a variant of the Ruy Lopez opening first moves is generated with the simple list of commands included:</p>
 
 <table style="width:100%;border-width:0;">
 <tbody>
@@ -531,7 +534,6 @@ The `skak` package is originally designed to create both an annotated game and i
 </tr>
 </tbody>
 </table>
-</blockquote>
 
 	</article>
 
