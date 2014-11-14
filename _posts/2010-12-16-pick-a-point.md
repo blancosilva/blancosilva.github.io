@@ -38,39 +38,44 @@ One more problem, a little bit trickier:
 
 Interesting problem: Let me present a few steps of the construction with detail, to help the reader formulate a strategy for its solution.
 
-<div class="row">
-    <div class="col-sm-8">
-    Start with a square $\square ABCD$, any point \\( P \\) in its interior and consider the four triangles in which the square is divided.
-    </div>
-    <div class="col-sm-4">
-        <img src="https://i0.wp.com/farm6.static.flickr.com/5287/5266371335_c8bb51da70_o_d.jpg" alt="" width="100%" />
-    </div>
-</div>
+<table style="width:75%">
+    <tbody>
+        <tr>
+            <td style="width:60%">
+                Start with a square \( \square ABCD \\), any point \\( P \\) in its interior and consider the four triangles in which the square is divided.
+            </td>
+            <td style="width:40%">
+                <img src="https://i0.wp.com/farm6.static.flickr.com/5287/5266371335_c8bb51da70_o_d.jpg" alt="" width="100%" />
+            </td>
+        </tr>
+        <tr>
+            <td style="width:40%">
+                <img src="https://i0.wp.com/farm6.static.flickr.com/5282/5267011382_155fb2ea9b_o_d.jpg" alt="" width="100%" />
+            </td>
+            <td style="width:60%">
+                Each triangle has three <em>medians</em>. These are the segments that join each vertex, with the midpoint of the opposite leg of the triangle.  In the figure we have shown the median joining \\(P\\) with the midpoint \\(M_1\\) of the segment \\(\overline{AB}.\\)
+            </td>
+        </tr>
+        <tr>
+            <td style="width:60%">
+                The centroid of a triangle is the intersection of its three medians.  In the figure, the three medians of the triangle \\(\triangle ABP\\) intersect at the point \\(Q_1.\\)
+            </td>
+            <td style="width:40%">
+                <img src="https://i0.wp.com/farm6.static.flickr.com/5205/5266431323_a6c034ca1a_o_d.jpg" alt="" width="100%" />
+            </td>
+        </tr>
+        <tr>
+            <td style="width:40%">
+                <img src="assets/5267069074_c59785cf7e_o_d.jpg" alt="" width="100%" />
+            </td>
+            <td style="width:60%">
+                We repeat the construction of the centroids for the remaining three triangles: This gives us centroid \\( Q_2\\) in triangle \\( \triangle BCP\\), centroid \\( Q_3\\) in triangle \\( \triangle CDP\\) and centroid \\( Q_4\\) in triangle \\( \triangle ADP.\\)
+            </td>
+        </tr>
+    </tbody>
+</table>
 
-<div class="row">
-    <div class="col-sm-4">
-        <img src="https://i0.wp.com/farm6.static.flickr.com/5282/5267011382_155fb2ea9b_o_d.jpg" alt="" width="100%" />
-    </div>
-    <div class="col-sm-8">
-        Each triangle has three <em>medians</em>. These are the segments that join each vertex, with the midpoint of the opposite leg of the triangle.  In the figure we have shown the median joining \\(P\\) with the midpoint \\(M_1\\) of the segment \\(\overline{AB}.\\)
-    </div>
-</div>
-<div class="row">
-    <div class="col-sm-8">
-        The centroid of a triangle is the intersection of its three medians.  In the figure, the three medians of the triangle \\(\triangle ABP\\) intersect at the point \\(Q_1.\\)
-    </div>
-    <div class="col-sm-4">
-        <img src="https://i0.wp.com/farm6.static.flickr.com/5205/5266431323_a6c034ca1a_o_d.jpg" alt="" width="100%" />
-    </div>
-</div>
-<div class="row">
-    <div class="col-sm-4">
-        <img src="assets/5267069074_c59785cf7e_o_d.jpg" alt="" width="100%" />
-    </div>
-    <div class="col-sm-8">
-        We repeat the construction of the centroids for the remaining three triangles: This gives us centroid \\( Q_2\\) in triangle \\( \triangle BCP\\), centroid \\( Q_3\\) in triangle \\( \triangle CDP\\) and centroid \\( Q_4\\) in triangle \\( \triangle ADP.\\)
-    </div>
-</div>
+<br />
 
 Notice what happens when we draw the quadrilateral with those four centroids as vertices.  The next figure shows the result for several random choices of points <span>\\( P \\)</span> inside of the square <span>\\( \square ABCD: \\)</span>
 
