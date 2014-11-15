@@ -6,11 +6,9 @@ category: page
 permalink: /books/
 ---
 
-## Learning SciPy for Numerical and Scientific Computing
-
+### Learning SciPy for Numerical and Scientific Computing
 
 <div class="row">
-
 	<div class="col-sm-3">
 		<a href="http://www.amazon.com/gp/product/1782161627/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=1782161627&linkCode=as2&tag=blancosilva-20&linkId=UBT4TZNXICJ2L47C"><img style="width:100%;" src="http://ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=1782161627&Format=_SL250_&ID=AsinImage&MarketPlace=US&ServiceVersion=20070822&WS=1&tag=blancosilva-20" ></a><img src="http://ir-na.amazon-adsystem.com/e/ir?t=blancosilva-20&l=as2&o=1&a=1782161627" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />
 	</div>
@@ -37,7 +35,7 @@ The book is also being sold online in <a href="http://www.amazon.com/gp/product/
 * <a href="http://aimotion.blogspot.com.br/2013/04/review-of-book-learning-scipy-for.html">Artificial Intelligence in Motion</a> by Marcel Caraciolo
 * <a href="http://www.johndcook.com/blog/2013/03/29/new-introduction-to-scipy/">The Endeavour</a>, by John D. Cook
 
-## Modeling Nanoscale Imaging in Electron Microscopy
+### Modeling Nanoscale Imaging in Electron Microscopy
 
 <div class="row">
 	<div class="col-sm-3">
