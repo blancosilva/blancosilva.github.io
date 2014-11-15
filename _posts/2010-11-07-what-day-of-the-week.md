@@ -85,7 +85,7 @@ In the final step, we add up all the previous coefficients, and compute the rema
 
 With the help of the libraries `calendar` and `folding` of the <span>\\( LaTeX \\)</span> package `tikz`, it is possible to generate this fun calendar printed on an unfolded dodecahedron.  The code could not be simpler:
 
-<p><img src="http://farm5.static.flickr.com/4091/5157027232_5364aa4ef0_b_d.jpg" alt="" width="100%" /></p>
+<p><img src="http://farm5.static.flickr.com/4091/5157027232_5364aa4ef0_b_d.jpg" alt="" style="width:50%; margin-left:auto; margin-right:auto;" /></p>
 
 {% highlight latex linenos %}
 \sffamily\scriptsize
