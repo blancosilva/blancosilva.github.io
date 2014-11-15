@@ -6,9 +6,6 @@ permalink: /about/
 
 <img src="https://i0.wp.com/farm6.static.flickr.com/5047/5357922103_251d96611f_o_d.jpg" style="width:100%; border:2px solid black;">
 
-Father, Husband, Author, Mathematician, Spaniard, U.S. Permanent Resident
-===
-
 Originally from Spain, I spent a few years in Indiana pursuing a Ph.D. in Applied Mathematics at Purdue University.  After graduation, I moved down South, to join the University of South Carolina.
 
 When I am not working, I delve into any of my multiple hobbies.
