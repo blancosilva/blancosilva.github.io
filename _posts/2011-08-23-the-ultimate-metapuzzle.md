@@ -2,7 +2,7 @@
 layout: post
 title: The ultimate metapuzzle
 date: 2011-08-23 11:17:42.000000000 -04:00
-categoriy: post
+category: post
 comments: true
 ---
 
