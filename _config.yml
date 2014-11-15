@@ -18,5 +18,8 @@ comments:
   disqus:
     short_name: eseprimo
 
+gems:
+  - jekyll-sitemap
+
 # Build settings
 markdown: kramdown
