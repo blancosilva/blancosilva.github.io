@@ -16,7 +16,7 @@ linkedin_username: francisco-blanco-silva/1b/887/870
 comments:
   provider: disqus
   disqus:
-    short_name: eseprimo
+    short_name: blancosilva
 
 gems:
   - jekyll-sitemap
