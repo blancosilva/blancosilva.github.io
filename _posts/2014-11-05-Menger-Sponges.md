@@ -144,7 +144,7 @@ But success of this enterprise starts, obviously, by collecting enough business 
 			<li>Swansea High Freshman Academy</li>
 			<li>Mark E. Tompkins <span class="badge">100</span></li>
 			<li>UofSC College of Arts and Science <span class="badge">500</span></li>
-			<li>UofSC ISS<span class="badge">910</span></li>
+			<li>UofSC ISS <span class="badge">910</span></li>
 			<li>UofSC Office of the Provost</li>
 			<li>UofSC Study Abroad Office <span class="badge"></span></li>
 			<li>UofSC University Writers Group</li>
