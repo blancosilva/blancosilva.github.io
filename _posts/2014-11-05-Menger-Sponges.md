@@ -111,7 +111,7 @@ But success of this enterprise starts, obviously, by collecting enough business 
 	<li>Dean Mary Anne Fitzpatrick</li>
 	<li>Angrew Grubba <span class="badge">200</span></li>
 	<li>Chris Horn</li>
-	<li>Sensei John T. Hyatt Jr. <span class="badge">300</span></li>
+	<li>John T. Hyatt Jr. <span class="badge">300</span></li>
 	<li>Tracy L LaPointe <span class="badge">490</span></li>
 	<li>Sarah Livingston</li>
 	<li>Sherry Maw <span class="badge">200</span></li>
