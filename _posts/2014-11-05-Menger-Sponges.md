@@ -104,6 +104,7 @@ But success of this enterprise starts, obviously, by collecting enough business 
 	<li>UofSC College of Arts and Science <span class="badge">500</span></li>
 	<li>Swansea High Freshman Academy</li>
 	<li>UofSC Office of the Provost</li>
+	<li>UofSC University Writers Group</li>
 	<li>Cambden Abell</li>
 	<li>Kaitlin C. Blanco-Silva</li>
 	<li>Jennifer Breeden <span class="badge">300</li>
