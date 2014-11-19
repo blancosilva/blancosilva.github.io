@@ -72,7 +72,7 @@ But success of this enterprise starts, obviously, by collecting enough business 
 			<div class="progress-bar progress-bar-danger" style="width: 5%"><span class='sr-only'>Level-2</span></div> -->
 		</div>
 	</li>
-	<li role="presentation" class="active" style="width:100%;"><a href="#">Sponge Construction <span class="badge">20 &times; 20 &times; 20</span></a>
+	<li role="presentation" class="active"><a href="#">Sponge Construction <span class="badge">20 &times; 20 &times; 20</span></a></li>
 		<div class="progress">
 		<!-- 	<div class="progress-bar progress-bar-warning" style="width: 5%"><span class="sr-only">Level-2</span></div>
 			<div class="progress-bar progress-bar-warning" style="width: 5%"><span class="sr-only">Level-2</span></div>

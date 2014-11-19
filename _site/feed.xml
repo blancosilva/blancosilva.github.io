@@ -6,8 +6,8 @@
 </description>
     <link>http://blancosilva.github.io/</link>
     <atom:link href="http://blancosilva.github.io/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Wed, 19 Nov 2014 09:27:15 -0500</pubDate>
-    <lastBuildDate>Wed, 19 Nov 2014 09:27:15 -0500</lastBuildDate>
+    <pubDate>Wed, 19 Nov 2014 09:28:23 -0500</pubDate>
+    <lastBuildDate>Wed, 19 Nov 2014 09:28:23 -0500</lastBuildDate>
     <generator>Jekyll v2.4.0</generator>
     
       <item>
@@ -675,7 +675,7 @@
 &lt;h2 id=&quot;progress&quot;&gt;Progress&lt;/h2&gt;
 
 &lt;ul class=&quot;nav nav-pills&quot; role=&quot;tablist&quot;&gt;
-	&lt;li role=&quot;presentation&quot; class=&quot;active&quot;&gt;&lt;a href=&quot;#&quot;&gt;Card Collection &lt;span class=&quot;badge&quot;&gt;48,000&lt;/span&gt;&lt;/a&gt;
+	&lt;li role=&quot;presentation&quot; class=&quot;active&quot; style=&quot;width:100%;&quot;&gt;&lt;a href=&quot;#&quot;&gt;Card Collection &lt;span class=&quot;badge&quot;&gt;48,000&lt;/span&gt;&lt;/a&gt;
 
 		&lt;div class=&quot;progress&quot;&gt;
 			&lt;div class=&quot;progress-bar progress-bar-warning&quot; style=&quot;width: 5%&quot;&gt;&lt;span&gt;1530&lt;/span&gt;&lt;/div&gt;
@@ -700,7 +700,7 @@
 			&lt;div class=&quot;progress-bar progress-bar-danger&quot; style=&quot;width: 5%&quot;&gt;&lt;span class=&#39;sr-only&#39;&gt;Level-2&lt;/span&gt;&lt;/div&gt; --&gt;
 		&lt;/div&gt;
 	&lt;/li&gt;
-	&lt;li role=&quot;presentation&quot; class=&quot;active&quot;&gt;&lt;a href=&quot;#&quot;&gt;Sponge Construction &lt;span class=&quot;badge&quot;&gt;20 &amp;times; 20 &amp;times; 20&lt;/span&gt;&lt;/a&gt;
+	&lt;li role=&quot;presentation&quot; class=&quot;active&quot; style=&quot;width:100%;&quot;&gt;&lt;a href=&quot;#&quot;&gt;Sponge Construction &lt;span class=&quot;badge&quot;&gt;20 &amp;times; 20 &amp;times; 20&lt;/span&gt;&lt;/a&gt;
 		&lt;div class=&quot;progress&quot;&gt;
 		&lt;!-- 	&lt;div class=&quot;progress-bar progress-bar-warning&quot; style=&quot;width: 5%&quot;&gt;&lt;span class=&quot;sr-only&quot;&gt;Level-2&lt;/span&gt;&lt;/div&gt;
 			&lt;div class=&quot;progress-bar progress-bar-warning&quot; style=&quot;width: 5%&quot;&gt;&lt;span class=&quot;sr-only&quot;&gt;Level-2&lt;/span&gt;&lt;/div&gt;
