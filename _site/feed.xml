@@ -6,8 +6,8 @@
 </description>
     <link>http://blancosilva.github.io/</link>
     <atom:link href="http://blancosilva.github.io/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Mon, 17 Nov 2014 17:20:57 -0500</pubDate>
-    <lastBuildDate>Mon, 17 Nov 2014 17:20:57 -0500</lastBuildDate>
+    <pubDate>Wed, 19 Nov 2014 08:51:06 -0500</pubDate>
+    <lastBuildDate>Wed, 19 Nov 2014 08:51:06 -0500</lastBuildDate>
     <generator>Jekyll v2.4.0</generator>
     
       <item>
@@ -670,10 +670,59 @@
 
 &lt;p&gt;We will start slow: First, taking advantage of our annual &lt;a href=&quot;http://www.math.sc.edu/contest&quot;&gt;USC High School Math Contest&lt;/a&gt; on January 31st, 2015, where we will recruit the help of all high school students, instructors and relatives in attendance.  We plan to build that day as many level 2 sponges as we can afford.  At a later date, we mean to organize a larger group of volunteers, so we can assemble the final level 3 sponge.&lt;/p&gt;
 
-&lt;p&gt;But success of this enterprise starts, obviously, by collecting enough business cards.  Just in one week we have been able to gather enough material for &lt;em&gt;almost&lt;/em&gt; one level 2 Menger sponge.  Where are we going to obtain all those remaining 48,000+ cards?  Do you have any you could spare?  We would love to get our hands on them.  Bring them to room 411 in LeConte or, even better, e-mail us at [&lt;a href=&quot;mailto:blanco@math.sc.edu&quot;&gt;&lt;tt&gt;blanco at math dot sc dot edu&lt;/tt&gt;&lt;/a&gt;] so we can arrange for pick-up.&lt;/p&gt;
+&lt;p&gt;But success of this enterprise starts, obviously, by collecting enough business cards.  Just in one week we have been able to gather enough material for &lt;em&gt;almost&lt;/em&gt; one level 2 Menger sponge.  Where are we going to obtain all those remaining 48,000+ cards?  Do you have any you could spare?  We would love to get our hands on them.  Bring them to room 413 in LeConte or, even better, e-mail us at [&lt;a href=&quot;mailto:blanco@math.sc.edu&quot;&gt;&lt;tt&gt;blanco at math dot sc dot edu&lt;/tt&gt;&lt;/a&gt;] so we can arrange for pick-up.&lt;/p&gt;
 
-&lt;script type=&quot;text/javascript&quot; src=&quot;http://maps.googleapis.com/maps/api/js?sensor=false&quot;&gt;&lt;/script&gt;
+&lt;h2 id=&quot;progress&quot;&gt;Progress&lt;/h2&gt;
 
+&lt;h4 id=&quot;card-collecting&quot;&gt;Card collecting&lt;/h4&gt;
+
+&lt;div class=&quot;progress&quot;&gt;
+	&lt;div class=&quot;progress-bar progress-bar-warning&quot; style=&quot;width: 5%&quot;&gt;&lt;span class=&quot;sr-only&quot;&gt;Level-2&lt;/span&gt;&lt;/div&gt;
+	&lt;!-- &lt;div class=&quot;progress-bar progress-bar-danger&quot; style=&quot;width: 5%&quot;&gt;&lt;span class=&#39;sr-only&#39;&gt;Level-2&lt;/span&gt;&lt;/div&gt;
+	&lt;div class=&quot;progress-bar progress-bar-success&quot; style=&quot;width: 5%&quot;&gt;&lt;span class=&quot;sr-only&quot;&gt;Level-2&lt;/span&gt;&lt;/div&gt;
+	&lt;div class=&quot;progress-bar progress-bar-warning&quot; style=&quot;width: 5%&quot;&gt;&lt;span class=&quot;sr-only&quot;&gt;Level-2&lt;/span&gt;&lt;/div&gt;
+	&lt;div class=&quot;progress-bar progress-bar-danger&quot; style=&quot;width: 5%&quot;&gt;&lt;span class=&#39;sr-only&#39;&gt;Level-2&lt;/span&gt;&lt;/div&gt;
+	&lt;div class=&quot;progress-bar progress-bar-success&quot; style=&quot;width: 5%&quot;&gt;&lt;span class=&quot;sr-only&quot;&gt;Level-2&lt;/span&gt;&lt;/div&gt;
+	&lt;div class=&quot;progress-bar progress-bar-warning&quot; style=&quot;width: 5%&quot;&gt;&lt;span class=&quot;sr-only&quot;&gt;Level-2&lt;/span&gt;&lt;/div&gt;
+	&lt;div class=&quot;progress-bar progress-bar-danger&quot; style=&quot;width: 5%&quot;&gt;&lt;span class=&#39;sr-only&#39;&gt;Level-2&lt;/span&gt;&lt;/div&gt;
+	&lt;div class=&quot;progress-bar progress-bar-success&quot; style=&quot;width: 5%&quot;&gt;&lt;span class=&quot;sr-only&quot;&gt;Level-2&lt;/span&gt;&lt;/div&gt;
+	&lt;div class=&quot;progress-bar progress-bar-warning&quot; style=&quot;width: 5%&quot;&gt;&lt;span class=&quot;sr-only&quot;&gt;Level-2&lt;/span&gt;&lt;/div&gt;
+	&lt;div class=&quot;progress-bar progress-bar-danger&quot; style=&quot;width: 5%&quot;&gt;&lt;span class=&#39;sr-only&#39;&gt;Level-2&lt;/span&gt;&lt;/div&gt;
+	&lt;div class=&quot;progress-bar progress-bar-success&quot; style=&quot;width: 5%&quot;&gt;&lt;span class=&quot;sr-only&quot;&gt;Level-2&lt;/span&gt;&lt;/div&gt;
+	&lt;div class=&quot;progress-bar progress-bar-warning&quot; style=&quot;width: 5%&quot;&gt;&lt;span class=&quot;sr-only&quot;&gt;Level-2&lt;/span&gt;&lt;/div&gt;
+	&lt;div class=&quot;progress-bar progress-bar-danger&quot; style=&quot;width: 5%&quot;&gt;&lt;span class=&#39;sr-only&#39;&gt;Level-2&lt;/span&gt;&lt;/div&gt;
+	&lt;div class=&quot;progress-bar progress-bar-success&quot; style=&quot;width: 5%&quot;&gt;&lt;span class=&quot;sr-only&quot;&gt;Level-2&lt;/span&gt;&lt;/div&gt;
+	&lt;div class=&quot;progress-bar progress-bar-warning&quot; style=&quot;width: 5%&quot;&gt;&lt;span class=&quot;sr-only&quot;&gt;Level-2&lt;/span&gt;&lt;/div&gt;
+	&lt;div class=&quot;progress-bar progress-bar-danger&quot; style=&quot;width: 5%&quot;&gt;&lt;span class=&#39;sr-only&#39;&gt;Level-2&lt;/span&gt;&lt;/div&gt;
+	&lt;div class=&quot;progress-bar progress-bar-success&quot; style=&quot;width: 5%&quot;&gt;&lt;span class=&quot;sr-only&quot;&gt;Level-2&lt;/span&gt;&lt;/div&gt;
+	&lt;div class=&quot;progress-bar progress-bar-warning&quot; style=&quot;width: 5%&quot;&gt;&lt;span class=&quot;sr-only&quot;&gt;Level-2&lt;/span&gt;&lt;/div&gt;
+	&lt;div class=&quot;progress-bar progress-bar-danger&quot; style=&quot;width: 5%&quot;&gt;&lt;span class=&#39;sr-only&#39;&gt;Level-2&lt;/span&gt;&lt;/div&gt; --&gt;
+&lt;/div&gt;
+
+&lt;h4 id=&quot;sponge-construction&quot;&gt;Sponge construction&lt;/h4&gt;
+
+&lt;div class=&quot;progress&quot;&gt;
+&lt;!-- 	&lt;div class=&quot;progress-bar progress-bar-warning&quot; style=&quot;width: 5%&quot;&gt;&lt;span class=&quot;sr-only&quot;&gt;Level-2&lt;/span&gt;&lt;/div&gt;
+	&lt;div class=&quot;progress-bar progress-bar-warning&quot; style=&quot;width: 5%&quot;&gt;&lt;span class=&quot;sr-only&quot;&gt;Level-2&lt;/span&gt;&lt;/div&gt;
+	&lt;div class=&quot;progress-bar progress-bar-warning&quot; style=&quot;width: 5%&quot;&gt;&lt;span class=&quot;sr-only&quot;&gt;Level-2&lt;/span&gt;&lt;/div&gt;
+	&lt;div class=&quot;progress-bar progress-bar-warning&quot; style=&quot;width: 5%&quot;&gt;&lt;span class=&quot;sr-only&quot;&gt;Level-2&lt;/span&gt;&lt;/div&gt;
+	&lt;div class=&quot;progress-bar progress-bar-warning&quot; style=&quot;width: 5%&quot;&gt;&lt;span class=&quot;sr-only&quot;&gt;Level-2&lt;/span&gt;&lt;/div&gt;
+	&lt;div class=&quot;progress-bar progress-bar-warning&quot; style=&quot;width: 5%&quot;&gt;&lt;span class=&quot;sr-only&quot;&gt;Level-2&lt;/span&gt;&lt;/div&gt;
+	&lt;div class=&quot;progress-bar progress-bar-warning&quot; style=&quot;width: 5%&quot;&gt;&lt;span class=&quot;sr-only&quot;&gt;Level-2&lt;/span&gt;&lt;/div&gt;
+	&lt;div class=&quot;progress-bar progress-bar-warning&quot; style=&quot;width: 5%&quot;&gt;&lt;span class=&quot;sr-only&quot;&gt;Level-2&lt;/span&gt;&lt;/div&gt;
+	&lt;div class=&quot;progress-bar progress-bar-warning&quot; style=&quot;width: 5%&quot;&gt;&lt;span class=&quot;sr-only&quot;&gt;Level-2&lt;/span&gt;&lt;/div&gt;
+	&lt;div class=&quot;progress-bar progress-bar-warning&quot; style=&quot;width: 5%&quot;&gt;&lt;span class=&quot;sr-only&quot;&gt;Level-2&lt;/span&gt;&lt;/div&gt;
+	&lt;div class=&quot;progress-bar progress-bar-warning&quot; style=&quot;width: 5%&quot;&gt;&lt;span class=&quot;sr-only&quot;&gt;Level-2&lt;/span&gt;&lt;/div&gt;
+	&lt;div class=&quot;progress-bar progress-bar-warning&quot; style=&quot;width: 5%&quot;&gt;&lt;span class=&quot;sr-only&quot;&gt;Level-2&lt;/span&gt;&lt;/div&gt;
+	&lt;div class=&quot;progress-bar progress-bar-warning&quot; style=&quot;width: 5%&quot;&gt;&lt;span class=&quot;sr-only&quot;&gt;Level-2&lt;/span&gt;&lt;/div&gt;
+	&lt;div class=&quot;progress-bar progress-bar-warning&quot; style=&quot;width: 5%&quot;&gt;&lt;span class=&quot;sr-only&quot;&gt;Level-2&lt;/span&gt;&lt;/div&gt;
+	&lt;div class=&quot;progress-bar progress-bar-warning&quot; style=&quot;width: 5%&quot;&gt;&lt;span class=&quot;sr-only&quot;&gt;Level-2&lt;/span&gt;&lt;/div&gt;
+	&lt;div class=&quot;progress-bar progress-bar-warning&quot; style=&quot;width: 5%&quot;&gt;&lt;span class=&quot;sr-only&quot;&gt;Level-2&lt;/span&gt;&lt;/div&gt;
+	&lt;div class=&quot;progress-bar progress-bar-warning&quot; style=&quot;width: 5%&quot;&gt;&lt;span class=&quot;sr-only&quot;&gt;Level-2&lt;/span&gt;&lt;/div&gt;
+	&lt;div class=&quot;progress-bar progress-bar-warning&quot; style=&quot;width: 5%&quot;&gt;&lt;span class=&quot;sr-only&quot;&gt;Level-2&lt;/span&gt;&lt;/div&gt;
+	&lt;div class=&quot;progress-bar progress-bar-warning&quot; style=&quot;width: 5%&quot;&gt;&lt;span class=&quot;sr-only&quot;&gt;Level-2&lt;/span&gt;&lt;/div&gt;
+	&lt;div class=&quot;progress-bar progress-bar-warning&quot; style=&quot;width: 5%&quot;&gt;&lt;span class=&quot;sr-only&quot;&gt;Level-2&lt;/span&gt;&lt;/div&gt; --&gt;
+&lt;/div&gt;
 </description>
         <pubDate>Wed, 05 Nov 2014 00:00:00 -0500</pubDate>
         <link>http://blancosilva.github.io/post/2014/11/05/Menger-Sponges.html</link>
