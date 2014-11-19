@@ -7,7 +7,7 @@ image:
   teaser: "https://farm7.staticflickr.com/6227/6315682009_3f42068116_n_d.jpg"
 ---
 
-I know it is hard to grasp, but it is _mathematically viable_: **there are solids that require an infinite amount of material to construct, yet they have no volume!**  Of course, having *infinity surface area* makes it impossible to actually build these objects, but it is feasible to come up with reasonable approximations.  One approximation to such a construction---the so-called Menger sponge---goes like this:
+I know it is hard to grasp, but it is _mathematically viable_: **there are solids that require an infinite amount of material to construct, yet they have no volume!**  Of course, having *infinite surface area* makes it impossible to actually build these objects, but it is feasible to come up with reasonable approximations.  One approximation to such a construction---the so-called Menger sponge---goes like this:
 
 1. Start with a big cube.  Visualize this cube as \\( 3 \times 3 \times 3 = 27 \\) smaller cubes with the same shape and size---like a Rubik's cube!  Remove now the small center cube of each side, and the small cube at the center.  We are left with a structure consisting on 20 cubes: those at the corners and the _edge cubes_ connecting them.
 2. Repeat this process on each of these 20 cubes.  We are left with 400 smaller cubes.
@@ -53,7 +53,7 @@ But success of this enterprise starts, obviously, by collecting enough business 
 			<div class="progress">
 				<div class="progress-bar progress-bar-warning" style="width: 5%"><span class="sr-only">2500</span></div>
 				<div class="progress-bar progress-bar-danger" style="width: 5%"><span class='sr-only'>5020</span></div>
-				<div class="progress-bar progress-bar-success" style="width: 5%"><span>5020</span></div>
+				<div class="progress-bar progress-bar-success" style="width: 5%"><span>5595</span></div>
 			<!-- <div class="progress-bar progress-bar-warning" style="width: 5%"><span class="sr-only">Level-2</span></div>
 			<div class="progress-bar progress-bar-danger" style="width: 5%"><span class='sr-only'>Level-2</span></div>
 			<div class="progress-bar progress-bar-success" style="width: 5%"><span class="sr-only">Level-2</span></div>
@@ -106,14 +106,17 @@ But success of this enterprise starts, obviously, by collecting enough business 
 	<div class="col-sm-6">
 		<ul>
 			<li>Cambden Abell</li>
+			<li>Jennifer Almeda</li>
 			<li>Nan W. Barker</li>
 			<li>Kaitlin C. Blanco-Silva</li>
 			<li>Judy R. Blyth <span class="badge">160</span></li>
 			<li>Jennifer Breeden <span class="badge">300</span></li>
+			<li>Vanessa L. Brown <span class="badge">225</span></li>
 			<li>Toyeka Campbell</li>
 			<li>Emily Carlton</li>
 			<li>Cassey Corcoran</li>
 			<li>Eva Czabarka <span class="badge">200</span></li>
+			<li>Darla Moore School of Business <span class="badge">500</span></li>
 			<li>Helen Doerpinghaus</li>
 			<li>Meredith A. Fievet <span class="badge">110</span></li>
 			<li>Dean Mary Anne Fitzpatrick</li>
@@ -122,13 +125,13 @@ But success of this enterprise starts, obviously, by collecting enough business 
 			<li>Chris Horn</li>
 			<li>John T. Hyatt Jr. <span class="badge">300</span></li>
 			<li>Lael M. Kenney <span class="badge">725</span></li>
-			<li>Tracy L LaPointe <span class="badge">490</span></li>
-			<li>Sarah Livingston</li>
 		</ul>
 	</div>
 
 	<div class="col-sm-6">
 		<ul>
+			<li>Tracy L LaPointe <span class="badge">490</span></li>
+			<li>Sarah Livingston</li>
 			<li>Lauren E. Lowe</li>
 			<li>Sherry Maw <span class="badge">200</span></li>
 			<li>Ian McGuire</li>
@@ -141,7 +144,7 @@ But success of this enterprise starts, obviously, by collecting enough business 
 			<li>Swansea High Freshman Academy</li>
 			<li>Mark E. Tompkins <span class="badge">100</span></li>
 			<li>UofSC College of Arts and Science <span class="badge">500</span></li>
-			<li>UofSC International Students Services <span class="badge">910</span></li>
+			<li>UofSC ISS<span class="badge">910</span></li>
 			<li>UofSC Office of the Provost</li>
 			<li>UofSC Study Abroad Office <span class="badge"></span></li>
 			<li>UofSC University Writers Group</li>

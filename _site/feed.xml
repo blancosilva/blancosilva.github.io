@@ -6,8 +6,8 @@
 </description>
     <link>http://blancosilva.github.io/</link>
     <atom:link href="http://blancosilva.github.io/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Wed, 19 Nov 2014 17:31:46 -0500</pubDate>
-    <lastBuildDate>Wed, 19 Nov 2014 17:31:46 -0500</lastBuildDate>
+    <pubDate>Wed, 19 Nov 2014 17:40:26 -0500</pubDate>
+    <lastBuildDate>Wed, 19 Nov 2014 17:40:26 -0500</lastBuildDate>
     <generator>Jekyll v2.4.0</generator>
     
       <item>
@@ -632,7 +632,7 @@
     
       <item>
         <title>Menger Sponges</title>
-        <description>&lt;p&gt;I know it is hard to grasp, but it is &lt;em&gt;mathematically viable&lt;/em&gt;: &lt;strong&gt;there are solids that require an infinite amount of material to construct, yet they have no volume!&lt;/strong&gt;  Of course, having &lt;em&gt;infinity surface area&lt;/em&gt; makes it impossible to actually build these objects, but it is feasible to come up with reasonable approximations.  One approximation to such a construction—the so-called Menger sponge—goes like this:&lt;/p&gt;
+        <description>&lt;p&gt;I know it is hard to grasp, but it is &lt;em&gt;mathematically viable&lt;/em&gt;: &lt;strong&gt;there are solids that require an infinite amount of material to construct, yet they have no volume!&lt;/strong&gt;  Of course, having &lt;em&gt;infinite surface area&lt;/em&gt; makes it impossible to actually build these objects, but it is feasible to come up with reasonable approximations.  One approximation to such a construction—the so-called Menger sponge—goes like this:&lt;/p&gt;
 
 &lt;ol&gt;
   &lt;li&gt;Start with a big cube.  Visualize this cube as \( 3 \times 3 \times 3 = 27 \) smaller cubes with the same shape and size—like a Rubik’s cube!  Remove now the small center cube of each side, and the small cube at the center.  We are left with a structure consisting on 20 cubes: those at the corners and the &lt;em&gt;edge cubes&lt;/em&gt; connecting them.&lt;/li&gt;
@@ -681,7 +681,7 @@
 			&lt;div class=&quot;progress&quot;&gt;
 				&lt;div class=&quot;progress-bar progress-bar-warning&quot; style=&quot;width: 5%&quot;&gt;&lt;span class=&quot;sr-only&quot;&gt;2500&lt;/span&gt;&lt;/div&gt;
 				&lt;div class=&quot;progress-bar progress-bar-danger&quot; style=&quot;width: 5%&quot;&gt;&lt;span class=&quot;sr-only&quot;&gt;5020&lt;/span&gt;&lt;/div&gt;
-				&lt;div class=&quot;progress-bar progress-bar-success&quot; style=&quot;width: 5%&quot;&gt;&lt;span&gt;5020&lt;/span&gt;&lt;/div&gt;
+				&lt;div class=&quot;progress-bar progress-bar-success&quot; style=&quot;width: 5%&quot;&gt;&lt;span&gt;5395&lt;/span&gt;&lt;/div&gt;
 			&lt;!-- &lt;div class=&quot;progress-bar progress-bar-warning&quot; style=&quot;width: 5%&quot;&gt;&lt;span class=&quot;sr-only&quot;&gt;Level-2&lt;/span&gt;&lt;/div&gt;
 			&lt;div class=&quot;progress-bar progress-bar-danger&quot; style=&quot;width: 5%&quot;&gt;&lt;span class=&#39;sr-only&#39;&gt;Level-2&lt;/span&gt;&lt;/div&gt;
 			&lt;div class=&quot;progress-bar progress-bar-success&quot; style=&quot;width: 5%&quot;&gt;&lt;span class=&quot;sr-only&quot;&gt;Level-2&lt;/span&gt;&lt;/div&gt;
@@ -734,14 +734,17 @@
 	&lt;div class=&quot;col-sm-6&quot;&gt;
 		&lt;ul&gt;
 			&lt;li&gt;Cambden Abell&lt;/li&gt;
+			&lt;li&gt;Jennifer Almeda&lt;/li&gt;
 			&lt;li&gt;Nan W. Barker&lt;/li&gt;
 			&lt;li&gt;Kaitlin C. Blanco-Silva&lt;/li&gt;
 			&lt;li&gt;Judy R. Blyth &lt;span class=&quot;badge&quot;&gt;160&lt;/span&gt;&lt;/li&gt;
-			&lt;li&gt;Jennifer Breeden &lt;span class=&quot;badge&quot;&gt;300
+			&lt;li&gt;Jennifer Breeden &lt;span class=&quot;badge&quot;&gt;300&lt;/span&gt;&lt;/li&gt;
+			&lt;li&gt;Vanessa L. Brown &lt;span class=&quot;badge&quot;&gt;225&lt;/span&gt;&lt;/li&gt;
 			&lt;li&gt;Toyeka Campbell&lt;/li&gt;
 			&lt;li&gt;Emily Carlton&lt;/li&gt;
 			&lt;li&gt;Cassey Corcoran&lt;/li&gt;
 			&lt;li&gt;Eva Czabarka &lt;span class=&quot;badge&quot;&gt;200&lt;/span&gt;&lt;/li&gt;
+			&lt;li&gt;Darla Moore School of Business &lt;span class=&quot;badge&quot;&gt;300&lt;/span&gt;&lt;/li&gt;
 			&lt;li&gt;Helen Doerpinghaus&lt;/li&gt;
 			&lt;li&gt;Meredith A. Fievet &lt;span class=&quot;badge&quot;&gt;110&lt;/span&gt;&lt;/li&gt;
 			&lt;li&gt;Dean Mary Anne Fitzpatrick&lt;/li&gt;
@@ -750,33 +753,32 @@
 			&lt;li&gt;Chris Horn&lt;/li&gt;
 			&lt;li&gt;John T. Hyatt Jr. &lt;span class=&quot;badge&quot;&gt;300&lt;/span&gt;&lt;/li&gt;
 			&lt;li&gt;Lael M. Kenney &lt;span class=&quot;badge&quot;&gt;725&lt;/span&gt;&lt;/li&gt;
-			&lt;li&gt;Tracy L LaPointe &lt;span class=&quot;badge&quot;&gt;490&lt;/span&gt;&lt;/li&gt;
-			&lt;li&gt;Sarah Livingston&lt;/li&gt;
-		
-	
+		&lt;/ul&gt;
+	&lt;/div&gt;
 
 	&lt;div class=&quot;col-sm-6&quot;&gt;
 		&lt;ul&gt;
+			&lt;li&gt;Tracy L LaPointe &lt;span class=&quot;badge&quot;&gt;490&lt;/span&gt;&lt;/li&gt;
+			&lt;li&gt;Sarah Livingston&lt;/li&gt;
 			&lt;li&gt;Lauren E. Lowe&lt;/li&gt;
 			&lt;li&gt;Sherry Maw &lt;span class=&quot;badge&quot;&gt;200&lt;/span&gt;&lt;/li&gt;
 			&lt;li&gt;Ian McGuire&lt;/li&gt;
 			&lt;li&gt;Julie Medlin&lt;/li&gt;
 			&lt;li&gt;Jane K. Olsgaard&lt;/li&gt;
 			&lt;li&gt;Amanda Polson &lt;span class=&quot;badge&quot;&gt;275&lt;/span&gt;&lt;/li&gt;
-			&lt;li&gt;Lori Schwartz &lt;span class=&quot;badge&quot;&gt;130
+			&lt;li&gt;Lori Schwartz &lt;span class=&quot;badge&quot;&gt;130&lt;/span&gt;&lt;/li&gt;
 			&lt;li&gt;Eric L. Sevigny &lt;span class=&quot;badge&quot;&gt;100&lt;/span&gt;&lt;/li&gt;
 			&lt;li&gt;Cheri Shinn&lt;/li&gt;
 			&lt;li&gt;Swansea High Freshman Academy&lt;/li&gt;
 			&lt;li&gt;Mark E. Tompkins &lt;span class=&quot;badge&quot;&gt;100&lt;/span&gt;&lt;/li&gt;
 			&lt;li&gt;UofSC College of Arts and Science &lt;span class=&quot;badge&quot;&gt;500&lt;/span&gt;&lt;/li&gt;
-			&lt;li&gt;UofSC International Students Services &lt;span class=&quot;badge&quot;&gt;910&lt;/span&gt;&lt;/li&gt;
+			&lt;li&gt;UofSC ISS&lt;span class=&quot;badge&quot;&gt;910&lt;/span&gt;&lt;/li&gt;
 			&lt;li&gt;UofSC Office of the Provost&lt;/li&gt;
 			&lt;li&gt;UofSC Study Abroad Office &lt;span class=&quot;badge&quot;&gt;&lt;/span&gt;&lt;/li&gt;
 			&lt;li&gt;UofSC University Writers Group&lt;/li&gt;
-		
-	
-
-&lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;&lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;&lt;/div&gt;
+		&lt;/ul&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
 </description>
         <pubDate>Wed, 05 Nov 2014 00:00:00 -0500</pubDate>
         <link>http://blancosilva.github.io/post/2014/11/05/Menger-Sponges.html</link>
