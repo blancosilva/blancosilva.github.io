@@ -53,7 +53,7 @@ But success of this enterprise starts, obviously, by collecting enough business 
 			<div class="progress">
 				<div class="progress-bar progress-bar-warning" style="width: 5%"><span class="sr-only">2500</span></div>
 				<div class="progress-bar progress-bar-danger" style="width: 5%"><span class='sr-only'>5020</span></div>
-				<div class="progress-bar progress-bar-success" style="width: 5%"><span>6855</span></div>
+				<div class="progress-bar progress-bar-success" style="width: 5%"><span>6860</span></div>
 			<!-- <div class="progress-bar progress-bar-warning" style="width: 5%"><span class="sr-only">Level-2</span></div>
 			<div class="progress-bar progress-bar-danger" style="width: 5%"><span class='sr-only'>Level-2</span></div>
 			<div class="progress-bar progress-bar-success" style="width: 5%"><span class="sr-only">Level-2</span></div>
@@ -135,6 +135,7 @@ But success of this enterprise starts, obviously, by collecting enough business 
 	<div class="col-sm-6">
 		<ul>
 			<li>Tracy L LaPointe <span class="badge">490</span></li>
+			<li>Brian LeDuc</li>
 			<li>Sarah Livingston</li>
 			<li>Lauren E. Lowe</li>
 			<li>Sherry Maw <span class="badge">200</span></li>
