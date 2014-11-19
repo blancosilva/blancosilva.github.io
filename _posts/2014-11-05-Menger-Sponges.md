@@ -50,7 +50,7 @@ But success of this enterprise starts, obviously, by collecting enough business 
 	<li role="presentation" class="active" style="width:100%;"><a href="#">Card Collection <span class="badge">48,000</span></a>
 
 		<div class="progress">
-			<div class="progress-bar progress-bar-warning" style="width: 5%"><span>2020</span></div>
+			<div class="progress-bar progress-bar-warning" style="width: 5%"><span>2320</span></div>
 			<!-- <div class="progress-bar progress-bar-danger" style="width: 5%"><span class='sr-only'>Level-2</span></div>
 			<div class="progress-bar progress-bar-success" style="width: 5%"><span class="sr-only">Level-2</span></div>
 			<div class="progress-bar progress-bar-warning" style="width: 5%"><span class="sr-only">Level-2</span></div>
@@ -96,4 +96,21 @@ But success of this enterprise starts, obviously, by collecting enough business 
 			<div class="progress-bar progress-bar-warning" style="width: 5%"><span class="sr-only">Level-2</span></div> -->
 		</div>
 	</li>
+</ul>
+
+#### Special Thanks
+
+<ul class="nav nav-pills" role="tablist">
+	<li role="presentation" class="active">The College of Arts and Sciences</li>
+	<li role="presentation" class="active">Cambden Abell</li>
+	<li role="presentation" class="active">Kaitlin C. Blanco-Silva</li>
+	<li role="presentation" class="active">Jennifer Breeden</li>
+	<li role="presentation" class="active">Emily Carlton</li>
+	<li role="presentation" class="active">Eva Czabarka</li>
+	<li role="presentation" class="active">Dean Mary Anne Fitzpatrick</li>
+	<li role="presentation" class="active">Angrew Grubba</li>
+	<li role="presentation" class="active">Sensei John T. Hyatt Jr.</li>
+	<li role="presentation" class="active">Tracy L LaPointe</li>
+	<li role="presentation" class="active">Sherry Maw</li>
+	<li role="presentation" class="active">Ian McGuire</li>
 </ul>
