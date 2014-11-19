@@ -101,42 +101,47 @@ But success of this enterprise starts, obviously, by collecting enough business 
 #### Special Thanks
 
 <div class="row">
-<ul>
-	<li>Cambden Abell</li>
-	<li>Nan W. Barker</li>
-	<li>Kaitlin C. Blanco-Silva</li>
-	<li>Judy R. Blyth <span class="badge">160</span></li>
-	<li>Jennifer Breeden <span class="badge">300</li>
-	<li>Toyeka Campbell</li>
-	<li>Emily Carlton</li>
-	<li>Cassey Corcoran</li>
-	<li>Eva Czabarka <span class="badge">200</span></li>
-	<li>Helen Doerpinghaus</li>
-	<li>Meredith A. Fievet <span class="badge">110</span></li>
-	<li>Dean Mary Anne Fitzpatrick</li>
-	<li>Angrew Grubba <span class="badge">200</span></li>
-	<li>Rachel Hardison <span class="badge">360</span></li>
-	<li>Chris Horn</li>
-	<li>John T. Hyatt Jr. <span class="badge">300</span></li>
-	<li>Lael M. Kenney <span class="badge">725</li>
-	<li>Tracy L LaPointe <span class="badge">490</span></li>
-	<li>Sarah Livingston</li>
-</ul>
-<ul>
-	<li>Lauren E. Lowe</li>
-	<li>Sherry Maw <span class="badge">200</span></li>
-	<li>Ian McGuire</li>
-	<li>Julie Medlin</li>
-	<li>Jane K. Olsgaard</li>
-	<li>Amanda Polson <span class="badge">275</span></li>
-	<li>Lori Schwartz <span class="badge">130</li></li>
-	<li>Eric L. Sevigny <span class="badge">100</span></li>
-	<li>Cheri Shinn</li>
-	<li>Swansea High Freshman Academy</li>
-	<li>Mark E. Tompkins <span class="badge">100</span></li>
-	<li>UofSC College of Arts and Science <span class="badge">500</span></li>
-	<li>UofSC International Students Services <span class="badge">910</span></li>
-	<li>UofSC Office of the Provost</li>
-	<li>UofSC Study Abroad Office <span class="badge"></span></li>
-	<li>UofSC University Writers Group</li>
-</ul>
+	<div class="col-sm-6">
+		<ul>
+			<li>Cambden Abell</li>
+			<li>Nan W. Barker</li>
+			<li>Kaitlin C. Blanco-Silva</li>
+			<li>Judy R. Blyth <span class="badge">160</span></li>
+			<li>Jennifer Breeden <span class="badge">300</li>
+			<li>Toyeka Campbell</li>
+			<li>Emily Carlton</li>
+			<li>Cassey Corcoran</li>
+			<li>Eva Czabarka <span class="badge">200</span></li>
+			<li>Helen Doerpinghaus</li>
+			<li>Meredith A. Fievet <span class="badge">110</span></li>
+			<li>Dean Mary Anne Fitzpatrick</li>
+			<li>Angrew Grubba <span class="badge">200</span></li>
+			<li>Rachel Hardison <span class="badge">360</span></li>
+			<li>Chris Horn</li>
+			<li>John T. Hyatt Jr. <span class="badge">300</span></li>
+			<li>Lael M. Kenney <span class="badge">725</li>
+			<li>Tracy L LaPointe <span class="badge">490</span></li>
+			<li>Sarah Livingston</li>
+		</ul>
+	</div>
+	<div class="col-sm-6">
+		<ul>
+			<li>Lauren E. Lowe</li>
+			<li>Sherry Maw <span class="badge">200</span></li>
+			<li>Ian McGuire</li>
+			<li>Julie Medlin</li>
+			<li>Jane K. Olsgaard</li>
+			<li>Amanda Polson <span class="badge">275</span></li>
+			<li>Lori Schwartz <span class="badge">130</li></li>
+			<li>Eric L. Sevigny <span class="badge">100</span></li>
+			<li>Cheri Shinn</li>
+			<li>Swansea High Freshman Academy</li>
+			<li>Mark E. Tompkins <span class="badge">100</span></li>
+			<li>UofSC College of Arts and Science <span class="badge">500</span></li>
+			<li>UofSC International Students Services <span class="badge">910</span></li>
+			<li>UofSC Office of the Provost</li>
+			<li>UofSC Study Abroad Office <span class="badge"></span></li>
+			<li>UofSC University Writers Group</li>
+		</ul>
+	</div>
+</div>
