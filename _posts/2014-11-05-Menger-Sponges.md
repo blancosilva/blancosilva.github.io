@@ -53,7 +53,7 @@ But success of this enterprise starts, obviously, by collecting enough business 
 			<div class="progress">
 				<div class="progress-bar progress-bar-warning" style="width: 5%"><span class="sr-only">2500</span></div>
 				<div class="progress-bar progress-bar-danger" style="width: 5%"><span class='sr-only'>5020</span></div>
-				<div class="progress-bar progress-bar-success" style="width: 5%"><span>5595</span></div>
+				<div class="progress-bar progress-bar-success" style="width: 5%"><span>5945</span></div>
 			<!-- <div class="progress-bar progress-bar-warning" style="width: 5%"><span class="sr-only">Level-2</span></div>
 			<div class="progress-bar progress-bar-danger" style="width: 5%"><span class='sr-only'>Level-2</span></div>
 			<div class="progress-bar progress-bar-success" style="width: 5%"><span class="sr-only">Level-2</span></div>
@@ -112,6 +112,7 @@ But success of this enterprise starts, obviously, by collecting enough business 
 			<li>Judy R. Blyth <span class="badge">160</span></li>
 			<li>Jennifer Breeden <span class="badge">300</span></li>
 			<li>Vanessa L. Brown <span class="badge">225</span></li>
+			<li>Lakesha Campbell</li>
 			<li>Toyeka Campbell</li>
 			<li>Emily Carlton</li>
 			<li>Cassey Corcoran</li>
@@ -134,6 +135,7 @@ But success of this enterprise starts, obviously, by collecting enough business 
 			<li>Sarah Livingston</li>
 			<li>Lauren E. Lowe</li>
 			<li>Sherry Maw <span class="badge">200</span></li>
+			<li>Lisa Martin-Stuart <span class="badge">250</span></li>
 			<li>Ian McGuire</li>
 			<li>Julie Medlin</li>
 			<li>Jane K. Olsgaard</li>
