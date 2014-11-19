@@ -69,7 +69,7 @@ But success of this enterprise starts, obviously, by collecting enough business 
 	<div class="progress-bar progress-bar-success" style="width: 5%"><span class="sr-only">Level-2</span></div>
 	<div class="progress-bar progress-bar-warning" style="width: 5%"><span class="sr-only">Level-2</span></div>
 	<div class="progress-bar progress-bar-danger" style="width: 5%"><span class='sr-only'>Level-2</span></div> -->
-<span>Goal: 48,000</span></div>
+<span style="text-align:right;">Goal: 48,000</span></div>
 
 #### Sponge construction
 
