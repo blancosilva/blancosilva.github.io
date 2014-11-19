@@ -6,8 +6,8 @@
 </description>
     <link>http://blancosilva.github.io/</link>
     <atom:link href="http://blancosilva.github.io/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Wed, 19 Nov 2014 09:03:00 -0500</pubDate>
-    <lastBuildDate>Wed, 19 Nov 2014 09:03:00 -0500</lastBuildDate>
+    <pubDate>Wed, 19 Nov 2014 09:07:51 -0500</pubDate>
+    <lastBuildDate>Wed, 19 Nov 2014 09:07:51 -0500</lastBuildDate>
     <generator>Jekyll v2.4.0</generator>
     
       <item>
@@ -674,7 +674,7 @@
 
 &lt;h2 id=&quot;progress&quot;&gt;Progress&lt;/h2&gt;
 
-&lt;h4 id=&quot;card-collecting&quot;&gt;Card collecting&lt;/h4&gt;
+&lt;h3 class=&quot;active&quot;&gt;Card collecting &lt;span class=&quot;badge&quot;&gt;Goal: 48,000&lt;/span&gt;&lt;/h3&gt;
 
 &lt;div class=&quot;progress&quot;&gt;
 	&lt;div class=&quot;progress-bar progress-bar-warning&quot; style=&quot;width: 5%&quot;&gt;&lt;span&gt;1530&lt;/span&gt;&lt;/div&gt;
@@ -724,6 +724,8 @@
 	&lt;div class=&quot;progress-bar progress-bar-warning&quot; style=&quot;width: 5%&quot;&gt;&lt;span class=&quot;sr-only&quot;&gt;Level-2&lt;/span&gt;&lt;/div&gt;
 	&lt;div class=&quot;progress-bar progress-bar-warning&quot; style=&quot;width: 5%&quot;&gt;&lt;span class=&quot;sr-only&quot;&gt;Level-2&lt;/span&gt;&lt;/div&gt; --&gt;
 &lt;/div&gt;
+
+&lt;div style=&quot;text-align:right;&quot;&gt;Goal: 20 &amp;times; 20 &amp;times; 20 linked level-0 Menger Sponges&lt;/div&gt;
 </description>
         <pubDate>Wed, 05 Nov 2014 00:00:00 -0500</pubDate>
         <link>http://blancosilva.github.io/post/2014/11/05/Menger-Sponges.html</link>
