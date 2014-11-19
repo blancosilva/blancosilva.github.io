@@ -76,7 +76,6 @@ But success of this enterprise starts, obviously, by collecting enough business 
 <h3> 
 	<span class="label label-primary">Sponge Construction &nbsp; <span class="badge">20 &times; 20 &times; 20</span></span>
 </h3>
-#### Sponge construction
 
 <div class="progress">
 <!-- 	<div class="progress-bar progress-bar-warning" style="width: 5%"><span class="sr-only">Level-2</span></div>
