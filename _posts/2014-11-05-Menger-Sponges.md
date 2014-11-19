@@ -100,6 +100,7 @@ But success of this enterprise starts, obviously, by collecting enough business 
 
 #### Special Thanks
 
+<div class="row">
 <ul>
 	<li>Cambden Abell</li>
 	<li>Nan W. Barker</li>
@@ -120,6 +121,8 @@ But success of this enterprise starts, obviously, by collecting enough business 
 	<li>Lael M. Kenney <span class="badge">725</li>
 	<li>Tracy L LaPointe <span class="badge">490</span></li>
 	<li>Sarah Livingston</li>
+</ul>
+<ul>
 	<li>Lauren E. Lowe</li>
 	<li>Sherry Maw <span class="badge">200</span></li>
 	<li>Ian McGuire</li>

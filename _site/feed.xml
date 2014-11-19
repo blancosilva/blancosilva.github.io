@@ -6,8 +6,8 @@
 </description>
     <link>http://blancosilva.github.io/</link>
     <atom:link href="http://blancosilva.github.io/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Wed, 19 Nov 2014 17:25:23 -0500</pubDate>
-    <lastBuildDate>Wed, 19 Nov 2014 17:25:23 -0500</lastBuildDate>
+    <pubDate>Wed, 19 Nov 2014 17:26:39 -0500</pubDate>
+    <lastBuildDate>Wed, 19 Nov 2014 17:26:39 -0500</lastBuildDate>
     <generator>Jekyll v2.4.0</generator>
     
       <item>
@@ -728,6 +728,7 @@
 
 &lt;h4 id=&quot;special-thanks&quot;&gt;Special Thanks&lt;/h4&gt;
 
+&lt;div class=&quot;row&quot;&gt;
 &lt;ul&gt;
 	&lt;li&gt;Cambden Abell&lt;/li&gt;
 	&lt;li&gt;Nan W. Barker&lt;/li&gt;
@@ -748,6 +749,8 @@
 	&lt;li&gt;Lael M. Kenney &lt;span class=&quot;badge&quot;&gt;725
 	&lt;li&gt;Tracy L LaPointe &lt;span class=&quot;badge&quot;&gt;490&lt;/span&gt;&lt;/li&gt;
 	&lt;li&gt;Sarah Livingston&lt;/li&gt;
+
+&lt;ul&gt;
 	&lt;li&gt;Lauren E. Lowe&lt;/li&gt;
 	&lt;li&gt;Sherry Maw &lt;span class=&quot;badge&quot;&gt;200&lt;/span&gt;&lt;/li&gt;
 	&lt;li&gt;Ian McGuire&lt;/li&gt;
@@ -765,7 +768,7 @@
 	&lt;li&gt;UofSC Study Abroad Office &lt;span class=&quot;badge&quot;&gt;&lt;/span&gt;&lt;/li&gt;
 	&lt;li&gt;UofSC University Writers Group&lt;/li&gt;
 
-&lt;/span&gt;&lt;/li&gt;&lt;/span&gt;&lt;/li&gt;&lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;
+&lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/span&gt;&lt;/li&gt;&lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;
 </description>
         <pubDate>Wed, 05 Nov 2014 00:00:00 -0500</pubDate>
         <link>http://blancosilva.github.io/post/2014/11/05/Menger-Sponges.html</link>
