@@ -51,7 +51,7 @@ But success of this enterprise starts, obviously, by collecting enough business 
 
 		<div class="progress">
 			<div class="progress-bar progress-bar-warning" style="width: 5%"><span class="sr-only">2500</span></div>
-			<div class="progress-bar progress-bar-danger" style="width: 5%"><span class='sr-only'>3210</span></div>
+			<div class="progress-bar progress-bar-danger" style="width: 5%"><span class='sr-only'>3765</span></div>
 			<!-- <div class="progress-bar progress-bar-success" style="width: 5%"><span class="sr-only">Level-2</span></div>
 			<div class="progress-bar progress-bar-warning" style="width: 5%"><span class="sr-only">Level-2</span></div>
 			<div class="progress-bar progress-bar-danger" style="width: 5%"><span class='sr-only'>Level-2</span></div>
@@ -102,6 +102,7 @@ But success of this enterprise starts, obviously, by collecting enough business 
 
 <ul>
 	<li>Cambden Abell</li>
+	<li>Nan W. Barker</li>
 	<li>Kaitlin C. Blanco-Silva</li>
 	<li>Judy R. Blyth <span class="badge">160</span></li>
 	<li>Jennifer Breeden <span class="badge">300</li>
@@ -110,8 +111,10 @@ But success of this enterprise starts, obviously, by collecting enough business 
 	<li>Cassey Corcoran</li>
 	<li>Eva Czabarka <span class="badge">200</span></li>
 	<li>Helen Doerpinghaus</li>
+	<li>Meredith A. Fievet <span class="badge">110</span></li>
 	<li>Dean Mary Anne Fitzpatrick</li>
 	<li>Angrew Grubba <span class="badge">200</span></li>
+	<li>Rachel Hardison <span class="badge">360</span></li>
 	<li>Chris Horn</li>
 	<li>John T. Hyatt Jr. <span class="badge">300</span></li>
 	<li>Tracy L LaPointe <span class="badge">490</span></li>
@@ -128,5 +131,6 @@ But success of this enterprise starts, obviously, by collecting enough business 
 	<li>UofSC College of Arts and Science <span class="badge">500</span></li>
 	<li>UofSC International Students Services <span class="badge">650</span></li>
 	<li>UofSC Office of the Provost</li>
+	<li>UofSC Study Abroad Office <span class="badge"></span></li>
 	<li>UofSC University Writers Group</li>
 </ul>
