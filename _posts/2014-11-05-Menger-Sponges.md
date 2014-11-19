@@ -47,8 +47,7 @@ But success of this enterprise starts, obviously, by collecting enough business 
 ## Progress
 
 <h3> 
-	Card collecting &nbsp;
-	<span class="label label-primary">Goal<span class="badge">48,000</span></span>
+	<span class="label label-primary">Card Collecting &nbsp; <span class="badge">48,000</span></span>
 </h3>
 
 <div class="progress">
@@ -73,8 +72,10 @@ But success of this enterprise starts, obviously, by collecting enough business 
 	<div class="progress-bar progress-bar-warning" style="width: 5%"><span class="sr-only">Level-2</span></div>
 	<div class="progress-bar progress-bar-danger" style="width: 5%"><span class='sr-only'>Level-2</span></div> -->
 </div>
-<div style="text-align:right">Goal: 48,000 cards</div>
 
+<h3> 
+	<span class="label label-primary">Sponge Construction &nbsp; <span class="badge">20 &times; 20 &times; 20</span></span>
+</h3>
 #### Sponge construction
 
 <div class="progress">
@@ -99,5 +100,3 @@ But success of this enterprise starts, obviously, by collecting enough business 
 	<div class="progress-bar progress-bar-warning" style="width: 5%"><span class="sr-only">Level-2</span></div>
 	<div class="progress-bar progress-bar-warning" style="width: 5%"><span class="sr-only">Level-2</span></div> -->
 </div>
-
-<div style="text-align:right;">Goal: 20 &times; 20 &times; 20 linked level-0 Menger Sponges</div>

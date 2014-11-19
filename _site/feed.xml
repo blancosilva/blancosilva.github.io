@@ -6,8 +6,8 @@
 </description>
     <link>http://blancosilva.github.io/</link>
     <atom:link href="http://blancosilva.github.io/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Wed, 19 Nov 2014 09:14:17 -0500</pubDate>
-    <lastBuildDate>Wed, 19 Nov 2014 09:14:17 -0500</lastBuildDate>
+    <pubDate>Wed, 19 Nov 2014 09:17:57 -0500</pubDate>
+    <lastBuildDate>Wed, 19 Nov 2014 09:17:57 -0500</lastBuildDate>
     <generator>Jekyll v2.4.0</generator>
     
       <item>
@@ -675,8 +675,7 @@
 &lt;h2 id=&quot;progress&quot;&gt;Progress&lt;/h2&gt;
 
 &lt;h3&gt; 
-	Card collecting
-	&lt;span class=&quot;label label-primary&quot;&gt;Goal&lt;span class=&quot;badge&quot;&gt;48,000&lt;/span&gt;&lt;/span&gt;
+	&lt;span class=&quot;label label-primary&quot;&gt;Card Collecting &amp;nbsp; &lt;span class=&quot;badge&quot;&gt;48,000&lt;/span&gt;&lt;/span&gt;
 &lt;/h3&gt;
 
 &lt;div class=&quot;progress&quot;&gt;
@@ -701,9 +700,11 @@
 	&lt;div class=&quot;progress-bar progress-bar-warning&quot; style=&quot;width: 5%&quot;&gt;&lt;span class=&quot;sr-only&quot;&gt;Level-2&lt;/span&gt;&lt;/div&gt;
 	&lt;div class=&quot;progress-bar progress-bar-danger&quot; style=&quot;width: 5%&quot;&gt;&lt;span class=&#39;sr-only&#39;&gt;Level-2&lt;/span&gt;&lt;/div&gt; --&gt;
 &lt;/div&gt;
-&lt;div style=&quot;text-align:right&quot;&gt;Goal: 48,000 cards&lt;/div&gt;
 
-&lt;h4 id=&quot;sponge-construction&quot;&gt;Sponge construction&lt;/h4&gt;
+&lt;h3&gt; 
+	&lt;span class=&quot;label label-primary&quot;&gt;Sponge Construction &amp;nbsp; &lt;span class=&quot;badge&quot;&gt;20 &amp;times; 20 &amp;times; 20&lt;/span&gt;&lt;/span&gt;
+&lt;/h3&gt;
+&lt;p&gt;#### Sponge construction&lt;/p&gt;
 
 &lt;div class=&quot;progress&quot;&gt;
 &lt;!-- 	&lt;div class=&quot;progress-bar progress-bar-warning&quot; style=&quot;width: 5%&quot;&gt;&lt;span class=&quot;sr-only&quot;&gt;Level-2&lt;/span&gt;&lt;/div&gt;
@@ -727,8 +728,6 @@
 	&lt;div class=&quot;progress-bar progress-bar-warning&quot; style=&quot;width: 5%&quot;&gt;&lt;span class=&quot;sr-only&quot;&gt;Level-2&lt;/span&gt;&lt;/div&gt;
 	&lt;div class=&quot;progress-bar progress-bar-warning&quot; style=&quot;width: 5%&quot;&gt;&lt;span class=&quot;sr-only&quot;&gt;Level-2&lt;/span&gt;&lt;/div&gt; --&gt;
 &lt;/div&gt;
-
-&lt;div style=&quot;text-align:right;&quot;&gt;Goal: 20 &amp;times; 20 &amp;times; 20 linked level-0 Menger Sponges&lt;/div&gt;
 </description>
         <pubDate>Wed, 05 Nov 2014 00:00:00 -0500</pubDate>
         <link>http://blancosilva.github.io/post/2014/11/05/Menger-Sponges.html</link>
