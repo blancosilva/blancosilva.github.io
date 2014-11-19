@@ -101,16 +101,16 @@ But success of this enterprise starts, obviously, by collecting enough business 
 #### Special Thanks
 
 <ul>
-	<li>The College of Arts and Science <span class="badge">600</span></a></li>
-	<li>Cambden Abell</a></li>
-	<li>Kaitlin C. Blanco-Silva</a></li>
-	<li>Jennifer Breeden <span class="badge">300</a></a></li>
-	<li>Emily Carlton</a></li>
-	<li>Eva Czabarka</a></li>
-	<li>Dean Mary Anne Fitzpatrick</a></li>
-	<li>Angrew Grubba</a></li>
-	<li>Sensei John T. Hyatt Jr.</a></li>
-	<li>Tracy L LaPointe<span class="badge">490</span></a></li>
-	<li>Sherry Maw</a></li>
-	<li>Ian McGuire</a></li>
+	<li>The College of Arts and Science <span class="badge">600</span></li>
+	<li>Cambden Abell</li>
+	<li>Kaitlin C. Blanco-Silva</li>
+	<li>Jennifer Breeden <span class="badge">300</li>
+	<li>Emily Carlton</li>
+	<li>Eva Czabarka <span class="badge">200</span></li>
+	<li>Dean Mary Anne Fitzpatrick</li>
+	<li>Angrew Grubba <span class="badge">150</span></li>
+	<li>Sensei John T. Hyatt Jr. <span class="badge">300</span></li>
+	<li>Tracy L LaPointe <span class="badge">490</span></li>
+	<li>Sherry Maw <span class="badge">150</span></li>
+	<li>Ian McGuire</li>
 </ul>
