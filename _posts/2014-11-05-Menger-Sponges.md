@@ -47,7 +47,8 @@ But success of this enterprise starts, obviously, by collecting enough business 
 ## Progress
 
 <h3> 
-	<span class="label label-primary">Card collecting <span class="badge">Goal: 48,000</span></span>
+	Card collecting &nbsp;
+	<span class="label label-primary">Goal<span class="badge">48,000</span></span>
 </h3>
 
 <div class="progress">
