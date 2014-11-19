@@ -53,7 +53,7 @@ But success of this enterprise starts, obviously, by collecting enough business 
 			<div class="progress">
 				<div class="progress-bar progress-bar-warning" style="width: 5%"><span class="sr-only">2500</span></div>
 				<div class="progress-bar progress-bar-danger" style="width: 5%"><span class='sr-only'>5020</span></div>
-				<div class="progress-bar progress-bar-success" style="width: 5%"><span>6020</span></div>
+				<div class="progress-bar progress-bar-success" style="width: 5%"><span>6295</span></div>
 			<!-- <div class="progress-bar progress-bar-warning" style="width: 5%"><span class="sr-only">Level-2</span></div>
 			<div class="progress-bar progress-bar-danger" style="width: 5%"><span class='sr-only'>Level-2</span></div>
 			<div class="progress-bar progress-bar-success" style="width: 5%"><span class="sr-only">Level-2</span></div>
@@ -112,6 +112,7 @@ But success of this enterprise starts, obviously, by collecting enough business 
 			<li>Judy R. Blyth <span class="badge">160</span></li>
 			<li>Jennifer Breeden <span class="badge">300</span></li>
 			<li>Vanessa L. Brown <span class="badge">225</span></li>
+			<li>O. Marion Burton</li>
 			<li>Lakesha Campbell</li>
 			<li>Toyeka Campbell</li>
 			<li>Emily Carlton</li>
@@ -122,6 +123,7 @@ But success of this enterprise starts, obviously, by collecting enough business 
 			<li>Meredith A. Fievet <span class="badge">110</span></li>
 			<li>Dean Mary Anne Fitzpatrick</li>
 			<li>Angrew Grubba <span class="badge">200</span></li>
+			<li>Glenda Halter</li>
 			<li>Rachel Hardison <span class="badge">360</span></li>
 			<li>Chris Horn</li>
 			<li>John T. Hyatt Jr. <span class="badge">300</span></li>
@@ -149,6 +151,7 @@ But success of this enterprise starts, obviously, by collecting enough business 
 			<li>UofSC College of Arts and Science <span class="badge">500</span></li>
 			<li>UofSC ISS <span class="badge">910</span></li>
 			<li>UofSC Office of the Provost</li>
+			<li>UofSC School of Medicine <span class="badge">275</li>
 			<li>UofSC Study Abroad Office <span class="badge"></span></li>
 			<li>UofSC University Writers Group</li>
 		</ul>
