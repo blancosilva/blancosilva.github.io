@@ -128,12 +128,12 @@ But success of this enterprise starts, obviously, by collecting enough business 
 			<li>Chris Horn</li>
 			<li>John T. Hyatt Jr. <span class="badge">300</span></li>
 			<li>Gayle D. Johnson <span class="badge">250</span></li>
-			<li>Lael M. Kenney <span class="badge">725</span></li>
 		</ul>
 	</div>
 
 	<div class="col-sm-6">
 		<ul>
+			<li>Lael M. Kenney <span class="badge">725</span></li>
 			<li>Tracy L LaPointe <span class="badge">490</span></li>
 			<li>Brian LeDuc</li>
 			<li>Sarah Livingston</li>
