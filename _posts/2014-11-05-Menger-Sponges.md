@@ -101,16 +101,23 @@ But success of this enterprise starts, obviously, by collecting enough business 
 #### Special Thanks
 
 <ul>
-	<li>The College of Arts and Science <span class="badge">600</span></li>
+	<li>UofSC College of Arts and Science <span class="badge">500</span></li>
+	<li>Swansea High Freshman Academy</li>
+	<li>UofSC Office of the Provost</li>
 	<li>Cambden Abell</li>
 	<li>Kaitlin C. Blanco-Silva</li>
 	<li>Jennifer Breeden <span class="badge">300</li>
+	<li>Toyeka Campbell</li>
 	<li>Emily Carlton</li>
 	<li>Eva Czabarka <span class="badge">200</span></li>
+	<li>Helen Doerpinghaus</li>
 	<li>Dean Mary Anne Fitzpatrick</li>
-	<li>Angrew Grubba <span class="badge">150</span></li>
+	<li>Angrew Grubba <span class="badge">200</span></li>
+	<li>Chris Horn</li>
 	<li>Sensei John T. Hyatt Jr. <span class="badge">300</span></li>
 	<li>Tracy L LaPointe <span class="badge">490</span></li>
-	<li>Sherry Maw <span class="badge">150</span></li>
+	<li>Sarah Livingston</li>
+	<li>Sherry Maw <span class="badge">200</span></li>
 	<li>Ian McGuire</li>
+	<li>Cheri Shinn</li>
 </ul>
