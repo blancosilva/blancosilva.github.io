@@ -50,9 +50,9 @@ But success of this enterprise starts, obviously, by collecting enough business 
 	<li role="presentation" class="active" style="width:100%;"><a href="#">Card Collection <span class="badge">48,000</span></a>
 
 		<div class="progress">
-			<div class="progress-bar progress-bar-warning" style="width: 5%"><span>2320</span></div>
-			<!-- <div class="progress-bar progress-bar-danger" style="width: 5%"><span class='sr-only'>Level-2</span></div>
-			<div class="progress-bar progress-bar-success" style="width: 5%"><span class="sr-only">Level-2</span></div>
+			<div class="progress-bar progress-bar-warning" style="width: 5%"><span class="sr-only">2500</span></div>
+			<div class="progress-bar progress-bar-danger" style="width: 5%"><span class='sr-only'>2760</span></div>
+			<!-- <div class="progress-bar progress-bar-success" style="width: 5%"><span class="sr-only">Level-2</span></div>
 			<div class="progress-bar progress-bar-warning" style="width: 5%"><span class="sr-only">Level-2</span></div>
 			<div class="progress-bar progress-bar-danger" style="width: 5%"><span class='sr-only'>Level-2</span></div>
 			<div class="progress-bar progress-bar-success" style="width: 5%"><span class="sr-only">Level-2</span></div>
@@ -103,9 +103,11 @@ But success of this enterprise starts, obviously, by collecting enough business 
 <ul>
 	<li>Cambden Abell</li>
 	<li>Kaitlin C. Blanco-Silva</li>
+	<li>Judy R. Blyth <span class="badge">160</span></li>
 	<li>Jennifer Breeden <span class="badge">300</li>
 	<li>Toyeka Campbell</li>
 	<li>Emily Carlton</li>
+	<li>Cassey Corcoran</li>
 	<li>Eva Czabarka <span class="badge">200</span></li>
 	<li>Helen Doerpinghaus</li>
 	<li>Dean Mary Anne Fitzpatrick</li>
@@ -116,9 +118,15 @@ But success of this enterprise starts, obviously, by collecting enough business 
 	<li>Sarah Livingston</li>
 	<li>Sherry Maw <span class="badge">200</span></li>
 	<li>Ian McGuire</li>
+	<li>Julie Medlin</li>
+	<li>Jane K. Olsgaard</li>
+	<li>Lori Schwartz <span class="badge">130</li></li>
+	<li>Eric L. Sevigny <span class="badge">100</span></li>
 	<li>Cheri Shinn</li>
 	<li>Swansea High Freshman Academy</li>
+	<li>Mark E. Tompkins <span class="badge">100</span></li>
 	<li>UofSC College of Arts and Science <span class="badge">500</span></li>
+	<li>UofSC International Students Services <span class="badge">650</span></li>
 	<li>UofSC Office of the Provost</li>
 	<li>UofSC University Writers Group</li>
 </ul>
