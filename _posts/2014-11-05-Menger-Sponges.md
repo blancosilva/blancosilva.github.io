@@ -50,7 +50,7 @@ But success of this enterprise starts, obviously, by collecting enough business 
 	<li role="presentation" class="active" style="width:100%;"><a href="#">Card Collection <span class="badge">48,000</span></a>
 
 		<div class="progress">
-			<div class="progress-bar progress-bar-warning" style="width: 5%"><span>1530</span></div>
+			<div class="progress-bar progress-bar-warning" style="width: 5%"><span>2020</span></div>
 			<!-- <div class="progress-bar progress-bar-danger" style="width: 5%"><span class='sr-only'>Level-2</span></div>
 			<div class="progress-bar progress-bar-success" style="width: 5%"><span class="sr-only">Level-2</span></div>
 			<div class="progress-bar progress-bar-warning" style="width: 5%"><span class="sr-only">Level-2</span></div>

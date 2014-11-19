@@ -6,8 +6,8 @@
 </description>
     <link>http://blancosilva.github.io/</link>
     <atom:link href="http://blancosilva.github.io/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Wed, 19 Nov 2014 09:29:51 -0500</pubDate>
-    <lastBuildDate>Wed, 19 Nov 2014 09:29:51 -0500</lastBuildDate>
+    <pubDate>Wed, 19 Nov 2014 10:52:22 -0500</pubDate>
+    <lastBuildDate>Wed, 19 Nov 2014 10:52:22 -0500</lastBuildDate>
     <generator>Jekyll v2.4.0</generator>
     
       <item>
@@ -678,7 +678,7 @@
 	&lt;li role=&quot;presentation&quot; class=&quot;active&quot; style=&quot;width:100%;&quot;&gt;&lt;a href=&quot;#&quot;&gt;Card Collection &lt;span class=&quot;badge&quot;&gt;48,000&lt;/span&gt;&lt;/a&gt;
 
 		&lt;div class=&quot;progress&quot;&gt;
-			&lt;div class=&quot;progress-bar progress-bar-warning&quot; style=&quot;width: 5%&quot;&gt;&lt;span&gt;1530&lt;/span&gt;&lt;/div&gt;
+			&lt;div class=&quot;progress-bar progress-bar-warning&quot; style=&quot;width: 5%&quot;&gt;&lt;span&gt;2020&lt;/span&gt;&lt;/div&gt;
 			&lt;!-- &lt;div class=&quot;progress-bar progress-bar-danger&quot; style=&quot;width: 5%&quot;&gt;&lt;span class=&#39;sr-only&#39;&gt;Level-2&lt;/span&gt;&lt;/div&gt;
 			&lt;div class=&quot;progress-bar progress-bar-success&quot; style=&quot;width: 5%&quot;&gt;&lt;span class=&quot;sr-only&quot;&gt;Level-2&lt;/span&gt;&lt;/div&gt;
 			&lt;div class=&quot;progress-bar progress-bar-warning&quot; style=&quot;width: 5%&quot;&gt;&lt;span class=&quot;sr-only&quot;&gt;Level-2&lt;/span&gt;&lt;/div&gt;
@@ -725,15 +725,6 @@
 		&lt;/div&gt;
 	&lt;/li&gt;
 &lt;/ul&gt;
-
-&lt;h3&gt; 
-	&lt;span class=&quot;label label-primary&quot;&gt;Card Collecting &amp;nbsp; &lt;span class=&quot;badge&quot;&gt;48,000&lt;/span&gt;&lt;/span&gt;
-&lt;/h3&gt;
-
-&lt;h3&gt; 
-	&lt;span class=&quot;label label-primary&quot;&gt;Sponge Construction &amp;nbsp; &lt;span class=&quot;badge&quot;&gt;&lt;/span&gt;&lt;/span&gt;
-&lt;/h3&gt;
-
 </description>
         <pubDate>Wed, 05 Nov 2014 00:00:00 -0500</pubDate>
         <link>http://blancosilva.github.io/post/2014/11/05/Menger-Sponges.html</link>
