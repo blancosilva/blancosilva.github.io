@@ -100,17 +100,17 @@ But success of this enterprise starts, obviously, by collecting enough business 
 
 #### Special Thanks
 
-<ul class="nav nav-pills" role="tablist">
-	<li role="presentation" class="active"><a href="">The College of Arts and Science <span class="badge">600</span></a></li>
-	<li role="presentation" class="active"><a href="">Cambden Abell</a></li>
-	<li role="presentation" class="active"><a href="">Kaitlin C. Blanco-Silva</a></li>
-	<li role="presentation" class="active"><a href="">Jennifer Breeden <span class="badge">300</a></a></li>
-	<li role="presentation" class="active"><a href="">Emily Carlton</a></li>
-	<li role="presentation" class="active"><a href="">Eva Czabarka</a></li>
-	<li role="presentation" class="active"><a href="">Dean Mary Anne Fitzpatrick</a></li>
-	<li role="presentation" class="active"><a href="">Angrew Grubba</a></li>
-	<li role="presentation" class="active"><a href="">Sensei John T. Hyatt Jr.</a></li>
-	<li role="presentation" class="active"><a href="">Tracy L LaPointe<span class="badge">490</span></a></li>
-	<li role="presentation" class="active"><a href="">Sherry Maw</a></li>
-	<li role="presentation" class="active"><a href="">Ian McGuire</a></li>
+<ul>
+	<li>The College of Arts and Science <span class="badge">600</span></a></li>
+	<li>Cambden Abell</a></li>
+	<li>Kaitlin C. Blanco-Silva</a></li>
+	<li>Jennifer Breeden <span class="badge">300</a></a></li>
+	<li>Emily Carlton</a></li>
+	<li>Eva Czabarka</a></li>
+	<li>Dean Mary Anne Fitzpatrick</a></li>
+	<li>Angrew Grubba</a></li>
+	<li>Sensei John T. Hyatt Jr.</a></li>
+	<li>Tracy L LaPointe<span class="badge">490</span></a></li>
+	<li>Sherry Maw</a></li>
+	<li>Ian McGuire</a></li>
 </ul>
