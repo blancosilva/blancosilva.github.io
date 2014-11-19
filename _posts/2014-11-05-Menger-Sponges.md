@@ -109,7 +109,7 @@ But success of this enterprise starts, obviously, by collecting enough business 
 			<li>Nan W. Barker</li>
 			<li>Kaitlin C. Blanco-Silva</li>
 			<li>Judy R. Blyth <span class="badge">160</span></li>
-			<li>Jennifer Breeden <span class="badge">300</li>
+			<li>Jennifer Breeden <span class="badge">300</span></li>
 			<li>Toyeka Campbell</li>
 			<li>Emily Carlton</li>
 			<li>Cassey Corcoran</li>
@@ -135,7 +135,7 @@ But success of this enterprise starts, obviously, by collecting enough business 
 			<li>Julie Medlin</li>
 			<li>Jane K. Olsgaard</li>
 			<li>Amanda Polson <span class="badge">275</span></li>
-			<li>Lori Schwartz <span class="badge">130</li></li>
+			<li>Lori Schwartz <span class="badge">130</span></li>
 			<li>Eric L. Sevigny <span class="badge">100</span></li>
 			<li>Cheri Shinn</li>
 			<li>Swansea High Freshman Academy</li>
