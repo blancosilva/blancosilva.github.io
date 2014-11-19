@@ -101,10 +101,6 @@ But success of this enterprise starts, obviously, by collecting enough business 
 #### Special Thanks
 
 <ul>
-	<li>UofSC College of Arts and Science <span class="badge">500</span></li>
-	<li>Swansea High Freshman Academy</li>
-	<li>UofSC Office of the Provost</li>
-	<li>UofSC University Writers Group</li>
 	<li>Cambden Abell</li>
 	<li>Kaitlin C. Blanco-Silva</li>
 	<li>Jennifer Breeden <span class="badge">300</li>
@@ -121,4 +117,8 @@ But success of this enterprise starts, obviously, by collecting enough business 
 	<li>Sherry Maw <span class="badge">200</span></li>
 	<li>Ian McGuire</li>
 	<li>Cheri Shinn</li>
+	<li>Swansea High Freshman Academy</li>
+	<li>UofSC College of Arts and Science <span class="badge">500</span></li>
+	<li>UofSC Office of the Provost</li>
+	<li>UofSC University Writers Group</li>
 </ul>
