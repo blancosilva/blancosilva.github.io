@@ -6,8 +6,8 @@
 </description>
     <link>http://blancosilva.github.io/</link>
     <atom:link href="http://blancosilva.github.io/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Wed, 19 Nov 2014 13:03:54 -0500</pubDate>
-    <lastBuildDate>Wed, 19 Nov 2014 13:03:54 -0500</lastBuildDate>
+    <pubDate>Wed, 19 Nov 2014 13:07:32 -0500</pubDate>
+    <lastBuildDate>Wed, 19 Nov 2014 13:07:32 -0500</lastBuildDate>
     <generator>Jekyll v2.4.0</generator>
     
       <item>
@@ -728,19 +728,19 @@
 
 &lt;h4 id=&quot;special-thanks&quot;&gt;Special Thanks&lt;/h4&gt;
 
-&lt;ul class=&quot;nav nav-pills&quot;&gt;
-	&lt;li&gt;The College of Arts and Sciences&lt;/li&gt;
-	&lt;li&gt;Cambden Abell&lt;/li&gt;
-	&lt;li&gt;Kaitlin C. Blanco-Silva&lt;/li&gt;
-	&lt;li&gt;Jennifer Breeden&lt;/li&gt;
-	&lt;li&gt;Emily Carlton&lt;/li&gt;
-	&lt;li&gt;Eva Czabarka&lt;/li&gt;
-	&lt;li&gt;Dean Mary Anne Fitzpatrick&lt;/li&gt;
-	&lt;li&gt;Angrew Grubba&lt;/li&gt;
-	&lt;li&gt;Sensei John T. Hyatt Jr.&lt;/li&gt;
-	&lt;li&gt;Tracy L LaPointe&lt;/li&gt;
-	&lt;li&gt;Sherry Maw&lt;/li&gt;
-	&lt;li&gt;Ian McGuire&lt;/li&gt;
+&lt;ul class=&quot;nav nav-pills&quot; role=&quot;tablist&quot;&gt;
+	&lt;li role=&quot;presentation&quot; class=&quot;active&quot;&gt;The College of Arts and Sciences&lt;/li&gt;
+	&lt;li role=&quot;presentation&quot; class=&quot;active&quot;&gt;Cambden Abell&lt;/li&gt;
+	&lt;li role=&quot;presentation&quot; class=&quot;active&quot;&gt;Kaitlin C. Blanco-Silva&lt;/li&gt;
+	&lt;li role=&quot;presentation&quot; class=&quot;active&quot;&gt;Jennifer Breeden&lt;/li&gt;
+	&lt;li role=&quot;presentation&quot; class=&quot;active&quot;&gt;Emily Carlton&lt;/li&gt;
+	&lt;li role=&quot;presentation&quot; class=&quot;active&quot;&gt;Eva Czabarka&lt;/li&gt;
+	&lt;li role=&quot;presentation&quot; class=&quot;active&quot;&gt;Dean Mary Anne Fitzpatrick&lt;/li&gt;
+	&lt;li role=&quot;presentation&quot; class=&quot;active&quot;&gt;Angrew Grubba&lt;/li&gt;
+	&lt;li role=&quot;presentation&quot; class=&quot;active&quot;&gt;Sensei John T. Hyatt Jr.&lt;/li&gt;
+	&lt;li role=&quot;presentation&quot; class=&quot;active&quot;&gt;Tracy L LaPointe&lt;/li&gt;
+	&lt;li role=&quot;presentation&quot; class=&quot;active&quot;&gt;Sherry Maw&lt;/li&gt;
+	&lt;li role=&quot;presentation&quot; class=&quot;active&quot;&gt;Ian McGuire&lt;/li&gt;
 &lt;/ul&gt;
 </description>
         <pubDate>Wed, 05 Nov 2014 00:00:00 -0500</pubDate>
