@@ -54,7 +54,7 @@ But success of this enterprise starts, obviously, by collecting enough business 
 				<div class="progress-bar progress-bar-warning" style="width: 5%"><span class="sr-only">2500</span></div>
 				<div class="progress-bar progress-bar-warning" style="width: 5%"><span class='sr-only'>5000</span></div>
 				<div class="progress-bar progress-bar-danger" style="width: 5%"><span class='sr-only'>7500</span></div>
-				<div class="progress-bar progress-bar-warning" style="width: 5%"><span>7830</span></div>
+				<div class="progress-bar progress-bar-warning" style="width: 5%"><span>9580</span></div>
 			<!-- <div class="progress-bar progress-bar-warning" style="width: 5%"><span class="sr-only">Level-2</span></div>
 			<div class="progress-bar progress-bar-success" style="width: 5%"><span class="sr-only">Level-2</span></div>
 			<div class="progress-bar progress-bar-warning" style="width: 5%"><span class="sr-only">Level-2</span></div>
@@ -107,11 +107,13 @@ But success of this enterprise starts, obviously, by collecting enough business 
 		<ul>
 			<li>Cambden Abell</li>
 			<li>Jennifer Almeda</li>
+			<li>Arnold School of Public Health <span class="badge">1750</span></li>
 			<li>Nan W. Barker</li>
 			<li>Kaitlin C. Blanco-Silva</li>
-			<li>Judy R. Blyth <span class="badge">160</span></li>
+			<li>Judy R. Blyth <span class="badge">220</span></li>
 			<li>Jennifer Breeden <span class="badge">300</span></li>
 			<li>Vanessa L. Brown <span class="badge">225</span></li>
+			<li>Larisa D. Bruner</li>
 			<li>O. Marion Burton</li>
 			<li>Lakesha Campbell</li>
 			<li>Toyeka Campbell</li>
@@ -126,8 +128,10 @@ But success of this enterprise starts, obviously, by collecting enough business 
 			<li>Angrew Grubba <span class="badge">200</span></li>
 			<li>Glenda Halter</li>
 			<li>Rachel Hardison <span class="badge">360</span></li>
+			<li>Holly Hayes</li>
 			<li>Chris Horn</li>
 			<li>John T. Hyatt Jr. <span class="badge">300</span></li>
+			<li>Grant N. Jackson</li>
 			<li>Gayle D. Johnson <span class="badge">250</span></li>
 		</ul>
 	</div>
@@ -135,6 +139,7 @@ But success of this enterprise starts, obviously, by collecting enough business 
 	<div class="col-sm-6">
 		<ul>
 			<li>Carolyn S. Jones</li>
+			<li>Kelly Kavanaugh</li>
 			<li>Lael M. Kenney <span class="badge">725</span></li>
 			<li>Tracy L LaPointe <span class="badge">490</span></li>
 			<li>Brian LeDuc</li>
@@ -147,9 +152,11 @@ But success of this enterprise starts, obviously, by collecting enough business 
 			<li>John B. Nelson</li>
 			<li>Jane K. Olsgaard</li>
 			<li>Amanda Polson <span class="badge">275</span></li>
+			<li>Andy Pope</li>
 			<li>Lori Schwartz <span class="badge">130</span></li>
 			<li>Eric L. Sevigny <span class="badge">100</span></li>
 			<li>Cheri Shinn</li>
+			<li>Lillian Upton Smith</li>
 			<li>Swansea High Freshman Academy</li>
 			<li>Mark E. Tompkins <span class="badge">100</span></li>
 			<li>UofSC College of Arts and Science <span class="badge">500</span></li>
