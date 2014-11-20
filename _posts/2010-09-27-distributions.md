@@ -17,15 +17,15 @@ Let <span>\\( X \subset \mathbb{R}^d \\)</span> be an open set.  A linear form <
 
 The vector space of distributions on <span>\\( X \\)</span> is denoted by <span>\\( \mathcal{D}'(X) \\)</span>.
 
-The support of a distribution <span>\\( \nu \in \mathcal{D}'(X) \\)</span>, written <span>\\( \text{supp }\nu \\)</span>, is by definition the complement of the set <span>\\( \big\{ x \in X : \nu = 0 \text{ in a neighborhood of } x \big\} \\)</span>.
+The support of a distribution <span>\\( \nu \in \mathcal{D}'(X) \\)</span>, written <span>\\( \text{supp }\nu \\)</span>, is by definition the complement of the set <span>\\( \big\\{ x \in X : \nu = 0 \text{ in a neighborhood of } x \big\\} \\)</span>.
 
 ### Sequencial continuity.
 
-A linear form <span>\\( \nu \\)</span> on <span>\\( C_c^\infty(X) \\)</span> is a distribution if and only if <span>\\( \lim_n \langle \nu, \phi_n \rangle = 0 \\)</span> for every sequence <span>\\( \big\{ \phi_n \big\}_{n \in \mathbb{N}} \\)</span> which converges to zero in <span>\\( C_c^\infty(X) \\)</span>.
+A linear form <span>\\( \nu \\)</span> on <span>\\( C_c^\infty(X) \\)</span> is a distribution if and only if <span>\\( \lim_n \langle \nu, \phi_n \rangle = 0 \\)</span> for every sequence <span>\\( \big\\{ \phi_n \big\\}_{n \in \mathbb{N}} \\)</span> which converges to zero in <span>\\( C_c^\infty(X) \\)</span>.
 
 ### Localization
 
-Let <span>\\( X \subset \mathbb{R}^d \\)</span> be an open set, and let <span>\\( \big\{ X_\lambda \big\}_{\lambda \in \Lambda} \\)</span> be an open cover of <span>\\( X \\)</span> (where <span>\\( \Lambda \\)</span> is an index set).  Suppose that, for each <span>\\( \lambda \in \Lambda \\)</span> there is a distribution <span>\\( \nu_\lambda \in \mathcal{D}'(X_\lambda) \\)</span> and that
+Let <span>\\( X \subset \mathbb{R}^d \\)</span> be an open set, and let <span>\\( \big\\{ X_\lambda \big\\}\_{\lambda \in \Lambda} \\)</span> be an open cover of <span>\\( X \\)</span> (where <span>\\( \Lambda \\)</span> is an index set).  Suppose that, for each <span>\\( \lambda \in \Lambda \\)</span> there is a distribution <span>\\( \nu\_\lambda \in \mathcal{D}'(X\_\lambda) \\)</span> and that
 
 <div>
 \begin{equation}
