@@ -14,7 +14,7 @@ Let <span>\\( f\colon \mathbb{R} \to \mathbb{R} \\)</span> defined piecewise by:
 <table style="border-width:0;">
 <tbody>
 <tr>
-<td style="vertical-align:middle;border-width:0;">f(t) = \begin{cases} \exp (-1/t) &amp;\text{if } t>0 \\ 0&amp; \text{otherwise}\end{cases} \\)</span></td>
+<td style="vertical-align:middle;border-width:0;">\( f(t) = \begin{cases} \exp (-1/t) & \text{if } t>0 \\ 0&  \text{otherwise}\end{cases} \)</span></td>
 <td style="border-width:0;"><a href="http://blancosilva.files.wordpress.com/2010/09/msp106919cacf0cih9fhe3f00002cc7h1746c29gf70.gif"><img class="aligncenter size-full wp-image-409" title="MSP106919cacf0cih9fhe3f00002cc7h1746c29gf70" src="https://blancosilva.files.wordpress.com/2010/09/msp106919cacf0cih9fhe3f00002cc7h1746c29gf70.gif?w=595" alt="" width="300" height="199" /></a></td>
 </tr>
 </tbody>
