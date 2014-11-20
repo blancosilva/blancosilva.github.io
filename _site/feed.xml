@@ -6,8 +6,8 @@
 </description>
     <link>http://blancosilva.github.io/</link>
     <atom:link href="http://blancosilva.github.io/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Wed, 19 Nov 2014 23:33:36 -0500</pubDate>
-    <lastBuildDate>Wed, 19 Nov 2014 23:33:36 -0500</lastBuildDate>
+    <pubDate>Thu, 20 Nov 2014 09:17:28 -0500</pubDate>
+    <lastBuildDate>Thu, 20 Nov 2014 09:17:28 -0500</lastBuildDate>
     <generator>Jekyll v2.4.0</generator>
     
       <item>
@@ -698,8 +698,8 @@
 
 			&lt;div class=&quot;progress&quot;&gt;
 				&lt;div class=&quot;progress-bar progress-bar-warning&quot; style=&quot;width: 5%&quot;&gt;&lt;span class=&quot;sr-only&quot;&gt;2500&lt;/span&gt;&lt;/div&gt;
-				&lt;div class=&quot;progress-bar progress-bar-danger&quot; style=&quot;width: 5%&quot;&gt;&lt;span class=&quot;sr-only&quot;&gt;5020&lt;/span&gt;&lt;/div&gt;
-				&lt;div class=&quot;progress-bar progress-bar-success&quot; style=&quot;width: 5%&quot;&gt;&lt;span&gt;6860&lt;/span&gt;&lt;/div&gt;
+				&lt;div class=&quot;progress-bar progress-bar-warning&quot; style=&quot;width: 5%&quot;&gt;&lt;span class=&quot;sr-only&quot;&gt;5020&lt;/span&gt;&lt;/div&gt;
+				&lt;div class=&quot;progress-bar progress-bar-warning&quot; style=&quot;width: 5%&quot;&gt;&lt;span&gt;6860&lt;/span&gt;&lt;/div&gt;
 			&lt;!-- &lt;div class=&quot;progress-bar progress-bar-warning&quot; style=&quot;width: 5%&quot;&gt;&lt;span class=&quot;sr-only&quot;&gt;Level-2&lt;/span&gt;&lt;/div&gt;
 			&lt;div class=&quot;progress-bar progress-bar-danger&quot; style=&quot;width: 5%&quot;&gt;&lt;span class=&#39;sr-only&#39;&gt;Level-2&lt;/span&gt;&lt;/div&gt;
 			&lt;div class=&quot;progress-bar progress-bar-success&quot; style=&quot;width: 5%&quot;&gt;&lt;span class=&quot;sr-only&quot;&gt;Level-2&lt;/span&gt;&lt;/div&gt;
