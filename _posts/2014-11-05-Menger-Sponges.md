@@ -48,7 +48,7 @@ But success of this enterprise starts, obviously, by collecting enough business 
 
 <div class="row">
 	<ul class="nav nav-pills" role="tablist">
-		<li role="presentation" class="active" style="width:100%;"><a href="#">Card Collection <span class="badge">48,000</span></a>
+		<li role="presentation" class="active" style="width:100%;"><a href="#">Card Collection <span class="badge" style="text-align:right;">48,000</span></a>
 
 			<div class="progress">
 				<div class="progress-bar progress-bar-warning" style="width: 5%"><span class="sr-only">2500</span></div>
@@ -73,7 +73,7 @@ But success of this enterprise starts, obviously, by collecting enough business 
 			<div class="progress-bar progress-bar-danger" style="width: 5%"><span class='sr-only'>Level-2</span></div> -->
 		</div>
 	</li>
-	<li role="presentation" class="active" style="width:100%;"><a href="#">Sponge Construction <span class="badge">20 &times; 20 &times; 20</span></a>
+	<li role="presentation" class="active" style="width:100%;"><a href="#">Sponge Construction <span class="badge" style="text-align:right;">20 &times; 20 &times; 20</span></a>
 		<div class="progress">
 		<!-- 	<div class="progress-bar progress-bar-warning" style="width: 5%"><span class="sr-only">Level-2</span></div>
 			<div class="progress-bar progress-bar-warning" style="width: 5%"><span class="sr-only">Level-2</span></div>
@@ -109,52 +109,52 @@ But success of this enterprise starts, obviously, by collecting enough business 
 			<li>Jennifer Almeda</li>
 			<li>Nan W. Barker</li>
 			<li>Kaitlin C. Blanco-Silva</li>
-			<li>Judy R. Blyth <span class="badge">160</span></li>
-			<li>Jennifer Breeden <span class="badge">300</span></li>
-			<li>Vanessa L. Brown <span class="badge">225</span></li>
+			<li>Judy R. Blyth <span class="badge" style="text-align:right;">160</span></li>
+			<li>Jennifer Breeden <span class="badge" style="text-align:right;">300</span></li>
+			<li>Vanessa L. Brown <span class="badge" style="text-align:right;">225</span></li>
 			<li>O. Marion Burton</li>
 			<li>Lakesha Campbell</li>
 			<li>Toyeka Campbell</li>
 			<li>Emily Carlton</li>
 			<li>Cassey Corcoran</li>
-			<li>Eva Czabarka <span class="badge">200</span></li>
-			<li>Darla Moore School of Business <span class="badge">500</span></li>
+			<li>Eva Czabarka <span class="badge" style="text-align:right;">200</span></li>
+			<li>Darla Moore School of Business <span class="badge" style="text-align:right;">500</span></li>
 			<li>Helen Doerpinghaus</li>
-			<li>Meredith A. Fievet <span class="badge">110</span></li>
+			<li>Meredith A. Fievet <span class="badge" style="text-align:right;">110</span></li>
 			<li>Dean Mary Anne Fitzpatrick</li>
-			<li>Angrew Grubba <span class="badge">200</span></li>
+			<li>Angrew Grubba <span class="badge" style="text-align:right;">200</span></li>
 			<li>Glenda Halter</li>
-			<li>Rachel Hardison <span class="badge">360</span></li>
+			<li>Rachel Hardison <span class="badge" style="text-align:right;">360</span></li>
 			<li>Chris Horn</li>
-			<li>John T. Hyatt Jr. <span class="badge">300</span></li>
-			<li>Gayle D. Johnson <span class="badge">250</span></li>
+			<li>John T. Hyatt Jr. <span class="badge" style="text-align:right;">300</span></li>
+			<li>Gayle D. Johnson <span class="badge" style="text-align:right;">250</span></li>
 		</ul>
 	</div>
 
 	<div class="col-sm-6">
 		<ul>
-			<li>Lael M. Kenney <span class="badge">725</span></li>
-			<li>Tracy L LaPointe <span class="badge">490</span></li>
+			<li>Lael M. Kenney <span class="badge" style="text-align:right;">725</span></li>
+			<li>Tracy L LaPointe <span class="badge" style="text-align:right;">490</span></li>
 			<li>Brian LeDuc</li>
 			<li>Sarah Livingston</li>
 			<li>Lauren E. Lowe</li>
-			<li>Sherry Maw <span class="badge">200</span></li>
-			<li>Lisa Martin-Stuart <span class="badge">250</span></li>
+			<li>Sherry Maw <span class="badge" style="text-align:right;">200</span></li>
+			<li>Lisa Martin-Stuart <span class="badge" style="text-align:right;">250</span></li>
 			<li>Ian McGuire</li>
 			<li>Julie Medlin</li>
 			<li>John B. Nelson</li>
 			<li>Jane K. Olsgaard</li>
-			<li>Amanda Polson <span class="badge">275</span></li>
-			<li>Lori Schwartz <span class="badge">130</span></li>
-			<li>Eric L. Sevigny <span class="badge">100</span></li>
+			<li>Amanda Polson <span class="badge" style="text-align:right;">275</span></li>
+			<li>Lori Schwartz <span class="badge" style="text-align:right;">130</span></li>
+			<li>Eric L. Sevigny <span class="badge" style="text-align:right;">100</span></li>
 			<li>Cheri Shinn</li>
 			<li>Swansea High Freshman Academy</li>
-			<li>Mark E. Tompkins <span class="badge">100</span></li>
-			<li>UofSC College of Arts and Science <span class="badge">500</span></li>
-			<li>UofSC ISS <span class="badge">910</span></li>
+			<li>Mark E. Tompkins <span class="badge" style="text-align:right;">100</span></li>
+			<li>UofSC College of Arts and Science <span class="badge" style="text-align:right;">500</span></li>
+			<li>UofSC ISS <span class="badge" style="text-align:right;">910</span></li>
 			<li>UofSC Office of the Provost</li>
-			<li>UofSC School of Medicine <span class="badge">275</li>
-			<li>UofSC Study Abroad Office <span class="badge"></span></li>
+			<li>UofSC School of Medicine <span class="badge" style="text-align:right;">275</li>
+			<li>UofSC Study Abroad Office <span class="badge" style="text-align:right;"></span></li>
 			<li>UofSC University Writers Group</li>
 		</ul>
 	</div>
