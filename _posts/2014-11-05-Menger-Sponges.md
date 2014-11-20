@@ -52,10 +52,10 @@ But success of this enterprise starts, obviously, by collecting enough business 
 
 			<div class="progress">
 				<div class="progress-bar progress-bar-warning" style="width: 5%"><span class="sr-only">2500</span></div>
-				<div class="progress-bar progress-bar-warning" style="width: 5%"><span class='sr-only'>5020</span></div>
-				<div class="progress-bar progress-bar-warning" style="width: 5%"><span>6860</span></div>
+				<div class="progress-bar progress-bar-warning" style="width: 5%"><span class='sr-only'>5000</span></div>
+				<div class="progress-bar progress-bar-danger" style="width: 5%"><span class='sr-only'>7500</span></div>
+				<div class="progress-bar progress-bar-warning" style="width: 5%"><span>7830</span></div>
 			<!-- <div class="progress-bar progress-bar-warning" style="width: 5%"><span class="sr-only">Level-2</span></div>
-			<div class="progress-bar progress-bar-danger" style="width: 5%"><span class='sr-only'>Level-2</span></div>
 			<div class="progress-bar progress-bar-success" style="width: 5%"><span class="sr-only">Level-2</span></div>
 			<div class="progress-bar progress-bar-warning" style="width: 5%"><span class="sr-only">Level-2</span></div>
 			<div class="progress-bar progress-bar-danger" style="width: 5%"><span class='sr-only'>Level-2</span></div>
@@ -118,10 +118,11 @@ But success of this enterprise starts, obviously, by collecting enough business 
 			<li>Emily Carlton</li>
 			<li>Cassey Corcoran</li>
 			<li>Eva Czabarka <span class="badge">200</span></li>
-			<li>Darla Moore School of Business <span class="badge">500</span></li>
+			<li>Darla Moore School of Business <span class="badge">1450</span></li>
 			<li>Helen Doerpinghaus</li>
 			<li>Meredith A. Fievet <span class="badge">110</span></li>
 			<li>Dean Mary Anne Fitzpatrick</li>
+			<li>Libby Foreman</li>
 			<li>Angrew Grubba <span class="badge">200</span></li>
 			<li>Glenda Halter</li>
 			<li>Rachel Hardison <span class="badge">360</span></li>
@@ -133,6 +134,7 @@ But success of this enterprise starts, obviously, by collecting enough business 
 
 	<div class="col-sm-6">
 		<ul>
+			<li>Carolyn S. Jones</li>
 			<li>Lael M. Kenney <span class="badge">725</span></li>
 			<li>Tracy L LaPointe <span class="badge">490</span></li>
 			<li>Brian LeDuc</li>

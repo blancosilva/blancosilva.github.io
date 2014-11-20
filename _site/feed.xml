@@ -6,8 +6,8 @@
 </description>
     <link>http://blancosilva.github.io/</link>
     <atom:link href="http://blancosilva.github.io/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Thu, 20 Nov 2014 11:30:51 -0500</pubDate>
-    <lastBuildDate>Thu, 20 Nov 2014 11:30:51 -0500</lastBuildDate>
+    <pubDate>Thu, 20 Nov 2014 15:00:29 -0500</pubDate>
+    <lastBuildDate>Thu, 20 Nov 2014 15:00:29 -0500</lastBuildDate>
     <generator>Jekyll v2.4.0</generator>
     
       <item>
@@ -698,10 +698,10 @@
 
 			&lt;div class=&quot;progress&quot;&gt;
 				&lt;div class=&quot;progress-bar progress-bar-warning&quot; style=&quot;width: 5%&quot;&gt;&lt;span class=&quot;sr-only&quot;&gt;2500&lt;/span&gt;&lt;/div&gt;
-				&lt;div class=&quot;progress-bar progress-bar-warning&quot; style=&quot;width: 5%&quot;&gt;&lt;span class=&quot;sr-only&quot;&gt;5020&lt;/span&gt;&lt;/div&gt;
-				&lt;div class=&quot;progress-bar progress-bar-warning&quot; style=&quot;width: 5%&quot;&gt;&lt;span&gt;6860&lt;/span&gt;&lt;/div&gt;
+				&lt;div class=&quot;progress-bar progress-bar-warning&quot; style=&quot;width: 5%&quot;&gt;&lt;span class=&quot;sr-only&quot;&gt;5000&lt;/span&gt;&lt;/div&gt;
+				&lt;div class=&quot;progress-bar progress-bar-danger&quot; style=&quot;width: 5%&quot;&gt;&lt;span class=&quot;sr-only&quot;&gt;7500&lt;/span&gt;&lt;/div&gt;
+				&lt;div class=&quot;progress-bar progress-bar-warning&quot; style=&quot;width: 5%&quot;&gt;&lt;span&gt;7830&lt;/span&gt;&lt;/div&gt;
 			&lt;!-- &lt;div class=&quot;progress-bar progress-bar-warning&quot; style=&quot;width: 5%&quot;&gt;&lt;span class=&quot;sr-only&quot;&gt;Level-2&lt;/span&gt;&lt;/div&gt;
-			&lt;div class=&quot;progress-bar progress-bar-danger&quot; style=&quot;width: 5%&quot;&gt;&lt;span class=&#39;sr-only&#39;&gt;Level-2&lt;/span&gt;&lt;/div&gt;
 			&lt;div class=&quot;progress-bar progress-bar-success&quot; style=&quot;width: 5%&quot;&gt;&lt;span class=&quot;sr-only&quot;&gt;Level-2&lt;/span&gt;&lt;/div&gt;
 			&lt;div class=&quot;progress-bar progress-bar-warning&quot; style=&quot;width: 5%&quot;&gt;&lt;span class=&quot;sr-only&quot;&gt;Level-2&lt;/span&gt;&lt;/div&gt;
 			&lt;div class=&quot;progress-bar progress-bar-danger&quot; style=&quot;width: 5%&quot;&gt;&lt;span class=&#39;sr-only&#39;&gt;Level-2&lt;/span&gt;&lt;/div&gt;
@@ -764,10 +764,11 @@
 			&lt;li&gt;Emily Carlton&lt;/li&gt;
 			&lt;li&gt;Cassey Corcoran&lt;/li&gt;
 			&lt;li&gt;Eva Czabarka &lt;span class=&quot;badge&quot;&gt;200&lt;/span&gt;&lt;/li&gt;
-			&lt;li&gt;Darla Moore School of Business &lt;span class=&quot;badge&quot;&gt;500&lt;/span&gt;&lt;/li&gt;
+			&lt;li&gt;Darla Moore School of Business &lt;span class=&quot;badge&quot;&gt;1450&lt;/span&gt;&lt;/li&gt;
 			&lt;li&gt;Helen Doerpinghaus&lt;/li&gt;
 			&lt;li&gt;Meredith A. Fievet &lt;span class=&quot;badge&quot;&gt;110&lt;/span&gt;&lt;/li&gt;
 			&lt;li&gt;Dean Mary Anne Fitzpatrick&lt;/li&gt;
+			&lt;li&gt;Libby Foreman&lt;/li&gt;
 			&lt;li&gt;Angrew Grubba &lt;span class=&quot;badge&quot;&gt;200&lt;/span&gt;&lt;/li&gt;
 			&lt;li&gt;Glenda Halter&lt;/li&gt;
 			&lt;li&gt;Rachel Hardison &lt;span class=&quot;badge&quot;&gt;360&lt;/span&gt;&lt;/li&gt;
@@ -779,6 +780,7 @@
 
 	&lt;div class=&quot;col-sm-6&quot;&gt;
 		&lt;ul&gt;
+			&lt;li&gt;Carolyn S. Jones&lt;/li&gt;
 			&lt;li&gt;Lael M. Kenney &lt;span class=&quot;badge&quot;&gt;725&lt;/span&gt;&lt;/li&gt;
 			&lt;li&gt;Tracy L LaPointe &lt;span class=&quot;badge&quot;&gt;490&lt;/span&gt;&lt;/li&gt;
 			&lt;li&gt;Brian LeDuc&lt;/li&gt;
