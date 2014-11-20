@@ -449,7 +449,7 @@
 
 <p>Let <span>\( f\colon \mathbb{R} \to \mathbb{R} \)</span> defined piecewise by:</p>
 
-<table style="border-width:0;">
+<table style="border-width:0;margin-left:auto; margin-right:auto;">
 <tbody>
 <tr>
 <td style="vertical-align:middle;border-width:0;">\( f(t) = \begin{cases} \exp (-1/t) &amp; \text{if } t&gt;0 \\ 0&amp;  \text{otherwise}\end{cases} \)</td>
@@ -460,19 +460,21 @@
 
 <p>We need to prove that this function is <span>\( C^\infty \)</span>.  The following result helps:</p>
 
-<h4 id="theorem">Theorem</h4>
+<div class="well">
+#### Theorem 
 
-<p>If <span>\( P \)</span> is a polynomial and <span>\( g(t) = P(1/t) \exp(-1/t) \)</span> for <span>\( t&gt;0 \)</span>, <span>\( g(t) = 0 \)</span> for <span>\( t\leq 0 \)</span>, then <span>\( g \)</span> is continuous.  The derivative for <span>\( t \neq 0 \)</span> is of the same form with <span>\( P(1/t) \)</span> replaced by <span>\( \big( P(1/t) - P’(1/t)\big) / t^2 \)</span>, so <span>\( g’(0) \)</span> exists and is equal to zero.</p>
+If <span>\\( P \\)</span> is a polynomial and <span>\\( g(t) = P(1/t) \exp(-1/t) \\)</span> for <span>\\( t&gt;0 \\)</span>, <span>\\( g(t) = 0 \\)</span> for <span>\\( t\leq 0 \\)</span>, then <span>\\( g \\)</span> is continuous.  The derivative for <span>\\( t \neq 0 \\)</span> is of the same form with <span>\\( P(1/t) \\)</span> replaced by <span>\\( \big( P(1/t) - P'(1/t)\big) / t^2 \\)</span>, so <span>\\( g'(0) \\)</span> exists and is equal to zero.
+</div>
 
 <p>Consider now for any dimension <span>\( d \in \mathbb{N} \)</span> the function <span>\( \phi\colon \mathbb{R}^d \to \mathbb{R} \)</span> defined below.  It is non-negative, infinitely differentiable, with compact support, and it satisfies <span>\( \phi(0) &gt; 0 \)</span>. Notice that the support of <span>\( \phi \)</span> is the ball of radius 1 centered at the origin.</p>
 
 <table style="width:100%;border-width:0;">
 <tbody>
 <tr>
-<td style="text-align:center;vertical-align:middle;font-family:modern;font-size:12pt;border-width:0;"><span>\\( \phi(\boldsymbol{x}) = f(1-\lvert \boldsymbol{x} \rvert^2) \\)</span> with <span>\\( \lvert \boldsymbol{x} \rvert^2 = \displaystyle{\sum_{k=1}^d x_k^2} \\)</span> for any <span>\\( \boldsymbol{x} = (x_1, \dotsc, x_d) \in \mathbb{R}^d \\)</span></td>
+<td style="text-align:center;vertical-align:middle;font-family:modern;font-size:12pt;border-width:0;">\( \phi(\boldsymbol{x}) = f(1-\lvert \boldsymbol{x} \rvert^2) \) with \( \lvert \boldsymbol{x} \rvert^2 = \displaystyle{\sum_{k=1}^d x_k^2} \) for any \( \boldsymbol{x} = (x_1, \dotsc, x_d) \in \mathbb{R}^d \)</td>
 </tr>
 <tr>
-<td style="text-align:center;border-width:0;"><a href="http://blancosilva.files.wordpress.com/2010/09/msp115219cacg2fefhc1ec000005dgd99c5gc5icefd.gif"><img class="aligncenter size-full wp-image-435" title="MSP115219cacg2fefhc1ec000005dgd99c5gc5icefd" src="assets/msp115219cacg2fefhc1ec000005dgd99c5gc5icefd.gif" alt="" width="300" height="199" /></a></td>
+<td style="text-align:center;border-width:0;"><a href="http://blancosilva.files.wordpress.com/2010/09/msp115219cacg2fefhc1ec000005dgd99c5gc5icefd.gif"><img src="https://blancosilva.files.wordpress.com/2010/09/msp115219cacg2fefhc1ec000005dgd99c5gc5icefd.gif?w=595" alt="" width="300" height="199" /></a></td>
 </tr>
 </tbody>
 </table>
