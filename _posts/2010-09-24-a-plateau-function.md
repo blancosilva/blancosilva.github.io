@@ -22,11 +22,9 @@ Let <span>\\( f\colon \mathbb{R} \to \mathbb{R} \\)</span> defined piecewise by:
 
 We need to prove that this function is <span>\\( C^\infty \\)</span>.  The following result helps:
 
-<div>
-	\begin{theorem}
+#### Theorem 
+
 If <span>\\( P \\)</span> is a polynomial and <span>\\( g(t) = P(1/t) \exp(-1/t) \\)</span> for <span>\\( t>0 \\)</span>, <span>\\( g(t) = 0 \\)</span> for <span>\\( t\leq 0 \\)</span>, then <span>\\( g \\)</span> is continuous.  The derivative for <span>\\( t \neq 0 \\)</span> is of the same form with <span>\\( P(1/t) \\)</span> replaced by <span>\\( \big( P(1/t) - P'(1/t)\big) / t^2 \\)</span>, so <span>\\( g'(0) \\)</span> exists and is equal to zero.
-\end{theorem}
-</div>
 
 Consider now for any dimension <span>\\( d \in \mathbb{N} \\)</span> the function <span>\\( \phi\colon \mathbb{R}^d \to \mathbb{R} \\)</span> defined below.  It is non-negative, infinitely differentiable, with compact support, and it satisfies <span>\\( \phi(0) > 0 \\)</span>. Notice that the support of <span>\\( \phi \\)</span> is the ball of radius 1 centered at the origin.
 
