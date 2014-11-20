@@ -53,7 +53,7 @@ But success of this enterprise starts, obviously, by collecting enough business 
 			<div class="progress">
 				<div class="progress-bar progress-bar-warning" style="width: 5%"><span class="sr-only">2500</span></div>
 				<div class="progress-bar progress-bar-warning" style="width: 5%"><span class='sr-only'>5000</span></div>
-				<div class="progress-bar progress-bar-danger" style="width: 5%"><span class='sr-only'>7500</span></div>
+				<div class="progress-bar progress-bar-warning" style="width: 5%"><span class='sr-only'>7500</span></div>
 				<div class="progress-bar progress-bar-warning" style="width: 5%"><span>9580</span></div>
 			<!-- <div class="progress-bar progress-bar-warning" style="width: 5%"><span class="sr-only">Level-2</span></div>
 			<div class="progress-bar progress-bar-success" style="width: 5%"><span class="sr-only">Level-2</span></div>
