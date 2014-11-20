@@ -14,7 +14,17 @@ Rather than adopting a formal class structure, I have planned different short re
 
 Suggestions and comments are very welcomed.  I hope you have the same pleasure reading these pages, as I experienced working on the subject.
 
-* <a href="http://http://blancosilva.wordpress.com/teaching/distributions/convolution-of-integrable-functions" target="_self">Convolution of Integrable functions</a>
-* <a href="http://http://blancosilva.wordpress.com/teaching/distributions/a-plateau-function/" target="_self">A plateau function</a>
-* <a href="http://blancosilva.wordpress.com/teaching/distributions/differentiable-partitions-of-unity/" target="_self">Differentiable partitions of unity</a>
-* <a href="http://blancosilva.wordpress.com/teaching/distributions/distributions/" target="_self">Distributions—Definition and basic properties</a>
+<div class="row">
+	<div class="col-sm-12">
+		<div class="list-group">
+			<a href="#" class="list-group-item active">Selected Lectures — Click on each title below for corresponding material</a>
+			{% for post in site.posts %}
+			{% if post.category == "course-material" and post.topic == "distributions" %}
+			<a href="{{ post.url | prepend: side.baseurl }}" class="list-group-item">
+				<h4 class="list-group-item-heading">{{ post.title }}</h4>
+			</a>
+			{% endif %}
+			{% endfor %}
+		</div>
+	</div>
+</div>
