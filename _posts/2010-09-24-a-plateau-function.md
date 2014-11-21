@@ -45,7 +45,7 @@ We can obtain a similar *bump* function with support in a ball centered at any l
 <div>
 	\begin{equation}
 	\boldsymbol{x} \mapsto \phi \bigg( \frac{\boldsymbol{x} - \boldsymbol{x}_0}{\delta} \bigg)
-	\end{align}
+	\end{equation}
 </div>
 
 In the last step we accomplish the last desired property.  For this task, we will construct the function by convolution of a bump function with the indicator of a small ball containing the given compact set.  This convolution preserves both the *best* integrability and smoothness properties of the functions used to construct it, and so we obtain the desired result:
@@ -56,7 +56,7 @@ Let <span>\\( K \subset \mathbb{R}^d \\)</span> be a compact set, and let <span>
 	\begin{align}
 	\big( u \ast v \big) (x) & = \int_{\mathbb{R}^d} u(x-y) v(y)\, dy \\
     & = \int_{B_\delta(\boldsymbol{0})} \boldsymbol{\chi}_{B_{2\delta}(\boldsymbol{x}_0)}(x-y) \phi(y/\delta)\, dy
-    \end{equation}
+    \end{align}
 </div>
 
 Notice that, by construction, this function satisfies:
