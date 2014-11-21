@@ -51,7 +51,7 @@ But success of this enterprise starts, obviously, by collecting enough business 
 		<li role="presentation" class="active" style="width:100%;"><a href="#">Card Collection <span class="badge">48,000</span></a>
 
 			<div class="progress">
-				<div class="progress-bar progress-bar-warning" style="width: 20%"><span>9775</span></div>
+				<div class="progress-bar progress-bar-warning" style="width: 20%"><span>10035</span></div>
 			<!-- <div class="progress-bar progress-bar-warning" style="width: 5%"><span class="sr-only">Level-2</span></div>
 			<div class="progress-bar progress-bar-success" style="width: 5%"><span class="sr-only">Level-2</span></div>
 			<div class="progress-bar progress-bar-warning" style="width: 5%"><span class="sr-only">Level-2</span></div>
@@ -108,6 +108,7 @@ But success of this enterprise starts, obviously, by collecting enough business 
 			<li>Nan W. Barker</li>
 			<li>Kaitlin C. Blanco-Silva</li>
 			<li>Judy R. Blyth <span class="badge">220</span></li>
+			<li>Shannon A. Bowen</li>
 			<li>Jennifer Breeden <span class="badge">300</span></li>
 			<li>Vanessa L. Brown <span class="badge">225</span></li>
 			<li>Larisa D. Bruner</li>
@@ -118,6 +119,7 @@ But success of this enterprise starts, obviously, by collecting enough business 
 			<li>Cassey Corcoran</li>
 			<li>Eva Czabarka <span class="badge">200</span></li>
 			<li>Darla Moore School of Business <span class="badge">1450</span></li>
+			<li>Edwin M. Dickey <span class="badge">260</span></li>
 			<li>Helen Doerpinghaus</li>
 			<li>Meredith A. Fievet <span class="badge">110</span></li>
 			<li>Dean Mary Anne Fitzpatrick</li>
@@ -131,12 +133,12 @@ But success of this enterprise starts, obviously, by collecting enough business 
 			<li>John T. Hyatt Jr. <span class="badge">300</span></li>
 			<li>Grant N. Jackson</li>
 			<li>Gayle D. Johnson <span class="badge">250</span></li>
-			<li>Carolyn S. Jones</li>
 		</ul>
 	</div>
 
 	<div class="col-lg-6">
 		<ul>
+			<li>Carolyn S. Jones</li>
 			<li>Kelly Kavanaugh</li>
 			<li>Lael M. Kenney <span class="badge">725</span></li>
 			<li>Tracy L LaPointe <span class="badge">490</span></li>
