@@ -30,6 +30,12 @@ If \( P \) is a polynomial and \( g(t) = P(1/t) \exp(-1/t) \) for \( t>0 \), \( 
 
 Consider now for any dimension <span>\\( d \in \mathbb{N} \\)</span> the function <span>\\( \phi\colon \mathbb{R}^d \to \mathbb{R} \\)</span> defined below.  It is non-negative, infinitely differentiable, with compact support, and it satisfies <span>\\( \phi(0) > 0 \\)</span>. Notice that the support of <span>\\( \phi \\)</span> is the ball of radius 1 centered at the origin.
 
+<div>
+	\begin{equation}
+	\phi(\boldsymbol{x}) = f(1-\lvert \boldsymbol{x} \rvert^2) \text{ with } \lvert \boldsymbol{x} \rvert^2 = \sum_{k=1}^d x_k^2 \text{ for any } \boldsymbol{x} = (x_1, \dotsc, x_d) \in \mathbb{R}^d
+	\end{equation}
+</div>
+
 <table style="width:100%;border-width:0;">
 <tbody>
 <tr>
