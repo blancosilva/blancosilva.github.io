@@ -98,14 +98,14 @@ This leads us to the concept of super-resolution. We aim to recover the level of
 The standard way of producing high resolution reconstructions from a series of low resolution/noisy images is classically formulated as a global model (with local noise <span>\\( \boldsymbol{n} \\)</span>) of the form
 
 <div>
-	\begin{equation}
+	\begin{equation} \label{eq:1}
 	\boldsymbol{y}_t = (D \cdot B_t \cdot M_t) \boldsymbol{x} + \boldsymbol{n}_t
 	\end{equation}
 </div>
 
 where <span>\\( \boldsymbol{x} \\)</span> is the desired high-resolution image which is assumed constant during the acquisition of the multiple micrographs, except for any motion and degradation allowed by the model. Therefore, the observed low-resolution images result from warping (<span>\\( M_t \\)</span>), blurring (<span>\\( B_t \\)</span>), and sub-sampling (<span>\\( D \\)</span>) operators performed on <span>\\( \boldsymbol{x} \\)</span>. It is also assumed that each micrograph is corrupted by additive noise <span>\\( \boldsymbol{n}_t \\)</span> only.
 
-Unfortunately, this paradigm is not applicable in this form: Tracking and estimating the motion by a sufficiently accurate model <span>\\( M_t \\)</span> in (1) based on low resolution possibly very noisy data, is not feasible. Thus, standard super-resolution concepts as described above that are based on registration and motion tracking are not applicable.
+Unfortunately, this paradigm is not applicable in this form: Tracking and estimating the motion by a sufficiently accurate model <span>\\( M_t \\)</span> in <span>\\( \eqref{eq:1} \\)</span> based on low resolution possibly very noisy data, is not feasible. Thus, standard super-resolution concepts as described above that are based on registration and motion tracking are not applicable.
 
 We propose an alternative strategy that is motivated by the above observations and can be summarized as follows:
 
@@ -133,3 +133,7 @@ We presented an epidemiological model in [RBSG07] to describe the combined effec
 
 <p style="text-align:center;"><img src="https://i0.wp.com/farm6.static.flickr.com/5162/5201886578_b0dc28ee08_b_d.jpg" />
 <p style="text-align:center;"><img src="https://i0.wp.com/farm5.static.flickr.com/4092/5201304021_bc45756b22_o_d.jpg" />
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({ TeX: { equationNumbers: {autoNumber: "all"} } });
+</script>
