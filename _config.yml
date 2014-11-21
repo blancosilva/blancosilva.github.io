@@ -4,7 +4,7 @@ email: francisco.blanco.silva@gmail.com
 description: >
   Useless math is useful math. It can be used to generate more useless math.
 baseurl: # the subpath of your site, e.g. /blog/
-paginate: 10
+# paginate: 10
 url: "http://blancosilva.github.io" # the base hostname & protocol for your site
 avatar: https://farm6.staticflickr.com/5131/5393012839_cf3ccae561_o_d.png
 twitter_username: eseprimo
