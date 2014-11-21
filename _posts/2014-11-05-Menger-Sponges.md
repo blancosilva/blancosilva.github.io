@@ -130,13 +130,13 @@ But success of this enterprise starts, obviously, by collecting enough business 
 			<li>Chris Horn</li>
 			<li>John T. Hyatt Jr. <span class="badge">300</span></li>
 			<li>Grant N. Jackson</li>
+			<li>Gayle D. Johnson <span class="badge">250</span></li>
+			<li>Carolyn S. Jones</li>
 		</ul>
 	</div>
 
 	<div class="col-lg-6">
 		<ul>
-			<li>Gayle D. Johnson <span class="badge">250</span></li>
-			<li>Carolyn S. Jones</li>
 			<li>Kelly Kavanaugh</li>
 			<li>Lael M. Kenney <span class="badge">725</span></li>
 			<li>Tracy L LaPointe <span class="badge">490</span></li>
