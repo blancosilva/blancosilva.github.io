@@ -10,7 +10,7 @@ layout: default
 <div class="container theme-showcase" role="main" style="font-family: Helvetica;">
 
   <div class="row">
-    <div class="col-sm-8">
+    <div class="col-lg-8">
       {% for post in site.posts %}
       {% if post.category == "post" %}
       {% if post.date %}
@@ -42,9 +42,9 @@ layout: default
       {% endif %}
       {% endfor %}
     </div> 
-    
 
-    <div class="col-sm-4">
+
+    <div class="col-lg-4">
 
       <div class="row" style="text-align:center;">
         <a href="{{ "/feed.xml" | prepend: site.baseurl }}" class="btn btn-xs btn-primary" role="button">

@@ -3,6 +3,12 @@ title: Résumé
 layout: page
 ---
 
+<ol class="breadcrumb">
+  <li><a href="#">Home</a></li>
+  <li><a href="#">Library</a></li>
+  <li class="active">Data</li>
+</ol>
+
 <table style="border:0;width:100%;">
 <tr>
 <td style="width:25%;border:0;text-align:center;vertical-align:middle;">[<a href="https://www.dropbox.com/s/3f2tk50o3jczpm0/cv.pdf">Curriculum Vitae</a>]</td>
