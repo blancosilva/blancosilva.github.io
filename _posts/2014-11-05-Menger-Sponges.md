@@ -103,7 +103,7 @@ But success of this enterprise starts, obviously, by collecting enough business 
 #### Special Thanks
 
 <div class="row">
-	<div class="col-sm-6">
+	<div class="col-lg-6">
 		<ul>
 			<li>Cambden Abell</li>
 			<li>Jennifer Almeda</li>
@@ -136,7 +136,7 @@ But success of this enterprise starts, obviously, by collecting enough business 
 		</ul>
 	</div>
 
-	<div class="col-sm-6">
+	<div class="col-lg-6">
 		<ul>
 			<li>Carolyn S. Jones</li>
 			<li>Kelly Kavanaugh</li>

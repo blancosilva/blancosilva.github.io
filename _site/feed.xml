@@ -6,8 +6,8 @@
 </description>
     <link>http://blancosilva.github.io/</link>
     <atom:link href="http://blancosilva.github.io/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Fri, 21 Nov 2014 01:31:09 -0500</pubDate>
-    <lastBuildDate>Fri, 21 Nov 2014 01:31:09 -0500</lastBuildDate>
+    <pubDate>Fri, 21 Nov 2014 01:35:00 -0500</pubDate>
+    <lastBuildDate>Fri, 21 Nov 2014 01:35:00 -0500</lastBuildDate>
     <generator>Jekyll v2.4.0</generator>
     
       <item>
@@ -749,7 +749,7 @@
 &lt;h4 id=&quot;special-thanks&quot;&gt;Special Thanks&lt;/h4&gt;
 
 &lt;div class=&quot;row&quot;&gt;
-	&lt;div class=&quot;col-sm-6&quot;&gt;
+	&lt;div class=&quot;col-lg-6&quot;&gt;
 		&lt;ul&gt;
 			&lt;li&gt;Cambden Abell&lt;/li&gt;
 			&lt;li&gt;Jennifer Almeda&lt;/li&gt;
@@ -782,7 +782,7 @@
 		&lt;/ul&gt;
 	&lt;/div&gt;
 
-	&lt;div class=&quot;col-sm-6&quot;&gt;
+	&lt;div class=&quot;col-lg-6&quot;&gt;
 		&lt;ul&gt;
 			&lt;li&gt;Carolyn S. Jones&lt;/li&gt;
 			&lt;li&gt;Kelly Kavanaugh&lt;/li&gt;
@@ -33859,9 +33859,9 @@ In&amp;nbsp;[105]:
         <description>&lt;h2 id=&quot;sections-011-012-015-016&quot;&gt;Sections 011, 012, 015, 016&lt;/h2&gt;
 
 &lt;div class=&quot;row&quot;&gt;
-    &lt;div class=&quot;col-sm-2&quot;&gt;
+    &lt;div class=&quot;col-lg-2&quot;&gt;
     &lt;/div&gt;
-    &lt;div class=&quot;col-sm-8&quot;&gt;
+    &lt;div class=&quot;col-lg-8&quot;&gt;
         &lt;div class=&quot;list-group&quot;&gt;
             &lt;a href=&quot;mailto:blanco@math.sc.edu&quot; class=&quot;list-group-item&quot;&gt;
                 &lt;h4 class=&quot;list-group-item-heading&quot;&gt;Instructor: Francisco Blanco-Silva&lt;/h4&gt;
@@ -33889,14 +33889,14 @@ In&amp;nbsp;[105]:
             &lt;/a&gt;
         &lt;/div&gt;
     &lt;/div&gt;
-    &lt;div class=&quot;col-sm-2&quot;&gt;
+    &lt;div class=&quot;col-lg-2&quot;&gt;
     &lt;/div&gt;
 &lt;/div&gt;
 
 &lt;h2 id=&quot;meeting-times-and-office-hours&quot;&gt;Meeting Times and Office Hours&lt;/h2&gt;
 
 &lt;div class=&quot;row&quot;&gt;
-    &lt;div class=&quot;col-sm-12&quot;&gt;
+    &lt;div class=&quot;col-lg-12&quot;&gt;
 
         &lt;table class=&quot;table table-bordered&quot;&gt;
             &lt;tbody&gt;
@@ -34028,7 +34028,7 @@ In&amp;nbsp;[105]:
 &lt;/div&gt;
 
 &lt;div class=&quot;row&quot;&gt;
-    &lt;div class=&quot;col-sm-12&quot;&gt;
+    &lt;div class=&quot;col-lg-12&quot;&gt;
         &lt;ul class=&quot;list-group&quot;&gt;
             &lt;li class=&quot;list-group-item&quot;&gt;
                 &lt;strong&gt;Homework assignments&lt;/strong&gt;: (up to 100 points) 10% of the course grade.&lt;br /&gt;   Homework problems have been assigned for each lecture (you can see them at the end of this page, under &lt;strong&gt;Lesson Plan&lt;/strong&gt;). A selection of those problems are posted on &lt;a href=&quot;http://www.webassign.net&quot;&gt;WebAssign&lt;/a&gt; on the day of the lecture, and will be graded.  You will have until the end of the next class day to complete the assignment (e.g. what is posted on Monday is due on Wednesday at 11:59PM; what is posted on Friday is due on Monday at 11:59PM)
@@ -34048,9 +34048,9 @@ In&amp;nbsp;[105]:
                 &lt;strong&gt;Midterm Exams&lt;/strong&gt;: (up to 100 points each) 50% of the course grade (10% each midterm).&lt;br /&gt;  There will be five in-class midterm exams scheduled as follows:
 
                 &lt;div class=&quot;row&quot;&gt;
-                    &lt;div class=&quot;col-sm-4&quot;&gt;
+                    &lt;div class=&quot;col-lg-4&quot;&gt;
                     &lt;/div&gt;
-                    &lt;div class=&quot;col-sm-4&quot;&gt;
+                    &lt;div class=&quot;col-lg-4&quot;&gt;
                         &lt;table class=&quot;table table-striped&quot;&gt;
                             &lt;tbody&gt;
                                 &lt;tr&gt;
@@ -34080,7 +34080,7 @@ In&amp;nbsp;[105]:
                             &lt;/tbody&gt;
                         &lt;/table&gt;
                     &lt;/div&gt;
-                    &lt;div class=&quot;col-sm-4&quot;&gt;
+                    &lt;div class=&quot;col-lg-4&quot;&gt;
                     &lt;/div&gt;
                 &lt;/div&gt;
 
@@ -34103,9 +34103,9 @@ In&amp;nbsp;[105]:
 &lt;p&gt;The course grade will be determined as follows:&lt;/p&gt;
 
 &lt;div class=&quot;row&quot;&gt;
-    &lt;div class=&quot;col-sm-4&quot;&gt;
+    &lt;div class=&quot;col-lg-4&quot;&gt;
     &lt;/div&gt;
-    &lt;div class=&quot;col-sm-4&quot;&gt;
+    &lt;div class=&quot;col-lg-4&quot;&gt;
         &lt;table class=&quot;table table-striped&quot;&gt;
             &lt;thead&gt;
                 &lt;tr&gt;
@@ -34149,14 +34149,14 @@ In&amp;nbsp;[105]:
             &lt;/tbody&gt;
         &lt;/table&gt;
     &lt;/div&gt;
-    &lt;div class=&quot;col-sm-4&quot;&gt;
+    &lt;div class=&quot;col-lg-4&quot;&gt;
     &lt;/div&gt;
 &lt;/div&gt;
 
 &lt;h2 id=&quot;further-information&quot;&gt;Further Information&lt;/h2&gt;
 
 &lt;div class=&quot;row&quot;&gt;
-    &lt;div class=&quot;col-sm-12&quot;&gt;
+    &lt;div class=&quot;col-lg-12&quot;&gt;
         &lt;ul class=&quot;list-group&quot;&gt;
             &lt;li class=&quot;list-group-item&quot;&gt;&lt;strong&gt;Honor Code:&lt;/strong&gt;&lt;br /&gt; The Honor Code applies to all work for this course.  Please review the Honor Code at [&lt;a href=&quot;http://www.sc.edu/academicintegrity&quot;&gt;this link&lt;/a&gt;].  Students found violating the Honor Code will be subject to discipline.&lt;/li&gt;
             &lt;li class=&quot;list-group-item&quot;&gt;Some material will be stored in Dropbox. In that case, you will need an account to retrieve it. If you do not have one already, sign-in through [&lt;a href=&quot;http://db.tt/Mtz4IUP&quot;&gt;this link&lt;/a&gt;] with your academic e-mail address to receive a base 4GB storage, plus an extra 500MB, free of charge.&lt;/li&gt;
