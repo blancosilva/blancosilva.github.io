@@ -45,7 +45,7 @@ We can obtain a similar *bump* function with support in a ball centered at any l
 <div>
 	\begin{equation}
 	\boldsymbol{x} \mapsto \phi \bigg( \frac{\boldsymbol{x} - \boldsymbol{x}_0}{\delta} \bigg)
-	\end{equation}
+	\end{align}
 </div>
 
 In the last step we accomplish the last desired property.  For this task, we will construct the function by convolution of a bump function with the indicator of a small ball containing the given compact set.  This convolution preserves both the *best* integrability and smoothness properties of the functions used to construct it, and so we obtain the desired result:
@@ -61,8 +61,8 @@ Let <span>\\( K \subset \mathbb{R}^d \\)</span> be a compact set, and let <span>
 
 Notice that, by construction, this function satisfies:
 
-1. <span>\\( u \ast v \\)</span> is non-negative.</li>
-2. <span>\\( u \ast v \in C_c^\infty (\mathbb{R}^d) \\)</span>.</li>
-3. <span>\\( 0 \leq \big( u \ast v \big) (\boldsymbol{x}) \leq \lVert \phi \rVert_1 \\)</span> for all <span>\\( \boldsymbol{x} \in \mathbb{R}^d \\)</span>.</li>
-4. <span>\\( \big( u \ast v \big) (\boldsymbol{x}) = 0 \\)</span> if <span>\\( \lvert \boldsymbol{x}-\boldsymbol{x}_0 \rvert \geq 2\delta \\)</span>.</li>
-5. <span>\\( \big( u \ast v \big) (\boldsymbol{x}) = \lVert \phi \rVert_1 \\)</span> if <span>\\( \lvert \boldsymbol{x}-\boldsymbol{x}_0 \rvert &lt; \delta \\)</span> (in particular, for all <span>\\( \boldsymbol{x} \in K \\)</span>)</li>
+1. <span>\\( u \ast v \\)</span> is non-negative.
+2. <span>\\( u \ast v \in C_c^\infty (\mathbb{R}^d) \\)</span>.
+3. <span>\\( 0 \leq \big( u \ast v \big) (\boldsymbol{x}) \leq \lVert \phi \rVert_1 \\)</span> for all <span>\\( \boldsymbol{x} \in \mathbb{R}^d \\)</span>.
+4. <span>\\( \big( u \ast v \big) (\boldsymbol{x}) = 0 \\)</span> if <span>\\( \lvert \boldsymbol{x}-\boldsymbol{x}_0 \rvert \geq 2\delta \\)</span>.
+5. <span>\\( \big( u \ast v \big) (\boldsymbol{x}) = \lVert \phi \rVert_1 \\)</span> if <span>\\( \lvert \boldsymbol{x}-\boldsymbol{x}_0 \rvert &lt; \delta \\)</span> (in particular, for all <span>\\( \boldsymbol{x} \in K \\)</span>)
