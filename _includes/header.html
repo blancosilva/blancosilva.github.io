@@ -13,7 +13,7 @@
 			<ul class="nav navbar-nav">
 				<li class="active"><a href="/">Home</a></li>
 				{% for page in site.pages %}
-				{% if page.title %}
+				{% if page.main %}
 				<li><a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a></li>
 				{% endif %}
 				{% endfor %}

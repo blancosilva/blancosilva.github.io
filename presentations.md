@@ -1,6 +1,8 @@
 ---
 layout: page
 title: "Presentations"
+main: true
+crumbs: true
 ---
 
 

@@ -2,7 +2,17 @@
 layout: page
 title: About me
 permalink: /about/
+main: true
+crumbs: false
 ---
+
+<ul class="nav nav-tabs" role="tablist">
+	<li role="presentation" class="active"><a href="/about/">About me</a></li>
+	<li role="presentation"><a href="/resume/">Résumé</a></li>
+	<li role="presentation"><a href="/research/">Research</a></li>
+</ul>
+
+<br /> 
 
 <img src="https://i0.wp.com/farm6.static.flickr.com/5047/5357922103_251d96611f_o_d.jpg" style="width:100%; border:2px solid black;">
 

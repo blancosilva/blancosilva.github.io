@@ -1,7 +1,18 @@
 ---
 title: Résumé
 layout: page
+main: false
+permalink: /resume/
+crumbs: false
 ---
+
+<ul class="nav nav-tabs" role="tablist">
+	<li role="presentation"><a href="/about/">About me</a></li>
+	<li role="presentation" class="active"><a href="/resume/">Résumé</a></li>
+	<li role="presentation"><a href="/research/">Research</a></li>
+</ul>
+
+<br />
 
 <table style="border:0;width:100%;">
 <tr>

@@ -4,6 +4,8 @@ title: Books
 date: 2013-06-03 01:48:46.000000000 -04:00
 category: page
 permalink: /books/
+main: true
+crumbs: true
 ---
 
 ### Learning SciPy for Numerical and Scientific Computing

@@ -55,7 +55,7 @@
 				
 				
 				
-				<li><a class="page-link" href="/resume.html">Résumé</a></li>
+				
 				
 				
 			</ul> <!-- nav navbar-nav -->
@@ -434,9 +434,10 @@
 
 <div class="container theme-showcase" role="main" style="font-size: 16px; base-line-height: 1.5; font-family: Helvetica, Arial, sans-serif; spacing-unit: 30px; line-height: 20px; width:750px; text-align:justify;">
 
-	<header class="post-header">
+	
+<!-- 	<header class="post-header">
 		<h1 class="post-title">Denoising: wavelet thresholding</h1>
-	</header>
+	</header> -->
 
 	<article class="post-content">
 		<p>We have seen a naïve way to perform denoising on images by a simple <a href="http://blancosilva.github.io/course-material/2011/01/18/convolution-with-gaussian-kernels.html">convolution with Gaussian kernels</a>.  In this post I would like to compare that simple method with a more elaborate one: <em>wavelet thresholding</em>.  The basic philosophy is based upon the local knowledge that wavelet coefficients offer us: Intuitively, small wavelet coefficients are dominated by noise, while wavelet coefficients with a large absolute value carry more signal information than noise.  Being that the case, it is reasonable to obtain a fast denoising of a given image if we perform two basic operations:</p>

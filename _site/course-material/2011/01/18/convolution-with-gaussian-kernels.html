@@ -55,7 +55,7 @@
 				
 				
 				
-				<li><a class="page-link" href="/resume.html">Résumé</a></li>
+				
 				
 				
 			</ul> <!-- nav navbar-nav -->
@@ -434,9 +434,10 @@
 
 <div class="container theme-showcase" role="main" style="font-size: 16px; base-line-height: 1.5; font-family: Helvetica, Arial, sans-serif; spacing-unit: 30px; line-height: 20px; width:750px; text-align:justify;">
 
-	<header class="post-header">
+	
+<!-- 	<header class="post-header">
 		<h1 class="post-title">Convolution with Gaussian kernels</h1>
-	</header>
+	</header> -->
 
 	<article class="post-content">
 		<p>Recall the definition of <a href="http://blancosilva.wordpress.com/teaching/distributions/convolution-of-integrable-functions/">convolution of integrable functions</a>.  In the case of <em>good enough</em> functions in real spaces, one is able to perform this operation by passing to the Fourier domain, multiplying, and coming back through the inverse Fourier transform.   In the setting of digital signals one can also profit from this principle, but by using instead the <em>discrete and inverse discrete Fourier transforms</em>.  With the aid of the <code>fft</code> algorithms to calculate the discrete Fourier transform, convolution via the frequency domain can be faster than directly convolving the time domain signals (<code>scipy.ndimage.convolve</code> in <code>sage</code>), and the final result is the same except maybe at the borders of the image.  Some care must be taken when producing the convolution this way, since zero-padding needs to be applied.</p>
