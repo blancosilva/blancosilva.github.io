@@ -9,7 +9,7 @@
 ">
 	<meta name="author" content="">
 
-	<title>Distributions.  Definition and Basic Properties</title>
+	<title>Differentiable Partitions of Unity</title>
 
 	<!-- Bootstrap core CSS -->
 	<link href="/css/bootstrap.css" rel="stylesheet">
@@ -433,41 +433,18 @@
 <div class="container theme-showcase" role="main" style="font-size: 16px; base-line-height: 1.5; font-family: Helvetica, Arial, sans-serif; spacing-unit: 30px; line-height: 20px; width:750px; text-align:justify;">
 
 	<header class="post-header">
-		<h1 class="post-title">Distributions.  Definition and Basic Properties</h1>
+		<h1 class="post-title">Differentiable Partitions of Unity</h1>
 	</header>
 
 	<article class="post-content">
-		<p>Let <span>\( X \subset \mathbb{R}^d \)</span> be an open set.  A linear form <span>\( \nu \colon C_c^\infty(X) \to \mathbb{C} \)</span> is called a <strong>distribution</strong> if, for every compact set <span>\( K \subset X \)</span>, there is a real number <span>\( C \geq 0 \)</span> and a non-negative integer <span>\( N \)</span> such that for all <span>\( \phi \in C_c^\infty(X) \)</span> with <span>\( \text{supp } \phi \subset K \)</span>,</p>
+		<p>This is an extremely useful technique borrowed from Differential Geometry (or is it the other way around?).  The idea is to construct a family of compactly supported smooth functions which “add up to one” in a particular set.  There are several alternative ways to define “Partitions of Unity”, depending mostly on the nature of the objects in which we work (e.g., differential manifolds vs. compact set in measurable spaces).  I will present here one of the most basic results:</p>
 
-<div>
-	\begin{equation}
-	\lvert \langle \nu, \phi \rangle \rvert \leq C \displaystyle{\sum_{\lvert \alpha \rvert \leq N} \sup \lvert \partial^\alpha \phi \rvert}
-	\end{equation}
+<div class="well">
+**Theorem** Let \( X \subset \mathbb{R}^d \) be an open set, and let \( K \subset X \) be a compact subset.  Let \( \{ X_k \}_{k=1}^m \) be open subsets of \( X \) whose union contains \( K \).  Then one can find functions \( \phi_1, \dotsc, \phi_m \) such that
+
+1. \( \phi_k \in C_c^\infty (X_k) \), and \( 0 \leq \phi_k \leq 1 \) for all \( k=1, \dotsc, m \).
+2. \( \sum_{k=1}^m \phi_k \leq 1 \) on \( X \), and \( \sum_{k=1}^m \phi_k = 1 \) on a neighborhood of \( K \).
 </div>
-
-<p>The vector space of distributions on <span>\( X \)</span> is denoted by <span>\( \mathcal{D}’(X) \)</span>.</p>
-
-<p>The support of a distribution <span>\( \nu \in \mathcal{D}’(X) \)</span>, written <span>\( \text{supp }\nu \)</span>, is by definition the complement of the set <span>\( \big\{ x \in X : \nu = 0 \text{ in a neighborhood of } x \big\} \)</span>.</p>
-
-<h3 id="sequencial-continuity">Sequencial continuity.</h3>
-
-<p>A linear form <span>\( \nu \)</span> on <span>\( C_c^\infty(X) \)</span> is a distribution if and only if <span>\( \lim_n \langle \nu, \phi_n \rangle = 0 \)</span> for every sequence <span>\( \big\{ \phi_n \big\}_{n \in \mathbb{N}} \)</span> which converges to zero in <span>\( C_c^\infty(X) \)</span>.</p>
-
-<h3 id="localization">Localization</h3>
-
-<p>Let <span>\( X \subset \mathbb{R}^d \)</span> be an open set, and let <span>\( \big\{ X_\lambda \big\}_{\lambda \in \Lambda} \)</span> be an open cover of <span>\( X \)</span> (where <span>\( \Lambda \)</span> is an index set).  Suppose that, for each <span>\( \lambda \in \Lambda \)</span> there is a distribution <span>\( \nu_\lambda \in \mathcal{D}’(X_\lambda) \)</span> and that</p>
-
-<div>
-\begin{equation}
-\nu_\lambda = \nu_\mu \text{ on } X_\lambda \cap X_\mu \text{ if } X_\lambda \cap X_\mu \neq \emptyset.
-\end{equation}
-</div>
-
-<p>Then there is a unique distribution <span>\( \nu \in \mathcal{D}’(X) \)</span> such that <span>\( \nu = \nu_\lambda \)</span> in <span>\( X_\lambda \)</span> for each <span>\( \lambda \in \Lambda. \)</span></p>
-
-<h3 id="influence-of-supports">Influence of supports</h3>
-
-<p>Let <span>\( \nu \in \mathcal{D}’(X) \)</span> and let <span>\( \phi \in C_c^\infty(X). \)</span>  If the supports of <span>\( \nu \)</span> and <span>\( \phi \)</span> are disjoint, then <span>\( \langle \nu, \phi \rangle = 0. \)</span></p>
 
 	</article>
 
