@@ -36,49 +36,33 @@ Consider now for any dimension <span>\\( d \in \mathbb{N} \\)</span> the functio
 	\end{equation}
 </div>
 
-<table style="width:100%;border-width:0;">
-<tbody>
-<tr>
-<td style="text-align:center;vertical-align:middle;font-family:modern;font-size:12pt;border-width:0;">\( \phi(\boldsymbol{x}) = f(1-\lvert \boldsymbol{x} \rvert^2) \) with \( \lvert \boldsymbol{x} \rvert^2 = \displaystyle{\sum_{k=1}^d x_k^2} \) for any \( \boldsymbol{x} = (x_1, \dotsc, x_d) \in \mathbb{R}^d \)</td>
-</tr>
-<tr>
-<td style="text-align:center;border-width:0;"><a href="http://blancosilva.files.wordpress.com/2010/09/msp115219cacg2fefhc1ec000005dgd99c5gc5icefd.gif"><img src="https://blancosilva.files.wordpress.com/2010/09/msp115219cacg2fefhc1ec000005dgd99c5gc5icefd.gif?w=595" alt="" width="300" height="199" /></a></td>
-</tr>
-</tbody>
-</table>
+<p style="text-align:center;border-width:0;">
+	<img src="https://blancosilva.files.wordpress.com/2010/09/msp115219cacg2fefhc1ec000005dgd99c5gc5icefd.gif?w=595" alt="" style="width:300;height:199" />
+</p>
 
-We can obtain a similar <em>bump</em> function with support in a ball centered at any location <span>\\( \boldsymbol{x}_0 \in \mathbb{R}^d \\)</span> and with radius <span>\\( \delta>0 \\)</span>, by the usual translation and change of scales of the previous function <span>\\( \phi: \\)</span>
+We can obtain a similar *bump* function with support in a ball centered at any location <span>\\( \boldsymbol{x}_0 \in \mathbb{R}^d \\)</span> and with radius <span>\\( \delta>0 \\)</span>, by the usual translation and change of scales of the previous function <span>\\( \phi: \\)</span>
 
-<table style="border:0;width:100%;">
-<tbody>
-<tr>
-<td style="vertical-align:middle;text-align:center;border-width:0;"><span>\\( \boldsymbol{x} \mapsto \displaystyle{\phi \bigg( \frac{\boldsymbol{x} - \boldsymbol{x}_0}{\delta} \bigg)} \\)</span></td>
-</tr>
-</tbody>
-</table>
+<div>
+	\begin{equation}
+	\boldsymbol{x} \mapsto \phi \bigg( \frac{\boldsymbol{x} - \boldsymbol{x}_0}{\delta} \bigg)
+	\end{equation}
+</div>
 
-In the last step we accomplish the last desired property.  For this task, we will construct the function by convolution of a bump function with the indicator of a small ball containing the given compact set.  This convolution preserves both the "<em>best</em>" integrability and smoothness properties of the functions used to construct it, and so we obtain the desired result:
+In the last step we accomplish the last desired property.  For this task, we will construct the function by convolution of a bump function with the indicator of a small ball containing the given compact set.  This convolution preserves both the *best* integrability and smoothness properties of the functions used to construct it, and so we obtain the desired result:
 
-Let <span>\\( K \subset \mathbb{R}^d \\)</span> be a compact set, and let <span>\\( \boldsymbol{x}_0 \in K \\)</span> and <span>\\( \delta>0 \\)</span> such that <span>\\( K \subset B_\delta (\boldsymbol{x}_0) \\)</span>. Consider the functions <span>\\( u = \boldsymbol{\chi}_{B_{2\delta}(\boldsymbol{x}_0)} \\)</span>—the indicator function of the ball with radius <span>\\( 2\delta \\)</span> centered in <span>\\( \boldsymbol{x}_0 \\)</span>—and the bump funtcion <span>\\( v(\boldsymbol{x}) = \phi(\boldsymbol{x}/\delta) \\)</span>, with support in the ball of radius <span>\\( \delta \\)</span> centered at the origin.  It is then
+Let <span>\\( K \subset \mathbb{R}^d \\)</span> be a compact set, and let <span>\\( \boldsymbol{x}_0 \in K \\)</span> and <span>\\( \delta>0 \\)</span> such that <span>\\( K \subset B_\delta (\boldsymbol{x}_0) \\)</span>. Consider the functions <span>\\( u = \boldsymbol{\chi}\_{B\_{2\delta}(\boldsymbol{x}\_0)} \\)</span>—the indicator function of the ball with radius <span>\\( 2\delta \\)</span> centered in <span>\\( \boldsymbol{x}_0 \\)</span>—and the bump funtcion <span>\\( v(\boldsymbol{x}) = \phi(\boldsymbol{x}/\delta) \\)</span>, with support in the ball of radius <span>\\( \delta \\)</span> centered at the origin.  It is then
 
-<table style="width:100%;border-width:0;">
-<tbody>
-<tr>
-<td style="text-align:right;vertical-align:middle;border-width:0;"><span>\\( \big( u \ast v \big) (x) \\)</span></td>
-<td style="text-align:left;border-width:0;"><span>\\( = \displaystyle{\int_{\mathbb{R}^d} u(x-y) v(y)\, dy} \\)</span></td>
-</tr>
-<tr>
-<td style="border-width:0;"></td>
-<td style="text-align:left;border-width:0;"><span>\\( = \displaystyle{\int_{B_\delta(\boldsymbol{0})} \boldsymbol{\chi}_{B_{2\delta}(\boldsymbol{x}_0)}(x-y) \phi(y/\delta)\, dy} \\)</span></td>
-</tr>
-</tbody>
-</table>
+<div>
+	\begin{align}
+	\big( u \ast v \big) (x) & = \int_{\mathbb{R}^d} u(x-y) v(y)\, dy \\
+    & = \int_{B_\delta(\boldsymbol{0})} \boldsymbol{\chi}_{B_{2\delta}(\boldsymbol{x}_0)}(x-y) \phi(y/\delta)\, dy
+    \end{equation}
+</div>
 
 Notice that, by construction, this function satisfies:
-<ol>
-<li style="text-align:justify;font-family:modern;font-size:12pt;"><span>\\( u \ast v \\)</span> is non-negative.</li>
-<li style="text-align:justify;font-family:modern;font-size:12pt;"><span>\\( u \ast v \in C_c^\infty (\mathbb{R}^d) \\)</span>.</li>
-<li style="text-align:justify;font-family:modern;font-size:12pt;"><span>\\( 0 \leq \big( u \ast v \big) (\boldsymbol{x}) \leq \lVert \phi \rVert_1 \\)</span> for all <span>\\( \boldsymbol{x} \in \mathbb{R}^d \\)</span>.</li>
-<li style="text-align:justify;font-family:modern;font-size:12pt;"><span>\\( \big( u \ast v \big) (\boldsymbol{x}) = 0 \\)</span> if <span>\\( \lvert \boldsymbol{x}-\boldsymbol{x}_0 \rvert \geq 2\delta \\)</span>.</li>
-<li style="text-align:justify;font-family:modern;font-size:12pt;"><span>\\( \big( u \ast v \big) (\boldsymbol{x}) = \lVert \phi \rVert_1 \\)</span> if <span>\\( \lvert \boldsymbol{x}-\boldsymbol{x}_0 \rvert &lt; \delta \\)</span> (in particular, for all <span>\\( \boldsymbol{x} \in K \\)</span>)</li>
-</ol>
+
+1. <span>\\( u \ast v \\)</span> is non-negative.</li>
+2. <span>\\( u \ast v \in C_c^\infty (\mathbb{R}^d) \\)</span>.</li>
+3. <span>\\( 0 \leq \big( u \ast v \big) (\boldsymbol{x}) \leq \lVert \phi \rVert_1 \\)</span> for all <span>\\( \boldsymbol{x} \in \mathbb{R}^d \\)</span>.</li>
+4. <span>\\( \big( u \ast v \big) (\boldsymbol{x}) = 0 \\)</span> if <span>\\( \lvert \boldsymbol{x}-\boldsymbol{x}_0 \rvert \geq 2\delta \\)</span>.</li>
+5. <span>\\( \big( u \ast v \big) (\boldsymbol{x}) = \lVert \phi \rVert_1 \\)</span> if <span>\\( \lvert \boldsymbol{x}-\boldsymbol{x}_0 \rvert &lt; \delta \\)</span> (in particular, for all <span>\\( \boldsymbol{x} \in K \\)</span>)</li>
