@@ -17,6 +17,10 @@ permalink: /research/
 
 <br />
 
+<div class="alert alert-warning" role="alert">
+	<strong>Warning!</strong> This page reflects a sample Research Statement that I used in 2010.  My research goals are constantly evolving, and have shifted ever since.
+</div>
+
 This is a description of my current research, both at the level of development of theoretical tools, as well as at the level of applications to real-life problems. I have thus divided the exposition in two parts.
 
 In the first section, I describe my work in Approximation Theory derived from my dissertation, briefly explain the importance of these results to applications in Image Processing, and present some examples in which I am actively investigating.
