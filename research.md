@@ -12,6 +12,7 @@ permalink: /research/
 	<li role="presentation"><a href="/resume/">Résumé</a></li>
 	<li role="presentation"><a href="/cv/">Curriculum Vitae</a></li>
 	<li role="presentation" class="active"><a href="/research/">Research</a></li>
+	<li role="presentation" class="active"><a href="/resume/">Teaching Interests</a></li>
 </ul>
 
 <br />
