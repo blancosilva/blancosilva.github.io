@@ -4,8 +4,10 @@ title: Basic examples of Maximum Likelihood Estimation
 date: 2011-01-14 10:24:08.000000000 -05:00
 category: post
 comments: true
-
 ---
+
+In this post, we see how to use maximum likelihood to estimate the best parameters for a few of the most common distributions.
+
 ## Estimation of best parameter for iid Exponential Distributions
 
 Let <span>\\( X_1, X_2, \dotsc, X_m \\)</span> be a random sample from the exponential distribution with probability density functions of the form <span>\\( f_\theta(x) = \tfrac{1}{\theta}e^{-x/\theta} \\)</span> for <span>\\( x &gt;0 \\)</span> and any parameter <span>\\( \theta &gt;0. \\)</span>  The likelihood function is then given as the product
