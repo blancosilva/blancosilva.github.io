@@ -11,6 +11,7 @@ crumbs: false
 	<li role="presentation" class="active"><a href="/resume/">Résumé</a></li>
 	<li role="presentation"><a href="/cv/">Curriculum Vitae</a></li>
 	<li role="presentation"><a href="/research/">Research</a></li>
+	<li role="presentation"><a href="/teaching/">Teaching Interests</a></li>
 </ul>
 
 <br />
