@@ -8,7 +8,7 @@ image:
   teaser: https://i0.wp.com/farm6.static.flickr.com/5161/5195162552_f8523866e3_o_d.jpg
 ---
 
-A few puzzles about sets of points:
+A few puzzles about sets of points, and a (maybe easy) conjecture following up one of those questions:
 
 <div class="well">
 Suppose \( S \) is a finite set of points on a plane, such that for any two points \( A,B \in S \), there is a third point \( D \in S \), collinear with \( A \) and \( B \) (and different from \( A \) and \( B \)).
@@ -22,7 +22,7 @@ Suppose that not all points in <span>\\( S \\)</span> are collinear.  Among all 
 
 By hypothesis, there is a third point <span>\\( D \\)</span> which is collinear with <span>\\( A \\)</span> and <span>\\( B \\)</span>.  Consider now the new triangles that arose: <span>\\( \triangle ADC, \triangle BDC. \\)</span>  The trick now is to realize that the smallest of the heights of one of these two triangles, say <span>\\( \delta', \\)</span> is necessarily smaller than <span>\\( \delta \\)</span>.  This is a contradiction!
 
-<p style="text-align:center;"><img src="https://i0.wp.com/farm6.static.flickr.com/5161/5195162552_f8523866e3_o_d.jpg" width="100%" />
+<p style="text-align:center;"><img src="https://i0.wp.com/farm6.static.flickr.com/5161/5195162552_f8523866e3_o_d.jpg" width="100%" /></p>
 
 <hr />
 
