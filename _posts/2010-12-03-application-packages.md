@@ -57,7 +57,7 @@ Let us go over the four documents in detail:
   \if@tempswa \else \PassOptionsToClass{#1}{letter}\fi
 }
 
-\@checkoptions{12pt}{{10pt}{11pt}{12pt}}
+\@checkoptions{12pt}{ {10pt}{11pt}{12pt} }
 \PassOptionsToClass{letterpaper}{letter}
 \ExecuteOptions{letterpaper,12pt,oneside,onecolumn,final}
 \ProcessOptions\relax

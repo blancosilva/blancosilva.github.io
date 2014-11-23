@@ -1,0 +1,753 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width initial-scale=1">
+	<meta name="description" content="Useless math is useful math. It can be used to generate more useless math.
+">
+	<meta name="author" content="">
+
+	<title>Application Packages</title>
+
+	<!-- Bootstrap core CSS -->
+	<link href="/css/bootstrap.css" rel="stylesheet">
+	<!-- Bootstrap theme -->
+	<link href="/css/bootstrap-theme.css" rel="stylesheet">
+
+	<!-- Custom styles for this template -->
+	<link href="/css/blog.css" rel="stylesheet">
+	<link rel="stylesheet" href="/css/pygments.css">
+</head>
+
+<body role="document">
+
+	<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+	<div class="container">
+		<div class="navbar-header">
+			<a class="navbar-brand" href="#">
+				<img alt="Brand" src="https://farm6.staticflickr.com/5131/5393012839_cf3ccae561_o_d.png" style="width:25px;">
+			</a>
+			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+				<span class="sr-only">Toggle navigation</span>
+			</button>
+			<a class="navbar-brand" href="/">Francisco Blanco-Silva</a>
+		</div>
+		<div id="navbar" class="navbar-collapse collapse">
+			<ul class="nav navbar-nav">
+				<li class="active"><a href="/">Home</a></li>
+				
+				
+				<li><a class="page-link" href="/about/">About me</a></li>
+				
+				
+				
+				<li><a class="page-link" href="/books/">Books</a></li>
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				<li><a class="page-link" href="/presentations.html">Presentations</a></li>
+				
+				
+				
+				
+				
+				
+			</ul> <!-- nav navbar-nav -->
+			<ul class="nav navbar-nav navbar-right">
+				<li class="dropdown">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown">Teaching <span class="caret"></span></a>
+					<ul class="dropdown-menu" role="menu">
+						<li class="dropdown-header">Current | Most recent classes</li>
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						<li><a href="/course/2014/08/19/ma141-fall-2014.html">MA141—Fall 2014</a></li>
+						
+						
+						
+						<li><a href="/course/2014/08/18/math-122-fall-2014.html">MA122—Fall 2014</a></li>
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						<li><a href="/course/2014/01/11/ma-241-spring-2014.html">MA241—Spring 2014</a></li>
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						<li><a href="/course/2013/08/22/ma242-fall-2013.html">MA242—Fall 2013</a></li>
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						<li><a href="/course/2012/06/26/ma142-summer-ii-2012.html">MA142—Summer II 2012</a></li>
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						<li class="divider"></li>
+						<li class="dropdown-header">Selected Class Material</li>
+						
+						
+						<li><a href="/teaching/2014/11/08/past-classes.html">Past Sections of Undergraduate Calculus</a></li>
+						
+						
+						
+						<li><a href="/teaching/2014/11/08/Mathematical-Imaging.html">Mathematical Imaging</a></li>
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						<li><a href="/teaching/2010/10/27/an-introduction-to-algebraic-topology.html">An Introduction to Algebraic Topology</a></li>
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						<li><a href="/teaching/2010/09/24/distributions.html">Introduction to the Theory of Distributions</a></li>
+						
+						
+						
+						
+						
+						<li><a href="/teaching/2010/07/08/ma598r.html">MA598R—Summer 2007</a></li>
+						
+						
+						
+						
+						
+						
+						
+						
+					</ul>
+				</li> <!-- dropdown -->
+			</ul>
+		</div><!--/.nav-collapse -->
+	</div>
+</nav>
+
+
+
+	<div class="page-content">
+		<div class="wrapper">
+			<br />
+<br />
+<br />
+<br />
+<div class="container theme-showcase" role="main" style="font-size:16px; font-family: Helvetica; width:750px;">
+
+	<header class="post-header">
+		<h1 class="post-title">Application Packages</h1>
+		<p class="post-meta">Dec 3, 2010</p>
+	</header>
+
+	<article class="post-content">
+		<p>The problem at hand is the following: a few months before graduation, a Ph.D. candidate usually sends hundreds of application packages to different universities, research institutions and companies, with the intention of gaining a profitable job.  We all agree that the process is certainly painful: gathering reference letters, writing one (or several) research statement, teaching philosophy, and original cover letters.  The aim is to make you stand out from the rest of candidates.</p>
+
+<p>While I will not give you any hint on successful statement writing, or superb composition, I would like to show you how to accomplish the task of mass-producing a high-quality set of cover letters for all the jobs of your choice.  The final product will comprise several copies of letters that look something like this:</p>
+
+<p style="text-align:center;"><img style="border-style:solid;border-width:1px;" src="https://i0.wp.com/farm6.static.flickr.com/5001/5229347341_187da95520_o_d.jpg" alt="" width="60%" /></p>
+
+<p>Notice the structure of that letter: opening, a formal job request, short introduction, a big paragraph (where I may or may not include any text that makes the letter more personal), and finally a closing.  Note also the fact that the letter carries the official logo and footer of the University.  All this was accomplished directly in <span>\( \LaTeX \)</span>, without the need to purchase special paper, or signing personally each letter.</p>
+
+<p>We start by gathering the proper logo online from the official pages of the University, and your signature.  For the latter, sign on a blank piece of paper with a bold pen (like a Sharpie), and take a photo of the signature:</p>
+
+<table style="width:100%;border-width:0;">
+<tbody>
+<tr>
+<td style="text-align:center;vertical-align:middle;width:30%;border-width:0;"><img src="https://i0.wp.com/farm6.static.flickr.com/5243/5229261925_d2be08c802_o_d.gif" alt="" width="100%" /></td>
+<td style="text-align:center;vertical-align:middle;width:70%;border-width:0;"><img src="https://i0.wp.com/farm6.static.flickr.com/5170/5229250599_dded6109cb_d.jpg" alt="" width="100%" /></td>
+</tr>
+</tbody>
+</table>
+
+<p>Crop the signature from the photo, and by playing with exposure, saturation, contrast, brightness and color, manipulate it until it looks like a proper signature in black ink, over a perfectly white background:</p>
+
+<p style="text-align:center;"><img style="border-style:solid;border-width:1px;" src="https://i0.wp.com/farm6.static.flickr.com/5282/5229308197_b154d1ccae_m_d.jpg" alt="" /></p>
+
+<p>For the next step, you need four <span>\( \TeX \)</span> files:</p>
+
+<ul>
+  <li>A <strong>class style</strong> defining the overall look of your letters,</li>
+  <li>a <strong>master file</strong> that runs the process of creation of the documents,</li>
+  <li>a <strong>data-base</strong> with the addresses and other particular information for each of the positions that you are applying, and</li>
+  <li>a <strong>cover letter form</strong>, where you actually use your creativity and composition prowess, to make a point across.</li>
+</ul>
+
+<p>The cover letter form contains several variable fields, that must be filled with the data from the data-base. Upon compilation of the master file, we put it all together to obtain a different cover letter for each of the positions.</p>
+
+<p>Let us go over the four documents in detail:</p>
+
+<ul>
+  <li><strong>Class style</strong>: cover letter style for University of South Carolina, <code>sclet.cls</code>.  It places the logo in the top left corner, the words “Department of Mathematics” and “College of Arts and Science” in the top right corner, a footer at the bottom of the page consisting on a burgundy horizontal line, followed below by the contact information of the University of South Carolina.  It also indicates the margins of the document, possible font sizes, forces a justified alignment of paragraphs, etc.</li>
+</ul>
+
+<div class="highlight"><pre><code class="language-latex" data-lang="latex"><span class="lineno">  1</span> <span class="k">\DeclareOption*</span><span class="nb">{</span><span class="k">\PassOptionsToClass</span><span class="nb">{</span><span class="k">\CurrentOption</span><span class="nb">}{</span>letter<span class="nb">}}</span>
+<span class="lineno">  2</span> 
+<span class="lineno">  3</span> <span class="k">\def\@</span>checkoptions#1#2<span class="nb">{</span>
+<span class="lineno">  4</span>   <span class="k">\edef\@</span>curroptions<span class="nb">{</span><span class="k">\@</span>ptionlist<span class="nb">{</span><span class="k">\@</span>currname.<span class="k">\@</span>currext<span class="nb">}}</span>
+<span class="lineno">  5</span>   <span class="k">\@</span>tempswafalse
+<span class="lineno">  6</span>   <span class="k">\@</span>tfor<span class="k">\@</span>this:=#2<span class="k">\do</span><span class="nb">{</span>
+<span class="lineno">  7</span>     <span class="k">\@</span>expandtwoargs<span class="k">\in</span>@<span class="nb">{</span>,<span class="k">\@</span>this,<span class="nb">}{</span>,<span class="k">\@</span>curroptions,<span class="nb">}</span>
+<span class="lineno">  8</span>     <span class="k">\ifin</span>@ <span class="k">\@</span>tempswatrue <span class="k">\@</span>break@tfor <span class="k">\fi</span><span class="nb">}</span>
+<span class="lineno">  9</span>   <span class="k">\let\@</span>this<span class="k">\@</span>empty
+<span class="lineno"> 10</span>   <span class="k">\if</span>@tempswa <span class="k">\else</span> <span class="k">\PassOptionsToClass</span><span class="nb">{</span>#1<span class="nb">}{</span>letter<span class="nb">}</span><span class="k">\fi</span>
+<span class="lineno"> 11</span> <span class="nb">}</span>
+<span class="lineno"> 12</span> 
+<span class="lineno"> 13</span> <span class="k">\@</span>checkoptions<span class="nb">{</span>12pt<span class="nb">}{</span> <span class="nb">{</span>10pt<span class="nb">}{</span>11pt<span class="nb">}{</span>12pt<span class="nb">}</span> <span class="nb">}</span>
+<span class="lineno"> 14</span> <span class="k">\PassOptionsToClass</span><span class="nb">{</span>letterpaper<span class="nb">}{</span>letter<span class="nb">}</span>
+<span class="lineno"> 15</span> <span class="k">\ExecuteOptions</span><span class="nb">{</span>letterpaper,12pt,oneside,onecolumn,final<span class="nb">}</span>
+<span class="lineno"> 16</span> <span class="k">\ProcessOptions\relax</span>
+<span class="lineno"> 17</span> 
+<span class="lineno"> 18</span> <span class="k">\LoadClass</span><span class="nb">{</span>letter<span class="nb">}</span>
+<span class="lineno"> 19</span> <span class="k">\usepackage</span><span class="nb">{</span>graphicx<span class="nb">}</span>
+<span class="lineno"> 20</span> <span class="k">\usepackage</span><span class="nb">{</span>color<span class="nb">}</span>
+<span class="lineno"> 21</span> <span class="k">\ProvidesClass</span><span class="nb">{</span>sclet<span class="nb">}</span>[2010/12/05 University of South Carolina letter class]
+<span class="lineno"> 22</span> 
+<span class="lineno"> 23</span> <span class="k">\setlength</span><span class="nb">{</span><span class="k">\longindentation</span><span class="nb">}{</span>0pt<span class="nb">}</span>
+<span class="lineno"> 24</span> <span class="k">\setlength\headheight</span><span class="nb">{</span>18<span class="k">\p</span>@<span class="nb">}</span>
+<span class="lineno"> 25</span> <span class="k">\setlength</span><span class="nb">{</span><span class="k">\headsep</span><span class="nb">}{</span>.25in<span class="nb">}</span>
+<span class="lineno"> 26</span> <span class="k">\setlength</span><span class="nb">{</span><span class="k">\evensidemargin</span><span class="nb">}{</span><span class="k">\oddsidemargin</span><span class="nb">}</span>
+<span class="lineno"> 27</span> <span class="k">\font\helv</span>=cmss12
+<span class="lineno"> 28</span> <span class="k">\font\helvsmall</span>=cmss9
+<span class="lineno"> 29</span> 
+<span class="lineno"> 30</span> <span class="k">\font\deptfont</span>=pplr at 10truept
+<span class="lineno"> 31</span> <span class="k">\font\headfont</span>=pplr at 10truept
+<span class="lineno"> 32</span> <span class="k">\definecolor</span><span class="nb">{</span>burgundy<span class="nb">}{</span>rgb<span class="nb">}{</span>0.50196,0,0.12549<span class="nb">}</span> 
+<span class="lineno"> 33</span> <span class="k">\addtolength</span><span class="nb">{</span><span class="k">\topmargin</span><span class="nb">}{</span>-0.5pc<span class="nb">}</span>
+<span class="lineno"> 34</span> <span class="k">\addtolength</span><span class="nb">{</span><span class="k">\oddsidemargin</span><span class="nb">}{</span>-3pc<span class="nb">}</span>
+<span class="lineno"> 35</span> <span class="k">\addtolength</span><span class="nb">{</span><span class="k">\textwidth</span><span class="nb">}{</span>5.75in<span class="nb">}</span>
+<span class="lineno"> 36</span> 
+<span class="lineno"> 37</span> <span class="k">\newif\ifcolorlogo</span> <span class="k">\newcommand</span><span class="nb">{</span><span class="k">\ColorLogo</span><span class="nb">}{</span><span class="k">\colorlogotrue</span><span class="nb">}</span>
+<span class="lineno"> 38</span> <span class="k">\newcommand*</span><span class="nb">{</span><span class="k">\fax</span><span class="nb">}</span>[1]<span class="nb">{</span><span class="k">\def\faxnum</span><span class="nb">{</span>#1<span class="nb">}}</span>
+<span class="lineno"> 39</span> <span class="k">\newcommand*</span><span class="nb">{</span><span class="k">\email</span><span class="nb">}</span>[1]<span class="nb">{</span><span class="k">\def\emailaddr</span><span class="nb">{</span>#1<span class="nb">}}</span>
+<span class="lineno"> 40</span> <span class="k">\newcommand*</span><span class="nb">{</span><span class="k">\url</span><span class="nb">}</span>[1]<span class="nb">{</span><span class="k">\def\urladdr</span><span class="nb">{</span>#1<span class="nb">}}</span>
+<span class="lineno"> 41</span> <span class="k">\newcommand</span><span class="nb">{</span><span class="k">\deptname</span><span class="nb">}{</span><span class="k">\headfont</span> <span class="nb">{</span><span class="k">\sc</span> Department of Mathematics<span class="nb">}}</span>
+<span class="lineno"> 42</span> <span class="k">\newcommand</span><span class="nb">{</span><span class="k">\schoolname</span><span class="nb">}{</span><span class="k">\headfont</span> <span class="nb">{</span><span class="k">\sc</span> College of Arts and Sciences<span class="nb">}}</span>
+<span class="lineno"> 43</span> <span class="k">\newcommand</span><span class="nb">{</span><span class="k">\deptfoot</span><span class="nb">}{</span><span class="k">\deptfont</span><span class="nb">{</span><span class="k">\ifcolorlogo\color</span><span class="nb">{</span>burgundy<span class="nb">}</span><span class="k">\fi\hrulefill</span><span class="nb">}</span>
+<span class="lineno"> 44</span>   <span class="k">\\</span> <span class="k">\raisebox</span><span class="nb">{</span>-1ex<span class="nb">}{</span>University of South Carolina
+<span class="lineno"> 45</span>     <span class="s">$</span><span class="nv">\bullet</span><span class="s">$</span> Columbia, South Carolina 29208  <span class="s">$</span><span class="nv">\bullet</span><span class="s">$</span> <span class="k">\telephonenum</span><span class="err">\</span>
+<span class="lineno"> 46</span>     <span class="s">$</span><span class="nv">\bullet</span><span class="s">$</span> Fax: <span class="k">\faxnum</span> <span class="nb">}</span> <span class="nb">}</span>
+<span class="lineno"> 47</span> <span class="k">\renewcommand*</span><span class="nb">{</span><span class="k">\opening</span><span class="nb">}</span>[1]<span class="nb">{</span><span class="k">\ifx\@</span>empty<span class="k">\fromaddress</span>
+<span class="lineno"> 48</span>   <span class="k">\thispagestyle</span><span class="nb">{</span>empty<span class="nb">}</span>
+<span class="lineno"> 49</span>     <span class="nb">{</span><span class="k">\relax</span><span class="nb">}</span>
+<span class="lineno"> 50</span>   <span class="k">\else</span>  
+<span class="lineno"> 51</span>     <span class="k">\thispagestyle</span><span class="nb">{</span>empty<span class="nb">}</span>
+<span class="lineno"> 52</span>     <span class="nb">{</span><span class="k">\makebox</span><span class="na">[2.417in]</span><span class="nb">{}</span><span class="k">\begin</span><span class="nb">{</span>tabular<span class="nb">}{</span>l@<span class="nb">{}}</span><span class="k">\ignorespaces</span>
+<span class="lineno"> 53</span>       <span class="k">\fromaddress\end</span><span class="nb">{</span>tabular<span class="nb">}</span><span class="k">\par</span><span class="nb">}</span>
+<span class="lineno"> 54</span>   <span class="k">\fi</span>
+<span class="lineno"> 55</span>   <span class="k">\vspace</span><span class="nb">{</span>2<span class="k">\parskip</span><span class="nb">}</span>
+<span class="lineno"> 56</span>   <span class="nb">{</span><span class="k">\raggedright</span> <span class="k">\toname</span> <span class="k">\\</span> <span class="k">\toaddress</span> <span class="k">\par</span><span class="nb">}</span>
+<span class="lineno"> 57</span>   <span class="k">\vspace</span><span class="nb">{</span>2<span class="k">\parskip</span><span class="nb">}</span>
+<span class="lineno"> 58</span>   #1<span class="k">\par\nobreak</span><span class="nb">}</span>
+<span class="lineno"> 59</span> <span class="k">\renewcommand</span><span class="nb">{</span><span class="k">\ps</span>@empty<span class="nb">}{</span>
+<span class="lineno"> 60</span>    <span class="k">\renewcommand</span><span class="nb">{</span><span class="k">\@</span>oddhead<span class="nb">}{</span>
+<span class="lineno"> 61</span>         <span class="k">\vbox</span><span class="nb">{</span>
+<span class="lineno"> 62</span>            <span class="k">\ifcolorlogo</span>
+<span class="lineno"> 63</span>              <span class="k">\vskip</span>-0.406in<span class="nb">{</span>
+<span class="lineno"> 64</span>                <span class="k">\includegraphics</span><span class="na">[width=2.078125in]</span><span class="nb">{</span>usc<span class="nb">_</span>logo<span class="nb">}</span>
+<span class="lineno"> 65</span>              <span class="nb">}</span>
+<span class="lineno"> 66</span>            <span class="k">\else</span>
+<span class="lineno"> 67</span>              <span class="k">\vskip</span>-1.420in<span class="k">\hskip</span>-1.092in<span class="nb">{</span>
+<span class="lineno"> 68</span>                <span class="k">\includegraphics</span><span class="na">[width=5.5cm]</span><span class="nb">{</span>usc<span class="nb">_</span>logo<span class="nb">}</span>
+<span class="lineno"> 69</span>              <span class="nb">}</span>
+<span class="lineno"> 70</span>            <span class="k">\fi</span>
+<span class="lineno"> 71</span>            <span class="k">\ifcase</span> <span class="k">\@</span>ptsize<span class="k">\relax</span>
+<span class="lineno"> 72</span>              <span class="k">\hskip</span>1.9in<span class="nb">{</span><span class="k">\deptname</span><span class="nb">}</span>
+<span class="lineno"> 73</span>            <span class="k">\or</span>
+<span class="lineno"> 74</span>              <span class="k">\hskip</span>1.9in<span class="nb">{</span><span class="k">\deptname</span><span class="nb">}</span>
+<span class="lineno"> 75</span>            <span class="k">\or</span>
+<span class="lineno"> 76</span>              <span class="k">\hskip</span>1.9in<span class="nb">{</span><span class="k">\deptname</span><span class="nb">}</span>
+<span class="lineno"> 77</span>            <span class="k">\fi</span>
+<span class="lineno"> 78</span>            <span class="k">\ifcase</span> <span class="k">\@</span>ptsize<span class="k">\relax</span>
+<span class="lineno"> 79</span>              <span class="k">\flushright</span><span class="nb">{</span><span class="k">\schoolname</span><span class="nb">}</span>
+<span class="lineno"> 80</span>            <span class="k">\or</span>
+<span class="lineno"> 81</span>              <span class="k">\flushright</span><span class="nb">{</span><span class="k">\schoolname</span><span class="nb">}</span>
+<span class="lineno"> 82</span>            <span class="k">\or</span>
+<span class="lineno"> 83</span>              <span class="k">\flushright</span><span class="nb">{</span><span class="k">\schoolname</span><span class="nb">}</span>
+<span class="lineno"> 84</span>            <span class="k">\fi</span>
+<span class="lineno"> 85</span>         <span class="nb">}</span>
+<span class="lineno"> 86</span>    <span class="nb">}</span>
+<span class="lineno"> 87</span>    <span class="k">\renewcommand</span><span class="nb">{</span><span class="k">\@</span>oddfoot<span class="nb">}{</span>
+<span class="lineno"> 88</span>         <span class="k">\vbox</span><span class="nb">{</span>
+<span class="lineno"> 89</span>            <span class="k">\ifcase</span> <span class="k">\@</span>ptsize<span class="k">\relax</span>
+<span class="lineno"> 90</span>              <span class="k">\vskip</span>1.263in<span class="k">\hskip</span>-0.027in<span class="nb">{</span><span class="k">\deptfoot</span><span class="nb">}</span>
+<span class="lineno"> 91</span>            <span class="k">\or</span>
+<span class="lineno"> 92</span>              <span class="k">\vskip</span>1.388in<span class="k">\hskip</span>-0.027in<span class="nb">{</span><span class="k">\deptfoot</span><span class="nb">}</span>
+<span class="lineno"> 93</span>            <span class="k">\or</span>
+<span class="lineno"> 94</span>              <span class="k">\vskip</span>1.290in<span class="k">\hskip</span>-0.040in<span class="nb">{</span><span class="k">\deptfoot</span><span class="nb">}</span>
+<span class="lineno"> 95</span>            <span class="k">\fi</span>
+<span class="lineno"> 96</span>         <span class="nb">}</span>
+<span class="lineno"> 97</span>    <span class="nb">}</span>
+<span class="lineno"> 98</span> <span class="nb">}</span>
+<span class="lineno"> 99</span> 
+<span class="lineno">100</span> <span class="k">\telephone</span><span class="nb">{</span>803/ 777-4224<span class="nb">}</span>
+<span class="lineno">101</span> <span class="k">\fax</span><span class="nb">{</span>803/ 777-3783<span class="nb">}</span>
+<span class="lineno">102</span> <span class="k">\email</span><span class="nb">{</span>use@math.sc.edu<span class="nb">}</span>
+<span class="lineno">103</span> <span class="k">\url</span><span class="nb">{</span>http://www.math.sc.edu<span class="nb">}</span></code></pre></div>
+
+<ul>
+  <li><strong>Master file</strong>: It could not be simpler.</li>
+</ul>
+
+<div class="highlight"><pre><code class="language-latex" data-lang="latex"><span class="lineno"> 1</span> <span class="k">\documentclass</span><span class="na">[10pt]</span><span class="nb">{</span>sclet<span class="nb">}</span>
+<span class="lineno"> 2</span> 
+<span class="lineno"> 3</span> <span class="k">\signature</span><span class="nb">{</span><span class="k">\vskip</span>-0.6in<span class="nb">{</span><span class="k">\includegraphics</span><span class="na">[width=5.55cm]</span><span class="nb">{</span>signature.jpg<span class="nb">}}</span><span class="k">\\</span>
+<span class="lineno"> 4</span> Francisco Javier Blanco-Silva<span class="k">\\</span>
+<span class="lineno"> 5</span> My address<span class="k">\\</span>
+<span class="lineno"> 6</span> City, State, zip code<span class="nb">}</span>
+<span class="lineno"> 7</span> <span class="k">\textwidth</span> = 6.25in
+<span class="lineno"> 8</span> <span class="k">\textheight</span> = 8.5in
+<span class="lineno"> 9</span> <span class="k">\ColorLogo</span>
+<span class="lineno">10</span> 
+<span class="lineno">11</span> <span class="k">\begin</span><span class="nb">{</span>document<span class="nb">}</span>
+<span class="lineno">12</span> <span class="k">\input</span> cov.tex      
+<span class="lineno">13</span> <span class="k">\input</span> Addr.tex     
+<span class="lineno">14</span> <span class="k">\end</span><span class="nb">{</span>document<span class="nb">}</span></code></pre></div>
+
+<ul>
+  <li><strong>Database</strong>: The variable <code>\cov</code> is defined, as an entity with several fields (say 5 for the purposes of this example).  The first entry is the address of the position, the second entry is the opening of the letter, the third entry is the name of the company/department, and finally the fifth entry is an optional paragraph.  The collection of all possible positions is stored in the file <code>Addr.tex</code>, that looks something like this:</li>
+</ul>
+
+<div class="highlight"><pre><code class="language-latex" data-lang="latex"><span class="lineno"> 1</span> <span class="k">\cov</span><span class="nb">{</span>     
+<span class="lineno"> 2</span> Hiring Committee<span class="k">\\</span>
+<span class="lineno"> 3</span> Department of Mathematics<span class="k">\\</span>
+<span class="lineno"> 4</span> School of Life<span class="k">\\</span>
+<span class="lineno"> 5</span> Springflied, ST  50505
+<span class="lineno"> 6</span> <span class="nb">}</span>
+<span class="lineno"> 7</span> <span class="nb">{</span>Dear Professors:<span class="nb">}</span>
+<span class="lineno"> 8</span> <span class="nb">{</span>postdoctoral associate/part-time instructor positions<span class="nb">}</span>
+<span class="lineno"> 9</span> <span class="nb">{</span>the Department of Mathematics of the School of Life.<span class="nb">}</span>
+<span class="lineno">10</span> <span class="nb">{</span>
+<span class="lineno">11</span> Romani ad multas terras navigant aut ambulant. Saepe Romani in Europa
+<span class="lineno">12</span> terras occupant. Hae terrae tum sunt provinciae Romae. Prima provincia
+<span class="lineno">13</span> Romae erat Sicilia. Sicilia est insula. Multa aqua est circum Siciliam.
+<span class="lineno">14</span> Romani ad Siciliam navigant et terram occupant. In Sicilia sunt multi
+<span class="lineno">15</span> agricolae,et agricolae Siciliae Romanis cibum et praedam donant Provincia
+<span class="lineno">16</span> Hispaniae est paeninsula. Provincia Hispaniae ad Romanos cibum et praedam
+<span class="lineno">17</span> portat. Iulius Caesar Romanis fabulas pugnarum in Gallia in Commentarii
+<span class="lineno">18</span> de Bello Gallico narrat. Etiam Caesar ad Britanniam navigat et pugnat, sed
+<span class="lineno">19</span> tum Britannia non est provincia. Postea, imperator Claudius ad Brittaniam
+<span class="lineno">20</span> navigat et Romanis terram mandat. Etiam Romania est provincia Romana.
+<span class="lineno">21</span> Romani Romaniam provinciam Daciam appellant. Romani, vias et fora in
+<span class="lineno">22</span> provinciis aedificant. Etiam provinciis linguam Latinam mandant.  In
+<span class="lineno">23</span> provinciis Hispaniae, Galliae et Romaniae hodie linguae sunt &quot;Linguae
+<span class="lineno">24</span> Romanae&quot;.
+<span class="lineno">25</span> <span class="nb">}</span>
+<span class="lineno">26</span> 
+<span class="lineno">27</span> <span class="k">\cov</span><span class="nb">{</span> ...</code></pre></div>
+
+<ul>
+  <li><strong>Cover letter form</strong>:  The file <code>cov.tex</code>, where we define the entity <code>\cov</code>, and start a letter in the usual <span>\( \LaTeX \)</span> way.</li>
+</ul>
+
+<div class="highlight"><pre><code class="language-latex" data-lang="latex"><span class="lineno"> 1</span> <span class="k">\newcommand</span><span class="nb">{</span><span class="k">\cov</span><span class="nb">}</span>[5]
+<span class="lineno"> 2</span> <span class="nb">{</span>
+<span class="lineno"> 3</span> <span class="k">\begin</span><span class="nb">{</span>letter<span class="nb">}{</span>#1<span class="nb">}</span>
+<span class="lineno"> 4</span> <span class="k">\opening</span><span class="nb">{</span>#2<span class="nb">}</span>
+<span class="lineno"> 5</span> 
+<span class="lineno"> 6</span> [First paragraph, declaration of intentions]
+<span class="lineno"> 7</span> This letter is in regards to the formal submission of my application
+<span class="lineno"> 8</span> for the <span class="nb">{</span>#3<span class="nb">}</span> currently open at <span class="nb">{</span>#4<span class="nb">}</span>
+<span class="lineno"> 9</span> 
+<span class="lineno">10</span> [Second paragraph, introduction of myself and my work.]
+<span class="lineno">11</span> I completed my doctorate in [...] and many questions remain open.
+<span class="lineno">12</span> 
+<span class="lineno">13</span> [Third paragraph, I sell myself a little]
+<span class="lineno">14</span> I have a very ample experience in teaching: I have had the opportunity
+<span class="lineno">15</span> [...] All these are also available at <span class="k">\url</span><span class="nb">{</span>blancosilva.wordpress.com<span class="nb">}</span>
+<span class="lineno">16</span> 
+<span class="lineno">17</span> [Fourth paragraph, I get a little personal.]
+<span class="lineno">18</span> <span class="nb">{</span>#5<span class="nb">}</span>
+<span class="lineno">19</span> 
+<span class="lineno">20</span> [And closing.  Give contact info.]
+<span class="lineno">21</span> I look forward to discussing the qualifications for the position
+<span class="lineno">22</span> further. [...] Thank you for your consideration.
+<span class="lineno">23</span> 
+<span class="lineno">24</span> <span class="k">\closing</span><span class="nb">{</span>Sincerely,<span class="nb">}</span>
+<span class="lineno">25</span> <span class="k">\deptfoot</span>
+<span class="lineno">26</span> <span class="k">\end</span><span class="nb">{</span>letter<span class="nb">}</span>
+<span class="lineno">27</span> <span class="nb">}</span></code></pre></div>
+
+
+	</article>
+
+	
+	<div id="disqus_thread"></div>
+<script type="text/javascript">
+/* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+var disqus_shortname = 'blancosilva'; // required: replace example with your forum shortname
+
+/* * * DON'T EDIT BELOW THIS LINE * * */
+(function() {
+	var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+	dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+	(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+	
+</div>
+
+
+<script type="text/javascript"
+src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+		</div>
+	</div>
+
+	<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-56262970-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+	<!-- Start of StatCounter Code for Default Guide -->
+<script type="text/javascript">
+var sc_project=10117038; 
+var sc_invisible=1; 
+var sc_security="1fd852f3"; 
+var scJsHost = (("https:" == document.location.protocol) ?
+"https://secure." : "http://www.");
+document.write("<sc"+"ript type='text/javascript' src='" +
+scJsHost+
+"statcounter.com/counter/counter.js'></"+"script>");
+</script>
+<noscript><div class="statcounter"><a title="free hit
+counters" href="http://statcounter.com/"
+target="_blank"><img class="statcounter"
+src="http://c.statcounter.com/10117038/0/1fd852f3/1/"
+alt="free hit counters"></a></div></noscript>
+<!-- End of StatCounter Code for Default Guide -->
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script src="/js/bootstrap.min.js"></script>
+</body>
+</html>
