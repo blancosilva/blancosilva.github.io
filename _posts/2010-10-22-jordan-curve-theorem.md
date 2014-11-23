@@ -12,7 +12,7 @@ The first time I faced this challenge was in the stage of my second Analysis cou
 Let \( \phi \colon \mathbb{S}^1 \to \mathbb{R}^2 \) be an injective, continuous map from the circle \( \mathbb{S}^1 \) to the Euclidean plane \( \mathbb{R}^2 \).  We say that the image of this map is a <strong>Jordan curve</strong>—a non-self-intersecting continuous loop in the plane.
 
 The complement \( \mathbb{R}^2 \setminus C \) of a Jordan curve \( C=\text{img} (\phi) \) in the plane consists on two connected components: one of them is bounded, and the other unbounded. The curve \( C \) is the boundary of both components.
-</blockquote>
+</div>
 
 How is it possible that such a basic and intuitive statement does need "a proof"?  Isn't it evident?  This is one of those cases in which Mathematics can turn frustrating for a moment: somehow one feels like Pandora after opening the infamous box.  The source of that frustration relies on the impossibility of coming up with a devastating reasoning on the spot to prove that the statement is indeed true.  Where does one start?
 
