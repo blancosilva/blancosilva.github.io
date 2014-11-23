@@ -6,8 +6,8 @@
 </description>
     <link>http://blancosilva.github.io/</link>
     <atom:link href="http://blancosilva.github.io/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Sun, 23 Nov 2014 13:30:33 -0500</pubDate>
-    <lastBuildDate>Sun, 23 Nov 2014 13:30:33 -0500</lastBuildDate>
+    <pubDate>Sun, 23 Nov 2014 18:50:12 -0500</pubDate>
+    <lastBuildDate>Sun, 23 Nov 2014 18:50:12 -0500</lastBuildDate>
     <generator>Jekyll v2.4.0</generator>
     
       <item>
@@ -781,72 +781,72 @@
 
 &lt;div class=&quot;row&quot;&gt;
 	&lt;div class=&quot;col-lg-6&quot;&gt;
-		&lt;ul&gt;
-			&lt;li&gt;Cambden Abell&lt;/li&gt;
-			&lt;li&gt;Jennifer Almeda&lt;/li&gt;
-			&lt;li&gt;Arnold School of Public Health &lt;span class=&quot;badge&quot;&gt;1750&lt;/span&gt;&lt;/li&gt;
-			&lt;li&gt;Nan W. Barker&lt;/li&gt;
-			&lt;li&gt;Kaitlin C. Blanco-Silva&lt;/li&gt;
-			&lt;li&gt;Judy R. Blyth &lt;span class=&quot;badge&quot;&gt;220&lt;/span&gt;&lt;/li&gt;
-			&lt;li&gt;Shannon A. Bowen&lt;/li&gt;
-			&lt;li&gt;Jennifer Breeden &lt;span class=&quot;badge&quot;&gt;300&lt;/span&gt;&lt;/li&gt;
-			&lt;li&gt;Vanessa L. Brown &lt;span class=&quot;badge&quot;&gt;225&lt;/span&gt;&lt;/li&gt;
-			&lt;li&gt;Larisa D. Bruner&lt;/li&gt;
-			&lt;li&gt;O. Marion Burton&lt;/li&gt;
-			&lt;li&gt;Lakesha Campbell&lt;/li&gt;
-			&lt;li&gt;Toyeka Campbell&lt;/li&gt;
-			&lt;li&gt;Emily Carlton&lt;/li&gt;
-			&lt;li&gt;Cassey Corcoran&lt;/li&gt;
-			&lt;li&gt;Eva Czabarka &lt;span class=&quot;badge&quot;&gt;200&lt;/span&gt;&lt;/li&gt;
-			&lt;li&gt;Darla Moore School of Business &lt;span class=&quot;badge&quot;&gt;1450&lt;/span&gt;&lt;/li&gt;
-			&lt;li&gt;Edwin M. Dickey &lt;span class=&quot;badge&quot;&gt;260&lt;/span&gt;&lt;/li&gt;
-			&lt;li&gt;Helen Doerpinghaus&lt;/li&gt;
-			&lt;li&gt;Meredith A. Fievet &lt;span class=&quot;badge&quot;&gt;110&lt;/span&gt;&lt;/li&gt;
-			&lt;li&gt;Dean Mary Anne Fitzpatrick&lt;/li&gt;
-			&lt;li&gt;Libby Foreman&lt;/li&gt;
-			&lt;li&gt;Lachelle B. Frederick &lt;span class=&quot;badge&quot;&gt;150&lt;/span&gt;&lt;/li&gt;
-			&lt;li&gt;Angrew Grubba &lt;span class=&quot;badge&quot;&gt;200&lt;/span&gt;&lt;/li&gt;
-			&lt;li&gt;Glenda Halter&lt;/li&gt;
-			&lt;li&gt;Rachel Hardison &lt;span class=&quot;badge&quot;&gt;360&lt;/span&gt;&lt;/li&gt;
-			&lt;li&gt;Holly Hayes&lt;/li&gt;
-			&lt;li&gt;Chris Horn&lt;/li&gt;
-			&lt;li&gt;John T. Hyatt Jr. &lt;span class=&quot;badge&quot;&gt;300&lt;/span&gt;&lt;/li&gt;
-			&lt;li&gt;Grant N. Jackson&lt;/li&gt;
-			&lt;li&gt;Gayle D. Johnson &lt;span class=&quot;badge&quot;&gt;250&lt;/span&gt;&lt;/li&gt;
+		&lt;ul class=&quot;list-group&quot;&gt;
+			&lt;li class=&quot;list-group-item&quot;&gt;Cambden Abell&lt;/li&gt;
+			&lt;li class=&quot;list-group-item&quot;&gt;Jennifer Almeda&lt;/li&gt;
+			&lt;li class=&quot;list-group-item&quot;&gt;Arnold School of Public Health &lt;span class=&quot;badge&quot;&gt;1750&lt;/span&gt;&lt;/li&gt;
+			&lt;li class=&quot;list-group-item&quot;&gt;Nan W. Barker&lt;/li&gt;
+			&lt;li class=&quot;list-group-item&quot;&gt;Kaitlin C. Blanco-Silva&lt;/li&gt;
+			&lt;li class=&quot;list-group-item&quot;&gt;Judy R. Blyth &lt;span class=&quot;badge&quot;&gt;220&lt;/span&gt;&lt;/li&gt;
+			&lt;li class=&quot;list-group-item&quot;&gt;Shannon A. Bowen&lt;/li&gt;
+			&lt;li class=&quot;list-group-item&quot;&gt;Jennifer Breeden &lt;span class=&quot;badge&quot;&gt;300&lt;/span&gt;&lt;/li&gt;
+			&lt;li class=&quot;list-group-item&quot;&gt;Vanessa L. Brown &lt;span class=&quot;badge&quot;&gt;225&lt;/span&gt;&lt;/li&gt;
+			&lt;li class=&quot;list-group-item&quot;&gt;Larisa D. Bruner&lt;/li&gt;
+			&lt;li class=&quot;list-group-item&quot;&gt;O. Marion Burton&lt;/li&gt;
+			&lt;li class=&quot;list-group-item&quot;&gt;Lakesha Campbell&lt;/li&gt;
+			&lt;li class=&quot;list-group-item&quot;&gt;Toyeka Campbell&lt;/li&gt;
+			&lt;li class=&quot;list-group-item&quot;&gt;Emily Carlton&lt;/li&gt;
+			&lt;li class=&quot;list-group-item&quot;&gt;Cassey Corcoran&lt;/li&gt;
+			&lt;li class=&quot;list-group-item&quot;&gt;Eva Czabarka &lt;span class=&quot;badge&quot;&gt;200&lt;/span&gt;&lt;/li&gt;
+			&lt;li class=&quot;list-group-item&quot;&gt;Darla Moore School of Business &lt;span class=&quot;badge&quot;&gt;1450&lt;/span&gt;&lt;/li&gt;
+			&lt;li class=&quot;list-group-item&quot;&gt;Edwin M. Dickey &lt;span class=&quot;badge&quot;&gt;260&lt;/span&gt;&lt;/li&gt;
+			&lt;li class=&quot;list-group-item&quot;&gt;Helen Doerpinghaus&lt;/li&gt;
+			&lt;li class=&quot;list-group-item&quot;&gt;Meredith A. Fievet &lt;span class=&quot;badge&quot;&gt;110&lt;/span&gt;&lt;/li&gt;
+			&lt;li class=&quot;list-group-item&quot;&gt;Dean Mary Anne Fitzpatrick&lt;/li&gt;
+			&lt;li class=&quot;list-group-item&quot;&gt;Libby Foreman&lt;/li&gt;
+			&lt;li class=&quot;list-group-item&quot;&gt;Lachelle B. Frederick &lt;span class=&quot;badge&quot;&gt;150&lt;/span&gt;&lt;/li&gt;
+			&lt;li class=&quot;list-group-item&quot;&gt;Angrew Grubba &lt;span class=&quot;badge&quot;&gt;200&lt;/span&gt;&lt;/li&gt;
+			&lt;li class=&quot;list-group-item&quot;&gt;Glenda Halter&lt;/li&gt;
+			&lt;li class=&quot;list-group-item&quot;&gt;Rachel Hardison &lt;span class=&quot;badge&quot;&gt;360&lt;/span&gt;&lt;/li&gt;
+			&lt;li class=&quot;list-group-item&quot;&gt;Holly Hayes&lt;/li&gt;
+			&lt;li class=&quot;list-group-item&quot;&gt;Chris Horn&lt;/li&gt;
+			&lt;li class=&quot;list-group-item&quot;&gt;John T. Hyatt Jr. &lt;span class=&quot;badge&quot;&gt;300&lt;/span&gt;&lt;/li&gt;
+			&lt;li class=&quot;list-group-item&quot;&gt;Grant N. Jackson&lt;/li&gt;
+			&lt;li class=&quot;list-group-item&quot;&gt;Gayle D. Johnson &lt;span class=&quot;badge&quot;&gt;250&lt;/span&gt;&lt;/li&gt;
 		&lt;/ul&gt;
 	&lt;/div&gt;
 
 	&lt;div class=&quot;col-lg-6&quot;&gt;
-		&lt;ul&gt;
-			&lt;li&gt;Carolyn S. Jones&lt;/li&gt;
-			&lt;li&gt;Kelly Kavanaugh&lt;/li&gt;
-			&lt;li&gt;Lael M. Kenney &lt;span class=&quot;badge&quot;&gt;725&lt;/span&gt;&lt;/li&gt;
-			&lt;li&gt;Tracy L LaPointe &lt;span class=&quot;badge&quot;&gt;490&lt;/span&gt;&lt;/li&gt;
-			&lt;li&gt;Brian LeDuc&lt;/li&gt;
-			&lt;li&gt;Sarah Livingston&lt;/li&gt;
-			&lt;li&gt;Lauren E. Lowe&lt;/li&gt;
-			&lt;li&gt;Sherry Maw &lt;span class=&quot;badge&quot;&gt;200&lt;/span&gt;&lt;/li&gt;
-			&lt;li&gt;Lisa Martin-Stuart &lt;span class=&quot;badge&quot;&gt;250&lt;/span&gt;&lt;/li&gt;
-			&lt;li&gt;Ian McGuire&lt;/li&gt;
-			&lt;li&gt;Julie Medlin&lt;/li&gt;
-			&lt;li&gt;John B. Nelson&lt;/li&gt;
-			&lt;li&gt;Jane K. Olsgaard&lt;/li&gt;
-			&lt;li&gt;Amanda Polson &lt;span class=&quot;badge&quot;&gt;275&lt;/span&gt;&lt;/li&gt;
-			&lt;li&gt;Andy Pope&lt;/li&gt;
-			&lt;li&gt;Lauren Reince&lt;/li&gt;
-			&lt;li&gt;Lori Schwartz &lt;span class=&quot;badge&quot;&gt;130&lt;/span&gt;&lt;/li&gt;
-			&lt;li&gt;Eric L. Sevigny &lt;span class=&quot;badge&quot;&gt;100&lt;/span&gt;&lt;/li&gt;
-			&lt;li&gt;Cheri Shinn&lt;/li&gt;
-			&lt;li&gt;Lillian Upton Smith&lt;/li&gt;
-			&lt;li&gt;South Carolina Department of Alcohol and Other Drug Abuse Services&lt;/li&gt;
-			&lt;li&gt;Swansea High Freshman Academy&lt;/li&gt;
-			&lt;li&gt;Mark E. Tompkins &lt;span class=&quot;badge&quot;&gt;100&lt;/span&gt;&lt;/li&gt;
-			&lt;li&gt;UofSC College of Arts and Science &lt;span class=&quot;badge&quot;&gt;500&lt;/span&gt;&lt;/li&gt;
-			&lt;li&gt;UofSC ISS &lt;span class=&quot;badge&quot;&gt;910&lt;/span&gt;&lt;/li&gt;
-			&lt;li&gt;UofSC Office of the Provost&lt;/li&gt;
-			&lt;li&gt;UofSC School of Medicine &lt;span class=&quot;badge&quot;&gt;275
-			&lt;li&gt;UofSC Study Abroad Office &lt;span class=&quot;badge&quot;&gt;&lt;/span&gt;&lt;/li&gt;
-			&lt;li&gt;UofSC University Writers Group&lt;/li&gt;
+		&lt;ul class=&quot;list-group&quot;&gt;
+			&lt;li class=&quot;list-group-item&quot;&gt;Carolyn S. Jones&lt;/li&gt;
+			&lt;li class=&quot;list-group-item&quot;&gt;Kelly Kavanaugh&lt;/li&gt;
+			&lt;li class=&quot;list-group-item&quot;&gt;Lael M. Kenney &lt;span class=&quot;badge&quot;&gt;725&lt;/span&gt;&lt;/li&gt;
+			&lt;li class=&quot;list-group-item&quot;&gt;Tracy L LaPointe &lt;span class=&quot;badge&quot;&gt;490&lt;/span&gt;&lt;/li&gt;
+			&lt;li class=&quot;list-group-item&quot;&gt;Brian LeDuc&lt;/li&gt;
+			&lt;li class=&quot;list-group-item&quot;&gt;Sarah Livingston&lt;/li&gt;
+			&lt;li class=&quot;list-group-item&quot;&gt;Lauren E. Lowe&lt;/li&gt;
+			&lt;li class=&quot;list-group-item&quot;&gt;Sherry Maw &lt;span class=&quot;badge&quot;&gt;200&lt;/span&gt;&lt;/li&gt;
+			&lt;li class=&quot;list-group-item&quot;&gt;Lisa Martin-Stuart &lt;span class=&quot;badge&quot;&gt;250&lt;/span&gt;&lt;/li&gt;
+			&lt;li class=&quot;list-group-item&quot;&gt;Ian McGuire&lt;/li&gt;
+			&lt;li class=&quot;list-group-item&quot;&gt;Julie Medlin&lt;/li&gt;
+			&lt;li class=&quot;list-group-item&quot;&gt;John B. Nelson&lt;/li&gt;
+			&lt;li class=&quot;list-group-item&quot;&gt;Jane K. Olsgaard&lt;/li&gt;
+			&lt;li class=&quot;list-group-item&quot;&gt;Amanda Polson &lt;span class=&quot;badge&quot;&gt;275&lt;/span&gt;&lt;/li&gt;
+			&lt;li class=&quot;list-group-item&quot;&gt;Andy Pope&lt;/li&gt;
+			&lt;li class=&quot;list-group-item&quot;&gt;Lauren Reince&lt;/li&gt;
+			&lt;li class=&quot;list-group-item&quot;&gt;Lori Schwartz &lt;span class=&quot;badge&quot;&gt;130&lt;/span&gt;&lt;/li&gt;
+			&lt;li class=&quot;list-group-item&quot;&gt;Eric L. Sevigny &lt;span class=&quot;badge&quot;&gt;100&lt;/span&gt;&lt;/li&gt;
+			&lt;li class=&quot;list-group-item&quot;&gt;Cheri Shinn&lt;/li&gt;
+			&lt;li class=&quot;list-group-item&quot;&gt;Lillian Upton Smith&lt;/li&gt;
+			&lt;li class=&quot;list-group-item&quot;&gt;South Carolina Department of Alcohol and Other Drug Abuse Services&lt;/li&gt;
+			&lt;li class=&quot;list-group-item&quot;&gt;Swansea High Freshman Academy&lt;/li&gt;
+			&lt;li class=&quot;list-group-item&quot;&gt;Mark E. Tompkins &lt;span class=&quot;badge&quot;&gt;100&lt;/span&gt;&lt;/li&gt;
+			&lt;li class=&quot;list-group-item&quot;&gt;UofSC College of Arts and Science &lt;span class=&quot;badge&quot;&gt;500&lt;/span&gt;&lt;/li&gt;
+			&lt;li class=&quot;list-group-item&quot;&gt;UofSC ISS &lt;span class=&quot;badge&quot;&gt;910&lt;/span&gt;&lt;/li&gt;
+			&lt;li class=&quot;list-group-item&quot;&gt;UofSC Office of the Provost&lt;/li&gt;
+			&lt;li class=&quot;list-group-item&quot;&gt;UofSC School of Medicine &lt;span class=&quot;badge&quot;&gt;275
+			&lt;li class=&quot;list-group-item&quot;&gt;UofSC Study Abroad Office &lt;span class=&quot;badge&quot;&gt;&lt;/span&gt;&lt;/li&gt;
+			&lt;li class=&quot;list-group-item&quot;&gt;UofSC University Writers Group&lt;/li&gt;
 		
 	
 
