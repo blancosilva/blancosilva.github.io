@@ -51,7 +51,9 @@ Among all the possible undergraduate-level courses available, I am especially in
 
 I am also capable of teaching both at the advanced-undergraduate and graduate levels.  In the past ten years I have been working on my particular take of some topics for which I am extremely passionate: In the theoretical arena, the fields of algebraic topology, theory of distributions and differential geometry; in the field of practical mathematics, applications of functional analysis, the theory of distributions, variational methods, partial differential equations, approximation theory and numerical methods to mathematical imaging.  I have been typing extensive notes and posting online examples of lectures and assignments, again through my professional blog.  Once more I point the reader to that resource for a more detailed review of my potential as instructor.
 
-#### Example of Use of Technology in the Classroom
+<hr />
+
+## Example of Use of Technology in the Classroom
 
 An IGSE (Interactive Geometry Software Environment) is a computer program that helps create dynamic diagrams in different Geometries (planar or 3D Euclidean, or even spherical or hyperbolic). It allows the user to drop points on screen, or select two points to construct the segment through them, or the circle centered in the first that goes through the second, etc. Once done with a geometric construction, it is possible to click and hold on any of its elements (let it be a point, a segment, a circle, etc.) and while dragging them all over the screen, change the shape of the construction. It is a very valuable tool that allows students to gain a huge insight and intuition on geometric structures, and has helped many a mathematician to pose and solve interesting problems.  The best exponent of these IGSEs is probably `GeoGebra`, with which I am very proficient, and have used it in countless occasions to carry my lectures or Summer Research Projects.
 
@@ -63,7 +65,7 @@ The usual way to include diagrams from an IGSE in a document is by asking the so
 	Consider three circles \( c_1, c_2, c_3\) that intersect in a common point \(O\). (see figure above)  Circles \(c_1\) and \(c_2\) intersect also at point \(A\). Circles \(c_2\) and \(c_3\) intersect also at point \(B\).  Circles \(c_1\) and \(c_3\) intersect also at a point \(C\).  Consider any point \(P \in c_1\), and trace a line through \(P\) and \(A\).  This line intersects circle \(c_2\) at a second point \(P'\).  Trace a line through \(P'\) and \(B\).  This line intersects circle \(c_3\) at a second point \(P''\).  We want to prove that the points \(P,P''\) and \(C\) are collinear.
 </div>
 
-#### Example of Lesson Plans and Handouts
+## Example of Lesson Plans and Handouts
 
 I keep all lesson plans in `Evernote` and `Dropbox` for future reference, as well as resources for my students.  The following are examples
 from some of the most relevant lessons of some of my classes at UofSC.
@@ -91,17 +93,17 @@ from some of the most relevant lessons of some of my classes at UofSC.
 	</div>
 </div>
 
-#### Example of Teaching Evaluations
+## Example of Teaching Evaluations
 
 The following is the first page of one of the most recent "climate class surveys" administered in one of my lectures of Calculus I.  It indicates the students' appraisal of my general performance, as well as a course evaluation.
 
 <p style="text-align:center;"><img src="https://farm8.staticflickr.com/7578/15850339791_01a5d9130e_o_d.jpg" style="border:2px solid black; width:50%; margin-left:auto; margin-right:auto;"></p>
 
-#### Example of Recent Syllabus
+## Example of Recent Syllabus
 
 You can see all my syllabi online through the `Teaching` tab on this blog.
 
-#### Example of Student Interaction on a Practice Exam Online
+## Example of Student Interaction on a Practice Exam Online
 
 For each midterm offered in class, I prepare a practice exam online.  I do not include an answer key, because the intention is precisely to foster interaction among students.  I presented below a printout with the forum started on one of my Vector Calculus midterms.  I urge the reader to follow the entire discussion, as well as other similar ones, on their corresponding course pages online.
 
