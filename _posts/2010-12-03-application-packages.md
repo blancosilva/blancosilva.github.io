@@ -76,7 +76,7 @@ Let us go over the four documents in detail:
 
 \font\deptfont=pplr at 10truept
 \font\headfont=pplr at 10truept
-\definecolor{burgundy}{rgb}{0.50196,0,0.12549} % rgb: 205 138 42
+\definecolor{burgundy}{rgb}{0.50196,0,0.12549} 
 \addtolength{\topmargin}{-0.5pc}
 \addtolength{\oddsidemargin}{-3pc}
 \addtolength{\textwidth}{5.75in}
@@ -94,7 +94,7 @@ Let us go over the four documents in detail:
 \renewcommand*{\opening}[1]{\ifx\@empty\fromaddress
   \thispagestyle{empty}
     {\relax}
-  \else  % home address
+  \else  
     \thispagestyle{empty}
     {\makebox[2.417in]{}\begin{tabular}{l@{}}\ignorespaces
       \fromaddress\end{tabular}\par}
@@ -164,8 +164,8 @@ City, State, zip code}
 \ColorLogo
 
 \begin{document}
-\input cov.tex      %the cover letter form
-\input Addr.tex     %the database
+\input cov.tex      
+\input Addr.tex     
 \end{document}
 {% endhighlight %}
 
@@ -198,7 +198,7 @@ provinciis Hispaniae, Galliae et Romaniae hodie linguae sunt "Linguae
 Romanae".
 }
 
-\cov{ ...  %one occurrence of \cov per position
+\cov{ ...  
 {% endhighlight %}
 
 * **Cover letter form**:  The file `cov.tex`, where we define the entity `\cov`, and start a letter in the usual <span>\\( \LaTeX \\)</span> way.
@@ -209,21 +209,21 @@ Romanae".
 \begin{letter}{#1}
 \opening{#2}
 
-%First paragraph, declaration of intentions
+[First paragraph, declaration of intentions]
 This letter is in regards to the formal submission of my application
 for the {#3} currently open at {#4}
 
-%Second paragraph, introduction of myself and my work.
+[Second paragraph, introduction of myself and my work.]
 I completed my doctorate in [...] and many questions remain open.
 
-%Third paragraph, I sell myself a little
+[Third paragraph, I sell myself a little]
 I have a very ample experience in teaching: I have had the opportunity
 [...] All these are also available at \url{blancosilva.wordpress.com}
 
-%Fourth paragraph, I get a little personal.
+[Fourth paragraph, I get a little personal.]
 {#5}
 
-%And closing.  Give contact info.
+[And closing.  Give contact info.]
 I look forward to discussing the qualifications for the position
 further. [...] Thank you for your consideration.
 
