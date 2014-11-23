@@ -16,7 +16,7 @@ The complement \( \mathbb{R}^2 \setminus C \) of a Jordan curve \( C=\text{img}
 
 How is it possible that such a basic and intuitive statement does need "a proof"?  Isn't it evident?  This is one of those cases in which Mathematics can turn frustrating for a moment: somehow one feels like Pandora after opening the infamous box.  The source of that frustration relies on the impossibility of coming up with a devastating reasoning on the spot to prove that the statement is indeed true.  Where does one start?
 
-Two years later, in the scope of Algebraic Topology while toying with Homology Theory, the instructor pointed to "an amusing application of the Mayer-Vietoris sequence":
+Two years later, in the scope of Algebraic Topology while toying with Homology Theory, the instructor pointed to "an amusing application of the Mayer-Vietoris sequence:"
 
 If <span>\\( X \subset \mathbb{R}^d \\)</span> is a subset of the Euclidean <span>\\( d \\)</span>–dimensional space <span>\\( \mathbb{R}^d \\)</span> which is homeomorphic to a <span>\\( k \\)</span>–sphere (for any <span>\\( 0 \leq k \leq d-1 \\)</span>), then the reduced integral homology groups <span>\\( \widetilde{H}_q(Y) \\)</span> of <span>\\( Y = \mathbb{R}^d \setminus X \\)</span> are given by
 
