@@ -48,7 +48,7 @@ How would the reader use this information to obtain the value of the sum by trad
 	\end{equation}
 </div>
 
-and in our case, as <span>\\( \int_1^\infty 2/(x^2+1)\, dx =\frac{\pi}{2} \\)</span>, we have the estimate
+and in our case, as <span>\\( \int_1^\infty \tfrac{2}{x^2+1}\, dx =\frac{\pi}{2} \\)</span>, we have the estimate
 
 <div>
 	\begin{equation}
