@@ -6,6 +6,8 @@ category: post
 comments: true
 ---
 
+A nice problem to find a closed form for a rather challenging infinite series. 
+
 <div class="well">
 	Find the exact expression for the infinite sum
 	\begin{equation}
