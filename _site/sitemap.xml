@@ -211,6 +211,11 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>http://blancosilva.github.io/post/2011/04/12/el-pais-weekly-challenge.html</loc>
+    <lastmod>2011-04-12T08:55:51-04:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>http://blancosilva.github.io/course-material/2011/03/15/binary-images.html</loc>
     <lastmod>2011-03-15T14:27:23-04:00</lastmod>
     <priority>0.8</priority>
@@ -427,49 +432,49 @@
   </url>
   <url>
     <loc>http://blancosilva.github.io/about/</loc>
-    <lastmod>2014-11-23T12:22:05-05:00</lastmod>
+    <lastmod>2014-11-23T12:35:40-05:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>http://blancosilva.github.io/books/</loc>
-    <lastmod>2014-11-23T12:22:05-05:00</lastmod>
+    <lastmod>2014-11-23T12:35:40-05:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>http://blancosilva.github.io/cv/</loc>
-    <lastmod>2014-11-23T12:22:05-05:00</lastmod>
+    <lastmod>2014-11-23T12:35:40-05:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>http://blancosilva.github.io/</loc>
-    <lastmod>2014-11-23T12:22:05-05:00</lastmod>
+    <lastmod>2014-11-23T12:35:40-05:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>http://blancosilva.github.io/teaching/</loc>
-    <lastmod>2014-11-23T12:22:05-05:00</lastmod>
+    <lastmod>2014-11-23T12:35:40-05:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>http://blancosilva.github.io/presentations.html</loc>
-    <lastmod>2014-11-23T12:22:05-05:00</lastmod>
+    <lastmod>2014-11-23T12:35:40-05:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>http://blancosilva.github.io/research/</loc>
-    <lastmod>2014-11-23T12:22:05-05:00</lastmod>
+    <lastmod>2014-11-23T12:35:40-05:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>http://blancosilva.github.io/resume/</loc>
-    <lastmod>2014-11-23T12:22:05-05:00</lastmod>
+    <lastmod>2014-11-23T12:35:40-05:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>

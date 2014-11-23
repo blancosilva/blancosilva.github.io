@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: post
 title: Points on a plane
 date: 2010-11-21 10:36:02.000000000 -05:00
 category: post
