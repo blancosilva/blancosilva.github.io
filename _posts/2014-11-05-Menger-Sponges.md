@@ -87,7 +87,7 @@ But success of this enterprise starts, obviously, by collecting enough business 
 
 <div class="row">
 	<div class="col-lg-6">
-		<ul>
+		<ul class="list-group">
 			<li>Cambden Abell</li>
 			<li>Jennifer Almeda</li>
 			<li>Arnold School of Public Health <span class="badge">1750</span></li>
@@ -123,7 +123,7 @@ But success of this enterprise starts, obviously, by collecting enough business 
 	</div>
 
 	<div class="col-lg-6">
-		<ul>
+		<ul class="list-group">
 			<li>Carolyn S. Jones</li>
 			<li>Kelly Kavanaugh</li>
 			<li>Lael M. Kenney <span class="badge">725</span></li>
