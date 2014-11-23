@@ -9,7 +9,7 @@
 ">
 	<meta name="author" content="">
 
-	<title>The Nonlocal-means Algorithm</title>
+	<title>Exact Expression</title>
 
 	<!-- Bootstrap core CSS -->
 	<link href="/css/bootstrap.css" rel="stylesheet">
@@ -446,60 +446,79 @@
 <div class="container theme-showcase" role="main" style="font-size:16px; font-family: Helvetica; width:750px;">
 
 	<header class="post-header">
-		<h1 class="post-title">The Nonlocal-means Algorithm</h1>
-		<p class="post-meta">Apr 28, 2010</p>
+		<h1 class="post-title">Exact Expression</h1>
+		<p class="post-meta">Nov 15, 2010</p>
 	</header>
 
 	<article class="post-content">
-		<p>The nonlocal-means algorithm [<a href="http://www.google.com/url?sa=t&amp;source=web&amp;ct=res&amp;cd=8&amp;ved=0CC0QFjAH&amp;url=http%3A%2F%2Fciteseerx.ist.psu.edu%2Fviewdoc%2Fdownload%3Fdoi%3D10.1.1.108.6427%26rep%3Drep1%26type%3Dpdf&amp;ei=urzZS42wFZLK8ATlr-DYAQ&amp;usg=AFQjCNF5nJo_13bxj53H8ZMOvHFD8duWSg&amp;sig2=RgRUCN-tGpij-YOp1WjdLA">Buades, Coll, Morel</a>] was designed to perform noise reduction on digital images, while preserving the main geometrical configurations, as well as finer structures, details and texture.  The algorithm is consistent under the condition that one can find many samples of every image detail within the same image.</p>
+		<div class="well">
+	Find the exact expression for the infinite sum
+	\begin{equation}
+	\frac{1}{1} + \frac{2}{2+3} + \frac{3}{4+5+6} + \frac{4}{7+8+9+10} + \dotsb
+	\end{equation}
+</div>
 
-<table width="100%" style="border-width:0;">
-<tbody>
-<tr>
-<td width="30%" style="border-width:0;"><img src="http://farm4.static.flickr.com/3267/4561651402_faa7cfdfc6_o.jpg" alt="" width="100%" /></td>
-<td width="30%" style="border-width:0;"><img src="http://farm3.static.flickr.com/2723/4561651532_1befae6b32_o.jpg" alt="" width="100%" /></td>
-<td width="30%" style="border-width:0;"><img src="http://farm4.static.flickr.com/3557/4561651320_217822c20f_o.jpg" alt="" width="100%" /></td>
-</tr>
-<tr>
-<td style="text-align:center;font-family:modern;font-size:12pt;border-width:0;">Barbara</td>
-<td style="text-align:center;font-family:modern;font-size:12pt;border-width:0;">Noise added, <tt>std=30</tt></td>
-<td style="text-align:center;font-family:modern;font-size:12pt;border-width:0;">Denoised image, <tt>h=93</tt></td>
-</tr>
-</tbody>
-</table>
+<h3 id="solution">Solution</h3>
 
-<p>The algorithm has the following closed form:  Given a finite grid <span>\( \Lambda \subset \mathbb{Z}^2 \)</span> of the form <span>\( \Lambda = \Omega \cap \mathbb{Z}^2 \)</span> for some compact set <span>\( \Omega \subset \mathbb{R}^2 \)</span>, a signal <span>\( f \in L_2(\Lambda,\mathbb{R}^+) \)</span>, and a family of <em>windows</em> <span>\( \{ \mathcal{R}_k \}_{k \in \Lambda} \)</span> satisfying the conditions</p>
+<p>The usual method starts by rewriting the infinite sum in a compact form, <span>\( \sum_{n=1}^\infty f(n), \)</span> for an appropriate function <span>\( f. \)</span>  We do so after the following observations:</p>
 
-<ol>
-  <li><span>\( k \in \mathcal{R}_k \)</span> for all <span>\( k \in \Lambda \)</span>.</li>
-  <li>If <span>\( j \in \mathcal{R}_k \)</span>, then <span>\( k \in \mathcal{R}_j \)</span>,</li>
-</ol>
+<ul>
+  <li>The <span>\( n \)</span>-th term of the sum is a fraction, for which the numerator coincides with the number <span>\( n. \)</span></li>
+  <li>We can see the denominator of the <span>\( n \)</span>-th term as the difference of two sums.  Notice that the largest term of those sums coincides with the sum of all the positive integers from one to <span>\( n. \)</span>  The smallest term in the sums of the denominators is one unit larger than the sum of all positive integers from one to <span>\( n-1. \)</span>   Analytically, this is the following expression:
+    <div>
+  	\begin{equation}
+  	\underbrace{\dfrac{1}{2}\,\overbrace{\dfrac{n(n+1)}{2}}^{1+\dotsb+n}\bigg(\dfrac{n(n+1)}{2}+1\bigg)}_{1+\dotsb+\tfrac{n(n+1)}{2}}-\underbrace{\dfrac{1}{2}\,\overbrace{\dfrac{n(n-1)}{2}}^{1+\dotsb+(n-1)}\bigg(\dfrac{n(n-1)}{2}+1\bigg)}_{1+\dotsb+\frac{n(n-1)}{2}}
+  	\end{equation}
+  </div>
+    <p>which reduces to <span>\( \frac{1}{2}(n^3+n). \)</span></p>
+  </li>
+</ul>
 
-<p>the nonlocal-means operator <span>\( \text{NL}_h\colon \ell_2(\Lambda,\mathbb{R}) \to \ell_2(\Lambda,\mathbb{R}) \)</span> with filtering parameter <span>\( h&gt;0 \)</span>, is defined by</p>
+<p>The last step is then to produce the sum of the expression</p>
 
 <div>
 	\begin{equation}
-\text{NL}_h f(k) = \sum_{j \in \Lambda} \omega_h(j,k) f(j),
-\end{equation}
+	\sum_{n=1}^\infty \frac{2n}{n^3+n} = \sum_{n=1}^\infty \frac{2}{n^2+1}.
+	\end{equation}
 </div>
 
-<p>where the weights <span>\( { \omega_h(j,k) }_{j,k \in \Lambda} \)</span> are defined by</p>
+<p>The <em>easy</em> way is to obtain the aid of a mathematical software package (<code>mathematica</code>, <code>maple</code>, <code>matlab</code>, …)</p>
 
-<div>
-\begin{equation}
- \omega_h(j,k) = \frac{ \exp \bigg( -\frac{\left\lVert f(\mathcal{R}_j) - f(\mathcal{R}_k) \right\rVert_{2,a}^2}{h^2} \bigg) }{ \sum_{j \in \Lambda} \exp \bigg( - \frac{\left\lVert f(\mathcal{R}_j) - f(\mathcal{R}_k) \right\rVert_{2,a}^2}{h^2} \bigg)}.
-\end{equation}
-</div>
+<p>For example, <a href="http://www.wolframalpha.com/input/?i=sum[2/(x^2%2B1),{x,1,infinity}]">www.wolframalpha.com/input/?i=sum[2/(x^2%2B1),{x,1,infinity}]</a> gives not only the answer (<span>\( \pi \coth \pi -1 \)</span>), but also important information about the sum: <em>Both the ratio and root tests are inconclusive, but the integral test indicates that the sum converges</em>.</p>
 
-<p>Here, <span>\( f(\mathcal{R}) \)</span> denotes a <em>patch</em> of the image <span>\( f \)</span> supported on the window <span>\( \mathcal{R} \)</span>.</p>
-
-<p>Notice that the <em>similarity</em> between patches is nothing but a simple Gaussian weighted Euclidean distance, which accounts for difference of grayscales alone. <a href="http://www.google.com/url?sa=t&amp;source=web&amp;ct=res&amp;cd=1&amp;ved=0CAgQFjAA&amp;url=http%3A%2F%2Fgraphics.cs.cmu.edu%2Fpeople%2Fefros%2Fresearch%2FNPS%2Fefros-iccv99.pdf&amp;ei=w7vZS8udFZLK8ATlr-DYAQ&amp;usg=AFQjCNHVEBaLtGLRS97qyp56MEPJ1aeRXg&amp;sig2=b_w4DZt33t0wWIkY0zW6jQ">Efros and Leung</a> prove that this distance is a reliable measure for the comparison of texture patches, and at the same time copes very well with additive white noise; in particular, if <span>\( f \)</span> and <span>\( g \)</span> are respectively the noisy and original images, and <span>\( \sigma^2 \)</span> is the noise variance, then the most similar patches in the noisy image are also expected to be the most similar in the original:</p>
+<p>How would the reader use this information to obtain the value of the sum by traditional methods?  The integral test only offers a crude estimation for the sum:  Since we know that</p>
 
 <div>
 	\begin{equation}
- \mathbb{E} \left\lVert f(\mathcal{R}_j) - f(\mathcal{R}_k) \right\rVert_{2,a}^2 = \left\lVert g(\mathcal{R}_j) - g(\mathcal{R}_k) \right\rVert_{2,a}^2 + 2\sigma^2 .
- \end{equation}
+	\int_1^\infty \frac{2}{x^2+1}\, dx \leq \sum_{n=1}^\infty \frac{2}{n^2+1} \leq 1 +\int_1^\infty \frac{2}{x^2+1}\, dx,
+	\end{equation}
 </div>
+
+<p>and in our case, as <span>\( \int_1^\infty 2/(x^2+1)\, dx =\frac{\pi}{2} \)</span>, we have the estimate</p>
+
+<div>
+	\begin{equation}
+	\frac{\pi}{2} \leq \sum_{n=1}^\infty \frac{2}{n^2+1} \leq 1+\frac{\pi}{2}.
+	\end{equation}
+</div>
+
+<p>We can go so much further with the Laplace transform: Notice first that the Laplace transform of <span>\( \sin \omega t \)</span> is precisely the expression <span>\( \omega (s^2+\omega^2)^{-1}. \)</span>  In this case, we may use this fact to rewrite the infinite sum as follows:</p>
+
+<div>
+	\begin{equation}
+	\sum_{n=1}^\infty \frac{2}{n^2+1} = 2 \sum_{n=1}^\infty \frac{1}{n^2+1} = 2 \sum_{n=1}^\infty \int_{0}^\infty e^{-nx} \sin x\, dx
+	\end{equation}
+</div>
+
+<p>Since we have proved that the series converges, we are allowed to change integral with summation. We obtain</p>
+
+<div>
+	\begin{equation}
+	\sum_{n=1}^\infty \frac{2}{n^2+1} = 2 \int_0^\infty \sin x \sum_{n=1}^\infty e^{-nx}\, dx = 2\int_0^\infty \frac{e^{-x}}{1-e^{-x}}\,\sin x \, dx
+	\end{equation}
+</div>
+
+<p>The key is therefore to find the last integral in the expression above.</p>
 
 	</article>
 
