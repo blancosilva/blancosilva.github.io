@@ -8,7 +8,7 @@ image:
   teaser: https://i0.wp.com/farm6.static.flickr.com/5161/5195162552_f8523866e3_o_d.jpg
 ---
 
-A few puzzles about sets of points, and a (maybe easy) conjecture following up one of those questions:
+A few puzzles about sets of points, and a nice conjecture following up one of those questions:
 
 <div class="well">
 Suppose \( S \) is a finite set of points on a plane, such that for any two points \( A,B \in S \), there is a third point \( D \in S \), collinear with \( A \) and \( B \) (and different from \( A \) and \( B \)).
