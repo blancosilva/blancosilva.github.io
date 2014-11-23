@@ -144,7 +144,7 @@ But success of this enterprise starts, obviously, by collecting enough business 
 			<li class="list-group-item">Eric L. Sevigny <span class="badge">100</span></li>
 			<li class="list-group-item">Cheri Shinn</li>
 			<li class="list-group-item">Lillian Upton Smith</li>
-			<li class="list-group-item">South Carolina Department of Alcohol and Other Drug Abuse Services</li>
+			<li class="list-group-item">South Carolina DAODAS</li>
 			<li class="list-group-item">Swansea High Freshman Academy</li>
 			<li class="list-group-item">Mark E. Tompkins <span class="badge">100</span></li>
 			<li class="list-group-item">UofSC College of Arts and Science <span class="badge">500</span></li>
