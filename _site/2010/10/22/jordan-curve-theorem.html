@@ -9,7 +9,7 @@
 ">
 	<meta name="author" content="">
 
-	<title>Algebra of connected sums of surfaces</title>
+	<title>The Jordan Curve Theorem</title>
 
 	<!-- Bootstrap core CSS -->
 	<link href="/css/bootstrap.css" rel="stylesheet">
@@ -464,94 +464,29 @@
 
 	
 <!-- 	<header class="post-header">
-		<h1 class="post-title">Algebra of connected sums of surfaces</h1>
+		<h1 class="post-title">The Jordan Curve Theorem</h1>
 	</header> -->
 
 	<article class="post-content">
-		<p>Let us explore the algebraic properties of connected sums.  We immediately realize that the operation is both commutative</p>
-
+		<p style="text-align:justify;">The first time I faced this challenge was in the stage of my second Analysis course in College.  The instructor needed this result for one of the proofs in class, stated it, and claimed that "you would need some more miles under your belts to be able to find—and understand—a proof of it."  It goes like this:</p>
 <blockquote>
-  <p><span>\( S \mathop{\#} S’ = S’ \mathop{\#} S \)</span> for any two surfaces <span>\( S \)<span> and <span>\( S’ \)<span>,</span></span></span></span></p>
+<p style="text-align:justify;">Let $latex \phi \colon \mathbb{S}^1 \to \mathbb{R}^2&amp;bg=F4F5F7$ be an injective, continuous map from the circle $latex \mathbb{S}^1&amp;bg=F4F5F7$ to the Euclidean plane $latex \mathbb{R}^2&amp;bg=F4F5F7$.  We say that the image of this map is a <strong>Jordan curve</strong>—a non-self-intersecting continuous loop in the plane.</p>
+<p style="text-align:justify;">The complement $latex \mathbb{R}^2 \setminus C&amp;bg=F4F5F7$ of a Jordan curve $latex C=\text{img} (\phi)&amp;bg=F4F5F7$ in the plane consists on two connected components: one of them is bounded, and the other unbounded. The curve $latex C&amp;bg=F4F5F7$ is the boundary of both components.</p>
 </blockquote>
-
-<p>and associative</p>
-
-<blockquote>
-  <p><span>\( ( S \mathop{\#} S’) \mathop{\#} S’’ = S \mathop{\#} (S’ \mathop{\#} S’’) \)<span> for any three surfaces <span>\( S \)<span>, <span>\( S’ \)<span> and <span>\( S’’ \)<span>.</span></span></span></span></span></span></span></span></p>
-</blockquote>
-
-<p>The sphere acts a neutral element (like the zero for the addition of numbers):</p>
-
-<blockquote>
-  <p><span>\( S \mathop{\#} \mathbb{S}_2 = S \)<span> for all surfaces <span>\( S \)<span>.</span></span></span></span></p>
-</blockquote>
-
-<p>Notice that, unlike addition of numbers, we do not necessarily have “negative surfaces”: we cannot guarantee, for a given surface <span>\( S \)<span>, the existence of another surface <span>\( S’ \)<span> such that <span>\( S \mathop{\#} S’ = \mathbb{S}_2 \)<span>.</span></span></span></span></span></span></p>
-
-<p><a href="http://blancosilva.github.io/course-material/2010/10/29/surfaces.html">We have already seen</a> that the connected sum of two tori results in a two-genus torus.  In general, for any natural number <span>\( n \in \mathbb{N}, \)<span> the connected sum of <span>\( n \)<span> tori is a torus with genus <span>\( n, \)<span> wich we denote <span>\( n \mathbb{T} = \mathbb{T} \mathop{\#} \overset{n}{\dotsb} \mathop{\#} \mathbb{T}. \)<span></span></span></span></span></span></span></span></span></p>
-
-<p>The connected sum of two real projective spaces is a Klein bottle, <span>\( \mathbb{K}. \)<span>  To construct this connected sum from the representation of real projective planes as squares with sides identifies, note first what happens when we cut such a diagram into three stripes:</span></span></p>
-
-<table style="width:75%;border:4px solid black; margin-left:auto; margin-right:auto;">
+<p style="text-align:justify;">How is it possible that such a basic and intuitive statement does need "a proof"?  Isn't it evident?  This is one of those cases in which Mathematics can turn frustrating for a moment: somehow one feels like Pandora after opening the infamous box.  The source of that frustration relies on the impossibility of coming up with a devastating reasoning on the spot to prove that the statement is indeed true.  Where does one start?</p>
+<p style="text-align:justify;">Two years later, in the scope of Algebraic Topology while toying with Homology Theory, the instructor pointed to "an amusing application of the Mayer-Vietoris sequence":</p>
+<p style="text-align:justify;">If $latex X \subset \mathbb{R}^d$ is a subset of the Euclidean $latex d$–dimensional space $latex \mathbb{R}^d$ which is homeomorphic to a $latex k$–sphere (for any $latex 0 \leq k \leq d-1$), then the reduced integral homology groups $latex \widetilde{H}_q(Y)$ of $latex Y = \mathbb{R}^d \setminus X$ are given by</p>
+<table style="width:100%;border-width:0;">
 <tbody>
 <tr>
-<td style="width:30%;text-align:center;vertical-align:middle;border-width:0;padding:10px;"><img src="http://farm5.static.flickr.com/4086/5138692210_2f2974cca8_o_d.jpg" alt="" width="100%" /></td>
-<td style="width:70%;text-align:justify;vertical-align:top;padding:10px;" rowspan="2">Notice that the central stripe (in <span style="color:red;">red</span>) is a <a href="http://blancosilva.github.io/course-material/2010/11/02/mobius-bands-and-kleins-bottles.html" target="_self">Möbius band</a>.  Gluing the remaining two stripes through the common edge \( b \) properly, and identifying the other edges of these stripes accordingly, gives a disk.  We have thus proved that the removal of a (closed) disk from a projective space gives us a Möbius band.
-
-We may consider this to be the disk that we remove prior to the gluing of the two real projective planes. Therefore, a connected sum of these two surfaces is equivalent to the union of two Möbius bands, with no need to perform any identification on edges a priori.
-
-The statement is then proven, since we know that a given <a href="http://blancosilva.github.io/course-material/2010/11/02/mobius-bands-and-kleins-bottles.html" target="_self">Klein bottle can be split into a union of two Möbius bands</a>.</td>
-</tr>
-<tr>
-<td style="width:30%;text-align:center;vertical-align:middle;border-width:0;padding:10px;"><img src="http://farm2.static.flickr.com/1233/5138692258_3e355a2e11_o_d.jpg" alt="" width="100%" /></td>
+<td style="text-align:center;border-width:0;">$latex \widetilde{H}_q(Y) = \begin{cases} \mathbb{Z} &amp;\text{if }q=d-1-k \\ 0 &amp; \text{otherwise} \end{cases}$</td>
 </tr>
 </tbody>
 </table>
-
-<p><br /></p>
-
-<p>The following property is very useful to understand topological simplification to the description of complicated connected sums:</p>
-
-<blockquote>
-  <p><span>\( 3\mathbb{P} = \mathbb{T} \mathop{\#} \mathbb{P} \)<span>; that is, the connected sum of three real projective planes is homeomorphic to the connected sum of a torus with a real projective plane.</span></span></p>
-</blockquote>
-
-<p>Or in other words, <span>\( \mathbb{K} \mathop{\#} \mathbb{P} = \mathbb{T} \mathop{\#} \mathbb{P}. \)<span> The proof of this result is a nice exercise, and I urge the reader to enjoy finding it by manipulation of the proper polygons.</span></span></p>
-
-<p>We are at an excellent point to test our algebraic skills with the connected sum.  For example, consider the surface <span>\( M \)<span> constructed as the connected sum</span></span></p>
-
-<div>
-\begin{equation}
- M = \mathbb{P} \mathop{\#} \mathbb{T} \mathop{\#} \mathbb{P} \mathop{\#} \mathbb{S}_2 \mathop{\#} \mathbb{P} \mathop{\#} \mathbb{K}.
- \end{equation}
-</div>
-
-<p>The basic algebraic properties above allow us to give a simplified description of this surface:</p>
-
-<div>
-\begin{align}
- M &amp; = \mathbb{P}\mathop{\#}\mathbb{T}\mathop{\#}\mathbb{P}\mathop{\#}\mathbb{S}_2\mathop{\#}\mathbb{P}\mathop{\#}\mathbb{K} &amp;&amp; \text{(group in pairs)}\\  
- &amp; =  \big(\underbrace{\mathbb{P}\mathop{\#}\mathbb{T}}_{\mathbb{T}\mathop{\#}\mathbb{P}=3\mathbb{P}}\big)\mathop{\#}\big(\underbrace{\mathbb{P}\mathop{\#}\mathbb{S}_2}_{S\mathop{\#}\mathbb{S}_2=S}\big)\mathop{\#}\big(\mathbb{P}\mathop{\#}\underbrace{\mathbb{K}}_{2\mathbb{P}}\big) &amp;&amp; \text{(simplify each pair)}\\  
- &amp; = 3\mathbb{P}\mathop{\#}\mathbb{P}\mathop{\#}3\mathbb{P}=7\mathbb{P} 
- \end{align}
-</div>
+<p style="text-align:justify;">This "simple" application of the Mayer-Vietoris sequence, when considering the case $latex d=2$, $latex k=1$ and $latex X=C=\text{img}(\phi)$, gives us a proof of the Jordan Curve Theorem as corollary!</p>
+<p style="text-align:justify;">Let us trace back a few steps, and try to go over enough Homology Theory to understand what those results are about, and why the computation of the reduced integral homology group $latex \widetilde{H}_0(\mathbb{R}^2 \setminus C)$ casts any light on connected components and boundedness.</p>
 
 	</article>
-
-	
-	<div id="disqus_thread"></div>
-<script type="text/javascript">
-/* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
-var disqus_shortname = 'blancosilva'; // required: replace example with your forum shortname
-
-/* * * DON'T EDIT BELOW THIS LINE * * */
-(function() {
-	var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-	dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-	(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-})();
-</script>
-<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
 
 	
 
