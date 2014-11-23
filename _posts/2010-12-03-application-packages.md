@@ -18,7 +18,7 @@ Notice the structure of that letter: opening, a formal job request, short introd
 
 We start by gathering the proper logo online from the official pages of the University, and your signature.  For the latter, sign on a blank piece of paper with a bold pen (like a Sharpie), and take a photo of the signature:
 
-<table style="width:75%;border-width:0; margin-left:auto; margin-right:autoe">
+<table style="width:75%;border-width:0; margin-left:auto; margin-right:auto;">
 <tbody>
 <tr>
 <td style="text-align:center;vertical-align:middle;width:30%;border-width:0;"><img src="https://i0.wp.com/farm6.static.flickr.com/5243/5229261925_d2be08c802_o_d.gif" alt="" width="100%" /></td>
