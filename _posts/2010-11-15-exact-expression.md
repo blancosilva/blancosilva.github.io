@@ -6,7 +6,7 @@ category: post
 comments: true
 ---
 
-A nice problem to find a closed form for a rather challenging infinite series. 
+A nice problem to find a closed form for a rather challenging infinite series.  Can you get it without using a computer?
 
 <div class="well">
 	Find the exact expression for the infinite sum
