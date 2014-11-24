@@ -9,7 +9,7 @@
 ">
 	<meta name="author" content="">
 
-	<title>Triangulation of compact surfaces</title>
+	<title>What is the next number?</title>
 
 	<!-- Bootstrap core CSS -->
 	<link href="/css/bootstrap.css" rel="stylesheet">
@@ -467,51 +467,71 @@
 <br />
 <br />
 <br />
+<div class="container theme-showcase" role="main" style="font-size:16px; font-family: Helvetica; width:750px;">
 
-<div class="container theme-showcase" role="main" style="font-size: 16px; base-line-height: 1.5; font-family: Helvetica, Arial, sans-serif; spacing-unit: 30px; line-height: 20px; width:750px; text-align:justify;">
-
-	
-<!-- 	<header class="post-header">
-		<h1 class="post-title">Triangulation of compact surfaces</h1>
-	</header> -->
+	<header class="post-header">
+		<h1 class="post-title">What is the next number?</h1>
+		<p class="post-meta">Oct 15, 2010</p>
+	</header>
 
 	<article class="post-content">
-		<p>A triangulation of a compact surface <span>\( S \)</span> is a finite family of closed subsets <span>\( { T_1, T_2, \dotsc, T_m} \)</span> that cover <span>\( S, \)</span> and a family of homeomorphisms <span>\( \varphi_k: \mathcal{T} \to T_k \)</span>, where <span>\( \mathcal{T} \subset \mathbb{R}^2 \)</span> is a proper triangle in the plane.  We say that the sets <span>\( T_k \)</span> are triangles as well, and the images by <span>\( \varphi_k \)</span> of a vertex (resp. edge) of the triangle <span>\( \mathcal{T} \)</span> is also called a vertex (resp. edge).  We impose one condition: Given two different triangles <span>\( T_k \)</span> and <span>\( T_j, \)</span> their intersection must be either void, or a common vertex, or a common edge.</p>
+		<div class="well">
+	What is the next term in the following sequence?
 
-<blockquote>
-Since the (surface of a) tetrahedron is homeomorphic to the sphere \( \mathbb{S}_2, \) we may consider this as a valid triangulation for the latter.  This triangulation is formed basically by four triangles, four vertices and six edges.
+	\begin{equation}
+	\frac{8}{3}, \frac{87}{32}, \frac{878}{323}, \frac{2721}{1001} 
+	\end{equation}
+</div>
 
-<table style="width:75%; margin-left:auto; margin-right:auto;">
-<tr>
-<td style="text-align:center;vertical-align:middle;width:50%;"><img src="http://farm5.static.flickr.com/4001/5163063660_2c03604d19_o_d.jpg" width="100%" /></td>
-<td style="text-align:center;vertical-align:middle;width:50%;"><img src="http://farm5.static.flickr.com/4147/5162456723_b2980d9744_o_d.jpg" width="100%" /></td>
-</tr>
-</table>
-
-The following example shows a triangulation of a torus, performed on the representation of \( \mathbb{T} \) given by the quotient space of the square \( \square_2 \) by the proper identification in the border.  Note that in this representation, all of the vertices of the square are actually the same vertex, which we denote \( P_1. \)  We construct a triangulation by placing two more vertices on the horizontal borders, \( P_2, P_3, \) two more vertices in the vertical borders, \( P_4, P_5, \), four more vertices inside the square, \( P_6, P_7, P_8, P_9, \), and joining all of them with edges, as shown in the image below:
-<table style="width:75%; margin-left:auto; margin-right:auto;">
-<tr>
-<td style="text-align:center;vertical-align:top;width:40%;border-width:0;">
-<img src="http://farm5.static.flickr.com/4086/5161919213_ebf564f5f7_o_d.jpg" width="100%" /></td>
-<td style="text-align:center;vertical-align:middle;width:60%;border-width:0;">
-<img src="http://farm2.static.flickr.com/1202/5165763462_91305e8e7e_o_d.jpg" width="100%" /></td>
-</tr>
-</table>
-
-This gives the following triangles:
+<p>I particularly enjoy this kind of problem where a sequence of numbers <span>\( \big{ x_1, x_2, x_3, x_4, \dotsc \big} \)</span> is given, and you have to find the next one, or the general term <span>\( x_n \)</span>. Some easy examples follow:</p>
 
 <div>
-\begin{equation} \begin{array}{ccc}P_1P_2P_5 &amp; P_2P_5P_6 &amp; P_2P_3P_6\\P_3P_6P_7 &amp; P_1P_3P_6 &amp; P_1P_5P_7\\P_4P_5P_6 &amp; P_4P_6P_8 &amp; P_6P_7P_8\\P_7P_8P_9 &amp; P_4P_7P_9 &amp; P_4P_5P_7\\P_1P_2P_4 &amp; P_2P_4P_8 &amp; P_2P_3P_8\\P_3P_8P_9 &amp; P_3P_4P_9 &amp; P_1P_3P_4\end{array} 
-\end{equation}
+	\begin{gather}
+	\big\{ 1, 1, 1, 1, 1, 1, \dotsc \big\} \\
+	\big\{1, 2, 3, 4, 5, 6, \dotsc\big\} \\
+	\big\{1, 2, 4, 8, 16, 32, \dotsc\big\} \\
+	\big\{1, 1, 2, 3, 5, 8, \dotsc\big\} 
+	\end{gather}
 </div>
+
+<p>The last example of that series is the famous Fibonacci sequence: every number is the sum of the previous two.  The general term of this sequence has therefore the expression <span>\( x_n = x<em>{n-1} + x</em>{n-2}. \)</span></p>
+
+<p>Every now and then, one finds a particularly tough sequence, for which there is no apparent logic behind the choice of next term.  Fortunately, there are databases of sequences online that help you find your way.  Google or WolframAlpha are very useful in this sense.  I have included below the results of searching for a few terms of the Fibonacci sequence in both.</p>
+
+<p>The sequence of fractions at the beginning of the post is indeed a difficult one.  What can we say about these numbers, that would help us find the general term?  For instance, the floating point value of each number is <span>\( \big{ 2.\overline{6}, 2.71875, 2.71827, 2.71828 \big} \)</span>.  These are all very close to the value of the Euler number:</p>
+
+<div>
+	\begin{equation}
+	e \approx 2.7182818284590452353602874713526624977572470936999595749669 \dotsc
+	\end{equation}
+</div>
+
+<p>Another clue: the first fraction has a single digit both in the numerator and the denominator.  The second fraction has two digits, the third fraction three, and the fourth fraction, well, four.</p>
+
+<p>Something not so easy to realize is that the first number is actually, among all fractions with a single digit both in numerator and denominator, <strong>the one that approximates best to the Euler number</strong>.  The same property is shared by the other elements of the sequence:  For example, the third number is among the fractions with three digits both in numerator and denominator, the one that best approximates to the Euler number.</p>
+
+<p>I have given you enough information; the question that remains now is:</p>
+
+<blockquote>
+  <p>Among the fractions with five digits on the numerator and five digits in the denominator, which one offers the best approximation to the Euler number?</p>
 </blockquote>
 
-<p>Two important observations about triangulations of <strong>any</strong> compact surface:</p>
+<p>And the natural follow-up question:</p>
 
-<ul>
-  <li>Each edge belongs to exactly two triangles.  This is due to the fact that the surfaces have at every point, a neighborhood that is homeomorphic to an open ball.</li>
-  <li>Given a vertex <span>\( v \)</span> in a proper triangulation, it is possible to sort all the triangles that share than vertex, say clock or counterclockwise, in such a way that two consecutive triangles share a common edge. This is a direct consequence of the previous observation, and the fact that the union of all the triangles sharing a common vertex must be a connected set.</li>
-</ul>
+<blockquote>
+  <p>Is there a general method to calculate such fractions, other than looking at all the possibilities?</p>
+</blockquote>
+
+<h3 id="miscellaneous">Miscellaneous</h3>
+
+<div class="row">
+	<div class="col-lg-6">
+		<img src="https://i0.wp.com/farm5.static.flickr.com/4087/5084588104_66fc701a9f_o_d.jpg" alt="" width="100%" />
+	</div>
+	<div class="col-lg-6">
+		<img src="https://i0.wp.com/farm5.static.flickr.com/4132/5084588268_0a448b9d35_o_d.jpg" alt="" width="100%" />
+	</div>
+</div>
 
 	</article>
 
@@ -531,8 +551,8 @@ var disqus_shortname = 'blancosilva'; // required: replace example with your for
 <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
 
 	
-
 </div>
+
 
 <script type="text/javascript"
 src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
