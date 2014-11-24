@@ -39,7 +39,6 @@ This is a very strong statement!  It indicates, among other things, that **such 
 Incidentally, it will also help us find examples of constructions.  For example, for the seven-sided polygon, a choice of angles that works for me is <span>\\( a=0 \\)</span>, <span>\\( b=2 \\)</span> and <span>\\( c=1 \\)</span> (that is: no <span>\\( 60^\circ \\)</span> angles, two right angles, only one angle of <span>\\( 120^\circ \\)</span> and four angles of <span>\\( 150^\circ \\)</span>.
 For the case <span>\\( n=11 \\)</span>, there is only one possibility: <span>\\( a=0 \\)</span>, <span>\\( b=0 \\)</span>, <span>\\( c=1 \\)</span>; that is, only one angle of <span>\\( 120^\circ \\)</span>, and ten angles of <span>\\( 150^\circ \\)</span>.  Will this allow us to construct the 11-sided convex polygon?  The answer is **yes**, but to come up with an example, you may need to make use of some <span>\\( 180^\circ \\)</span> angles.
 I have included a list with a set of choices of angles, for polygons of sides <span>\\( n=7,8,9,10,11,12 \\)</span> for which I was able to find a valid construction:
-
 <table class="table table-bordered">
 <tbody>
 <tr>
