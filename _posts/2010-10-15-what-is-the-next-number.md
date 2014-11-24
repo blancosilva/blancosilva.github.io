@@ -7,10 +7,9 @@ comments: true
 image:
   teaser: https://i0.wp.com/farm5.static.flickr.com/4132/5084588268_0a448b9d35_o_d.jpg
 ---
-A classical problems with sequences:
 
 <div class="well">
-	What is the next term in the following sequence?
+A classical problem involving ordered lists of numbers.  What is the next term in the following sequence?
 
 	\begin{equation}
 	\frac{8}{3}, \frac{87}{32}, \frac{878}{323}, \frac{2721}{1001} 
