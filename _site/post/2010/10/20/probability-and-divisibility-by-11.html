@@ -9,7 +9,7 @@
 ">
 	<meta name="author" content="">
 
-	<title>Chess puzzles</title>
+	<title>Probability and Divisibility by 11</title>
 
 	<!-- Bootstrap core CSS -->
 	<link href="/css/bootstrap.css" rel="stylesheet">
@@ -474,131 +474,101 @@
 <div class="container theme-showcase" role="main" style="font-size:16px; font-family: Helvetica; width:750px;">
 
 	<header class="post-header">
-		<h1 class="post-title">Chess puzzles</h1>
-		<p class="post-meta">Nov 15, 2010</p>
+		<h1 class="post-title">Probability and Divisibility by 11</h1>
+		<p class="post-meta">Oct 20, 2010</p>
 	</header>
 
 	<article class="post-content">
-		<p>It is no surprise that the game of chess generates such an amount of mathematical puzzles.  The amount of riddles of combinatoric nature alone should have the readers busy for a long while, no matter what their chess strength is.  This is a selection of several puzzles designed with that purpose in mind.</p>
+		<div class="well">
+Seven different playing cards, with values from <em>ace</em> to <em>seven</em>, are shaken in a hat, then taken out singly and then placed in a row.  What is the probability that this seven-digit number is divisible by 11?
+</div>
 
-<h2 id="gyozo-nagys-expensive-armies">Gyozo Nagy’s “Expensive Armies”</h2>
-
-<blockquote>
-  <p>It is well known that exactly 8 queens can be placed on a chessboard without attacking each other; similarly 8 rooks, or 14 bishops, or 32 knights, or 16 kings.  But, what if we are allowed to mix pieces?</p>
-
-  <p>Let us assign values of \( \frac{1}{8} \) to a queen; \( \frac{1}{8} \) to a rook; \( \frac{1}{14} \) to a bishop; \( \frac{1}{32} \) to a knight; and \( \frac{1}{16} \) to a king.</p>
-
-  <ul>
-    <li>Construct the most expensive army on a chessboard, using any number of these pieces, so that no piece attacks another. (Here “<em>any number</em>” includes zero.)</li>
-    <li>Same thing, but disallowing kings (so our army consists only of queens, rooks, bishops and knights).</li>
-  </ul>
-
-  <p>Can these mixed armies achieve values greater than one?  In each case give the largest possible value (and a setup achieving it).</p>
-</blockquote>
-
-<p>For example, the setup on the board below has an army value of</p>
+<p>The probability above is computed by the usual quotient</p>
 
 <div>
 	\begin{equation}
-	\dfrac{1}{8} + 4\cdot\dfrac{1}{8}+0\cdot\dfrac{1}{14}+\dfrac{1}{32}+2\cdot\dfrac{1}{16} =\dfrac{25}{32} = 0.78125
+	P = \frac{\text{favorable cases}}{\text{possible cases}},
 	\end{equation}
 </div>
 
-<p style="text-align:center;"><img src="https://i0.wp.com/farm5.static.flickr.com/4110/5179749778_7ea6d796a6_o_d.jpg" alt="" width="50%" /></p>
+<p>where there are <span>\( 7! = 7 \cdot 6 \cdot 5 \cdot 4 \cdot 3 \cdot 2 \cdot 1 = 5040 \)</span> possible numbers of seven digits with each of the digits different to each other, and member of the set <span>\( { 1, 2, 3, 4, 5, 6, 7} \)</span>.  The number of favorable cases is given by how many of the possible cases are actually divisible by 11.  Finding those favorable cases by hand is an extremely tedious task, of course.  Can we find a more elegant—and faster—way to compute the number of favorable cases?  The trick is based on using the right test of divisibility by 11.</p>
 
-<p>I found this problem in <a href="http://domino.research.ibm.com/Comm/wwwr_ponder.nsf/challenges/August2003.html"> August 2003 “<strong>Ponder This</strong>” challenge</a> in the pages of <code>research.ibm.com</code>.  They offer a couple of solutions (included in the diagram below), and a note indicating that some puzzle solvers used <em>integer programming</em> to prove optimality of those.  Note that neither solution uses a single queen.</p>
+<p>An example of test of divisibility by 11 goes like this: <strong>Take the digits in a right-to-left  order, alternatively subtracting and adding.  Only if the final result is divisible by 11 will the original number be divisible by 11.</strong></p>
 
-<p style="text-align:center;"><img src="https://i0.wp.com/farm2.static.flickr.com/1257/5179790956_17a83f79fd_b_d.jpg" alt="" width="100%" /></p>
+<p>For example, for the 7-digit number <span>\( 1354267 \)</span>, the divisibility test gives <span>\( 7 - 6 + 2 - 4 + 5 - 3 + 1 = 2 \)</span>, which is not divisible by 11 (therefore, neither is <span>\( 135426 \)</span>).</p>
 
-<p>The diagram on the left shows an example for the first part of the puzzle, with an army of value</p>
-
-<div>
-	\begin{equation}
-	\dfrac{1}{8} + 6\cdot\dfrac{1}{14}+7\cdot\dfrac{1}{32}+9\cdot\dfrac{1}{16} =\dfrac{299}{224} = 1.3348
-	\end{equation}
-</div>
-
-<p>The diagram on the right shows an example for the second part of the puzzle, with an army of value</p>
-
-<div>
-	\begin{equation}
-	4\cdot\dfrac{1}{8} + 8\cdot\dfrac{1}{14}+5\cdot\dfrac{1}{32} =\dfrac{275}{224} = 1.2277
-	\end{equation}
-</div>
-
-<h2 id="martin-gardners-minimum-and-maximum-attacks">Martin Gardner’s “Minimum and Maximum Attacks”</h2>
-
-<p>I found these problems in Martin Gardner’s “<em>The Unexpected Hanging and Other Mathematical Diversions</em>.”  They were posed in the eighteen hundreds, and some variations are still open for optimal solution.</p>
-
-<blockquote>
-  <p><strong>The minimum-attack problem</strong>. Place the eight pieces of one color (king, queen, two bishops, two knights, two rooks) on the board so that the <em>smallest</em> possible number of squares are under attack.  A piece does not attack the square on which it rests, but of course it may attack squares occupied by other pieces.</p>
-
-  <p><strong>The maximum-attack problem—weak version</strong>.  Place the same eight pieces on the board so that the <em>largest</em> possible number of squares are under attack.  In the <em>weak version</em>, we do not force both bishops to be on opposite colors.</p>
-
-  <p><strong>The maximum-attack problem—strong version I</strong>.  As before, but forcing the two bishops to be on opposite colors.</p>
-
-  <p><strong>The maximum-attack problem—strong version II</strong>.  As in <em>strong version I</em>, but forcing the king into a non-attacked square!</p>
-</blockquote>
-
-<p style="text-align:center;"><img src="https://i0.wp.com/farm2.static.flickr.com/1415/5179294019_f7899d7343_b_d.jpg" alt="" width="100%" /></p>
-
-<h2 id="husserls-third-man-theme">Husserl’s “Third-man theme”</h2>
-
-<blockquote>
-  <p>Notice on the board below, the two sole occupants are the kings of opposite sides.  Add a third piece, creating a position that satisfies the following conditions:</p>
-
-  <ol>
-    <li>Neither king is in check.</li>
-    <li>The position can be reached in a legal game.</li>
-    <li>It can be proved that neither side has a legal play</li>
-  </ol>
-</blockquote>
-
-<p style="text-align:center;"><img src="https://i0.wp.com/farm5.static.flickr.com/4132/5179928440_d33204db04_o_d.jpg" alt="" width="50%" /></p>
-
-<p>Note the subtlety of the puzzle: we are searching not only for a double stalemate, but one in which neither side can move!  The solution happens to be unique.</p>
-
-<h2 id="miscellaneous">Miscellaneous</h2>
-
-<p>All the diagrams in this page are generated in <span>\( \LaTeX \)</span> with the package <code>skak</code>, by using the command <code>\fenboard</code> and the <a href="http://en.wikipedia.org/wiki/Forsyth%E2%80%93Edwards_Notation">Forsyth–Edwards notation</a>.  For example, the first diagram above has the (very simple) code</p>
-
-<div class="highlight"><pre><code class="language-latex" data-lang="latex"><span class="lineno">1</span> <span class="k">\newgame</span>
-<span class="lineno">2</span> <span class="k">\fenboard</span><span class="nb">{</span>4Q3/R7/3R4/6N1/7R/1K6/5K2/2R5 w - - 0 0<span class="nb">}</span>
-<span class="lineno">3</span> <span class="k">\showboard</span></code></pre></div>
-
-<p>The string in the command <code>\fenboard</code> is to be interpreted as follows:</p>
+<p>A few useful facts:</p>
 
 <ul>
-  <li>8-th row: start with four empty squares, then place a white queen (<code>Q</code>), followed by three empty squares.</li>
-  <li>7-th row: a white rook (<code>R</code>), followed by seven empty squares.</li>
-  <li>6-th row: three empty squares, one white rook, four empty squares.</li>
-  <li>and so on, until the first row, that reads: two empty squares, then a white rook followed by five empty squares.</li>
-  <li>The remaining commands (which are optional) indicate that white is to move (<code>w</code>), that there are no castling options for neither side (<code>-</code>), no <em>en passant</em> squares (<code>-</code>) no half-moves since the last capture (<code>0</code>) and no move number (<code>0</code>).</li>
+  <li>Let us represent our particular seven-digit numbers by <span>\( ABCDEFG \)</span>, where each letter goes for a different digit of the set <span>\( { 1, 2, 3, 4, 5, 6, 7} \)</span>.</li>
+  <li>The test of divisibility by 11 on the previous number calls for the computation of
+    <div>
+  	\begin{equation}
+  	G - F + E - D + C - B + A = (A + C + E + G) - (B + D + F).
+  	\end{equation}
+  </div>
+  </li>
+  <li>Notice that <span>\( 1 + 2 + 3 + 4 + 5 + 6 + 7 = 28 \)</span>, an even number.</li>
+  <li>Remember the rules of addition of even and odd numbers:
+    <div>
+  	\begin{equation}
+  	\begin{array}{rl} even + even &amp;= even \\ odd + odd &amp;= even \\ even + odd &amp;= odd \end{array}
+  	\end{equation}
+  </div>
+  </li>
+  <li>The latter two facts above imply that <span>\( A + C + E + G \)</span> and <span>\( B + D + F \)</span> both have the same parity (they are either both even or both odd at the same time).</li>
+  <li>As a consequence of the last fact, the subtraction <span>\( (A + C + E + G) - (B + D + F) \)</span> has to be an even number too!</li>
+  <li>The largest possible value for the test of divisibility by 11 in our numbers, <span>\( (A + C + E + G) - (B + D + F) \)</span>, happens for numbers where <span>\( A \)</span>, <span>\( C \)</span>, <span>\( E \)</span> and <span>\( G \)</span> are largest; that is, they are the permutations of the four digits <span>\( { 4, 5, 6, 7 } \)</span>. This value is, of course, <span>\( (7 + 6 + 5 + 4) -( 1+ 2 +3) = 22 -6 =16. \)</span></li>
+  <li>The smallest possible value for the test of divisibility by 11 in our numbers happens for numbers where <span>\( B \)</span>, <span>\( D \)</span> and <span>\( F \)</span> are largest; that is, they are permutations of the three digits <span>\( { 5, 6, 7} \)</span>.  This value is, of course, <span>\( (1 + 2 + 3 + 4) - (5 + 6 + 7) = 10-18 = -8 \)</span>.</li>
+  <li>In our case, there are then only thirteen different possible tests of divisibility by 11: <span>\( { -8, -6, -4, -2, 0 , 2, 4, 6, 8, 10, 12, 14, 16} \)</span>.  Of these, only one is divisible by 11: the “zero”.</li>
 </ul>
 
-<p>The <code>skak</code> package is originally designed to create both an annotated game and its corresponding diagram.  For example, the following annotation of a variant of the Ruy Lopez opening first moves is generated with the simple list of commands included:</p>
+<p>You should have all the needed information to finish this problem.  How many numbers of the form <span>\( ABCDEFG \)</span> give us a “zero” when we perform the divisibility-by-11 test?  From here, it should not be too hard to compute the probability.</p>
 
-<table style="width:100%;border-width:0;">
-<tbody>
-<tr>
-<td style="width:60%;vertical-align:middle;border-width:0;"><img src="https://farm5.static.flickr.com/4124/5179450691_3aafcb88d2_o_d.jpg" alt="" width="100%" /></td>
-<td style="width:40%;vertical-align:middle;border-width:0;">
+<p>Let <span>\( x = A + C + E + G \)</span>, and <span>\( y = B + D + F \)</span>.  We are looking for <span>\( x \)</span> and <span>\( y \)</span> satisfying the linear system:</p>
 
-<div class="highlight"><pre><code class="language-latex" data-lang="latex"><span class="lineno"> 1</span> <span class="k">\newgame</span>
-<span class="lineno"> 2</span> <span class="k">\mainline</span><span class="nb">{</span>1.e4 e5 2.Nf3 Nc6 3.Bb5<span class="nb">}</span>
-<span class="lineno"> 3</span> <span class="k">\mainline</span><span class="nb">{</span>3...a6<span class="nb">}</span>
-<span class="lineno"> 4</span> (rarely used these days,
-<span class="lineno"> 5</span> <span class="k">\variation</span><span class="nb">{</span>3...Nf6<span class="nb">}</span> is more in
-<span class="lineno"> 6</span> fashion since blah blah)
-<span class="lineno"> 7</span> 
-<span class="lineno"> 8</span> <span class="k">\mainline</span><span class="nb">{</span>4.Ba4<span class="nb">}</span>
-<span class="lineno"> 9</span> <span class="k">\vspace</span><span class="nb">{</span>0.25cm<span class="nb">}</span>
-<span class="lineno">10</span> 
-<span class="lineno">11</span> <span class="k">\showboard</span></code></pre></div>
-</td>
-</tr>
-</tbody>
-</table>
+<div>
+	\begin{equation}
+	\begin{cases} x + y &amp;= 28 \\ x - y &amp;=0 \end{cases}
+	\end{equation}
+</div>
+
+<p>The solution gives <span>\( A + C + E + G = B + D + F = 14 \)</span>.  We are very close to the punch line.</p>
+
+<p>For example, all the possible triples <span>\( (B, D, F) \)</span> satisfying <span>\( B+D+F = 14 \)</span> are given below:</p>
+
+<div>
+	\begin{equation}
+	\begin{array}{cccc} \{ 1, 6, 7 \} &amp; \{ 2,5,7\} &amp; \{ 3,4,7\} &amp; \{3,5,6 \} \end{array}
+	\end{equation}
+</div>
+
+<p>Let us work with one of those triples, say <span>\( { 1, 6, 7} \)</span>.  The possible seven-digit numbers that we can come up with for this choice of <span>\( { B, D, F} \)</span> are <span>\( 3! = 3 \cdot 2 \cdot 1 = 6 \)</span>:</p>
+
+<div>
+	\begin{equation}
+	\begin{array}{|c|c|c|} \hline B &amp; D &amp; F \\ \hline  1 &amp; 6 &amp; 7 \\ \hline 1 &amp; 7 &amp; 6 \\ \hline 6 &amp; 1 &amp; 7 \\ \hline 6 &amp; 7 &amp; 1 \\ \hline 7 &amp; 1 &amp; 6 \\ \hline 7 &amp; 6 &amp; 1 \\ \hline \end{array}
+	\end{equation}
+</div>
+
+<p>We still need to fill in the values for <span>\( { A, C, E, G} \)</span>.  In the case we are exploring, we notice that there are <span>\( 4! = 4 \cdot 3 \cdot 2 \cdot 1 = 24 \)</span> possibilities for each of the 6 choices above.  For instance, if <span>\( B=1 \)</span>, <span>\( D=6 \)</span> and <span>\( F=7 \)</span>, we would have the numbers</p>
+
+<div>
+	\begin{equation}
+	\begin{array}{|c|c|c|c|c|c|c|} \hline A &amp; \boldsymbol{B} &amp; C &amp; \boldsymbol{D} &amp; E &amp; \boldsymbol{F} &amp; G \\
+	\hline 2 &amp; \boldsymbol{1} &amp; 3 &amp; \boldsymbol{6} &amp; 4 &amp; \boldsymbol{7} &amp; 5 \\
+	\hline 2 &amp; \boldsymbol{1} &amp; 3 &amp; \boldsymbol{6} &amp; 5 &amp; \boldsymbol{7} &amp; 4 \\
+	\hline 2 &amp; \boldsymbol{1} &amp; 4 &amp; \boldsymbol{6} &amp; 3 &amp; \boldsymbol{7} &amp; 5 \\
+	\hline 2 &amp; \boldsymbol{1} &amp; 4 &amp; \boldsymbol{6} &amp; 5 &amp; \boldsymbol{7} &amp; 3 \\
+	\hline 2 &amp; \boldsymbol{1} &amp; 5 &amp; \boldsymbol{6} &amp; 3 &amp; \boldsymbol{7} &amp; 5 \\
+	\hline 2 &amp; \boldsymbol{1} &amp; 5 &amp; \boldsymbol{6} &amp; 4 &amp; \boldsymbol{7} &amp; 3 \\
+	\hline \vdots &amp; \boldsymbol{1} &amp; \vdots &amp; \boldsymbol{6} &amp; \vdots &amp; \boldsymbol{7} &amp; \vdots \\
+	\hline 5 &amp; \boldsymbol{1} &amp; 4 &amp; \boldsymbol{6} &amp; 3 &amp; \boldsymbol{7} &amp; 2\\
+	\hline \end{array}
+	\end{equation}
+</div>
+
+<p>So, what is the probability we are looking for?</p>
 
 	</article>
 
