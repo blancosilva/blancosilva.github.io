@@ -52,7 +52,7 @@ But success of this enterprise starts, obviously, by collecting enough business 
 
 			<div class="progress">
 				<div class="progress-bar progress-bar-warning" style="width: 20%"><span class="sr-only">10000</span></div>
-				<div class="progress-bar progress-bar-warning" style="width: 5%"><span>10455</span></div>
+				<div class="progress-bar progress-bar-warning" style="width: 5%"><span>10530</span></div>
 			<!-- <div class="progress-bar progress-bar-warning" style="width: 5%"><span class="sr-only">Level-2</span></div> -->
 		</div>
 	</li>
@@ -102,6 +102,7 @@ But success of this enterprise starts, obviously, by collecting enough business 
 			<li class="list-group-item">Lakesha Campbell</li>
 			<li class="list-group-item">Toyeka Campbell</li>
 			<li class="list-group-item">Emily Carlton</li>
+			<li class="list-group-item">R. Lawson Cheek, III</li>
 			<li class="list-group-item">Cassey Corcoran</li>
 			<li class="list-group-item">Eva Czabarka <span class="badge">200</span></li>
 			<li class="list-group-item">Darla Moore School of Business <span class="badge">1450</span></li>
@@ -127,7 +128,7 @@ But success of this enterprise starts, obviously, by collecting enough business 
 			<li class="list-group-item">Carolyn S. Jones</li>
 			<li class="list-group-item">Kelly Kavanaugh</li>
 			<li class="list-group-item">Lael M. Kenney <span class="badge">725</span></li>
-			<li class="list-group-item">Tracy L LaPointe <span class="badge">490</span></li>
+			<li class="list-group-item">Tracy L. LaPointe <span class="badge">490</span></li>
 			<li class="list-group-item">Brian LeDuc</li>
 			<li class="list-group-item">Sarah Livingston</li>
 			<li class="list-group-item">Lauren E. Lowe</li>
