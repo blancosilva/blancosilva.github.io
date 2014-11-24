@@ -23,7 +23,7 @@ image:
 Before we go ahead and construct the polygons, let us try to find as much information as possible:
 
 * The interior angles of a polygon with <span>\\( n \\)</span> sides add up to <span>\\( 180n - 360 \\)</span>.
-* By construction, all the convex angles at the exterior vertices of the planar graphs can only be one of the following: <span>\\( 60^\circ, 90^\circ, 120^\circ \\)</span>, and <span>\\( 150^\circ \\)</span>. Although technically possible, we should not count the flat angle <span>\\( 180^\circ \\)</span> as a possibility, since the occurrence of such angle indicates the presence of an "extended edge."If we have <span>\\( a \\)</span>, <span>\\( b \\)</span> and <span>\\( c \\)</span> interior angles of respectively <span>\\( 60^\circ \\)</span>, <span>\\( 90^\circ \\)</span> and <span>\\( 120^\circ \\)</span> at the exterior vertices of the polygon, and of course <span>\\( n-a-b-c \\)</span> interior angles of <span>\\( 150^\circ \\)</span> at the same vertices, then it must be
+* By construction, all the convex angles at the exterior vertices of the planar graphs can only be one of the following: <span>\\( 60^\circ, 90^\circ, 120^\circ \\)</span>, and <span>\\( 150^\circ \\)</span>. Although technically possible, we should not count the flat angle <span>\\( 180^\circ \\)</span>, since the occurrence of such angle indicates the presence of an "extended edge."If we have <span>\\( a \\)</span>, <span>\\( b \\)</span> and <span>\\( c \\)</span> interior angles of respectively <span>\\( 60^\circ \\)</span>, <span>\\( 90^\circ \\)</span> and <span>\\( 120^\circ \\)</span> at the exterior vertices of the polygon, and of course <span>\\( n-a-b-c \\)</span> interior angles of <span>\\( 150^\circ \\)</span> at the same vertices, then it must be
     <div>
     	\begin{equation}
     	60a + 90b + 120c + 150(n-a-b-c) = 180n - 360,
@@ -40,14 +40,14 @@ Incidentally, it will also help us find examples of constructions.  For example,
 For the case <span>\\( n=11 \\)</span>, there is only one possibility: <span>\\( a=0 \\)</span>, <span>\\( b=0 \\)</span>, <span>\\( c=1 \\)</span>; that is, only one angle of <span>\\( 120^\circ \\)</span>, and ten angles of <span>\\( 150^\circ \\)</span>.  Will this allow us to construct the 11-sided convex polygon?  The answer is **yes**, but to come up with an example, you may need to make use of some <span>\\( 180^\circ \\)</span> angles.
 I have included a list with a set of choices of angles, for polygons of sides <span>\\( n=7,8,9,10,11,12 \\)</span> for which I was able to find a valid construction:
 
-<table style="margin-left:auto;margin-right:auto;width:75%;border-width:0;">
+<table class="table table-bordered">
 <tbody>
 <tr>
-<td style="text-align:center;vertical-align:middle;border-width:2px;"><span>\\( n \\)</span></td>
-<td style="text-align:center;vertical-align:middle;border-width:2px;"><span>\\( 60^\circ \\)</span>–angles</td>
-<td style="text-align:center;vertical-align:middle;border-width:2px;"><span>\\( 90^\circ \\)</span>–angles</td>
-<td style="text-align:center;vertical-align:middle;border-width:2px;"><span>\\( 120^\circ \\)</span>–angles</td>
-<td style="text-align:center;vertical-align:middle;border-width:2px;"><span>\\( 150^\circ \\)</span>–angles</td>
+<td>\( n \)</td>
+<td>\( 60^\circ \)-angles</td>
+<td>\( 90^\circ \)-angles</td>
+<td>\( 120^\circ \)-angles</td>
+<td>\( 150^\circ \)-angles</td>
 <td style="text-align:center;vertical-align:middle;width:50%;border-width:2px;">Planar graph</td>
 </tr>
 <tr>
