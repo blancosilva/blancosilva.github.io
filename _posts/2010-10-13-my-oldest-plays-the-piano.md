@@ -8,7 +8,7 @@ image:
   teaser: https://farm9.staticflickr.com/8678/15682120759_257ce44a5c_n_d.jpg
 ---
 <div class="well">
-	<p>Two old friends, Ernie and Bernie, bump into each other in the street.  It was more than twenty years since their last meeting, so they decide to spend some time together in a nearby bar, chatting about their lives.  At some point, Bernie asks the inevitable: "So, you got married?"</p>
+	<p>Two old friends, Ernie and Bernie, bump into each other in the street.  It was more than twenty years since they last saw each other, so they decide to spend some time together in a nearby coffee shop, catching up.  At some point, Bernie asks the inevitable: "So, you got married?"</p>
 
 	<p>"Well, yes!"—claims enthusiastically Ernie. "And I have three beautiful children!"</p>
 
@@ -18,7 +18,7 @@ image:
 
 	<p>"Whoa!  That doesn't help me much, does it?"—complains Bernie. "Couldn't you give me another clue?"</p>
 
-	<p>"Sure, a second clue: <strong>If you multiply their ages together, the result is the same as how much we payed for these beers"</strong></p>
+	<p>"Sure, a second clue: <strong>If you multiply their ages together, the result is the same as how much we payed for coffee."</strong></p>
 
 	<p>Bernie scratches his head for a minute, and cannot figure it out yet… Before he complains again, Ernie realizes the mistake, apologizes, and offers Bernie the last clue: "<strong>My oldest plays the piano!"</strong></p>
 
