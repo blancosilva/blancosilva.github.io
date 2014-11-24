@@ -9,7 +9,7 @@
 ">
 	<meta name="author" content="">
 
-	<title>The ultimate metapuzzle</title>
+	<title>My oldest plays the piano!</title>
 
 	<!-- Bootstrap core CSS -->
 	<link href="/css/bootstrap.css" rel="stylesheet">
@@ -466,34 +466,47 @@
 <div class="container theme-showcase" role="main" style="font-size:16px; font-family: Helvetica; width:750px;">
 
 	<header class="post-header">
-		<h1 class="post-title">The ultimate metapuzzle</h1>
-		<p class="post-meta">Aug 23, 2011</p>
+		<h1 class="post-title">My oldest plays the piano!</h1>
+		<p class="post-meta">Oct 13, 2010</p>
 	</header>
 
 	<article class="post-content">
-		<p>If you have been following this blog for a while, you already know of my fascination with <a href="http://blancosilva.wordpress.com/puzzles/metapuzzles/">metapuzzles</a>. I have recently found one of the most beautiful examples of these riddles in this August’s edition of <a href="http://domino.research.ibm.com/Comm/wwwr_ponder.nsf/pages/index.html">Ponder This</a>, and following the advice of Travis, I will leave it completely open for the readers to give it a go. Enjoy!</p>
+		<div class="well">
+Two old friends, Ernie and Bernie, bump into each other in the street.  It was more than twenty years since their last meeting, so they decide to spend some time together in a nearby bar, chatting about their lives.  At some point, Bernie asks the inevitable: "So, you got married?"
 
-<div class="well">
-<p>A mathematician wanted to teach his children the value of cooperation, so he told them the following:</p>
+"Well, yes!"—claims enthusiastically Ernie. "And I have three beautiful children!"
 
-<p>&laquo;I chose a secret triangle for which the lengths of its sides are all integers.</p>
+"That's great, Ernie! And how old are your kids?"—enquired Bernie.
 
-<p>To you my dear son Charlie, I am giving the triangle's perimeter. And to you, my beloved daughter Ariella, I am giving its area.</p>
+"I know you are a sucker for puzzles, Bernie, so I will let you figure it out through a few clues.  You should not have any trouble getting it.  First clue: <strong>If you add the ages of my kids, the result is thirteen</strong>"
 
-<p>Since you are both such talented mathematicians, I'm sure that together you can find the lengths of the triangle's sides.&raquo;</p>
+"Whoa!  That doesn't help me much, does it?"—complains Bernie. "Couldn't you give me another clue?"
 
-<p>Instead of working together, Charlie and Ariella had the following conversation after their father gave each of them the information he promised.</p>
+"Sure, a second clue: <strong>If you multiply their ages together, the result is the same as how much we payed for these beers"</strong>
 
-<p><strong>Charlie:</strong> "Alas, I cannot deduce the lengths of the sides from my knowledge of the perimeter."</p>
+Bernie scratches his head for a minute, and cannot figure it out yet… Before he complains again, Ernie realizes the mistake, apologizes, and offers Bernie the last clue: "<strong>My oldest plays the piano!"</strong>
 
-<p><strong>Ariella:</strong> "I do not know the perimeter, but I cannot deduce the lengths of the sides from just knowing the area. Maybe our father is right and we should cooperate after all."</p>
-
-<p><strong>Charlie:</strong> "Oh no, no need. Now I know the lengths of the sides."</p>
-
-<p><strong>Ariella:</strong> "Well, now I know them as well."</p>
+Bernie had no trouble finding the ages of the children this time.
 </div>
 
-<p>Find the lengths of the triangle’s sides.</p>
+<p>These are all the possible combinations of positive integers <span>\( x \)</span>, <span>\( y \)</span>, <span>\( z \)</span> that add up to thirteen, together with their product:</p>
+
+<div class="row">
+<div class="col-lg-6">
+	\begin{equation}
+	\begin{array}{|c|c|c||r|} \hline x&amp;y&amp;z&amp; x\cdot y \cdot z \\ \hline 1&amp;1&amp;11&amp;11 \\ \hline 1&amp;2&amp;10&amp;20 \\ \hline 1&amp;3&amp;9&amp;27 \\ \hline 1&amp;4&amp;8&amp;32 \\ \hline 1&amp;5&amp;7&amp;35 \\ \hline 1&amp;6&amp;6&amp;\mathbf{36} \\ \hline 2&amp;2&amp;9&amp;\mathbf{36} \\ \hline \end{array}
+	\end{equation}
+</div>
+<div class="col-lg-6">
+	\begin{equation}
+	\begin{array}{|c|c|c||r|} \hline x&amp;y&amp;z&amp; x\cdot y \cdot z \\ \hline 2&amp;3&amp;8&amp;48 \\ \hline 2&amp;4&amp;7&amp;56 \\ \hline 2&amp;5&amp;6&amp;60 \\ \hline 3&amp;3&amp;7&amp;63 \\ \hline 3&amp;4&amp;6&amp;72 \\ \hline 3&amp;5&amp;5&amp;75 \\ \hline 4&amp;4&amp;5&amp;80 \\ \hline \end{array}
+	\end{equation}
+</div>
+
+Notice that there are only two combinations that offer the same product: <span>\\( (x,y,z) = (1,6,6) \\)</span> and <span>\\( (x,y,z) = (2,2,9) \\)</span>.  The fact that Bernie did not know the answer to the riddle after the second clue, indicates that none of the other possibilities is right.  He thus needs a third clue to decide between the two choices above.
+
+I would not think of stealing the pleasure to solve the puzzle to my reader.  What are the ages of Ernie's children?
+</div>
 
 	</article>
 
