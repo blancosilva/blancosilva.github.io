@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width initial-scale=1">
+	<meta name="description" content="Useless math is useful math. It can be used to generate more useless math.
+">
+	<meta name="author" content="">
+
+	<title>Convex triangle-square polygons</title>
+
+	<!-- Bootstrap core CSS -->
+	<link href="/css/bootstrap.css" rel="stylesheet">
+	<!-- Bootstrap theme -->
+	<link href="/css/bootstrap-theme.css" rel="stylesheet">
+
+	<!-- Custom styles for this template -->
+	<link href="/css/blog.css" rel="stylesheet">
+	<link rel="stylesheet" href="/css/pygments.css">
+</head>
+
+<body role="document">
+
+	<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+	<div class="container">
+		<div class="navbar-header">
+			<a class="navbar-brand" href="#">
+				<img alt="Brand" src="https://farm6.staticflickr.com/5131/5393012839_cf3ccae561_o_d.png" style="width:25px;">
+			</a>
+			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+				<span class="sr-only">Toggle navigation</span>
+			</button>
+			<a class="navbar-brand" href="/">Francisco Blanco-Silva</a>
+		</div>
+		<div id="navbar" class="navbar-collapse collapse">
+			<ul class="nav navbar-nav">
+				<li class="active"><a href="/">Home</a></li>
+				
+				
+				<li><a class="page-link" href="/about/">About me</a></li>
+				
+				
+				
+				<li><a class="page-link" href="/books/">Books</a></li>
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				<li><a class="page-link" href="/presentations.html">Presentations</a></li>
+				
+				
+				
+				
+				
+				
+			</ul> <!-- nav navbar-nav -->
+			<ul class="nav navbar-nav navbar-right">
+				<li class="dropdown">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown">Teaching <span class="caret"></span></a>
+					<ul class="dropdown-menu" role="menu">
+						<li class="dropdown-header">Current | Most recent classes</li>
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						<li><a href="/course/2014/08/19/ma141-fall-2014.html">MA141—Fall 2014</a></li>
+						
+						
+						
+						<li><a href="/course/2014/08/18/math-122-fall-2014.html">MA122—Fall 2014</a></li>
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						<li><a href="/course/2014/01/11/ma-241-spring-2014.html">MA241—Spring 2014</a></li>
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						<li><a href="/course/2013/08/22/ma242-fall-2013.html">MA242—Fall 2013</a></li>
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						<li><a href="/course/2012/06/26/ma142-summer-ii-2012.html">MA142—Summer II 2012</a></li>
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						<li class="divider"></li>
+						<li class="dropdown-header">Selected Class Material</li>
+						
+						
+						<li><a href="/teaching/2014/11/08/past-classes.html">Past Sections of Undergraduate Calculus</a></li>
+						
+						
+						
+						<li><a href="/teaching/2014/11/08/Mathematical-Imaging.html">Mathematical Imaging</a></li>
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						<li><a href="/teaching/2010/10/27/an-introduction-to-algebraic-topology.html">An Introduction to Algebraic Topology</a></li>
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						<li><a href="/teaching/2010/09/24/distributions.html">Introduction to the Theory of Distributions</a></li>
+						
+						
+						
+						
+						
+						<li><a href="/teaching/2010/07/08/ma598r.html">MA598R—Summer 2007</a></li>
+						
+						
+						
+						
+						
+						
+						
+						
+					</ul>
+				</li> <!-- dropdown -->
+			</ul>
+		</div><!--/.nav-collapse -->
+	</div>
+</nav>
+
+
+
+	<div class="page-content">
+		<div class="wrapper">
+			<br />
+<br />
+<br />
+<br />
+<div class="container theme-showcase" role="main" style="font-size:16px; font-family: Helvetica; width:750px;">
+
+	<header class="post-header">
+		<h1 class="post-title">Convex triangle-square polygons</h1>
+		<p class="post-meta">Oct 20, 2010</p>
+	</header>
+
+	<article class="post-content">
+		<div class="well">
+	<p>
+		Consider an infinite supply of cardboard equilateral triangles and squares, all of them with side length of one inch.  With these pieces, we desire to form convex polygons of different sides.  It is trivial to come up with this kind of polygons for sides 3, 4, 5 and 6.
+	</p>
+	<ul>
+		<li>Construct examples of these convex polygons for sides 7, 8, 9 and 10.</li>
+		<li>Can you construct an 11-side convex polygon with these pieces?</li>
+		<li>What would be the convex polygon with the largest number of sides that you could construct with these pieces?</li>
+	</ul>
+</div>
+
+<p style="text-align:center;"><img src="https://i0.wp.com/farm2.static.flickr.com/1316/5101252276_83447d2752_o_d.jpg" alt="" style="width:75%" /></p>
+
+Before we go ahead and construct the polygons, let us try to find as much information as possible:
+
+* The interior angles of a polygon with <span>\\( n \\)</span> sides add up to <span>\\( 180n - 360 \\)</span>.
+* By construction, all the convex angles at the exterior vertices of the planar graphs can only be one of the following: <span>\\( 60^\circ, 90^\circ, 120^\circ \\)</span>, and <span>\\( 150^\circ \\)</span>. Although technically possible, we should not count the flat angle <span>\\( 180^\circ \\)</span> as a possibility, since the occurrence of such angle indicates the presence of an "extended edge."If we have <span>\\( a \\)</span>, <span>\\( b \\)</span> and <span>\\( c \\)</span> interior angles of respectively <span>\\( 60^\circ \\)</span>, <span>\\( 90^\circ \\)</span> and <span>\\( 120^\circ \\)</span> at the exterior vertices of the polygon, and of course <span>\\( n-a-b-c \\)</span> interior angles of <span>\\( 150^\circ \\)</span> at the same vertices, then it must be
+    <div>
+    	\begin{equation}
+    	60a + 90b + 120c + 150(n-a-b-c) = 180n - 360,
+    	\end{equation}
+    </div>
+which reduces to
+    <div>
+    	\begin{equation}
+    	3a + 2b + c + n = 12.
+    	\end{equation}
+    </div>
+This is a very strong statement!  It indicates, among other things, that **such polygons cannot have more than 12 sides!** This answers the third question of our puzzle.
+Incidentally, it will also help us find examples of constructions.  For example, for the seven-sided polygon, a choice of angles that works for me is <span>\\( a=0 \\)</span>, <span>\\( b=2 \\)</span> and <span>\\( c=1 \\)</span> (that is: no <span>\\( 60^\circ \\)</span> angles, two right angles, only one angle of <span>\\( 120^\circ \\)</span> and four angles of <span>\\( 150^\circ \\)</span>.
+For the case <span>\\( n=11 \\)</span>, there is only one possibility: <span>\\( a=0 \\)</span>, <span>\\( b=0 \\)</span>, <span>\\( c=1 \\)</span>; that is, only one angle of <span>\\( 120^\circ \\)</span>, and ten angles of <span>\\( 150^\circ \\)</span>.  Will this allow us to construct the 11-sided convex polygon?  The answer is **yes**, but to come up with an example, you may need to make use of some <span>\\( 180^\circ \\)</span> angles.
+I have included a list with a set of choices of angles, for polygons of sides <span>\\( n=7,8,9,10,11,12 \\)</span> for which I was able to find a valid construction:
+
+<table style="margin-left:auto;margin-right:auto;width:75%;border-width:0;">
+<tbody>
+<tr>
+<td style="text-align:center;vertical-align:middle;border-width:2px;"><span>\\( n \\)</span></td>
+<td style="text-align:center;vertical-align:middle;border-width:2px;"><span>\\( 60^\circ \\)</span>–angles</td>
+<td style="text-align:center;vertical-align:middle;border-width:2px;"><span>\\( 90^\circ \\)</span>–angles</td>
+<td style="text-align:center;vertical-align:middle;border-width:2px;"><span>\\( 120^\circ \\)</span>–angles</td>
+<td style="text-align:center;vertical-align:middle;border-width:2px;"><span>\\( 150^\circ \\)</span>–angles</td>
+<td style="text-align:center;vertical-align:middle;width:50%;border-width:2px;">Planar graph</td>
+</tr>
+<tr>
+<td style="text-align:center;vertical-align:middle;border-width:1px;">7</td>
+<td style="text-align:center;vertical-align:middle;border-width:1px;">0</td>
+<td style="text-align:center;vertical-align:middle;border-width:1px;">2</td>
+<td style="text-align:center;vertical-align:middle;border-width:1px;">1</td>
+<td style="text-align:center;vertical-align:middle;border-width:1px;">4</td>
+<td style="text-align:center;vertical-align:middle;width:50%;border-width:1px;"><img src="https://i0.wp.com/farm2.static.flickr.com/1436/5102420388_b99423099e_o_d.jpg" alt="" /></td>
+</tr>
+<tr>
+<td style="text-align:center;vertical-align:middle;border-width:1px;">8</td>
+<td style="text-align:center;vertical-align:middle;border-width:1px;">0</td>
+<td style="text-align:center;vertical-align:middle;border-width:1px;">0</td>
+<td style="text-align:center;vertical-align:middle;border-width:1px;">4</td>
+<td style="text-align:center;vertical-align:middle;border-width:1px;">4</td>
+<td style="text-align:center;vertical-align:middle;width:50%;border-width:1px;"></td>
+</tr>
+<tr>
+<td style="text-align:center;vertical-align:middle;border-width:1px;">9</td>
+<td style="text-align:center;vertical-align:middle;border-width:1px;">0</td>
+<td style="text-align:center;vertical-align:middle;border-width:1px;">0</td>
+<td style="text-align:center;vertical-align:middle;border-width:1px;">3</td>
+<td style="text-align:center;vertical-align:middle;border-width:1px;">6</td>
+<td style="text-align:center;vertical-align:middle;width:50%;border-width:1px;"></td>
+</tr>
+<tr>
+<td style="text-align:center;vertical-align:middle;border-width:1px;">10</td>
+<td style="text-align:center;vertical-align:middle;border-width:1px;">0</td>
+<td style="text-align:center;vertical-align:middle;border-width:1px;">0</td>
+<td style="text-align:center;vertical-align:middle;border-width:1px;">2</td>
+<td style="text-align:center;vertical-align:middle;border-width:1px;">8</td>
+<td style="text-align:center;vertical-align:middle;width:50%;border-width:1px;"></td>
+</tr>
+<tr>
+<td style="text-align:center;vertical-align:middle;border-width:1px;">11</td>
+<td style="text-align:center;vertical-align:middle;border-width:1px;">0</td>
+<td style="text-align:center;vertical-align:middle;border-width:1px;">0</td>
+<td style="text-align:center;vertical-align:middle;border-width:1px;">1</td>
+<td style="text-align:center;vertical-align:middle;border-width:1px;">10</td>
+<td style="text-align:center;vertical-align:middle;width:50%;border-width:1px;"></td>
+</tr>
+<tr>
+<td style="text-align:center;vertical-align:middle;border-width:1px;">12</td>
+<td style="text-align:center;vertical-align:middle;border-width:1px;">0</td>
+<td style="text-align:center;vertical-align:middle;border-width:1px;">0</td>
+<td style="text-align:center;vertical-align:middle;border-width:1px;">0</td>
+<td style="text-align:center;vertical-align:middle;border-width:1px;">12</td>
+<td style="text-align:center;vertical-align:middle;width:50%;border-width:1px;"></td>
+</tr>
+</tbody>
+</table>
+Feel free to construct the corresponding polygons, and fill in the table.
+
+<hr />
+
+### Miscellaneous
+
+Although not strictly necessary, at some point during the exploration of this problem I used other facts about planar graphs that came in handy to help construct my examples.  The most notable of those appear below:
+
+* Each <span>\\( n \\)</span>-sided convex polygon that we construct by putting together these triangles and squares form a planar graph with <span>\\( V \\)</span> vertices <span>\\( (V \geq n) \\)</span>, <span>\\( E \\)</span> edges <span>\\( (E \geq n) \\)</span> and <span>\\( F \\)</span> faces <span>\\( (F \geq 1) \\)</span>.  These planar graphs all have Euler characteristic 1, and thus <span>\\( V - E + F =1 \\)</span>.
+* Assume we are able to construct a <span>\\( n \\)</span>-sided polygon by using <span>\\( x \\)</span> triangles (according to the statement above, there should be <span>\\( F-x \\)</span> squares). By adding all the involved angles, we obtain
+    <div>
+    	\begin{equation}
+    	\underbrace{3 \cdot 60 \cdot x}_{\text{triangles}} + \underbrace{4 \cdot 90 \cdot (F-x)}_{\text{squares}} = \underbrace{180n - 360}_{\text{polygon}} + \underbrace{360 (V-n)}_{\text{interior vertices}},
+    	\end{equation}
+    </div>
+which reduces to
+    <div>
+    	\begin{equation}
+    	n - x = 2(V-1-F).
+    	\end{equation}
+    </div>
+In particular, this indicates that <span>\\( x \\)</span> and <span>\\( n \\)</span> have the same parity.
+
+	</article>
+
+	
+	<div id="disqus_thread"></div>
+<script type="text/javascript">
+/* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+var disqus_shortname = 'blancosilva'; // required: replace example with your forum shortname
+
+/* * * DON'T EDIT BELOW THIS LINE * * */
+(function() {
+	var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+	dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+	(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+	
+</div>
+
+
+<script type="text/javascript"
+src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+		</div>
+	</div>
+
+	<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-56262970-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+	<!-- Start of StatCounter Code for Default Guide -->
+<script type="text/javascript">
+var sc_project=10117038; 
+var sc_invisible=1; 
+var sc_security="1fd852f3"; 
+var scJsHost = (("https:" == document.location.protocol) ?
+"https://secure." : "http://www.");
+document.write("<sc"+"ript type='text/javascript' src='" +
+scJsHost+
+"statcounter.com/counter/counter.js'></"+"script>");
+</script>
+<noscript><div class="statcounter"><a title="free hit
+counters" href="http://statcounter.com/"
+target="_blank"><img class="statcounter"
+src="http://c.statcounter.com/10117038/0/1fd852f3/1/"
+alt="free hit counters"></a></div></noscript>
+<!-- End of StatCounter Code for Default Guide -->
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script src="/js/bootstrap.min.js"></script>
+</body>
+</html>
