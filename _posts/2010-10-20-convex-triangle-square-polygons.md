@@ -39,66 +39,68 @@ This is a very strong statement!  It indicates, among other things, that **such 
 Incidentally, it will also help us find examples of constructions.  For example, for the seven-sided polygon, a choice of angles that works for me is <span>\\( a=0 \\)</span>, <span>\\( b=2 \\)</span> and <span>\\( c=1 \\)</span> (that is: no <span>\\( 60^\circ \\)</span> angles, two right angles, only one angle of <span>\\( 120^\circ \\)</span> and four angles of <span>\\( 150^\circ \\)</span>.
 For the case <span>\\( n=11 \\)</span>, there is only one possibility: <span>\\( a=0 \\)</span>, <span>\\( b=0 \\)</span>, <span>\\( c=1 \\)</span>; that is, only one angle of <span>\\( 120^\circ \\)</span>, and ten angles of <span>\\( 150^\circ \\)</span>.  Will this allow us to construct the 11-sided convex polygon?  The answer is **yes**, but to come up with an example, you may need to make use of some <span>\\( 180^\circ \\)</span> angles.
 I have included a list with a set of choices of angles, for polygons of sides <span>\\( n=7,8,9,10,11,12 \\)</span> for which I was able to find a valid construction:
-<table class="table table-bordered">
-<tbody>
-<tr>
-<td>\( n \)</td>
-<td>\( 60^\circ \)-angles</td>
-<td>\( 90^\circ \)-angles</td>
-<td>\( 120^\circ \)-angles</td>
-<td>\( 150^\circ \)-angles</td>
-<td style="text-align:center;vertical-align:middle;width:50%;border-width:2px;">Planar graph</td>
-</tr>
-<tr>
-<td style="text-align:center;vertical-align:middle;border-width:1px;">7</td>
-<td style="text-align:center;vertical-align:middle;border-width:1px;">0</td>
-<td style="text-align:center;vertical-align:middle;border-width:1px;">2</td>
-<td style="text-align:center;vertical-align:middle;border-width:1px;">1</td>
-<td style="text-align:center;vertical-align:middle;border-width:1px;">4</td>
-<td style="text-align:center;vertical-align:middle;width:50%;border-width:1px;"><img src="https://i0.wp.com/farm2.static.flickr.com/1436/5102420388_b99423099e_o_d.jpg" alt="" /></td>
-</tr>
-<tr>
-<td style="text-align:center;vertical-align:middle;border-width:1px;">8</td>
-<td style="text-align:center;vertical-align:middle;border-width:1px;">0</td>
-<td style="text-align:center;vertical-align:middle;border-width:1px;">0</td>
-<td style="text-align:center;vertical-align:middle;border-width:1px;">4</td>
-<td style="text-align:center;vertical-align:middle;border-width:1px;">4</td>
-<td style="text-align:center;vertical-align:middle;width:50%;border-width:1px;"></td>
-</tr>
-<tr>
-<td style="text-align:center;vertical-align:middle;border-width:1px;">9</td>
-<td style="text-align:center;vertical-align:middle;border-width:1px;">0</td>
-<td style="text-align:center;vertical-align:middle;border-width:1px;">0</td>
-<td style="text-align:center;vertical-align:middle;border-width:1px;">3</td>
-<td style="text-align:center;vertical-align:middle;border-width:1px;">6</td>
-<td style="text-align:center;vertical-align:middle;width:50%;border-width:1px;"></td>
-</tr>
-<tr>
-<td style="text-align:center;vertical-align:middle;border-width:1px;">10</td>
-<td style="text-align:center;vertical-align:middle;border-width:1px;">0</td>
-<td style="text-align:center;vertical-align:middle;border-width:1px;">0</td>
-<td style="text-align:center;vertical-align:middle;border-width:1px;">2</td>
-<td style="text-align:center;vertical-align:middle;border-width:1px;">8</td>
-<td style="text-align:center;vertical-align:middle;width:50%;border-width:1px;"></td>
-</tr>
-<tr>
-<td style="text-align:center;vertical-align:middle;border-width:1px;">11</td>
-<td style="text-align:center;vertical-align:middle;border-width:1px;">0</td>
-<td style="text-align:center;vertical-align:middle;border-width:1px;">0</td>
-<td style="text-align:center;vertical-align:middle;border-width:1px;">1</td>
-<td style="text-align:center;vertical-align:middle;border-width:1px;">10</td>
-<td style="text-align:center;vertical-align:middle;width:50%;border-width:1px;"></td>
-</tr>
-<tr>
-<td style="text-align:center;vertical-align:middle;border-width:1px;">12</td>
-<td style="text-align:center;vertical-align:middle;border-width:1px;">0</td>
-<td style="text-align:center;vertical-align:middle;border-width:1px;">0</td>
-<td style="text-align:center;vertical-align:middle;border-width:1px;">0</td>
-<td style="text-align:center;vertical-align:middle;border-width:1px;">12</td>
-<td style="text-align:center;vertical-align:middle;width:50%;border-width:1px;"></td>
-</tr>
-</tbody>
-</table>
+    <div>
+	<table class="table table-bordered">
+	<tbody>
+	<tr>
+	<td>\( n \)</td>
+	<td>\( 60^\circ \)-angles</td>
+	<td>\( 90^\circ \)-angles</td>
+	<td>\( 120^\circ \)-angles</td>
+	<td>\( 150^\circ \)-angles</td>
+	<td style="text-align:center;vertical-align:middle;width:50%;border-width:2px;">Planar graph</td>
+	</tr>
+	<tr>
+	<td style="text-align:center;vertical-align:middle;border-width:1px;">7</td>
+	<td style="text-align:center;vertical-align:middle;border-width:1px;">0</td>
+	<td style="text-align:center;vertical-align:middle;border-width:1px;">2</td>
+	<td style="text-align:center;vertical-align:middle;border-width:1px;">1</td>
+	<td style="text-align:center;vertical-align:middle;border-width:1px;">4</td>
+	<td style="text-align:center;vertical-align:middle;width:50%;border-width:1px;"><img src="https://i0.wp.com/farm2.static.flickr.com/1436/5102420388_b99423099e_o_d.jpg" alt="" /></td>
+	</tr>
+	<tr>
+	<td style="text-align:center;vertical-align:middle;border-width:1px;">8</td>
+	<td style="text-align:center;vertical-align:middle;border-width:1px;">0</td>
+	<td style="text-align:center;vertical-align:middle;border-width:1px;">0</td>
+	<td style="text-align:center;vertical-align:middle;border-width:1px;">4</td>
+	<td style="text-align:center;vertical-align:middle;border-width:1px;">4</td>
+	<td style="text-align:center;vertical-align:middle;width:50%;border-width:1px;"></td>
+	</tr>
+	<tr>
+	<td style="text-align:center;vertical-align:middle;border-width:1px;">9</td>
+	<td style="text-align:center;vertical-align:middle;border-width:1px;">0</td>
+	<td style="text-align:center;vertical-align:middle;border-width:1px;">0</td>
+	<td style="text-align:center;vertical-align:middle;border-width:1px;">3</td>
+	<td style="text-align:center;vertical-align:middle;border-width:1px;">6</td>
+	<td style="text-align:center;vertical-align:middle;width:50%;border-width:1px;"></td>
+	</tr>
+	<tr>
+	<td style="text-align:center;vertical-align:middle;border-width:1px;">10</td>
+	<td style="text-align:center;vertical-align:middle;border-width:1px;">0</td>
+	<td style="text-align:center;vertical-align:middle;border-width:1px;">0</td>
+	<td style="text-align:center;vertical-align:middle;border-width:1px;">2</td>
+	<td style="text-align:center;vertical-align:middle;border-width:1px;">8</td>
+	<td style="text-align:center;vertical-align:middle;width:50%;border-width:1px;"></td>
+	</tr>
+	<tr>
+	<td style="text-align:center;vertical-align:middle;border-width:1px;">11</td>
+	<td style="text-align:center;vertical-align:middle;border-width:1px;">0</td>
+	<td style="text-align:center;vertical-align:middle;border-width:1px;">0</td>
+	<td style="text-align:center;vertical-align:middle;border-width:1px;">1</td>
+	<td style="text-align:center;vertical-align:middle;border-width:1px;">10</td>
+	<td style="text-align:center;vertical-align:middle;width:50%;border-width:1px;"></td>
+	</tr>
+	<tr>
+	<td style="text-align:center;vertical-align:middle;border-width:1px;">12</td>
+	<td style="text-align:center;vertical-align:middle;border-width:1px;">0</td>
+	<td style="text-align:center;vertical-align:middle;border-width:1px;">0</td>
+	<td style="text-align:center;vertical-align:middle;border-width:1px;">0</td>
+	<td style="text-align:center;vertical-align:middle;border-width:1px;">12</td>
+	<td style="text-align:center;vertical-align:middle;width:50%;border-width:1px;"></td>
+	</tr>
+	</tbody>
+	</table>
+	</div>
 Feel free to construct the corresponding polygons, and fill in the table.
 
 <hr />
