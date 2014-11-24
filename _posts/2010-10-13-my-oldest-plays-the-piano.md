@@ -5,7 +5,7 @@ date: 2010-10-13 14:55:41.000000000 -04:00
 category: post
 comments: true
 image:
-teaser: https://farm9.staticflickr.com/8678/15682120759_257ce44a5c_n_d.jpg
+  teaser: https://farm9.staticflickr.com/8678/15682120759_257ce44a5c_n_d.jpg
 ---
 <div class="well">
 	<p>Two old friends, Ernie and Bernie, bump into each other in the street.  It was more than twenty years since their last meeting, so they decide to spend some time together in a nearby bar, chatting about their lives.  At some point, Bernie asks the inevitable: "So, you got married?"</p>
