@@ -6,8 +6,8 @@
 </description>
     <link>http://blancosilva.github.io/</link>
     <atom:link href="http://blancosilva.github.io/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Mon, 24 Nov 2014 22:54:44 -0500</pubDate>
-    <lastBuildDate>Mon, 24 Nov 2014 22:54:44 -0500</lastBuildDate>
+    <pubDate>Tue, 25 Nov 2014 12:49:13 -0500</pubDate>
+    <lastBuildDate>Tue, 25 Nov 2014 12:49:13 -0500</lastBuildDate>
     <generator>Jekyll v2.4.0</generator>
     
       <item>
@@ -772,11 +772,11 @@
 
 &lt;div class=&quot;row&quot;&gt;
 	&lt;ul class=&quot;nav nav-pills&quot; role=&quot;tablist&quot;&gt;
-		&lt;li role=&quot;presentation&quot; class=&quot;active&quot; style=&quot;width:100%;&quot;&gt;&lt;a href=&quot;#&quot;&gt;Card Collection &lt;span class=&quot;badge&quot;&gt;48,000&lt;/span&gt;&lt;/a&gt;
+		&lt;li role=&quot;presentation&quot; class=&quot;active list-group-item&quot; style=&quot;width:100%;&quot;&gt;&lt;a href=&quot;#&quot;&gt;Card Collection &lt;span class=&quot;badge&quot;&gt;48,000&lt;/span&gt;&lt;/a&gt;
 
 			&lt;div class=&quot;progress&quot;&gt;
 				&lt;div class=&quot;progress-bar progress-bar-warning&quot; style=&quot;width: 20%&quot;&gt;&lt;span class=&quot;sr-only&quot;&gt;10000&lt;/span&gt;&lt;/div&gt;
-				&lt;div class=&quot;progress-bar progress-bar-warning&quot; style=&quot;width: 5%&quot;&gt;&lt;span&gt;10535&lt;/span&gt;&lt;/div&gt;
+				&lt;div class=&quot;progress-bar progress-bar-warning&quot; style=&quot;width: 5%&quot;&gt;&lt;span&gt;10610&lt;/span&gt;&lt;/div&gt;
 			&lt;!-- &lt;div class=&quot;progress-bar progress-bar-warning&quot; style=&quot;width: 5%&quot;&gt;&lt;span class=&quot;sr-only&quot;&gt;Level-2&lt;/span&gt;&lt;/div&gt; --&gt;
 		&lt;/div&gt;
 	&lt;/li&gt;
@@ -864,7 +864,7 @@
 			&lt;li class=&quot;list-group-item&quot;&gt;Jane K. Olsgaard&lt;/li&gt;
 			&lt;li class=&quot;list-group-item&quot;&gt;Amanda Polson &lt;span class=&quot;badge&quot;&gt;275&lt;/span&gt;&lt;/li&gt;
 			&lt;li class=&quot;list-group-item&quot;&gt;Andy Pope&lt;/li&gt;
-			&lt;li class=&quot;list-group-item&quot;&gt;Lauren Reince&lt;/li&gt;
+			&lt;li class=&quot;list-group-item&quot;&gt;Lauren Reince &lt;span class=&quot;banner&quot;&gt;200&lt;/span&gt;&lt;/li&gt;
 			&lt;li class=&quot;list-group-item&quot;&gt;Lori Schwartz &lt;span class=&quot;badge&quot;&gt;130&lt;/span&gt;&lt;/li&gt;
 			&lt;li class=&quot;list-group-item&quot;&gt;Eric L. Sevigny &lt;span class=&quot;badge&quot;&gt;100&lt;/span&gt;&lt;/li&gt;
 			&lt;li class=&quot;list-group-item&quot;&gt;Cheri Shinn&lt;/li&gt;
@@ -873,7 +873,7 @@
 			&lt;li class=&quot;list-group-item&quot;&gt;Swansea High Freshman Academy&lt;/li&gt;
 			&lt;li class=&quot;list-group-item&quot;&gt;Mark E. Tompkins &lt;span class=&quot;badge&quot;&gt;100&lt;/span&gt;&lt;/li&gt;
 			&lt;li class=&quot;list-group-item&quot;&gt;UofSC College of Arts and Science &lt;span class=&quot;badge&quot;&gt;500&lt;/span&gt;&lt;/li&gt;
-			&lt;li class=&quot;list-group-item&quot;&gt;UofSC ISS &lt;span class=&quot;badge&quot;&gt;910&lt;/span&gt;&lt;/li&gt;
+			&lt;li class=&quot;list-group-item&quot;&gt;UofSC ISS &lt;span class=&quot;badge&quot;&gt;985&lt;/span&gt;&lt;/li&gt;
 			&lt;li class=&quot;list-group-item&quot;&gt;UofSC Office of the Provost&lt;/li&gt;
 			&lt;li class=&quot;list-group-item&quot;&gt;UofSC School of Medicine &lt;span class=&quot;badge&quot;&gt;275
 			&lt;li class=&quot;list-group-item&quot;&gt;UofSC Study Abroad Office &lt;span class=&quot;badge&quot;&gt;&lt;/span&gt;&lt;/li&gt;

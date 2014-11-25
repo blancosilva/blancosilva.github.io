@@ -48,7 +48,7 @@ But success of this enterprise starts, obviously, by collecting enough business 
 
 <div class="row">
 	<ul class="nav nav-pills" role="tablist">
-		<li role="presentation" class="active" style="width:100%;"><a href="#">Card Collection <span class="badge">48,000</span></a>
+		<li role="presentation" class="active list-group-item" style="width:100%;"><a href="#">Card Collection <span class="badge">48,000</span></a>
 
 			<div class="progress">
 				<div class="progress-bar progress-bar-warning" style="width: 20%"><span class="sr-only">10000</span></div>
@@ -140,7 +140,7 @@ But success of this enterprise starts, obviously, by collecting enough business 
 			<li class="list-group-item">Jane K. Olsgaard</li>
 			<li class="list-group-item">Amanda Polson <span class="badge">275</span></li>
 			<li class="list-group-item">Andy Pope</li>
-			<li class="list-group-item">Lauren Reince</li>
+			<li class="list-group-item">Lauren Reince <span class="banner">200</span></li>
 			<li class="list-group-item">Lori Schwartz <span class="badge">130</span></li>
 			<li class="list-group-item">Eric L. Sevigny <span class="badge">100</span></li>
 			<li class="list-group-item">Cheri Shinn</li>
