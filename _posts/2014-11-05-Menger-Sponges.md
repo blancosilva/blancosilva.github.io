@@ -96,7 +96,7 @@ But success of this enterprise starts, obviously, by collecting enough business 
 			<li class="list-group-item">Judy R. Blyth <span class="badge">220</span></li>
 			<li class="list-group-item">Shannon A. Bowen</li>
 			<li class="list-group-item">Jennifer Breeden <span class="badge">300</span></li>
-			<li class="list-group-item">Norvel W. Brown <span class="badge">225</span></li>
+			<li class="list-group-item">Norvel W. Brown</li>
 			<li class="list-group-item">Vanessa L. Brown <span class="badge">225</span></li>
 			<li class="list-group-item">Larisa D. Bruner</li>
 			<li class="list-group-item">O. Marion Burton</li>
