@@ -52,7 +52,7 @@ But success of this enterprise starts, obviously, by collecting enough business 
 
 			<div class="progress">
 				<div class="progress-bar progress-bar-warning" style="width: 20%"><span class="sr-only">10000</span></div>
-				<div class="progress-bar progress-bar-warning" style="width: 5%"><span>10535</span></div>
+				<div class="progress-bar progress-bar-warning" style="width: 5%"><span>10610</span></div>
 			<!-- <div class="progress-bar progress-bar-warning" style="width: 5%"><span class="sr-only">Level-2</span></div> -->
 		</div>
 	</li>
@@ -149,7 +149,7 @@ But success of this enterprise starts, obviously, by collecting enough business 
 			<li class="list-group-item">Swansea High Freshman Academy</li>
 			<li class="list-group-item">Mark E. Tompkins <span class="badge">100</span></li>
 			<li class="list-group-item">UofSC College of Arts and Science <span class="badge">500</span></li>
-			<li class="list-group-item">UofSC ISS <span class="badge">910</span></li>
+			<li class="list-group-item">UofSC ISS <span class="badge">985</span></li>
 			<li class="list-group-item">UofSC Office of the Provost</li>
 			<li class="list-group-item">UofSC School of Medicine <span class="badge">275</li>
 			<li class="list-group-item">UofSC Study Abroad Office <span class="badge"></span></li>
