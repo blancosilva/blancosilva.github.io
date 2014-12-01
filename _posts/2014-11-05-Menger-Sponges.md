@@ -52,7 +52,7 @@ But success of this enterprise starts, obviously, by collecting enough business 
 
 			<div class="progress">
 				<div class="progress-bar progress-bar-warning" style="width: 20%"><span class="sr-only">10000</span></div>
-				<div class="progress-bar progress-bar-warning" style="width: 5%"><span>10625</span></div>
+				<div class="progress-bar progress-bar-warning" style="width: 5%"><span>10850</span></div>
 			<!-- <div class="progress-bar progress-bar-warning" style="width: 5%"><span class="sr-only">Level-2</span></div> -->
 		</div>
 	</li>
@@ -104,6 +104,7 @@ But success of this enterprise starts, obviously, by collecting enough business 
 			<li class="list-group-item">Toyeka Campbell</li>
 			<li class="list-group-item">Emily Carlton</li>
 			<li class="list-group-item">R. Lawson Cheek, III</li>
+			<li class="list-group-item">David and Sebrey Clark <span class="badge">225</span></li>
 			<li class="list-group-item">Cassey Corcoran</li>
 			<li class="list-group-item">Eva Czabarka <span class="badge">200</span></li>
 			<li class="list-group-item">Darla Moore School of Business <span class="badge">1450</span></li>
@@ -119,12 +120,12 @@ But success of this enterprise starts, obviously, by collecting enough business 
 			<li class="list-group-item">Holly Hayes</li>
 			<li class="list-group-item">Chris Horn</li>
 			<li class="list-group-item">John T. Hyatt Jr. <span class="badge">300</span></li>
-			<li class="list-group-item">Grant N. Jackson</li>
 		</ul>
 	</div>
 
 	<div class="col-lg-6">
 		<ul class="list-group">
+			<li class="list-group-item">Grant N. Jackson</li>
 			<li class="list-group-item">Gayle D. Johnson <span class="badge">250</span></li>
 			<li class="list-group-item">Carolyn S. Jones</li>
 			<li class="list-group-item">Kelly Kavanaugh</li>
