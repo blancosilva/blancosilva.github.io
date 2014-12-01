@@ -6,8 +6,8 @@
 </description>
     <link>http://blancosilva.github.io/</link>
     <atom:link href="http://blancosilva.github.io/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Mon, 01 Dec 2014 07:20:36 -0500</pubDate>
-    <lastBuildDate>Mon, 01 Dec 2014 07:20:36 -0500</lastBuildDate>
+    <pubDate>Mon, 01 Dec 2014 14:43:00 -0500</pubDate>
+    <lastBuildDate>Mon, 01 Dec 2014 14:43:00 -0500</lastBuildDate>
     <generator>Jekyll v2.4.0</generator>
     
       <item>
@@ -775,8 +775,8 @@
 		&lt;li role=&quot;presentation&quot; class=&quot;active&quot; style=&quot;width:100%;&quot;&gt;&lt;a href=&quot;#&quot;&gt;Card Collection &lt;span class=&quot;badge&quot;&gt;48,000&lt;/span&gt;&lt;/a&gt;
 
 			&lt;div class=&quot;progress&quot;&gt;
-				&lt;div class=&quot;progress-bar progress-bar-warning&quot; style=&quot;width: 20%&quot;&gt;&lt;span class=&quot;sr-only&quot;&gt;10000&lt;/span&gt;&lt;/div&gt;
-				&lt;div class=&quot;progress-bar progress-bar-warning&quot; style=&quot;width: 5%&quot;&gt;&lt;span&gt;10625&lt;/span&gt;&lt;/div&gt;
+				&lt;div class=&quot;progress-bar progress-bar-warning&quot; style=&quot;width: 25%&quot;&gt;&lt;span class=&quot;sr-only&quot;&gt;12500&lt;/span&gt;&lt;/div&gt;
+				&lt;div class=&quot;progress-bar progress-bar-warning&quot; style=&quot;width: 5%&quot;&gt;&lt;span&gt;12600&lt;/span&gt;&lt;/div&gt;
 			&lt;!-- &lt;div class=&quot;progress-bar progress-bar-warning&quot; style=&quot;width: 5%&quot;&gt;&lt;span class=&quot;sr-only&quot;&gt;Level-2&lt;/span&gt;&lt;/div&gt; --&gt;
 		&lt;/div&gt;
 	&lt;/li&gt;
@@ -814,7 +814,7 @@
 		&lt;ul class=&quot;list-group&quot;&gt;
 			&lt;li class=&quot;list-group-item&quot;&gt;Cambden Abell&lt;/li&gt;
 			&lt;li class=&quot;list-group-item&quot;&gt;Jennifer Almeda&lt;/li&gt;
-			&lt;li class=&quot;list-group-item&quot;&gt;Arnold School of Public Health &lt;span class=&quot;badge&quot;&gt;1750&lt;/span&gt;&lt;/li&gt;
+			&lt;li class=&quot;list-group-item&quot;&gt;Arnold School of Public Health &lt;span class=&quot;badge&quot;&gt;3275&lt;/span&gt;&lt;/li&gt;
 			&lt;li class=&quot;list-group-item&quot;&gt;Nan W. Barker&lt;/li&gt;
 			&lt;li class=&quot;list-group-item&quot;&gt;Kaitlin C. Blanco-Silva &lt;span class=&quot;badge&quot;&gt;350&lt;/span&gt;&lt;/li&gt;
 			&lt;li class=&quot;list-group-item&quot;&gt;Judy R. Blyth &lt;span class=&quot;badge&quot;&gt;220&lt;/span&gt;&lt;/li&gt;
@@ -826,8 +826,10 @@
 			&lt;li class=&quot;list-group-item&quot;&gt;O. Marion Burton&lt;/li&gt;
 			&lt;li class=&quot;list-group-item&quot;&gt;Lakesha Campbell&lt;/li&gt;
 			&lt;li class=&quot;list-group-item&quot;&gt;Toyeka Campbell&lt;/li&gt;
+			&lt;li class=&quot;list-group-item&quot;&gt;Charlotte Cárdenas &lt;span class=&quot;badge&quot;&gt;150&lt;/span&gt;&lt;/li&gt;
 			&lt;li class=&quot;list-group-item&quot;&gt;Emily Carlton&lt;/li&gt;
 			&lt;li class=&quot;list-group-item&quot;&gt;R. Lawson Cheek, III&lt;/li&gt;
+			&lt;li class=&quot;list-group-item&quot;&gt;David and Sebrey Clark &lt;span class=&quot;badge&quot;&gt;225&lt;/span&gt;&lt;/li&gt;
 			&lt;li class=&quot;list-group-item&quot;&gt;Cassey Corcoran&lt;/li&gt;
 			&lt;li class=&quot;list-group-item&quot;&gt;Eva Czabarka &lt;span class=&quot;badge&quot;&gt;200&lt;/span&gt;&lt;/li&gt;
 			&lt;li class=&quot;list-group-item&quot;&gt;Darla Moore School of Business &lt;span class=&quot;badge&quot;&gt;1450&lt;/span&gt;&lt;/li&gt;
@@ -840,15 +842,16 @@
 			&lt;li class=&quot;list-group-item&quot;&gt;Angrew Grubba &lt;span class=&quot;badge&quot;&gt;200&lt;/span&gt;&lt;/li&gt;
 			&lt;li class=&quot;list-group-item&quot;&gt;Glenda Halter&lt;/li&gt;
 			&lt;li class=&quot;list-group-item&quot;&gt;Rachel Hardison &lt;span class=&quot;badge&quot;&gt;360&lt;/span&gt;&lt;/li&gt;
+			&lt;li class=&quot;list-group-item&quot;&gt;Shae Haskins&lt;/li&gt;
 			&lt;li class=&quot;list-group-item&quot;&gt;Holly Hayes&lt;/li&gt;
 			&lt;li class=&quot;list-group-item&quot;&gt;Chris Horn&lt;/li&gt;
-			&lt;li class=&quot;list-group-item&quot;&gt;John T. Hyatt Jr. &lt;span class=&quot;badge&quot;&gt;300&lt;/span&gt;&lt;/li&gt;
-			&lt;li class=&quot;list-group-item&quot;&gt;Grant N. Jackson&lt;/li&gt;
 		&lt;/ul&gt;
 	&lt;/div&gt;
 
 	&lt;div class=&quot;col-lg-6&quot;&gt;
 		&lt;ul class=&quot;list-group&quot;&gt;
+			&lt;li class=&quot;list-group-item&quot;&gt;John T. Hyatt Jr. &lt;span class=&quot;badge&quot;&gt;300&lt;/span&gt;&lt;/li&gt;
+			&lt;li class=&quot;list-group-item&quot;&gt;Grant N. Jackson&lt;/li&gt;
 			&lt;li class=&quot;list-group-item&quot;&gt;Gayle D. Johnson &lt;span class=&quot;badge&quot;&gt;250&lt;/span&gt;&lt;/li&gt;
 			&lt;li class=&quot;list-group-item&quot;&gt;Carolyn S. Jones&lt;/li&gt;
 			&lt;li class=&quot;list-group-item&quot;&gt;Kelly Kavanaugh&lt;/li&gt;

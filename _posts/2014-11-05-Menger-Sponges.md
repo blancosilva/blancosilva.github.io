@@ -51,8 +51,8 @@ But success of this enterprise starts, obviously, by collecting enough business 
 		<li role="presentation" class="active" style="width:100%;"><a href="#">Card Collection <span class="badge">48,000</span></a>
 
 			<div class="progress">
-				<div class="progress-bar progress-bar-warning" style="width: 20%"><span class="sr-only">10000</span></div>
-				<div class="progress-bar progress-bar-warning" style="width: 5%"><span>10850</span></div>
+				<div class="progress-bar progress-bar-warning" style="width: 25%"><span class="sr-only">12500</span></div>
+				<div class="progress-bar progress-bar-warning" style="width: 5%"><span>12600</span></div>
 			<!-- <div class="progress-bar progress-bar-warning" style="width: 5%"><span class="sr-only">Level-2</span></div> -->
 		</div>
 	</li>
@@ -90,7 +90,7 @@ But success of this enterprise starts, obviously, by collecting enough business 
 		<ul class="list-group">
 			<li class="list-group-item">Cambden Abell</li>
 			<li class="list-group-item">Jennifer Almeda</li>
-			<li class="list-group-item">Arnold School of Public Health <span class="badge">1750</span></li>
+			<li class="list-group-item">Arnold School of Public Health <span class="badge">3275</span></li>
 			<li class="list-group-item">Nan W. Barker</li>
 			<li class="list-group-item">Kaitlin C. Blanco-Silva <span class="badge">350</span></li>
 			<li class="list-group-item">Judy R. Blyth <span class="badge">220</span></li>
@@ -102,6 +102,7 @@ But success of this enterprise starts, obviously, by collecting enough business 
 			<li class="list-group-item">O. Marion Burton</li>
 			<li class="list-group-item">Lakesha Campbell</li>
 			<li class="list-group-item">Toyeka Campbell</li>
+			<li class="list-group-item">Charlotte Cárdenas <span class="badge">150</span></li>
 			<li class="list-group-item">Emily Carlton</li>
 			<li class="list-group-item">R. Lawson Cheek, III</li>
 			<li class="list-group-item">David and Sebrey Clark <span class="badge">225</span></li>
@@ -117,14 +118,15 @@ But success of this enterprise starts, obviously, by collecting enough business 
 			<li class="list-group-item">Angrew Grubba <span class="badge">200</span></li>
 			<li class="list-group-item">Glenda Halter</li>
 			<li class="list-group-item">Rachel Hardison <span class="badge">360</span></li>
+			<li class="list-group-item">Shae Haskins</li>
 			<li class="list-group-item">Holly Hayes</li>
 			<li class="list-group-item">Chris Horn</li>
-			<li class="list-group-item">John T. Hyatt Jr. <span class="badge">300</span></li>
 		</ul>
 	</div>
 
 	<div class="col-lg-6">
 		<ul class="list-group">
+			<li class="list-group-item">John T. Hyatt Jr. <span class="badge">300</span></li>
 			<li class="list-group-item">Grant N. Jackson</li>
 			<li class="list-group-item">Gayle D. Johnson <span class="badge">250</span></li>
 			<li class="list-group-item">Carolyn S. Jones</li>
@@ -137,6 +139,7 @@ But success of this enterprise starts, obviously, by collecting enough business 
 			<li class="list-group-item">Juan C. Luvene</li>
 			<li class="list-group-item">Sherry Maw <span class="badge">200</span></li>
 			<li class="list-group-item">Lisa Martin-Stuart <span class="badge">250</span></li>
+			<li class="list-group-item">Matt McGrievy</li>
 			<li class="list-group-item">Ian McGuire</li>
 			<li class="list-group-item">Julie Medlin</li>
 			<li class="list-group-item">John B. Nelson</li>
