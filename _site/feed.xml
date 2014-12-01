@@ -6,8 +6,8 @@
 </description>
     <link>http://blancosilva.github.io/</link>
     <atom:link href="http://blancosilva.github.io/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Tue, 25 Nov 2014 15:57:18 -0500</pubDate>
-    <lastBuildDate>Tue, 25 Nov 2014 15:57:18 -0500</lastBuildDate>
+    <pubDate>Mon, 01 Dec 2014 07:19:29 -0500</pubDate>
+    <lastBuildDate>Mon, 01 Dec 2014 07:19:29 -0500</lastBuildDate>
     <generator>Jekyll v2.4.0</generator>
     
       <item>
@@ -34288,54 +34288,67 @@ In&amp;nbsp;[105]:
 
 &lt;h2 id=&quot;lesson-plan&quot;&gt;Lesson plan&lt;/h2&gt;
 
-&lt;pre&gt;&lt;code&gt;* First part---Functions; graphs, limits and continuity
-    * Fri Aug 22: 1.2: Intro to Functions [pp.20--22: 1abcde, 2abcef, 5, 6, 7, 27, 28, 30, 38, 41, 42]
-    * Mon Aug 25: 1.3: New functions from old functions [pp.43--44: 1, 2, 3, 4, 5, 31, 32, 33, 34, 35, 36, 37, 38, 41, 42]
-    * Wed Aug 27: 1.5 and 1.6: Exponential and Logarithmic Functions [p.58: 3, 4, 7, 8, 9, 10, 15, 17, 18. p.71: 33--39, 47--52]
-    * Fri Aug 29: 2.2 and 2.3: Limits [p.97: 4, 5, 6, 25, 26, 27, 29, 32, 34a. p.106: 1, 3--9, 11--27]
-    * Wed Sep 03: 2.5: Continuity [pp.128: 3a, 4, 10--13, 16--18, 20, 35, 37, 39, 41, 42]
-    * Fri Sep 05: Limits and continuity II
-    * Mon Sep 08: First Midterm---sections 1.2, 1.3, 1.5, 1.6, 2.2, 2.3, 2.5 and 2.6
-* Second Part: Introduction to Differentiation
-    * Wed Sep 10: 2.7 and 2.8: Intro to derivatives [p.150 :4ab, 5--8, 10ab, 21, 25--30]
-    * Fri Sep 12: 3.1: Derivatives of Polynomials and Exponential functions [p.180: 3--30, 33, 34, 45, 52, 53, 54]
-    * Mon Sep 15: 3.2: The Product and Quotient Rule [p.187: 1, 2, 7, 8, 9, 10, 11, 13, 14, 15, 16, 19, 21, 22, 26, 29, 31, 52]
-    * Wed Sep 17: 3.3: Derivatives of Trigonometric functions [p.195: 1--6, 9--14, 21, 23, 24, 25a, 34]
-    * Fri Sep 19: 3.4: The Chain Rule [p.203: 1---21, 23, 25--30, 32--34, 36, 37, 51--54, 62]
-    * Mon Sep 22: 3.5: Implicit Differentiation [p.213: 1--30, 63, 64a, 65, 66]
-    * Wed Sep 24: 3.6: Derivatives of Logarithmic functions [p.220: 2--22, 27--30, 33, 34, 37--50]
-    * Fri Sep 26: Second Midterm---sections 2.7, 2.8, 3.1, 3.2, 3.3, 3.4, 3.5 and 3.6
-* Third Part: Applications of Differentiation
-    * Mon Sep 29: 4.1: Maximum and Minimum values I [p.277: 6, 8, 10, 29--44, 47--62], 4.3: First and Second Derivative Test [p.295: 5, 6, 7, 9--22, 33--50] &amp;lt;s&amp;gt;4.2: The Mean Value Theorem [see assignment online in webassign]&amp;lt;/s&amp;gt;
-    * Wed Oct 01: 4.1: Maximum and Minimum values II
-    * Fri Oct 03: 4.4: L&#39;Hopital&#39;s Rule I [p.304: 5--64]
-    * Mon Oct 06: 4.4: L&#39;Hopital&#39;s Rule II
-    * Wed Oct 08: Curve Sketching [p.314: 1--27]
-    * Fri Oct 10: Curve Sketching II
-    * Mon Oct 13: Curve Sketching III
-    * Wed Oct 15: Third Midterm---sections 4.1, 4.2, 4.3, 4.4, and 4.5
-    * Mon Oct 20: 3.9: Related Rates I [p.245: 1--33]
-    * Wed Oct 22: 3.9: Related Rates II
-    * Fri Oct 24: 3.9: Related Rates III
-    * Mon Oct 27: 4.7 Optimization Problems I
-    * Wed Oct 29: 4.7 Optimization Problems II
-    * Fri Oct 31: 4.7 Optimization Problems III
-    * Mon Nov 03: Fourth Midterm---sections 3.9, and 4.7
-* Fourth Part: Introduction to Integration
-    * Wed Nov 05: 4.9: Antiderivatives [p.345: 1--15, 18, 18, 21]
-    * Fri Nov 07: 5.4: Indefinite integrals [p.397: 5--18]
-    * Mon Nov 10: Appendix E: Sigma notation [p.A38: 1--36, 43--46]
-    * Wed Nov 12: 5.1 and 5.2: Intro to Definite Integrals
-    * Fri Nov 14: 5.3: The Fundamental Theorem of Calculus [p.388: 7--12, 19--33, 35, 36, 39, 40, 65, 66, 68, 74]
-    * Mon Nov 17: 5.5: The Substitution Rule [p.406: 1--46]
-    * Wed Nov 19: 6.1: Area between curves I
-    * Fri Nov 21: 6.1: Area between curves II
-    * Mon Nov 24: Fifth Midterm---sections 4.9, 5.1, 5.2, 5.3, 5.4 and 5.5
-* The last stretch
-    * Wed Dec 01: Review for Final Exam (1/3)
-    * Fri Dec 03: Review for Final Exam (2/3)
-    * Mon Dec 05: Review for Final Exam (3/3)
-&lt;/code&gt;&lt;/pre&gt;
+&lt;div class=&quot;well&quot; style=&quot;font-family:New Courier; background:white;&quot;&gt;
+    &lt;ul&gt;
+        &lt;li&gt; First part---Functions; graphs, limits and continuity&lt;/li&gt;
+        &lt;ul&gt;
+            &lt;li&gt; Fri Aug 22: 1.2: Intro to Functions [pp.20--22: 1abcde, 2abcef, 5, 6, 7, 27, 28, 30, 38, 41, 42]&lt;/li&gt;
+            &lt;li&gt; Mon Aug 25: 1.3: New functions from old functions [pp.43--44: 1, 2, 3, 4, 5, 31, 32, 33, 34, 35, 36, 37, 38, 41, 42]&lt;/li&gt;
+            &lt;li&gt; Wed Aug 27: 1.5 and 1.6: Exponential and Logarithmic Functions [p.58: 3, 4, 7, 8, 9, 10, 15, 17, 18. p.71: 33--39, 47--52]&lt;/li&gt;
+            &lt;li&gt; Fri Aug 29: 2.2 and 2.3: Limits [p.97: 4, 5, 6, 25, 26, 27, 29, 32, 34a. p.106: 1, 3--9, 11--27]&lt;/li&gt;
+            &lt;li&gt; Wed Sep 03: 2.5: Continuity [pp.128: 3a, 4, 10--13, 16--18, 20, 35, 37, 39, 41, 42]&lt;/li&gt;
+            &lt;li&gt; Fri Sep 05: Limits and continuity II&lt;/li&gt;
+            &lt;li&gt; Mon Sep 08: First Midterm---sections 1.2, 1.3, 1.5, 1.6, 2.2, 2.3, 2.5 and 2.6&lt;/li&gt;
+        &lt;/ul&gt;
+        &lt;li&gt; Second Part: Introduction to Differentiation&lt;/li&gt;
+        &lt;ul&gt;
+            &lt;li&gt; Wed Sep 10: 2.7 and 2.8: Intro to derivatives [p.150 :4ab, 5--8, 10ab, 21, 25--30]&lt;/li&gt;
+            &lt;li&gt; Fri Sep 12: 3.1: Derivatives of Polynomials and Exponential functions [p.180: 3--30, 33, 34, 45, 52, 53, 54]&lt;/li&gt;
+            &lt;li&gt; Mon Sep 15: 3.2: The Product and Quotient Rule [p.187: 1, 2, 7, 8, 9, 10, 11, 13, 14, 15, 16, 19, 21, 22, 26, 29, 31, 52]&lt;/li&gt;
+            &lt;li&gt; Wed Sep 17: 3.3: Derivatives of Trigonometric functions [p.195: 1--6, 9--14, 21, 23, 24, 25a, 34]&lt;/li&gt;
+            &lt;li&gt; Fri Sep 19: 3.4: The Chain Rule [p.203: 1---21, 23, 25--30, 32--34, 36, 37, 51--54, 62]&lt;/li&gt;
+            &lt;li&gt; Mon Sep 22: 3.5: Implicit Differentiation [p.213: 1--30, 63, 64a, 65, 66]&lt;/li&gt;
+            &lt;li&gt; Wed Sep 24: 3.6: Derivatives of Logarithmic functions [p.220: 2--22, 27--30, 33, 34, 37--50]&lt;/li&gt;
+            &lt;li&gt; Fri Sep 26: Second Midterm---sections 2.7, 2.8, 3.1, 3.2, 3.3, 3.4, 3.5 and 3.6&lt;/li&gt;
+        &lt;/ul&gt;
+        &lt;li&gt; Third Part: Applications of Differentiation&lt;/li&gt;
+        &lt;ul&gt;
+            &lt;li&gt; Mon Sep 29: 4.1: Maximum and Minimum values I [p.277: 6, 8, 10, 29--44, 47--62], 4.3: First and Second Derivative Test [p.295: 5, 6, 7, 9--22, 33--50] &lt;s&gt;4.2: The Mean Value Theorem [see assignment online in webassign]&lt;/s&gt;&lt;/li&gt;
+            &lt;li&gt; Wed Oct 01: 4.1: Maximum and Minimum values II&lt;/li&gt;
+            &lt;li&gt; Fri Oct 03: 4.4: L&#39;Hopital&#39;s Rule I [p.304: 5--64]&lt;/li&gt;
+            &lt;li&gt; Mon Oct 06: 4.4: L&#39;Hopital&#39;s Rule II&lt;/li&gt;
+            &lt;li&gt; Wed Oct 08: Curve Sketching [p.314: 1--27]&lt;/li&gt;
+            &lt;li&gt; Fri Oct 10: Curve Sketching II&lt;/li&gt;
+            &lt;li&gt; Mon Oct 13: Curve Sketching III&lt;/li&gt;
+            &lt;li&gt; Wed Oct 15: Third Midterm---sections 4.1, 4.2, 4.3, 4.4, and 4.5&lt;/li&gt;
+            &lt;li&gt; Mon Oct 20: 3.9: Related Rates I [p.245: 1--33]&lt;/li&gt;
+            &lt;li&gt; Wed Oct 22: 3.9: Related Rates II&lt;/li&gt;
+            &lt;li&gt; Fri Oct 24: 3.9: Related Rates III&lt;/li&gt;
+            &lt;li&gt; Mon Oct 27: 4.7 Optimization Problems I&lt;/li&gt;
+            &lt;li&gt; Wed Oct 29: 4.7 Optimization Problems II&lt;/li&gt;
+            &lt;li&gt; Fri Oct 31: 4.7 Optimization Problems III&lt;/li&gt;
+            &lt;li&gt; Mon Nov 03: Fourth Midterm---sections 3.9, and 4.7&lt;/li&gt;
+        &lt;/ul&gt;
+        &lt;li&gt; Fourth Part: Introduction to Integration&lt;/li&gt;
+        &lt;ul&gt;
+            &lt;li&gt; Wed Nov 05: 4.9: Antiderivatives [p.345: 1--15, 18, 18, 21]&lt;/li&gt;
+            &lt;li&gt; Fri Nov 07: 5.4: Indefinite integrals [p.397: 5--18]&lt;/li&gt;
+            &lt;li&gt; Mon Nov 10: Appendix E: Sigma notation [p.A38: 1--36, 43--46]&lt;/li&gt;
+            &lt;li&gt; Wed Nov 12: 5.1 and 5.2: Intro to Definite Integrals&lt;/li&gt;
+            &lt;li&gt; Fri Nov 14: 5.3: The Fundamental Theorem of Calculus [p.388: 7--12, 19--33, 35, 36, 39, 40, 65, 66, 68, 74]&lt;/li&gt;
+            &lt;li&gt; Mon Nov 17: 5.5: The Substitution Rule [p.406: 1--46]&lt;/li&gt;
+            &lt;li&gt; Wed Nov 19: 6.1: Area between curves I&lt;/li&gt;
+            &lt;li&gt; Fri Nov 21: 6.1: Area between curves II&lt;/li&gt;
+            &lt;li&gt; Mon Nov 24: Fifth Midterm---sections 4.9, 5.1, 5.2, 5.3, 5.4 and 5.5&lt;/li&gt;
+        &lt;/ul&gt;
+        &lt;li&gt; The last stretch&lt;/li&gt;
+        &lt;ul&gt;
+            &lt;li&gt; Mon Dec 01: Review for Final Exam (1/3)&lt;/li&gt;
+            &lt;li&gt; Wed Dec 03: Review for Final Exam (2/3)&lt;/li&gt;
+            &lt;li&gt; Fri Dec 05: Review for Final Exam (3/3)&lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/ul&gt;
+&lt;/div&gt;
 </description>
         <pubDate>Tue, 19 Aug 2014 11:50:44 -0400</pubDate>
         <link>http://blancosilva.github.io/course/2014/08/19/ma141-fall-2014.html</link>
