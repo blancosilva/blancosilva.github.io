@@ -6,9 +6,91 @@
 </description>
     <link>http://blancosilva.github.io/</link>
     <atom:link href="http://blancosilva.github.io/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Tue, 02 Dec 2014 17:22:13 -0500</pubDate>
-    <lastBuildDate>Tue, 02 Dec 2014 17:22:13 -0500</lastBuildDate>
+    <pubDate>Tue, 02 Dec 2014 17:39:08 -0500</pubDate>
+    <lastBuildDate>Tue, 02 Dec 2014 17:39:08 -0500</lastBuildDate>
     <generator>Jekyll v2.4.0</generator>
+    
+      <item>
+        <title>MATH 141 Fall 2014 Review Exam (2|5)</title>
+        <description>&lt;div class=&quot;well&quot;&gt;
+	Assessment
+&lt;/div&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;Find the derivative of the following functions&lt;/p&gt;
+
+    &lt;pre&gt;&lt;code&gt; &amp;lt;div&amp;gt;
+     \begin{align}
+     f(x) &amp;amp;= 230x^{300} + 15x^{18} + 5
+     f(x) &amp;amp;= -\frac{488}{233} x^{265/488} \\
+     f(x) &amp;amp;= 2\sin x + 6\cos x + 9 \\
+     f(x) &amp;amp;= \sin x \cos x \\
+     f(x) &amp;amp;= 12\tan x + 3x^2 - \cos x \\
+     f(x) &amp;amp;= \sin^2 x + \cos^2 x \\
+     f(x) &amp;amp;= e^{8x} \\
+     f(x) &amp;amp;= 8^x \\
+     f(x) &amp;amp;= 10^{2x^2}
+     \end{align}
+ &amp;lt;/div&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Use the chain rule to find the derivative of the following function&lt;/p&gt;
+
+    &lt;pre&gt;&lt;code&gt; &amp;lt;div&amp;gt;
+     \begin{equation}
+     f(x) = \sqrt{ \big( 3x^5 + \sin(e^x) - 400 \big)^3 }	
+     \end{equation}
+ &amp;lt;/div&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Use the quotient rule to obtain the derivative of&lt;/p&gt;
+
+    &lt;pre&gt;&lt;code&gt; &amp;lt;div&amp;gt;
+     \begin{equation}
+     f(x) = \frac{x^3}{x^2 + 6}	
+     \end{equation}
+ &amp;lt;/div&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Find the tangent line to the graph of the function &lt;span&gt;\( f(x) = x^3 - x^2 + 60 \)&lt;/span&gt; at &lt;span&gt;\( x=2 \)&lt;/span&gt;.&lt;/li&gt;
+  &lt;li&gt;Find the normal line to the graph of function &lt;span&gt;\( f(x) = 4x^2-21x+4 \)&lt;/span&gt; at &lt;span&gt;\( x=3 \)&lt;/span&gt;.&lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Use logarithmic differentiation to obtain the derivative of the following functions&lt;/p&gt;
+
+    &lt;pre&gt;&lt;code&gt; &amp;lt;div&amp;gt;
+     \begin{align}
+     f(x) &amp;amp;= \big( \cos 8x \big)^x	\\
+     f(x) &amp;amp;= \big( \tan x \big)^{9/x}\\
+     \end{align}
+ &amp;lt;/div&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Find all &lt;span&gt;\( x \)&lt;/span&gt;-values in the interval &lt;span&gt;\( [0,2\pi] \)&lt;/span&gt;, where the tangent line to the graph of &lt;span&gt;\( f(x)= \sin^2 x - \cos^2 x \)&lt;/span&gt; is horizontal.&lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Use implicit differentiation to obtain the derivative &lt;span&gt;\( y’ \)&lt;/span&gt;, if &lt;span&gt;\( x \)&lt;/span&gt; and &lt;span&gt;\( y \)&lt;/span&gt; are related by the following equations:&lt;/p&gt;
+
+    &lt;pre&gt;&lt;code&gt; &amp;lt;div&amp;gt;
+     \begin{align}
+     e^{x+y} &amp;amp;= y^3 \\
+     x^2 + y^2 &amp;amp;= 25		
+     \end{align}
+ &amp;lt;/div&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+</description>
+        <pubDate>Tue, 02 Dec 2014 15:00:00 -0500</pubDate>
+        <link>http://blancosilva.github.io/forum/2014/12/02/MA144Fa14RT2.html</link>
+        <guid isPermaLink="true">http://blancosilva.github.io/forum/2014/12/02/MA144Fa14RT2.html</guid>
+        
+        
+        <category>forum</category>
+        
+      </item>
     
       <item>
         <title>MATH 122 Fall 2014 Review Exam (1|4)</title>
@@ -188,7 +270,7 @@ How many customers per day does the theater need in order to make a profit? Give
 &lt;/div&gt;
 
 &lt;ol&gt;
-  &lt;li&gt;With &lt;span&gt;\( t \)&lt;/span&gt; years since 2000, the population, &lt;span&gt;\( P \)&lt;span&gt;, of the world in billions can be modelled by &lt;span&gt;\( P=6.1e^{.012t} \)&lt;span&gt;
+  &lt;li&gt;With &lt;span&gt;\( t \)&lt;/span&gt; years since 2000, the population, &lt;span&gt;\( P \)&lt;span&gt;, of the world in billions can be modeled by &lt;span&gt;\( P=6.1e^{.012t} \)&lt;span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;    &lt;ul&gt;
       &lt;li&gt;What was the population in 2013?&lt;/li&gt;
       &lt;li&gt;What will be the population in 2025?&lt;/li&gt;
@@ -278,6 +360,8 @@ Let &lt;span&gt;\( t \)&lt;/span&gt; be the number of years since 1970 and &lt;s
 	&lt;div class=&quot;col-sm-6&quot;&gt;
 		&lt;div class=&quot;list-group&quot;&gt;
 			&lt;a href=&quot;#&quot; class=&quot;list-group-item active&quot;&gt;Freshman Calculus&lt;/a&gt;
+			
+			
 			
 			
 			
@@ -577,6 +661,8 @@ Let &lt;span&gt;\( t \)&lt;/span&gt; be the number of years since 1970 and &lt;s
 			
 			
 			
+			
+			
 			&lt;a href=&quot;/course/2013/01/08/ma241-spring-2013.html#&quot; class=&quot;list-group-item&quot;&gt;
 				&lt;h4 class=&quot;list-group-item-heading&quot;&gt;MA241—Spring 2013&lt;/h4&gt;
 				&lt;p class=&quot;list-group-item-text&quot;&gt;Vector Calculus&lt;/p&gt;
@@ -770,6 +856,8 @@ Let &lt;span&gt;\( t \)&lt;/span&gt; be the number of years since 1970 and &lt;s
 &lt;div class=&quot;col-sm-12&quot;&gt;
 	&lt;div class=&quot;list-group&quot;&gt;
 		&lt;a href=&quot;#&quot; class=&quot;list-group-item active&quot;&gt;Selected Lectures — Click on each title below for corresponding material&lt;/a&gt;
+		
+		
 		
 		
 		
@@ -34203,442 +34291,6 @@ In&amp;nbsp;[105]:
         
         
         <category>post</category>
-        
-      </item>
-    
-      <item>
-        <title>MA141—Fall 2014</title>
-        <description>&lt;h2 id=&quot;sections-011-012-015-016&quot;&gt;Sections 011, 012, 015, 016&lt;/h2&gt;
-
-&lt;div class=&quot;row&quot;&gt;
-    &lt;div class=&quot;col-lg-2&quot;&gt;
-    &lt;/div&gt;
-    &lt;div class=&quot;col-lg-8&quot;&gt;
-        &lt;div class=&quot;list-group&quot;&gt;
-            &lt;a href=&quot;mailto:blanco@math.sc.edu&quot; class=&quot;list-group-item&quot;&gt;
-                &lt;h4 class=&quot;list-group-item-heading&quot;&gt;Instructor: Francisco Blanco-Silva&lt;/h4&gt;
-                &lt;p class=&quot;list-group-item-text&quot;&gt;
-                    &lt;strong&gt;e-mail&lt;/strong&gt;: &lt;tt&gt;blanco at math dot sc dot edu&lt;/tt&gt;&lt;br /&gt;
-                    &lt;strong&gt;phone&lt;/strong&gt;: &lt;tt&gt;777-7514&lt;/tt&gt;&lt;br /&gt;
-                    &lt;strong&gt;Office&lt;/strong&gt;: LeConte 314D
-                &lt;/p&gt;
-            &lt;/a&gt;
-            &lt;a href=&quot;mailto:edgarc@mailbox.sc.edu&quot; class=&quot;list-group-item&quot;&gt;        
-                &lt;h4 class=&quot;list-group-item-heading&quot;&gt;Teaching Assistant: Christopher David Edgar&lt;/h4&gt;
-                &lt;p class=&quot;list-group-item-text&quot;&gt;
-                    &lt;strong&gt;e-mail&lt;/strong&gt;: &lt;tt&gt;edgarc at mailbox dot sc dot edu&lt;/tt&gt;&lt;br /&gt;
-                    &lt;strong&gt;phone&lt;/strong&gt;: &lt;tt&gt;777-7411&lt;/tt&gt;&lt;br /&gt;
-                    &lt;strong&gt;Office&lt;/strong&gt;: LeConte 103A
-                &lt;/p&gt;
-            &lt;/a&gt;
-            &lt;a href=&quot;mailto:hippl@mailbox.sc.edu&quot; class=&quot;list-group-item&quot;&gt;        
-                &lt;h4 class=&quot;list-group-item-heading&quot;&gt;Teaching Assistant: Rita Barnwell Hipp&lt;/h4&gt;
-                &lt;p class=&quot;list-group-item-text&quot;&gt;
-                    &lt;strong&gt;e-mail&lt;/strong&gt;: &lt;tt&gt;hippl at mailbox dot sc dot edu&lt;/tt&gt;&lt;br /&gt;
-                    &lt;strong&gt;phone&lt;/strong&gt;: &lt;tt&gt;777-7477&lt;/tt&gt;&lt;br /&gt;
-                    &lt;strong&gt;Office&lt;/strong&gt;: LeConte 307
-                &lt;/p&gt;
-            &lt;/a&gt;
-        &lt;/div&gt;
-    &lt;/div&gt;
-    &lt;div class=&quot;col-lg-2&quot;&gt;
-    &lt;/div&gt;
-&lt;/div&gt;
-
-&lt;h2 id=&quot;meeting-times-and-office-hours&quot;&gt;Meeting Times and Office Hours&lt;/h2&gt;
-
-&lt;div class=&quot;row&quot;&gt;
-    &lt;div class=&quot;col-lg-12&quot;&gt;
-
-        &lt;table class=&quot;table table-bordered&quot;&gt;
-            &lt;tbody&gt;
-                &lt;tr&gt;
-                    &lt;td rowspan=&quot;2&quot;&gt;&lt;strong&gt;Lectures&lt;/strong&gt;:&lt;/td&gt;
-                    &lt;td bgcolor=&quot;#bb9999&quot; style=&quot;text-align:left;&quot;&gt;Sections 011 &amp;amp; 012&lt;/td&gt;
-                    &lt;td bgcolor=&quot;#bb9999&quot; style=&quot;text-align:center;&quot;&gt;&lt;strong&gt;MWF&lt;/strong&gt;&lt;/td&gt;
-                    &lt;td bgcolor=&quot;#bb9999&quot; style=&quot;text-align:right;&quot;&gt;11:59 AM - 12:50 PM&lt;/td&gt;
-                    &lt;td bgcolor=&quot;#bb9999&quot; style=&quot;text-align:left;&quot;&gt;LeConte 113&lt;/td&gt;
-                &lt;/tr&gt;
-                &lt;tr&gt;
-                    &lt;td bgcolor=&quot;#bb9999&quot; style=&quot;text-align:left;&quot;&gt;Sections 015 &amp;amp; 016&lt;/td&gt;
-                    &lt;td bgcolor=&quot;#bb9999&quot; style=&quot;text-align:center;&quot;&gt;&lt;strong&gt;MWF&lt;/strong&gt;&lt;/td&gt;
-                    &lt;td bgcolor=&quot;#bb9999&quot; style=&quot;text-align:right;&quot;&gt;&amp;nbsp;1:10 PM - &amp;nbsp;2:00 PM&lt;/td&gt;
-                    &lt;td bgcolor=&quot;#bb9999&quot; style=&quot;text-align:left;&quot;&gt;LeConte 412&lt;/td&gt;
-                &lt;/tr&gt;
-                &lt;tr&gt;
-                    &lt;td rowspan=&quot;4&quot;&gt;&lt;strong&gt;Computer Labs&lt;/strong&gt;:&lt;/td&gt;
-                    &lt;td bgcolor=&quot;#bebebe&quot; style=&quot;text-align:left;&quot;&gt;Section 011&lt;/td&gt;
-                    &lt;td bgcolor=&quot;#bebebe&quot; style=&quot;text-align:center;&quot;&gt;&lt;strong&gt;&lt;font color=&quot;#bebebe&quot;&gt;Th&lt;/font&gt;T&lt;/strong&gt;&lt;/td&gt;
-                    &lt;td bgcolor=&quot;#bebebe&quot; style=&quot;text-align:right;&quot;&gt;&amp;nbsp;8:30 AM - &amp;nbsp;9:20 AM&lt;/td&gt;
-                    &lt;td bgcolor=&quot;#bebebe&quot; style=&quot;text-align:left;&quot;&gt;LeConte 102&lt;/td&gt;
-                &lt;/tr&gt;
-                &lt;tr&gt;
-                    &lt;td bgcolor=&quot;#f4f5f7&quot; style=&quot;text-align:left;&quot;&gt;Section 012&lt;/td&gt;
-                    &lt;td bgcolor=&quot;#f4f5f7&quot; style=&quot;text-align:center;&quot;&gt;&lt;strong&gt;&lt;font color=&quot;#f4f5f7&quot;&gt;Th&lt;/font&gt;T&lt;/strong&gt;&lt;/td&gt;
-                    &lt;td bgcolor=&quot;#f4f5f7&quot; style=&quot;text-align:right;&quot;&gt;10:05 AM - 10:55 AM&lt;/td&gt;
-                    &lt;td bgcolor=&quot;#f4f5f7&quot; style=&quot;text-align:left;&quot;&gt;LeConte 102&lt;/td&gt;
-                &lt;/tr&gt;
-                &lt;tr&gt;
-                    &lt;td bgcolor=&quot;#bebebe&quot; style=&quot;text-align:left;&quot;&gt;Section 015&lt;/td&gt;
-                    &lt;td bgcolor=&quot;#bebebe&quot; style=&quot;text-align:center;&quot;&gt;&lt;strong&gt;&lt;font color=&quot;#bebebe&quot;&gt;Th&lt;/font&gt;T&lt;/strong&gt;&lt;/td&gt;
-                    &lt;td bgcolor=&quot;#bebebe&quot; style=&quot;text-align:right;&quot;&gt;11:40 AM - 12:30 PM&lt;/td&gt;
-                    &lt;td bgcolor=&quot;#bebebe&quot; style=&quot;text-align:left;&quot;&gt;LeConte 303A&lt;/td&gt;
-                &lt;/tr&gt;
-                &lt;tr&gt;
-                    &lt;td bgcolor=&quot;#f4f5f7&quot; style=&quot;text-align:left;&quot;&gt;Section 016&lt;/td&gt;
-                    &lt;td bgcolor=&quot;#f4f5f7&quot; style=&quot;text-align:center;&quot;&gt;&lt;strong&gt;&lt;font color=&quot;#f4f5f7&quot;&gt;Th&lt;/font&gt;T&lt;/strong&gt;&lt;/td&gt;
-                    &lt;td bgcolor=&quot;#f4f5f7&quot; style=&quot;text-align:right;&quot;&gt;&amp;nbsp;1:15 PM - &amp;nbsp;2:05 PM&lt;/td&gt;
-                    &lt;td bgcolor=&quot;#f4f5f7&quot; style=&quot;text-align:left;&quot;&gt;LeConte 303A&lt;/td&gt;
-                &lt;/tr&gt;
-                &lt;tr&gt;
-                    &lt;td rowspan=&quot;4&quot;&gt;&lt;strong&gt;Problem Sessions&lt;/strong&gt;:&lt;/td&gt;
-                    &lt;td bgcolor=&quot;#bebebe&quot; style=&quot;text-align:left;&quot;&gt;Section 011&lt;/td&gt;
-                    &lt;td bgcolor=&quot;#bebebe&quot; style=&quot;text-align:center;&quot;&gt;&lt;strong&gt;&lt;font color=&quot;#bebebe&quot;&gt;T&lt;/font&gt;Th&lt;/strong&gt;&lt;/td&gt;
-                    &lt;td bgcolor=&quot;#bebebe&quot; style=&quot;text-align:right;&quot;&gt;&amp;nbsp;8:30 AM - &amp;nbsp;9:20 AM&lt;/td&gt;
-                    &lt;td bgcolor=&quot;#bebebe&quot; style=&quot;text-align:left;&quot;&gt;LeConte 121&lt;/td&gt;
-                &lt;/tr&gt;
-                &lt;tr&gt;
-                    &lt;td bgcolor=&quot;#f4f5f7&quot; style=&quot;text-align:left;&quot;&gt;Section 012&lt;/td&gt;
-                    &lt;td bgcolor=&quot;#f4f5f7&quot; style=&quot;text-align:center;&quot;&gt;&lt;strong&gt;&lt;font color=&quot;#f4f5f7&quot;&gt;T&lt;/font&gt;Th&lt;/strong&gt;&lt;/td&gt;
-                    &lt;td bgcolor=&quot;#f4f5f7&quot; style=&quot;text-align:right;&quot;&gt;10:05 AM - 10:55 AM&lt;/td&gt;
-                    &lt;td style=&quot;text-align:left;&quot; bgcolor=&quot;#f4f5f7&quot;&gt;LeConte 121&lt;/td&gt;
-                &lt;/tr&gt;
-                &lt;tr&gt;
-                    &lt;td bgcolor=&quot;#bebebe&quot; style=&quot;text-align:left;&quot;&gt;Section 015&lt;/td&gt;
-                    &lt;td bgcolor=&quot;#bebebe&quot; style=&quot;text-align:center;&quot;&gt;&lt;strong&gt;&lt;font color=&quot;#bebebe&quot;&gt;T&lt;/font&gt;Th&lt;/strong&gt;&lt;/td&gt;
-                    &lt;td bgcolor=&quot;#bebebe&quot; style=&quot;text-align:right;&quot;&gt;11:40 AM - 12:30 PM&lt;/td&gt;
-                    &lt;td bgcolor=&quot;#bebebe&quot; style=&quot;text-align:left;&quot;&gt;LeConte 112&lt;/td&gt;
-                &lt;/tr&gt;
-                &lt;tr&gt;
-                    &lt;td bgcolor=&quot;#f4f5f7&quot; style=&quot;text-align:left;&quot;&gt;Section 016&lt;/td&gt;
-                    &lt;td bgcolor=&quot;#f4f5f7&quot; style=&quot;text-align:center;&quot;&gt;&lt;strong&gt;&lt;font color=&quot;#f4f5f7&quot;&gt;T&lt;/font&gt;Th&lt;/strong&gt;&lt;/td&gt;
-                    &lt;td bgcolor=&quot;#f4f5f7&quot; style=&quot;text-align:right;&quot;&gt;&amp;nbsp;1:15 PM - &amp;nbsp;2:05 PM&lt;/td&gt;
-                    &lt;td bgcolor=&quot;#f4f5f7&quot; style=&quot;text-align:left;&quot;&gt;LeConte 112&lt;/td&gt;
-                &lt;/tr&gt;
-                &lt;td style=&quot;vertical-align:top;&quot; rowspan=&quot;3&quot;&gt;&lt;strong&gt;Office Hours&lt;/strong&gt;:&lt;/td&gt;
-                &lt;td bgcolor=&quot;#fedebe&quot; style=&quot;text-align:center;&quot;&gt;Francisco&lt;/td&gt;
-                &lt;td bgcolor=&quot;#fedebe&quot; style=&quot;text-align:right;&quot;&gt;&lt;strong&gt;MTWThF&lt;/strong&gt;&lt;/td&gt;
-                &lt;td bgcolor=&quot;#fedebe&quot; style=&quot;text-align:right;&quot;&gt;&amp;nbsp;3:00 PM - &amp;nbsp;4:00 PM&lt;/td&gt;
-                &lt;td style=&quot;text-align:left;vertical-align:bottom;&quot; bgcolor=&quot;#fedebe&quot;&gt;LeConte 314D&lt;/td&gt;
-                &lt;tr&gt;
-                    &lt;td bgcolor=&quot;#fedebe&quot; style=&quot;text-align:center;&quot;&gt;Rita&lt;/td&gt;
-                    &lt;td bgcolor=&quot;#fedebe&quot; style=&quot;text-align:right;&quot;&gt;&lt;strong&gt;MWF&lt;/strong&gt;&lt;/td&gt;
-                    &lt;td bgcolor=&quot;#fedebe&quot; style=&quot;text-align:right;&quot;&gt;&amp;nbsp;9:30 AM - 10:30 AM&lt;/td&gt;
-                    &lt;td style=&quot;text-align:left;&quot; bgcolor=&quot;#fedebe&quot;&gt;LeConte 307&lt;/td&gt;
-                &lt;/tr&gt;
-                &lt;tr&gt;
-                    &lt;td bgcolor=&quot;#fedebe&quot; style=&quot;text-align:center;&quot;&gt;Christopher&lt;/td&gt;
-                    &lt;td bgcolor=&quot;#fedebe&quot; style=&quot;text-align:right;&quot;&gt;&lt;strong&gt;TTh&lt;/strong&gt;&lt;/td&gt;
-                    &lt;td bgcolor=&quot;#fedebe&quot; style=&quot;text-align:right;&quot;&gt;11:00 AM - 11:59 AM&lt;/td&gt;
-                    &lt;td style=&quot;text-align:left;&quot; bgcolor=&quot;#fedebe&quot;&gt;LeConte 103A&lt;/td&gt;
-                &lt;/tr&gt;
-            &lt;/tbody&gt;
-        &lt;/table&gt;
-    &lt;/div&gt;
-&lt;/div&gt;
-
-&lt;h2 id=&quot;important-deadlines-you-need-to-know&quot;&gt;Important deadlines you need to know&lt;/h2&gt;
-
-&lt;p&gt;The semester begins Thursday, August 21st, and ends Friday, December 5th.  The last day to obtain a “W” grade or to elect a pass/fail grade is Wednesday, August 27th. The first day in which a “WF” grade is assigned is therefore Thursday, August 28th.  The last day to drop a course or withdraw without a grade of “WF” being recorded is Thursday, October 9th.&lt;/p&gt;
-
-&lt;h2 id=&quot;prerequisites&quot;&gt;Prerequisites&lt;/h2&gt;
-
-&lt;p&gt;Qualifications earned by grade of &lt;strong&gt;C&lt;/strong&gt; or better in MATH 112, 115, 116 or by a &lt;a href=&quot;https://assess.math.sc.edu&quot;&gt;PreCalculus Placement Test.&lt;/a&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;text&quot;&gt;Text&lt;/h2&gt;
-
-&lt;p&gt;&lt;em&gt;Calculus. Early Transcendentals&lt;/em&gt; by James Stewart. &lt;strong&gt;Thompson Brooks/Cole&lt;/strong&gt; 2008 (sixth edition)&lt;/p&gt;
-
-&lt;table style=&quot;width:50%; margin-left:auto;margin-right:auto;border:0 white;&quot;&gt;
-&lt;tr&gt;
-&lt;td style=&quot;text-align:center;border:0 white; padding:10px;&quot;&gt;
-&lt;a href=&quot;http://www.amazon.com/gp/product/0495011665/ref=as_li_tl?ie=UTF8&amp;amp;camp=1789&amp;amp;creative=9325&amp;amp;creativeASIN=0495011665&amp;amp;linkCode=as2&amp;amp;tag=blancosilva-20&amp;amp;linkId=JYVEWI7H44MSFTN5&quot;&gt;&lt;img border=&quot;0&quot; src=&quot;http://ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&amp;amp;ASIN=0495011665&amp;amp;Format=_SL250_&amp;amp;ID=AsinImage&amp;amp;MarketPlace=US&amp;amp;ServiceVersion=20070822&amp;amp;WS=1&amp;amp;tag=blancosilva-20&quot; /&gt;&lt;/a&gt;&lt;img src=&quot;http://ir-na.amazon-adsystem.com/e/ir?t=blancosilva-20&amp;amp;l=as2&amp;amp;o=1&amp;amp;a=0495011665&quot; width=&quot;1&quot; height=&quot;1&quot; border=&quot;0&quot; alt=&quot;&quot; style=&quot;border:none !important; margin:0px !important;&quot; /&gt;
-&lt;/td&gt;
-&lt;td style=&quot;text-align:center;border:0 white; padding:10px;&quot;&gt;
-&lt;a href=&quot;http://www.amazon.com/gp/product/0495012289/ref=as_li_tl?ie=UTF8&amp;amp;camp=1789&amp;amp;creative=9325&amp;amp;creativeASIN=0495012289&amp;amp;linkCode=as2&amp;amp;tag=blancosilva-20&amp;amp;linkId=X3JMYHI2ZHG3KHYR&quot;&gt;&lt;img border=&quot;0&quot; src=&quot;http://ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&amp;amp;ASIN=0495012289&amp;amp;Format=_SL250_&amp;amp;ID=AsinImage&amp;amp;MarketPlace=US&amp;amp;ServiceVersion=20070822&amp;amp;WS=1&amp;amp;tag=blancosilva-20&quot; /&gt;&lt;/a&gt;&lt;img src=&quot;http://ir-na.amazon-adsystem.com/e/ir?t=blancosilva-20&amp;amp;l=as2&amp;amp;o=1&amp;amp;a=0495012289&quot; width=&quot;1&quot; height=&quot;1&quot; border=&quot;0&quot; alt=&quot;&quot; style=&quot;border:none !important; margin:0px !important;&quot; /&gt;
-&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td style=&quot;text-align:center;border:0 white; padding:10px;&quot;&gt;
-&lt;a href=&quot;http://www.amazon.com/gp/product/0495012289/ref=as_li_tl?ie=UTF8&amp;amp;camp=1789&amp;amp;creative=9325&amp;amp;creativeASIN=0495012289&amp;amp;linkCode=as2&amp;amp;tag=blancosilva-20&amp;amp;linkId=CASF3UEODJWBVAPC&quot;&gt;Student Solutions Manual for Stewart&#39;s Multivariable Calculus, 6th Edition&lt;/a&gt;&lt;img src=&quot;http://ir-na.amazon-adsystem.com/e/ir?t=blancosilva-20&amp;amp;l=as2&amp;amp;o=1&amp;amp;a=0495012289&quot; width=&quot;1&quot; height=&quot;1&quot; border=&quot;0&quot; alt=&quot;&quot; style=&quot;border:none !important; margin:0px !important;&quot; /&gt;
-&lt;/td&gt;
-&lt;td style=&quot;text-align:center;border:0 white; padding:10px;&quot;&gt;
-&lt;a href=&quot;http://www.amazon.com/gp/product/0495011665/ref=as_li_tl?ie=UTF8&amp;amp;camp=1789&amp;amp;creative=9325&amp;amp;creativeASIN=0495011665&amp;amp;linkCode=as2&amp;amp;tag=blancosilva-20&amp;amp;linkId=WYEDJZIE7UPXTT5Q&quot;&gt;Calculus: Early Transcendentals (Stewart&#39;s Calculus Series)&lt;/a&gt;&lt;img src=&quot;http://ir-na.amazon-adsystem.com/e/ir?t=blancosilva-20&amp;amp;l=as2&amp;amp;o=1&amp;amp;a=0495011665&quot; width=&quot;1&quot; height=&quot;1&quot; border=&quot;0&quot; alt=&quot;&quot; style=&quot;border:none !important; margin:0px !important;&quot; /&gt;
-
-
-&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/table&gt;
-&lt;p&gt;You will be required to use Enhanced WebAssign, the online homework system that accompanies your textbook, for my course.  If you choose to purchase a hard copy of the textbook, you need to buy the bundle that comes with the Enhanced WebAssign code.&lt;/p&gt;
-
-&lt;h2 id=&quot;course-structure-and-grading-policies&quot;&gt;Course Structure and Grading Policies&lt;/h2&gt;
-
-&lt;p&gt;Your final score for the course will be computed as follows:&lt;/p&gt;
-
-&lt;div class=&quot;alert alert-warning&quot; role=&quot;alert&quot; style=&quot;text-align:center;&quot;&gt;
-    &lt;strong&gt;&lt;tt&gt;F = 0.1 * (HW + Q + CL + ME1 + ME2 + ME3 + ME4 + ME5) + 0.2 * FE&lt;/tt&gt;&lt;/strong&gt;
-&lt;/div&gt;
-
-&lt;div class=&quot;row&quot;&gt;
-    &lt;div class=&quot;col-lg-12&quot;&gt;
-        &lt;ul class=&quot;list-group&quot;&gt;
-            &lt;li class=&quot;list-group-item&quot;&gt;
-                &lt;strong&gt;Homework assignments&lt;/strong&gt;: (up to 100 points) 10% of the course grade.&lt;br /&gt;   Homework problems have been assigned for each lecture (you can see them at the end of this page, under &lt;strong&gt;Lesson Plan&lt;/strong&gt;). A selection of those problems are posted on &lt;a href=&quot;http://www.webassign.net&quot;&gt;WebAssign&lt;/a&gt; on the day of the lecture, and will be graded.  You will have until the end of the next class day to complete the assignment (e.g. what is posted on Monday is due on Wednesday at 11:59PM; what is posted on Friday is due on Monday at 11:59PM)
-                In order to sign up for your section of the course on WebAssign, visit &lt;a href=&quot;http://www.webassign.net&quot;&gt;www.webassign.net&lt;/a&gt; and click on [&lt;strong&gt;Enter Class Key&lt;/strong&gt;].  The class key is
-
-                &lt;h3 style=&quot;text-align:center;&quot;&gt;&lt;span class=&quot;label label-warning&quot;&gt;&lt;tt&gt;sc 7564 8382&lt;/tt&gt;&lt;/span&gt;&lt;/h3&gt;
-
-                Click [&lt;a href=&quot;http://www.webassign.net/manual/WA_Student_Quick_Start.pdf&quot;&gt;here&lt;/a&gt;] to retrieve further registration instructions.
-            &lt;/li&gt;
-            &lt;li class=&quot;list-group-item&quot;&gt;
-                &lt;strong&gt;Quizzes&lt;/strong&gt;: (up to 100 points) 10% of the course grade.&lt;br /&gt;   A 15-minute quiz will be given in every recitation, except on the week of a midterm exam, or the last week of classes.  At the end of the course, hopefully you will have taken at least 10 quizzes (if that is the case, only the 10 best scores will count toward your quiz average).  
-            &lt;/li&gt;
-            &lt;li class=&quot;list-group-item&quot;&gt;
-                &lt;strong&gt;Computer Labs&lt;/strong&gt;: (up to 100 points) 10% of the course grade.
-            &lt;/li&gt;
-            &lt;li class=&quot;list-group-item&quot;&gt;
-                &lt;strong&gt;Midterm Exams&lt;/strong&gt;: (up to 100 points each) 50% of the course grade (10% each midterm).&lt;br /&gt;  There will be five in-class midterm exams scheduled as follows:
-
-                &lt;div class=&quot;row&quot;&gt;
-                    &lt;div class=&quot;col-lg-4&quot;&gt;
-                    &lt;/div&gt;
-                    &lt;div class=&quot;col-lg-4&quot;&gt;
-                        &lt;table class=&quot;table table-striped&quot;&gt;
-                            &lt;tbody&gt;
-                                &lt;tr&gt;
-                                    &lt;td bgcolor=&quot;#bb9999&quot;&gt;Test #&lt;/td&gt;
-                                    &lt;td bgcolor=&quot;#bb9999&quot;&gt;Date&lt;/td&gt;
-                                &lt;/tr&gt;
-                                &lt;tr&gt;
-                                    &lt;td align=&quot;center&quot;&gt;&lt;strong&gt;1&lt;/strong&gt;&lt;/td&gt;
-                                    &lt;td align=&quot;center&quot;&gt;Mon, Sep 08&lt;/td&gt;
-                                &lt;/tr&gt;
-                                &lt;tr&gt;
-                                    &lt;td align=&quot;center&quot;&gt;&lt;strong&gt;2&lt;/strong&gt;&lt;/td&gt;
-                                    &lt;td align=&quot;center&quot;&gt;Fri, Sep 26&lt;/td&gt;
-                                &lt;/tr&gt;
-                                &lt;tr&gt;
-                                    &lt;td align=&quot;center&quot;&gt;&lt;strong&gt;3&lt;/strong&gt;&lt;/td&gt;
-                                    &lt;td align=&quot;center&quot;&gt;Wed, Oct 15&lt;/td&gt;
-                                &lt;/tr&gt;
-                                &lt;tr&gt;
-                                    &lt;td align=&quot;center&quot;&gt;&lt;strong&gt;4&lt;/strong&gt;&lt;/td&gt;
-                                    &lt;td align=&quot;center&quot;&gt;Mon, Nov 3&lt;/td&gt;
-                                &lt;/tr&gt;
-                                &lt;tr&gt;
-                                    &lt;td align=&quot;center&quot;&gt;&lt;strong&gt;5&lt;/strong&gt;&lt;/td&gt;
-                                    &lt;td align=&quot;center&quot;&gt;Mon, Nov 24&lt;/td&gt;
-                                &lt;/tr&gt;
-                            &lt;/tbody&gt;
-                        &lt;/table&gt;
-                    &lt;/div&gt;
-                    &lt;div class=&quot;col-lg-4&quot;&gt;
-                    &lt;/div&gt;
-                &lt;/div&gt;
-
-            &lt;/li&gt;
-            &lt;li class=&quot;list-group-item&quot;&gt;
-                &lt;strong&gt;Final Exam&lt;/strong&gt;: (up to 100 points) 20% of the course grade.&lt;br /&gt;  The final exams are scheduled as follows:
-                &lt;ul&gt;
-                    &lt;li&gt; Sections 011 &amp;amp; 012:  Friday, December 12th at 12:30 PM.&lt;/li&gt;
-                    &lt;li&gt;Sections 015 &amp;amp; 016: Monday, December 8th at 12:30 PM.&lt;/li&gt;
-                &lt;/ul&gt;
-            &lt;/li&gt;
-        &lt;/ul&gt;
-    &lt;/div&gt;
-&lt;/div&gt;
-
-&lt;div class=&quot;alert alert-danger&quot; role=&quot;alert&quot;&gt;
-    No make-up quizzes or tests will be given. Only medical, death in the family, religious or official USC business reasons are valid excuses for missing class, and must be verified by letter from a doctor, guardian or supervisor.
-&lt;/div&gt;
-
-&lt;p&gt;The course grade will be determined as follows:&lt;/p&gt;
-
-&lt;div class=&quot;row&quot;&gt;
-    &lt;div class=&quot;col-lg-4&quot;&gt;
-    &lt;/div&gt;
-    &lt;div class=&quot;col-lg-4&quot;&gt;
-        &lt;table class=&quot;table table-striped&quot;&gt;
-            &lt;thead&gt;
-                &lt;tr&gt;
-                    &lt;th bgcolor=&quot;#bb9999&quot;&gt;GRADE&lt;/th&gt;
-                    &lt;th bgcolor=&quot;#bb9999&quot;&gt;RANGE&lt;/th&gt;
-                &lt;/tr&gt;
-            &lt;/thead&gt;
-            &lt;tbody&gt;
-                &lt;tr&gt;
-                    &lt;td align=&quot;center&quot;&gt;&lt;strong&gt;A&lt;/strong&gt;&lt;/td&gt;
-                    &lt;td&gt;90%-100%&lt;/td&gt;
-                &lt;/tr&gt;
-                &lt;tr&gt;
-                    &lt;td align=&quot;center&quot;&gt;&lt;strong&gt;B+&lt;/strong&gt;&lt;/td&gt;
-                    &lt;td&gt;85%-89%&lt;/td&gt;
-                &lt;/tr&gt;
-                &lt;tr&gt;
-                    &lt;td align=&quot;center&quot;&gt;&lt;strong&gt;B&lt;/strong&gt;&lt;/td&gt;
-                    &lt;td&gt;80%-84%&lt;/td&gt;
-                &lt;/tr&gt;
-                &lt;tr&gt;
-                    &lt;td align=&quot;center&quot;&gt;&lt;strong&gt;C+&lt;/strong&gt;&lt;/td&gt;
-                    &lt;td&gt;75%-79%&lt;/td&gt;
-                &lt;/tr&gt;
-                &lt;tr&gt;
-                    &lt;td align=&quot;center&quot;&gt;&lt;strong&gt;C&lt;/strong&gt;&lt;/td&gt;
-                    &lt;td&gt;70%-74%&lt;/td&gt;
-                &lt;/tr&gt;
-                &lt;tr&gt;
-                    &lt;td align=&quot;center&quot;&gt;&lt;strong&gt;D+&lt;/strong&gt;&lt;/td&gt;
-                    &lt;td&gt;65%-69%&lt;/td&gt;
-                &lt;/tr&gt;
-                &lt;tr&gt;
-                    &lt;td align=&quot;center&quot;&gt;&lt;strong&gt;D&lt;/strong&gt;&lt;/td&gt;
-                    &lt;td&gt;60%-64%&lt;/td&gt;
-                &lt;/tr&gt;
-                &lt;tr&gt;
-                    &lt;td align=&quot;center&quot;&gt;&lt;strong&gt;F&lt;/strong&gt;&lt;/td&gt;
-                    &lt;td&gt;below 60%&lt;/td&gt;
-                &lt;/tr&gt;
-            &lt;/tbody&gt;
-        &lt;/table&gt;
-    &lt;/div&gt;
-    &lt;div class=&quot;col-lg-4&quot;&gt;
-    &lt;/div&gt;
-&lt;/div&gt;
-
-&lt;h2 id=&quot;further-information&quot;&gt;Further Information&lt;/h2&gt;
-
-&lt;div class=&quot;row&quot;&gt;
-    &lt;div class=&quot;col-lg-12&quot;&gt;
-        &lt;ul class=&quot;list-group&quot;&gt;
-            &lt;li class=&quot;list-group-item&quot;&gt;&lt;strong&gt;Honor Code:&lt;/strong&gt;&lt;br /&gt; The Honor Code applies to all work for this course.  Please review the Honor Code at [&lt;a href=&quot;http://www.sc.edu/academicintegrity&quot;&gt;this link&lt;/a&gt;].  Students found violating the Honor Code will be subject to discipline.&lt;/li&gt;
-            &lt;li class=&quot;list-group-item&quot;&gt;Some material will be stored in Dropbox. In that case, you will need an account to retrieve it. If you do not have one already, sign-in through [&lt;a href=&quot;http://db.tt/Mtz4IUP&quot;&gt;this link&lt;/a&gt;] with your academic e-mail address to receive a base 4GB storage, plus an extra 500MB, free of charge.&lt;/li&gt;
-            &lt;li class=&quot;list-group-item&quot;&gt;Remember to change your e-mail address on Blackboard if necessary [&lt;a href=&quot;http://blackboard.sc.edu/&quot;&gt;blackboard.sc.edu&lt;/a&gt;]&lt;/li&gt;
-            &lt;li class=&quot;list-group-item&quot;&gt;&lt;strong&gt;Office of Student Disability Services&lt;/strong&gt;:&lt;br /&gt; If you have special needs as addressed by the &lt;em&gt;Americans with Disabilities Act&lt;/em&gt; and need any assistance, please notify the instructor immediately.&lt;/li&gt;
-            &lt;li class=&quot;list-group-item&quot;&gt;&lt;strong&gt;Math Tutoring Center:&lt;/strong&gt;&lt;br /&gt; The Math Tutoring Center is a free tutoring service for MATH 111, 115, 122, 141, 142, and 170. The center also maintains a list of private tutors for math and statistics. The center is located in LeConte, room 105, and the schedule is available at the Department of Mathematics website (&lt;a href=&quot;http://www.math.sc.edu&quot;&gt;www.math.sc.edu&lt;/a&gt;). No appointment is necessary.&lt;/li&gt;
-            &lt;li class=&quot;list-group-item&quot;&gt;&lt;strong&gt;ACE centers:&lt;/strong&gt;&lt;br /&gt; Tutoring for 100-Level Math is offered Monday through Thursday 7-9pm in the ACE centers in Bates Hall and Columbia Hall and Monday through Thursday 6-9pm in Sims Hall.  No appointment is needed.  You may contact the Student Success Center at 803-777-0684 and &lt;a href=&quot;mailto:tutoring@sc.edu&quot;&gt;tutoring@sc.edu&lt;/a&gt; with additional questions.&lt;/li&gt;
-            &lt;li class=&quot;list-group-item&quot;&gt;&lt;strong&gt;Supplemental Instruction:&lt;/strong&gt;&lt;br /&gt; SI is available for this course to assist you in better understanding the course material. The SI program provides peer-facilitated study sessions led by qualified and trained undergraduate SI leaders who attend classes with students and encourage students to practice and discuss course concepts in sessions. Sessions are open to all students who want to improve their understanding of the material, as well as their grades. SI sessions will focus on the most recent material covered in class. Each SI leader holds three sessions per week. Your SI leader is &lt;a href=&quot;mailto:hernants@email.sc.edu&quot;&gt;Tyler Hernandez&lt;/a&gt; and you can find the schedule online at &lt;a href=&quot;http://www.sa.sc.edu/supplementalinstruction/&quot;&gt;www.sa.sc.edu/supplementalinstruction/&lt;/a&gt;.  You can contact the Student Success Center at (803) 777-0684 if you have questions about the SI session schedule.&lt;/li&gt;
-        &lt;/ul&gt;
-    &lt;/div&gt;
-&lt;/div&gt;
-
-&lt;div class=&quot;well&quot;&gt;
-    &lt;h2&gt;Learning Outcomes&lt;/h2&gt;
-    &lt;p&gt; 
-        A student who successfully completes Calculus I (MATH 141) should continue to develop as an independent learner with the ability to approach problems from a conceptual viewpoint, to utilize more than one idea in a single problem, and to apply appropriate calculus skills to problems in context. In particular, the successful student will master concepts and gain skills needed to solve problems related to:
-        &lt;ul&gt;
-            &lt;li&gt;Handling Functions&lt;/li&gt;
-            &lt;ul&gt;
-                &lt;li&gt;Functions and their graphs&lt;/li&gt;
-                &lt;li&gt;Finding limits graphically, numerically and analytically&lt;/li&gt;
-                &lt;li&gt;Continuity and one-sided limits&lt;/li&gt;
-                &lt;li&gt;Infinite limits and limits at infinity&lt;/li&gt;
-            &lt;/ul&gt;
-            &lt;li&gt;Differentiation&lt;/li&gt;
-            &lt;ul&gt;
-                &lt;li&gt;The derivative and rates of change&lt;/li&gt;
-                &lt;li&gt;Basic differentiation rules&lt;/li&gt;
-                &lt;ul&gt;
-                    &lt;li&gt;Polynomials&lt;/li&gt;
-                    &lt;li&gt;Exponentials&lt;/li&gt;
-                    &lt;li&gt;Trigonometric functions&lt;/li&gt;
-                    &lt;li&gt;Logarithmic functions&lt;/li&gt;
-                    &lt;li&gt;The product and quotient rule&lt;/li&gt;
-                    &lt;li&gt;Chain rule&lt;/li&gt;
-                &lt;/ul&gt;
-                &lt;li&gt;Implicit differentiation&lt;/li&gt;
-                &lt;li&gt;Logarithmic differentiation&lt;/li&gt;
-            &lt;/ul&gt;
-            &lt;li&gt;Applications of differentiation&lt;/li&gt;
-            &lt;ul&gt;
-                &lt;li&gt;Related rates&lt;/li&gt;
-                &lt;li&gt;Extrema on an interval&lt;/li&gt;
-                &lt;li&gt;Mean Value Theorem&lt;/li&gt;
-                &lt;li&gt;Curve sketching&lt;/li&gt;
-                &lt;li&gt;L&#39;Hospital&#39;s Rule&lt;/li&gt;
-                &lt;li&gt;Optimization problems&lt;/li&gt;
-            &lt;/ul&gt;
-            &lt;li&gt;Integration&lt;/li&gt;
-            &lt;ul&gt;
-                &lt;li&gt;Antiderivatives and indeterminate integrals&lt;/li&gt;
-                &lt;li&gt;Definite Integrals&lt;/li&gt;
-                &lt;li&gt;The Fundamental Theorem of Calculus&lt;/li&gt;
-                &lt;li&gt;Basic computation of area between curves&lt;/li&gt;
-                &lt;li&gt;Basic computation of volume of solids of revolution&lt;/li&gt;
-            &lt;/ul&gt;
-        &lt;/ul&gt;
-    &lt;/p&gt;
-&lt;/div&gt;
-
-&lt;h2 id=&quot;lesson-plan&quot;&gt;Lesson plan&lt;/h2&gt;
-
-&lt;div class=&quot;well&quot; style=&quot;font-family:Courier; background:white;&quot;&gt;
-    &lt;ul&gt;
-        &lt;li&gt; First part---Functions; graphs, limits and continuity&lt;/li&gt;
-        &lt;ul&gt;
-            &lt;li&gt; Fri Aug 22: 1.2: Intro to Functions [pp.20--22: 1abcde, 2abcef, 5, 6, 7, 27, 28, 30, 38, 41, 42]&lt;/li&gt;
-            &lt;li&gt; Mon Aug 25: 1.3: New functions from old functions [pp.43--44: 1, 2, 3, 4, 5, 31, 32, 33, 34, 35, 36, 37, 38, 41, 42]&lt;/li&gt;
-            &lt;li&gt; Wed Aug 27: 1.5 and 1.6: Exponential and Logarithmic Functions [p.58: 3, 4, 7, 8, 9, 10, 15, 17, 18. p.71: 33--39, 47--52]&lt;/li&gt;
-            &lt;li&gt; Fri Aug 29: 2.2 and 2.3: Limits [p.97: 4, 5, 6, 25, 26, 27, 29, 32, 34a. p.106: 1, 3--9, 11--27]&lt;/li&gt;
-            &lt;li&gt; Wed Sep 03: 2.5: Continuity [pp.128: 3a, 4, 10--13, 16--18, 20, 35, 37, 39, 41, 42]&lt;/li&gt;
-            &lt;li&gt; Fri Sep 05: Limits and continuity II&lt;/li&gt;
-            &lt;li&gt; Mon Sep 08: First Midterm---sections 1.2, 1.3, 1.5, 1.6, 2.2, 2.3, 2.5 and 2.6&lt;/li&gt;
-        &lt;/ul&gt;
-        &lt;li&gt; Second Part: Introduction to Differentiation&lt;/li&gt;
-        &lt;ul&gt;
-            &lt;li&gt; Wed Sep 10: 2.7 and 2.8: Intro to derivatives [p.150 :4ab, 5--8, 10ab, 21, 25--30]&lt;/li&gt;
-            &lt;li&gt; Fri Sep 12: 3.1: Derivatives of Polynomials and Exponential functions [p.180: 3--30, 33, 34, 45, 52, 53, 54]&lt;/li&gt;
-            &lt;li&gt; Mon Sep 15: 3.2: The Product and Quotient Rule [p.187: 1, 2, 7, 8, 9, 10, 11, 13, 14, 15, 16, 19, 21, 22, 26, 29, 31, 52]&lt;/li&gt;
-            &lt;li&gt; Wed Sep 17: 3.3: Derivatives of Trigonometric functions [p.195: 1--6, 9--14, 21, 23, 24, 25a, 34]&lt;/li&gt;
-            &lt;li&gt; Fri Sep 19: 3.4: The Chain Rule [p.203: 1---21, 23, 25--30, 32--34, 36, 37, 51--54, 62]&lt;/li&gt;
-            &lt;li&gt; Mon Sep 22: 3.5: Implicit Differentiation [p.213: 1--30, 63, 64a, 65, 66]&lt;/li&gt;
-            &lt;li&gt; Wed Sep 24: 3.6: Derivatives of Logarithmic functions [p.220: 2--22, 27--30, 33, 34, 37--50]&lt;/li&gt;
-            &lt;li&gt; Fri Sep 26: Second Midterm---sections 2.7, 2.8, 3.1, 3.2, 3.3, 3.4, 3.5 and 3.6&lt;/li&gt;
-        &lt;/ul&gt;
-        &lt;li&gt; Third Part: Applications of Differentiation&lt;/li&gt;
-        &lt;ul&gt;
-            &lt;li&gt; Mon Sep 29: 4.1: Maximum and Minimum values I [p.277: 6, 8, 10, 29--44, 47--62], 4.3: First and Second Derivative Test [p.295: 5, 6, 7, 9--22, 33--50] &lt;s&gt;4.2: The Mean Value Theorem [see assignment online in webassign]&lt;/s&gt;&lt;/li&gt;
-            &lt;li&gt; Wed Oct 01: 4.1: Maximum and Minimum values II&lt;/li&gt;
-            &lt;li&gt; Fri Oct 03: 4.4: L&#39;Hopital&#39;s Rule I [p.304: 5--64]&lt;/li&gt;
-            &lt;li&gt; Mon Oct 06: 4.4: L&#39;Hopital&#39;s Rule II&lt;/li&gt;
-            &lt;li&gt; Wed Oct 08: Curve Sketching [p.314: 1--27]&lt;/li&gt;
-            &lt;li&gt; Fri Oct 10: Curve Sketching II&lt;/li&gt;
-            &lt;li&gt; Mon Oct 13: Curve Sketching III&lt;/li&gt;
-            &lt;li&gt; Wed Oct 15: Third Midterm---sections 4.1, 4.2, 4.3, 4.4, and 4.5&lt;/li&gt;
-            &lt;li&gt; Mon Oct 20: 3.9: Related Rates I [p.245: 1--33]&lt;/li&gt;
-            &lt;li&gt; Wed Oct 22: 3.9: Related Rates II&lt;/li&gt;
-            &lt;li&gt; Fri Oct 24: 3.9: Related Rates III&lt;/li&gt;
-            &lt;li&gt; Mon Oct 27: 4.7 Optimization Problems I&lt;/li&gt;
-            &lt;li&gt; Wed Oct 29: 4.7 Optimization Problems II&lt;/li&gt;
-            &lt;li&gt; Fri Oct 31: 4.7 Optimization Problems III&lt;/li&gt;
-            &lt;li&gt; Mon Nov 03: Fourth Midterm---sections 3.9, and 4.7&lt;/li&gt;
-        &lt;/ul&gt;
-        &lt;li&gt; Fourth Part: Introduction to Integration&lt;/li&gt;
-        &lt;ul&gt;
-            &lt;li&gt; Wed Nov 05: 4.9: Antiderivatives [p.345: 1--15, 18, 18, 21]&lt;/li&gt;
-            &lt;li&gt; Fri Nov 07: 5.4: Indefinite integrals [p.397: 5--18]&lt;/li&gt;
-            &lt;li&gt; Mon Nov 10: Appendix E: Sigma notation [p.A38: 1--36, 43--46]&lt;/li&gt;
-            &lt;li&gt; Wed Nov 12: 5.1 and 5.2: Intro to Definite Integrals&lt;/li&gt;
-            &lt;li&gt; Fri Nov 14: 5.3: The Fundamental Theorem of Calculus [p.388: 7--12, 19--33, 35, 36, 39, 40, 65, 66, 68, 74]&lt;/li&gt;
-            &lt;li&gt; Mon Nov 17: 5.5: The Substitution Rule [p.406: 1--46]&lt;/li&gt;
-            &lt;li&gt; Wed Nov 19: 6.1: Area between curves I&lt;/li&gt;
-            &lt;li&gt; Fri Nov 21: 6.1: Area between curves II&lt;/li&gt;
-            &lt;li&gt; Mon Nov 24: Fifth Midterm---sections 4.9, 5.1, 5.2, 5.3, 5.4 and 5.5&lt;/li&gt;
-        &lt;/ul&gt;
-        &lt;li&gt; The last stretch&lt;/li&gt;
-        &lt;ul&gt;
-            &lt;li&gt; Mon Dec 01: Review for Final Exam (1/3)&lt;/li&gt;
-            &lt;li&gt; Wed Dec 03: Review for Final Exam (2/3)&lt;/li&gt;
-            &lt;li&gt; Fri Dec 05: Review for Final Exam (3/3)&lt;/li&gt;
-        &lt;/ul&gt;
-    &lt;/ul&gt;
-&lt;/div&gt;
-</description>
-        <pubDate>Tue, 19 Aug 2014 11:50:44 -0400</pubDate>
-        <link>http://blancosilva.github.io/course/2014/08/19/ma141-fall-2014.html</link>
-        <guid isPermaLink="true">http://blancosilva.github.io/course/2014/08/19/ma141-fall-2014.html</guid>
-        
-        
-        <category>course</category>
         
       </item>
     
