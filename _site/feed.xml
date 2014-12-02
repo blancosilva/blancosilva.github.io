@@ -6,8 +6,8 @@
 </description>
     <link>http://blancosilva.github.io/</link>
     <atom:link href="http://blancosilva.github.io/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Tue, 02 Dec 2014 17:19:02 -0500</pubDate>
-    <lastBuildDate>Tue, 02 Dec 2014 17:19:02 -0500</lastBuildDate>
+    <pubDate>Tue, 02 Dec 2014 17:20:27 -0500</pubDate>
+    <lastBuildDate>Tue, 02 Dec 2014 17:20:27 -0500</lastBuildDate>
     <generator>Jekyll v2.4.0</generator>
     
       <item>
@@ -225,7 +225,7 @@ How many customers per day does the theater need in order to make a profit? Give
  &lt;/div&gt;
   &lt;/li&gt;
   &lt;li&gt;
-    &lt;p&gt;The following table gives the number of likes, &lt;span&gt;\( L \)&lt;/span&gt;, that Amanda gets on her instagram post per hour.  Let &lt;span&gt;( t \)&lt;/span&gt; be the number of hours since the post and &lt;span&gt;\( L=f(t) \)&lt;/span&gt;.  What is the average number of likes that Amanda got in the first 6 hours?&lt;/p&gt;
+    &lt;p&gt;The following table gives the number of likes, &lt;span&gt;\( L \)&lt;/span&gt;, that Amanda gets on her instagram post per hour.  Let &lt;span&gt;\( t \)&lt;/span&gt; be the number of hours since the post and &lt;span&gt;\( L=f(t) \)&lt;/span&gt;.  What is the average number of likes that Amanda got in the first 6 hours?&lt;/p&gt;
 
     &lt;div style=&quot;text-align:center&quot;&gt;
      &lt;table class=&quot;table table-border&quot; style=&quot;width:50%; margin-left:auto; margin-right:auto;&quot;&gt;
