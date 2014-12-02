@@ -6,8 +6,8 @@
 </description>
     <link>http://blancosilva.github.io/</link>
     <atom:link href="http://blancosilva.github.io/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Tue, 02 Dec 2014 17:15:48 -0500</pubDate>
-    <lastBuildDate>Tue, 02 Dec 2014 17:15:48 -0500</lastBuildDate>
+    <pubDate>Tue, 02 Dec 2014 17:17:13 -0500</pubDate>
+    <lastBuildDate>Tue, 02 Dec 2014 17:17:13 -0500</lastBuildDate>
     <generator>Jekyll v2.4.0</generator>
     
       <item>
@@ -201,49 +201,59 @@ How many customers per day does the theater need in order to make a profit? Give
       &lt;li&gt;Use the Fundamental Theorem of Calculus to evaluate the integral. Round to the nearest integer.&lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
-  &lt;li&gt;Compute the following definite integral:&lt;/li&gt;
-&lt;/ol&gt;
-&lt;div&gt;
-	\begin{equation}
-	\int_1^4 \big( 3^x + \tfrac{3}{x} \big)\, dx	
-	\end{equation}
-&lt;/div&gt;
-&lt;ol&gt;
-  &lt;li&gt;War Emblem, winner of the 2002 Kentucky Derby, can reach up to the speed of 50mph.  His speed was clocked every 30 seconds.  The results are in the table below.  What was his average speed?
- &amp;lt;div style=&quot;text-align:center&quot;&amp;gt;
-     &amp;lt;table class=&quot;table table-border&quot; style=&quot;width:50%; margin-left:auto; margin-right:auto;&quot;&amp;gt;
-         &amp;lt;tr&amp;gt;
-             &amp;lt;td&amp;gt;Time (Seconds)&amp;lt;/td&amp;gt;&amp;lt;td&amp;gt;0&amp;lt;/td&amp;gt;&amp;lt;td&amp;gt;30&amp;lt;/td&amp;gt;&amp;lt;td&amp;gt;60&amp;lt;/td&amp;gt;&amp;lt;td&amp;gt;90&amp;lt;/td&amp;gt;&amp;lt;td&amp;gt;120&amp;lt;/td&amp;gt;
-         &amp;lt;/tr&amp;gt;
-         &amp;lt;tr&amp;gt;
-             &amp;lt;td&amp;gt;Speed (mph)&amp;lt;/td&amp;gt;&amp;lt;td&amp;gt;0&amp;lt;/td&amp;gt;&amp;lt;td&amp;gt;40&amp;lt;/td&amp;gt;&amp;lt;td&amp;gt;38&amp;lt;/td&amp;gt;&amp;lt;td&amp;gt;35&amp;lt;/td&amp;gt;&amp;lt;td&amp;gt;37&amp;lt;/td&amp;gt;
-         &amp;lt;/tr&amp;gt;
-     &amp;lt;/table&amp;gt;
- &amp;lt;/div&amp;gt;&lt;/li&gt;
-  &lt;li&gt;The following table gives the number of likes, &lt;span&gt;\( L \)&lt;/span&gt;, that Amanda gets on her instagram post per hour.  Let &lt;span&gt;( t \)&lt;/span&gt; be the number of hours since the post and &lt;span&gt;\( L=f(t) \)&lt;/span&gt;.  What is the average number of likes that Amanda got in the first 6 hours?
- &amp;lt;div style=&quot;text-align:center&quot;&amp;gt;
-     &amp;lt;table class=&quot;table table-border&quot; style=&quot;width:50%; margin-left:auto; margin-right:auto;&quot;&amp;gt;
-         &amp;lt;tr&amp;gt;
-             &amp;lt;td&amp;gt;0&amp;lt;/td&amp;gt;&amp;lt;td&amp;gt;1&amp;lt;/td&amp;gt;&amp;lt;td&amp;gt;2&amp;lt;/td&amp;gt;&amp;lt;td&amp;gt;3&amp;lt;/td&amp;gt;&amp;lt;td&amp;gt;4&amp;lt;/td&amp;gt;&amp;lt;td&amp;gt;5&amp;lt;/td&amp;gt;&amp;lt;td&amp;gt;6&amp;lt;/td&amp;gt;
-         &amp;lt;/tr&amp;gt;
-         &amp;lt;tr&amp;gt;
-             &amp;lt;td&amp;gt;0&amp;lt;/td&amp;gt;&amp;lt;td&amp;gt;23&amp;lt;/td&amp;gt;&amp;lt;td&amp;gt;30&amp;lt;/td&amp;gt;&amp;lt;td&amp;gt;37&amp;lt;/td&amp;gt;&amp;lt;td&amp;gt;32&amp;lt;/td&amp;gt;&amp;lt;td&amp;gt;13&amp;lt;/td&amp;gt;&amp;lt;td&amp;gt;70&amp;lt;/td&amp;gt;
-         &amp;lt;/tr&amp;gt;
-     &amp;lt;/table&amp;gt;
- &amp;lt;/div&amp;gt;&lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Compute the following definite integral:&lt;/p&gt;
+
+    &lt;div&gt;
+     \begin{equation}
+     \int_1^4 \big( 3^x + \tfrac{3}{x} \big)\, dx	
+     \end{equation}
+ &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;War Emblem, winner of the 2002 Kentucky Derby, can reach up to the speed of 50mph.  His speed was clocked every 30 seconds.  The results are in the table below.  What was his average speed?&lt;/p&gt;
+
+    &lt;div style=&quot;text-align:center&quot;&gt;
+     &lt;table class=&quot;table table-border&quot; style=&quot;width:50%; margin-left:auto; margin-right:auto;&quot;&gt;
+         &lt;tr&gt;
+             &lt;td&gt;Time (Seconds)&lt;/td&gt;&lt;td&gt;0&lt;/td&gt;&lt;td&gt;30&lt;/td&gt;&lt;td&gt;60&lt;/td&gt;&lt;td&gt;90&lt;/td&gt;&lt;td&gt;120&lt;/td&gt;
+         &lt;/tr&gt;
+         &lt;tr&gt;
+             &lt;td&gt;Speed (mph)&lt;/td&gt;&lt;td&gt;0&lt;/td&gt;&lt;td&gt;40&lt;/td&gt;&lt;td&gt;38&lt;/td&gt;&lt;td&gt;35&lt;/td&gt;&lt;td&gt;37&lt;/td&gt;
+         &lt;/tr&gt;
+     &lt;/table&gt;
+ &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;The following table gives the number of likes, &lt;span&gt;\( L \)&lt;/span&gt;, that Amanda gets on her instagram post per hour.  Let &lt;span&gt;( t \)&lt;/span&gt; be the number of hours since the post and &lt;span&gt;\( L=f(t) \)&lt;/span&gt;.  What is the average number of likes that Amanda got in the first 6 hours?&lt;/p&gt;
+
+    &lt;div style=&quot;text-align:center&quot;&gt;
+     &lt;table class=&quot;table table-border&quot; style=&quot;width:50%; margin-left:auto; margin-right:auto;&quot;&gt;
+         &lt;tr&gt;
+             &lt;td&gt;0&lt;/td&gt;&lt;td&gt;1&lt;/td&gt;&lt;td&gt;2&lt;/td&gt;&lt;td&gt;3&lt;/td&gt;&lt;td&gt;4&lt;/td&gt;&lt;td&gt;5&lt;/td&gt;&lt;td&gt;6&lt;/td&gt;
+         &lt;/tr&gt;
+         &lt;tr&gt;
+             &lt;td&gt;0&lt;/td&gt;&lt;td&gt;23&lt;/td&gt;&lt;td&gt;30&lt;/td&gt;&lt;td&gt;37&lt;/td&gt;&lt;td&gt;32&lt;/td&gt;&lt;td&gt;13&lt;/td&gt;&lt;td&gt;70&lt;/td&gt;
+         &lt;/tr&gt;
+     &lt;/table&gt;
+ &lt;/div&gt;
+  &lt;/li&gt;
   &lt;li&gt;Find the net area of the function &lt;span&gt;\( y= f(x) = -2 + 5x \)&lt;/span&gt; between &lt;span&gt;\( x=0 \)&lt;span&gt; and &lt;span&gt;\( x=4 \)&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/li&gt;
-  &lt;li&gt;The following table gives the emissions &lt;span&gt;\( E \)&lt;/span&gt; of nitrogen oxide in millions of metric tons per year in the US
-Let &lt;span&gt;\( t \)&lt;/span&gt; be the number of years since 1970 and &lt;span&gt;\( E = f(t) \)&lt;/span&gt;.
- &amp;lt;div style=&quot;text-align:center;&quot;&amp;gt;
-     &amp;lt;table class=&quot;table table-border&quot; style=&quot;&quot;&amp;gt;
-         &amp;lt;tr&amp;gt;
-             &amp;lt;td&amp;gt;Year&amp;lt;/td&amp;gt;&amp;lt;td&amp;gt;1970&amp;lt;/td&amp;gt;&amp;lt;td&amp;gt;1975&amp;lt;/td&amp;gt;&amp;lt;td&amp;gt;1980&amp;lt;/td&amp;gt;&amp;lt;td&amp;gt;1985&amp;lt;/td&amp;gt;&amp;lt;td&amp;gt;1990&amp;lt;/td&amp;gt;&amp;lt;td&amp;gt;1995&amp;lt;/td&amp;gt;&amp;lt;td&amp;gt;2000&amp;lt;/td&amp;gt;
-         &amp;lt;/tr&amp;gt;
-         &amp;lt;tr&amp;gt;
-             &amp;lt;td&amp;gt;E&amp;lt;/td&amp;gt;&amp;lt;td&amp;gt; 26.9&amp;lt;/td&amp;gt;&amp;lt;td&amp;gt;26.4&amp;lt;/td&amp;gt;&amp;lt;td&amp;gt; 27.1&amp;lt;/td&amp;gt;&amp;lt;td&amp;gt; 25.8 &amp;lt;/td&amp;gt;&amp;lt;td&amp;gt; 25.5&amp;lt;/td&amp;gt;&amp;lt;td&amp;gt; 25.9&amp;lt;/td&amp;gt;&amp;lt;td&amp;gt; 22.6&amp;lt;/td&amp;gt;
-         &amp;lt;/tr&amp;gt;
-     &amp;lt;/table&amp;gt;
- &amp;lt;/div&amp;gt;
+  &lt;li&gt;
+    &lt;p&gt;The following table gives the emissions &lt;span&gt;\( E \)&lt;/span&gt; of nitrogen oxide in millions of metric tons per year in the US
+Let &lt;span&gt;\( t \)&lt;/span&gt; be the number of years since 1970 and &lt;span&gt;\( E = f(t) \)&lt;/span&gt;.&lt;/p&gt;
+
+    &lt;div style=&quot;text-align:center;&quot;&gt;
+     &lt;table class=&quot;table table-border&quot; style=&quot;&quot;&gt;
+         &lt;tr&gt;
+             &lt;td&gt;Year&lt;/td&gt;&lt;td&gt;1970&lt;/td&gt;&lt;td&gt;1975&lt;/td&gt;&lt;td&gt;1980&lt;/td&gt;&lt;td&gt;1985&lt;/td&gt;&lt;td&gt;1990&lt;/td&gt;&lt;td&gt;1995&lt;/td&gt;&lt;td&gt;2000&lt;/td&gt;
+         &lt;/tr&gt;
+         &lt;tr&gt;
+             &lt;td&gt;E&lt;/td&gt;&lt;td&gt; 26.9&lt;/td&gt;&lt;td&gt;26.4&lt;/td&gt;&lt;td&gt; 27.1&lt;/td&gt;&lt;td&gt; 25.8 &lt;/td&gt;&lt;td&gt; 25.5&lt;/td&gt;&lt;td&gt; 25.9&lt;/td&gt;&lt;td&gt; 22.6&lt;/td&gt;
+         &lt;/tr&gt;
+     &lt;/table&gt;
+ &lt;/div&gt;
+
     &lt;ul&gt;
       &lt;li&gt;What are the units and meaning of &lt;span&gt;\( \int_0^30 f(t)\, dt \)&lt;/span&gt;?&lt;/li&gt;
       &lt;li&gt;Estimate the previous integral.&lt;/li&gt;
