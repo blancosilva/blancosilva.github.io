@@ -6,8 +6,8 @@
 </description>
     <link>http://blancosilva.github.io/</link>
     <atom:link href="http://blancosilva.github.io/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Tue, 02 Dec 2014 17:18:21 -0500</pubDate>
-    <lastBuildDate>Tue, 02 Dec 2014 17:18:21 -0500</lastBuildDate>
+    <pubDate>Tue, 02 Dec 2014 17:19:02 -0500</pubDate>
+    <lastBuildDate>Tue, 02 Dec 2014 17:19:02 -0500</lastBuildDate>
     <generator>Jekyll v2.4.0</generator>
     
       <item>
@@ -255,7 +255,7 @@ Let &lt;span&gt;\( t \)&lt;/span&gt; be the number of years since 1970 and &lt;s
  &lt;/div&gt;
 
     &lt;ul&gt;
-      &lt;li&gt;What are the units and meaning of &lt;span&gt;\( \int_0^30 f(t)\, dt \)&lt;/span&gt;?&lt;/li&gt;
+      &lt;li&gt;What are the units and meaning of &lt;span&gt;\( \int_0^{30} f(t)\, dt \)&lt;/span&gt;?&lt;/li&gt;
       &lt;li&gt;Estimate the previous integral.&lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
