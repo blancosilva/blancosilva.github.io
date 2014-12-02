@@ -6,8 +6,8 @@
 </description>
     <link>http://blancosilva.github.io/</link>
     <atom:link href="http://blancosilva.github.io/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Tue, 02 Dec 2014 17:40:45 -0500</pubDate>
-    <lastBuildDate>Tue, 02 Dec 2014 17:40:45 -0500</lastBuildDate>
+    <pubDate>Tue, 02 Dec 2014 17:44:04 -0500</pubDate>
+    <lastBuildDate>Tue, 02 Dec 2014 17:44:04 -0500</lastBuildDate>
     <generator>Jekyll v2.4.0</generator>
     
       <item>
@@ -20,9 +20,9 @@
   &lt;li&gt;
     &lt;p&gt;Find the derivative of the following functions&lt;/p&gt;
 
-    &lt;pre&gt;&lt;code&gt; &amp;lt;div&amp;gt;
+    &lt;div&gt;
      \begin{align}
-     f(x) &amp;amp;= 230x^{300} + 15x^{18} + 5
+     f(x) &amp;amp;= 230x^{300} + 15x^{18} + 5 \\
      f(x) &amp;amp;= -\frac{488}{233} x^{265/488} \\
      f(x) &amp;amp;= 2\sin x + 6\cos x + 9 \\
      f(x) &amp;amp;= \sin x \cos x \\
@@ -32,53 +32,48 @@
      f(x) &amp;amp;= 8^x \\
      f(x) &amp;amp;= 10^{2x^2}
      \end{align}
- &amp;lt;/div&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;
+ &lt;/div&gt;
   &lt;/li&gt;
   &lt;li&gt;
     &lt;p&gt;Use the chain rule to find the derivative of the following function&lt;/p&gt;
 
-    &lt;pre&gt;&lt;code&gt; &amp;lt;div&amp;gt;
+    &lt;div&gt;
      \begin{equation}
      f(x) = \sqrt{ \big( 3x^5 + \sin(e^x) - 400 \big)^3 }	
      \end{equation}
- &amp;lt;/div&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;
+ &lt;/div&gt;
   &lt;/li&gt;
   &lt;li&gt;
     &lt;p&gt;Use the quotient rule to obtain the derivative of&lt;/p&gt;
 
-    &lt;pre&gt;&lt;code&gt; &amp;lt;div&amp;gt;
+    &lt;div&gt;
      \begin{equation}
      f(x) = \frac{x^3}{x^2 + 6}	
      \end{equation}
- &amp;lt;/div&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;
+ &lt;/div&gt;
   &lt;/li&gt;
   &lt;li&gt;Find the tangent line to the graph of the function &lt;span&gt;\( f(x) = x^3 - x^2 + 60 \)&lt;/span&gt; at &lt;span&gt;\( x=2 \)&lt;/span&gt;.&lt;/li&gt;
   &lt;li&gt;Find the normal line to the graph of function &lt;span&gt;\( f(x) = 4x^2-21x+4 \)&lt;/span&gt; at &lt;span&gt;\( x=3 \)&lt;/span&gt;.&lt;/li&gt;
   &lt;li&gt;
     &lt;p&gt;Use logarithmic differentiation to obtain the derivative of the following functions&lt;/p&gt;
 
-    &lt;pre&gt;&lt;code&gt; &amp;lt;div&amp;gt;
+    &lt;div&gt;
      \begin{align}
      f(x) &amp;amp;= \big( \cos 8x \big)^x	\\
      f(x) &amp;amp;= \big( \tan x \big)^{9/x}\\
      \end{align}
- &amp;lt;/div&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;
+ &lt;/div&gt;
   &lt;/li&gt;
   &lt;li&gt;Find all &lt;span&gt;\( x \)&lt;/span&gt;-values in the interval &lt;span&gt;\( [0,2\pi] \)&lt;/span&gt;, where the tangent line to the graph of &lt;span&gt;\( f(x)= \sin^2 x - \cos^2 x \)&lt;/span&gt; is horizontal.&lt;/li&gt;
   &lt;li&gt;
     &lt;p&gt;Use implicit differentiation to obtain the derivative &lt;span&gt;\( y’ \)&lt;/span&gt;, if &lt;span&gt;\( x \)&lt;/span&gt; and &lt;span&gt;\( y \)&lt;/span&gt; are related by the following equations:&lt;/p&gt;
 
-    &lt;pre&gt;&lt;code&gt; &amp;lt;div&amp;gt;
+    &lt;div&gt;
      \begin{align}
      e^{x+y} &amp;amp;= y^3 \\
      x^2 + y^2 &amp;amp;= 25		
      \end{align}
- &amp;lt;/div&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;
+ &lt;/div&gt;
   &lt;/li&gt;
 &lt;/ol&gt;
 
