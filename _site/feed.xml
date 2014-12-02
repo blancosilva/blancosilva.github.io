@@ -6,8 +6,8 @@
 </description>
     <link>http://blancosilva.github.io/</link>
     <atom:link href="http://blancosilva.github.io/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Tue, 02 Dec 2014 17:04:44 -0500</pubDate>
-    <lastBuildDate>Tue, 02 Dec 2014 17:04:44 -0500</lastBuildDate>
+    <pubDate>Tue, 02 Dec 2014 17:06:59 -0500</pubDate>
+    <lastBuildDate>Tue, 02 Dec 2014 17:06:59 -0500</lastBuildDate>
     <generator>Jekyll v2.4.0</generator>
     
       <item>
@@ -199,12 +199,14 @@ How many customers per day does the theater need in order to make a profit? Give
       &lt;li&gt;Use the Fundamental Theorem of Calculus to evaluate the integral. Round to the nearest integer.&lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
-  &lt;li&gt;Compute the following definite integral:
-     &amp;lt;div&amp;gt;
-         \begin{equation}
-         \int_1^4 \big( 3^x + \tfrac{3}{x} \big)\, dx	
-         \end{equation}
-     &amp;lt;/div&amp;gt;&lt;/li&gt;
+  &lt;li&gt;Compute the following definite integral:&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div&gt;
+	\begin{equation}
+	\int_1^4 \big( 3^x + \tfrac{3}{x} \big)\, dx	
+	\end{equation}
+&lt;/div&gt;
+&lt;ol&gt;
   &lt;li&gt;War Emblem, winner of the 2002 Kentucky Derby, can reach up to the speed of 50mph.  His speed was clocked every 30 seconds.  The results are in the table below.  What was his average speed?
 &amp;lt;div style=&quot;text-align:center&quot;&amp;gt;
  &amp;lt;table class=&quot;table table-border&quot; style=&quot;width:50%; margin-left:auto; margin-right:auto;&quot;&amp;gt;
@@ -234,19 +236,21 @@ Let &lt;span&gt;\( t \)&lt;/span&gt; be the number of years since 1970 and &lt;s
 
 &lt;div style=&quot;text-align:center;&quot;&gt;
 	&lt;table class=&quot;table table-border&quot; style=&quot;&quot;&gt;
-Year&lt;td&gt;1970&lt;/td&gt;&lt;td&gt;1975&lt;/td&gt;&lt;td&gt;1980&lt;/td&gt;&lt;td&gt;1985&lt;/td&gt;&lt;td&gt;1990&lt;/td&gt;&lt;td&gt;1995&lt;/td&gt;&lt;td&gt;2000
+		&lt;tr&gt;
+			&lt;td&gt;Year&lt;/td&gt;&lt;td&gt;1970&lt;/td&gt;&lt;td&gt;1975&lt;/td&gt;&lt;td&gt;1980&lt;/td&gt;&lt;td&gt;1985&lt;/td&gt;&lt;td&gt;1990&lt;/td&gt;&lt;td&gt;1995&lt;/td&gt;&lt;td&gt;2000&lt;/td&gt;
+		&lt;/tr&gt;
 
-E     &lt;/td&gt;&lt;td&gt; 26.9&lt;/td&gt;&lt;td&gt;26.4&lt;/td&gt;&lt;td&gt; 27.1&lt;/td&gt;&lt;td&gt; 25.8 &lt;/td&gt;&lt;td&gt; 25.5&lt;/td&gt;&lt;td&gt; 25.9&lt;/td&gt;&lt;td&gt; 22.6
+		E     &lt;td&gt; 26.9&lt;/td&gt;&lt;td&gt;26.4&lt;/td&gt;&lt;td&gt; 27.1&lt;/td&gt;&lt;td&gt; 25.8 &lt;/td&gt;&lt;td&gt; 25.5&lt;/td&gt;&lt;td&gt; 25.9&lt;/td&gt;&lt;td&gt; 22.6
 
-a)	what are the units and meaning of 
-               30
-                      f(t) dt
-             0
+		a)	what are the units and meaning of 
+		30
+		f(t) dt
+		0
 
-b)	estimate   
-               30
-                      f(t) dt
-             0
+		b)	estimate   
+		30
+		f(t) dt
+		0
 &lt;/td&gt;&lt;/table&gt;&lt;/div&gt;
 </description>
         <pubDate>Tue, 02 Dec 2014 01:00:00 -0500</pubDate>
