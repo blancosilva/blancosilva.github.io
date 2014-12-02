@@ -6,72 +6,9 @@
 </description>
     <link>http://blancosilva.github.io/</link>
     <atom:link href="http://blancosilva.github.io/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Tue, 02 Dec 2014 09:05:15 -0500</pubDate>
-    <lastBuildDate>Tue, 02 Dec 2014 09:05:15 -0500</lastBuildDate>
+    <pubDate>Tue, 02 Dec 2014 09:07:12 -0500</pubDate>
+    <lastBuildDate>Tue, 02 Dec 2014 09:07:12 -0500</lastBuildDate>
     <generator>Jekyll v2.4.0</generator>
-    
-      <item>
-        <title>MATH 122 Fall 2014 Review Exam (3|4)</title>
-        <description>&lt;div class=&quot;well&quot;&gt;
-	The choice of problems on optimization is ok.  But I am missing a few topics.  
-	&lt;ul&gt;
-		&lt;li&gt;There are three kinds of integrals by substitution, but you only chose one.&lt;/li&gt;
-		&lt;li&gt;We worked many different problems of the application of optimization to marginal analysis in class.  I will ask a few of those in the final.&lt;/li&gt;
-	&lt;/ul&gt;
-	Also, I don&#39;t recall doing any problem like number 3, where you mess with high degree polynomials. 
-&lt;/div&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;Find any local min or max of the functions &lt;span&gt;\( f(x) = x^2-8x+4 \)&lt;/span&gt; using the first derivative test.&lt;/li&gt;
-  &lt;li&gt;The function &lt;span&gt;\( f(x)=x^4-3x^3+5 \)&lt;/span&gt; has a critical point at &lt;span&gt;\( x=1 \)&lt;/span&gt;.  Use the second derivative test to identify it as a local max or local min.&lt;/li&gt;
-  &lt;li&gt;Find any critical points of the function &lt;span&gt;\( f(x) = 6x^5 + 33x^4 -30x+100 \)&lt;/span&gt;.&lt;/li&gt;
-  &lt;li&gt;Find any inflection points of the function &lt;span&gt;\( f(x) = 2x^3+3x^2-180x+3 \)&lt;/span&gt;.&lt;/li&gt;
-  &lt;li&gt;Find constants &lt;span&gt;\( a \)&lt;/span&gt; and &lt;span&gt;\( b \)&lt;/span&gt; so the minimum of the parabola &lt;span&gt;\( f(x) = x^2+ax+b \)&lt;/span&gt; is at the point &lt;span&gt;\( (6,2) \)&lt;/span&gt;.&lt;/li&gt;
-  &lt;li&gt;Find the global maximum and minimum of the function &lt;span&gt;\( f(x) = 2x^3-3x^2-12x+3 \)&lt;/span&gt; on the interval &lt;span&gt;\( [-2, 4] \)&lt;/span&gt;.&lt;/li&gt;
-  &lt;li&gt;Let &lt;span&gt;\( C(q) \)&lt;/span&gt; represent the cost and &lt;span&gt;\( R(q) \)&lt;/span&gt; represent the revenue, in dollars, of production of &lt;span&gt;\( q \)&lt;/span&gt; items.
-    &lt;ul&gt;
-      &lt;li&gt;If &lt;span&gt;\( C(50)=4300 \)&lt;/span&gt; and &lt;span&gt;\( C’(50)=24 \)&lt;/span&gt;, estimate &lt;span&gt;\( C(52) \)&lt;/span&gt;.&lt;/li&gt;
-      &lt;li&gt;If &lt;span&gt;\( C’(50)=24 \)&lt;/span&gt; and &lt;span&gt;\( R’(50)=35 \)&lt;/span&gt;, approximately how much profit is earned by the 51st item?&lt;/li&gt;
-      &lt;li&gt;If &lt;span&gt;\( C’(100)=38 \)&lt;/span&gt; and &lt;span&gt;\( R’(100)=35 \)&lt;/span&gt;, should the company produce de 101st item? Why or why not?&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Find the following antiderivatives:&lt;/li&gt;
-&lt;/ol&gt;
-&lt;div&gt;
-	\begin{equation}
-	\int x^5+x^{100}\, dx	
-	\end{equation}
-&lt;/div&gt;
-&lt;div&gt;
-	\begin{equation}
-	\int \frac{3}{x^{24}} + 3x^{-4} - 27x^3\, dx	
-	\end{equation}
-&lt;/div&gt;
-&lt;div&gt;
-	\begin{equation}
-	\int e^x - \frac{24}{x^{3/4}}\, dx	
-	\end{equation}
-&lt;/div&gt;
-&lt;div&gt;
-	\begin{equation}
-	\int \frac{x^2}{x^3+1}\, dx
-	\end{equation}
-&lt;/div&gt;
-&lt;div&gt;
-	\begin{equation}
-	\int (x+1)\big( \frac{x^2}{2}+x \big)\, dx	
-	\end{equation}
-&lt;/div&gt;
-
-</description>
-        <pubDate>Mon, 01 Dec 2014 00:00:00 -0500</pubDate>
-        <link>http://blancosilva.github.io/forum/2014/12/01/MA122Fa14RT3.html</link>
-        <guid isPermaLink="true">http://blancosilva.github.io/forum/2014/12/01/MA122Fa14RT3.html</guid>
-        
-        
-        <category>forum</category>
-        
-      </item>
     
       <item>
         <title>MATH 122 Fall 2014 Review Exam (1|4)</title>
@@ -170,9 +107,72 @@ How many customers per day does the theater need in order to make a profit? Give
 &lt;/ol&gt;
 
 </description>
+        <pubDate>Tue, 02 Dec 2014 00:00:00 -0500</pubDate>
+        <link>http://blancosilva.github.io/forum/2014/12/02/MA122Fa14RT1.html</link>
+        <guid isPermaLink="true">http://blancosilva.github.io/forum/2014/12/02/MA122Fa14RT1.html</guid>
+        
+        
+        <category>forum</category>
+        
+      </item>
+    
+      <item>
+        <title>MATH 122 Fall 2014 Review Exam (3|4)</title>
+        <description>&lt;div class=&quot;well&quot;&gt;
+	The choice of problems on optimization is ok.  But I am missing a few topics.  
+	&lt;ul&gt;
+		&lt;li&gt;There are three kinds of integrals by substitution, but you only chose one.&lt;/li&gt;
+		&lt;li&gt;We worked many different problems of the application of optimization to marginal analysis in class.  I will ask a few of those in the final.&lt;/li&gt;
+	&lt;/ul&gt;
+	Also, I don&#39;t recall doing any problem like number 3, where you mess with high degree polynomials. 
+&lt;/div&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Find any local min or max of the functions &lt;span&gt;\( f(x) = x^2-8x+4 \)&lt;/span&gt; using the first derivative test.&lt;/li&gt;
+  &lt;li&gt;The function &lt;span&gt;\( f(x)=x^4-3x^3+5 \)&lt;/span&gt; has a critical point at &lt;span&gt;\( x=1 \)&lt;/span&gt;.  Use the second derivative test to identify it as a local max or local min.&lt;/li&gt;
+  &lt;li&gt;Find any critical points of the function &lt;span&gt;\( f(x) = 6x^5 + 33x^4 -30x+100 \)&lt;/span&gt;.&lt;/li&gt;
+  &lt;li&gt;Find any inflection points of the function &lt;span&gt;\( f(x) = 2x^3+3x^2-180x+3 \)&lt;/span&gt;.&lt;/li&gt;
+  &lt;li&gt;Find constants &lt;span&gt;\( a \)&lt;/span&gt; and &lt;span&gt;\( b \)&lt;/span&gt; so the minimum of the parabola &lt;span&gt;\( f(x) = x^2+ax+b \)&lt;/span&gt; is at the point &lt;span&gt;\( (6,2) \)&lt;/span&gt;.&lt;/li&gt;
+  &lt;li&gt;Find the global maximum and minimum of the function &lt;span&gt;\( f(x) = 2x^3-3x^2-12x+3 \)&lt;/span&gt; on the interval &lt;span&gt;\( [-2, 4] \)&lt;/span&gt;.&lt;/li&gt;
+  &lt;li&gt;Let &lt;span&gt;\( C(q) \)&lt;/span&gt; represent the cost and &lt;span&gt;\( R(q) \)&lt;/span&gt; represent the revenue, in dollars, of production of &lt;span&gt;\( q \)&lt;/span&gt; items.
+    &lt;ul&gt;
+      &lt;li&gt;If &lt;span&gt;\( C(50)=4300 \)&lt;/span&gt; and &lt;span&gt;\( C’(50)=24 \)&lt;/span&gt;, estimate &lt;span&gt;\( C(52) \)&lt;/span&gt;.&lt;/li&gt;
+      &lt;li&gt;If &lt;span&gt;\( C’(50)=24 \)&lt;/span&gt; and &lt;span&gt;\( R’(50)=35 \)&lt;/span&gt;, approximately how much profit is earned by the 51st item?&lt;/li&gt;
+      &lt;li&gt;If &lt;span&gt;\( C’(100)=38 \)&lt;/span&gt; and &lt;span&gt;\( R’(100)=35 \)&lt;/span&gt;, should the company produce de 101st item? Why or why not?&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Find the following antiderivatives:&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div&gt;
+	\begin{equation}
+	\int x^5+x^{100}\, dx	
+	\end{equation}
+&lt;/div&gt;
+&lt;div&gt;
+	\begin{equation}
+	\int \frac{3}{x^{24}} + 3x^{-4} - 27x^3\, dx	
+	\end{equation}
+&lt;/div&gt;
+&lt;div&gt;
+	\begin{equation}
+	\int e^x - \frac{24}{x^{3/4}}\, dx	
+	\end{equation}
+&lt;/div&gt;
+&lt;div&gt;
+	\begin{equation}
+	\int \frac{x^2}{x^3+1}\, dx
+	\end{equation}
+&lt;/div&gt;
+&lt;div&gt;
+	\begin{equation}
+	\int (x+1)\big( \tfrac{x^2}{2}+x \big)\, dx	
+	\end{equation}
+&lt;/div&gt;
+
+</description>
         <pubDate>Mon, 01 Dec 2014 00:00:00 -0500</pubDate>
-        <link>http://blancosilva.github.io/forum/2014/12/01/MA122Fa14RT1.html</link>
-        <guid isPermaLink="true">http://blancosilva.github.io/forum/2014/12/01/MA122Fa14RT1.html</guid>
+        <link>http://blancosilva.github.io/forum/2014/12/01/MA122Fa14RT3.html</link>
+        <guid isPermaLink="true">http://blancosilva.github.io/forum/2014/12/01/MA122Fa14RT3.html</guid>
         
         
         <category>forum</category>
@@ -34795,7 +34795,7 @@ In&amp;nbsp;[105]:
 		&lt;li&gt;&lt;strong&gt;Tue Nov 18&lt;/strong&gt;: 6.1 &amp;amp; 5.3. Interpretations of the definite integral as average value.&lt;/li&gt;
 		&lt;li&gt;&lt;strong&gt;Thu Nov 20&lt;/strong&gt;: 5.3 &amp;amp; &lt;s&gt;6.2. Area between two curves. Consumer and producer surplus&lt;/s&gt;&lt;/li&gt;
 		&lt;li&gt;&lt;strong&gt;Tue Nov 25&lt;/strong&gt;: &lt;span style=&quot;color:red;&quot;&gt;Forth Midterm. Sections 5.2--5.4, 6.1, and 6.2&lt;/span&gt;&lt;/li&gt;
-		&lt;li&gt;&lt;strong&gt;Tue Dec 02&lt;/strong&gt;: Review Session #1 [&lt;a href=&quot;/forum/2014/12/02/MA122Fa14RT1.html&quot;&gt;Review (1|4)&lt;/a&gt;]&lt;/li&gt;
+		&lt;li&gt;&lt;strong&gt;Tue Dec 02&lt;/strong&gt;: Review Session #1 [&lt;a href=&quot;/forum/2014/12/01/MA122Fa14RT1.html&quot;&gt;Review (1|4)&lt;/a&gt;]&lt;/li&gt;
 		&lt;li&gt;&lt;strong&gt;Thu Dec 04&lt;/strong&gt;: Review Session #2 [&lt;a href=&quot;/forum/2014/12/01/MA122Fa14RT3.html&quot;&gt;Review (3|4)&lt;/a&gt;]&lt;/li&gt;
 	&lt;/ul&gt;
 	&lt;hr /&gt;
