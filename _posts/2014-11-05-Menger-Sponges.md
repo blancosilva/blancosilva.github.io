@@ -51,7 +51,7 @@ But success of this enterprise starts, obviously, by collecting enough business 
 		<li role="presentation" class="active" style="width:100%;"><a href="#">Card Collection <span class="badge">48,000</span></a>
 
 			<div class="progress">
-				<div class="progress-bar progress-bar-warning" style="width: 25%"><span class="sr-only">12500</span></div>
+				<div class="progress-bar progress-bar-warning" style="width: 25%"><span class="sr-only">12570</span></div>
 				<div class="progress-bar progress-bar-warning" style="width: 5%"><span>12775</span></div>
 			<!-- <div class="progress-bar progress-bar-warning" style="width: 5%"><span class="sr-only">Level-2</span></div> -->
 		</div>
@@ -147,6 +147,7 @@ But success of this enterprise starts, obviously, by collecting enough business 
 			<li class="list-group-item">Amanda Polson <span class="badge">275</span></li>
 			<li class="list-group-item">Andy Pope</li>
 			<li class="list-group-item">Lauren Reince <span class="badge">200</span></li>
+			<li class="list-group-item">Anton Schep</li>
 			<li class="list-group-item">Lori Schwartz <span class="badge">130</span></li>
 			<li class="list-group-item">Eric L. Sevigny <span class="badge">100</span></li>
 			<li class="list-group-item">Cheri Shinn</li>

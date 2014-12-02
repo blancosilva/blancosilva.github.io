@@ -6,21 +6,13 @@
 </description>
     <link>http://blancosilva.github.io/</link>
     <atom:link href="http://blancosilva.github.io/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Tue, 02 Dec 2014 15:55:50 -0500</pubDate>
-    <lastBuildDate>Tue, 02 Dec 2014 15:55:50 -0500</lastBuildDate>
+    <pubDate>Tue, 02 Dec 2014 16:49:54 -0500</pubDate>
+    <lastBuildDate>Tue, 02 Dec 2014 16:49:54 -0500</lastBuildDate>
     <generator>Jekyll v2.4.0</generator>
     
       <item>
-        <title>Ma122fa14rt4</title>
-        <description>&lt;h2 id=&quot;ma122fa14rt4md&quot;&gt;2014-12-02-MA122Fa14RT4.md&lt;/h2&gt;
-&lt;p&gt;layout: post
-title: MATH 122 Fall 2014 Review Exam (4|4)
-comments: true
-category: forum
-current: true
-—&lt;/p&gt;
-
-&lt;div class=&quot;well&quot;&gt;
+        <title>MATH 122 Fall 2014 Review Exam (4|4)</title>
+        <description>&lt;div class=&quot;well&quot;&gt;
 	Assessment
 &lt;/div&gt;
 
@@ -67,12 +59,33 @@ current: true
 		&amp;lt;/tr&amp;gt;
 	&amp;lt;/table&amp;gt;
 &amp;lt;/div&amp;gt;
-6. Find the net area of the function &lt;span&gt;\( y= f(x) = -2 + 5x \)&lt;/span&gt; between &lt;span&gt;\( x=0 \)&lt;span&gt; and &lt;span&gt;\( x=4 \)&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+6. Find the net area of the function &lt;span&gt;\( y= f(x) = -2 + 5x \)&lt;/span&gt; between &lt;span&gt;\( x=0 \)&lt;span&gt; and &lt;span&gt;\( x=4 \)&lt;/span&gt;
+7. The following table gives the emissions &lt;span&gt;\( E \)&lt;/span&gt; of nitrogen oxide in millions of metric tons per year in the US
+Let &lt;span&gt;\( t \)&lt;/span&gt; be the number of years since 1970 and &lt;span&gt;\( E = f(t) \)&lt;/span&gt;.&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+
+&lt;div style=&quot;text-align:center;&quot;&gt;
+	&lt;table class=&quot;table table-border&quot; style=&quot;&quot;&gt;
+Year&lt;td&gt;1970&lt;/td&gt;&lt;td&gt;1975&lt;/td&gt;&lt;td&gt;1980&lt;/td&gt;&lt;td&gt;1985&lt;/td&gt;&lt;td&gt;1990&lt;/td&gt;&lt;td&gt;1995&lt;/td&gt;&lt;td&gt;2000
+
+E     &lt;/td&gt;&lt;td&gt; 26.9&lt;/td&gt;&lt;td&gt;26.4&lt;/td&gt;&lt;td&gt; 27.1&lt;/td&gt;&lt;td&gt; 25.8 &lt;/td&gt;&lt;td&gt; 25.5&lt;/td&gt;&lt;td&gt; 25.9&lt;/td&gt;&lt;td&gt; 22.6
+
+a)	what are the units and meaning of 
+               30
+                      f(t) dt
+             0
+
+b)	estimate   
+               30
+                      f(t) dt
+             0
+&lt;/td&gt;&lt;/table&gt;&lt;/div&gt;
 </description>
         <pubDate>Tue, 02 Dec 2014 00:00:00 -0500</pubDate>
-        <link>http://blancosilva.github.io/2014/12/02/MA122Fa14RT4.html</link>
-        <guid isPermaLink="true">http://blancosilva.github.io/2014/12/02/MA122Fa14RT4.html</guid>
+        <link>http://blancosilva.github.io/forum/2014/12/02/MA122Fa14RT4.html</link>
+        <guid isPermaLink="true">http://blancosilva.github.io/forum/2014/12/02/MA122Fa14RT4.html</guid>
         
+        
+        <category>forum</category>
         
       </item>
     
