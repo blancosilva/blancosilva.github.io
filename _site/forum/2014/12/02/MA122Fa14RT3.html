@@ -9,7 +9,7 @@
 ">
 	<meta name="author" content="">
 
-	<title>Stones, balances, matrices</title>
+	<title>MATH 122 Fall 2014 Review Exam (3|4)</title>
 
 	<!-- Bootstrap core CSS -->
 	<link href="/css/bootstrap.css" rel="stylesheet">
@@ -687,94 +687,62 @@
 <div class="container theme-showcase" role="main" style="font-size:16px; font-family: Helvetica; width:750px;">
 
 	<header class="post-header">
-		<h1 class="post-title">Stones, balances, matrices</h1>
-		<p class="post-meta">Aug 7, 2012</p>
+		<h1 class="post-title">MATH 122 Fall 2014 Review Exam (3|4)</h1>
+		<p class="post-meta">Dec 2, 2014</p>
 	</header>
 
 	<article class="post-content">
-		<blockquote>
-  <p>We have four stones identical in size and appearance, but one of them is heavier than the rest.  We have a set of scales (a balance): how many weights do we need to determine which stone is the heaviest?</p>
-</blockquote>
-
-<p>This is a trivial problem, but we will use it to illustrate different ideas, definitions, and the connection to linear algebra needed to answer the harder puzzles below.  Let us start by solving it in the most natural way:</p>
+		<div class="well">
+	The choice of problems on optimization is ok.  But I am missing a few topics.  
+	<ul>
+		<li>There are three kinds of integrals by substitution, but you only chose one.</li>
+		<li>We worked many different problems of the application of optimization to marginal analysis in class.  I will ask a few of those in the final.</li>
+	</ul>
+	Also, I don't recall doing any problem like number 3, where you mess with high degree polynomials. 
+</div>
 
 <ol>
-  <li>Enumerate each stone from 1 to 4.</li>
-  <li>Set stones 1 and 2 on the left plate; set stones 3 and 4 on the right plate.  Since one of the stones is heavier, it will be in the plate that tips the balance.  Let us assume this is the left plate.</li>
-  <li>Discard stones 3 and 4. Put stone 1 on the left plate; and stone 2 on the right plate.  The plate that tips the balance holds the heaviest stone.</li>
+  <li>Find any local min or max of the functions <span>\( f(x) = x^2-8x+4 \)</span> using the first derivative test.</li>
+  <li>The function <span>\( f(x)=x^4-3x^3+5 \)</span> has a critical point at <span>\( x=1 \)</span>.  Use the second derivative test to identify it as a local max or local min.</li>
+  <li>Find any critical points of the function <span>\( f(x) = 6x^5 + 33x^4 -30x+100 \)</span>.</li>
+  <li>Find any inflection points of the function <span>\( f(x) = 2x^3+3x^2-180x+3 \)</span>.</li>
+  <li>Find constants <span>\( a \)</span> and <span>\( b \)</span> so the minimum of the parabola <span>\( f(x) = x^2+ax+b \)</span> is at the point <span>\( (6,2) \)</span>.</li>
+  <li>Find the global maximum and minimum of the function <span>\( f(x) = 2x^3-3x^2-12x+3 \)</span> on the interval <span>\( [-2, 4] \)</span>.</li>
+  <li>Let <span>\( C(q) \)</span> represent the cost and <span>\( R(q) \)</span> represent the revenue, in dollars, of production of <span>\( q \)</span> items.
+    <ul>
+      <li>If <span>\( C(50)=4300 \)</span> and <span>\( C’(50)=24 \)</span>, estimate <span>\( C(52) \)</span>.</li>
+      <li>If <span>\( C’(50)=24 \)</span> and <span>\( R’(50)=35 \)</span>, approximately how much profit is earned by the 51st item?</li>
+      <li>If <span>\( C’(100)=38 \)</span> and <span>\( R’(100)=35 \)</span>, should the company produce de 101st item? Why or why not?</li>
+    </ul>
+  </li>
+  <li>Find the following antiderivatives:</li>
 </ol>
-
-<p>This solution finds the stone in two weights.  It is what we call <em>adaptive measures</em>: each measure is determined by the result of the previous.  This is a good point to introduce an algebraic scheme to code the solution.</p>
-
-<ul>
-  <li><strong>The weights matrix</strong>: This is a matrix with four columns (one for each stone) and two rows (one for each weight).  The entries of this matrix can only be <span>\( -1, 0 \)</span> or <span>\( 1, \)</span> depending whether a given stone is placed on the left plate <span>\( (1) \)</span>, on the right plate <span>\( (-1) \)</span> or in neither plate <span>\( (0). \)</span>  For example, for the solution given above, the corresponding matrix would be</li>
-</ul>
-
 <div>
-\begin{equation} W = \begin{pmatrix} 1 &amp; 1 &amp; -1 &amp; -1 \\ 1 &amp; -1 &amp; 0 &amp; 0 \end{pmatrix} \end{equation}
+	\begin{equation}
+	\int x^5+x^{100}\, dx	
+	\end{equation}
+</div>
+<div>
+	\begin{equation}
+	\int \frac{3}{x^{24}} + 3x^{-4} - 27x^3\, dx	
+	\end{equation}
+</div>
+<div>
+	\begin{equation}
+	\int e^x - \frac{24}{x^{3/4}}\, dx	
+	\end{equation}
+</div>
+<div>
+	\begin{equation}
+	\int \frac{x^2}{x^3+1}\, dx
+	\end{equation}
+</div>
+<div>
+	\begin{equation}
+	\int (x+1)\big( \frac{x^2}{2}+x \big)\, dx	
+	\end{equation}
 </div>
 
-<ul>
-  <li><strong>The stones matrix</strong>: This is a square matrix with four rows and columns (one for each stone).  Each column represents a different combination of stones, in such a way that the <em>n</em>-th column assumes that the heaviest stone is in the <em>n</em>-th position.  The entries on this matrix indicate the weight of each stone.  For example, if we assume that the heaviest stone weights <span>\( b \)</span> units, and each other stone weights <span>\( a \)</span> units, then the corresponding <strong>stones matrix</strong> is</li>
-</ul>
-
-<div>
-\begin{equation} B = \begin{pmatrix} b &amp; a &amp; a &amp; a \\ a &amp; b &amp; a &amp; a \\ a &amp; a &amp; b &amp; a \\ a &amp; a &amp; a &amp; b \end{pmatrix} \end{equation}
-</div>
-
-<p>Multiplying these two matrices, and looking at the sign of the entries of the resulting matrix, offers great insight on the result of the measures:</p>
-
-<div>
-\begin{equation} \operatorname{sign} \big( W \cdot B \big) = \operatorname{sign} \begin{pmatrix} b-a &amp; b-a &amp; a-b &amp; a-b \\ b-a &amp; a-b &amp; 0 &amp; 0 \end{pmatrix} = \begin{pmatrix} + &amp; + &amp; - &amp; - \\ + &amp; - &amp; 0 &amp; 0 \end{pmatrix} \end{equation}
-</div>
-
-<p>Note the columns of this matrix code the behavior of the measures:</p>
-
-<ul>
-  <li>The column <span>\( \big( \begin{smallmatrix} + \ + \end{smallmatrix} \big) \)</span> indicates that the balance tipped to the left in both measures (and therefore, the heaviest stone is the first one)</li>
-  <li>The column <span>\( \big( \begin{smallmatrix} + \ - \end{smallmatrix} \big) \)</span> indicates that the heaviest stone is the second one.</li>
-  <li>Note that the other two measures can’t find the heaviest stone, since this matrix was designed to find adaptively a stone supposed to be either the first or  the second.</li>
-</ul>
-
-<p>Is it possible to design a solution to this puzzle that is not adaptive?  Note the solution with two measures given (in algebraic form) below:</p>
-
-<div>
-\begin{equation} \operatorname{sign} \left[ \begin{pmatrix} 1 &amp; 1 &amp; -1 &amp; -1 \\ 1 &amp; -1 &amp; 1 &amp; -1 \end{pmatrix} \cdot B \right] = \begin{pmatrix} + &amp; + &amp; - &amp; - \\ + &amp; - &amp; + &amp; - \end{pmatrix} \end{equation}
-</div>
-
-<p>Since each column is different, it is trivial to decide after the experiment is done, which stone will be the heaviest.  For instance, if the balance tips first to the right <span>\( (-) \)</span> and then to the left <span>\( (+) \)</span>, the heaviest stone can only be the third one.</p>
-
-<p>Let us make it a big harder: Same situation, but now we don’t know whether the stone that is different is heavier or lighter.</p>
-
-<p>The solution above is no good: Since we are not sure whether <span>\( b \)</span> is greater or smaller than <span>\( a \)</span>, we would obtain two sign matrices which are virtually mirror images of each other.</p>
-
-<div>
-\begin{equation} \begin{pmatrix} + &amp; + &amp; - &amp; - \\ + &amp; - &amp; + &amp; - \end{pmatrix} \end{equation}</div>
-
-<p>and </p>
-
-<div>
-\begin{equation} \begin{pmatrix} - &amp; - &amp; + &amp; + \\ - &amp; + &amp; - &amp; + \end{pmatrix} \end{equation}
-</div>
-
-<p>In this case, in the event of obtaining that the balance tips twice to the left: which would be the different stone?  The first, which is heaviest, or the fourth, which is lightest?  We cannot decide.</p>
-
-<p>One possible solution to this situation involves taking one more measure.  Look at the algebraic expression of the following example, to realize why:</p>
-
-<div>
-\begin{equation} \operatorname{sign} \left[ \begin{pmatrix} 1 &amp; 1 &amp; -1 &amp; -1 \\ 1 &amp; -1 &amp; 1 &amp; -1 \\ 1 &amp; -1 &amp; -1 &amp; 1 \end{pmatrix} \cdot B \right] = \begin{pmatrix} + &amp; + &amp; - &amp; - \\ + &amp; - &amp; + &amp; - \\ + &amp; - &amp; - &amp; + \end{pmatrix} 
-\end{equation}
-</div>
-
-<p>or </p>
-
-<div>
-\begin{equation} \begin{pmatrix} - &amp; - &amp; + &amp; + \\ - &amp; + &amp; - &amp; + \\ - &amp; + &amp; + &amp; - \end{pmatrix} \end{equation}
-</div>
-
-<p>In this case there is no room for confusion: if the balance tips three times to the same side, then the different stone is the first one (whether heavier or lighter). The other possibilities are also easily solvable: if the balance tips first to one side, then to the other, and then to the first side, then the different stone is the third one.</p>
-
-<p>The reader will not be very surprised at this point to realize that three (non adaptive) measures are also enough to decide which stone is different (be it heavier or lighter) in a set of twelve similar stones. To design the solution, a good weight matrix with twelve columns and three rows need to be constructed.  The trick here is to allow measures that balance both plates, which gives us more combinations with which to play.  How would the reader design this matrix?</p>
 
 	</article>
 
