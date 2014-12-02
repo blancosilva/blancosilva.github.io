@@ -6,8 +6,8 @@
 </description>
     <link>http://blancosilva.github.io/</link>
     <atom:link href="http://blancosilva.github.io/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Tue, 02 Dec 2014 09:07:12 -0500</pubDate>
-    <lastBuildDate>Tue, 02 Dec 2014 09:07:12 -0500</lastBuildDate>
+    <pubDate>Tue, 02 Dec 2014 09:09:10 -0500</pubDate>
+    <lastBuildDate>Tue, 02 Dec 2014 09:09:10 -0500</lastBuildDate>
     <generator>Jekyll v2.4.0</generator>
     
       <item>
@@ -119,7 +119,7 @@ How many customers per day does the theater need in order to make a profit? Give
       <item>
         <title>MATH 122 Fall 2014 Review Exam (3|4)</title>
         <description>&lt;div class=&quot;well&quot;&gt;
-	The choice of problems on optimization is ok.  But I am missing a few topics.  
+	The choice of problems on optimization is ok.  Some of the integrals are basically the same, so I chose the most representative and disregarded the rest.  I am also missing a few topics.  
 	&lt;ul&gt;
 		&lt;li&gt;There are three kinds of integrals by substitution, but you only chose one.&lt;/li&gt;
 		&lt;li&gt;We worked many different problems of the application of optimization to marginal analysis in class.  I will ask a few of those in the final.&lt;/li&gt;
