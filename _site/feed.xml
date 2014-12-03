@@ -6,8 +6,8 @@
 </description>
     <link>http://blancosilva.github.io/</link>
     <atom:link href="http://blancosilva.github.io/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Wed, 03 Dec 2014 00:25:09 -0500</pubDate>
-    <lastBuildDate>Wed, 03 Dec 2014 00:25:09 -0500</lastBuildDate>
+    <pubDate>Wed, 03 Dec 2014 10:44:27 -0500</pubDate>
+    <lastBuildDate>Wed, 03 Dec 2014 10:44:27 -0500</lastBuildDate>
     <generator>Jekyll v2.4.0</generator>
     
       <item>
@@ -387,6 +387,8 @@ Let &lt;span&gt;\( t \)&lt;/span&gt; be the number of years since 1970 and &lt;s
       <item>
         <title>MATH 141 Fall 2014 Review Exam (2|5)</title>
         <description>&lt;div class=&quot;well&quot;&gt;
+	&lt;h3&gt;Sections 11 and 12&lt;/h3&gt;
+
 	This is one of the most awesome review tests that any group of students has ever designed.  Not only every single topic in the corresponding portion has been addressed... the questions are &lt;strong&gt;evil!&lt;/strong&gt;   Good job, guys.  You are getting a bunch of extra credit for this awesome effort.
 &lt;/div&gt;
 
@@ -449,6 +451,40 @@ Let &lt;span&gt;\( t \)&lt;/span&gt; be the number of years since 1970 and &lt;s
      \end{align}
  &lt;/div&gt;
   &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;div class=&quot;well&quot;&gt;
+	Good assortment of derivatives, although I am missing some hard-core logarithmic differentiation. &lt;br /&gt;
+
+	The questions on implicit differentiation did not make any sense, and I did not include them.  &lt;br /&gt;
+
+	I wish you would have included some site problems, and questions about normal lines.
+&lt;/div&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Find the derivative of the following functions:
+    &lt;div&gt;
+     \begin{align}
+     f(x) &amp;amp;= 7x + 3x^3-5 \\
+     f(x) &amp;amp;= \cos x + 8x^2 + \tfrac{1}{2} x^2 +3 \\
+     f(x) &amp;amp;= x^{5/2} + 3x + 4 \\
+     f(x) &amp;amp;= \cos^4 x + \cos x^4 \\
+     f(x) &amp;amp;= 10 e^{\ln x} + 23 e^x \\
+     f(x) &amp;amp;= \big( 2e^x + x^2 \big)^3 \\
+     f(x) &amp;amp;= \log (3x+4) \\
+     f(x) &amp;amp;= 4\log_3 x - \ln x \\
+     f(x) &amp;amp;= \big( x^{-2} + x^{-3} \big) \big( x^5 -2 x^2 \big) \\
+     f(x) &amp;amp;= \csc x \cot x \\
+     f(x) &amp;amp;= 3x^4 + \tan \frac{x}{x-1} \\
+     f(x) &amp;amp;= \frac{3x^2 e^x}{(x\ln x+1)\ln x}\\
+     f(x) &amp;amp;= \sin^2 x + \cos^2 x \\
+     f(x) &amp;amp;= \frac{x\sin x}{\cos x} \\
+     f(x) &amp;amp;= \sin ( 13x^3-e^x ) \\
+     f(x) &amp;amp;= \cos(x^2+2) + \tan(3e^x -42\ln x)
+     \end{align}
+ &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Find the equation of the tangent line to the graph of &lt;span&gt;\( y=f(x) = \dfrac{x+5x^3}{\sqrt{x}} \)&lt;/span&gt; at &lt;span&gt;\( x=1 \)&lt;/span&gt;.&lt;/li&gt;
 &lt;/ol&gt;
 
 </description>
