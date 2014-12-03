@@ -105,10 +105,4 @@ You can see all my syllabi online through the `Teaching` tab on this blog.
 
 ## Example of Student Interaction on a Practice Exam Online
 
-For each midterm offered in class, I prepare a practice exam online.  I do not include an answer key, because the intention is precisely to foster interaction among students.  I presented below a printout with the forum started on one of my Vector Calculus midterms.  I urge the reader to follow the entire discussion, as well as other similar ones, on their corresponding course pages online.
-
-\includegraphics[width=0.99\linewidth]{interaction1} 
-\includegraphics[width=\linewidth]{interaction2} 
-\includegraphics[width=\linewidth]{interaction3}
-\end{document}
-
+For each midterm offered in class, I prepare a practice exam online.  I do not include an answer key, because the intention is precisely to foster interaction among students.  Examples of this interaction can be retrieved through the `Teaching` tab on this blog.
