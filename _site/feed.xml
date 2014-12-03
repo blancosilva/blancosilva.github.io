@@ -6,8 +6,8 @@
 </description>
     <link>http://blancosilva.github.io/</link>
     <atom:link href="http://blancosilva.github.io/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Wed, 03 Dec 2014 10:44:37 -0500</pubDate>
-    <lastBuildDate>Wed, 03 Dec 2014 10:44:37 -0500</lastBuildDate>
+    <pubDate>Wed, 03 Dec 2014 10:49:29 -0500</pubDate>
+    <lastBuildDate>Wed, 03 Dec 2014 10:49:29 -0500</lastBuildDate>
     <generator>Jekyll v2.4.0</generator>
     
       <item>
@@ -335,12 +335,12 @@ Let &lt;span&gt;\( t \)&lt;/span&gt; be the number of years since 1970 and &lt;s
  &lt;/div&gt;
   &lt;/li&gt;
   &lt;li&gt;Solve for &lt;span&gt;\( x \)&lt;/span&gt; in the equation &lt;span&gt;\( \log_4 (x+1) + \log_{16}(x+1) = \log_4 8 \)&lt;/span&gt;,&lt;/li&gt;
-  &lt;li&gt;Simplify the following expressions:
+  &lt;li&gt;Simplify &lt;span&gt;\( \log_7 2401 \)&lt;/span&gt;.&lt;/li&gt;
+  &lt;li&gt;Expand the following expression:
     &lt;div&gt;
-     \begin{align}
-     &amp;amp;\log_7 2401 \\
-     &amp;amp;\log_3 \bigg( \frac{9x^{11}}{\sqrt{y}} \bigg)
-     \end{align}
+     \begin{equation}
+     \log_3 \bigg( \frac{9x^{11}}{\sqrt{y}} \bigg)
+     \end{equation}
  &lt;/div&gt;
   &lt;/li&gt;
   &lt;li&gt;Find the value of the constant &lt;span&gt;\( n \)&lt;/span&gt; that will make the function &lt;span&gt;\( f(x) \)&lt;/span&gt; continuous everywhere.
@@ -454,6 +454,7 @@ Let &lt;span&gt;\( t \)&lt;/span&gt; be the number of years since 1970 and &lt;s
 &lt;/ol&gt;
 
 &lt;div class=&quot;well&quot;&gt;
+	&lt;h3&gt;Sections 15 and 16&lt;/h3&gt;
 	Good assortment of derivatives, although I am missing some hard-core logarithmic differentiation. &lt;br /&gt;
 
 	The questions on implicit differentiation did not make any sense, and I did not include them.  &lt;br /&gt;
