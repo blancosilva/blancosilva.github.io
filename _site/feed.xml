@@ -6,8 +6,8 @@
 </description>
     <link>http://blancosilva.github.io/</link>
     <atom:link href="http://blancosilva.github.io/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Tue, 02 Dec 2014 22:06:12 -0500</pubDate>
-    <lastBuildDate>Tue, 02 Dec 2014 22:06:12 -0500</lastBuildDate>
+    <pubDate>Tue, 02 Dec 2014 22:06:31 -0500</pubDate>
+    <lastBuildDate>Tue, 02 Dec 2014 22:06:31 -0500</lastBuildDate>
     <generator>Jekyll v2.4.0</generator>
     
       <item>
@@ -128,7 +128,7 @@ How many customers per day does the theater need in order to make a profit? Give
 &lt;/div&gt;
 
 &lt;ol&gt;
-  &lt;li&gt;Find any local min or max of the functions &lt;span&gt;\( f(x) = x^2-8x+4 \)&lt;/span&gt; using the first derivative test.&lt;/li&gt;
+  &lt;li&gt;Find any local min or max of the function &lt;span&gt;\( f(x) = x^2-8x+4 \)&lt;/span&gt; using the first derivative test.&lt;/li&gt;
   &lt;li&gt;The function &lt;span&gt;\( f(x)=x^4-3x^3+5 \)&lt;/span&gt; has a critical point at &lt;span&gt;\( x=1 \)&lt;/span&gt;.  Use the second derivative test to identify it as a local max or local min.&lt;/li&gt;
   &lt;li&gt;Find any critical points of the function &lt;span&gt;\( f(x) = 6x^5 + 33x^4 -30x+100 \)&lt;/span&gt;.&lt;/li&gt;
   &lt;li&gt;Find any inflection points of the function &lt;span&gt;\( f(x) = 2x^3+3x^2-180x+3 \)&lt;/span&gt;.&lt;/li&gt;
