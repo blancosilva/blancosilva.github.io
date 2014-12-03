@@ -6,8 +6,8 @@
 </description>
     <link>http://blancosilva.github.io/</link>
     <atom:link href="http://blancosilva.github.io/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Wed, 03 Dec 2014 10:54:07 -0500</pubDate>
-    <lastBuildDate>Wed, 03 Dec 2014 10:54:07 -0500</lastBuildDate>
+    <pubDate>Wed, 03 Dec 2014 13:18:33 -0500</pubDate>
+    <lastBuildDate>Wed, 03 Dec 2014 13:18:33 -0500</lastBuildDate>
     <generator>Jekyll v2.4.0</generator>
     
       <item>
@@ -282,7 +282,7 @@ Let &lt;span&gt;\( t \)&lt;/span&gt; be the number of years since 1970 and &lt;s
      \end{equation}
  &lt;/div&gt;
   &lt;/li&gt;
-  &lt;li&gt;Given &lt;span&gt;\( f(x) = x^2-5, g(x) = 7x=15 \)&lt;/span&gt;, find &lt;span&gt;\( f(g(x)), f(x)/g(x), f(f(x)), g(g(x)) \)&lt;/span&gt;, and &lt;span&gt;\( f(x)-g(x) \)&lt;/span&gt;.&lt;/li&gt;
+  &lt;li&gt;Given &lt;span&gt;\( f(x) = x^2-5, g(x) = 7x+15 \)&lt;/span&gt;, find &lt;span&gt;\( f(g(x)), f(x)/g(x), f(f(x)), g(g(x)) \)&lt;/span&gt;, and &lt;span&gt;\( f(x)-g(x) \)&lt;/span&gt;.&lt;/li&gt;
   &lt;li&gt;Evaluate &lt;span&gt;\( \log_2 80 - \log_2 5 \)&lt;/span&gt;.	&lt;/li&gt;
   &lt;li&gt;Compute the following limits:
     &lt;div&gt;

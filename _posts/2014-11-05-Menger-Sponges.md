@@ -51,7 +51,7 @@ But success of this enterprise starts, obviously, by collecting enough business 
 		<li role="presentation" class="active" style="width:100%;"><a href="#">Card Collection <span class="badge">48,000</span></a>
 
 			<div class="progress">
-				<div class="progress-bar progress-bar-warning" style="width: 25%"><span class="sr-only">12570</span></div>
+				<div class="progress-bar progress-bar-warning" style="width: 25%"><span class="sr-only">13245</span></div>
 				<div class="progress-bar progress-bar-warning" style="width: 5%"><span>12775</span></div>
 			<!-- <div class="progress-bar progress-bar-warning" style="width: 5%"><span class="sr-only">Level-2</span></div> -->
 		</div>
@@ -111,22 +111,25 @@ But success of this enterprise starts, obviously, by collecting enough business 
 			<li class="list-group-item">Darla Moore School of Business <span class="badge">1450</span></li>
 			<li class="list-group-item">Edwin M. Dickey <span class="badge">260</span></li>
 			<li class="list-group-item">Helen Doerpinghaus</li>
+			<li class="list-group-item">Andrew R. Dyer</li>
+			<li class="list-group-item">Monty L. Fetterolf</li>
 			<li class="list-group-item">Meredith A. Fievet <span class="badge">110</span></li>
 			<li class="list-group-item">Dean Mary Anne Fitzpatrick</li>
 			<li class="list-group-item">Libby Foreman</li>
 			<li class="list-group-item">Lachelle B. Frederick <span class="badge">150</span></li>
 			<li class="list-group-item">Angrew Grubba <span class="badge">200</span></li>
 			<li class="list-group-item">Glenda Halter</li>
+			<li class="list-group-item">Hugh G. Hanlin</li>
 			<li class="list-group-item">Rachel Hardison <span class="badge">360</span></li>
 			<li class="list-group-item">Shae Haskins</li>
 			<li class="list-group-item">Holly Hayes</li>
 			<li class="list-group-item">Chris Horn</li>
-			<li class="list-group-item">John T. Hyatt Jr. <span class="badge">300</span></li>
 		</ul>
 	</div>
 
 	<div class="col-lg-6">
 		<ul class="list-group">
+			<li class="list-group-item">John T. Hyatt Jr. <span class="badge">300</span></li>
 			<li class="list-group-item">Grant N. Jackson</li>
 			<li class="list-group-item">Gayle D. Johnson <span class="badge">250</span></li>
 			<li class="list-group-item">Carolyn S. Jones</li>
@@ -134,6 +137,7 @@ But success of this enterprise starts, obviously, by collecting enough business 
 			<li class="list-group-item">Lael M. Kenney <span class="badge">725</span></li>
 			<li class="list-group-item">Tracy L. LaPointe <span class="badge">490</span></li>
 			<li class="list-group-item">Brian LeDuc</li>
+			<li class="list-group-item">Chad L. Leverette</li>
 			<li class="list-group-item">Sarah Livingston</li>
 			<li class="list-group-item">Lauren E. Lowe</li>
 			<li class="list-group-item">Juan C. Luvene</li>
@@ -155,6 +159,7 @@ But success of this enterprise starts, obviously, by collecting enough business 
 			<li class="list-group-item">South Carolina DAODAS</li>
 			<li class="list-group-item">Swansea High Freshman Academy</li>
 			<li class="list-group-item">Mark E. Tompkins <span class="badge">100</span></li>
+			<li class="list-group-item">UofSC Aiken <span class="badge">675</span></li>
 			<li class="list-group-item">UofSC College of Arts and Science <span class="badge">500</span></li>
 			<li class="list-group-item">UofSC ISS <span class="badge">985</span></li>
 			<li class="list-group-item">UofSC Office of the Provost</li>
