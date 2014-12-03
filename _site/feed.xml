@@ -6,8 +6,8 @@
 </description>
     <link>http://blancosilva.github.io/</link>
     <atom:link href="http://blancosilva.github.io/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Tue, 02 Dec 2014 21:54:11 -0500</pubDate>
-    <lastBuildDate>Tue, 02 Dec 2014 21:54:11 -0500</lastBuildDate>
+    <pubDate>Tue, 02 Dec 2014 22:06:12 -0500</pubDate>
+    <lastBuildDate>Tue, 02 Dec 2014 22:06:12 -0500</lastBuildDate>
     <generator>Jekyll v2.4.0</generator>
     
       <item>
@@ -144,29 +144,13 @@ How many customers per day does the theater need in order to make a profit? Give
   &lt;li&gt;Find the following antiderivatives:&lt;/li&gt;
 &lt;/ol&gt;
 &lt;div&gt;
-	\begin{equation}
-	\int x^5+x^{100}\, dx	
-	\end{equation}
-&lt;/div&gt;
-&lt;div&gt;
-	\begin{equation}
-	\int \frac{3}{x^{24}} + 3x^{-4} - 27x^3\, dx	
-	\end{equation}
-&lt;/div&gt;
-&lt;div&gt;
-	\begin{equation}
-	\int e^x - \frac{24}{x^{3/4}}\, dx	
-	\end{equation}
-&lt;/div&gt;
-&lt;div&gt;
-	\begin{equation}
-	\int \frac{x^2}{x^3+1}\, dx
-	\end{equation}
-&lt;/div&gt;
-&lt;div&gt;
-	\begin{equation}
-	\int (x+1)\big( \tfrac{x^2}{2}+x \big)\, dx	
-	\end{equation}
+	\begin{align}
+	\int x^5+x^{100}\, dx	\\
+	\int \frac{3}{x^{24}} + 3x^{-4} - 27x^3\, dx	\\
+	\int e^x - \frac{24}{x^{3/4}}\, dx	\\
+	\int \frac{x^2}{x^3+1}\, dx\\
+	\int (x+1)\big( \tfrac{x^2}{2}+x \big)\, dx
+	\end{align}
 &lt;/div&gt;
 
 </description>
