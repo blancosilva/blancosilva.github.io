@@ -6,9 +6,115 @@
 </description>
     <link>http://blancosilva.github.io/</link>
     <atom:link href="http://blancosilva.github.io/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Tue, 02 Dec 2014 21:54:03 -0500</pubDate>
-    <lastBuildDate>Tue, 02 Dec 2014 21:54:03 -0500</lastBuildDate>
+    <pubDate>Tue, 02 Dec 2014 21:54:11 -0500</pubDate>
+    <lastBuildDate>Tue, 02 Dec 2014 21:54:11 -0500</lastBuildDate>
     <generator>Jekyll v2.4.0</generator>
+    
+      <item>
+        <title>MATH 122 Fall 2014 Review Exam (1|4)</title>
+        <description>&lt;div class=&quot;well&quot;&gt;
+	This is a good review test.  I am missing a couple of topics—logarithmic equations, for example—but your choices made a lot of sense.  They are also very similar to what is offered in both the textbook and the homework online.  Good job. &lt;br /&gt;
+
+
+	There was one person that wrote a question from a repeated topic, and another person that brought a question from integration.  I did not include those questions in this review exam. Those students will accordingly not receive any credit.
+&lt;/div&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;The following are functions for the populations of four cities in South Carolina where &lt;span&gt;\( t \)&lt;/span&gt; is measured in years after 2012.&lt;/p&gt;
+
+    &lt;p&gt;(a) &lt;span&gt;\( P=613(1.15)^t \)&lt;/span&gt;&lt;/p&gt;
+
+    &lt;p&gt;(b) &lt;span&gt;\( P=1923(1.09)^t \)&lt;/span&gt;&lt;/p&gt;
+
+    &lt;p&gt;(c) &lt;span&gt;\( P=204(0.18)^t \)&lt;/span&gt;&lt;/p&gt;
+
+    &lt;p&gt;(d) &lt;span&gt;\( P=913(0.96)^t \)&lt;/span&gt;&lt;/p&gt;
+
+    &lt;ol&gt;
+      &lt;li&gt;Which city has the largest growth rate?&lt;/li&gt;
+      &lt;li&gt;Which city has the largest initial population?&lt;/li&gt;
+      &lt;li&gt;Are any of the cities’ populations decreasing? Which one(s)?&lt;/li&gt;
+    &lt;/ol&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;The rate of change of sales of the medicinal herb saw palmetto in the US during the period 1997 to 2001 is 9.5 million dollars per year.  Of the four statements below about the years 1997 to 2001, which one is true?&lt;/p&gt;
+
+    &lt;p&gt;(a) Sales of saw palmetto averaged 9.5 million dollars each year.&lt;/p&gt;
+
+    &lt;p&gt;(b) Sales of saw palmetto increased by an average of 9.5 million dollars each year.&lt;/p&gt;
+
+    &lt;p&gt;(c) Sales of saw palmetto were 9.5 million dollars in each of the years.&lt;/p&gt;
+
+    &lt;p&gt;(d) Sales of saw palmetto went up by 9.5 million dollars in each of the years.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Determine the slope and &lt;span&gt;\( y \)&lt;/span&gt;-intercept of the line with equation &lt;span&gt;\( 15y+34x-29=0 \)&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;Write the function &lt;span&gt;\( P=9e^{-5.3t} \)&lt;/span&gt; in the form &lt;span&gt;\( P=P_0 a^t \)&lt;/span&gt;. &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;A bank offers an interest rate of 7.5% per year. If you deposit $2500, how much money will be in the account 3 years later if interest is compounded&lt;/p&gt;
+
+    &lt;ul&gt;
+      &lt;li&gt;annually?&lt;/li&gt;
+      &lt;li&gt;continuously?&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;If the population of each of the following cities increases by 1,234 people, find the relative change.&lt;/p&gt;
+
+    &lt;ul&gt;
+      &lt;li&gt;Population of Daytona Beach: 1,389&lt;/li&gt;
+      &lt;li&gt;Population of Winter Park: 7,625,000&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;An air freshener starts with 45 grams and evaporates. For each of the following cases, write a formula for the quantity, &lt;span&gt;\( Q \)&lt;/span&gt; grams, of air freshener remaining &lt;span&gt;\( t \)&lt;/span&gt; days after the start.&lt;/p&gt;
+
+    &lt;ul&gt;
+      &lt;li&gt;The evaporation rate is 9 grams per day&lt;/li&gt;
+      &lt;li&gt;The evaporation rate is 15% per day&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Solve for &lt;span&gt;\( t \)&lt;/span&gt; in the equation &lt;span&gt;\( 129=25e^{13t} \)&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;Write the function &lt;span&gt;\( P=P_0 e^{0.785t} \)&lt;/span&gt; in the form &lt;span&gt;\( P=P_0 a^t \)&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;The heart-mass of a mammal is proportional to its body mass&lt;/p&gt;
+
+    &lt;ol&gt;
+      &lt;li&gt;Write a formula for heart-mass, &lt;span&gt;\( h \)&lt;/span&gt;, as a function of body mass.&lt;/li&gt;
+      &lt;li&gt;A human body mass of 170 kilograms has a heart-mass of 3.6 kilograms.  Use this information to find the constant of proportionality.&lt;/li&gt;
+      &lt;li&gt;Estimate the heart-mass of a horse with a body mass of 725 kg. &lt;/li&gt;
+    &lt;/ol&gt;
+  &lt;/li&gt;
+  &lt;li&gt;The cost in dollars to produce &lt;span&gt;\( q \)&lt;/span&gt; tons of an item is given by the cost function &lt;span&gt;\( C=120+20q \)&lt;/span&gt;. What are the units of 20?&lt;/li&gt;
+  &lt;li&gt;A town has a population of 6932 people at &lt;span&gt;\( t=0 \)&lt;/span&gt; and a growth rate of 9%. Write the formula for the population, &lt;span&gt;\( P \)&lt;/span&gt;, of the town as a function of year &lt;span&gt;\( t \)&lt;span&gt;.&lt;/span&gt;&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;A movie theater has fixed costs of $6999.50 per day and variable costs averaging $4.25 per customer. With &lt;span&gt;\( q \)&lt;/span&gt; being the number of customers. The theater charges $10 per ticket.
+How many customers per day does the theater need in order to make a profit? Give the smallest possible value.&lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Find the average velocity of a grapefruit thrown by an angry person over the interval &lt;span&gt;\( t=4 \)&lt;/span&gt; to &lt;span&gt;\( t=6. \)&lt;/span&gt;&lt;/p&gt;
+
+    &lt;div style=&quot;text-align:center;&quot;&gt;
+    &lt;table class=&quot;table table-bordered&quot; style=&quot;width:50%; margin-left:auto; margin-right:auto;&quot;&gt;
+        &lt;tr&gt;
+            &lt;td&gt; t&lt;/td&gt;&lt;td&gt;	0&lt;/td&gt;&lt;td&gt;	1&lt;/td&gt;&lt;td&gt;2&lt;/td&gt;&lt;td&gt;3&lt;/td&gt;&lt;td&gt;4&lt;/td&gt;&lt;td&gt;5&lt;/td&gt;&lt;td&gt;6&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;y&lt;/td&gt;&lt;td&gt;6&lt;/td&gt;&lt;td&gt;90&lt;/td&gt;&lt;td&gt;142&lt;/td&gt;&lt;td&gt;162&lt;/td&gt;&lt;td&gt;150&lt;/td&gt;&lt;td&gt;106&lt;/td&gt;&lt;td&gt;30&lt;/td&gt;
+        &lt;/tr&gt;
+    &lt;/table&gt;
+&lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;If $532.75 is deposited in an account paying interest at 6.45% per year, compounded continuously, how long does it take to reach $25,123.60?&lt;/li&gt;
+&lt;/ol&gt;
+
+</description>
+        <pubDate>Tue, 02 Dec 2014 16:00:00 -0500</pubDate>
+        <link>http://blancosilva.github.io/forum/2014/12/02/MA122Fa14RT1.html</link>
+        <guid isPermaLink="true">http://blancosilva.github.io/forum/2014/12/02/MA122Fa14RT1.html</guid>
+        
+        
+        <category>forum</category>
+        
+      </item>
     
       <item>
         <title>MATH 122 Fall 2014 Review Exam (3|4)</title>
@@ -158,112 +264,6 @@ Let &lt;span&gt;\( t \)&lt;/span&gt; be the number of years since 1970 and &lt;s
         <pubDate>Tue, 02 Dec 2014 13:00:00 -0500</pubDate>
         <link>http://blancosilva.github.io/forum/2014/12/02/MA122Fa14RT4.html</link>
         <guid isPermaLink="true">http://blancosilva.github.io/forum/2014/12/02/MA122Fa14RT4.html</guid>
-        
-        
-        <category>forum</category>
-        
-      </item>
-    
-      <item>
-        <title>MATH 122 Fall 2014 Review Exam (1|4)</title>
-        <description>&lt;div class=&quot;well&quot;&gt;
-	This is a good review test.  I am missing a couple of topics—logarithmic equations, for example—but your choices made a lot of sense.  They are also very similar to what is offered in both the textbook and the homework online.  Good job. &lt;br /&gt;
-
-
-	There was one person that wrote a question from a repeated topic, and another person that brought a question from integration.  I did not include those questions in this review exam. Those students will accordingly not receive any credit.
-&lt;/div&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;
-    &lt;p&gt;The following are functions for the populations of four cities in South Carolina where &lt;span&gt;\( t \)&lt;/span&gt; is measured in years after 2012.&lt;/p&gt;
-
-    &lt;p&gt;(a) &lt;span&gt;\( P=613(1.15)^t \)&lt;/span&gt;&lt;/p&gt;
-
-    &lt;p&gt;(b) &lt;span&gt;\( P=1923(1.09)^t \)&lt;/span&gt;&lt;/p&gt;
-
-    &lt;p&gt;(c) &lt;span&gt;\( P=204(0.18)^t \)&lt;/span&gt;&lt;/p&gt;
-
-    &lt;p&gt;(d) &lt;span&gt;\( P=913(0.96)^t \)&lt;/span&gt;&lt;/p&gt;
-
-    &lt;ol&gt;
-      &lt;li&gt;Which city has the largest growth rate?&lt;/li&gt;
-      &lt;li&gt;Which city has the largest initial population?&lt;/li&gt;
-      &lt;li&gt;Are any of the cities’ populations decreasing? Which one(s)?&lt;/li&gt;
-    &lt;/ol&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;The rate of change of sales of the medicinal herb saw palmetto in the US during the period 1997 to 2001 is 9.5 million dollars per year.  Of the four statements below about the years 1997 to 2001, which one is true?&lt;/p&gt;
-
-    &lt;p&gt;(a) Sales of saw palmetto averaged 9.5 million dollars each year.&lt;/p&gt;
-
-    &lt;p&gt;(b) Sales of saw palmetto increased by an average of 9.5 million dollars each year.&lt;/p&gt;
-
-    &lt;p&gt;(c) Sales of saw palmetto were 9.5 million dollars in each of the years.&lt;/p&gt;
-
-    &lt;p&gt;(d) Sales of saw palmetto went up by 9.5 million dollars in each of the years.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Determine the slope and &lt;span&gt;\( y \)&lt;/span&gt;-intercept of the line with equation &lt;span&gt;\( 15y+34x-29=0 \)&lt;/span&gt;&lt;/li&gt;
-  &lt;li&gt;Write the function &lt;span&gt;\( P=9e^{-5.3t} \)&lt;/span&gt; in the form &lt;span&gt;\( P=P_0 a^t \)&lt;/span&gt;. &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;A bank offers an interest rate of 7.5% per year. If you deposit $2500, how much money will be in the account 3 years later if interest is compounded&lt;/p&gt;
-
-    &lt;ul&gt;
-      &lt;li&gt;annually?&lt;/li&gt;
-      &lt;li&gt;continuously?&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;If the population of each of the following cities increases by 1,234 people, find the relative change.&lt;/p&gt;
-
-    &lt;ul&gt;
-      &lt;li&gt;Population of Daytona Beach: 1,389&lt;/li&gt;
-      &lt;li&gt;Population of Winter Park: 7,625,000&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;An air freshener starts with 45 grams and evaporates. For each of the following cases, write a formula for the quantity, &lt;span&gt;\( Q \)&lt;/span&gt; grams, of air freshener remaining &lt;span&gt;\( t \)&lt;/span&gt; days after the start.&lt;/p&gt;
-
-    &lt;ul&gt;
-      &lt;li&gt;The evaporation rate is 9 grams per day&lt;/li&gt;
-      &lt;li&gt;The evaporation rate is 15% per day&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Solve for &lt;span&gt;\( t \)&lt;/span&gt; in the equation &lt;span&gt;\( 129=25e^{13t} \)&lt;/span&gt;&lt;/li&gt;
-  &lt;li&gt;Write the function &lt;span&gt;\( P=P_0 e^{0.785t} \)&lt;/span&gt; in the form &lt;span&gt;\( P=P_0 a^t \)&lt;/span&gt;&lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;The heart-mass of a mammal is proportional to its body mass&lt;/p&gt;
-
-    &lt;ol&gt;
-      &lt;li&gt;Write a formula for heart-mass, &lt;span&gt;\( h \)&lt;/span&gt;, as a function of body mass.&lt;/li&gt;
-      &lt;li&gt;A human body mass of 170 kilograms has a heart-mass of 3.6 kilograms.  Use this information to find the constant of proportionality.&lt;/li&gt;
-      &lt;li&gt;Estimate the heart-mass of a horse with a body mass of 725 kg. &lt;/li&gt;
-    &lt;/ol&gt;
-  &lt;/li&gt;
-  &lt;li&gt;The cost in dollars to produce &lt;span&gt;\( q \)&lt;/span&gt; tons of an item is given by the cost function &lt;span&gt;\( C=120+20q \)&lt;/span&gt;. What are the units of 20?&lt;/li&gt;
-  &lt;li&gt;A town has a population of 6932 people at &lt;span&gt;\( t=0 \)&lt;/span&gt; and a growth rate of 9%. Write the formula for the population, &lt;span&gt;\( P \)&lt;/span&gt;, of the town as a function of year &lt;span&gt;\( t \)&lt;span&gt;.&lt;/span&gt;&lt;/span&gt;&lt;/li&gt;
-  &lt;li&gt;A movie theater has fixed costs of $6999.50 per day and variable costs averaging $4.25 per customer. With &lt;span&gt;\( q \)&lt;/span&gt; being the number of customers. The theater charges $10 per ticket.
-How many customers per day does the theater need in order to make a profit? Give the smallest possible value.&lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Find the average velocity of a grapefruit thrown by an angry person over the interval &lt;span&gt;\( t=4 \)&lt;/span&gt; to &lt;span&gt;\( t=6. \)&lt;/span&gt;&lt;/p&gt;
-
-    &lt;div style=&quot;text-align:center;&quot;&gt;
-    &lt;table class=&quot;table table-bordered&quot; style=&quot;width:50%; margin-left:auto; margin-right:auto;&quot;&gt;
-        &lt;tr&gt;
-            &lt;td&gt; t&lt;/td&gt;&lt;td&gt;	0&lt;/td&gt;&lt;td&gt;	1&lt;/td&gt;&lt;td&gt;2&lt;/td&gt;&lt;td&gt;3&lt;/td&gt;&lt;td&gt;4&lt;/td&gt;&lt;td&gt;5&lt;/td&gt;&lt;td&gt;6&lt;/td&gt;
-        &lt;/tr&gt;
-        &lt;tr&gt;
-            &lt;td&gt;y&lt;/td&gt;&lt;td&gt;6&lt;/td&gt;&lt;td&gt;90&lt;/td&gt;&lt;td&gt;142&lt;/td&gt;&lt;td&gt;162&lt;/td&gt;&lt;td&gt;150&lt;/td&gt;&lt;td&gt;106&lt;/td&gt;&lt;td&gt;30&lt;/td&gt;
-        &lt;/tr&gt;
-    &lt;/table&gt;
-&lt;/div&gt;
-  &lt;/li&gt;
-  &lt;li&gt;If $532.75 is deposited in an account paying interest at 6.45% per year, compounded continuously, how long does it take to reach $25,123.60?&lt;/li&gt;
-&lt;/ol&gt;
-
-</description>
-        <pubDate>Tue, 02 Dec 2014 04:00:00 -0500</pubDate>
-        <link>http://blancosilva.github.io/forum/2014/12/02/MA122Fa14RT1.html</link>
-        <guid isPermaLink="true">http://blancosilva.github.io/forum/2014/12/02/MA122Fa14RT1.html</guid>
         
         
         <category>forum</category>
