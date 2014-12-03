@@ -6,81 +6,158 @@
 </description>
     <link>http://blancosilva.github.io/</link>
     <atom:link href="http://blancosilva.github.io/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Tue, 02 Dec 2014 17:45:47 -0500</pubDate>
-    <lastBuildDate>Tue, 02 Dec 2014 17:45:47 -0500</lastBuildDate>
+    <pubDate>Tue, 02 Dec 2014 21:54:03 -0500</pubDate>
+    <lastBuildDate>Tue, 02 Dec 2014 21:54:03 -0500</lastBuildDate>
     <generator>Jekyll v2.4.0</generator>
     
       <item>
-        <title>MATH 141 Fall 2014 Review Exam (2|5)</title>
+        <title>MATH 122 Fall 2014 Review Exam (3|4)</title>
         <description>&lt;div class=&quot;well&quot;&gt;
-	This is one of the most awesome review tests that any group of students has ever designed.  Not only every single topic in the corresponding portion has been addressed... the questions are &lt;strong&gt;evil!&lt;/strong&gt;   Good job, guys.  You are getting a bunch of extra credit for this awesome effort.
+	The choice of problems on optimization is ok.  Some of the integrals are basically the same, so I chose the most representative and disregarded the rest.  I am also missing a few topics.  
+	&lt;ul&gt;
+		&lt;li&gt;There are three kinds of integrals by substitution, but you only chose one.&lt;/li&gt;
+		&lt;li&gt;We worked many different problems of the application of optimization to marginal analysis in class.  I will ask a few of those in the final.&lt;/li&gt;
+	&lt;/ul&gt;
+	Also, I don&#39;t recall doing any problem like number 3, where you mess with high degree polynomials. 
 &lt;/div&gt;
 
 &lt;ol&gt;
-  &lt;li&gt;
-    &lt;p&gt;Find the derivative of the following functions&lt;/p&gt;
-
-    &lt;div&gt;
-     \begin{align}
-     f(x) &amp;amp;= 230x^{300} + 15x^{18} + 5 \\
-     f(x) &amp;amp;= -\frac{488}{233} x^{265/488} \\
-     f(x) &amp;amp;= 2\sin x + 6\cos x + 9 \\
-     f(x) &amp;amp;= \sin x \cos x \\
-     f(x) &amp;amp;= 12\tan x + 3x^2 - \cos x \\
-     f(x) &amp;amp;= \sin^2 x + \cos^2 x \\
-     f(x) &amp;amp;= e^{8x} \\
-     f(x) &amp;amp;= 8^x \\
-     f(x) &amp;amp;= 10^{2x^2}
-     \end{align}
- &lt;/div&gt;
+  &lt;li&gt;Find any local min or max of the functions &lt;span&gt;\( f(x) = x^2-8x+4 \)&lt;/span&gt; using the first derivative test.&lt;/li&gt;
+  &lt;li&gt;The function &lt;span&gt;\( f(x)=x^4-3x^3+5 \)&lt;/span&gt; has a critical point at &lt;span&gt;\( x=1 \)&lt;/span&gt;.  Use the second derivative test to identify it as a local max or local min.&lt;/li&gt;
+  &lt;li&gt;Find any critical points of the function &lt;span&gt;\( f(x) = 6x^5 + 33x^4 -30x+100 \)&lt;/span&gt;.&lt;/li&gt;
+  &lt;li&gt;Find any inflection points of the function &lt;span&gt;\( f(x) = 2x^3+3x^2-180x+3 \)&lt;/span&gt;.&lt;/li&gt;
+  &lt;li&gt;Find constants &lt;span&gt;\( a \)&lt;/span&gt; and &lt;span&gt;\( b \)&lt;/span&gt; so the minimum of the parabola &lt;span&gt;\( f(x) = x^2+ax+b \)&lt;/span&gt; is at the point &lt;span&gt;\( (6,2) \)&lt;/span&gt;.&lt;/li&gt;
+  &lt;li&gt;Find the global maximum and minimum of the function &lt;span&gt;\( f(x) = 2x^3-3x^2-12x+3 \)&lt;/span&gt; on the interval &lt;span&gt;\( [-2, 4] \)&lt;/span&gt;.&lt;/li&gt;
+  &lt;li&gt;Let &lt;span&gt;\( C(q) \)&lt;/span&gt; represent the cost and &lt;span&gt;\( R(q) \)&lt;/span&gt; represent the revenue, in dollars, of production of &lt;span&gt;\( q \)&lt;/span&gt; items.
+    &lt;ul&gt;
+      &lt;li&gt;If &lt;span&gt;\( C(50)=4300 \)&lt;/span&gt; and &lt;span&gt;\( C’(50)=24 \)&lt;/span&gt;, estimate &lt;span&gt;\( C(52) \)&lt;/span&gt;.&lt;/li&gt;
+      &lt;li&gt;If &lt;span&gt;\( C’(50)=24 \)&lt;/span&gt; and &lt;span&gt;\( R’(50)=35 \)&lt;/span&gt;, approximately how much profit is earned by the 51st item?&lt;/li&gt;
+      &lt;li&gt;If &lt;span&gt;\( C’(100)=38 \)&lt;/span&gt; and &lt;span&gt;\( R’(100)=35 \)&lt;/span&gt;, should the company produce de 101st item? Why or why not?&lt;/li&gt;
+    &lt;/ul&gt;
   &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Use the chain rule to find the derivative of the following function&lt;/p&gt;
-
-    &lt;div&gt;
-     \begin{equation}
-     f(x) = \sqrt{ \big( 3x^5 + \sin(e^x) - 400 \big)^3 }	
-     \end{equation}
- &lt;/div&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Use the quotient rule to obtain the derivative of&lt;/p&gt;
-
-    &lt;div&gt;
-     \begin{equation}
-     f(x) = \frac{x^3}{x^2 + 6}	
-     \end{equation}
- &lt;/div&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Find the tangent line to the graph of the function &lt;span&gt;\( f(x) = x^3 - x^2 + 60 \)&lt;/span&gt; at &lt;span&gt;\( x=2 \)&lt;/span&gt;.&lt;/li&gt;
-  &lt;li&gt;Find the normal line to the graph of function &lt;span&gt;\( f(x) = 4x^2-21x+4 \)&lt;/span&gt; at &lt;span&gt;\( x=3 \)&lt;/span&gt;.&lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Use logarithmic differentiation to obtain the derivative of the following functions&lt;/p&gt;
-
-    &lt;div&gt;
-     \begin{align}
-     f(x) &amp;amp;= \big( \cos 8x \big)^x	\\
-     f(x) &amp;amp;= \big( \tan x \big)^{9/x}\\
-     \end{align}
- &lt;/div&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Find all &lt;span&gt;\( x \)&lt;/span&gt;-values in the interval &lt;span&gt;\( [0,2\pi] \)&lt;/span&gt;, where the tangent line to the graph of &lt;span&gt;\( f(x)= \sin^2 x - \cos^2 x \)&lt;/span&gt; is horizontal.&lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Use implicit differentiation to obtain the derivative &lt;span&gt;\( y’ \)&lt;/span&gt;, if &lt;span&gt;\( x \)&lt;/span&gt; and &lt;span&gt;\( y \)&lt;/span&gt; are related by the following equations:&lt;/p&gt;
-
-    &lt;div&gt;
-     \begin{align}
-     e^{x+y} &amp;amp;= y^3 \\
-     x^2 + y^2 &amp;amp;= 25		
-     \end{align}
- &lt;/div&gt;
-  &lt;/li&gt;
+  &lt;li&gt;Find the following antiderivatives:&lt;/li&gt;
 &lt;/ol&gt;
+&lt;div&gt;
+	\begin{equation}
+	\int x^5+x^{100}\, dx	
+	\end{equation}
+&lt;/div&gt;
+&lt;div&gt;
+	\begin{equation}
+	\int \frac{3}{x^{24}} + 3x^{-4} - 27x^3\, dx	
+	\end{equation}
+&lt;/div&gt;
+&lt;div&gt;
+	\begin{equation}
+	\int e^x - \frac{24}{x^{3/4}}\, dx	
+	\end{equation}
+&lt;/div&gt;
+&lt;div&gt;
+	\begin{equation}
+	\int \frac{x^2}{x^3+1}\, dx
+	\end{equation}
+&lt;/div&gt;
+&lt;div&gt;
+	\begin{equation}
+	\int (x+1)\big( \tfrac{x^2}{2}+x \big)\, dx	
+	\end{equation}
+&lt;/div&gt;
 
 </description>
-        <pubDate>Tue, 02 Dec 2014 15:00:00 -0500</pubDate>
-        <link>http://blancosilva.github.io/forum/2014/12/02/MA144Fa14RT2.html</link>
-        <guid isPermaLink="true">http://blancosilva.github.io/forum/2014/12/02/MA144Fa14RT2.html</guid>
+        <pubDate>Tue, 02 Dec 2014 14:00:00 -0500</pubDate>
+        <link>http://blancosilva.github.io/forum/2014/12/02/MA122Fa14RT3.html</link>
+        <guid isPermaLink="true">http://blancosilva.github.io/forum/2014/12/02/MA122Fa14RT3.html</guid>
+        
+        
+        <category>forum</category>
+        
+      </item>
+    
+      <item>
+        <title>MATH 122 Fall 2014 Review Exam (4|4)</title>
+        <description>&lt;div class=&quot;well&quot;&gt;
+	There were way too many repetitive examples, and some of the questions did not even have a statement—just a table, but no indication of what to do with it.  Among the repeated types of questions, I selected what I considered the most interesting, and avoided to include the rest.&lt;br /&gt;
+
+	I would have liked to see at least one example of one definite integral that cannot be completed with the calculator, especially is the integration technique is a substitution.
+&lt;/div&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;With &lt;span&gt;\( t \)&lt;/span&gt; years since 2000, the population, &lt;span&gt;\( P \)&lt;span&gt;, of the world in billions can be modeled by &lt;span&gt;\( P=6.1e^{.012t} \)&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;    &lt;ul&gt;
+      &lt;li&gt;What was the population in 2013?&lt;/li&gt;
+      &lt;li&gt;What will be the population in 2025?&lt;/li&gt;
+      &lt;li&gt;Find the average population of the world between 2000 and 2011.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;If &lt;span&gt;\( t \)&lt;/span&gt; is time in years, and &lt;span&gt;\( t=0 \)&lt;/span&gt; represents January 1, 2005, worldwide energy consumption, &lt;span&gt;\( r \)&lt;span&gt;, in quadrillion (&lt;span&gt;\( 10^{15}\)&lt;/span&gt;) BTUs per year, is modeled by, &lt;span&gt;\( r = 461e^{.0185t} \)&lt;/span&gt;.
+&lt;/span&gt;&lt;/span&gt;    &lt;ul&gt;
+      &lt;li&gt;Write a definite integral for the total energy use between the start of 2005 and the start of 2017.&lt;/li&gt;
+      &lt;li&gt;Use the Fundamental Theorem of Calculus to evaluate the integral. Round to the nearest integer.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Compute the following definite integral:&lt;/p&gt;
+
+    &lt;div&gt;
+     \begin{equation}
+     \int_1^4 \big( 3^x + \tfrac{3}{x} \big)\, dx	
+     \end{equation}
+ &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;War Emblem, winner of the 2002 Kentucky Derby, can reach up to the speed of 50mph.  His speed was clocked every 30 seconds.  The results are in the table below.  What was his average speed?&lt;/p&gt;
+
+    &lt;div style=&quot;text-align:center&quot;&gt;
+     &lt;table class=&quot;table table-border&quot; style=&quot;width:50%; margin-left:auto; margin-right:auto;&quot;&gt;
+         &lt;tr&gt;
+             &lt;td&gt;Time (Seconds)&lt;/td&gt;&lt;td&gt;0&lt;/td&gt;&lt;td&gt;30&lt;/td&gt;&lt;td&gt;60&lt;/td&gt;&lt;td&gt;90&lt;/td&gt;&lt;td&gt;120&lt;/td&gt;
+         &lt;/tr&gt;
+         &lt;tr&gt;
+             &lt;td&gt;Speed (mph)&lt;/td&gt;&lt;td&gt;0&lt;/td&gt;&lt;td&gt;40&lt;/td&gt;&lt;td&gt;38&lt;/td&gt;&lt;td&gt;35&lt;/td&gt;&lt;td&gt;37&lt;/td&gt;
+         &lt;/tr&gt;
+     &lt;/table&gt;
+ &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;The following table gives the number of likes, &lt;span&gt;\( L \)&lt;/span&gt;, that Amanda gets on her instagram post per hour.  Let &lt;span&gt;\( t \)&lt;/span&gt; be the number of hours since the post and &lt;span&gt;\( L=f(t) \)&lt;/span&gt;.  What is the average number of likes that Amanda got in the first 6 hours?&lt;/p&gt;
+
+    &lt;div style=&quot;text-align:center&quot;&gt;
+     &lt;table class=&quot;table table-border&quot; style=&quot;width:50%; margin-left:auto; margin-right:auto;&quot;&gt;
+         &lt;tr&gt;
+             &lt;td&gt;0&lt;/td&gt;&lt;td&gt;1&lt;/td&gt;&lt;td&gt;2&lt;/td&gt;&lt;td&gt;3&lt;/td&gt;&lt;td&gt;4&lt;/td&gt;&lt;td&gt;5&lt;/td&gt;&lt;td&gt;6&lt;/td&gt;
+         &lt;/tr&gt;
+         &lt;tr&gt;
+             &lt;td&gt;0&lt;/td&gt;&lt;td&gt;23&lt;/td&gt;&lt;td&gt;30&lt;/td&gt;&lt;td&gt;37&lt;/td&gt;&lt;td&gt;32&lt;/td&gt;&lt;td&gt;13&lt;/td&gt;&lt;td&gt;70&lt;/td&gt;
+         &lt;/tr&gt;
+     &lt;/table&gt;
+ &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Find the net area of the function &lt;span&gt;\( y= f(x) = -2 + 5x \)&lt;/span&gt; between &lt;span&gt;\( x=0 \)&lt;span&gt; and &lt;span&gt;\( x=4 \)&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;The following table gives the emissions &lt;span&gt;\( E \)&lt;/span&gt; of nitrogen oxide in millions of metric tons per year in the US
+Let &lt;span&gt;\( t \)&lt;/span&gt; be the number of years since 1970 and &lt;span&gt;\( E = f(t) \)&lt;/span&gt;.&lt;/p&gt;
+
+    &lt;div style=&quot;text-align:center;&quot;&gt;
+     &lt;table class=&quot;table table-border&quot; style=&quot;width:50%; margin-left:auto; margin-right:auto;&quot;&gt;
+         &lt;tr&gt;
+             &lt;td&gt;Year&lt;/td&gt;&lt;td&gt;1970&lt;/td&gt;&lt;td&gt;1975&lt;/td&gt;&lt;td&gt;1980&lt;/td&gt;&lt;td&gt;1985&lt;/td&gt;&lt;td&gt;1990&lt;/td&gt;&lt;td&gt;1995&lt;/td&gt;&lt;td&gt;2000&lt;/td&gt;
+         &lt;/tr&gt;
+         &lt;tr&gt;
+             &lt;td&gt;E&lt;/td&gt;&lt;td&gt; 26.9&lt;/td&gt;&lt;td&gt;26.4&lt;/td&gt;&lt;td&gt; 27.1&lt;/td&gt;&lt;td&gt; 25.8 &lt;/td&gt;&lt;td&gt; 25.5&lt;/td&gt;&lt;td&gt; 25.9&lt;/td&gt;&lt;td&gt; 22.6&lt;/td&gt;
+         &lt;/tr&gt;
+     &lt;/table&gt;
+ &lt;/div&gt;
+
+    &lt;ul&gt;
+      &lt;li&gt;What are the units and meaning of &lt;span&gt;\( \int_0^{30} f(t)\, dt \)&lt;/span&gt;?&lt;/li&gt;
+      &lt;li&gt;Estimate the previous integral.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+</description>
+        <pubDate>Tue, 02 Dec 2014 13:00:00 -0500</pubDate>
+        <link>http://blancosilva.github.io/forum/2014/12/02/MA122Fa14RT4.html</link>
+        <guid isPermaLink="true">http://blancosilva.github.io/forum/2014/12/02/MA122Fa14RT4.html</guid>
         
         
         <category>forum</category>
@@ -194,153 +271,76 @@ How many customers per day does the theater need in order to make a profit? Give
       </item>
     
       <item>
-        <title>MATH 122 Fall 2014 Review Exam (3|4)</title>
+        <title>MATH 141 Fall 2014 Review Exam (2|5)</title>
         <description>&lt;div class=&quot;well&quot;&gt;
-	The choice of problems on optimization is ok.  Some of the integrals are basically the same, so I chose the most representative and disregarded the rest.  I am also missing a few topics.  
-	&lt;ul&gt;
-		&lt;li&gt;There are three kinds of integrals by substitution, but you only chose one.&lt;/li&gt;
-		&lt;li&gt;We worked many different problems of the application of optimization to marginal analysis in class.  I will ask a few of those in the final.&lt;/li&gt;
-	&lt;/ul&gt;
-	Also, I don&#39;t recall doing any problem like number 3, where you mess with high degree polynomials. 
+	This is one of the most awesome review tests that any group of students has ever designed.  Not only every single topic in the corresponding portion has been addressed... the questions are &lt;strong&gt;evil!&lt;/strong&gt;   Good job, guys.  You are getting a bunch of extra credit for this awesome effort.
 &lt;/div&gt;
 
 &lt;ol&gt;
-  &lt;li&gt;Find any local min or max of the functions &lt;span&gt;\( f(x) = x^2-8x+4 \)&lt;/span&gt; using the first derivative test.&lt;/li&gt;
-  &lt;li&gt;The function &lt;span&gt;\( f(x)=x^4-3x^3+5 \)&lt;/span&gt; has a critical point at &lt;span&gt;\( x=1 \)&lt;/span&gt;.  Use the second derivative test to identify it as a local max or local min.&lt;/li&gt;
-  &lt;li&gt;Find any critical points of the function &lt;span&gt;\( f(x) = 6x^5 + 33x^4 -30x+100 \)&lt;/span&gt;.&lt;/li&gt;
-  &lt;li&gt;Find any inflection points of the function &lt;span&gt;\( f(x) = 2x^3+3x^2-180x+3 \)&lt;/span&gt;.&lt;/li&gt;
-  &lt;li&gt;Find constants &lt;span&gt;\( a \)&lt;/span&gt; and &lt;span&gt;\( b \)&lt;/span&gt; so the minimum of the parabola &lt;span&gt;\( f(x) = x^2+ax+b \)&lt;/span&gt; is at the point &lt;span&gt;\( (6,2) \)&lt;/span&gt;.&lt;/li&gt;
-  &lt;li&gt;Find the global maximum and minimum of the function &lt;span&gt;\( f(x) = 2x^3-3x^2-12x+3 \)&lt;/span&gt; on the interval &lt;span&gt;\( [-2, 4] \)&lt;/span&gt;.&lt;/li&gt;
-  &lt;li&gt;Let &lt;span&gt;\( C(q) \)&lt;/span&gt; represent the cost and &lt;span&gt;\( R(q) \)&lt;/span&gt; represent the revenue, in dollars, of production of &lt;span&gt;\( q \)&lt;/span&gt; items.
-    &lt;ul&gt;
-      &lt;li&gt;If &lt;span&gt;\( C(50)=4300 \)&lt;/span&gt; and &lt;span&gt;\( C’(50)=24 \)&lt;/span&gt;, estimate &lt;span&gt;\( C(52) \)&lt;/span&gt;.&lt;/li&gt;
-      &lt;li&gt;If &lt;span&gt;\( C’(50)=24 \)&lt;/span&gt; and &lt;span&gt;\( R’(50)=35 \)&lt;/span&gt;, approximately how much profit is earned by the 51st item?&lt;/li&gt;
-      &lt;li&gt;If &lt;span&gt;\( C’(100)=38 \)&lt;/span&gt; and &lt;span&gt;\( R’(100)=35 \)&lt;/span&gt;, should the company produce de 101st item? Why or why not?&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Find the following antiderivatives:&lt;/li&gt;
-&lt;/ol&gt;
-&lt;div&gt;
-	\begin{equation}
-	\int x^5+x^{100}\, dx	
-	\end{equation}
-&lt;/div&gt;
-&lt;div&gt;
-	\begin{equation}
-	\int \frac{3}{x^{24}} + 3x^{-4} - 27x^3\, dx	
-	\end{equation}
-&lt;/div&gt;
-&lt;div&gt;
-	\begin{equation}
-	\int e^x - \frac{24}{x^{3/4}}\, dx	
-	\end{equation}
-&lt;/div&gt;
-&lt;div&gt;
-	\begin{equation}
-	\int \frac{x^2}{x^3+1}\, dx
-	\end{equation}
-&lt;/div&gt;
-&lt;div&gt;
-	\begin{equation}
-	\int (x+1)\big( \tfrac{x^2}{2}+x \big)\, dx	
-	\end{equation}
-&lt;/div&gt;
+  &lt;li&gt;
+    &lt;p&gt;Find the derivative of the following functions&lt;/p&gt;
 
-</description>
-        <pubDate>Tue, 02 Dec 2014 02:00:00 -0500</pubDate>
-        <link>http://blancosilva.github.io/forum/2014/12/02/MA122Fa14RT3.html</link>
-        <guid isPermaLink="true">http://blancosilva.github.io/forum/2014/12/02/MA122Fa14RT3.html</guid>
-        
-        
-        <category>forum</category>
-        
-      </item>
-    
-      <item>
-        <title>MATH 122 Fall 2014 Review Exam (4|4)</title>
-        <description>&lt;div class=&quot;well&quot;&gt;
-	There were way too many repetitive examples, and some of the questions did not even have a statement—just a table, but no indication of what to do with it.  Among the repeated types of questions, I selected what I considered the most interesting, and avoided to include the rest.&lt;br /&gt;
-
-	I would have liked to see at least one example of one definite integral that cannot be completed with the calculator, especially is the integration technique is a substitution.
-&lt;/div&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;With &lt;span&gt;\( t \)&lt;/span&gt; years since 2000, the population, &lt;span&gt;\( P \)&lt;span&gt;, of the world in billions can be modeled by &lt;span&gt;\( P=6.1e^{.012t} \)&lt;span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;    &lt;ul&gt;
-      &lt;li&gt;What was the population in 2013?&lt;/li&gt;
-      &lt;li&gt;What will be the population in 2025?&lt;/li&gt;
-      &lt;li&gt;Find the average population of the world between 2000 and 2011.&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;If &lt;span&gt;\( t \)&lt;/span&gt; is time in years, and &lt;span&gt;\( t=0 \)&lt;/span&gt; represents January 1, 2005, worldwide energy consumption, &lt;span&gt;\( r \)&lt;span&gt;, in quadrillion (&lt;span&gt;\( 10^{15}\)&lt;/span&gt;) BTUs per year, is modeled by, &lt;span&gt;\( r = 461e^{.0185t} \)&lt;/span&gt;.
-&lt;/span&gt;&lt;/span&gt;    &lt;ul&gt;
-      &lt;li&gt;Write a definite integral for the total energy use between the start of 2005 and the start of 2017.&lt;/li&gt;
-      &lt;li&gt;Use the Fundamental Theorem of Calculus to evaluate the integral. Round to the nearest integer.&lt;/li&gt;
-    &lt;/ul&gt;
+    &lt;div&gt;
+     \begin{align}
+     f(x) &amp;amp;= 230x^{300} + 15x^{18} + 5 \\
+     f(x) &amp;amp;= -\frac{488}{233} x^{265/488} \\
+     f(x) &amp;amp;= 2\sin x + 6\cos x + 9 \\
+     f(x) &amp;amp;= \sin x \cos x \\
+     f(x) &amp;amp;= 12\tan x + 3x^2 - \cos x \\
+     f(x) &amp;amp;= \sin^2 x + \cos^2 x \\
+     f(x) &amp;amp;= e^{8x} \\
+     f(x) &amp;amp;= 8^x \\
+     f(x) &amp;amp;= 10^{2x^2}
+     \end{align}
+ &lt;/div&gt;
   &lt;/li&gt;
   &lt;li&gt;
-    &lt;p&gt;Compute the following definite integral:&lt;/p&gt;
+    &lt;p&gt;Use the chain rule to find the derivative of the following function&lt;/p&gt;
 
     &lt;div&gt;
      \begin{equation}
-     \int_1^4 \big( 3^x + \tfrac{3}{x} \big)\, dx	
+     f(x) = \sqrt{ \big( 3x^5 + \sin(e^x) - 400 \big)^3 }	
      \end{equation}
  &lt;/div&gt;
   &lt;/li&gt;
   &lt;li&gt;
-    &lt;p&gt;War Emblem, winner of the 2002 Kentucky Derby, can reach up to the speed of 50mph.  His speed was clocked every 30 seconds.  The results are in the table below.  What was his average speed?&lt;/p&gt;
+    &lt;p&gt;Use the quotient rule to obtain the derivative of&lt;/p&gt;
 
-    &lt;div style=&quot;text-align:center&quot;&gt;
-     &lt;table class=&quot;table table-border&quot; style=&quot;width:50%; margin-left:auto; margin-right:auto;&quot;&gt;
-         &lt;tr&gt;
-             &lt;td&gt;Time (Seconds)&lt;/td&gt;&lt;td&gt;0&lt;/td&gt;&lt;td&gt;30&lt;/td&gt;&lt;td&gt;60&lt;/td&gt;&lt;td&gt;90&lt;/td&gt;&lt;td&gt;120&lt;/td&gt;
-         &lt;/tr&gt;
-         &lt;tr&gt;
-             &lt;td&gt;Speed (mph)&lt;/td&gt;&lt;td&gt;0&lt;/td&gt;&lt;td&gt;40&lt;/td&gt;&lt;td&gt;38&lt;/td&gt;&lt;td&gt;35&lt;/td&gt;&lt;td&gt;37&lt;/td&gt;
-         &lt;/tr&gt;
-     &lt;/table&gt;
+    &lt;div&gt;
+     \begin{equation}
+     f(x) = \frac{x^3}{x^2 + 6}	
+     \end{equation}
  &lt;/div&gt;
   &lt;/li&gt;
+  &lt;li&gt;Find the tangent line to the graph of the function &lt;span&gt;\( f(x) = x^3 - x^2 + 60 \)&lt;/span&gt; at &lt;span&gt;\( x=2 \)&lt;/span&gt;.&lt;/li&gt;
+  &lt;li&gt;Find the normal line to the graph of function &lt;span&gt;\( f(x) = 4x^2-21x+4 \)&lt;/span&gt; at &lt;span&gt;\( x=3 \)&lt;/span&gt;.&lt;/li&gt;
   &lt;li&gt;
-    &lt;p&gt;The following table gives the number of likes, &lt;span&gt;\( L \)&lt;/span&gt;, that Amanda gets on her instagram post per hour.  Let &lt;span&gt;\( t \)&lt;/span&gt; be the number of hours since the post and &lt;span&gt;\( L=f(t) \)&lt;/span&gt;.  What is the average number of likes that Amanda got in the first 6 hours?&lt;/p&gt;
+    &lt;p&gt;Use logarithmic differentiation to obtain the derivative of the following functions&lt;/p&gt;
 
-    &lt;div style=&quot;text-align:center&quot;&gt;
-     &lt;table class=&quot;table table-border&quot; style=&quot;width:50%; margin-left:auto; margin-right:auto;&quot;&gt;
-         &lt;tr&gt;
-             &lt;td&gt;0&lt;/td&gt;&lt;td&gt;1&lt;/td&gt;&lt;td&gt;2&lt;/td&gt;&lt;td&gt;3&lt;/td&gt;&lt;td&gt;4&lt;/td&gt;&lt;td&gt;5&lt;/td&gt;&lt;td&gt;6&lt;/td&gt;
-         &lt;/tr&gt;
-         &lt;tr&gt;
-             &lt;td&gt;0&lt;/td&gt;&lt;td&gt;23&lt;/td&gt;&lt;td&gt;30&lt;/td&gt;&lt;td&gt;37&lt;/td&gt;&lt;td&gt;32&lt;/td&gt;&lt;td&gt;13&lt;/td&gt;&lt;td&gt;70&lt;/td&gt;
-         &lt;/tr&gt;
-     &lt;/table&gt;
+    &lt;div&gt;
+     \begin{align}
+     f(x) &amp;amp;= \big( \cos 8x \big)^x	\\
+     f(x) &amp;amp;= \big( \tan x \big)^{9/x}\\
+     \end{align}
  &lt;/div&gt;
   &lt;/li&gt;
-  &lt;li&gt;Find the net area of the function &lt;span&gt;\( y= f(x) = -2 + 5x \)&lt;/span&gt; between &lt;span&gt;\( x=0 \)&lt;span&gt; and &lt;span&gt;\( x=4 \)&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;Find all &lt;span&gt;\( x \)&lt;/span&gt;-values in the interval &lt;span&gt;\( [0,2\pi] \)&lt;/span&gt;, where the tangent line to the graph of &lt;span&gt;\( f(x)= \sin^2 x - \cos^2 x \)&lt;/span&gt; is horizontal.&lt;/li&gt;
   &lt;li&gt;
-    &lt;p&gt;The following table gives the emissions &lt;span&gt;\( E \)&lt;/span&gt; of nitrogen oxide in millions of metric tons per year in the US
-Let &lt;span&gt;\( t \)&lt;/span&gt; be the number of years since 1970 and &lt;span&gt;\( E = f(t) \)&lt;/span&gt;.&lt;/p&gt;
+    &lt;p&gt;Use implicit differentiation to obtain the derivative &lt;span&gt;\( y’ \)&lt;/span&gt;, if &lt;span&gt;\( x \)&lt;/span&gt; and &lt;span&gt;\( y \)&lt;/span&gt; are related by the following equations:&lt;/p&gt;
 
-    &lt;div style=&quot;text-align:center;&quot;&gt;
-     &lt;table class=&quot;table table-border&quot; style=&quot;width:50%; margin-left:auto; margin-right:auto;&quot;&gt;
-         &lt;tr&gt;
-             &lt;td&gt;Year&lt;/td&gt;&lt;td&gt;1970&lt;/td&gt;&lt;td&gt;1975&lt;/td&gt;&lt;td&gt;1980&lt;/td&gt;&lt;td&gt;1985&lt;/td&gt;&lt;td&gt;1990&lt;/td&gt;&lt;td&gt;1995&lt;/td&gt;&lt;td&gt;2000&lt;/td&gt;
-         &lt;/tr&gt;
-         &lt;tr&gt;
-             &lt;td&gt;E&lt;/td&gt;&lt;td&gt; 26.9&lt;/td&gt;&lt;td&gt;26.4&lt;/td&gt;&lt;td&gt; 27.1&lt;/td&gt;&lt;td&gt; 25.8 &lt;/td&gt;&lt;td&gt; 25.5&lt;/td&gt;&lt;td&gt; 25.9&lt;/td&gt;&lt;td&gt; 22.6&lt;/td&gt;
-         &lt;/tr&gt;
-     &lt;/table&gt;
+    &lt;div&gt;
+     \begin{align}
+     e^{x+y} &amp;amp;= y^3 \\
+     x^2 + y^2 &amp;amp;= 25		
+     \end{align}
  &lt;/div&gt;
-
-    &lt;ul&gt;
-      &lt;li&gt;What are the units and meaning of &lt;span&gt;\( \int_0^{30} f(t)\, dt \)&lt;/span&gt;?&lt;/li&gt;
-      &lt;li&gt;Estimate the previous integral.&lt;/li&gt;
-    &lt;/ul&gt;
   &lt;/li&gt;
 &lt;/ol&gt;
+
 </description>
-        <pubDate>Tue, 02 Dec 2014 01:00:00 -0500</pubDate>
-        <link>http://blancosilva.github.io/forum/2014/12/02/MA122Fa14RT4.html</link>
-        <guid isPermaLink="true">http://blancosilva.github.io/forum/2014/12/02/MA122Fa14RT4.html</guid>
+        <pubDate>Tue, 02 Dec 2014 03:00:00 -0500</pubDate>
+        <link>http://blancosilva.github.io/forum/2014/12/02/MA144Fa14RT2.html</link>
+        <guid isPermaLink="true">http://blancosilva.github.io/forum/2014/12/02/MA144Fa14RT2.html</guid>
         
         
         <category>forum</category>
