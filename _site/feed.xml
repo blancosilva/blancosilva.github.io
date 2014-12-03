@@ -6,8 +6,8 @@
 </description>
     <link>http://blancosilva.github.io/</link>
     <atom:link href="http://blancosilva.github.io/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Wed, 03 Dec 2014 00:11:52 -0500</pubDate>
-    <lastBuildDate>Wed, 03 Dec 2014 00:11:52 -0500</lastBuildDate>
+    <pubDate>Wed, 03 Dec 2014 00:13:07 -0500</pubDate>
+    <lastBuildDate>Wed, 03 Dec 2014 00:13:07 -0500</lastBuildDate>
     <generator>Jekyll v2.4.0</generator>
     
       <item>
@@ -276,33 +276,36 @@ Let &lt;span&gt;\( t \)&lt;/span&gt; be the number of years since 1970 and &lt;s
 
 &lt;ol&gt;
   &lt;li&gt;Find the domain of the function
-     &amp;lt;div&amp;gt;
-         \begin{equation}
-         f(x) = \frac{3x-7}{4x-5}	
-         \end{equation}
-     &amp;lt;/div&amp;gt;&lt;/li&gt;
+    &lt;div&gt;
+     \begin{equation}
+     f(x) = \frac{3x-7}{4x-5}	
+     \end{equation}
+ &lt;/div&gt;
+  &lt;/li&gt;
   &lt;li&gt;Given &lt;span&gt;\( f(x) = x^2-5, g(x) = 7x=15 \)&lt;/span&gt;, find &lt;span&gt;\( f(g(x)), f(x)/g(x), f(f(x)), g(g(x)) \)&lt;/span&gt;, and &lt;span&gt;\( f(x)-g(x) \)&lt;/span&gt;.&lt;/li&gt;
   &lt;li&gt;Evaluate &lt;span&gt;\( \log_2 80 - \log_2 5 \)&lt;/span&gt;.	&lt;/li&gt;
   &lt;li&gt;Compute the following limits:
-     &amp;lt;div&amp;gt;
-         \begin{align}
-         &amp;amp;\lim&lt;em&gt;{x\to -2}	\frac{x+2}{x^3+8} &lt;br /&gt;
-         &amp;amp;\lim&lt;/em&gt;{h\to 0} \frac{(7+h)^2-49}{h} &lt;br /&gt;
-         &amp;amp;\lim&lt;em&gt;{x\to -2^+} \frac{x+1}{x+2} &lt;br /&gt;
-         &amp;amp;\lim&lt;/em&gt;{x\to 2} \sqrt[3]{x^5 -3x^2 +7}
-         \end{align}
-     &amp;lt;/div&amp;gt;&lt;/li&gt;
+    &lt;div&gt;
+     \begin{align}
+     &amp;amp;\lim_{x\to -2}	\frac{x+2}{x^3+8} \\
+     &amp;amp;\lim_{h\to 0} \frac{(7+h)^2-49}{h} \\
+     &amp;amp;\lim_{x\to -2^+} \frac{x+1}{x+2} \\
+     &amp;amp;\lim_{x\to 2} \sqrt[3]{x^5 -3x^2 +7}
+     \end{align}
+ &lt;/div&gt;
+  &lt;/li&gt;
   &lt;li&gt;For what values of the constant &lt;span&gt;\( C \)&lt;/span&gt; is the function &lt;span&gt;\( f(x) \)&lt;/span&gt; continuous in &lt;span&gt;\( (-\infty, \infty) \)&lt;/span&gt;?
-     &amp;lt;div&amp;gt;
-         \begin{equation}
-         f(x) = \begin{cases} Cx^2 +2x &amp;amp;\text{ if } x&amp;lt;2 \ x^3-Cx &amp;amp;\text{ if } x\geq 2 \end{cases}
-         \end{equation}
-     &amp;lt;/div&amp;gt;&lt;/li&gt;
+    &lt;div&gt;
+     \begin{equation}
+     f(x) = \begin{cases} Cx^2 +2x &amp;amp;\text{ if } x&amp;lt;2 \\ x^3-Cx &amp;amp;\text{ if } x\geq 2 \end{cases}
+     \end{equation}
+ &lt;/div&gt;
+  &lt;/li&gt;
 &lt;/ol&gt;
 
 &lt;div class=&quot;well&quot;&gt;
-	&lt;h3&gt; Sections 15 and 16&lt;/h3&gt;
-	This is a much better selection of limits and a far more challenging selection of domains.  I like that you also tried some intuitive ranges.  Good for you!  &lt;br /&gt;
+&lt;h3&gt; Sections 15 and 16&lt;/h3&gt;
+This is a much better selection of limits and a far more challenging selection of domains.  I like that you also tried some intuitive ranges.  Good for you!  &lt;br /&gt;
 
 	Your logarithmic equations are &lt;strong&gt;evil&lt;/strong&gt;: I did enjoy that very much. &lt;br /&gt;
 
