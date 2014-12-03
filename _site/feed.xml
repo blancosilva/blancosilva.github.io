@@ -6,8 +6,8 @@
 </description>
     <link>http://blancosilva.github.io/</link>
     <atom:link href="http://blancosilva.github.io/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Wed, 03 Dec 2014 00:13:07 -0500</pubDate>
-    <lastBuildDate>Wed, 03 Dec 2014 00:13:07 -0500</lastBuildDate>
+    <pubDate>Wed, 03 Dec 2014 00:13:53 -0500</pubDate>
+    <lastBuildDate>Wed, 03 Dec 2014 00:13:53 -0500</lastBuildDate>
     <generator>Jekyll v2.4.0</generator>
     
       <item>
@@ -304,8 +304,8 @@ Let &lt;span&gt;\( t \)&lt;/span&gt; be the number of years since 1970 and &lt;s
 &lt;/ol&gt;
 
 &lt;div class=&quot;well&quot;&gt;
-&lt;h3&gt; Sections 15 and 16&lt;/h3&gt;
-This is a much better selection of limits and a far more challenging selection of domains.  I like that you also tried some intuitive ranges.  Good for you!  &lt;br /&gt;
+	&lt;h3&gt; Sections 15 and 16&lt;/h3&gt;
+	This is a much better selection of limits and a far more challenging selection of domains.  I like that you also tried some intuitive ranges.  Good for you!  &lt;br /&gt;
 
 	Your logarithmic equations are &lt;strong&gt;evil&lt;/strong&gt;: I did enjoy that very much. &lt;br /&gt;
 
@@ -313,42 +313,42 @@ This is a much better selection of limits and a far more challenging selection o
 &lt;/div&gt;
 
 &lt;ol&gt;
-  &lt;li&gt;
-    &lt;p&gt;Find domain and range of the following functions:
-     &amp;lt;div&amp;gt;
-         \begin{align}
-         f(x) &amp;amp;= -\sqrt{x} - 2 &lt;br /&gt;
-         f(x) &amp;amp;= -\sqrt{49-x^2}	&lt;br /&gt;
-         f(x) &amp;amp;= \frac{5x+1}{\sqrt{x^2+5x+6}}
-         \end{align}
-     &amp;lt;/div&amp;gt;&lt;/p&gt;
+  &lt;li&gt;Find domain and range of the following functions:
+    &lt;div&gt;
+     \begin{align}
+     f(x) &amp;amp;= -\sqrt{x} - 2 \\
+     f(x) &amp;amp;= -\sqrt{49-x^2}	\\
+     f(x) &amp;amp;= \frac{5x+1}{\sqrt{x^2+5x+6}}
+     \end{align}
+ &lt;/div&gt;
   &lt;/li&gt;
   &lt;li&gt;Compute the following limits:
-     &amp;lt;div&amp;gt;
-         \begin{align}
-         &amp;amp;\lim&lt;em&gt;{x\to 1^+} \frac{x-1}{x^2-1} &lt;br /&gt;
-         &amp;amp;\lim&lt;/em&gt;{x\to 2} \frac{x^2+x-6}{x-2} &lt;br /&gt;
-         &amp;amp;\lim&lt;em&gt;{x\to 0^-} \frac{\sqrt{x+1}-1}{x} &lt;br /&gt;
-         &amp;amp;\lim&lt;/em&gt;{x\to 3} -\frac{19}{3-x} &lt;br /&gt;
-         &amp;amp;\lim&lt;em&gt;{x\to -1} \frac{2x^2+2}{x^2+4x-4} &lt;br /&gt;
-         &amp;amp;\lim&lt;/em&gt;{x\to 1} \bigg( \frac{2+4x}{4+11x^2+3x^4} \bigg)^3
-         \end{align}
-     &amp;lt;/div&amp;gt;&lt;/li&gt;
+    &lt;div&gt;
+     \begin{align}
+     &amp;amp;\lim_{x\to 1^+} \frac{x-1}{x^2-1} \\
+     &amp;amp;\lim_{x\to 2} \frac{x^2+x-6}{x-2} \\
+     &amp;amp;\lim_{x\to 0^-} \frac{\sqrt{x+1}-1}{x} \\
+     &amp;amp;\lim_{x\to 3} -\frac{19}{3-x} \\
+     &amp;amp;\lim_{x\to -1} \frac{2x^2+2}{x^2+4x-4} \\
+     &amp;amp;\lim_{x\to 1} \bigg( \frac{2+4x}{4+11x^2+3x^4} \bigg)^3
+     \end{align}
+ &lt;/div&gt;
+  &lt;/li&gt;
   &lt;li&gt;Solve for &lt;span&gt;\( x \)&lt;/span&gt; in the equation &lt;span&gt;\( \log_4 (x+1) + \log_{16}(x+1) = \log_4 8 \)&lt;/span&gt;,&lt;/li&gt;
   &lt;li&gt;Simplify the following expressions:
-     &amp;lt;div&amp;gt;
-         \begin{align}
-         &amp;amp;\log_7 2401 &lt;br /&gt;
-         &amp;amp;\log_3 \bigg( \frac{9x^{11}}{\sqrt{y}} \bigg)
-         \end{align}
-     &amp;lt;/div&amp;gt;&lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Find the value of the constant &lt;span&gt;\( n \)&lt;/span&gt; that will make the function &lt;span&gt;\( f(x) \)&lt;/span&gt; continuous everywhere.
-     &amp;lt;div&amp;gt;
-         \begin{equation}
-         f(x) = \begin{cases} \frac{x^2-1}{x-1} &amp;amp;\text{ if } x&amp;lt;1 \ nx-2 &amp;amp;\text{ if } x\geq 1 \end{cases}
-         \end{equation}
-     &amp;lt;/div&amp;gt;&lt;/p&gt;
+    &lt;div&gt;
+     \begin{align}
+     &amp;amp;\log_7 2401 \\
+     &amp;amp;\log_3 \bigg( \frac{9x^{11}}{\sqrt{y}} \bigg)
+     \end{align}
+ &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Find the value of the constant &lt;span&gt;\( n \)&lt;/span&gt; that will make the function &lt;span&gt;\( f(x) \)&lt;/span&gt; continuous everywhere.
+    &lt;div&gt;
+     \begin{equation}
+     f(x) = \begin{cases} \frac{x^2-1}{x-1} &amp;amp;\text{ if } x&amp;lt;1 \\ nx-2 &amp;amp;\text{ if } x\geq 1 \end{cases}
+     \end{equation}
+ &lt;/div&gt;
   &lt;/li&gt;
   &lt;li&gt;Find &lt;span&gt;\( f \circ g \)&lt;/span&gt; and its domain, if
     &lt;ul&gt;
