@@ -47,49 +47,37 @@ of segments, for example.  We also show how to quickly compute the angle between
 two segments, as well as deciding whether a given point belongs to a segment or
 not.  The next diagram illustrates an example, which we follow up with code.
 
-<img src="https://farm4.staticflickr.com/3877/15330737175_683fb70bbb_d.jpg">
-
+<img src="https://farm4.staticflickr.com/3877/15330737175_683fb70bbb_d.jpg" style="margin-left:auto; margin-right:auto;">
 
 {% highlight python linenos %}
-    from sympy.geometry import *
-    
-    P1 = Point(0, 0)
-    P2 = Point(3, 4)
-    P3 = Point(2, -1)
-    P4 = Point(-1, 5)
-    
-    S1 = Segment(P1, P2)
-    S2 = Segment(P3, P4)
+>>> from sympy.geometry import *
+>>> P1 = Point(0, 0)
+>>> P2 = Point(3, 4)
+>>> P3 = Point(2, -1)
+>>> P4 = Point(-1, 5)
+>>> S1 = Segment(P1, P2)
+>>> S2 = Segment(P3, P4)
+>>> Point.is_collinear(P1, P2, P3)
+False
 
-    Point.is_collinear(P1, P2, P3)
+>>> S1.length
+5
 
-    False
+>>> S2.midpoint
+Point(1/2, 2)
 
-    S1.length
+>>> S1.slope
+4/3
 
-    5
+>>> S1.intersection(S2)
+[Point(9/10, 6/5)]
 
-    S2.midpoint
+>>> Segment.angle_between(S1, S2)
+acos(-sqrt(5)/5)
 
-    Point(1/2, 2)
-
-    S1.slope
-
-    4/3
-
-    S1.intersection(S2)
-
-    [Point(9/10, 6/5)]
-
-    Segment.angle_between(S1, S2)
-
-    acos(-sqrt(5)/5)
-
-    S1.contains(P3)
-
-    False
+>>> S1.contains(P3)
+False
 {% endhighlight %}
-
 
 ### Lines
 
