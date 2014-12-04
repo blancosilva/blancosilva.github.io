@@ -3,6 +3,8 @@ layout: post
 category: post
 title: Computational Geometry in Python
 comments: true
+image:
+  teaser: http://blancosilva.github.io/images/chapter6_files/chapter6_127_0.png
 ---
 
 *Computational Geometry* is a field of mathematics that seeks the development of
