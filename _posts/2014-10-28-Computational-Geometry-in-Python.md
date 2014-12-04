@@ -266,6 +266,7 @@ Some other interesting operations with triangles:
     sqrt(26)/11
     T.is_similar(Triangle(P1, P2, P4))
     False
+    {% endhighlight %}
 
 > The other basic geometrical objects currently coded in the Geometry module are
 >* `LinearEntity`.  This is a superclass (which we never use directly), with
