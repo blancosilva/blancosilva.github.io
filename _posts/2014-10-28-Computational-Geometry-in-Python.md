@@ -119,9 +119,7 @@ False
 
 ### Circles
 
-The next geometrical concept we are to explore is the *circle*.  We may define a
-circle by its center and radius, or by three points on it.  We can easily
-compute all of its properties.
+The next geometrical concept we are to explore is the *circle*.  We may define a circle by its center and radius, or by three points on it.  We can easily compute all of its properties.
 
 <div style="text-align:center;">
     <img src="https://farm6.staticflickr.com/5581/15327566581_f064778b3e_d.jpg" style="margin-left:auto; margin-right:auto;">
@@ -172,69 +170,88 @@ False
 
 ### Triangles
 
-The most useful basic geometric concept is the *triangle*.   We need robust and
-fast algorithms to manipulate and extract information from them.  Let us show
-first the definition of one, together with a series of queries to describe its
-properties:
+The most useful basic geometric concept is the *triangle*.   We need robust and fast algorithms to manipulate and extract information from them.  Let us show first the definition of one, together with a series of queries to describe its properties:
 
+{% highlight python %}
 
-    T = Triangle(P1, P2, P3)
-    T.area                          # Note it gives a signed area
-    -11/2
-    T.angles
-    {Point(0, 0): acos(2*sqrt(5)/25),
-     Point(2, -1): acos(3*sqrt(130)/130),
-     Point(3, 4): acos(23*sqrt(26)/130)}
-    T.sides
-    [Segment(Point(0, 0), Point(3, 4)),
-     Segment(Point(2, -1), Point(3, 4)),
-     Segment(Point(0, 0), Point(2, -1))]
-    T.perimeter
-    sqrt(5) + 5 + sqrt(26)
-    T.is_right()                    # Is T a right triangle?
-    False
-    T.is_equilateral()              # Is T equilateral?
-    False
-    T.is_scalene()                  # Is T scalene?
-    True
-    T.is_isosceles()                # Is T isosceles?
-    False
+>>> T = Triangle(P1, P2, P3)
+>>> T.area                          # Note it gives a signed area
+-11/2
 
-Next, note how easily we can obtain representation of the different segments,
-centers, and circles associated with triangles, as well as the *medial triangle*
-(the triangle with vertices at the midpoints of the segments).
+>>> T.angles
+{Point(0, 0): acos(2*sqrt(5)/25),
+ Point(2, -1): acos(3*sqrt(130)/130),
+ Point(3, 4): acos(23*sqrt(26)/130)}
 
+>>> T.sides
+[Segment(Point(0, 0), Point(3, 4)),
+ Segment(Point(2, -1), Point(3, 4)),
+ Segment(Point(0, 0), Point(2, -1))]
 
-    T.altitudes
-    {Point(0, 0): Segment(Point(0, 0), Point(55/26, -11/26)),
-     Point(2, -1): Segment(Point(6/25, 8/25), Point(2, -1)),
-     Point(3, 4): Segment(Point(4/5, -2/5), Point(3, 4))}
-    T.orthocenter                  # Intersection of the altitudes
-    Point(10/11, -2/11)
-    T.bisectors()                  # Angle bisectors
-    {Point(0, 0): Segment(Point(0, 0), Point(sqrt(5)/4 + 7/4, -9/4 + 5*sqrt(5)/4)),
-     Point(2, -1): Segment(Point(3*sqrt(5)/(sqrt(5) + sqrt(26)), 4*sqrt(5)/(sqrt(5) + sqrt(26))), Point(2, -1)),
-     Point(3, 4): Segment(Point(-50 + 10*sqrt(26), -5*sqrt(26) + 25), Point(3, 4))}
-    T.incenter                     # Intersection of angle bisectors
-    Point((3*sqrt(5) + 10)/(sqrt(5) + 5 + sqrt(26)), (-5 + 4*sqrt(5))/(sqrt(5) + 5 + sqrt(26)))
-    T.incircle
-    Circle(Point((3*sqrt(5) + 10)/(sqrt(5) + 5 + sqrt(26)), (-5 + 4*sqrt(5))/(sqrt(5) + 5 + sqrt(26))), -11/(sqrt(5) + 5 + sqrt(26)))
-    T.inradius
-    -11/(sqrt(5) + 5 + sqrt(26))
-    T.medians
-    {Point(0, 0): Segment(Point(0, 0), Point(5/2, 3/2)),
-     Point(2, -1): Segment(Point(3/2, 2), Point(2, -1)),
-     Point(3, 4): Segment(Point(1, -1/2), Point(3, 4))}
-    T.centroid                   # Intersection of the medians
-    Point(5/3, 1)
-    T.circumcenter               # Intersection of perpendicular bisectors
-    Point(45/22, 35/22)
-    T.circumcircle
-    Circle(Point(45/22, 35/22), 5*sqrt(130)/22)
-    T.circumradius
-    5*sqrt(130)/22
-    T.medial
-    Triangle(Point(3/2, 2), Point(5/2, 3/2), Point(1, -1/2))
+>>> T.perimeter
+sqrt(5) + 5 + sqrt(26)
+
+>>> T.is_right()                    # Is T a right triangle?
+False
+
+>>> T.is_equilateral()              # Is T equilateral?
+False
+
+>>> T.is_scalene()                  # Is T scalene?
+True
+
+>>> T.is_isosceles()                # Is T isosceles?
+False
+
+{% endhighlight %}
+
+Next, note how easily we can obtain representation of the different segments, centers, and circles associated with triangles, as well as the *medial triangle* (the triangle with vertices at the midpoints of the segments).
+
+{% highlight python %}
+
+>>> T.altitudes
+{Point(0, 0): Segment(Point(0, 0), Point(55/26, -11/26)),
+ Point(2, -1): Segment(Point(6/25, 8/25), Point(2, -1)),
+ Point(3, 4): Segment(Point(4/5, -2/5), Point(3, 4))}
+
+>>> T.orthocenter                  # Intersection of the altitudes
+Point(10/11, -2/11)
+
+>>> T.bisectors()                  # Angle bisectors
+{Point(0, 0): Segment(Point(0, 0), Point(sqrt(5)/4 + 7/4, -9/4 + 5*sqrt(5)/4)),
+ Point(2, -1): Segment(Point(3*sqrt(5)/(sqrt(5) + sqrt(26)), 4*sqrt(5)/(sqrt(5) + sqrt(26))), Point(2, -1)),
+ Point(3, 4): Segment(Point(-50 + 10*sqrt(26), -5*sqrt(26) + 25), Point(3, 4))}
+
+>>> T.incenter                     # Intersection of angle bisectors
+Point((3*sqrt(5) + 10)/(sqrt(5) + 5 + sqrt(26)), (-5 + 4*sqrt(5))/(sqrt(5) + 5 + sqrt(26)))
+
+>>> T.incircle
+Circle(Point((3*sqrt(5) + 10)/(sqrt(5) + 5 + sqrt(26)), (-5 + 4*sqrt(5))/(sqrt(5) + 5 + sqrt(26))), -11/(sqrt(5) + 5 + sqrt(26)))
+
+>>> T.inradius
+-11/(sqrt(5) + 5 + sqrt(26))
+
+>>> T.medians
+{Point(0, 0): Segment(Point(0, 0), Point(5/2, 3/2)),
+ Point(2, -1): Segment(Point(3/2, 2), Point(2, -1)),
+ Point(3, 4): Segment(Point(1, -1/2), Point(3, 4))}
+
+>>> T.centroid                   # Intersection of the medians
+Point(5/3, 1)
+
+>>> T.circumcenter               # Intersection of perpendicular bisectors
+Point(45/22, 35/22)
+
+>>> T.circumcircle
+Circle(Point(45/22, 35/22), 5*sqrt(130)/22)
+
+>>> T.circumradius
+5*sqrt(130)/22
+
+>>> T.medial
+Triangle(Point(3/2, 2), Point(5/2, 3/2), Point(1, -1/2))
+
+{% endhighlight %}
 
 Some other interesting operations with triangles:
 
@@ -242,7 +259,7 @@ Some other interesting operations with triangles:
 * Computation of the minimum distance from a point to each of the segments.
 * Checking whether two triangles are similar.
 
-
+    {% highlight python %}    
     T.intersection(C1)
     [Point(9/5, 12/5), Point(sqrt(113)/26 + 55/26, -11/26 + 5*sqrt(113)/26)]
     T.distance(T.circumcenter)
@@ -251,15 +268,15 @@ Some other interesting operations with triangles:
     False
 
 > The other basic geometrical objects currently coded in the Geometry module are
-> * `LinearEntity`.  This is a superclass (which we never use directly), with
+>* `LinearEntity`.  This is a superclass (which we never use directly), with
 three subclasses `Segment`, `Line` and `Ray`.  `LinearEntity` enjoys the
 following basic methods:
->    * `are_concurrent(o1, o2, ..., on)`
->    * `are_parallel(o1, o2)`
->    * `are_perpendicular(o1, o2)`
->    * `parallel_line(self, Point)`
->    * `perpendicular_line(self, Point)`
->    * `perpendicular_segment(self, Point)`
+>   * `are_concurrent(o1, o2, ..., on)`
+>   * `are_parallel(o1, o2)`
+>   * `are_perpendicular(o1, o2)`
+>   * `parallel_line(self, Point)`
+>   * `perpendicular_line(self, Point)`
+>   * `perpendicular_segment(self, Point)`
 >
 >* `Ellipse`. An object with a center, together with horizontal and vertical
 radii.  `Circle` is, as a matter of fact, a subclass of `Ellipse` with both
@@ -1116,7 +1133,7 @@ gets the job done, as the following code illustrates.
 
 This gives the following diagram, where the small dots represent the locations
 of the search space, and the circles are the range.  The query is, of course,
-the 14 points located inside of the circles, that our algorithm computed.
+the points located inside of the circles, that our algorithm computed.
 
 Problems in this setting vary from trivial to extremely complicated, depending
 on the input object types, range types, and query types.  An excellent
