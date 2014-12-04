@@ -269,15 +269,17 @@ Some other interesting operations with triangles:
     {% endhighlight %}
 
 > The other basic geometrical objects currently coded in the Geometry module are
+>
 >* `LinearEntity`.  This is a superclass (which we never use directly), with
-three subclasses `Segment`, `Line` and `Ray`.  `LinearEntity` enjoys the
-following basic methods:
->   * `are_concurrent(o1, o2, ..., on)`
->   * `are_parallel(o1, o2)`
->   * `are_perpendicular(o1, o2)`
->   * `parallel_line(self, Point)`
->   * `perpendicular_line(self, Point)`
->   * `perpendicular_segment(self, Point)`
+three subclasses `Segment`, `Line` and `Ray`.  
+> `LinearEntity` enjoys the following basic methods:
+>
+>    * `are_concurrent(o1, o2, ..., on)`
+>    * `are_parallel(o1, o2)`
+>    * `are_perpendicular(o1, o2)`
+>    * `parallel_line(self, Point)`
+>    * `perpendicular_line(self, Point)`
+>    * `perpendicular_segment(self, Point)`
 >
 >* `Ellipse`. An object with a center, together with horizontal and vertical
 radii.  `Circle` is, as a matter of fact, a subclass of `Ellipse` with both
