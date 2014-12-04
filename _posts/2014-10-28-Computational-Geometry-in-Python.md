@@ -47,9 +47,12 @@ of segments, for example.  We also show how to quickly compute the angle between
 two segments, as well as deciding whether a given point belongs to a segment or
 not.  The next diagram illustrates an example, which we follow up with code.
 
-<img src="https://farm4.staticflickr.com/3877/15330737175_683fb70bbb_d.jpg" style="margin-left:auto; margin-right:auto;">
+<div style="text-align:center;">
+    <img src="https://farm4.staticflickr.com/3877/15330737175_683fb70bbb_d.jpg" style="margin-left:auto; margin-right:auto;">
+</div>
 
 {% highlight python %}
+
 >>> from sympy.geometry import *
 >>> P1 = Point(0, 0)
 >>> P2 = Point(3, 4)
@@ -77,6 +80,7 @@ acos(-sqrt(5)/5)
 
 >>> S1.contains(P3)
 False
+
 {% endhighlight %}
 
 ### Lines
@@ -86,9 +90,12 @@ interesting operations with lines, and to that effect we have a few more
 constructors.  We can find their equations, compute the distance between a point
 and a line, and many other operations.
 
-<img src="https://farm3.staticflickr.com/2942/15330737245_274f927551_d.jpg">
+<div style="text-align:center;">
+    <img src="https://farm3.staticflickr.com/2942/15330737245_274f927551_d.jpg" style="margin-left:auto; margin-right:auto;">
+</div>
 
 {% highlight python %}
+
 >>> L1 = Line(P1, P2)
 >>> L2 = L1.perpendicular_line(P3)  # perpendicular line to L1
 >>> L2.arbitrary_point()            # parametric equation of L2
@@ -105,6 +112,7 @@ False
 
 >>> L1.is_parallel(S2)              # is S2 parallel to L1?
 False
+
 {% endhighlight %}
 
 ### Circles
@@ -113,32 +121,29 @@ The next geometrical concept we are to explore is the *circle*.  We may define a
 circle by its center and radius, or by three points on it.  We can easily
 compute all of its properties.
 
-<img src="https://farm6.staticflickr.com/5581/15327566581_f064778b3e_d.jpg">
+<div style="text-align:center;">
+    <img src="https://farm6.staticflickr.com/5581/15327566581_f064778b3e_d.jpg" style="margin-left:auto; margin-right:auto;">
+</div>
 
 {% highlight python %}
 
-    C1 = Circle(P1, 3)
-    C2 = Circle(P2, P3, P4)
+>>> C1 = Circle(P1, 3)
+>>> C2 = Circle(P2, P3, P4)
+>>> C2.area
+1105*pi/98
 
-    C2.area
+>>> C2.radius
+sqrt(2210)/14
 
-    1105*pi/98
+>>> C2.equation()
+(x - 5/14)**2 + (y - 27/14)**2 - 1105/98
 
-    C2.radius
+>>> C2.center
+Point(5/14, 27/14)
 
-    sqrt(2210)/14
+>>> C2.circumference
+sqrt(2210)*pi/7
 
-    C2.equation()
-
-    (x - 5/14)**2 + (y - 27/14)**2 - 1105/98
-
-    C2.center
-
-    Point(5/14, 27/14)
-
-    C2.circumference
-
-    sqrt(2210)*pi/7
 {% endhighlight %}
 
 Computing intersections with other objects, checking whether a line is tangent
@@ -147,23 +152,19 @@ simple tasks too:
 
 {% highlight python %}
 
-    C2.intersection(C1)
+>>> C2.intersection(C1)
+[Point(55/754 + 27*sqrt(6665)/754, -5*sqrt(6665)/754 + 297/754),
+ Point(-27*sqrt(6665)/754 + 55/754, 297/754 + 5*sqrt(6665)/754)]
 
-    [Point(55/754 + 27*sqrt(6665)/754, -5*sqrt(6665)/754 + 297/754),
-     Point(-27*sqrt(6665)/754 + 55/754, 297/754 + 5*sqrt(6665)/754)]
+>>> C2.intersection(S1)
+[Point(3, 4)]
 
-    C2.intersection(S1)
+>>> C2.is_tangent(L2)
+False
 
-    [Point(3, 4)]
-
-    C2.is_tangent(L2)
-
-    False
-
-    C1.tangent_lines(P4)
-
-    [Line(Point(-1, 5), Point(-9/26 + 15*sqrt(17)/26, 3*sqrt(17)/26 + 45/26)),
-     Line(Point(-1, 5), Point(-15*sqrt(17)/26 - 9/26, -3*sqrt(17)/26 + 45/26))]
+>>> C1.tangent_lines(P4)
+[Line(Point(-1, 5), Point(-9/26 + 15*sqrt(17)/26, 3*sqrt(17)/26 + 45/26)),
+ Line(Point(-1, 5), Point(-15*sqrt(17)/26 - 9/26, -3*sqrt(17)/26 + 45/26))]
 
 {% endhighlight %}
 
@@ -176,90 +177,26 @@ properties:
 
 
     T = Triangle(P1, P2, P3)
-
-
     T.area                          # Note it gives a signed area
-
-
-
-
     -11/2
-
-
-
-
     T.angles
-
-
-
-
     {Point(0, 0): acos(2*sqrt(5)/25),
      Point(2, -1): acos(3*sqrt(130)/130),
      Point(3, 4): acos(23*sqrt(26)/130)}
-
-
-
-
     T.sides
-
-
-
-
     [Segment(Point(0, 0), Point(3, 4)),
      Segment(Point(2, -1), Point(3, 4)),
      Segment(Point(0, 0), Point(2, -1))]
-
-
-
-
     T.perimeter
-
-
-
-
     sqrt(5) + 5 + sqrt(26)
-
-
-
-
     T.is_right()                    # Is T a right triangle?
-
-
-
-
     False
-
-
-
-
     T.is_equilateral()              # Is T equilateral?
-
-
-
-
     False
-
-
-
-
     T.is_scalene()                  # Is T scalene?
-
-
-
-
     True
-
-
-
-
     T.is_isosceles()                # Is T isosceles?
-
-
-
-
     False
-
-
 
 Next, note how easily we can obtain representation of the different segments,
 centers, and circles associated with triangles, as well as the *medial triangle*
@@ -267,129 +204,35 @@ centers, and circles associated with triangles, as well as the *medial triangle*
 
 
     T.altitudes
-
-
-
-
     {Point(0, 0): Segment(Point(0, 0), Point(55/26, -11/26)),
      Point(2, -1): Segment(Point(6/25, 8/25), Point(2, -1)),
      Point(3, 4): Segment(Point(4/5, -2/5), Point(3, 4))}
-
-
-
-
     T.orthocenter                  # Intersection of the altitudes
-
-
-
-
     Point(10/11, -2/11)
-
-
-
-
     T.bisectors()                  # Angle bisectors
-
-
-
-
     {Point(0, 0): Segment(Point(0, 0), Point(sqrt(5)/4 + 7/4, -9/4 + 5*sqrt(5)/4)),
      Point(2, -1): Segment(Point(3*sqrt(5)/(sqrt(5) + sqrt(26)), 4*sqrt(5)/(sqrt(5) + sqrt(26))), Point(2, -1)),
      Point(3, 4): Segment(Point(-50 + 10*sqrt(26), -5*sqrt(26) + 25), Point(3, 4))}
-
-
-
-
     T.incenter                     # Intersection of angle bisectors
-
-
-
-
     Point((3*sqrt(5) + 10)/(sqrt(5) + 5 + sqrt(26)), (-5 + 4*sqrt(5))/(sqrt(5) + 5 + sqrt(26)))
-
-
-
-
     T.incircle
-
-
-
-
     Circle(Point((3*sqrt(5) + 10)/(sqrt(5) + 5 + sqrt(26)), (-5 + 4*sqrt(5))/(sqrt(5) + 5 + sqrt(26))), -11/(sqrt(5) + 5 + sqrt(26)))
-
-
-
-
     T.inradius
-
-
-
-
     -11/(sqrt(5) + 5 + sqrt(26))
-
-
-
-
     T.medians
-
-
-
-
     {Point(0, 0): Segment(Point(0, 0), Point(5/2, 3/2)),
      Point(2, -1): Segment(Point(3/2, 2), Point(2, -1)),
      Point(3, 4): Segment(Point(1, -1/2), Point(3, 4))}
-
-
-
-
     T.centroid                   # Intersection of the medians
-
-
-
-
     Point(5/3, 1)
-
-
-
-
     T.circumcenter               # Intersection of perpendicular bisectors
-
-
-
-
     Point(45/22, 35/22)
-
-
-
-
     T.circumcircle
-
-
-
-
     Circle(Point(45/22, 35/22), 5*sqrt(130)/22)
-
-
-
-
     T.circumradius
-
-
-
-
     5*sqrt(130)/22
-
-
-
-
     T.medial
-
-
-
-
     Triangle(Point(3/2, 2), Point(5/2, 3/2), Point(1, -1/2))
-
-
 
 Some other interesting operations with triangles:
 
@@ -399,40 +242,16 @@ Some other interesting operations with triangles:
 
 
     T.intersection(C1)
-
-
-
-
     [Point(9/5, 12/5), Point(sqrt(113)/26 + 55/26, -11/26 + 5*sqrt(113)/26)]
-
-
-
-
     T.distance(T.circumcenter)
-
-
-
-
     sqrt(26)/11
-
-
-
-
     T.is_similar(Triangle(P1, P2, P4))
-
-
-
-
     False
 
-
-
 > The other basic geometrical objects currently coded in the Geometry module are
-
 > * `LinearEntity`.  This is a superclass (which we never use directly), with
 three subclasses `Segment`, `Line` and `Ray`.  `LinearEntity` enjoys the
 following basic methods:
-
 >    * `are_concurrent(o1, o2, ..., on)`
 >    * `are_parallel(o1, o2)`
 >    * `are_perpendicular(o1, o2)`
@@ -446,15 +265,12 @@ radii equal.
 > * `Polygon`.  A superclass we can instantiate by listing a set of vertices.
 Triangles are a subclass of `Polygon`, for example.  The basic methods of
 `Polygon` are
-
 >    * `area`
 >    * `perimeter`
 >    * `centroid`
 >    * `sides`
 >    * `vertices`
-
 >* `RegularPolygon`.  This is a subclass of `Polygon`, with extra attributes:
-
 >    * `apothem`
 >    * `center`
 >    * `circumcircle`
@@ -462,7 +278,6 @@ Triangles are a subclass of `Polygon`, for example.  The basic methods of
 >    * `incircle`
 >    * `interior_angle`
 >    * `radius`
-
 >For more information about this module, refer to the official `sympy`
 documentation at [docs.sympy.org/dev/modules/geometry.html](http://docs.sympy.or
 g/dev/modules/geometry.html)
@@ -491,53 +306,15 @@ any of the previous objects.  This is done by combination of the methods
 
 
     T.reflect(L1)
-
-
-
-
     Triangle(Point(0, 0), Point(3, 4), Point(-38/25, 41/25))
-
-
-
-
     T.rotate(pi/2, P2)
-
-
-
-
     Triangle(Point(7, 1), Point(3, 4), Point(8, 3))
-
-
-
-
     T.translate(5,4)
-
-
-
-
     Triangle(Point(5, 4), Point(8, 8), Point(7, 3))
-
-
-
-
     T.scale(9)
-
-
-
-
     Triangle(Point(0, 0), Point(27, 4), Point(18, -1))
-
-
-
-
     Arc.rotate(pi/2, P3).translate(pi,pi).scale(0.5)
-
-
-
-
     Curve((-2.0*sin(t) + 0.5 + 0.5*pi, 3*cos(t) - 3 + pi), (t, 0, 3*pi/4))
-
-
 
 With these basic definitions and operations, we are ready to address more
 complex situations.  Let us explore these new challenges next.
@@ -593,7 +370,6 @@ some cases.  The running example can be downloaded from
 [www.math.sc.edu/~blanco/superior.poly](www.math.sc.edu/~blanco/superior.poly).
 It contains a polygonal description of the coastline of Lake Superior, with 7
 holes (for the islands), 518 vertices, and 518 edges.
-
 > For a complete description of the `poly` format, refer to [www.cs.cmu.edu/~qua
 ke/triangle.poly.html](www.cs.cmu.edu/~quake/triangle.poly.html).  With that
 information, we can write  a simple reader without much effort.  This is an
@@ -665,11 +441,7 @@ example:
     %time hull = ConvexHull(vertices_ls)
 
     CPU times: user 413 µs, sys: 213 µs, total: 626 µs
-    Wall time: 372 µs
-
-
-
-    plt.figure(figsize=(14, 14))
+    Wall time: 372 µs    plt.figure(figsize=(14, 14))
     plt.xlim(vertices_ls[:,0].min()-0.01, vertices_ls[:,0].max()+0.01)
     plt.ylim(vertices_ls[:,1].min()-0.01, vertices_ls[:,1].max()+0.01)
     plt.axis('off')
@@ -698,7 +470,6 @@ of the nearest-site, we would use the extra control `Qu`.
 
     from scipy.spatial import Voronoi, voronoi_plot_2d
 
-
     vor = Voronoi(vertices_ls)
     
     plt.figure(figsize=(8, 8))
@@ -721,12 +492,7 @@ its seed.  Each region receives an index, which is not necessarily the same
 index as the index of its seed in the `vor.points` list.  To access the
 corresponding region to a given seed, we use `vor.point_region`.
 
-
     vor.point_region
-
-
-
-
     array([  0,  22,  24,  21,  92,  89,  91,  98,  97,  26, 218, 219, 220,
            217, 336, 224, 334, 332, 335, 324, 226, 231, 230, 453, 500, 454,
            235, 234, 333, 236, 341, 340,  93, 343, 339, 342, 237, 327, 412,
@@ -768,8 +534,6 @@ corresponding region to a given seed, we use `vor.point_region`.
            366, 370, 369, 210, 251, 367, 368, 377, 472, 504, 506, 502, 354,
            353,  54,  42,  43, 350, 417, 414, 415, 418, 419, 425])
 
-
-
 * Each Voronoi cell is defined by its delimiting vertices and edges (also known
 as _ridges_ in Voronoi jargon).  The list with the coordinates of the computed
 vertices of the Voronoi diagram can be obtained with `vor.vertices`.  These
@@ -779,10 +543,6 @@ identifiable because they are always at the intersection of at least two edges
 
 
     vor.vertices
-
-
-
-
     array([[ 0.88382749, -0.23508215],
            [ 0.10607886, -0.63051169],
            [ 0.03091439, -0.55536174],
@@ -791,26 +551,18 @@ identifiable because they are always at the intersection of at least two edges
            [ 0.50247159, -0.61971784],
            [ 0.5028735 , -0.62003065]])
 
-
-
 * For each of the regions, we can access the set of delimiting vertices with
 `vor.regions`.  For instance, to obtain the coordinates of the vertices that
 delimit the region around the 4th seed, we could issue
 
 
     [vor.vertices[x] for x in vor.regions[vor.point_region[4]]]
-
-
-
-
     [array([ 0.13930793, -0.81205929]),
      array([ 0.11638   , -0.92111088]),
      array([ 0.11638   , -0.63657789]),
      array([ 0.11862537, -0.6303235 ]),
      array([ 0.12364332, -0.62893576]),
      array([ 0.12405738, -0.62891987])]
-
-
 
 Care must be taken with the previous step: Some of the vertices of the Voronoi
 cells are not actual vertices, but lie _at infinity_.  When this is the case,
@@ -822,10 +574,6 @@ seeds.  We obtain the information about those seeds with `vor.ridge_points`
 
 
     vor.ridge_points
-
-
-
-
     array([[  0,   1],
            [  0, 433],
            [  0, 434],
@@ -833,8 +581,6 @@ seeds.  We obtain the information about those seeds with `vor.ridge_points`
            [124, 118],
            [118, 119],
            [119, 122]], dtype=int32)
-
-
 
 The first entry of `vor.ridge_points` can be read as follows: There is a ridge
 perpendicular to both the first and second seeds.
@@ -882,7 +628,6 @@ diagram computations.
 
     from scipy.spatial import Delaunay, delaunay_plot_2d
 
-
     tri = Delaunay(vertices_ls)
     
     plt.figure(figsize=(14, 14))
@@ -915,9 +660,7 @@ generators
 [www.cs.cmu.edu/~quake/triangle.html](www.cs.cmu.edu/~quake/triangle.html) by
 Richard Shewchuck .  This wrapper, together with examples and other related
 functions, can be installed by issuing
-
 >        pip install triangle
-
 > For more information on this module, refer to the documentation online from
 its author, Dzhelil Rufat, at
 [dzhelil.info/triangle/index.html](dzhelil.info/triangle/index.html)
@@ -932,7 +675,6 @@ _planar straight line graph_, rather than a set of vertices).
 
     from triangle import triangulate, plot as tplot
 
-
     cndt = triangulate(lake_superior, 'p')
     
     plt.figure(figsize=(14, 14))
@@ -946,9 +688,7 @@ _planar straight line graph_, rather than a set of vertices).
 
 The next step is the computation of a conforming Delaunay triangulation
 (`cfdt`).  We enforce Steiner points on some segments to ensure as many Delaunay
-triangles as possible.  We achieve this with extra flag `D`.
-
-
+triangles as possible.  We achieve this with extra flag `D`.    
 
     cfdt = triangulate(lake_superior, 'pD')
 
@@ -973,9 +713,7 @@ we issue the following command
 
 
 For the last example to conclude this section, we further impose a maximum area
-on triangles.
-
-
+on triangles.    
 
     cncfq20adt = triangulate(lake_superior, 'pq20a.001D')
     
@@ -1013,7 +751,6 @@ shortest paths on a graph.
 > For more information on the module `scipy.sparse.csgraph`, refer to the online
 documentation at [docs.scipy.org/doc/scipy/reference/sparse.csgraph.html](docs.s
 cipy.org/doc/scipy/reference/sparse.csgraph.html)
-
 > For the theory and applications of Graph Theory, one of the best sources is
 the introductory book by Reinhard Diestel, _Graph Theory_, published by
 Springer-Verlag.
@@ -1041,9 +778,7 @@ these segments.
 We now create the weighted-adjacency matrix, which we store as a `lil_matrix`,
 and compute the shortest path between the requested vertices.  We gather in a
 list all the vertices included in the computed path, and plot the resulting
-chain overlaid on the triangulation.
-
-
+chain overlaid on the triangulation.    
 
     from scipy.sparse import lil_matrix
     from scipy.sparse.csgraph import shortest_path
@@ -1117,23 +852,9 @@ defining entities in the interior of the source object.
 
 
     C.encloses_point(P1)
-
-
-
-
     True
-
-
-
-
     C.encloses(T)
-
-
-
-
     False
-
-
 
 Of special importance is this simple setting where the source object is a
 polygon.  The routines in the `sympy.geometry` module get the job done, but at
@@ -1158,10 +879,6 @@ to the polygon.  We accomplish this with either attribute `contains_point` or
 
 
     my_polygon.contains_points([[X[k], Y[k]] for k in range(len(X))])
-
-
-
-
     array([ True, False,  True,  True,  True,  True, False, False,  True,
            False, False, False, False, False,  True, False, False, False,
             True,  True,  True,  True,  True, False, False, False, False,
@@ -1174,30 +891,21 @@ to the polygon.  We accomplish this with either attribute `contains_point` or
            False, False, False,  True, False, False,  True, False, False,
             True, False, False,  True,  True, False, False,  True, False, False], dtype=bool)
 
-
-
 More challenging point location problem arise when our space is partitioned by a
 complex structure.  For instance, once a triangulation has been computed, and a
 random location is considered, we need to query for the triangle where our
 target location lies.  In the module `scipy.spatial` we have handy routines to
 perform this task over Delaunay triangulations created with
 `scipy.spatial.Delaunay`.  In the following example, we track the triangles that
-contain a set of 100 random points in the domain.
-
-
+contain a set of 100 random points in the domain.    
 
     from scipy.spatial import tsearch
-
 
     tri = Delaunay(vertices_ls)
     
     points = zip(X, Y)
     
     tsearch(tri, points)
-
-
-
-
     array([274,  -1, 454, 647, 174,  10,  -1,  -1, 306,  -1,  -1,  -1,  -1,
             -1, 108,  -1,  -1,  -1, 988, 882, 174, 691, 115,  -1,  -1,  -1,
             -1, 373, 292, 647, 161,  -1,  -1,  -1, 104,  -1,  -1,  -1,  -1,
@@ -1206,18 +914,12 @@ contain a set of 100 random points in the domain.
             -1,  -1,  11,  -1, 894,  -1, 108, 174,  -1, 819,  -1,  -1,  -1,
            180,  -1,  -1,  -1,  -1,  -1, 728,  -1,  -1,  11,  -1,  -1, 174,
             -1,  -1, 161, 126,  -1,  -1, 144,  -1,  -1], dtype=int32)
-
-
 
 The same result is obtained with the method `.find_simplex` of the `Delaunay`
 object `tri`.
 
 
     tri.find_simplex(points)
-
-
-
-
     array([274,  -1, 454, 647, 174,  10,  -1,  -1, 306,  -1,  -1,  -1,  -1,
             -1, 108,  -1,  -1,  -1, 988, 882, 174, 691, 115,  -1,  -1,  -1,
             -1, 373, 292, 647, 161,  -1,  -1,  -1, 104,  -1,  -1,  -1,  -1,
@@ -1226,8 +928,6 @@ object `tri`.
             -1,  -1,  11,  -1, 894,  -1, 108, 174,  -1, 819,  -1,  -1,  -1,
            180,  -1,  -1,  -1,  -1,  -1, 728,  -1,  -1,  11,  -1,  -1, 174,
             -1,  -1, 161, 126,  -1,  -1, 144,  -1,  -1], dtype=int32)
-
-
 
 > Note that, when a triangle is found, the routine reports its corresponding
 index in `tri.simplices`.  If no triangle is found (which means the point is
@@ -1300,20 +1000,13 @@ revisit the Voronoi diagram from Lake Superior.
 
     from scipy.spatial import cKDTree
 
-
     vor  = Voronoi(vertices_ls)
     tree = cKDTree(vertices_ls)
 
 First, we query for the previous dataset of 100 random locations, the seeds that
-are closer to each of them
-
-
+are closer to each of them    
 
     tree.query(points)
-
-
-
-
     (array([ 0.00696135,  0.2156821 ,  0.03359866,  0.01102301,  0.02959793,
              0.00332914,  0.23081084,  0.01235589,  0.03570128,  0.27909962,
              0.14464606,  0.11046009,  0.16062173,  0.12011036,  0.06896572,
@@ -1343,8 +1036,6 @@ are closer to each of them
             476, 421, 417,  33, 285,  42, 265, 113, 278,  49, 281, 298, 265,
             311, 311, 508, 388, 280,  49, 486, 215, 307]))
 
-
-
 Note the output is a tuple with two `numpy.array`: the first one indicates the
 distances the each point closest seed (their nearest-neighbors), and the second
 one indicates the index of the corresponding seed.
@@ -1352,13 +1043,11 @@ one indicates the index of the corresponding seed.
 We may use this idea to represent the Voronoi diagram without a geometric
 description in terms of vertices, segments and rays.
 
-
     X = np.linspace( 0.45,  0.50, 256)
     Y = np.linspace(-0.40, -0.35, 256)
     canvas = np.meshgrid(X, Y)
     points = np.c_[canvas[0].ravel(), canvas[1].ravel()]
     queries = tree.query(points)[1].reshape(256, 256)
-
 
     plt.figure(figsize=(14, 14))
     
@@ -1389,9 +1078,7 @@ a circle of radius `r` centered at a target location `Q`. We can solve this
 sample problem easily with the attribute `query_ball_point` from a suitable
 implementation of a k-d tree.  We can go even further: if the range is an object
 formed by the intersection of a sequence of different balls, the same attribute
-gets the job done, as the following code illustrates.
-
-
+gets the job done, as the following code illustrates.    
 
     points = np.random.rand(320, 2)
     range_points = np.random.rand(5, 2)
@@ -1423,10 +1110,7 @@ gets the job done, as the following code illustrates.
 
     set([192, 199, 204, 139, 140, 77, 144, 18, 280, 92, 287, 34, 164, 165, 295, 106, 171, 172, 173, 49, 178, 245, 186])
 
-
-
 ![png](/images/chapter6_files/chapter6_158_1.png)
-
 
 This gives the following diagram, where the small dots represent the locations
 of the search space, and the circles are the range.  The query is, of course,
@@ -1592,9 +1276,7 @@ Let us test it with a few basic examples:
     plot_path(path_1, labels=['P1', 'P2', 'P3'])
 
 
-![png](/images/chapter6_files/chapter6_172_0.png)
-
-
+![png](/images/chapter6_files/chapter6_172_0.png)    
 
     P4 = (2.0, -1.0)
     P5 = (3.0, 0.0)
@@ -1714,9 +1396,5 @@ the most common problems in this topic.
                 }
         });
 </script>
-
-
-
-
 
     
