@@ -49,7 +49,7 @@ not.  The next diagram illustrates an example, which we follow up with code.
 
 <img src="https://farm4.staticflickr.com/3877/15330737175_683fb70bbb_d.jpg" style="margin-left:auto; margin-right:auto;">
 
-{% highlight python linenos %}
+{% highlight python %}
 >>> from sympy.geometry import *
 >>> P1 = Point(0, 0)
 >>> P2 = Point(3, 4)
@@ -88,31 +88,23 @@ and a line, and many other operations.
 
 <img src="https://farm3.staticflickr.com/2942/15330737245_274f927551_d.jpg">
 
-{% highlight python linenos %}
+{% highlight python %}
+>>> L1 = Line(P1, P2)
+>>> L2 = L1.perpendicular_line(P3)  # perpendicular line to L1
+>>> L2.arbitrary_point()            # parametric equation of L2
+Point(4*t + 2, -3*t - 1)
 
-    L1 = Line(P1, P2)
-    
-    L2 = L1.perpendicular_line(P3)  # perpendicular line to L1
+>>> L2.equation()                   # algebraic equation of L2
+3*x + 4*y - 2
 
-    L2.arbitrary_point()            # parametric equation of L2
+>>> L2.contains(P4)                 # is P4 in L2?
+False
 
-    Point(4*t + 2, -3*t - 1)
+>>> L2.distance(P4)                 # distance from P4 to L2
+3
 
-    L2.equation()                   # algebraic equation of L2
-
-    3*x + 4*y - 2
-
-    L2.contains(P4)                 # is P4 in L2?
-
-    False
-
-    L2.distance(P4)                 # distance from P4 to L2
-
-    3
-
-    L1.is_parallel(S2)              # is S2 parallel to L1?
-
-    False
+>>> L1.is_parallel(S2)              # is S2 parallel to L1?
+False
 {% endhighlight %}
 
 ### Circles
@@ -123,7 +115,7 @@ compute all of its properties.
 
 <img src="https://farm6.staticflickr.com/5581/15327566581_f064778b3e_d.jpg">
 
-{% highlight python linenos %}
+{% highlight python %}
 
     C1 = Circle(P1, 3)
     C2 = Circle(P2, P3, P4)
@@ -153,7 +145,7 @@ Computing intersections with other objects, checking whether a line is tangent
 to a circle, or finding the tangent lines through an non-interior point, are
 simple tasks too:
 
-{% highlight python linenos %}
+{% highlight python %}
 
     C2.intersection(C1)
 
