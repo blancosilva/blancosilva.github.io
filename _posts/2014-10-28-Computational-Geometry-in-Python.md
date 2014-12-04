@@ -701,7 +701,7 @@ example:
     plt.show()
 
 
-![png](chapter6_files/chapter6_86_0.png)
+![png](/chapter6_files/chapter6_86_0.png)
 
 
 #### Voronoi Diagrams 
@@ -729,7 +729,7 @@ of the nearest-site, we would use the extra control `Qu`.
     plt.show()
 
 
-![png](chapter6_files/chapter6_90_0.png)
+![png](/chapter6_files/chapter6_90_0.png)
 
 
 * The small dots are the original seeds with `x`-coordinates between `0.45` and
@@ -911,7 +911,7 @@ diagram computations.
     plt.show()
 
 
-![png](chapter6_files/chapter6_104_0.png)
+![png](/chapter6_files/chapter6_104_0.png)
 
 
 It is possible to generate triangulations with imposed edges too.  Given a
@@ -961,7 +961,7 @@ _planar straight line graph_, rather than a set of vertices).
     plt.show()
 
 
-![png](chapter6_files/chapter6_108_0.png)
+![png](/chapter6_files/chapter6_108_0.png)
 
 
 The next step is the computation of a conforming Delaunay triangulation
@@ -989,7 +989,7 @@ we issue the following command
     plt.show()
 
 
-![png](chapter6_files/chapter6_112_0.png)
+![png](/chapter6_files/chapter6_112_0.png)
 
 
 For the last example to conclude this section, we further impose a maximum area
@@ -1005,7 +1005,7 @@ on triangles.
     plt.show()
 
 
-![png](chapter6_files/chapter6_114_0.png)
+![png](/chapter6_files/chapter6_114_0.png)
 
 
 #### Shortest Paths
@@ -1100,7 +1100,7 @@ chain overlaid on the triangulation.
     plt.show()
 
 
-![png](chapter6_files/chapter6_127_0.png)
+![png](/chapter6_files/chapter6_127_0.png)
 
 
 ### Geometric Query Problems
@@ -1396,7 +1396,7 @@ description in terms of vertices, segments and rays.
     plt.show()
 
 
-![png](chapter6_files/chapter6_155_0.png)
+![png](/chapter6_files/chapter6_155_0.png)
 
 
 #### Range Searching
@@ -1445,7 +1445,7 @@ gets the job done, as the following code illustrates.
 
 
 
-![png](chapter6_files/chapter6_158_1.png)
+![png](/chapter6_files/chapter6_158_1.png)
 
 
 This gives the following diagram, where the small dots represent the locations
@@ -1502,7 +1502,7 @@ triangulation and Voronoi diagrams.
     plt.show()
 
 
-![png](chapter6_files/chapter6_164_0.png)
+![png](/chapter6_files/chapter6_164_0.png)
 
 
 ## Numerical Computational Geometry
@@ -1612,7 +1612,7 @@ Let us test it with a few basic examples:
     plot_path(path_1, labels=['P1', 'P2', 'P3'])
 
 
-![png](chapter6_files/chapter6_172_0.png)
+![png](/chapter6_files/chapter6_172_0.png)
 
 
 
@@ -1622,7 +1622,7 @@ Let us test it with a few basic examples:
     plot_path(path_2, labels=['P1', 'P2', 'P4', 'P5'])
 
 
-![png](chapter6_files/chapter6_173_0.png)
+![png](/chapter6_files/chapter6_173_0.png)
 
 
 Higher degree curves are computationally expensive to evaluate.  When complex
@@ -1644,7 +1644,7 @@ one.  Let us illustrate this with an example.
     plot_path(Path.make_compound_path(path_3, path_4))
 
 
-![png](chapter6_files/chapter6_175_0.png)
+![png](/chapter6_files/chapter6_175_0.png)
 
 
 A clear advantage of representing curves as Bézier splines arises when we need
@@ -1667,7 +1667,7 @@ the new controls.
     plot_path(Path.make_compound_path(path_5, path_6))
 
 
-![png](chapter6_files/chapter6_178_0.png)
+![png](/chapter6_files/chapter6_178_0.png)
 
 
 ## Summary
@@ -1675,17 +1675,6 @@ the new controls.
 we have developed a brief incursion in the field of Computational Geometry, and
 we have mastered all the tools coded in the `scipy` stack to effectively address
 the most common problems in this topic.
-
-
-    from IPython.core.display import HTML
-    
-    def css_styling():
-        styles = open("../styles/custom.css", "r").read()
-        return HTML(styles)
-    css_styling()
-
-
-
 
 <style>
     @font-face {
