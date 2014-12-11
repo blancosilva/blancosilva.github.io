@@ -52,7 +52,7 @@ But success of this enterprise starts, obviously, by collecting enough business 
 
 			<div class="progress">
 				<div class="progress-bar progress-bar-warning" style="width: 25%"><span class="sr-only">12500</span></div>
-				<div class="progress-bar progress-bar-warning" style="width: 5%"><span>13255</span></div>
+				<div class="progress-bar progress-bar-warning" style="width: 5%"><span>13755</span></div>
 			<!-- <div class="progress-bar progress-bar-warning" style="width: 5%"><span class="sr-only">Level-2</span></div> -->
 		</div>
 	</li>
@@ -150,6 +150,7 @@ But success of this enterprise starts, obviously, by collecting enough business 
 			<li class="list-group-item">Jane K. Olsgaard</li>
 			<li class="list-group-item">Amanda Polson <span class="badge">275</span></li>
 			<li class="list-group-item">Andy Pope</li>
+			<li class="list-group-item">Christopher Reid <span class="badge">425</span></li>
 			<li class="list-group-item">Lauren Reince <span class="badge">200</span></li>
 			<li class="list-group-item">Anton Schep</li>
 			<li class="list-group-item">Lori Schwartz <span class="badge">130</span></li>
