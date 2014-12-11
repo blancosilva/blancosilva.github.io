@@ -260,11 +260,13 @@ Some other interesting operations with triangles:
 * Checking whether two triangles are similar.
 
     {% highlight python %}    
-    T.intersection(C1)
+    >>> T.intersection(C1)
     [Point(9/5, 12/5), Point(sqrt(113)/26 + 55/26, -11/26 + 5*sqrt(113)/26)]
-    T.distance(T.circumcenter)
+
+    >>> T.distance(T.circumcenter)
     sqrt(26)/11
-    T.is_similar(Triangle(P1, P2, P4))
+
+    >>> T.is_similar(Triangle(P1, P2, P4))
     False
     {% endhighlight %}
 
@@ -475,7 +477,7 @@ example:
     ...     plt.plot(vertices_ls[simplex, 0], vertices_ls[simplex, 1], 'r-')
     ...    
     >>> plt.show()
-    
+
     {% endhighlight %}
 
 
