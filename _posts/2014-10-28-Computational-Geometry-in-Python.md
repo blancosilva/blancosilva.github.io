@@ -259,16 +259,17 @@ Some other interesting operations with triangles:
 * Computation of the minimum distance from a point to each of the segments.
 * Checking whether two triangles are similar.
 
-    {% highlight python %}    
-    >>> T.intersection(C1)
-    [Point(9/5, 12/5), Point(sqrt(113)/26 + 55/26, -11/26 + 5*sqrt(113)/26)]
+{% highlight python %}    
+>>> T.intersection(C1)
+[Point(9/5, 12/5), Point(sqrt(113)/26 + 55/26, -11/26 + 5*sqrt(113)/26)]
 
-    >>> T.distance(T.circumcenter)
-    sqrt(26)/11
+>>> T.distance(T.circumcenter)
+sqrt(26)/11
 
-    >>> T.is_similar(Triangle(P1, P2, P4))
-    False
-    {% endhighlight %}
+>>> T.is_similar(Triangle(P1, P2, P4))
+False
+
+{% endhighlight %}
 
 > The other basic geometrical objects currently coded in the Geometry module are
 >
@@ -407,78 +408,78 @@ information, we can write  a simple reader without much effort.  This is an
 example:
 
 
-    {% highlight python %}
-    from numpy import array
-    
-    def read_poly(file_name):
-        """
-        Simple poly-file reader, that creates a python dictionary 
-        with information about vertices, edges and holes.
-        It assumes that vertices have no attributes or boundary markers.
-        It assumes that edges have no boundary markers.
-        No regional attributes or area constraints are parsed.
-        """
-    
-        output = {'vertices': None, 'holes': None, 'segments': None}
-    
-        # open file and store lines in a list
-        file = open(file_name, 'r')
-        lines = file.readlines()
-        file.close()
-        lines = [x.strip('\n').split() for x in lines]
-    
-        # Store vertices
-        vertices= []
-        N_vertices, dimension, attr, bdry_markers = [int(x) for x in lines[0]]
-        # We assume attr = bdrt_markers = 0
-        for k in range(N_vertices):
-            label, x, y = [items for items in lines[k+1]]
-            vertices.append([float(x), float(y)])
-        output['vertices']=array(vertices)
-    
-        # Store segments
-        segments = []
-        N_segments, bdry_markers = [int(x) for x in lines[N_vertices+1]]
-        for k in range(N_segments):
-            label, pointer_1, pointer_2 = [items for items in lines[N_vertices+k+2]]
-            segments.append([int(pointer_1)-1, int(pointer_2)-1])
-        output['segments'] = array(segments)
-    
-        # Store holes
-        N_holes = int(lines[N_segments+N_vertices+2][0])
-        holes = []
-        for k in range(N_holes):
-            label, x, y = [items for items in lines[N_segments + N_vertices + 3 + k]]
-            holes.append([float(x), float(y)])
-    
-        output['holes'] = array(holes)
-    
-        return output
+{% highlight python %}
+from numpy import array
 
-    {% endhighlight %}
+def read_poly(file_name):
+    """
+    Simple poly-file reader, that creates a python dictionary 
+    with information about vertices, edges and holes.
+    It assumes that vertices have no attributes or boundary markers.
+    It assumes that edges have no boundary markers.
+    No regional attributes or area constraints are parsed.
+    """
+
+output = {'vertices': None, 'holes': None, 'segments': None}
+
+# open file and store lines in a list
+file = open(file_name, 'r')
+lines = file.readlines()
+file.close()
+lines = [x.strip('\n').split() for x in lines]
+
+# Store vertices
+vertices= []
+N_vertices, dimension, attr, bdry_markers = [int(x) for x in lines[0]]
+# We assume attr = bdrt_markers = 0
+for k in range(N_vertices):
+    label, x, y = [items for items in lines[k+1]]
+    vertices.append([float(x), float(y)])
+output['vertices']=array(vertices)
+
+# Store segments
+segments = []
+N_segments, bdry_markers = [int(x) for x in lines[N_vertices+1]]
+for k in range(N_segments):
+    label, pointer_1, pointer_2 = [items for items in lines[N_vertices+k+2]]
+    segments.append([int(pointer_1)-1, int(pointer_2)-1])
+output['segments'] = array(segments)
+
+# Store holes
+N_holes = int(lines[N_segments+N_vertices+2][0])
+holes = []
+for k in range(N_holes):
+    label, x, y = [items for items in lines[N_segments + N_vertices + 3 + k]]
+    holes.append([float(x), float(y)])
+
+output['holes'] = array(holes)
+
+return output
+
+{% endhighlight %}
 
 
-    {% highlight python %}
-    >>> import numpy as np
-    >>> from scipy.spatial import ConvexHull
-    >>> import matplotlib.pyplot as plt
-    >>> lake_superior = read_poly("../chapter6/superior.poly")
-    >>> vertices_ls = lake_superior['vertices']
-    >>> %time hull = ConvexHull(vertices_ls)
-    CPU times: user 413 µs, sys: 213 µs, total: 626 µs
-    Wall time: 372 µs    plt.figure(figsize=(14, 14))
+{% highlight python %}
+>>> import numpy as np
+>>> from scipy.spatial import ConvexHull
+>>> import matplotlib.pyplot as plt
+>>> lake_superior = read_poly("../chapter6/superior.poly")
+>>> vertices_ls = lake_superior['vertices']
+>>> %time hull = ConvexHull(vertices_ls)
+CPU times: user 413 µs, sys: 213 µs, total: 626 µs
+Wall time: 372 µs    plt.figure(figsize=(14, 14))
 
-    >>> plt.xlim(vertices_ls[:,0].min()-0.01, vertices_ls[:,0].max()+0.01)
-    >>> plt.ylim(vertices_ls[:,1].min()-0.01, vertices_ls[:,1].max()+0.01)
-    >>> plt.axis('off')
-    >>> plt.axes().set_aspect('equal')
-    >>> plt.plot(vertices_ls[:,0], vertices_ls[:,1], 'b.')
-    >>> for simplex in hull.simplices:
-    ...     plt.plot(vertices_ls[simplex, 0], vertices_ls[simplex, 1], 'r-')
-    ...    
-    >>> plt.show()
+>>> plt.xlim(vertices_ls[:,0].min()-0.01, vertices_ls[:,0].max()+0.01)
+>>> plt.ylim(vertices_ls[:,1].min()-0.01, vertices_ls[:,1].max()+0.01)
+>>> plt.axis('off')
+>>> plt.axes().set_aspect('equal')
+>>> plt.plot(vertices_ls[:,0], vertices_ls[:,1], 'b.')
+>>> for simplex in hull.simplices:
+...     plt.plot(vertices_ls[simplex, 0], vertices_ls[simplex, 1], 'r-')
+...    
+>>> plt.show()
 
-    {% endhighlight %}
+{% endhighlight %}
 
 
 ![png](/images/chapter6_files/chapter6_86_0.png)
