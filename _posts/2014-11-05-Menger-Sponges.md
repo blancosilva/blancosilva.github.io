@@ -124,12 +124,12 @@ But success of this enterprise starts, obviously, by collecting enough business 
 			<li class="list-group-item">Shae Haskins</li>
 			<li class="list-group-item">Holly Hayes</li>
 			<li class="list-group-item">Chris Horn</li>
+			<li class="list-group-item">John T. Hyatt Jr. <span class="badge">300</span></li>
 		</ul>
 	</div>
 
 	<div class="col-lg-6">
 		<ul class="list-group">
-			<li class="list-group-item">John T. Hyatt Jr. <span class="badge">300</span></li>
 			<li class="list-group-item">Grant N. Jackson</li>
 			<li class="list-group-item">Gayle D. Johnson <span class="badge">250</span></li>
 			<li class="list-group-item">Carolyn S. Jones</li>
