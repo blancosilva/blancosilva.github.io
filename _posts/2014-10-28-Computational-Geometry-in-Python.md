@@ -467,8 +467,9 @@ return output
 >>> vertices_ls = lake_superior['vertices']
 >>> %time hull = ConvexHull(vertices_ls)
 CPU times: user 413 µs, sys: 213 µs, total: 626 µs
-Wall time: 372 µs    plt.figure(figsize=(14, 14))
+Wall time: 372 µs    
 
+>>> plt.figure(figsize=(14, 14))
 >>> plt.xlim(vertices_ls[:,0].min()-0.01, vertices_ls[:,0].max()+0.01)
 >>> plt.ylim(vertices_ls[:,1].min()-0.01, vertices_ls[:,1].max()+0.01)
 >>> plt.axis('off')
