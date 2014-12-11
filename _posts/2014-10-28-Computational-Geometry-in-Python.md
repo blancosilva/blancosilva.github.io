@@ -312,12 +312,12 @@ parameter.  It currently does not have many useful methods, other than those
 describing its constructors.  Let us illustrate how to deal with these objects.
 For example, a three-quarters arc of an ellipse could be coded as follows:
 
+{% highlight python %}
+>>> from sympy import var, pi, sin, cos
+>>> var('t', real=True)
+>>> Arc = Curve((3*cos(t), 4*sin(t)), (t, 0, 3*pi/4))
 
-    from sympy import var, pi, sin, cos
-    
-    var('t', real=True)
-    
-    Arc = Curve((3*cos(t), 4*sin(t)), (t, 0, 3*pi/4))
+{% endhighlight %}
 
 ### Affine Transformations
 
@@ -327,16 +327,23 @@ any of the previous objects.  This is done by combination of the methods
 `reflect`, `rotate`, `translate` and `scale`.
 
 
-    T.reflect(L1)
-    Triangle(Point(0, 0), Point(3, 4), Point(-38/25, 41/25))
-    T.rotate(pi/2, P2)
-    Triangle(Point(7, 1), Point(3, 4), Point(8, 3))
-    T.translate(5,4)
-    Triangle(Point(5, 4), Point(8, 8), Point(7, 3))
-    T.scale(9)
-    Triangle(Point(0, 0), Point(27, 4), Point(18, -1))
-    Arc.rotate(pi/2, P3).translate(pi,pi).scale(0.5)
-    Curve((-2.0*sin(t) + 0.5 + 0.5*pi, 3*cos(t) - 3 + pi), (t, 0, 3*pi/4))
+{% highlight python %}
+>>> T.reflect(L1)
+Triangle(Point(0, 0), Point(3, 4), Point(-38/25, 41/25))
+
+>>> T.rotate(pi/2, P2)
+Triangle(Point(7, 1), Point(3, 4), Point(8, 3))
+
+>>> T.translate(5,4)
+Triangle(Point(5, 4), Point(8, 8), Point(7, 3))
+
+>>> T.scale(9)
+Triangle(Point(0, 0), Point(27, 4), Point(18, -1))
+
+>>> Arc.rotate(pi/2, P3).translate(pi,pi).scale(0.5)
+Curve((-2.0*sin(t) + 0.5 + 0.5*pi, 3*cos(t) - 3 + pi), (t, 0, 3*pi/4))
+
+{% endhighlight %}
 
 With these basic definitions and operations, we are ready to address more
 complex situations.  Let us explore these new challenges next.
@@ -398,6 +405,7 @@ information, we can write  a simple reader without much effort.  This is an
 example:
 
 
+    {% highlight python %}
     from numpy import array
     
     def read_poly(file_name):
@@ -445,34 +453,30 @@ example:
     
         return output
 
-
-    import numpy as np
-    
-    from scipy.spatial import ConvexHull
-    
-    import matplotlib.pyplot as plt
-    
-    %matplotlib inline
+    {% endhighlight %}
 
 
-    lake_superior = read_poly("../chapter6/superior.poly")
-    
-    vertices_ls = lake_superior['vertices']
-
-
-    %time hull = ConvexHull(vertices_ls)
-
+    {% highlight python %}
+    >>> import numpy as np
+    >>> from scipy.spatial import ConvexHull
+    >>> import matplotlib.pyplot as plt
+    >>> lake_superior = read_poly("../chapter6/superior.poly")
+    >>> vertices_ls = lake_superior['vertices']
+    >>> %time hull = ConvexHull(vertices_ls)
     CPU times: user 413 µs, sys: 213 µs, total: 626 µs
     Wall time: 372 µs    plt.figure(figsize=(14, 14))
-    plt.xlim(vertices_ls[:,0].min()-0.01, vertices_ls[:,0].max()+0.01)
-    plt.ylim(vertices_ls[:,1].min()-0.01, vertices_ls[:,1].max()+0.01)
-    plt.axis('off')
-    plt.axes().set_aspect('equal')
-    plt.plot(vertices_ls[:,0], vertices_ls[:,1], 'b.')
-    for simplex in hull.simplices:
-        plt.plot(vertices_ls[simplex, 0], vertices_ls[simplex, 1], 'r-')
-        
-    plt.show()
+
+    >>> plt.xlim(vertices_ls[:,0].min()-0.01, vertices_ls[:,0].max()+0.01)
+    >>> plt.ylim(vertices_ls[:,1].min()-0.01, vertices_ls[:,1].max()+0.01)
+    >>> plt.axis('off')
+    >>> plt.axes().set_aspect('equal')
+    >>> plt.plot(vertices_ls[:,0], vertices_ls[:,1], 'b.')
+    >>> for simplex in hull.simplices:
+    ...     plt.plot(vertices_ls[simplex, 0], vertices_ls[simplex, 1], 'r-')
+    ...    
+    >>> plt.show()
+    
+    {% endhighlight %}
 
 
 ![png](/images/chapter6_files/chapter6_86_0.png)
