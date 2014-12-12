@@ -497,21 +497,19 @@ dimension of the points is greater than 4, and `qhull_options='Qbb Qc Qz'`
 otherwise.  For the computation of the *furthest-site Voronoi diagram*, instead
 of the nearest-site, we would use the extra control `Qu`.
 
+{% highlight python %}
+>>> from scipy.spatial import Voronoi, voronoi_plot_2d
+>>> vor = Voronoi(vertices_ls)
+>>> plt.figure(figsize=(8, 8))
+>>> ax = plt.subplot(111, aspect='equal')
+>>> voronoi_plot_2d(vor, ax=ax)
+>>> plt.xlim( 0.45,  0.50)
+>>> plt.ylim(-0.40, -0.35)
+>>> plt.show()
 
-    from scipy.spatial import Voronoi, voronoi_plot_2d
-
-    vor = Voronoi(vertices_ls)
-    
-    plt.figure(figsize=(8, 8))
-    ax = plt.subplot(111, aspect='equal')
-    voronoi_plot_2d(vor, ax=ax)
-    plt.xlim( 0.45,  0.50)
-    plt.ylim(-0.40, -0.35)
-    plt.show()
-
+{% endhighlight %}
 
 ![png](/images/chapter6_files/chapter6_90_0.png)
-
 
 * The small dots are the original seeds with `x`-coordinates between `0.45` and
 `0.50`, and `y`-coordinates between `-0.40` and `-0.35`.  We access those values
@@ -521,7 +519,6 @@ each seed.  These regions contain all points in the plane which are closest to
 its seed.  Each region receives an index, which is not necessarily the same
 index as the index of its seed in the `vor.points` list.  To access the
 corresponding region to a given seed, we use `vor.point_region`.
-
 
 {% highlight python %}
 >>> vor.point_region
@@ -575,7 +572,6 @@ vertices were represented as bigger dots in the previous image, and are easily
 identifiable because they are always at the intersection of at least two edges
 --- while the seeds have no incoming edges.
 
-
 {% highlight python %}
 >>> vor.vertices
 array([[ 0.88382749, -0.23508215],
@@ -591,7 +587,6 @@ array([[ 0.88382749, -0.23508215],
 * For each of the regions, we can access the set of delimiting vertices with
 `vor.regions`.  For instance, to obtain the coordinates of the vertices that
 delimit the region around the 4th seed, we could issue
-
 
 {% highlight python %}
 >>> [vor.vertices[x] for x in vor.regions[vor.point_region[4]]]
@@ -667,7 +662,6 @@ For this simpler setting, in the module `scipy.spatial`, we have the routine
 `Qhull` libraries, with the `qdelaunay` controls set exactly as for the Voronoi
 diagram computations.
 
-
 {% highlight python %}
 >>> from scipy.spatial import Delaunay, delaunay_plot_2d
 >>> tri = Delaunay(vertices_ls)
@@ -712,25 +706,23 @@ The first example is that of the constrained Delaunay triangulation (`cndt`).
 We accomplish this task with the flag `p` (indicating that the source is a
 _planar straight line graph_, rather than a set of vertices).
 
+{% highlight python %}
+>>> from triangle import triangulate, plot as tplot
+>>> cndt = triangulate(lake_superior, 'p')
+>>> plt.figure(figsize=(14, 14))
+>>> ax = plt.subplot(111, aspect='equal')
+>>> tplot.plot(ax, **cndt)
+>>> plt.show()
 
-    from triangle import triangulate, plot as tplot
-
-    cndt = triangulate(lake_superior, 'p')
-    
-    plt.figure(figsize=(14, 14))
-    ax = plt.subplot(111, aspect='equal')
-    tplot.plot(ax, **cndt)
-    plt.show()
-
+{% endhighlight %}
 
 ![png](/images/chapter6_files/chapter6_108_0.png)
-
 
 The next step is the computation of a conforming Delaunay triangulation
 (`cfdt`).  We enforce Steiner points on some segments to ensure as many Delaunay
 triangles as possible.  We achieve this with extra flag `D`.    
 
-    cfdt = triangulate(lake_superior, 'pD')
+    >>> cfdt = triangulate(lake_superior, 'pD')
 
 But slight or no improvements with respect to the previous diagram can be
 observed in this case.  The real improvement arises when we further impose
@@ -740,31 +732,29 @@ instance, if we require a constrained conforming Delaunay triangulation
 (`cncfdt`) in which all triangles have a minimum angle of at least 20 degrees,
 we issue the following command
 
-
-    cncfq20dt = triangulate(lake_superior, 'pq20D')
-    
-    plt.figure(figsize=(14,14))
-    ax = plt.subplot(111, aspect='equal')
-    tplot.plot(ax, **cncfq20dt)
-    plt.show()
-
+{% highlight python %}
+>>> cncfq20dt = triangulate(lake_superior, 'pq20D')
+>>> plt.figure(figsize=(14,14))
+>>> ax = plt.subplot(111, aspect='equal')
+>>> tplot.plot(ax, **cncfq20dt)
+>>> plt.show()
+{% endhighlight %}
 
 ![png](/images/chapter6_files/chapter6_112_0.png)
-
 
 For the last example to conclude this section, we further impose a maximum area
 on triangles.    
 
-    cncfq20adt = triangulate(lake_superior, 'pq20a.001D')
-    
-    plt.figure(figsize=(14, 14))
-    ax = plt.subplot(111, aspect='equal')
-    tplot.plot(ax, **cncfq20adt)
-    plt.show()
+{% highlight python %}
+>>> cncfq20adt = triangulate(lake_superior, 'pq20a.001D')
+>>> plt.figure(figsize=(14, 14))
+>>> ax = plt.subplot(111, aspect='equal')
+>>> tplot.plot(ax, **cncfq20adt)
+>>> plt.show()
 
+{% endhighlight %}
 
 ![png](/images/chapter6_files/chapter6_114_0.png)
-
 
 #### Shortest Paths
 
@@ -799,21 +789,19 @@ Let us illustrate this example with proper code.  We start by collecting the
 indices of the vertices of all segments in the triangulation, and the lengths of
 these segments.
 
+{% highlight python %}
+>>> from scipy.spatial import minkowski_distance
+>>> X = cncfq20adt['triangles'][:,0]
+>>> Y = cncfq20adt['triangles'][:,1]
+>>> Z = cncfq20adt['triangles'][:,2]
+>>> Xvert = [cncfq20adt['vertices'][x] for x in X]
+>>> Yvert = [cncfq20adt['vertices'][y] for y in Y]
+>>> Zvert = [cncfq20adt['vertices'][z] for z in Z]
+>>> lengthsXY = minkowski_distance(Xvert, Yvert)
+>>> lengthsXZ = minkowski_distance(Xvert, Zvert)
+>>> lengthsYZ = minkowski_distance(Yvert, Zvert)
 
-    from scipy.spatial import minkowski_distance
-
-
-    X = cncfq20adt['triangles'][:,0]
-    Y = cncfq20adt['triangles'][:,1]
-    Z = cncfq20adt['triangles'][:,2]
-    
-    Xvert = [cncfq20adt['vertices'][x] for x in X]
-    Yvert = [cncfq20adt['vertices'][y] for y in Y]
-    Zvert = [cncfq20adt['vertices'][z] for z in Z]
-    
-    lengthsXY = minkowski_distance(Xvert, Yvert)
-    lengthsXZ = minkowski_distance(Xvert, Zvert)
-    lengthsYZ = minkowski_distance(Yvert, Zvert)
+{% endhighlight %}
 
 We now create the weighted-adjacency matrix, which we store as a `lil_matrix`,
 and compute the shortest path between the requested vertices.  We gather in a
