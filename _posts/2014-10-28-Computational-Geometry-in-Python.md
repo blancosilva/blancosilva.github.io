@@ -485,8 +485,8 @@ Wall time: 372 µs
 
 
 <div class="thumbnail">
-    <a href="/images/chapter6_files/chapter6_86_0.png" style="width:75%">
-    </div>
+    <img src="/images/chapter6_files/chapter6_86_0.png" style="width:75%">
+</div>
 
 
 #### Voronoi Diagrams 
@@ -513,8 +513,8 @@ of the nearest-site, we would use the extra control `Qu`.
 {% endhighlight %}
 
 <div class="thumbnail">
-    <a href="/images/chapter6_files/chapter6_90_0.png" style="width:75%">
-    </div>
+    <img src="/images/chapter6_files/chapter6_90_0.png" style="width:75%">
+</div>
 
 * The small dots are the original seeds with `x`-coordinates between `0.45` and
 `0.50`, and `y`-coordinates between `-0.40` and `-0.35`.  We access those values
@@ -678,8 +678,8 @@ diagram computations.
 {% endhighlight %}
 
 <div class="thumbnail">
-    <a href="/images/chapter6_files/chapter6_104_0.pn)" style="width:75%">
-    </div>
+    <img src="/images/chapter6_files/chapter6_104_0.pn)" style="width:75%">
+</div>
 
 It is possible to generate triangulations with imposed edges too.  Given a
 collection of vertices and edges, a *constrained Delaunay triangulation* is a
@@ -724,8 +724,8 @@ _planar straight line graph_, rather than a set of vertices).
 {% endhighlight %}
 
 <div class="thumbnail">
-    <a href="/images/chapter6_files/chapter6_108_0.pn)" style="width:75%">
-    </div>
+    <img src="/images/chapter6_files/chapter6_108_0.pn)" style="width:75%">
+</div>
 
 The next step is the computation of a conforming Delaunay triangulation
 (`cfdt`).  We enforce Steiner points on some segments to ensure as many Delaunay
@@ -750,8 +750,8 @@ we issue the following command
 {% endhighlight %}
 
 <div class="thumbnail">
-    <a href="/images/chapter6_files/chapter6_112_0.pn)" style="width:75%">
-    </div>
+    <img src="/images/chapter6_files/chapter6_112_0.pn)" style="width:75%">
+</div>
 
 For the last example to conclude this section, we further impose a maximum area
 on triangles.    
@@ -766,8 +766,8 @@ on triangles.
 {% endhighlight %}
 
 <div class="thumbnail">
-    <a href="/images/chapter6_files/chapter6_114_0.pn)" style="width:75%">
-    </div>
+    <img src="/images/chapter6_files/chapter6_114_0.pn)" style="width:75%">
+</div>
 
 #### Shortest Paths
 
@@ -851,8 +851,8 @@ chain overlaid on the triangulation.
 {% endhighlight %}
 
 <div class="thumbnail">
-    <a href="/images/chapter6_files/chapter6_127_0.pn)" style="width:75%">
-    </div>
+    <img src="/images/chapter6_files/chapter6_127_0.pn)" style="width:75%">
+</div>
 
 ### Geometric Query Problems
 
@@ -1109,8 +1109,8 @@ description in terms of vertices, segments and rays.
 {% endhighlight %}
 
 <div class="thumbnail">
-    <a href="/images/chapter6_files/chapter6_155_0.pn)" style="width:75%">
-    </div>
+    <img src="/images/chapter6_files/chapter6_155_0.pn)" style="width:75%">
+</div>
 
 
 #### Range Searching
@@ -1159,8 +1159,8 @@ set([192, 199, 204, 139, 140, 77, 144, 18, 280, 92, 287, 34, 164, 165, 295, 106,
 {% endhighlight %}
 
 <div class="thumbnail">
-    <a href="/images/chapter6_files/chapter6_158_1.pn)" style="width:75%">
-    </div>
+    <img src="/images/chapter6_files/chapter6_158_1.pn)" style="width:75%">
+</div>
 
 This gives the following diagram, where the small dots represent the locations
 of the search space, and the circles are the range.  The query is, of course,
@@ -1215,8 +1215,8 @@ triangulation and Voronoi diagrams.
 {% endhighlight %}
 
 <div class="thumbnail">
-    <a href="/images/chapter6_files/chapter6_164_0.pn)" style="width:75%">
-    </div>
+    <img src="/images/chapter6_files/chapter6_164_0.pn)" style="width:75%">
+</div>
 
 
 ## Numerical Computational Geometry
@@ -1330,8 +1330,8 @@ Let us test it with a few basic examples:
 {% endhighlight %}
 
 <div class="thumbnail">
-    <a href="/images/chapter6_files/chapter6_172_0.pn)    " style="width:75%">
-    </div>
+    <img src="/images/chapter6_files/chapter6_172_0.pn)    " style="width:75%">
+</div>
 
 {% highlight python %}
 >>> P4 = (2.0, -1.0)
@@ -1342,8 +1342,8 @@ Let us test it with a few basic examples:
 {% endhighlight %}
 
 <div class="thumbnail">
-    <a href="/images/chapter6_files/chapter6_173_0.pn)" style="width:75%">
-    </div>
+    <img src="/images/chapter6_files/chapter6_173_0.pn)" style="width:75%">
+</div>
 
 Higher degree curves are computationally expensive to evaluate.  When complex
 paths are needed, we rather create them as a piecewise sequence of low order
@@ -1366,8 +1366,8 @@ one.  Let us illustrate this with an example.
 {% endhighlight %}
 
 <div class="thumbnail">
-    <a href="/images/chapter6_files/chapter6_175_0.pn)" style="width:75%">
-    </div>
+    <img src="/images/chapter6_files/chapter6_175_0.pn)" style="width:75%">
+</div>
 
 A clear advantage of representing curves as Bézier splines arises when we need
 to apply an affine transformation to a curve.  For instance, if we required a
