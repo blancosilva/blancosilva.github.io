@@ -49,7 +49,7 @@ of segments, for example.  We also show how to quickly compute the angle between
 two segments, as well as deciding whether a given point belongs to a segment or
 not.  The next diagram illustrates an example, which we follow up with code.
 
-<div style="text-align:center;">
+<div class="thumbnail">
     <img src="https://farm4.staticflickr.com/3877/15330737175_683fb70bbb_d.jpg" style="margin-left:auto; margin-right:auto;">
 </div>
 
@@ -92,7 +92,7 @@ interesting operations with lines, and to that effect we have a few more
 constructors.  We can find their equations, compute the distance between a point
 and a line, and many other operations.
 
-<div style="text-align:center;">
+<div class="thumbnail">
     <img src="https://farm3.staticflickr.com/2942/15330737245_274f927551_d.jpg" style="margin-left:auto; margin-right:auto;">
 </div>
 
@@ -121,7 +121,7 @@ False
 
 The next geometrical concept we are to explore is the *circle*.  We may define a circle by its center and radius, or by three points on it.  We can easily compute all of its properties.
 
-<div style="text-align:center;">
+<div class="thumbnail">
     <img src="https://farm6.staticflickr.com/5581/15327566581_f064778b3e_d.jpg" style="margin-left:auto; margin-right:auto;">
 </div>
 
@@ -678,7 +678,7 @@ diagram computations.
 {% endhighlight %}
 
 <div class="thumbnail">
-    <img src="/images/chapter6_files/chapter6_104_0.pn)" style="width:75%">
+    <img src="/images/chapter6_files/chapter6_104_0.png" style="width:75%">
 </div>
 
 It is possible to generate triangulations with imposed edges too.  Given a
@@ -724,7 +724,7 @@ _planar straight line graph_, rather than a set of vertices).
 {% endhighlight %}
 
 <div class="thumbnail">
-    <img src="/images/chapter6_files/chapter6_108_0.pn)" style="width:75%">
+    <img src="/images/chapter6_files/chapter6_108_0.png" style="width:75%">
 </div>
 
 The next step is the computation of a conforming Delaunay triangulation
@@ -750,7 +750,7 @@ we issue the following command
 {% endhighlight %}
 
 <div class="thumbnail">
-    <img src="/images/chapter6_files/chapter6_112_0.pn)" style="width:75%">
+    <img src="/images/chapter6_files/chapter6_112_0.png" style="width:75%">
 </div>
 
 For the last example to conclude this section, we further impose a maximum area
@@ -766,7 +766,7 @@ on triangles.
 {% endhighlight %}
 
 <div class="thumbnail">
-    <img src="/images/chapter6_files/chapter6_114_0.pn)" style="width:75%">
+    <img src="/images/chapter6_files/chapter6_114_0.png" style="width:75%">
 </div>
 
 #### Shortest Paths
@@ -851,7 +851,7 @@ chain overlaid on the triangulation.
 {% endhighlight %}
 
 <div class="thumbnail">
-    <img src="/images/chapter6_files/chapter6_127_0.pn)" style="width:75%">
+    <img src="/images/chapter6_files/chapter6_127_0.png" style="width:75%">
 </div>
 
 ### Geometric Query Problems
@@ -1109,7 +1109,7 @@ description in terms of vertices, segments and rays.
 {% endhighlight %}
 
 <div class="thumbnail">
-    <img src="/images/chapter6_files/chapter6_155_0.pn)" style="width:75%">
+    <img src="/images/chapter6_files/chapter6_155_0.png" style="width:75%">
 </div>
 
 
@@ -1159,7 +1159,7 @@ set([192, 199, 204, 139, 140, 77, 144, 18, 280, 92, 287, 34, 164, 165, 295, 106,
 {% endhighlight %}
 
 <div class="thumbnail">
-    <img src="/images/chapter6_files/chapter6_158_1.pn)" style="width:75%">
+    <img src="/images/chapter6_files/chapter6_158_1.png" style="width:75%">
 </div>
 
 This gives the following diagram, where the small dots represent the locations
@@ -1215,7 +1215,7 @@ triangulation and Voronoi diagrams.
 {% endhighlight %}
 
 <div class="thumbnail">
-    <img src="/images/chapter6_files/chapter6_164_0.pn)" style="width:75%">
+    <img src="/images/chapter6_files/chapter6_164_0.png" style="width:75%">
 </div>
 
 
@@ -1330,7 +1330,7 @@ Let us test it with a few basic examples:
 {% endhighlight %}
 
 <div class="thumbnail">
-    <img src="/images/chapter6_files/chapter6_172_0.pn)    " style="width:75%">
+    <img src="/images/chapter6_files/chapter6_172_0.png    " style="width:75%">
 </div>
 
 {% highlight python %}
@@ -1342,7 +1342,7 @@ Let us test it with a few basic examples:
 {% endhighlight %}
 
 <div class="thumbnail">
-    <img src="/images/chapter6_files/chapter6_173_0.pn)" style="width:75%">
+    <img src="/images/chapter6_files/chapter6_173_0.png" style="width:75%">
 </div>
 
 Higher degree curves are computationally expensive to evaluate.  When complex
@@ -1366,7 +1366,7 @@ one.  Let us illustrate this with an example.
 {% endhighlight %}
 
 <div class="thumbnail">
-    <img src="/images/chapter6_files/chapter6_175_0.pn)" style="width:75%">
+    <img src="/images/chapter6_files/chapter6_175_0.png" style="width:75%">
 </div>
 
 A clear advantage of representing curves as Bézier splines arises when we need
@@ -1391,7 +1391,7 @@ the new controls.
 {% endhighlight %}
 
 <div class="thumbnail">
-    <img src="/images/chapter6_files/chapter6_178_0.pn)" style="width:75%">
+    <img src="/images/chapter6_files/chapter6_178_0.png" style="width:75%">
 </div>
 
 ## Summary
