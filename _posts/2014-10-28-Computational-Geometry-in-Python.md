@@ -483,7 +483,10 @@ Wall time: 372 µs
 {% endhighlight %}
 
 
-![png](/images/chapter6_files/chapter6_86_0.png)
+
+<div class="thumbnail">
+    <a href="/images/chapter6_files/chapter6_86_0.png" style="width:75%">
+    </div>
 
 
 #### Voronoi Diagrams 
@@ -509,7 +512,9 @@ of the nearest-site, we would use the extra control `Qu`.
 
 {% endhighlight %}
 
-![png](/images/chapter6_files/chapter6_90_0.png)
+<div class="thumbnail">
+    <a href="/images/chapter6_files/chapter6_90_0.png" style="width:75%">
+    </div>
 
 * The small dots are the original seeds with `x`-coordinates between `0.45` and
 `0.50`, and `y`-coordinates between `-0.40` and `-0.35`.  We access those values
@@ -672,7 +677,9 @@ diagram computations.
 
 {% endhighlight %}
 
-![png](/images/chapter6_files/chapter6_104_0.png)
+<div class="thumbnail">
+    <a href="/images/chapter6_files/chapter6_104_0.pn)" style="width:75%">
+    </div>
 
 It is possible to generate triangulations with imposed edges too.  Given a
 collection of vertices and edges, a *constrained Delaunay triangulation* is a
@@ -716,7 +723,9 @@ _planar straight line graph_, rather than a set of vertices).
 
 {% endhighlight %}
 
-![png](/images/chapter6_files/chapter6_108_0.png)
+<div class="thumbnail">
+    <a href="/images/chapter6_files/chapter6_108_0.pn)" style="width:75%">
+    </div>
 
 The next step is the computation of a conforming Delaunay triangulation
 (`cfdt`).  We enforce Steiner points on some segments to ensure as many Delaunay
@@ -740,7 +749,9 @@ we issue the following command
 >>> plt.show()
 {% endhighlight %}
 
-![png](/images/chapter6_files/chapter6_112_0.png)
+<div class="thumbnail">
+    <a href="/images/chapter6_files/chapter6_112_0.pn)" style="width:75%">
+    </div>
 
 For the last example to conclude this section, we further impose a maximum area
 on triangles.    
@@ -754,7 +765,9 @@ on triangles.
 
 {% endhighlight %}
 
-![png](/images/chapter6_files/chapter6_114_0.png)
+<div class="thumbnail">
+    <a href="/images/chapter6_files/chapter6_114_0.pn)" style="width:75%">
+    </div>
 
 #### Shortest Paths
 
@@ -808,43 +821,38 @@ and compute the shortest path between the requested vertices.  We gather in a
 list all the vertices included in the computed path, and plot the resulting
 chain overlaid on the triangulation.    
 
-    from scipy.sparse import lil_matrix
-    from scipy.sparse.csgraph import shortest_path
+{% highlight python %}
+>>> from scipy.sparse import lil_matrix
+>>> from scipy.sparse.csgraph import shortest_path
+>>> nvert = len(cncfq20adt['vertices'])
+>>> G = lil_matrix((nvert, nvert))
+>>> for k in range(len(X)):
+...     G[X[k], Y[k]] = G[Y[k], X[k]] = lengthsXY[k]
+...     G[X[k], Z[k]] = G[Z[k], X[k]] = lengthsXZ[k]
+...     G[Y[k], Z[k]] = G[Z[k], Y[k]] = lengthsYZ[k]
+... 
 
+>>> dist_matrix, pred = shortest_path(G, return_predecessors=True, directed=True, unweighted=False)
+>>> index = 370
+>>> path = [370]
+>>> while index != 197:
+...     index = pred[197, index]
+...     path.append(index)
+...     
 
-    nvert = len(cncfq20adt['vertices'])
-    G = lil_matrix((nvert, nvert))
+>>> Xs = [cncfq20adt['vertices'][x][0] for x in path]
+>>> Ys = [cncfq20adt['vertices'][x][1] for x in path]
+>>> plt.figure(figsize=(14,14))
+>>> ax = plt.subplot(111, aspect='equal')
+>>> tplot.plot(ax, **cncfq20adt)
+>>> ax.plot(Xs, Ys, '-', linewidth=5, color='blue'); \
+>>> plt.show()
 
+{% endhighlight %}
 
-    for k in range(len(X)):
-        G[X[k], Y[k]] = G[Y[k], X[k]] = lengthsXY[k]
-        G[X[k], Z[k]] = G[Z[k], X[k]] = lengthsXZ[k]
-        G[Y[k], Z[k]] = G[Z[k], Y[k]] = lengthsYZ[k]
-
-
-    dist_matrix, pred = shortest_path(G, return_predecessors=True, directed=True, unweighted=False)
-
-
-    index = 370
-    path = [370]
-    
-    while index != 197:
-        index = pred[197, index]
-        path.append(index)
-        
-    Xs = [cncfq20adt['vertices'][x][0] for x in path]
-    Ys = [cncfq20adt['vertices'][x][1] for x in path]
-
-
-    plt.figure(figsize=(14,14))
-    ax = plt.subplot(111, aspect='equal')
-    tplot.plot(ax, **cncfq20adt)
-    ax.plot(Xs, Ys, '-', linewidth=5, color='blue'); \
-    plt.show()
-
-
-![png](/images/chapter6_files/chapter6_127_0.png)
-
+<div class="thumbnail">
+    <a href="/images/chapter6_files/chapter6_127_0.pn)" style="width:75%">
+    </div>
 
 ### Geometric Query Problems
 
@@ -869,20 +877,20 @@ The former checks whether a point is interior to a source object (but not on the
 border), while the latter checks whether another target object has all its
 defining entities in the interior of the source object.
 
+{% highlight python %}
+>>> P1 = Point(0, 0)
+>>> P2 = Point(1, 0)
+>>> P3 = Point(-1, 0)
+>>> P4 = Point(0, 1)
+>>> C = Circle(P2, P3, P4)
+>>> T = Triangle(P1, P2, P3)
+>>> C.encloses_point(P1)
+True
 
-    P1 = Point(0, 0)
-    P2 = Point(1, 0)
-    P3 = Point(-1, 0)
-    P4 = Point(0, 1)
-    
-    C = Circle(P2, P3, P4)
-    T = Triangle(P1, P2, P3)
+>>> C.encloses(T)
+False
 
-
-    C.encloses_point(P1)
-    True
-    C.encloses(T)
-    False
+{% endhighlight %}
 
 Of special importance is this simple setting where the source object is a
 polygon.  The routines in the `sympy.geometry` module get the job done, but at
@@ -892,32 +900,34 @@ Let us see how with a quick session: first, we create a representation of a
 polygon as a `Path`.
 
 
-    from matplotlib.path import Path
+{% highlight python %}
+>>> from matplotlib.path import Path
+>>> my_polygon = Path([hull.points[x] for x in hull.vertices])
 
-
-    my_polygon = Path([hull.points[x] for x in hull.vertices])
+{% endhighlight %}
 
 We may ask now whether a point (respectively, a sequence of points) is interior
 to the polygon.  We accomplish this with either attribute `contains_point` or
 `contains_points`.
 
 
-    X = .25 * np.random.randn(100) + .5
-    Y = .25 * np.random.randn(100) - .5
+{% highlight python %}
+>>> X = .25 * np.random.randn(100) + .5
+>>> Y = .25 * np.random.randn(100) - .5
+>>> my_polygon.contains_points([[X[k], Y[k]] for k in range(len(X))])
+array([ True, False,  True,  True,  True,  True, False, False,  True,
+       False, False, False, False, False,  True, False, False, False,
+        True,  True,  True,  True,  True, False, False, False, False,
+        True,  True,  True,  True, False, False, False,  True, False,
+       False, False, False, False, False, False,  True, False, False,
+       False, False, False,  True, False, False, False, False, False,
+       False, False, False,  True, False,  True, False, False, False,
+        True,  True, False, False,  True, False,  True, False,  True,
+        True, False,  True, False, False, False,  True, False, False,
+       False, False, False,  True, False, False,  True, False, False,
+        True, False, False,  True,  True, False, False,  True, False, False], dtype=bool)
 
-
-    my_polygon.contains_points([[X[k], Y[k]] for k in range(len(X))])
-    array([ True, False,  True,  True,  True,  True, False, False,  True,
-           False, False, False, False, False,  True, False, False, False,
-            True,  True,  True,  True,  True, False, False, False, False,
-            True,  True,  True,  True, False, False, False,  True, False,
-           False, False, False, False, False, False,  True, False, False,
-           False, False, False,  True, False, False, False, False, False,
-           False, False, False,  True, False,  True, False, False, False,
-            True,  True, False, False,  True, False,  True, False,  True,
-            True, False,  True, False, False, False,  True, False, False,
-           False, False, False,  True, False, False,  True, False, False,
-            True, False, False,  True,  True, False, False,  True, False, False], dtype=bool)
+{% endhighlight %}
 
 More challenging point location problem arise when our space is partitioned by a
 complex structure.  For instance, once a triangulation has been computed, and a
@@ -927,35 +937,37 @@ perform this task over Delaunay triangulations created with
 `scipy.spatial.Delaunay`.  In the following example, we track the triangles that
 contain a set of 100 random points in the domain.    
 
-    from scipy.spatial import tsearch
+{% highlight python %}
+>>> from scipy.spatial import tsearch
+>>> tri = Delaunay(vertices_ls)
+>>> points = zip(X, Y)
+>>> tsearch(tri, points)
+array([274,  -1, 454, 647, 174,  10,  -1,  -1, 306,  -1,  -1,  -1,  -1,
+        -1, 108,  -1,  -1,  -1, 988, 882, 174, 691, 115,  -1,  -1,  -1,
+        -1, 373, 292, 647, 161,  -1,  -1,  -1, 104,  -1,  -1,  -1,  -1,
+        -1,  -1,  -1, 454,  -1,  -1,  -1,  -1,  -1, 647,  -1,  -1,  -1,
+        -1,  -1,  -1,  -1,  -1, 161,  -1, 138,  -1,  -1,  -1, 310, 602,
+        -1,  -1,  11,  -1, 894,  -1, 108, 174,  -1, 819,  -1,  -1,  -1,
+       180,  -1,  -1,  -1,  -1,  -1, 728,  -1,  -1,  11,  -1,  -1, 174,
+        -1,  -1, 161, 126,  -1,  -1, 144,  -1,  -1], dtype=int32)
 
-    tri = Delaunay(vertices_ls)
-    
-    points = zip(X, Y)
-    
-    tsearch(tri, points)
-    array([274,  -1, 454, 647, 174,  10,  -1,  -1, 306,  -1,  -1,  -1,  -1,
-            -1, 108,  -1,  -1,  -1, 988, 882, 174, 691, 115,  -1,  -1,  -1,
-            -1, 373, 292, 647, 161,  -1,  -1,  -1, 104,  -1,  -1,  -1,  -1,
-            -1,  -1,  -1, 454,  -1,  -1,  -1,  -1,  -1, 647,  -1,  -1,  -1,
-            -1,  -1,  -1,  -1,  -1, 161,  -1, 138,  -1,  -1,  -1, 310, 602,
-            -1,  -1,  11,  -1, 894,  -1, 108, 174,  -1, 819,  -1,  -1,  -1,
-           180,  -1,  -1,  -1,  -1,  -1, 728,  -1,  -1,  11,  -1,  -1, 174,
-            -1,  -1, 161, 126,  -1,  -1, 144,  -1,  -1], dtype=int32)
+{% endhighlight %}
 
 The same result is obtained with the method `.find_simplex` of the `Delaunay`
 object `tri`.
 
+{% highlight python %}
+>>> tri.find_simplex(points)
+array([274,  -1, 454, 647, 174,  10,  -1,  -1, 306,  -1,  -1,  -1,  -1,
+        -1, 108,  -1,  -1,  -1, 988, 882, 174, 691, 115,  -1,  -1,  -1,
+        -1, 373, 292, 647, 161,  -1,  -1,  -1, 104,  -1,  -1,  -1,  -1,
+        -1,  -1,  -1, 454,  -1,  -1,  -1,  -1,  -1, 647,  -1,  -1,  -1,
+        -1,  -1,  -1,  -1,  -1, 161,  -1, 138,  -1,  -1,  -1, 310, 602,
+        -1,  -1,  11,  -1, 894,  -1, 108, 174,  -1, 819,  -1,  -1,  -1,
+       180,  -1,  -1,  -1,  -1,  -1, 728,  -1,  -1,  11,  -1,  -1, 174,
+        -1,  -1, 161, 126,  -1,  -1, 144,  -1,  -1], dtype=int32)
 
-    tri.find_simplex(points)
-    array([274,  -1, 454, 647, 174,  10,  -1,  -1, 306,  -1,  -1,  -1,  -1,
-            -1, 108,  -1,  -1,  -1, 988, 882, 174, 691, 115,  -1,  -1,  -1,
-            -1, 373, 292, 647, 161,  -1,  -1,  -1, 104,  -1,  -1,  -1,  -1,
-            -1,  -1,  -1, 454,  -1,  -1,  -1,  -1,  -1, 647,  -1,  -1,  -1,
-            -1,  -1,  -1,  -1,  -1, 161,  -1, 138,  -1,  -1,  -1, 310, 602,
-            -1,  -1,  11,  -1, 894,  -1, 108, 174,  -1, 819,  -1,  -1,  -1,
-           180,  -1,  -1,  -1,  -1,  -1, 728,  -1,  -1,  11,  -1,  -1, 174,
-            -1,  -1, 161, 126,  -1,  -1, 144,  -1,  -1], dtype=int32)
+{% endhighlight %}
 
 > Note that, when a triangle is found, the routine reports its corresponding
 index in `tri.simplices`.  If no triangle is found (which means the point is
@@ -1025,44 +1037,48 @@ manipulation of the nodes.
 Let use this idea to solve a point location problem, and at the same time
 revisit the Voronoi diagram from Lake Superior.
 
+{% highlight python %}
+>>> from scipy.spatial import cKDTree
+>>> vor  = Voronoi(vertices_ls)
+>>> tree = cKDTree(vertices_ls)
 
-    from scipy.spatial import cKDTree
-
-    vor  = Voronoi(vertices_ls)
-    tree = cKDTree(vertices_ls)
+{% endhighlight %}
 
 First, we query for the previous dataset of 100 random locations, the seeds that
 are closer to each of them    
 
-    tree.query(points)
-    (array([ 0.00696135,  0.2156821 ,  0.03359866,  0.01102301,  0.02959793,
-             0.00332914,  0.23081084,  0.01235589,  0.03570128,  0.27909962,
-             0.14464606,  0.11046009,  0.16062173,  0.12011036,  0.06896572,
-             0.41319946,  0.23482566,  0.0202923 ,  0.00503325,  0.00312809,
-             0.09461517,  0.02886394,  0.02134482,  0.04146156,  0.00963273,
-             0.07768318,  0.24809128,  0.00973111,  0.02865847,  0.06101067,
-             0.03944798,  0.1415272 ,  0.16795927,  0.03543673,  0.0333806 ,
-             0.21161309,  0.35952025,  0.05399864,  0.2133998 ,  0.10991783,
-             0.16167264,  0.24837308,  0.04195559,  0.01060838,  0.20048378,
-             0.34552545,  0.03215333,  0.02900217,  0.06124501,  0.10751073,
-             0.19669567,  0.17761417,  0.06772935,  0.04775046,  0.15318515,
-             0.05524147,  0.06485813,  0.07798391,  0.29622176,  0.04096707,
-             0.15903166,  0.10583702,  0.25479728,  0.02080896,  0.01747343,
-             0.04874742,  0.07251445,  0.0267058 ,  0.01481491,  0.00478615,
-             0.15630242,  0.0728038 ,  0.03154718,  0.13789812,  0.00113166,
-             0.11565746,  0.33276404,  0.19057214,  0.03953368,  0.2055712 ,
-             0.07878881,  0.18618894,  0.29061068,  0.28516096,  0.03010459,
-             0.20610317,  0.11743626,  0.01496555,  0.08025486,  0.04525199,
-             0.08830948,  0.23479888,  0.2565738 ,  0.05088667,  0.02761566,
-             0.16531317,  0.09743108,  0.04672793,  0.17032771,  0.1878217 ]),
-     array([262, 198, 135, 294, 273,  57, 144, 311, 412, 155, 251, 406, 144,
-            311,  91, 251, 144, 370, 139, 330,  91, 451, 326, 370, 409, 311,
-            311, 414, 398,  89, 263, 417, 371,  33, 242, 307, 251, 396, 285,
-            370, 197,  49, 131, 307, 433, 191, 155, 247,  89, 433,   3, 311,
-            370,   7, 401,   3, 303,  91, 215,  64, 151, 113, 197,  74, 416,
-            342,  45, 113, 196, 446,  43, 162, 293, 372, 304, 252, 311, 311,
-            476, 421, 417,  33, 285,  42, 265, 113, 278,  49, 281, 298, 265,
-            311, 311, 508, 388, 280,  49, 486, 215, 307]))
+{% highlight python %}
+>>> tree.query(points)
+(array([ 0.00696135,  0.2156821 ,  0.03359866,  0.01102301,  0.02959793,
+         0.00332914,  0.23081084,  0.01235589,  0.03570128,  0.27909962,
+         0.14464606,  0.11046009,  0.16062173,  0.12011036,  0.06896572,
+         0.41319946,  0.23482566,  0.0202923 ,  0.00503325,  0.00312809,
+         0.09461517,  0.02886394,  0.02134482,  0.04146156,  0.00963273,
+         0.07768318,  0.24809128,  0.00973111,  0.02865847,  0.06101067,
+         0.03944798,  0.1415272 ,  0.16795927,  0.03543673,  0.0333806 ,
+         0.21161309,  0.35952025,  0.05399864,  0.2133998 ,  0.10991783,
+         0.16167264,  0.24837308,  0.04195559,  0.01060838,  0.20048378,
+         0.34552545,  0.03215333,  0.02900217,  0.06124501,  0.10751073,
+         0.19669567,  0.17761417,  0.06772935,  0.04775046,  0.15318515,
+         0.05524147,  0.06485813,  0.07798391,  0.29622176,  0.04096707,
+         0.15903166,  0.10583702,  0.25479728,  0.02080896,  0.01747343,
+         0.04874742,  0.07251445,  0.0267058 ,  0.01481491,  0.00478615,
+         0.15630242,  0.0728038 ,  0.03154718,  0.13789812,  0.00113166,
+         0.11565746,  0.33276404,  0.19057214,  0.03953368,  0.2055712 ,
+         0.07878881,  0.18618894,  0.29061068,  0.28516096,  0.03010459,
+         0.20610317,  0.11743626,  0.01496555,  0.08025486,  0.04525199,
+         0.08830948,  0.23479888,  0.2565738 ,  0.05088667,  0.02761566,
+         0.16531317,  0.09743108,  0.04672793,  0.17032771,  0.1878217 ]),
+ array([262, 198, 135, 294, 273,  57, 144, 311, 412, 155, 251, 406, 144,
+        311,  91, 251, 144, 370, 139, 330,  91, 451, 326, 370, 409, 311,
+        311, 414, 398,  89, 263, 417, 371,  33, 242, 307, 251, 396, 285,
+        370, 197,  49, 131, 307, 433, 191, 155, 247,  89, 433,   3, 311,
+        370,   7, 401,   3, 303,  91, 215,  64, 151, 113, 197,  74, 416,
+        342,  45, 113, 196, 446,  43, 162, 293, 372, 304, 252, 311, 311,
+        476, 421, 417,  33, 285,  42, 265, 113, 278,  49, 281, 298, 265,
+        311, 311, 508, 388, 280,  49, 486, 215, 307]))
+
+{% endhighlight %}
 
 Note the output is a tuple with two `numpy.array`: the first one indicates the
 distances the each point closest seed (their nearest-neighbors), and the second
@@ -1071,29 +1087,30 @@ one indicates the index of the corresponding seed.
 We may use this idea to represent the Voronoi diagram without a geometric
 description in terms of vertices, segments and rays.
 
-    X = np.linspace( 0.45,  0.50, 256)
-    Y = np.linspace(-0.40, -0.35, 256)
-    canvas = np.meshgrid(X, Y)
-    points = np.c_[canvas[0].ravel(), canvas[1].ravel()]
-    queries = tree.query(points)[1].reshape(256, 256)
+{% highlight python %}
+>>> X = np.linspace( 0.45,  0.50, 256)
+>>> Y = np.linspace(-0.40, -0.35, 256)
+>>> canvas = np.meshgrid(X, Y)
+>>> points = np.c_[canvas[0].ravel(), canvas[1].ravel()]
+>>> queries = tree.query(points)[1].reshape(256, 256)
+>>> plt.figure(figsize=(14, 14))
+>>> ax1 = plt.subplot(121, aspect='equal')
+>>> voronoi_plot_2d(vor, ax=ax1)
+>>> plt.xlim( 0.45,  0.50)
+>>> plt.ylim(-0.40, -0.35)
+>>> ax2 = plt.subplot(122, aspect='equal')
+>>> plt.gray()
+>>> plt.pcolor(X, Y, queries)
+>>> plt.plot(vor.points[:,0], vor.points[:,1], 'ro')
+>>> plt.xlim( 0.45,  0.50)
+>>> plt.ylim(-0.40, -0.35)
+>>> plt.show()
 
-    plt.figure(figsize=(14, 14))
-    
-    ax1 = plt.subplot(121, aspect='equal')
-    voronoi_plot_2d(vor, ax=ax1)
-    plt.xlim( 0.45,  0.50)
-    plt.ylim(-0.40, -0.35)
-    
-    ax2 = plt.subplot(122, aspect='equal')
-    plt.gray()
-    plt.pcolor(X, Y, queries)
-    plt.plot(vor.points[:,0], vor.points[:,1], 'ro')
-    plt.xlim( 0.45,  0.50)
-    plt.ylim(-0.40, -0.35)
-    plt.show()
+{% endhighlight %}
 
-
-![png](/images/chapter6_files/chapter6_155_0.png)
+<div class="thumbnail">
+    <a href="/images/chapter6_files/chapter6_155_0.pn)" style="width:75%">
+    </div>
 
 
 #### Range Searching
@@ -1108,37 +1125,42 @@ implementation of a k-d tree.  We can go even further: if the range is an object
 formed by the intersection of a sequence of different balls, the same attribute
 gets the job done, as the following code illustrates.    
 
-    points = np.random.rand(320, 2)
-    range_points = np.random.rand(5, 2)
-    range_radii = 0.1 * np.random.rand(5)
-    
-    tree = cKDTree(points)
-    result = set()
-    
-    for k in range(5):
-        point  = range_points[k]
-        radius = range_radii[k]
-        partial_query = tree.query_ball_point(point, radius)
-        result = result.union(set(partial_query))
-        
-    print result
-        
-    fig = plt.figure(figsize=(9, 9))
-    plt.axes().set_aspect('equal')
-    for point in points:
-        plt.plot(point[0], point[1], 'ko')
-        
-    for k in range(5):
-        point = range_points[k]
-        radius = range_radii[k]
-        circle = plt.Circle(point, radius, fill=False, color="red", lw=2)
-        fig.gca().add_artist(circle)
-        
-    plt.show()
+{% highlight python %}
+>>> points = np.random.rand(320, 2)
+>>> range_points = np.random.rand(5, 2)
+>>> range_radii = 0.1 * np.random.rand(5)
+>>> tree = cKDTree(points)
+>>> result = set()
+>>> for k in range(5):
+...     point  = range_points[k]
+...     radius = range_radii[k]
+...     partial_query = tree.query_ball_point(point, radius)
+...     result = result.union(set(partial_query))
+...     
 
-    set([192, 199, 204, 139, 140, 77, 144, 18, 280, 92, 287, 34, 164, 165, 295, 106, 171, 172, 173, 49, 178, 245, 186])
+>>> print result
+set([192, 199, 204, 139, 140, 77, 144, 18, 280, 92, 287, 34, 164, 165, 295, 106, 171, 172, 173, 49, 178, 245, 186])
 
-![png](/images/chapter6_files/chapter6_158_1.png)
+>>> fig = plt.figure(figsize=(9, 9))
+>>> plt.axes().set_aspect('equal')
+>>> for point in points:
+...     plt.plot(point[0], point[1], 'ko')
+...     
+
+>>> for k in range(5):
+...     point = range_points[k]
+...     radius = range_radii[k]
+...     circle = plt.Circle(point, radius, fill=False, color="red", lw=2)
+...     fig.gca().add_artist(circle)
+...     
+
+>>> plt.show()
+
+{% endhighlight %}
+
+<div class="thumbnail">
+    <a href="/images/chapter6_files/chapter6_158_1.pn)" style="width:75%">
+    </div>
 
 This gives the following diagram, where the small dots represent the locations
 of the search space, and the circles are the range.  The query is, of course,
@@ -1170,31 +1192,31 @@ Let us illustrate with a simple example.  We start with the first ten vertices
 of Lake Superior, and inserting ten vertices at a time, update the corresponding
 triangulation and Voronoi diagrams.
 
+{% highlight python %}
+>>> small_superior = lake_superior['vertices'][:9]
+>>> tri = Delaunay(small_superior, incremental=True)
+>>> vor = Voronoi(small_superior, incremental=True)
+>>> plt.figure(figsize=(14,14))
+>>> for k in range(4):
+...     tri.add_points(vertices_ls[10*(k+1):10*(k+2)-1])
+...     vor.add_points(vertices_ls[10*(k+1):10*(k+2)-1])
+...     ax1 = plt.subplot(4, 2, 2*k+1, aspect='equal')
+...     ax1.set_xlim( 0.00,  1.00)
+...     ax1.set_ylim(-0.70, -0.30)
+...     delaunay_plot_2d(tri, ax1)
+...     ax2 = plt.subplot(4, 2, 2*k+2, aspect='equal')
+...     ax2.set_xlim(0.0, 1.0)
+...     ax2.set_ylim(-0.70, -0.30)
+...     voronoi_plot_2d(vor, ax2)
+...     
 
-    small_superior = lake_superior['vertices'][:9]
-    
-    tri = Delaunay(small_superior, incremental=True)
-    vor = Voronoi(small_superior, incremental=True)
+>>> plt.show()
 
+{% endhighlight %}
 
-    plt.figure(figsize=(14,14))
-    
-    for k in range(4):
-        tri.add_points(vertices_ls[10*(k+1):10*(k+2)-1])
-        vor.add_points(vertices_ls[10*(k+1):10*(k+2)-1])
-        ax1 = plt.subplot(4, 2, 2*k+1, aspect='equal')
-        ax1.set_xlim( 0.00,  1.00)
-        ax1.set_ylim(-0.70, -0.30)
-        delaunay_plot_2d(tri, ax1)
-        ax2 = plt.subplot(4, 2, 2*k+2, aspect='equal')
-        ax2.set_xlim(0.0, 1.0)
-        ax2.set_ylim(-0.70, -0.30)
-        voronoi_plot_2d(vor, ax2)
-        
-    plt.show()
-
-
-![png](/images/chapter6_files/chapter6_164_0.png)
+<div class="thumbnail">
+    <a href="/images/chapter6_files/chapter6_164_0.pn)" style="width:75%">
+    </div>
 
 
 ## Numerical Computational Geometry
@@ -1268,52 +1290,60 @@ Path.CURVE4, Path.CURVE4, Path.CURVE4]`, which ensures that the arc starts at
 ends at `P4` in the direction of the segment `P3P4`.
 
 
-    import matplotlib.patches as patches
-    
-    def bezier_parabola(P1, P2, P3):
-       return Path([P1, P2, P3],
-                   [Path.MOVETO, Path.CURVE3, Path.CURVE3])
-    
-    def bezier_cubic(P1, P2, P3, P4):
-        return Path([P1, P2, P3, P4],
-                    [Path.MOVETO, Path.CURVE4, Path.CURVE4, Path.CURVE4])
-    
-    def plot_path(path, labels=None):
-        Xs, Ys = zip(*path.vertices)
-        fig = plt.figure()
-        ax  = fig.add_subplot(111, aspect='equal')
-        ax.set_xlim(min(Xs)-0.2, max(Xs)+0.2)
-        ax.set_ylim(min(Ys)-0.2, max(Ys)+0.2)
-        patch = patches.PathPatch(path, facecolor='black', linewidth=2)
-        ax.add_patch(patch)
-        ax.plot(Xs, Ys, 'o--', color='blue', linewidth=1)
-        if labels:
-            for k in range(len(labels)):
-                ax.text(path.vertices[k][0]-0.1,
-                    path.vertices[k][1]-0.1, 
-                    labels[k])
-        plt.show()
+{% highlight python %}
+import matplotlib.patches as patches
+
+def bezier_parabola(P1, P2, P3):
+   return Path([P1, P2, P3],
+               [Path.MOVETO, Path.CURVE3, Path.CURVE3])
+
+def bezier_cubic(P1, P2, P3, P4):
+    return Path([P1, P2, P3, P4],
+                [Path.MOVETO, Path.CURVE4, Path.CURVE4, Path.CURVE4])
+
+def plot_path(path, labels=None):
+    Xs, Ys = zip(*path.vertices)
+    fig = plt.figure()
+    ax  = fig.add_subplot(111, aspect='equal')
+    ax.set_xlim(min(Xs)-0.2, max(Xs)+0.2)
+    ax.set_ylim(min(Ys)-0.2, max(Ys)+0.2)
+    patch = patches.PathPatch(path, facecolor='black', linewidth=2)
+    ax.add_patch(patch)
+    ax.plot(Xs, Ys, 'o--', color='blue', linewidth=1)
+    if labels:
+        for k in range(len(labels)):
+            ax.text(path.vertices[k][0]-0.1,
+                path.vertices[k][1]-0.1, 
+                labels[k])
+    plt.show()
+{% endhighlight %}
 
 Let us test it with a few basic examples:
 
+{% highlight python %}
+>>> P1 = (0.0, 0.0)
+>>> P2 = (1.0, 1.0)
+>>> P3 = (2.0, 0.0)
+>>> path_1 = bezier_parabola(P1, P2, P3)
+>>> plot_path(path_1, labels=['P1', 'P2', 'P3'])
 
-    P1 = (0.0, 0.0)
-    P2 = (1.0, 1.0)
-    P3 = (2.0, 0.0)
-    path_1 = bezier_parabola(P1, P2, P3)
-    plot_path(path_1, labels=['P1', 'P2', 'P3'])
+{% endhighlight %}
 
+<div class="thumbnail">
+    <a href="/images/chapter6_files/chapter6_172_0.pn)    " style="width:75%">
+    </div>
 
-![png](/images/chapter6_files/chapter6_172_0.png)    
+{% highlight python %}
+>>> P4 = (2.0, -1.0)
+>>> P5 = (3.0, 0.0)
+>>> path_2 = bezier_cubic(P1, P2, P4, P5)
+>>> plot_path(path_2, labels=['P1', 'P2', 'P4', 'P5'])
 
-    P4 = (2.0, -1.0)
-    P5 = (3.0, 0.0)
-    path_2 = bezier_cubic(P1, P2, P4, P5)
-    plot_path(path_2, labels=['P1', 'P2', 'P4', 'P5'])
+{% endhighlight %}
 
-
-![png](/images/chapter6_files/chapter6_173_0.png)
-
+<div class="thumbnail">
+    <a href="/images/chapter6_files/chapter6_173_0.pn)" style="width:75%">
+    </div>
 
 Higher degree curves are computationally expensive to evaluate.  When complex
 paths are needed, we rather create them as a piecewise sequence of low order
@@ -1324,18 +1354,20 @@ smoothness (at least up to the first derivative), by making the last two control
 points of one curve be aligned with the first two control points of the next
 one.  Let us illustrate this with an example.
 
+{% highlight python %}
+>>> Q1 = P5
+>>> Q2 = (4.0, 0.0)
+>>> Q3 = (5.0, -1.0)
+>>> Q4 = (6.0, 0.0)
+>>> path_3 = bezier_cubic(P1, P2, P3, P5)
+>>> path_4 = bezier_cubic(Q1, Q2, Q3, Q4)
+>>> plot_path(Path.make_compound_path(path_3, path_4))
 
-    Q1 = P5
-    Q2 = (4.0, 0.0)
-    Q3 = (5.0, -1.0)
-    Q4 = (6.0, 0.0)
-    path_3 = bezier_cubic(P1, P2, P3, P5)
-    path_4 = bezier_cubic(Q1, Q2, Q3, Q4)
-    plot_path(Path.make_compound_path(path_3, path_4))
+{% endhighlight %}
 
-
-![png](/images/chapter6_files/chapter6_175_0.png)
-
+<div class="thumbnail">
+    <a href="/images/chapter6_files/chapter6_175_0.pn)" style="width:75%">
+    </div>
 
 A clear advantage of representing curves as Bézier splines arises when we need
 to apply an affine transformation to a curve.  For instance, if we required a
@@ -1344,21 +1376,23 @@ performing the operation over all points of the curve, we simply apply the
 transformation to the control points, and repeat the de Casteljau algorithm on
 the new controls.
 
+{% highlight python %}
+>>> def rotation(point, angle):
+...     return (np.cos(angle)*point[0] - np.sin(angle)*point[1], 
+...             np.sin(angle)*point[0] + np.cos(angle)*point[1])
+... 
 
-    def rotation(point, angle):
-        return (np.cos(angle)*point[0] - np.sin(angle)*point[1], 
-                np.sin(angle)*point[0] + np.cos(angle)*point[1])
+>>> new_Ps = [rotation(P, np.pi/3) for P in path_3.vertices]
+>>> new_Qs = [rotation(Q, np.pi/3) for Q in path_4.vertices]
+>>> path_5 = bezier_cubic(*new_Ps)
+>>> path_6 = bezier_cubic(*new_Qs)
+>>> plot_path(Path.make_compound_path(path_5, path_6))
 
+{% endhighlight %}
 
-    new_Ps = [rotation(P, np.pi/3) for P in path_3.vertices]
-    new_Qs = [rotation(Q, np.pi/3) for Q in path_4.vertices]
-    path_5 = bezier_cubic(*new_Ps)
-    path_6 = bezier_cubic(*new_Qs)
-    plot_path(Path.make_compound_path(path_5, path_6))
-
-
-![png](/images/chapter6_files/chapter6_178_0.png)
-
+<div class="thumbnail">
+    <img src="/images/chapter6_files/chapter6_178_0.pn)" style="width:75%">
+</div>
 
 ## Summary
 
