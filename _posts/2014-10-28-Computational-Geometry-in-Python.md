@@ -1391,7 +1391,7 @@ the new controls.
 {% endhighlight %}
 
 <div class="thumbnail">
-    <img src="/images/chapter6_files/chapter6_178_0.png" style="width:75%">
+    <img src="/images/chapter6_files/chapter6_178_0.png" style="width:50%">
 </div>
 
 ## Summary
@@ -1400,49 +1400,6 @@ we have developed a brief incursion in the field of Computational Geometry, and
 we have mastered all the tools coded in the `scipy` stack to effectively address
 the most common problems in this topic.
 
-<style>
-    @font-face {
-        font-family: "Computer Modern";
-        src: url('http://9dbb143991406a7c655e-aa5fcb0a5a4ec34cff238a2d56ca4144.r56.cf5.rackcdn.com/cmunss.otf');
-    }
-    @font-face {
-        font-family: "Computer Modern";
-        font-weight: bold;
-        src: url('http://9dbb143991406a7c655e-aa5fcb0a5a4ec34cff238a2d56ca4144.r56.cf5.rackcdn.com/cmunsx.otf');
-    }
-    @font-face {
-        font-family: "Computer Modern";
-        font-style: oblique;
-        src: url('http://9dbb143991406a7c655e-aa5fcb0a5a4ec34cff238a2d56ca4144.r56.cf5.rackcdn.com/cmunsi.otf');
-    }
-    @font-face {
-        font-family: "Computer Modern";
-        font-weight: bold;
-        font-style: oblique;
-        src: url('http://9dbb143991406a7c655e-aa5fcb0a5a4ec34cff238a2d56ca4144.r56.cf5.rackcdn.com/cmunso.otf');
-    }
-    div.cell{
-        width:800px;
-        margin-left:16% !important;
-        margin-right:auto;
-	text-align:justify;
-    }
-    div.text_cell_render{
-        font-family: Computer Modern, "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
-        line-height: 145%;
-        font-size: 120%;
-        width:800px;
-        margin-left:auto;
-        margin-right:auto;
-	text-align:justify;
-    }
-    .CodeMirror{
-            font-family: "Source Code Pro", source-code-pro,Consolas, monospace;
-    }
-    .prompt{
-        display: None;
-    }
-</style>
 <script>
     MathJax.Hub.Config({
                         TeX: {
