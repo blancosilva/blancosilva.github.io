@@ -485,7 +485,7 @@ Wall time: 372 µs
 
 
 <div class="thumbnail">
-    <img src="/images/chapter6_files/chapter6_86_0.png" style="width:75%">
+    <img src="/images/chapter6_files/chapter6_86_0.png" style="width:100%">
 </div>
 
 
@@ -513,7 +513,7 @@ of the nearest-site, we would use the extra control `Qu`.
 {% endhighlight %}
 
 <div class="thumbnail">
-    <img src="/images/chapter6_files/chapter6_90_0.png" style="width:75%">
+    <img src="/images/chapter6_files/chapter6_90_0.png" style="width:100%">
 </div>
 
 * The small dots are the original seeds with `x`-coordinates between `0.45` and
@@ -678,7 +678,7 @@ diagram computations.
 {% endhighlight %}
 
 <div class="thumbnail">
-    <img src="/images/chapter6_files/chapter6_104_0.png" style="width:75%">
+    <img src="/images/chapter6_files/chapter6_104_0.png" style="width:100%">
 </div>
 
 It is possible to generate triangulations with imposed edges too.  Given a
@@ -724,7 +724,7 @@ _planar straight line graph_, rather than a set of vertices).
 {% endhighlight %}
 
 <div class="thumbnail">
-    <img src="/images/chapter6_files/chapter6_108_0.png" style="width:75%">
+    <img src="/images/chapter6_files/chapter6_108_0.png" style="width:100%">
 </div>
 
 The next step is the computation of a conforming Delaunay triangulation
@@ -750,7 +750,7 @@ we issue the following command
 {% endhighlight %}
 
 <div class="thumbnail">
-    <img src="/images/chapter6_files/chapter6_112_0.png" style="width:75%">
+    <img src="/images/chapter6_files/chapter6_112_0.png" style="width:100%">
 </div>
 
 For the last example to conclude this section, we further impose a maximum area
@@ -766,7 +766,7 @@ on triangles.
 {% endhighlight %}
 
 <div class="thumbnail">
-    <img src="/images/chapter6_files/chapter6_114_0.png" style="width:75%">
+    <img src="/images/chapter6_files/chapter6_114_0.png" style="width:100%">
 </div>
 
 #### Shortest Paths
@@ -851,7 +851,7 @@ chain overlaid on the triangulation.
 {% endhighlight %}
 
 <div class="thumbnail">
-    <img src="/images/chapter6_files/chapter6_127_0.png" style="width:75%">
+    <img src="/images/chapter6_files/chapter6_127_0.png" style="width:100%">
 </div>
 
 ### Geometric Query Problems
@@ -1109,7 +1109,7 @@ description in terms of vertices, segments and rays.
 {% endhighlight %}
 
 <div class="thumbnail">
-    <img src="/images/chapter6_files/chapter6_155_0.png" style="width:75%">
+    <img src="/images/chapter6_files/chapter6_155_0.png" style="width:100%">
 </div>
 
 
@@ -1159,7 +1159,7 @@ set([192, 199, 204, 139, 140, 77, 144, 18, 280, 92, 287, 34, 164, 165, 295, 106,
 {% endhighlight %}
 
 <div class="thumbnail">
-    <img src="/images/chapter6_files/chapter6_158_1.png" style="width:75%">
+    <img src="/images/chapter6_files/chapter6_158_1.png" style="width:100%">
 </div>
 
 This gives the following diagram, where the small dots represent the locations
@@ -1215,7 +1215,7 @@ triangulation and Voronoi diagrams.
 {% endhighlight %}
 
 <div class="thumbnail">
-    <img src="/images/chapter6_files/chapter6_164_0.png" style="width:75%">
+    <img src="/images/chapter6_files/chapter6_164_0.png" style="width:100%">
 </div>
 
 
@@ -1330,7 +1330,7 @@ Let us test it with a few basic examples:
 {% endhighlight %}
 
 <div class="thumbnail">
-    <img src="/images/chapter6_files/chapter6_172_0.png    " style="width:75%">
+    <img src="/images/chapter6_files/chapter6_172_0.png" style="width:50%">
 </div>
 
 {% highlight python %}
@@ -1342,7 +1342,7 @@ Let us test it with a few basic examples:
 {% endhighlight %}
 
 <div class="thumbnail">
-    <img src="/images/chapter6_files/chapter6_173_0.png" style="width:75%">
+    <img src="/images/chapter6_files/chapter6_173_0.png" style="width:50%">
 </div>
 
 Higher degree curves are computationally expensive to evaluate.  When complex
@@ -1366,7 +1366,7 @@ one.  Let us illustrate this with an example.
 {% endhighlight %}
 
 <div class="thumbnail">
-    <img src="/images/chapter6_files/chapter6_175_0.png" style="width:75%">
+    <img src="/images/chapter6_files/chapter6_175_0.png" style="width:50%">
 </div>
 
 A clear advantage of representing curves as Bézier splines arises when we need
