@@ -86,7 +86,7 @@ But success of this enterprise starts, obviously, by collecting enough business 
 
 <div class="row">
   <div class="col-lg-2">
-   <img src="https://farm8.staticflickr.com/7395/16271857590_70192a91af_s_d.jpg" width="100%" style="border:1px solid black;">
+   <div class="thumbnail"><img src="https://farm8.staticflickr.com/7395/16271857590_70192a91af_s_d.jpg"></div>
   </div>
   <div class="col-lg-2">
    <img src="https://farm8.staticflickr.com/7398/16458349532_db4b1723bc_s_d.jpg" width="100%" style="border:1px solid black;">
@@ -124,6 +124,8 @@ But success of this enterprise starts, obviously, by collecting enough business 
    <img src="https://farm8.staticflickr.com/7357/16273020989_b6fce27a97_s_d.jpg" width="100%" style="border:1px solid black;">
   </div>
 </div>
+
+
 
 #### Special Thanks
 
