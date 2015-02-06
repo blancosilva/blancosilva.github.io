@@ -89,39 +89,39 @@ But success of this enterprise starts, obviously, by collecting enough business 
    <div class="thumbnail"><img src="https://farm8.staticflickr.com/7395/16271857590_70192a91af_s_d.jpg"></div>
   </div>
   <div class="col-lg-2">
-   <img src="https://farm8.staticflickr.com/7398/16458349532_db4b1723bc_s_d.jpg" width="100%" style="border:1px solid black;">
+   <div class="thumbnail"><img src="https://farm8.staticflickr.com/7398/16458349532_db4b1723bc_s_d.jpg"></div>
   </div>
   <div class="col-lg-2">
-   <img src="https://farm8.staticflickr.com/7294/16457552371_1784d856f2_s_d.jpg" width="100%" style="border:1px solid black;">
+   <div class="thumbnail"><img src="https://farm8.staticflickr.com/7294/16457552371_1784d856f2_s_d.jpg"></div>
   </div>
   <div class="col-lg-2">
-   <img src="https://farm8.staticflickr.com/7290/16458349572_39ecb99a07_s_d.jpg" width="100%" style="border:1px solid black;">
+   <div class="thumbnail"><img src="https://farm8.staticflickr.com/7290/16458349572_39ecb99a07_s_d.jpg"></div>
   </div>
   <div class="col-lg-2">
-   <img src="https://farm9.staticflickr.com/8572/16271857730_db42f2149d_s_d.jpg" width="100%" style="border:1px solid black;">
+   <div class="thumbnail"><img src="https://farm9.staticflickr.com/8572/16271857730_db42f2149d_s_d.jpg"></div>
   </div>
   <div class="col-lg-2">
-   <img src="https://farm8.staticflickr.com/7343/15839216753_0027cb7a90_s_d.jpg" width="100%" style="border:1px solid black;">
+   <div class="thumbnail"><img src="https://farm8.staticflickr.com/7343/15839216753_0027cb7a90_s_d.jpg"></div>
   </div>
 </div>
 <div class="row">
   <div class="col-lg-2">
-   <img src="https://farm9.staticflickr.com/8568/16457552531_379b982fa0_s_d.jpg" width="100%" style="border:1px solid black;">
+   <div class="thumbnail"><img src="https://farm9.staticflickr.com/8568/16457552531_379b982fa0_s_d.jpg"></div>
   </div>
   <div class="col-lg-2">
-   <img src="https://farm8.staticflickr.com/7310/16458323122_c1418cd650_s_d.jpg" width="100%" style="border:1px solid black;">
+   <div class="thumbnail"><img src="https://farm8.staticflickr.com/7310/16458323122_c1418cd650_s_d.jpg"></div>
   </div>
   <div class="col-lg-2">
-   <img src="https://farm8.staticflickr.com/7325/15836743114_f4cc10d6ef_s_d.jpg" width="100%" style="border:1px solid black;">
+   <div class="thumbnail"><img src="https://farm8.staticflickr.com/7325/15836743114_f4cc10d6ef_s_d.jpg"></div>
   </div>
   <div class="col-lg-2">
-   <img src="https://farm8.staticflickr.com/7282/15836743134_16249fe1b6_s_d.jpg" width="100%" style="border:1px solid black;">
+   <div class="thumbnail"><img src="https://farm8.staticflickr.com/7282/15836743134_16249fe1b6_s_d.jpg"></div>
   </div>
   <div class="col-lg-2">
-   <img src="https://farm8.staticflickr.com/7446/16273021009_2f210d5b4f_s_d.jpg" width="100%" style="border:1px solid black;">
+   <div class="thumbnail"><img src="https://farm8.staticflickr.com/7446/16273021009_2f210d5b4f_s_d.jpg"></div>
   </div>
   <div class="col-lg-2">
-   <img src="https://farm8.staticflickr.com/7357/16273020989_b6fce27a97_s_d.jpg" width="100%" style="border:1px solid black;">
+   <div class="thumbnail"><img src="https://farm8.staticflickr.com/7357/16273020989_b6fce27a97_s_d.jpg"></div>
   </div>
 </div>
 
