@@ -420,41 +420,41 @@ def read_poly(file_name):
     No regional attributes or area constraints are parsed.
     """
 
-output = {'vertices': None, 'holes': None, 'segments': None}
-
-# open file and store lines in a list
-file = open(file_name, 'r')
-lines = file.readlines()
-file.close()
-lines = [x.strip('\n').split() for x in lines]
-
-# Store vertices
-vertices= []
-N_vertices, dimension, attr, bdry_markers = [int(x) for x in lines[0]]
-# We assume attr = bdrt_markers = 0
-for k in range(N_vertices):
-    label, x, y = [items for items in lines[k+1]]
-    vertices.append([float(x), float(y)])
-output['vertices']=array(vertices)
-
-# Store segments
-segments = []
-N_segments, bdry_markers = [int(x) for x in lines[N_vertices+1]]
-for k in range(N_segments):
-    label, pointer_1, pointer_2 = [items for items in lines[N_vertices+k+2]]
-    segments.append([int(pointer_1)-1, int(pointer_2)-1])
-output['segments'] = array(segments)
-
-# Store holes
-N_holes = int(lines[N_segments+N_vertices+2][0])
-holes = []
-for k in range(N_holes):
-    label, x, y = [items for items in lines[N_segments + N_vertices + 3 + k]]
-    holes.append([float(x), float(y)])
-
-output['holes'] = array(holes)
-
-return output
+    output = {'vertices': None, 'holes': None, 'segments': None}
+    
+    # open file and store lines in a list
+    file = open(file_name, 'r')
+    lines = file.readlines()
+    file.close()
+    lines = [x.strip('\n').split() for x in lines]
+    
+    # Store vertices
+    vertices= []
+    N_vertices, dimension, attr, bdry_markers = [int(x) for x in lines[0]]
+    # We assume attr = bdrt_markers = 0
+    for k in range(N_vertices):
+        label, x, y = [items for items in lines[k+1]]
+        vertices.append([float(x), float(y)])
+    output['vertices']=array(vertices)
+    
+    # Store segments
+    segments = []
+    N_segments, bdry_markers = [int(x) for x in lines[N_vertices+1]]
+    for k in range(N_segments):
+        label, pointer_1, pointer_2 = [items for items in lines[N_vertices+k+2]]
+        segments.append([int(pointer_1)-1, int(pointer_2)-1])
+    output['segments'] = array(segments)
+    
+    # Store holes
+    N_holes = int(lines[N_segments+N_vertices+2][0])
+    holes = []
+    for k in range(N_holes):
+        label, x, y = [items for items in lines[N_segments + N_vertices + 3 + k]]
+        holes.append([float(x), float(y)])
+    
+    output['holes'] = array(holes)
+    
+    return output
 
 {% endhighlight %}
 
@@ -1266,9 +1266,9 @@ and plot plane Bézier curves.
 
 > For information about the class `Path` and its usage within the `matplotlib`
 libraries, refer to the official documentation at [matplotlib.org/api/path_api.h
-tml#matplotlib.path.Path](matplotlib.org/api/path_api.html#matplotlib.path.Path)
+tml#matplotlib.path.Path](http://matplotlib.org/api/path_api.html#matplotlib.path.Path)
 , as well as the very instructive tutorial at [matplotlib.org/users/path_tutoria
-l.html](matplotlib.org/users/path_tutorial.html).  In this section, we focus
+l.html](http://matplotlib.org/users/path_tutorial.html).  In this section, we focus
 solely on the necessary material to deal with Bézier curves.
 
 Before we proceed, we need some basic code to represent and visualize Bézier
