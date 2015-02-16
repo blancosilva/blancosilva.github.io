@@ -170,12 +170,12 @@ But success of this enterprise starts, obviously, by collecting enough business 
 			<li class="list-group-item">Shae Haskins</li>
 			<li class="list-group-item">Holly Hayes</li>
 			<li class="list-group-item">Chris Horn</li>
+			<li class="list-group-item">John T. Hyatt Jr. <span class="badge">300</span></li>
 		</ul>
 	</div>
 
 	<div class="col-lg-6">
 		<ul class="list-group">
-			<li class="list-group-item">John T. Hyatt Jr. <span class="badge">300</span></li>
 			<li class="list-group-item">Grant N. Jackson</li>
 			<li class="list-group-item">Gayle D. Johnson <span class="badge">250</span></li>
 			<li class="list-group-item">Carolyn S. Jones</li>
@@ -206,6 +206,7 @@ But success of this enterprise starts, obviously, by collecting enough business 
 			<li class="list-group-item">South Carolina DAODAS</li>
 			<li class="list-group-item">Swansea High Freshman Academy</li>
 			<li class="list-group-item">Mark E. Tompkins <span class="badge">100</span></li>
+			<li class="list-group-item">Tufts Print & Copy Center <span class="badge">1000</span></li>
 			<li class="list-group-item">UofSC Aiken <span class="badge">675</span></li>
 			<li class="list-group-item">UofSC College of Arts and Science <span class="badge">500</span></li>
 			<li class="list-group-item">UofSC ISS <span class="badge">985</span></li>
