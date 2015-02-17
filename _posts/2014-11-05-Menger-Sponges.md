@@ -187,6 +187,7 @@ But success of this enterprise starts, obviously, by collecting enough business 
 			<li class="list-group-item">Sarah Livingston</li>
 			<li class="list-group-item">Lauren E. Lowe</li>
 			<li class="list-group-item">Juan C. Luvene</li>
+			<li class="list-group-item">Chris Maw <span class="badge">800</span></li>
 			<li class="list-group-item">Sherry Maw <span class="badge">200</span></li>
 			<li class="list-group-item">Lisa Martin-Stuart <span class="badge">250</span></li>
 			<li class="list-group-item">Matt McGrievy</li>
