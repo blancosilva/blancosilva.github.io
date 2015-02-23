@@ -171,12 +171,12 @@ But success of this enterprise starts, obviously, by collecting enough business 
 			<li class="list-group-item">Holly Hayes</li>
 			<li class="list-group-item">Chris Horn</li>
 			<li class="list-group-item">John T. Hyatt Jr. <span class="badge">300</span></li>
+			<li class="list-group-item">Grant N. Jackson</li>
 		</ul>
 	</div>
 
 	<div class="col-lg-6">
 		<ul class="list-group">
-			<li class="list-group-item">Grant N. Jackson</li>
 			<li class="list-group-item">Gayle D. Johnson <span class="badge">250</span></li>
 			<li class="list-group-item">Carolyn S. Jones</li>
 			<li class="list-group-item">Kelly Kavanaugh</li>
@@ -201,6 +201,7 @@ But success of this enterprise starts, obviously, by collecting enough business 
 			<li class="list-group-item">Lauren Reince <span class="badge">200</span></li>
 			<li class="list-group-item">Anton Schep</li>
 			<li class="list-group-item">Lori Schwartz <span class="badge">130</span></li>
+			<li class="list-group-item">Michael A. Seaman <span class="badge">500</span></li>
 			<li class="list-group-item">Eric L. Sevigny <span class="badge">100</span></li>
 			<li class="list-group-item">Cheri Shinn</li>
 			<li class="list-group-item">Lillian Upton Smith</li>
@@ -210,6 +211,7 @@ But success of this enterprise starts, obviously, by collecting enough business 
 			<li class="list-group-item">Tufts Print & Copy Center <span class="badge">1000</span></li>
 			<li class="list-group-item">UofSC Aiken <span class="badge">675</span></li>
 			<li class="list-group-item">UofSC College of Arts and Science <span class="badge">500</span></li>
+			<li class="list-group-item">UofSC College of Education</li>
 			<li class="list-group-item">UofSC ISS <span class="badge">985</span></li>
 			<li class="list-group-item">UofSC Office of the Provost</li>
 			<li class="list-group-item">UofSC School of Medicine <span class="badge">275</li>
