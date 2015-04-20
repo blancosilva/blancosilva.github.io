@@ -11,9 +11,11 @@ crumbs: true
 ### Learning SciPy for Numerical and Scientific Computing
 
 <div class="row">
-	<div class="col-sm-6">
-		<a href="http://www.amazon.com/gp/product/1782161627/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=1782161627&linkCode=as2&tag=blancosilva-20&linkId=UBT4TZNXICJ2L47C"><img style="width:50%;" src="http://ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=1782161627&Format=_SL250_&ID=AsinImage&MarketPlace=US&ServiceVersion=20070822&WS=1&tag=blancosilva-20" ></a><img src="http://ir-na.amazon-adsystem.com/e/ir?t=blancosilva-20&l=as2&o=1&a=1782161627" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" /> 
-		<img src="https://farm6.staticflickr.com/5446/16590609364_f9796c41f8_o_d.png" style="width:50%">
+	<div class="col-sm-3">
+		<a href="http://www.amazon.com/gp/product/1782161627/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=1782161627&linkCode=as2&tag=blancosilva-20&linkId=UBT4TZNXICJ2L47C"><img style="width:100%;" src="http://ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=1782161627&Format=_SL250_&ID=AsinImage&MarketPlace=US&ServiceVersion=20070822&WS=1&tag=blancosilva-20" ></a><img src="http://ir-na.amazon-adsystem.com/e/ir?t=blancosilva-20&l=as2&o=1&a=1782161627" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" /> 
+	</div>
+	<div class="col-sm-3">
+		<img src="https://farm6.staticflickr.com/5446/16590609364_f9796c41f8_o_d.png" style="width:100%">
 	</div>
 	<div class="col-sm-6" style="text-align:justify;">
 		Early 2013 I enjoyed the rare pleasure of having a child (my first!) and publishing a book almost at the same time.  Since this post belongs in my professional blog, I will exclusively comment on the latter: <a href="http://www.amazon.com/gp/product/1782161627/ref=as_li_qf_sp_asin_tl?ie=UTF8&amp;camp=1789&amp;creative=9325&amp;creativeASIN=1782161627&amp;linkCode=as2&amp;tag=blancosilva-20">Learning SciPy for Numerical and Scientific Computing</a><img src="http://www.assoc-amazon.com/e/ir?t=blancosilva-20&amp;l=as2&amp;o=1&amp;a=1782161627" width="1" height="1" border="0" alt="" style="border:none !important;margin:0!important;" />, published by <a href="http://www.packtpub.com/learning-scipy-for-numerical-and-scientific-computing/book">Packt</a> in a series of technical books focusing on Open Source software.
