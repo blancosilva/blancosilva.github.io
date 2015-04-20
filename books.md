@@ -11,18 +11,21 @@ crumbs: true
 ### Learning SciPy for Numerical and Scientific Computing
 
 <div class="row">
+	<div class="col-sm-2">
+	</div>
 	<div class="col-sm-4">
 		<a href="http://www.amazon.com/gp/product/1782161627/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=1782161627&linkCode=as2&tag=blancosilva-20&linkId=UBT4TZNXICJ2L47C"><img style="width:100%;" src="http://ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=1782161627&Format=_SL250_&ID=AsinImage&MarketPlace=US&ServiceVersion=20070822&WS=1&tag=blancosilva-20" ></a><img src="http://ir-na.amazon-adsystem.com/e/ir?t=blancosilva-20&l=as2&o=1&a=1782161627" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" /> 
 	</div>
 	<div class="col-sm-4">
 		<img src="https://farm6.staticflickr.com/5446/16590609364_f9796c41f8_o_d.png" style="width:100%">
 	</div>
-	<div class="col-sm-4" style="text-align:justify;">
-		Early 2013 I enjoyed the rare pleasure of having a child (my first!) and publishing a book almost at the same time.  Since this post belongs in my professional blog, I will exclusively comment on the latter: <a href="http://www.amazon.com/gp/product/1782161627/ref=as_li_qf_sp_asin_tl?ie=UTF8&amp;camp=1789&amp;creative=9325&amp;creativeASIN=1782161627&amp;linkCode=as2&amp;tag=blancosilva-20">Learning SciPy for Numerical and Scientific Computing</a><img src="http://www.assoc-amazon.com/e/ir?t=blancosilva-20&amp;l=as2&amp;o=1&amp;a=1782161627" width="1" height="1" border="0" alt="" style="border:none !important;margin:0!important;" />, published by <a href="http://www.packtpub.com/learning-scipy-for-numerical-and-scientific-computing/book">Packt</a> in a series of technical books focusing on Open Source software.
-
-		Keep in mind that the book is for a very specialized audience: not only do you need a basic knowledge of Python, but also a somewhat advanced command of mathematics/physics, and an interest in engineering or scientific applications.  This is an excerpt of the detailed description of the monograph, as it reads in the publisher's page:
+	<div class="col-sm-2">
 	</div>
 </div>
+
+Early 2013 I enjoyed the rare pleasure of having a child (my first!) and publishing a book almost at the same time.  Since this post belongs in my professional blog, I will exclusively comment on the latter: <a href="http://www.amazon.com/gp/product/1782161627/ref=as_li_qf_sp_asin_tl?ie=UTF8&amp;camp=1789&amp;creative=9325&amp;creativeASIN=1782161627&amp;linkCode=as2&amp;tag=blancosilva-20">Learning SciPy for Numerical and Scientific Computing</a><img src="http://www.assoc-amazon.com/e/ir?t=blancosilva-20&amp;l=as2&amp;o=1&amp;a=1782161627" width="1" height="1" border="0" alt="" style="border:none !important;margin:0!important;" />, published by <a href="http://www.packtpub.com/learning-scipy-for-numerical-and-scientific-computing/book">Packt</a> in a series of technical books focusing on Open Source software.
+
+Keep in mind that the book is for a very specialized audience: not only do you need a basic knowledge of Python, but also a somewhat advanced command of mathematics/physics, and an interest in engineering or scientific applications.  This is an excerpt of the detailed description of the monograph, as it reads in the publisher's page:
 
 >It is essential to incorporate workflow data and code from various sources in order to create fast and effective algorithms to solve complex problems in science and engineering. Data is coming at us faster, dirtier, and at an ever increasing rate. There is no need to employ difficult-to-maintain code, or expensive mathematical engines to solve your numerical computations anymore.  SciPy guarantees fast, accurate, and easy-to-code solutions to your numerical and scientific computing applications.
 >
