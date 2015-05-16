@@ -1,0 +1,122 @@
+My students progression Fall 14 to Spring 15
+============================================
+
+I taught 126 students in four sections of MATH141 in the Fall'14 semester.  This is a distribution by grades, and the grades they obtained in their following math course during Spring'15:
+
+A. Mean:  3.71875  (B+)
+================================================================================
+                          Name FINAL_GRADE COURSE_ID             INSTRUCTOR_NAME
+189                 Wu, Hui-Ju           A   MATH142          Atim, Alexandru G.
+464         Willis, Matthew M.           A   MATH170        Schnibben, Thomas A.
+2549       Loe, Christopher A.           A   MATH142                Liu, Xinfeng
+2577         Adams, Melanie J.           A   MATH142  Blanco-Silva, Francisco J.
+2603     Hammond, Elizabeth C.           A   MATH142  Blanco-Silva, Francisco J.
+2621    Reisinger, Rachelle A.          B+   MATH142  Blanco-Silva, Francisco J.
+2643         Banks, Abigail E.           A   MATH142  Blanco-Silva, Francisco J.
+2679  Leonard-Albert, Miles A.           A   MATH142  Blanco-Silva, Francisco J.
+2795      Lowell, Alexandra G.           A   MATH142          Baber, Courtney L.
+3106         Griffin, Brian P.           B   MATH142                Yee, Sean P.
+3519    Harrington, Zachary G.           A   MATH172             Miller, Matthew
+4885         Alkindi, Majid A.           B   MATH142           Sanders, Ronda M.
+4893        Connelly, Devin P.           A   MATH142           Sanders, Ronda M.
+4911         Kreczmer, Ryan S.           C   MATH142           Sanders, Ronda M.
+4919           Myles, Tyler C.           A   MATH142           Sanders, Ronda M.
+5609       Mullins, Griffen E.           A   MATH142          McNulty, George F.
+5611          Perry, Hannah E.           A   MATH142          McNulty, George F.
+
+B+. Mean:  2.6153846153846154 (C+)
+==============================================================================
+                        Name FINAL_GRADE COURSE_ID             INSTRUCTOR_NAME
+89      Breeden, Jennifer L.           A   MATH142          Atim, Alexandru G.
+2316         Brown, Kevin A.           F   MATH141           Cooper, Joshua N.
+2613     McGarry, Breanna R.           B   MATH142  Blanco-Silva, Francisco J.
+2775        Cooney, Megan E.           D   MATH142          Baber, Courtney L.
+2777      De Greef, Alois F.           B   MATH142          Baber, Courtney L.
+2832       Alfarsi, Faris N.          B+   MATH142           Sanders, Ronda M.
+2834     Bertolini, Pedro A.           B   MATH142           Sanders, Ronda M.
+2872         Ripley, Anna M.          C+   MATH142           Sanders, Ronda M.
+2913   Faircloth, Bradley S.           C   MATH142         Androulakis, George
+2965         Brown, Kevin A.           B   MATH142         Androulakis, George
+3038     Edenfield, Dylan E.           B   MATH142                Yee, Sean P.
+4881        AlAsmi, Hatim H.          C+   MATH142           Sanders, Ronda M.
+4883  AlHasani, Abdulaziz H.          B+   MATH142           Sanders, Ronda M.
+
+B. Mean:  2.4827586206896552 (C)
+==============================================================================
+                        Name FINAL_GRADE COURSE_ID             INSTRUCTOR_NAME
+141            Bee, Kevin P.          C+   MATH142          Atim, Alexandru G.
+171        Moore, Timothy J.           B   MATH142          Atim, Alexandru G.
+2453  Daigle, Christopher A.           C   MATH142                Liu, Xinfeng
+2685            Mcguire, Ian          B+   MATH142  Blanco-Silva, Francisco J.
+2697       Stoffel, Peter L.           C   MATH142  Blanco-Silva, Francisco J.
+2757     Weismiller, Eric S.          C+   MATH142          Baber, Courtney L.
+2797      McCarty, Callie E.           B   MATH142          Baber, Courtney L.
+2799        Moore, Dustin A.           C   MATH142          Baber, Courtney L.
+2823     Watters, Madyson P.          D+   MATH142          Baber, Courtney L.
+3028       Catoe, Russell D.           B   MATH142                Yee, Sean P.
+3034       Crawford, Ryan C.          B+   MATH142                Yee, Sean P.
+3096          Crain, Seth A.          D+   MATH142                Yee, Sean P.
+3130       Roache, Austin C.           D   MATH142                Yee, Sean P.
+3523          Korin, John Z.           A   MATH172             Miller, Matthew
+4929    Tolbert, Kristoff J.           B   MATH142           Sanders, Ronda M.
+
+C+. Mean:  2.074074074074074 (C)
+=======================================================================
+                       Name FINAL_GRADE COURSE_ID       INSTRUCTOR_NAME
+131       Sweeney, Brian D.          B+   MATH142    Atim, Alexandru G.
+153     Fravor, Geoffrey R.           C   MATH142    Atim, Alexandru G.
+448    Morton, Mackenzie R.           A   MATH170  Schnibben, Thomas A.
+2429      Rueve, Phillip J.           C   MATH142      Lane, Michael A.
+2713    Cardell, Stephen M.           D   MATH142    Baber, Courtney L.
+2781     Ditmore, Robert S.           F   MATH142    Baber, Courtney L.
+2882      Thomas, Katlin E.           C   MATH142     Sanders, Ronda M.
+2941    Struthers, Logan A.           C   MATH142   Androulakis, George
+2955  Al Saadi, Arwa Ali H.           F   MATH142   Androulakis, George
+2983       Hubert, Corey J.           C   MATH142   Androulakis, George
+2995      Moraney, Robyn A.           A   MATH142   Androulakis, George
+3001   Pellot, Christian A.          C+   MATH142   Androulakis, George
+3114      Kitrilakis, Yanni           C   MATH142          Yee, Sean P.
+3163  Bonarrigo, William J.           B   MATH142      Short, Taylor M.
+
+C. Mean:  1.2173913043478262 (D)
+============================================================================
+                      Name FINAL_GRADE COURSE_ID             INSTRUCTOR_NAME
+2657     Carlton, Emily R.          C+   MATH142  Blanco-Silva, Francisco J.
+2661      Faust, Robert J.           F   MATH142  Blanco-Silva, Francisco J.
+2663     Flynn, Jameson J.           F   MATH142  Blanco-Silva, Francisco J.
+2715    Deeley, Patrick M.          D+   MATH142          Baber, Courtney L.
+2811     Sellars, Ramar M.           F   MATH142          Baber, Courtney L.
+2903     Crumpler, John R.           W   MATH142         Androulakis, George
+2931       Patel, Dylan D.           C   MATH142         Androulakis, George
+3098   Dirrane, Kersten V.          D+   MATH142                Yee, Sean P.
+3203       Smith, Brian P.          D+   MATH142            Short, Taylor M.
+4891  Bullard, Ashleigh L.           F   MATH142           Sanders, Ronda M.
+4899            Davis, Ian           B   MATH142           Sanders, Ronda M.
+5574     Simmons, Caleb J.           A   MATH174             Haynes, Ivan W.
+
+D+
+===========================================================================
+                     Name FINAL_GRADE COURSE_ID             INSTRUCTOR_NAME
+2074  O'Brien, Timothy J.           B   MATH141  Blanco-Silva, Francisco J.
+2216     Abell, Camden J.          C+   MATH141        Boehnlein, Edward L.
+2395    Dixon, Patrick D.           D   MATH142            Lane, Michael A.
+3185      Jiao, Victor A.           D   MATH142            Short, Taylor M.
+
+D
+==============================================================================
+                        Name FINAL_GRADE COURSE_ID             INSTRUCTOR_NAME
+1707        Edgar, Sedona K.           B   MATH122            Owens, Sandra S.
+1996          Mabie, John F.           F   MATH141  Blanco-Silva, Francisco J.
+2224          Davis, Ryan A.           B   MATH141        Boehnlein, Edward L.
+2368  Whitfill, Christian R.           D   MATH141           Cooper, Joshua N.
+2491     Saitz, Elizabeth N.           W   MATH142                Liu, Xinfeng
+
+F
+==============================================================================
+                        Name FINAL_GRADE COURSE_ID             INSTRUCTOR_NAME
+550      Armstrong, Emily J.           B   MATH111               Bai, Shuliang
+1690  Kinsey, Christopher R.           C   MATH122             Hipp, Larita B.
+1856       Cooper, Nathan M.           F   MATH141          Boguslavsky, Elena
+2064    Johnston, Donovan C.          C+   MATH141  Blanco-Silva, Francisco J.
+2260     Darstein, Edward R.           F   MATH141           Cooper, Joshua N.
+2280      Mazur, Mitchell R.           F   MATH141           Cooper, Joshua N.

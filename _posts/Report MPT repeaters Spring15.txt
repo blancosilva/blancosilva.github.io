@@ -1,0 +1,101 @@
+Report MPT repeaters Spring'15
+==============================
+
+665 students took the algebra version of the MPT between September 2014 and January 31st, 2015.  Of those, 96 had to retake at least once.
+
+This is a distribution of their grades in their corresponding MATH classes, in the Spring'15 semester:
+
+A:  5
+B+: 2
+B:  7
+C:  4
+D:  1
+F:  3
+W:  3
+FN: 1
+
+                     Name COURSE_ID FINAL_GRADE
+66      Nichols, Sarah R.   MATH122          B+
+495  Nicholson, Katlyn L.   MATH111          B+
+                     Name COURSE_ID FINAL_GRADE
+338   Walters, Madison E.   MATH170           B
+499       Platt, Lakyn C.   MATH111           B
+936   Burkhart, Robert E.   MATH122           B
+999     Spinelli, Leah K.   MATH122           B
+1140   Cross, Ashleigh N.   MATH122           B
+3564    Davis, Charlee M.   MATH221           B
+3589  Szalay, Brittney M.   MATH221           B
+                    Name COURSE_ID FINAL_GRADE
+492     McLeod, Sarah A.   MATH111           F
+541      Sechrest, Jesse   MATH111           F
+680  Clemons, Cameron T.  MATH111I           F
+               Name COURSE_ID FINAL_GRADE
+514  Cody, Kayla E.   MATH111           D
+                    Name COURSE_ID FINAL_GRADE
+535   Nichols, Rachel L.   MATH111           C
+633     Bond, Caitlin N.   MATH111           C
+654    Miller, Robert J.   MATH111           C
+1388   Simpkins, Taja L.   MATH122           C
+                      Name COURSE_ID FINAL_GRADE
+602   Chamberlin, Kelly E.   MATH111           A
+1647   McManis, Matthew R.   MATH122           A
+1897      Sutula, Megan N.   MATH141           A
+5123    Asselin, Alexandre   MATH122           A
+5154      Green, Connor S.   MATH122           A
+                      Name COURSE_ID FINAL_GRADE
+833         Perez, Luvy R.   MATH115           W
+1661    Salley, William B.   MATH122           W
+5284  Behringer, Joshua D.  MATH111I           W
+                     Name COURSE_ID FINAL_GRADE
+5207  Wiggins, Tiffany A.   MATH122          FN
+
+Among those 96 students, only one obtained 14 or more points in the first retake of the MPT (Michael Cason).  Surprisingly, he did not take any Math class in Spring.
+
+Among those 96 students, 28 obtained between 8 and 13 points in their first retake of the MPT.  Five of them tried at least a second retake. At the end only 7 of those 28 students ended up enrolling in a MATH class in Spring.  These are their scores:
+
+                     Name COURSE_ID FINAL_GRADE
+492      McLeod, Sarah A.   MATH111           F
+936   Burkhart, Robert E.   MATH122           B
+1387    Simpkins, Taja L.   MATH122           C
+1647  McManis, Matthew R.   MATH122           A
+3589  Szalay, Brittney M.   MATH221           B
+5123   Asselin, Alexandre   MATH122           A
+5207  Wiggins, Tiffany A.   MATH122          FN
+
+
+
+
+
+310 students took the preCalculus version of the MPT in the same time frame, and 26 had to retake it.
+
+                       Name COURSE_ID FINAL_GRADE
+731          Abbas, Nouf Z.   MATH115           A
+777         DeMalo, Anna G.   MATH115           A
+833          Perez, Luvy R.   MATH115           W
+1127   Broadway, Kaitlyn E.   MATH122           B
+1209    Alanboori, Malik A.   MATH122           W
+1762    Polly, Nathaniel J.   MATH141           A
+1763    Polly, Nathaniel J.   MATH141           A
+1866      Gonzales, Jack J.   MATH141          B+
+1867      Gonzales, Jack J.   MATH141          B+
+1946  Mecimore, Samantha W.   MATH141           F
+1947  Mecimore, Samantha W.   MATH141           F
+2038      Cardenas, Luis E.   MATH141           B
+2039      Cardenas, Luis E.   MATH141           B
+2106     Garner, Terrill R.   MATH141          D+
+2107     Garner, Terrill R.   MATH141          D+
+2344    Johnson, Donnell S.   MATH141           W
+2345    Johnson, Donnell S.   MATH141           W
+4856      Balharith, Ali A.   MATH111           W
+5099      Freier, Alyssa M.   MATH122           A
+
+
+It is significant the grades distribution for this population:
+
+A: 4
+B+: 1
+B: 2
+D+: 1
+W: 4
+F: 1
+
