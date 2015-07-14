@@ -13,7 +13,7 @@ image:
     <div class="col-lg-8">
         <div class="list-group">
             <a href="https://www.packtpub.com/big-data-and-business-intelligence/mastering-scipy" class="list-group-item">
-                This post is a simplified version of the accompanying notebook to chapter 6 of my upcoming book <em>Mastering SciPy</em>.
+                This post is a simplified version of the accompanying notebook to chapter 6 of my upcoming book <em>Mastering SciPy</em>. Click anywhere on this box for more information.
             </a>
         </div>
     </div>
