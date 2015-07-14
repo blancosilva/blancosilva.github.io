@@ -7,6 +7,20 @@ image:
   teaser: http://blancosilva.github.io/images/chapter6_files/chapter6_127_0.png
 ---
 
+<div class="row">
+    <div class="col-lg-2">
+    </div>
+    <div class="col-lg-8">
+        <div class="list-group">
+            <a href="https://www.packtpub.com/big-data-and-business-intelligence/mastering-scipy" class="list-group-item">
+                This post is a simplified version of the accompanying notebook to chapter 6 of my upcoming book <em>Mastering SciPy</em>.
+            </a>
+        </div>
+    </div>
+    <div class="col-lg-2">
+    </div>
+</div>
+
 *Computational Geometry* is a field of mathematics that seeks the development of
 efficient algorithms to solve problems described in terms of basic geometrical
 objects.  We differentiate between *Combinatorial Computational Geometry* and
