@@ -5,7 +5,7 @@ date:   2014-10-30 00:10:00
 comments: true
 category: post
 image:
-  teaser: "https://raw.githubusercontent.com/blancosilva/Mastering-Scipy/master/4749_01_01.png" 
+  teaser: "https://raw.githubusercontent.com/blancosilva/Mastering-Scipy/master/chapter1/4749_01_01.png" 
 ---
 The following diagram shows a graph that represents a series of web pages (numbered from 1 to 8).
 
