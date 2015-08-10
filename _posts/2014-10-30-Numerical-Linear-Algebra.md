@@ -9,7 +9,7 @@ image:
 ---
 The following diagram shows a graph that represents a series of web pages (numbered from 1 to 8).
 
-<p style="text-align:center;"><img src="https://raw.githubusercontent.com/blancosilva/Mastering-Scipy/master/4749_01_01.png" style="text-align:center; width:50%"></p>
+<p style="text-align:center;"><img src="https://raw.githubusercontent.com/blancosilva/Mastering-Scipy/master/chapter1/4749_01_01.png" style="text-align:center; width:50%"></p>
 
 An arrow from a node to another indicates the existence of a link from the web page represented by the sending node, to the page represented by the receiving node. For example, the arrow from node 2 to node 1 indicates that there is a link in web page 2 pointing to web page 1. Notice how web page 4 has two outer links (to pages 2 and 8), and there are three pages that link to web page 4 (pages 2, 6 and 7). The pages represented by nodes 2, 4 and 8 seem to be the most *popular* at first sight.
 
