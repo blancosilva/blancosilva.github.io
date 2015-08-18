@@ -11,15 +11,15 @@ crumbs: true
 ### Learning SciPy for Numerical and Scientific Computing
 
 <div class="row">
-	<div class="col-sm-2">
+	<div class="col-sm-2 col-lg-2">
 	</div>
-	<div class="col-sm-4">
+	<div class="col-sm-4 col-lg-2">
 		<a href="http://www.amazon.com/gp/product/1782161627/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=1782161627&linkCode=as2&tag=blancosilva-20&linkId=UBT4TZNXICJ2L47C"><img style="width:100%;" src="http://ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=1782161627&Format=_SL250_&ID=AsinImage&MarketPlace=US&ServiceVersion=20070822&WS=1&tag=blancosilva-20" ></a><img src="http://ir-na.amazon-adsystem.com/e/ir?t=blancosilva-20&l=as2&o=1&a=1782161627" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" /> 
 	</div>
 	<div class="col-sm-4">
 		<a href="http://www.amazon.com/gp/product/1783987707/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=1783987707&linkCode=as2&tag=blancosilva-20&linkId=WLN4OCCF5SUXDKX4"><img style="width:100%" src="http://ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=1783987707&Format=_SL250_&ID=AsinImage&MarketPlace=US&ServiceVersion=20070822&WS=1&tag=blancosilva-20" ></a><img src="http://ir-na.amazon-adsystem.com/e/ir?t=blancosilva-20&l=as2&o=1&a=1783987707" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />
 	</div>
-	<div class="col-sm-2">
+	<div class="col-sm-2 col-lg-2">
 	</div>
 </div>
 
@@ -46,10 +46,10 @@ The book is also being sold online in <a href="http://www.amazon.com/gp/product/
 ### Modeling Nanoscale Imaging in Electron Microscopy
 
 <div class="row">
-	<div class="col-sm-3">
+	<div class="col-sm-3 col-lg-3">
 		<a href="http://www.amazon.com/gp/product/146142190X/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=146142190X&linkCode=as2&tag=blancosilva-20&linkId=UQITG3F6LD4HFEQZ"><img style="width:100%" src="http://ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=146142190X&Format=_SL250_&ID=AsinImage&MarketPlace=US&ServiceVersion=20070822&WS=1&tag=blancosilva-20" ></a><img src="http://ir-na.amazon-adsystem.com/e/ir?t=blancosilva-20&l=as2&o=1&a=146142190X" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />
 	</div>
-	<div class="col-sm-9" style="text-align:justify;">Well, ok, it is not <em>my book</em> technically, but I am one of the authors of one of the chapters.  And <strong>no</strong>, as far as I know, I don't get a dime of the sales in concept of copyright or anything else.
+	<div class="col-sm-9 col-lg-9" style="text-align:justify;">Well, ok, it is not <em>my book</em> technically, but I am one of the authors of one of the chapters.  And <strong>no</strong>, as far as I know, I don't get a dime of the sales in concept of copyright or anything else.
 
 		As the title suggests (<a href="http://www.amazon.com/gp/product/146142190X/ref=as_li_tf_tl?ie=UTF8&amp;camp=1789&amp;creative=9325&amp;creativeASIN=146142190X&amp;linkCode=as2&amp;tag=blancosilva-20">Modeling Nanoscale Imaging in Electron Microscopy</a><img src="assets/ir?t=blancosilva-20&amp;l=as2&amp;o=1&amp;a=146142190X" width="1" height="1" border="0" alt="" style="border:none !important;margin:0!important;" />), this book presents some recent advances that have been made using mathematical methods to resolve problems in electron microscopy. With improvements in hardware-based aberration software significantly expanding the nanoscale imaging capabilities of scanning transmission electron microscopes (STEM), these mathematical models can replace some labor intensive procedures used to operate and maintain STEMs. This book, the first in its field since 1998,   covers relevant concepts such as super-resolution techniques (<em>that's my contribution!</em>), special de-noising methods, application of mathematical/statistical learning theory, and compressed sensing.
 
