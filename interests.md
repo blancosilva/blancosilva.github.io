@@ -71,13 +71,13 @@ I keep all lesson plans in `Evernote` and `Dropbox` for future reference, as wel
 from some of the most relevant lessons of some of my classes at UofSC.
 
 <div class="row">
-	<div class="col-lg-4">
+	<div class="col-sm-4 col-lg-4">
 		<img src="https://farm8.staticflickr.com/7570/15666675359_8b58803747_o_d.jpg" style="width:100%;">
 	</div>
-	<div class="col-lg-4">
+	<div class="col-sm-4 col-lg-4">
 		<img src="https://farm8.staticflickr.com/7531/15850804671_abbe11151a_b_d.jpg" style="width:100%;">
 	</div>
-	<div class="col-lg-4">
+	<div class="col-sm-4 col-lg-4">
 		<img src="https://farm8.staticflickr.com/7468/15826983196_2fcfafbf4d_b_d.jpg" style="width:100%;">
 	</div>
 </div>
@@ -85,10 +85,10 @@ from some of the most relevant lessons of some of my classes at UofSC.
 <br />
 
 <div class="row">
-	<div class="col-lg-6">
+	<div class="col-sm-6 col-lg-6">
 		<img src="https://farm8.staticflickr.com/7502/15665395360_42383c6935_b_d.jpg" style="width:100%; border:2px solid black;">
 	</div>
-	<div class="col-lg-6">
+	<div class="col-sm-6 col-lg-6">
 		<img src="https://farm8.staticflickr.com/7470/15850808181_c9691b1b0a_b_d.jpg" style="width:100%; border:1px solid black;">
 	</div>
 </div>
