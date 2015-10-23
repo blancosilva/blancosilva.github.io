@@ -1,6 +1,6 @@
 ---
 layout: post
-title: MA241—Fall 2015 Integration Review
+title: Integration Review
 date: 2015-10-23 
 current: true
 comments: true
