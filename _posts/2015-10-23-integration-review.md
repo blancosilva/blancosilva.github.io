@@ -13,9 +13,9 @@ category: forum
 
 1. <span>\\( \int_0^3 \dfrac{dx}{x-1} \\)</span>
 2. <span>\\( \int_{-\infty}^0 xe^{-x}\, dx \\)</span>
-3. <span>\\( \int_0^3 \dfrac{dx}{x-1} \\)</span>
-4. <span>\\( \int_0^3 \dfrac{dx}{x-1} \\)</span>
-5. <span>\\( \int_0^3 \dfrac{dx}{x-1} \\)</span>
-6. <span>\\( \int_0^3 \dfrac{dx}{x-1} \\)</span>
-7. <span>\\( \int_0^3 \dfrac{dx}{x-1} \\)</span>
-8. <span>\\( \int_0^3 \dfrac{dx}{x-1} \\)</span>
+3. <span>\\( \int \cos x \big( 1 + \sin^2 x \big)\, dx \\)</span>
+4. <span>\\( \int \dfrac{\sin x + \sec x}{\tan x}\, dx \\)</span>
+5. <span>\\( \int_1^3 r^4 \ln r\, dr \\)</span>
+6. <span>\\( \int \dfrac{x-1}{x^2-4x+5}\, dx \\)</span>
+7. <span>\\( \int \sin^3 \theta \cos^5 \theta\, d\theta \\)</span>
+8. <span>\\( \int x \sin^2 x\, dx \\)</span>
