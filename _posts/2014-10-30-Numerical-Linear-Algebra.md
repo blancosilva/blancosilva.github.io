@@ -1,9 +1,9 @@
 ---
-layout: none
+layout: post
 title:  "Numerical Linear Algebra"
 date:   2014-10-30 00:10:00
 comments: true
-category: post
+category: none
 image:
   teaser: "https://raw.githubusercontent.com/blancosilva/Mastering-Scipy/master/chapter1/4749_01_01.png" 
 ---
