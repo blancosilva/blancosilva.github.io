@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: none
 title:  "Numerical Linear Algebra"
 date:   2014-10-30 00:10:00
 comments: true
