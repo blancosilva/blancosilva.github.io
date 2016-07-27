@@ -18,14 +18,14 @@ crumbs: true
 
 		<p>This book goes beyond a mere description of the different built-in functions coded in the libraries from the SciPy stack. It presents you with a solid mathematical and computational background to help you identify the right tools for each problem in scientific computing and visualization. You will gain an insight into the best practices with numerical methods depending on the amount or type of data, properties of the mathematical tools employed, or computer architecture, among other factors.</p>
 
-		<p>The book kicks off with a concise exploration of the basics of numerical linear algebra and graph theory for the treatment of problems that handle large data sets or matrices. In the subsequent chapters, you will delve into the depths of algorithms in symbolic algebra and numerical analysis to address modeling/simulation of various real-world problems with functions (through interpolation, approximation, or creation of systems of differential equations), and extract their representing features (zeros, extrema, integration or differentiation).</p>
-
-		<p>Lastly, you will move on to advanced concepts of data analysis, image/signal processing, and computational geometry.</p>
-
-		<p>It has received excellent reviews in the community.  See e.g. from the publishers' page in <a href="https://www.packtpub.com/big-data-and-business-intelligence/mastering-scipy">PacktPub</a>:</p>
-
 	</div>
 </div>
+
+The book kicks off with a concise exploration of the basics of numerical linear algebra and graph theory for the treatment of problems that handle large data sets or matrices. In the subsequent chapters, you will delve into the depths of algorithms in symbolic algebra and numerical analysis to address modeling/simulation of various real-world problems with functions (through interpolation, approximation, or creation of systems of differential equations), and extract their representing features (zeros, extrema, integration or differentiation).
+
+Lastly, you will move on to advanced concepts of data analysis, image/signal processing, and computational geometry.
+
+It has received excellent reviews in the community.  See e.g. from the publishers' page in <a href="https://www.packtpub.com/big-data-and-business-intelligence/mastering-scipy">PacktPub</a>:
 
 > Of all the "Mastering [..python package name...]" books produced by Packt, I would say this is the most thorough and in depth of any I have read. There are easy-to-understand examples in parts of the book, and in some chapters the mathematical topics covered are more sophisticated scientific computation techniques I haven't seen in other books. If you are looking for a thorough text on Python and scientific computing, this is probably a book you will find helpful.
 
