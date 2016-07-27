@@ -29,6 +29,8 @@ It has received excellent reviews in the community.  See e.g. from the publisher
 
 > Of all the "Mastering [..python package name...]" books produced by Packt, I would say this is the most thorough and in depth of any I have read. There are easy-to-understand examples in parts of the book, and in some chapters the mathematical topics covered are more sophisticated scientific computation techniques I haven't seen in other books. If you are looking for a thorough text on Python and scientific computing, this is probably a book you will find helpful.
 
+There is a sample chapter (<a href="http://www.slideshare.net/PacktPub/mastering-scipy-sample-chapter">Chapter 6. Computational Geometry</a>) hosted in SlideShare to wet your appetite.  Enjoy!
+
 ### Learning SciPy for Numerical and Scientific Computing
 
 <div class="row">
