@@ -1,5 +1,5 @@
 ---
-title: Menger Sponges
+title: Borsuk-Ulam and Fixed Point Theorems
 layout: post
 category: post
 comments: true
