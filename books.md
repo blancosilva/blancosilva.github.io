@@ -11,10 +11,10 @@ crumbs: true
 ### Mastering Scipy
 
 <div class="row">
-	<div class="col-sm-3 col-lg-3">
+	<div class="col-sm-4 col-lg-4">
 		<a href="https://www.amazon.com/gp/product/1783984740/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=1783984740&linkCode=as2&tag=blancosilva-20&linkId=c8c86543cb20b2f40701f081b1d5ffcd"><img border="0" src="//ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&MarketPlace=US&ASIN=1783984740&ServiceVersion=20070822&ID=AsinImage&WS=1&Format=_SL250_&tag=blancosilva-20" width="100%"></a><img src="//ir-na.amazon-adsystem.com/e/ir?t=blancosilva-20&l=am2&o=1&a=1783984740" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />
 	</div>
-	<div class="col-sm-9 col-lg-9" style="text-align:justify;">Another child, another book!  After more than a year working on this project, my new technical book on the <em>scipy</em> stack saw the light in November 2015. <br/>
+	<div class="col-sm-8 col-lg-8" style="text-align:justify;">Another child, another book!  After more than a year working on this project, my new technical book on the <em>scipy</em> stack saw the light in November 2015. <br/>
 
 		<p>This book goes beyond a mere description of the different built-in functions coded in the libraries from the SciPy stack. It presents you with a solid mathematical and computational background to help you identify the right tools for each problem in scientific computing and visualization. You will gain an insight into the best practices with numerical methods depending on the amount or type of data, properties of the mathematical tools employed, or computer architecture, among other factors.</p>
 
