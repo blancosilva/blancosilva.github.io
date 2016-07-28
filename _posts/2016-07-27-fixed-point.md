@@ -20,12 +20,12 @@ But the most useful application of Borsuk-Ulam is without a doubt the Brouwer Fi
 
 > Every continuous function \\( f \colon K \to K \\) from a convex compact subset \\( K \subset \mathbb{R}^d \\) of a Euclidean space to itself has a fixed point.
 
-The proof of Brouwer Fixed Point from Borsuk-Ulam is immediate, and I urge the readers to find it by themselves as a nice exercise.  There are many different proofs of Brouwer Fixed Point without Borsuk-Ulam, the simplest of them all, done by C.A.Rogers as a simplification of a previous proof by J.W. Milnor: it uses the most basic of mathematics, accesible to students with knowledge of elementary integral Calculus.
+The proof of Brouwer Fixed Point from Borsuk-Ulam is immediate, and I urge the readers to find it by themselves as a nice exercise.  There are many different proofs of Brouwer Fixed Point without Borsuk-Ulam, the simplest of them all, done by C.A. Rogers as a simplification of a previous proof by J.W. Milnor: it uses the most basic of mathematics, accesible to students with knowledge of elementary integral Calculus.
 
 A version of this proof starts by showing that there are no differentiable maps with continuous derivative, from a closed ball to its border, that fixes all points in that sphere:
 
 > Let \\( B_d \subset \mathbb{R}^d \\) denote the unit ball in the Euclidean *d*--space, whose border is the \\( (d-1)\\)--dimensional sphere 
-\\( \mathbb{S}_{d-1}. \\)   There is no \\( C^1 \\) map (once-differentiable with continuous derivative) 
+<div>\\( \mathbb{S}_{d-1}. \\)</div>   There is no \\( C^1 \\) map (once-differentiable with continuous derivative) 
 \\( f \colon \overline{B_d} \to \mathbb{S}_{d-1} \\) such that \\( f(\boldsymbol{x}) = \boldsymbol{x} \\) for all \\( \boldsymbol{x} \in \mathbb{S}_{d-1}. \\)
 
 The use of the previous result together with the Stone-Weierstrass Theorem guarantees the existence of fixed points for any continuous function <img src="https://s0.wp.com/latex.php?latex=f%5Ccolon+%5Coverline%7BB_d%7D+%5Cto+%5Coverline%7BB_d%7D.&#038;bg=ffffff&#038;fg=555555&#038;s=0" alt="f&#92;colon &#92;overline{B_d} &#92;to &#92;overline{B_d}." title="f&#92;colon &#92;overline{B_d} &#92;to &#92;overline{B_d}." class="latex" />
