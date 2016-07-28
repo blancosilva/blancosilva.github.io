@@ -25,7 +25,8 @@ The proof of Brouwer Fixed Point from Borsuk-Ulam is immediate, and I urge the r
 A version of this proof starts by showing that there are no differentiable maps with continuous derivative, from a closed ball to its border, that fixes all points in that sphere:
 
 > Let \\( B_d \subset \mathbb{R}^d \\) denote the unit ball in the Euclidean *d*--space, whose border is the \\( (d-1)\\)--dimensional sphere 
-\\( \mathbb{S}_{d-1}. \\)   There is no \\( C^1 \\) map (once-differentiable with continuous derivative) \\( f \colon \overline{B_d} \to \mathbb{S}_{d-1} \\) such that \\( f(\boldsymbol{x} = \boldsymbol{x} \\) for all \\( \boldsymbol{x} \in \mathbb{S}_{d-1}. \\)
+\\( \mathbb{S}_{d-1}. \\)   There is no \\( C^1 \\) map (once-differentiable with continuous derivative) 
+\\( f \colon \overline{B_d} \to \mathbb{S}_{d-1} \\) such that \\( f(\boldsymbol{x}) = \boldsymbol{x} \\) for all \\( \boldsymbol{x} \in \mathbb{S}_{d-1}. \\)
 
 The use of the previous result together with the Stone-Weierstrass Theorem guarantees the existence of fixed points for any continuous function <img src="https://s0.wp.com/latex.php?latex=f%5Ccolon+%5Coverline%7BB_d%7D+%5Cto+%5Coverline%7BB_d%7D.&#038;bg=ffffff&#038;fg=555555&#038;s=0" alt="f&#92;colon &#92;overline{B_d} &#92;to &#92;overline{B_d}." title="f&#92;colon &#92;overline{B_d} &#92;to &#92;overline{B_d}." class="latex" />
 
