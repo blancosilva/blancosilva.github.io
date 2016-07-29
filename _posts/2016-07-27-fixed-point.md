@@ -4,7 +4,7 @@ layout: post
 category: post
 comments: true
 image:
-	teaser: "https://i1.wp.com/farm6.static.flickr.com/5208/5224985241_813dab62b3_o_d.jpg"
+  teaser: "https://i1.wp.com/farm6.static.flickr.com/5208/5224985241_813dab62b3_o_d.jpg"
 ---
 
 At any given moment on the surface of the Earth there are always two antipodal points with exactly the same temperature and barometric pressure.  We can go even further: on each longitude (the North and South lines running from pole to pole) there will also be two antipodal points sharing exactly the same temperature.  How is this possible?  The answer is given by the Borsuk-Ulam Theorem: a powerful tool in Topology with a great deal of applications to every branch of science.
