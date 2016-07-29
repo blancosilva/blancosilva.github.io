@@ -4,7 +4,7 @@ layout: post
 category: post
 comments: true
 image:
-  teaser: "https://i1.wp.com/farm6.static.flickr.com/5208/5224985241_813dab62b3_o_d.jpg"
+teaser: "https://i1.wp.com/farm6.static.flickr.com/5208/5224985241_813dab62b3_o_d.jpg"
 ---
 
 At any given moment on the surface of the Earth there are always two antipodal points with exactly the same temperature and barometric pressure.  We can go even further: on each longitude (the North and South lines running from pole to pole) there will also be two antipodal points sharing exactly the same temperature.  How is this possible?  The answer is given by the Borsuk-Ulam Theorem: a powerful tool in Topology with a great deal of applications to every branch of science.
@@ -34,12 +34,17 @@ Indeed, the Stone-Weierstrass Theorem gives the existence, for each \\( n \in \m
 We claim that each function <span>\\( h_n \\)</span> has a fixed point <span>\\( x_n \in \overline{B_d} \\)</span>.  If this were not true, we would be able to construct \\( C^1 \\) functions <span>\\( f_n \colon \overline{B_d} \to \mathbb{S}_{d-1} \\)</span> satisfying <span>\\( f_n(\boldsymbol{x}) = \boldsymbol{x} \\)</span> for all <span>\\( \boldsymbol{x} \in \mathbb{S}_{d-1} \\)</span>  Such a construction could be as follows:
 
 <table style="width:99%;margin-left:auto;margin-right:auto;border-style:dotted;border-width:1pt;">
-<tbody>
-<tr>
-<td style="vertical-align:middle;width:25%;border-width:0;"><img src="https://i1.wp.com/farm6.static.flickr.com/5208/5224985241_813dab62b3_o_d.jpg" alt="" width="100%" /></td>
-<td style="text-align:justify;font-family:modern;font-size:12pt;width:75%;border-width:0;">If <img src="https://s0.wp.com/latex.php?latex=h_n&#038;bg=ffffff&#038;fg=555555&#038;s=0" alt="h_n" title="h_n" class="latex" /> has no fixed point, then it is possible to draw, for each <img src="https://s0.wp.com/latex.php?latex=x+%5Cin+%5Coverline%7BB_d%7D&#038;bg=ffffff&#038;fg=555555&#038;s=0" alt="x &#92;in &#92;overline{B_d}" title="x &#92;in &#92;overline{B_d}" class="latex" />, a ray through <img src="https://s0.wp.com/latex.php?latex=x&#038;bg=ffffff&#038;fg=555555&#038;s=0" alt="x" title="x" class="latex" /> emanating from <img src="https://s0.wp.com/latex.php?latex=h_n%28x%29&#038;bg=ffffff&#038;fg=555555&#038;s=0" alt="h_n(x)" title="h_n(x)" class="latex" />.  This ray intersects <img src="https://s0.wp.com/latex.php?latex=%5Cmathbb%7BS%7D_%7Bd-1%7D&#038;bg=ffffff&#038;fg=555555&#038;s=0" alt="&#92;mathbb{S}_{d-1}" title="&#92;mathbb{S}_{d-1}" class="latex" /> at a single point, which we denote <img src="https://s0.wp.com/latex.php?latex=f_n%28x%29.&#038;bg=ffffff&#038;fg=555555&#038;s=0" alt="f_n(x)." title="f_n(x)." class="latex" />  The function <img src="https://s0.wp.com/latex.php?latex=f_n%5Ccolon+%5Coverline%7BB_d%7D+%5Cto+%5Cmathbb%7BS%7D_%7Bd-1%7D&#038;bg=ffffff&#038;fg=555555&#038;s=0" alt="f_n&#92;colon &#92;overline{B_d} &#92;to &#92;mathbb{S}_{d-1}" title="f_n&#92;colon &#92;overline{B_d} &#92;to &#92;mathbb{S}_{d-1}" class="latex" /> thus defined is <img src="https://s0.wp.com/latex.php?latex=C%5E1&#038;bg=ffffff&#038;fg=555555&#038;s=0" alt="C^1" title="C^1" class="latex" /> and satisfies <img src="https://s0.wp.com/latex.php?latex=f_n%28x%29+%3D+x&#038;bg=ffffff&#038;fg=555555&#038;s=0" alt="f_n(x) = x" title="f_n(x) = x" class="latex" /> for all <img src="https://s0.wp.com/latex.php?latex=x+%5Cin+%5Cmathbb%7BS%7D_%7Bd-1%7D%2C&#038;bg=ffffff&#038;fg=555555&#038;s=0" alt="x &#92;in &#92;mathbb{S}_{d-1}," title="x &#92;in &#92;mathbb{S}_{d-1}," class="latex" /> contradicting the previous result.</td>
-</tr>
-</tbody>
+	<tbody>
+		<tr>
+			<td style="vertical-align:middle;width:40%;border-width:0;">
+				<img src="https://i1.wp.com/farm6.static.flickr.com/5208/5224985241_813dab62b3_o_d.jpg" alt="" width="100%" />
+			</td>
+			<td style="width:10%"></td>
+			<td style="text-align:justify;font-family:modern;font-size:12pt;width:50%;border-width:0;">
+				If <span>\\( h_n \\)</span> has no fixed point, then it is possible to draw, for each <span>\\( x \in \overline{B_d} \\)</span>, a ray through \\( x \\) emanating from <span>\\( h_n(x) \\)</span>.  This ray intersects <span>\\( \mathbb{S}_{d-1} \\)</span> at a single point, which we denote <span>\\( f_n(x) \\)</span>.   The function <span>\\( f_n \colon \overline{B_d} \to \mathbb{S}_{d-1} \\)</span> thus defined is \\( C^1 \\) and satisfies <span>\\( f_n(x) = x \\)</span> for all <span>\\( x \in \mathbb{S}_{d-1} \\)</span>, contradicting the previous result.
+			</td>
+		</tr>
+	</tbody>
 </table>
 
 This implies, as we announced before, the existence of a sequence of points <img src="https://s0.wp.com/latex.php?latex=x_n+%5Cin+%5Coverline%7BB_d%7D&#038;bg=ffffff&#038;fg=555555&#038;s=0" alt="x_n &#92;in &#92;overline{B_d}" title="x_n &#92;in &#92;overline{B_d}" class="latex" /> satisfying <img src="https://s0.wp.com/latex.php?latex=h_n%28x_n%29+%3D+x_n.&#038;bg=ffffff&#038;fg=555555&#038;s=0" alt="h_n(x_n) = x_n." title="h_n(x_n) = x_n." class="latex" /> The compactness of <img src="https://s0.wp.com/latex.php?latex=%5Coverline%7BB_d%7D&#038;bg=ffffff&#038;fg=555555&#038;s=0" alt="&#92;overline{B_d}" title="&#92;overline{B_d}" class="latex" /> guarantees a convergent subsequence <img src="https://s0.wp.com/latex.php?latex=%5Cbig%28+x_%7Bn_r%7D+%5Cbig%29_%7Br+%5Cin+%5Cmathbb%7BN%7D%7D&#038;bg=ffffff&#038;fg=555555&#038;s=0" alt="&#92;big( x_{n_r} &#92;big)_{r &#92;in &#92;mathbb{N}}" title="&#92;big( x_{n_r} &#92;big)_{r &#92;in &#92;mathbb{N}}" class="latex" />.  Let <img src="https://s0.wp.com/latex.php?latex=x_0+%5Cin+%5Coverline%7BB_d%7D&#038;bg=ffffff&#038;fg=555555&#038;s=0" alt="x_0 &#92;in &#92;overline{B_d}" title="x_0 &#92;in &#92;overline{B_d}" class="latex" /> be its limit.  It must be then
