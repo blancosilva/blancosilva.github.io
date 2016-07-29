@@ -41,7 +41,7 @@ We claim that each function <span>\\( h_n \\)</span> has a fixed point <span>\\(
 			</td>
 			<td style="width:10%"></td>
 			<td style="text-align:justify;font-family:modern;font-size:12pt;width:50%;border-width:0;">
-				If <span>\\( h_n \\)</span> has no fixed point, then it is possible to draw, for each <span>\\( x \in \overline{B_d} \\)</span>, a ray through \\( x \\) emanating from <span>\\( h_n(x) \\)</span>.  This ray intersects <span>\\( \mathbb{S}_{d-1} \\)</span> at a single point, which we denote <span>\\( f_n(x) \\)</span>.   The function <span>\\( f_n \colon \overline{B_d} \to \mathbb{S}_{d-1} \\)</span> thus defined is \\( C^1 \\) and satisfies <span>\\( f_n(x) = x \\)</span> for all <span>\\( x \in \mathbb{S}_{d-1} \\)</span>, contradicting the previous result.
+				If <span>\( h_n \)</span> has no fixed point, then it is possible to draw, for each <span>\( x \in \overline{B_d} \)</span>, a ray through \( x \) emanating from <span>\( h_n(x) \)</span>.  This ray intersects <span>\( \mathbb{S}_{d-1} \)</span> at a single point, which we denote <span>\( f_n(x) \)</span>.   The function <span>\( f_n \colon \overline{B_d} \to \mathbb{S}_{d-1} \)</span> thus defined is \( C^1 \) and satisfies <span>\( f_n(x) = x \)</span> for all <span>\( x \in \mathbb{S}_{d-1} \)</span>, contradicting the previous result.
 			</td>
 		</tr>
 	</tbody>
