@@ -16,6 +16,8 @@ crumbs: true
 	</div>
 	<div class="col-sm-8 col-lg-8" style="text-align:justify;">Another child, another book!  After more than a year working on this project, my new technical book on the <em>scipy</em> stack saw the light in November 2015. <br/>
 
+		<p><a  href="https://www.amazon.com/gp/product/1783984740/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=1783984740&linkCode=as2&tag=blancosilva-20&linkId=752de7fd14e2e27f469ab4384d92298a">Mastering SciPy</a><img src="//ir-na.amazon-adsystem.com/e/ir?t=blancosilva-20&l=am2&o=1&a=1783984740" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" /></p>
+
 		<p>This book goes beyond a mere description of the different built-in functions coded in the libraries from the SciPy stack. It presents you with a solid mathematical and computational background to help you identify the right tools for each problem in scientific computing and visualization. You will gain an insight into the best practices with numerical methods depending on the amount or type of data, properties of the mathematical tools employed, or computer architecture, among other factors.</p>
 
 	</div>
