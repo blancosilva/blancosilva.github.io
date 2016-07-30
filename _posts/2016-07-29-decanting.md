@@ -98,6 +98,5 @@ That is, the simplest way to divide the wine equally is in 7 steps as follows:
 5. Pour five gallons from the first to the second jug. \\( (1,5,2) \\)
 6. Pour one gallon from the second to the third jug. \\( (1,4,3) \\)
 7. We are technically done, but we may pour now all three gallons from the third jug to the first, for a convenient transportation of the wine. \\( (4,4,0) \\)
-P
 
 
