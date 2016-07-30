@@ -34,7 +34,7 @@ The *century* coefficient, which we denote <span>\\( C \\)</span>, is computed f
 
 The *year* coefficient, which we denote <span>\\( Y \\)</span>, is computed from the last two digits of the year as the output of the following formula: if <span>\\( x \\)</span> is the last two digits of the year, then <span>\\( Y = x + \lfloor \frac{x}{4} \rfloor, \\)</span> where <span>\\( \lfloor \cdot \rfloor \\)</span> indicates the integer part of any given real number.
 
-> For example, the last two digits of 1973 are 73.  Since \\( 73 = 4 \times 18+2, \\) the year coefficient is \\( Y = 73 + 18 = 91.\\)
+> For example, the last two digits of 1973 are 73.  Since \\( 73 = 4 \times 18+3, \\) the year coefficient is \\( Y = 73 + 18 = 91.\\)
 
 ### The **MONTH** step. 
 
