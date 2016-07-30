@@ -33,7 +33,7 @@ We construct a *transition matrix* of this graph <span>\\( T=\big( a_{i,j} \big)
 
 Let us open an `ipython` session and load this particular matrix to memory. Remember that in `python`, indices start from zero, not one:
 
-{% highlight python linenos %}
+{% highlight python %}
 import numpy as np, matplotlib.pyplot as plt, scipy.linalg as spla, scipy.sparse as spsp, scipy.sparse.linalg as spspla
 
 np.set_printoptions(suppress=True, precision=3)
@@ -49,7 +49,7 @@ T[rows,cols] = data
 
 From the transition matrix, we create a *Page Rank matrix*, \\( G \\) (also known as the **Google matrix**), by fixing a positive constant \\( 0 &lt; p \leq 1 \\), and following the formula \\( G = (1-p) \cdot T + p \cdot B \\). Here, \\( B \\) is a matrix with the same size as \\( T \\), with all its entries equal to \\( 1/N \\). For example, if we choose \\( p=0.15 \\), we obtain the following Google matrix
 
-{% highlight python linenos %}
+{% highlight python %}
 G = (1-0.15) * T + 0.15/8
 
 print G
