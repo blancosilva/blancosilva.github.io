@@ -27,42 +27,52 @@ import numpy as np
 from scipy.sparse.csgraph import shortest_path
 {% endhighlight %}
 
-Before we proceed:  Let us represent the different possible states on this problem with triples <span>\\( \boldsymbol{a} = (a_1,a_2,a_3) \\)</span>, where each <span>\\( a_k \\)<span> denotes the amount of wine on the *k*-th jug..  For instance, the initial state is represented by \\( (8, 0, 0) \\)---that is, 8 gallons in the first jug, and zero in the other two.  If we pour the contents of the first jug into the second, we end up with the following state: \\( (3,5,3) \\).  If afterwards we pour the contents of the third jug into the first, we end up with the state \\( (6, 5, 0) \\).  
+Before we proceed:  Let us represent the different possible states on this problem with triples <span>\\( (a_1,a_2,a_3) \\)</span>, where each component <span>\\( a_k \\)<span> denotes the amount of wine on the *k*-th jug.  For instance, the initial state is represented by \\( (8, 0, 0) \\)---that is, 8 gallons in the first jug, and zero in the other two.  If we pour the contents of the first jug into the second, we end up with the following state: \\( (3,5,3) \\).  If afterwards we pour the contents of the third jug into the first, we end up with the state \\( (6, 5, 0) \\).  
 
-It is not hard to realize that all triples representing valid stated in this problem satisfy the following conditions simultaneously:
+It is not hard to realize that all triples representing valid states in this problem satisfy the following conditions simultaneously:
 
-1. <span>\\( a_1 \leq 8, a_2 \leq 5, a_3 \leq 3 \\)</span>.
+1. <span>\\( 0 \leq a_1 \leq 8, 0 \leq a_2 \leq 5, 0 \leq a_3 \leq 3 \\)</span>.
 2. <span>\\( a_1 + a_2 + a_3 = 8 \\)</span>.
 3. <span>\\( a_1 \in \\{0, 8\\} \\)</span>, or <span>\\( a_2 \in \\{0, 5\\} \\)</span>, or <span>\\( a_1 \in \\{0, 3\\} \\)</span>
 
 {% highlight python %}
 states = [(a,b,c) for a in range(9) for b in range(6) for c in range(4) if 
           a+b+c==8 and (a==8 or a==0 or  b==5 or b==0 or c==3 or c==0)]
+
+print states
 {% endhighlight %}
 
-Note that it is possible to go from the \\( (8,0,0) \\) state to the \\( (3,5,3) \\) state and back.  But in order to go from \\( (8,0,0) \\) to \\( (6,5,0) \\) at least two steps are needed.  We are going to collect in an adjacency matrix this information.  Assume each possible state is a node of a graph, and that nodes are connected if it is possible to go from one to the other in one step.  The conditions that allow to go from one state to the next can be easily described as follows.  At the end of a valid operation:
+{% highlight text %}
+[(0, 5, 3), (1, 4, 3), (1, 5, 2), (2, 3, 3), 
+ (2, 5, 1), (3, 2, 3), (3, 5, 0), (4, 1, 3), 
+ (4, 4, 0), (5, 0, 3), (5, 3, 0), (6, 0, 2), 
+ (6, 2, 0), (7, 0, 1), (7, 1, 0), (8, 0, 0)]
+{% endhighlight %}
 
-+ One of the jugs is not affected, and
-+ One of the jugs (which was not completely filled) ends up completely filled, or
-+ One of the jugs (which was not empty) ends up emptied.
+Note that it is possible to go from the \\( (8,0,0) \\) state to the \\( (3,5,3) \\) state and back.  But in order to go from \\( (8,0,0) \\) to \\( (6,5,0) \\) at least two steps are needed.  We are going to collect in an adjacency matrix this information.  Assume each possible state is a node of a (directed) graph, and that nodes are connected by an arrow if it is possible to go from one to the other in one step.  The conditions that allow to go from one state to the next can be easily described as follows.  At the end of a valid operation:
+
++ One of the jugs is not affected, and either
++ One of the jugs (which was not full) ends up completely full, or
++ One of the jugs (which was not empty) ends up empty.
 
 {% highlight python %}
 A = np.zeros((len(states), len(states)))
+
 for i,node_1 in enumerate(states):
     for j,node_2 in enumerate(states):
         total_change = [node_1[0] - node_2[0], node_1[1] - node_2[1], node_1[2] - node_2[2]]
                  # Check 1: one of the jugs is not affected
         check_1 = (total_change[0]*total_change[1]*total_change[2]==0) 
-                 # Check 2: one of the jugs gets filled
+                 # Check 2: one of the jugs gets full
         check_2 = (node_2[0]==8 and total_change[0]!=0) or (node_2[1]==5 and total_change[1]!=0) or (node_2[2]==3 and total_change[2]!=0)
-                 # Check 3: one of the jugs gets emptied
+                 # Check 3: one of the jugs gets empty
         check_3 = (node_2[0]==0 and total_change[0]!=0) or (node_2[1]==0 and total_change[1]!=0) or (node_2[2]==0 and total_change[2]!=0)
         adjacent = check_1 and (check_2 or check_3)
         if adjacent:
                 A[i,j]=1
 {% endhighlight %}
 
-We are ready to fire Dijkstra's algorithm on this graph!  Note that, by construction, the state \\( (8,0,0) \\) is the 15th node, and the state \\( (4,4,0) \\) (our goal) is the 8th node.
+We are ready to fire Dijkstra's algorithm on this graph!  Note that, by construction, the state \\( (8,0,0) \\) is the 15th node, and the state \\( (4,4,0) \\) ---our goal--- is the 8th node.
 
 {% highlight python %}
 dist_mat, pred = shortest_path(B, return_predecessors=True, directed=True, unweighted=False)
