@@ -22,4 +22,5 @@ gems:
   - jekyll-sitemap
 
 # Build settings
+highlighter: rouge
 markdown: kramdown
