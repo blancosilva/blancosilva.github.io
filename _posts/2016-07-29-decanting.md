@@ -5,6 +5,7 @@ layout: post
 category: post
 comments: true
 image:
+  teaser: http://blancosilva.github.io/images/greekjugs.jpg
 ---
 
 *Decanting problems* (also known as jug-pouring problems) are a set of highly entertaining classical puzzles that require some liquid to be divided in certain proportions.  The challenge comes from doing so without sophisticated measuring devices.  We usually have only the aid of several jugs for this purpose.  The general principle of these problems can be described as follows:
