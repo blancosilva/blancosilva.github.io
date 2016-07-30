@@ -22,4 +22,4 @@ gems:
   - jekyll-sitemap
 
 # Build settings
-markdown: kramdown
+markdown: redcarpet
