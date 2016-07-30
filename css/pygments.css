@@ -1,6 +1,6 @@
-/* .highlight pre code { display: block; white-space: pre; overflow-x: auto; word-wrap: normal; } */
+.highlight pre code { display: block; white-space: pre; overflow-x: auto; word-wrap: normal; }
 .highlight .c { color: #7f9f7f; font-style: italic } /* Comment */
-.highlight /* .err { border: 1px solid #cc9393 } /\* Error *\/ */
+/* .highlight .err { border: 1px solid #cc9393 } /\* Error *\/ */
 .highlight .k { color: #f0dfaf; font-weight: bold } /* Keyword */
 .highlight .o { color: #dcdccc } /* Operator */
 .highlight .cm { color: #7f9f7f; font-style: italic } /* Comment.Multiline */
