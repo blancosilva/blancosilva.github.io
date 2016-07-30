@@ -1,5 +1,5 @@
 ---
-title: Decanting Problems and Dijsktra's Algorithm
+title: Decanting Problems and Dijkstra's Algorithm
 date: 2016-07-29 00:23:30
 layout: post
 category: post
