@@ -75,5 +75,16 @@ while index != 15:
 list(reversed([labels[index] for index in path]))
 {% endhighlight %}
 
+{% highlight text %}
+[(8, 0, 0),
+ (3, 5, 0),
+ (3, 2, 3),
+ (6, 2, 0),
+ (6, 0, 2),
+ (1, 5, 2),
+ (1, 4, 3),
+ (4, 4, 0)]
+{% endhighlight %}
+
 
 
