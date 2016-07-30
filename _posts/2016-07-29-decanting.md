@@ -75,6 +75,8 @@ while index != 15:
 list(reversed([labels[index] for index in path]))
 {% endhighlight %}
 
+This is the output of the previous operation.
+
 {% highlight text %}
 [(8, 0, 0),
  (3, 5, 0),
@@ -85,6 +87,16 @@ list(reversed([labels[index] for index in path]))
  (1, 4, 3),
  (4, 4, 0)]
 {% endhighlight %}
+
+That is, the simplest way to divide the wine equally is in 7 steps as follows:
+
+1. Pour 5 gallons of wine into the second jug. \\( (3,5,0) \\)
+2. Pour 3 gallons from the second jug to the third.  \\( (3,2,3) \\)
+3. Pour 3 gallons from the third to the first. \\( (6,2,0) \\)
+4. Pour all 2 gallons from the second to the third jug. \\( (6,0,2) \\)
+5. Pour five gallons from the first to the second jug. \\( (1,5,2) \\)
+6. Pour one gallon from the second to the third jug. \\( (1,4,3) \\)
+7. We are technically done, but we may pour now all three gallons from the third jug to the first, for a convenient transportation of the wine. \\( (4,4,0) \\)
 
 
 
