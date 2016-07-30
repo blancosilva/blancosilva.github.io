@@ -73,10 +73,10 @@ for i,node_1 in enumerate(states):
                 A[i,j]=1
 {% endhighlight %}
 
-We are ready to fire Dijkstra's algorithm on this graph!  Note that, by construction, the state \\( (8,0,0) \\) is the 15th node, and the state \\( (4,4,0) \\) ---our goal--- is the 8th node.
+We are ready to fire Dijkstra's algorithm on this graph!  Note that, by construction, the state \\( (8,0,0) \\) is the 16th node, and the state \\( (4,4,0) \\) ---our goal--- is the 9th node.
 
 {% highlight python %}
-dist_mat, pred = shortest_path(B, return_predecessors=True, directed=True, unweighted=False)
+dist_mat, pred = shortest_path(A, return_predecessors=True, directed=True, unweighted=True)
 
 index = 8
 path = [8]
