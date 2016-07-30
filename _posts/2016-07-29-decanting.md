@@ -21,7 +21,7 @@ One of the best known goes as follows:
 
 In this post, we will do some fun `python` coding to not only find the answer to this riddle, but to actually figure out the simplest way for them to divide the wine equally.  We start by firing up an `ipython` session, loading a few relevant objects from `numpy`, and an implementation of Dijkstra's Algorithm (`shortest_path` from `scipy.sparse.csgraph`).
 
-{% highlight python linenos %}
+{% highlight python %}
 import numpy as np
 from scipy.sparse.csgraph import shortest_path
 {% endhighlight %}
@@ -34,7 +34,7 @@ It is not hard to realize that all triples representing valid stated in this pro
 2. <span>\\( a_1 + a_2 + a_3 = 8 \\)</span>.
 3. <span>\\( a_1 \in \\{0, 8\\} \\)</span>, or <span>\\( a_2 \in \\{0, 5\\} \\)</span>, or <span>\\( a_1 \in \\{0, 3\\} \\)</span>
 
-{% highlight python linenos %}
+{% highlight python %}
 states = [(a,b,c) for a in range(9) for b in range(6) for c in range(4) if 
           a+b+c==8 and (a==8 or a==0 or  b==5 or b==0 or c==3 or c==0)]
 {% endhighlight %}
@@ -74,4 +74,6 @@ while index != 15:
     
 list(reversed([labels[index] for index in path]))
 {% endhighlight %}
+
+
 
