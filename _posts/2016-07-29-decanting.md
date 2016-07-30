@@ -12,7 +12,8 @@ image:
 
 + The objective is to measure exactly \\( n \\) gallons of liquid.
 + For this purpose, we only have available a set of \\( J \\) jugs.
-+ The jugs should not all have the same volume.  We denote <span>\\( v_k \\)</span> the volume of the *k*-th jug.
++ None of the jugs have the same volume.  We denote <span>\\( v_k \\)</span> the volume of the *k*-th jug (and we may safely assume <span>\\( v_k \geq v_{k+1} \\)</span>).
++ The jug with the largest volume is full---and it must be in that case <span>\\( v_1 \geq n \\)</span>.
 + There is no way to tell how much liquid is stored on each jug, nor is it possible to assess their contents, except when they are completely full, or completely empty.
 + The only allowed operations are pouring liquid from one jug into another.
 
