@@ -12,7 +12,7 @@ image:
 + The objective is to measure exactly \\( n \\) gallons of liquid.
 + For this purpose, we only have available a set of \\( J \\) jugs.
 + The jugs should not all have the same volume.  We denote <span>\\( v_k \\)</span> the volume of the *k*-th jug.
-+ There is no way to tell how much liquid is stored on each jug, nor it is possible to assess their contents, except when they are completely full, or completely empty.
++ There is no way to tell how much liquid is stored on each jug, nor is it possible to assess their contents, except when they are completely full, or completely empty.
 + The only allowed operations are pouring liquid from one jug into another.
 
 One of the best known goes as follows:
@@ -97,6 +97,6 @@ That is, the simplest way to divide the wine equally is in 7 steps as follows:
 5. Pour five gallons from the first to the second jug. \\( (1,5,2) \\)
 6. Pour one gallon from the second to the third jug. \\( (1,4,3) \\)
 7. We are technically done, but we may pour now all three gallons from the third jug to the first, for a convenient transportation of the wine. \\( (4,4,0) \\)
-
+P
 
 
