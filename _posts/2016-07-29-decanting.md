@@ -28,7 +28,7 @@ import numpy as np
 from scipy.sparse.csgraph import shortest_path
 {% endhighlight %}
 
-Before we proceed:  Let us represent the different possible states on this problem with triples <span>\\( (a_1,a_2,a_3) \\)</span>, where each component <span>\\( a_k \\)<span> denotes the amount of wine on the *k*-th jug.  For instance, the initial state is represented by \\( (8, 0, 0) \\)---that is, 8 gallons in the first jug, and zero in the other two.  If we pour the contents of the first jug into the second, we end up with the following state: \\( (3,5,3) \\).  If afterwards we pour the contents of the third jug into the first, we end up with the state \\( (6, 5, 0) \\).  
+Before we proceed:  Let us represent the different possible states on this problem with triples <span>\\( (a_1,a_2,a_3) \\)</span>, where each component <span>\\( a_k \\)<span> denotes the amount of wine on the *k*-th jug.  For instance, the initial state is represented by \\( (8, 0, 0) \\)---that is, 8 gallons in the first jug, and zero in the other two.  If we pour the contents of the first jug into the second, we end up with the following state: \\( (3,5,0 \\).  If afterwards we pour the contents of the first jug into the third, we end up with the state \\( (0, 5, 3) \\).  
 
 It is not hard to realize that all triples representing valid states in this problem satisfy the following conditions simultaneously:
 
@@ -50,7 +50,7 @@ print states
  (6, 2, 0), (7, 0, 1), (7, 1, 0), (8, 0, 0)]
 {% endhighlight %}
 
-Note that it is possible to go from the \\( (8,0,0) \\) state to the \\( (3,5,3) \\) state and back.  But in order to go from \\( (8,0,0) \\) to \\( (6,5,0) \\) at least two steps are needed.  We are going to collect in an adjacency matrix this information.  Assume each possible state is a node of a (directed) graph, and that nodes are connected by an arrow if it is possible to go from one to the other in one step.  The conditions that allow to go from one state to the next can be easily described as follows.  At the end of a valid operation:
+Note that it is possible to go from the \\( (8,0,0) \\) state to the \\( (3,5,0) \\) state and back.  But in order to go from \\( (8,0,0) \\) to \\( (0,5,3) \\) at least two steps are needed.  We are going to collect in an adjacency matrix this information.  Assume each possible state is a node of a (directed) graph, and that nodes are connected by an arrow if it is possible to go from one to the other in one step.  The conditions that allow to go from one state to the next can be easily described as follows.  At the end of a valid operation:
 
 + One of the jugs is not affected, and either
 + One of the jugs (which was not full) ends up completely full, or
