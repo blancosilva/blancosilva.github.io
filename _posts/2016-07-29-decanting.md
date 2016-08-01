@@ -28,7 +28,7 @@ import numpy as np
 from scipy.sparse.csgraph import shortest_path
 {% endhighlight %}
 
-Before we proceed:  Let us represent the different possible states on this problem with triples <span>\\( (a_1,a_2,a_3) \\)</span>, where each component <span>\\( a_k \\)<span> denotes the amount of wine on the *k*-th jug.  For instance, the initial state is represented by \\( (8, 0, 0) \\)---that is, 8 gallons in the first jug, and zero in the other two.  If we pour the contents of the first jug into the second, we end up with the following state: \\( (3,5,0 \\).  If afterwards we pour the contents of the first jug into the third, we end up with the state \\( (0, 5, 3) \\).  
+Before we proceed:  Let us represent the different possible states on this problem with triples <span>\\( (a_1,a_2,a_3) \\)</span>, where each component <span>\\( a_k \\)<span> denotes the amount of wine on the *k*-th jug.  For instance, the initial state is represented by \\( (8, 0, 0) \\)---that is, 8 gallons in the first jug, and zero in the other two.  If we pour the contents of the first jug into the second, we end up with the following state: \\( (3,5,0) \\).  If afterwards we pour the contents of the first jug into the third, we end up with the state \\( (0, 5, 3) \\).  
 
 It is not hard to realize that all triples representing valid states in this problem satisfy the following conditions simultaneously:
 
