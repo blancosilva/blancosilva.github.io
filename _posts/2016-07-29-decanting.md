@@ -34,7 +34,7 @@ It is not hard to realize that all triples representing valid states in this pro
 
 1. <span>\\( 0 \leq a_1 \leq 8, 0 \leq a_2 \leq 5, 0 \leq a_3 \leq 3 \\)</span>.
 2. <span>\\( a_1 + a_2 + a_3 = 8 \\)</span>.
-3. <span>\\( a_1 \in \\{0, 8\\} \\)</span>, or <span>\\( a_2 \in \\{0, 5\\} \\)</span>, or <span>\\( a_1 \in \\{0, 3\\} \\)</span>
+3. <span>\\( a_1 \in \\{0, 8\\} \\)</span>, or <span>\\( a_2 \in \\{0, 5\\} \\)</span>, or <span>\\( a_3 \in \\{0, 3\\} \\)</span>
 
 {% highlight python %}
 states = [(a,b,c) for a in range(9) for b in range(6) for c in range(4) if 
