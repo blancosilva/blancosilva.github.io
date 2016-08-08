@@ -18,7 +18,7 @@ In this post we replicate the same technique, but this time using <a href="http:
 	For an explanation of the different steps needed to solve this puzzle, make sure to read the previous post (linked above).  Also, we have omitted most irrelevant outputs for a simpler exposition.
 </div>
 
-{% highlight julia %}
+{% highlight julia linenos %}
 using Graphs
 
 states = filter(x->x[1]+x[2]+x[3]==8 && 
@@ -50,7 +50,7 @@ end
 
 We are ready to fire Dijkstra's algorithm on this graph now.  Note that, by construction, the state \\( (8,0,0) \\) is the 1st node, and the state \\( (4,4,0) \\) ---our goal--- is the 5th node.
 
-{% highlight julia %}
+{% highlight julia linenos %}
 r = dijkstra_shortest_paths(G, ones(Int64,num_edges(G)), (8,0,0))
 
 target = (8,0,0)
