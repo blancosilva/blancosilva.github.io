@@ -59,9 +59,8 @@ source_index = 5
 
 while source!=target
     print(source)
-    new_index = r.parent_indices[source_index]
     source = r.parents[source_index]
-    source_index = new_index
+    source_index = r.parent_indices[source_index]
 end
 print(source)
 {% endhighlight %}
