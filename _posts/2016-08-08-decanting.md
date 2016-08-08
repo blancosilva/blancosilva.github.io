@@ -21,7 +21,11 @@ In the previous post, <a href="http://blancosilva.github.io/post/2016/07/29/deca
 
 > Two men have a full eight-gallon jug of wine, and also two empty jugs of five and three gallons capacity, respectively.  Is it possible (within the restrictions of our problem) to divide the wine equally so each men can have four gallons of wine?
 
-In this post, we replicate the same technique, but this time using <a href="http://julialang.org/">Julia</a>'s `Graphs` package.  First of all, make sure you have the package installed.  If this is not the case, issue in an `Ijulia` session the command `Pkg.add("Graphs")`.  Once installed, the functions of the package can be readily called.  For an explanation of the different steps needed to solve this puzzle, make sure to read the previous post (linked above).
+In this post, we replicate the same technique, but this time using <a href="http://julialang.org/">Julia</a>'s `Graphs` package.  First of all, make sure you have the package installed.  If this is not the case, issue in an `Ijulia` session the command `Pkg.add("Graphs")`.  Once installed, the functions of the package can be readily called.  
+
+<div class="alert alert-warning" role="alert" style="text-align:center;">
+	For an explanation of the different steps needed to solve this puzzle, make sure to read the previous post (linked above).  Also, we have omitted most irrelevant outputs for a simpler exposition.
+</div>
 
 {% highlight julia %}
 using Graphs
@@ -29,30 +33,8 @@ using Graphs
 states = filter(x->x[1]+x[2]+x[3]==8 && 
 				(x[1]==0 || x[1]==8 || x[2]==0 || x[2]==5 || x[3]==0 || x[3]==3) , 
        			[(a,b,c) for a in 0:8, b in 0:5, c in 0:3])
-{% endhighlight %}
 
-{% highlight text %}
-16-element Array{Tuple{Int64,Int64,Int64},1}:
- (8,0,0)
- (7,1,0)
- (6,2,0)
- (5,3,0)
- (4,4,0)
- (3,5,0)
- (7,0,1)
- (2,5,1)
- (6,0,2)
- (1,5,2)
- (5,0,3)
- (4,1,3)
- (3,2,3)
- (2,3,3)
- (1,4,3)
- (0,5,3)
-{% endhighlight %}
-
-{% highlight julia %}
-G = graph(states,[],is_directed=true)
+G = graph(states, [], is_directed=true)
 
 for node1 in G.vertices
     for node2 in G.vertices
@@ -61,12 +43,12 @@ for node1 in G.vertices
         check1 = (total_change[1]*total_change[2]*total_change[3]==0)
                  # Check 2: one of the jugs gets full
         check2 = (node2[1]==8 && total_change[1]!=0) || 
-        (node2[2]==5 && total_change[2]!=0) || 
-        (node2[3]==3 && total_change[3]!=0)
+        		 (node2[2]==5 && total_change[2]!=0) || 
+        		 (node2[3]==3 && total_change[3]!=0)
                  # Check 3: one of the jugs gets empty
         check3 = (node2[1]==0 && total_change[1]!=0) || 
-        (node2[2]==0 && total_change[2]!=0) || 
-        (node2[3]==0 && total_change[3]!=0)
+	   	         (node2[2]==0 && total_change[2]!=0) || 
+	   	         (node2[3]==0 && total_change[3]!=0)
         is_adjacent = check1 && (check2 || check3)
         if is_adjacent 
             add_edge!(G, node1, node2)
@@ -79,21 +61,10 @@ We are ready to fire Dijkstra's algorithm on this graph now.  Note that, by cons
 
 {% highlight julia %}
 r = dijkstra_shortest_paths(G, ones(Int64,num_edges(G)), (8,0,0))
-{% endhighlight %}
 
-{% highlight text %}
-Graphs.DijkstraStates{Tuple{Int64,Int64,Int64},Int64,
-DataStructures.MutableBinaryHeap{Graphs.DijkstraHEntry{Tuple{Int64,Int64,Int64},Int64},
-DataStructures.LessThan},Int64}([(8,0,0),(7,0,1),(3,2,3),(5,0,3),(1,4,3),(8,0,0),(2,5,1),
-(2,3,3),(6,2,0),(6,0,2),(8,0,0),(7,1,0),(3,5,0),(5,3,0),(1,5,2),(3,5,0)],[1,7,13,11,15,1,
-8,14,3,9,1,2,6,4,10,6],[0,6,3,2,7,1,5,4,4,5,1,7,2,3,6,2],[2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2],
-MutableBinaryHeap(),[0,12,7,5,15,1,10,8,9,11,2,14,3,6,13,4])
-{% endhighlight %}
-
-{% highlight julia %}
 target = (8,0,0)
 source = (4,4,0)
-source_index=5
+source_index = 5
 
 while source!=target
     print(source)
