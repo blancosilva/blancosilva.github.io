@@ -12,7 +12,7 @@ In the previous post, <a href="http://blancosilva.github.io/post/2016/07/29/deca
 
 > Two men have a full eight-gallon jug of wine, and also two empty jugs of five and three gallons capacity, respectively.  Is it possible (within the restrictions of our problem) to divide the wine equally so each men can have four gallons of wine?
 
-In this post, we replicate the same technique, but this time using <a href="http://julialang.org/">Julia</a>'s `Graphs` package.  First of all, make sure you have the package installed.  If this is not the case, issue in an `Ijulia` session the command `Pkg.add("Graphs")`.  Once installed, the functions of the package can be readily called.  
+In this post we replicate the same technique, but this time using <a href="http://julialang.org/">Julia</a>'s `Graphs` package.  First of all, make sure you have the package installed.  If this is not the case, issue in an `Ijulia` session the command `Pkg.add("Graphs")`.  Once installed, the functions of the package can be readily called.  
 
 <div class="alert alert-warning" role="alert" style="text-align:center;">
 	For an explanation of the different steps needed to solve this puzzle, make sure to read the previous post (linked above).  Also, we have omitted most irrelevant outputs for a simpler exposition.
