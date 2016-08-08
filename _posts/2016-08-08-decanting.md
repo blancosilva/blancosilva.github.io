@@ -16,7 +16,7 @@ image:
 + The jug with the largest volume is full---and it must be in that case <span>\\( v_1 \geq n \\)</span>.
 + There is no way to tell how much liquid is stored on each jug, nor is it possible to assess their contents, except when they are completely full, or completely empty.
 + The only allowed operations are pouring liquid from one jug into another.
-
+P
 In the previous post, <a href="http://blancosilva.github.io/post/2016/07/29/decanting.html">Decanting Problems and Dijkstra's Algorithm</a>, we presented some `scipy` hackery to solve the *Die Hard* puzzle:
 
 > Two men have a full eight-gallon jug of wine, and also two empty jugs of five and three gallons capacity, respectively.  Is it possible (within the restrictions of our problem) to divide the wine equally so each men can have four gallons of wine?
@@ -26,8 +26,9 @@ In this post, we replicate the same technique, but this time using <a href="http
 {% highlight julia %}
 using Graphs
 
-states = filter(x->x[1]+x[2]+x[3]==8 && (x[1]==0 || x[1]==8 || x[2]==0 || x[2]==5 || x[3]==0 || x[3]==3) , 
-       [(a,b,c) for a in 0:8, b in 0:5, c in 0:3])
+states = filter(x->x[1]+x[2]+x[3]==8 && 
+				(x[1]==0 || x[1]==8 || x[2]==0 || x[2]==5 || x[3]==0 || x[3]==3) , 
+       			[(a,b,c) for a in 0:8, b in 0:5, c in 0:3])
 {% endhighlight %}
 
 {% highlight text %}
@@ -81,7 +82,12 @@ r = dijkstra_shortest_paths(G, ones(Int64,num_edges(G)), (8,0,0))
 {% endhighlight %}
 
 {% highlight text %}
-Graphs.DijkstraStates{Tuple{Int64,Int64,Int64},Int64,DataStructures.MutableBinaryHeap{Graphs.DijkstraHEntry{Tuple{Int64,Int64,Int64},Int64},DataStructures.LessThan},Int64}([(8,0,0),(7,0,1),(3,2,3),(5,0,3),(1,4,3),(8,0,0),(2,5,1),(2,3,3),(6,2,0),(6,0,2),(8,0,0),(7,1,0),(3,5,0),(5,3,0),(1,5,2),(3,5,0)],[1,7,13,11,15,1,8,14,3,9,1,2,6,4,10,6],[0,6,3,2,7,1,5,4,4,5,1,7,2,3,6,2],[2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2],MutableBinaryHeap(),[0,12,7,5,15,1,10,8,9,11,2,14,3,6,13,4])
+Graphs.DijkstraStates{Tuple{Int64,Int64,Int64},Int64,
+DataStructures.MutableBinaryHeap{Graphs.DijkstraHEntry{Tuple{Int64,Int64,Int64},Int64},
+DataStructures.LessThan},Int64}([(8,0,0),(7,0,1),(3,2,3),(5,0,3),(1,4,3),(8,0,0),(2,5,1),
+(2,3,3),(6,2,0),(6,0,2),(8,0,0),(7,1,0),(3,5,0),(5,3,0),(1,5,2),(3,5,0)],[1,7,13,11,15,1,
+8,14,3,9,1,2,6,4,10,6],[0,6,3,2,7,1,5,4,4,5,1,7,2,3,6,2],[2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2],
+MutableBinaryHeap(),[0,12,7,5,15,1,10,8,9,11,2,14,3,6,13,4])
 {% endhighlight %}
 
 {% highlight julia %}
