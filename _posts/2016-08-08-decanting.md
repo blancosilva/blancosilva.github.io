@@ -22,8 +22,8 @@ In this post, we replicate the same technique, but this time using <a href="http
 using Graphs
 
 states = filter(x->x[1]+x[2]+x[3]==8 && 
-				(x[1]==0 || x[1]==8 || x[2]==0 || x[2]==5 || x[3]==0 || x[3]==3) , 
-       			[(a,b,c) for a in 0:8, b in 0:5, c in 0:3])
+                (x[1]==0 || x[1]==8 || x[2]==0 || x[2]==5 || x[3]==0 || x[3]==3) , 
+                [(a,b,c) for a in 0:8, b in 0:5, c in 0:3])
 
 G = graph(states, [], is_directed=true)
 
@@ -34,12 +34,12 @@ for node1 in G.vertices
         check1 = (total_change[1]*total_change[2]*total_change[3]==0)
                  # Check 2: one of the jugs gets full
         check2 = (node2[1]==8 && total_change[1]!=0) || 
-        (node2[2]==5 && total_change[2]!=0) || 
-        (node2[3]==3 && total_change[3]!=0)
+                 (node2[2]==5 && total_change[2]!=0) || 
+                 (node2[3]==3 && total_change[3]!=0)
                  # Check 3: one of the jugs gets empty
         check3 = (node2[1]==0 && total_change[1]!=0) || 
-        (node2[2]==0 && total_change[2]!=0) || 
-        (node2[3]==0 && total_change[3]!=0)
+                 (node2[2]==0 && total_change[2]!=0) || 
+                 (node2[3]==0 && total_change[3]!=0)
         is_adjacent = check1 && (check2 || check3)
         if is_adjacent 
             add_edge!(G, node1, node2)
