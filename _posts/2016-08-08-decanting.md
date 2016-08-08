@@ -48,14 +48,14 @@ for node1 in G.vertices
 end
 {% endhighlight %}
 
-We are ready to fire Dijkstra's algorithm on this graph now.  Note that, by construction, the state \\( (8,0,0) \\) is the 1st node, and the state \\( (4,4,0) \\) ---our goal--- is the 5th node.
+We are ready to fire Dijkstra's algorithm on this graph now.  
 
 {% highlight julia linenos %}
 r = dijkstra_shortest_paths(G, ones(Int64,num_edges(G)), (8,0,0))
 
 target = (8,0,0)
 source = (4,4,0)
-source_index = 5
+source_index = findfirst(G.vertices, (4,4,0))
 
 while source!=target
     print(source)
