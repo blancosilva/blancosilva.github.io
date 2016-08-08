@@ -8,15 +8,6 @@ image:
   teaser: http://blancosilva.github.io/images/amphora.jpg
 ---
 
-*Decanting problems* (also known as jug-pouring problems) are a set of highly entertaining classical puzzles that require some liquid to be divided in certain proportions.  The challenge comes from doing so without sophisticated measuring devices.  We usually have only the aid of several jugs for this purpose.  The general principle of these problems can be described as follows:
-
-+ The objective is to measure exactly \\( n \\) gallons of liquid.
-+ For this purpose, we only have available a set of \\( J \\) jugs.
-+ None of the jugs have the same volume.  We denote <span>\\( v_k \\)</span> the volume of the *k*-th jug (and we may safely assume <span>\\( v_k \geq v_{k+1} \\)</span>).
-+ The jug with the largest volume is full---and it must be in that case <span>\\( v_1 \geq n \\)</span>.
-+ There is no way to tell how much liquid is stored on each jug, nor is it possible to assess their contents, except when they are completely full, or completely empty.
-+ The only allowed operations are pouring liquid from one jug into another.
-P
 In the previous post, <a href="http://blancosilva.github.io/post/2016/07/29/decanting.html">Decanting Problems and Dijkstra's Algorithm</a>, we presented some `scipy` hackery to solve the *Die Hard* puzzle:
 
 > Two men have a full eight-gallon jug of wine, and also two empty jugs of five and three gallons capacity, respectively.  Is it possible (within the restrictions of our problem) to divide the wine equally so each men can have four gallons of wine?
@@ -43,12 +34,12 @@ for node1 in G.vertices
         check1 = (total_change[1]*total_change[2]*total_change[3]==0)
                  # Check 2: one of the jugs gets full
         check2 = (node2[1]==8 && total_change[1]!=0) || 
-        		 (node2[2]==5 && total_change[2]!=0) || 
-        		 (node2[3]==3 && total_change[3]!=0)
+        (node2[2]==5 && total_change[2]!=0) || 
+        (node2[3]==3 && total_change[3]!=0)
                  # Check 3: one of the jugs gets empty
         check3 = (node2[1]==0 && total_change[1]!=0) || 
-	   	         (node2[2]==0 && total_change[2]!=0) || 
-	   	         (node2[3]==0 && total_change[3]!=0)
+        (node2[2]==0 && total_change[2]!=0) || 
+        (node2[3]==0 && total_change[3]!=0)
         is_adjacent = check1 && (check2 || check3)
         if is_adjacent 
             add_edge!(G, node1, node2)
