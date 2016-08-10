@@ -53,16 +53,15 @@ We are ready to fire Dijkstra's algorithm on this graph now.
 {% highlight julia linenos %}
 r = dijkstra_shortest_paths(G, ones(Int64,num_edges(G)), (8,0,0))
 
-target = (8,0,0)
 source = (4,4,0)
 source_index = findfirst(G.vertices, (4,4,0))
 
-while source!=target
+while source!=(8,0,0)
     print(source)
     source = r.parents[source_index]
     source_index = r.parent_indices[source_index]
 end
-print(source)
+print(sourc)
 {% endhighlight %}
 
 {% highlight text %}
