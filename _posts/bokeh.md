@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: post
 title: bokeh tests
 date: 2016-08-24 
 category: post
