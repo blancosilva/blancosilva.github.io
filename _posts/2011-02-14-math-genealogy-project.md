@@ -8,9 +8,9 @@ image:
   teaser: "http://farm3.static.flickr.com/2123/2087542505_2350f768dc_m.jpg"
 ---
 
-I traced my mathematical lineage back into the XIV century at <a href="http://www.genealogy.ams.org">The Mathematics Genealogy Project</a>.  Imagine my surprise when I discovered that a big branch in the tree of my scientific ancestors is composed not by mathematicians, but by big names in the fields of Physics, Chemistry, Physiology and even  Anatomy.
+I traced my mathematical lineage back into the XIV century at <a href="http://www.genealogy.ams.org">The Mathematics Genealogy Project</a>.  Imagine my surprise when I discovered that a big branch in the tree of my scientific ancestors is composed not only by mathematicians, but also by big names in the fields of Physics, Chemistry, Physiology and even  Anatomy.
 
-There is some "blue blood" in my family: <a href="http://en.wikipedia.org/wiki/Garrett_Birkhoff">Garrett Birkhoff</a>, <a href="http://en.wikipedia.org/wiki/William_burnside">William Burnside</a> (both algebrists).  <a href="http://en.wikipedia.org/wiki/Archibald_Hill">Archibald Hill</a>, who shared the 1922 Nobel Prize in Medicine for his elucidation of the production of mechanical work in muscles.  He is regarded, along with Hermann Helmholtz, as one of the founders of Biophysics.
+There is some <em>blue blood</em> in my family: <a href="http://en.wikipedia.org/wiki/Garrett_Birkhoff">Garrett Birkhoff</a>, <a href="http://en.wikipedia.org/wiki/William_burnside">William Burnside</a> (both algebraists).  <a href="http://en.wikipedia.org/wiki/Archibald_Hill">Archibald Hill</a>, who shared the 1922 Nobel Prize in Medicine for his elucidation of the production of mechanical work in muscles.  He is regarded, along with Hermann Helmholtz, as one of the founders of Biophysics.
 
 <a href="http://en.wikipedia.org/wiki/Thomas_Huxley">Thomas Huxley</a> (a.k.a. "Darwin's Bulldog", biologist and paleontologist) participated in a famous debate in 1860 with the Lord Bishop of Oxford, Samuel Wilberforce.  This was a key moment in the wider acceptance of Charles Darwin's Theory of Evolution.
 
@@ -28,29 +28,29 @@ Let us start by searching for a name in the database online.  Once in screen, no
 http://genealogy.math.ndsu.nodak.edu/id.php?id=113998
 {% endhighlight %}
 
-Every individual in the database has a unique ID in this fashion.  Note also, in the source of the page, the field `Advisor:`  If the advisor of an individual is not unknown, the page will link to the corresponding page.  We can retrieve the ID of the advisor easily from the source code.  Even better, we can code a small script in `python` to recursively go upwards in the database gathering the ID's of your ancestors in a dictionary.  One fast way to accomplish this could be as follows:
+Every individual in the database has a unique ID in this fashion.  Note also, in the source of the page, the field `Advisor:`  If the advisor of an individual is not `Unknown`, the page will link to the corresponding page.  We can easily retrieve the ID of the advisor from the source code.  Even better, we can code a small script in `python` to recursively go upwards in the database gathering the ID's of your ancestors in a dictionary.  One fast way to accomplish this could be as follows:
 
 {% highlight python linenos %}
 import urllib
 
 def augment_genealogy(subject_id,subject_tree):
     # This function assumes that subject_id in not in subject_tree
-    f=urllib.urlopen("http://genealogy.math.ndsu.nodak.edu/id.php?id="+subject_id)
-    subject=f.read()
+    f = urllib.urlopen("http://genealogy.math.ndsu.nodak.edu/id.php?id="+subject_id)
+    subject = f.read()
     f.close()
     if not subject.count("Advisor: Unknown"):
         # How many advisors did subject have?
         # For each advisor, retrieve their information, and attach
         # them to subject as parents
-        advisor_list=[]
+        advisor_list = []
         for advisor in range(subject.count("Advisor")):
-            subject=subject.partition("Advisor")[2].partition("id=")[2]
+            subject = subject.partition("Advisor")[2].partition("id=")[2]
 	    advisor_id = subject[0:subject.index("\"")]
 	    advisor_list.append(advisor_id)
 	    if advisor_id not in subject_tree:
-	        augment_genealogy(advisor_id,subject_tree)
+	        augment_genealogy(advisor_id, subject_tree)
 
-	subject_tree[subject_id]=advisor_list
+	subject_tree[subject_id] = advisor_list
 	return subject_tree
     else:
         subject_tree[subject_id]=[]
@@ -60,15 +60,14 @@ def augment_genealogy(subject_id,subject_tree):
 But what good is a genealogy tree if we cannot see the names of the ancestors?  The simple script below takes care of retrieving the names online for each of the IDs in our previously created dictionary.  Of course, one could instead include the appropriate string manipulation in the retrieval script above, and kill two birds with one stone.
 
 {% highlight python linenos %}
-[sourcecode language="python"]
 # Create a dictionary that maps to each id, its name
-names=dict()
+names = dict()
 for id in data:
-    f=urllib.urlopen("http://genealogy.math.ndsu.nodak.edu/id.php?id="+id)
-    s=f.read()
+    f = urllib.urlopen("http://genealogy.math.ndsu.nodak.edu/id.php?id="+id)
+    s = f.read()
     f.close()
-    name=s.partition("The Mathematics Genealogy Project - ")[2]
-    names[id]=unicode(name[0:name.index(">")].strip(), "ascii", "ignore").encode()
+    name = s.partition("The Mathematics Genealogy Project - ")[2]
+    names[id] = unicode(name[0:name.index(">")].strip(), "ascii", "ignore").encode()
 {% endhighlight %}
 
 These are the names in my tree, for example: Do you recognize any of them?
@@ -120,25 +119,25 @@ import networkx
 import matplotlib.pyplot
 
 data = augment_genealogy("113998",dict())
-Tree=networkx.MultiDiGraph(data)
+Tree = networkx.MultiDiGraph(data)
 
 # First graph
 matplotlib.pyplot.figure(figsize=(50,50))
-pos=networkx.spring_layout(Tree,iterations=900)
-networkx.draw(Tree,pos,node_size=0,alpha=0.4,font_size=24)
+pos = networkx.spring_layout(Tree, iterations=900)
+networkx.draw(Tree, pos, node_size=0, alpha=0.4, font_size=24)
 matplotlib.pyplot.savefig('/Users/blanco/Desktop/tree.png')
 
 # Second graph
 matplotlib.pyplot.figure(figsize=(50,50))
-pos=networkx.shell_layout(Tree)
-networkx.draw(Tree,pos,node_size=0,alpha=0.4,font_size=24)
+pos = networkx.shell_layout(Tree)
+networkx.draw(Tree, pos, node_size=0, alpha=0.4, font_size=24)
 matplotlib.pyplot.savefig('/Users/blanco/Desktop/tree.png')
 {% endhighlight %}
 
 Because of the cooperative nature among scientists, it is not unusual to encounter several ancestors over different generations linked to the same advisor.  This usually destroys the structure of binary tree that one would expect for this type of graph, making the plotting of the data quite a challenge.
 
-{% highlight python linenos %}
-T=Graph(data)
+{% highlight python %}
+T = Graph(data)
 T.is_tree()
 {% endhighlight %}
 
@@ -149,24 +148,24 @@ False
 An easy workaround is to install `GraphViz`, and use interaction to this software from the `networkx` libraries.  The following script attaches to each label the corresponding name, and produces the desired genealogy tree:
 
 {% highlight python linenos %}
-T=DiGraph(data)
+T = DiGraph(data)
 T.graphviz_to_file_named('/Users/blanco/Desktop/tree.dot')
 
 #  Here is where we change the labels from numbers to names
 #  We need to do it this way to avoid the issue "different people with same name"
 fr = open("/Users/blanco/Desktop/tree.dot", "r")
-workingString=fr.read()
+workingString = fr.read()
 fr.close()
 
-newString=str()
+newString = str()
 while workingString.count("[label=\""):
-    breakString=workingString.partition("[label=\"")
-    newString+=breakString[0]+breakString[1]
-    stepString=breakString[2]
-    newString+=names[stepString[0:stepString.index("\"")]]+"\""
-    workingString=stepString.partition("\"")[2]
+    breakString = workingString.partition("[label=\"")
+    newString += breakString[0] + breakString[1]
+    stepString = breakString[2]
+    newString += names[stepString[0:stepString.index("\"")]]+"\""
+    workingString = stepString.partition("\"")[2]
 
-newString+=workingString
+newString += workingString
 fw = open("/Users/blanco/Desktop/newtree.dot", "w")
 fw.write(newString)
 fw.close()
