@@ -12,7 +12,7 @@ I traced my mathematical lineage back into the XIV century at <a href="http://ww
 
 There is some <em>blue blood</em> in my family: <a href="http://en.wikipedia.org/wiki/Garrett_Birkhoff">Garrett Birkhoff</a>, <a href="http://en.wikipedia.org/wiki/William_burnside">William Burnside</a> (both algebraists).  <a href="http://en.wikipedia.org/wiki/Archibald_Hill">Archibald Hill</a>, who shared the 1922 Nobel Prize in Medicine for his elucidation of the production of mechanical work in muscles.  He is regarded, along with Hermann Helmholtz, as one of the founders of Biophysics.
 
-<a href="http://en.wikipedia.org/wiki/Thomas_Huxley">Thomas Huxley</a> (a.k.a. "Darwin's Bulldog", biologist and paleontologist) participated in a famous debate in 1860 with Lord Bishop of Oxford, Samuel Wilberforce.  This was a key moment in the wider acceptance of Charles Darwin's Theory of Evolution.
+<a href="http://en.wikipedia.org/wiki/Thomas_Huxley">Thomas Huxley</a> (a.k.a. "Darwin's Bulldog", biologist and paleontologist) participated in a famous debate in 1860 with Samuel Wilberforce, Lord Bishop of Oxford.  This was a key moment in the wider acceptance of Charles Darwin's Theory of Evolution.
 
 There are some hard-core scientists in the XVIII century, like <a href="http://en.wikipedia.org/wiki/Joseph_Barth">Joseph Barth</a> and <a href="http://en.wikipedia.org/wiki/Georg_Joseph_Beer">Georg Beer</a> (the latter is notable for inventing the flap operation for cataracts, known today as Beer's operation).
 
