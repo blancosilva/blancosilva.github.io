@@ -8,21 +8,21 @@ image:
   teaser: "http://farm3.static.flickr.com/2123/2087542505_2350f768dc_m.jpg"
 ---
 
-I traced my mathematical lineage back into the XIV century at <a href="http://www.genealogy.ams.org">The Mathematics Genealogy Project</a>.  Imagine my surprise when I discovered that a big branch in the tree of my scientific ancestors is composed not only by mathematicians, but also by big names in the fields of Physics, Chemistry, Physiology and even  Anatomy.
+I traced my mathematical lineage back into the XIV century at <a href="http://www.genealogy.ams.org">The Mathematics Genealogy Project</a>.  Imagine my surprise when I discovered that a big branch in the tree of my scientific ancestors is composed not only by mathematicians but also by big names in the fields of Physics, Chemistry, Physiology and even  Anatomy.
 
 There is some <em>blue blood</em> in my family: <a href="http://en.wikipedia.org/wiki/Garrett_Birkhoff">Garrett Birkhoff</a>, <a href="http://en.wikipedia.org/wiki/William_burnside">William Burnside</a> (both algebraists).  <a href="http://en.wikipedia.org/wiki/Archibald_Hill">Archibald Hill</a>, who shared the 1922 Nobel Prize in Medicine for his elucidation of the production of mechanical work in muscles.  He is regarded, along with Hermann Helmholtz, as one of the founders of Biophysics.
 
-<a href="http://en.wikipedia.org/wiki/Thomas_Huxley">Thomas Huxley</a> (a.k.a. "Darwin's Bulldog", biologist and paleontologist) participated in a famous debate in 1860 with the Lord Bishop of Oxford, Samuel Wilberforce.  This was a key moment in the wider acceptance of Charles Darwin's Theory of Evolution.
+<a href="http://en.wikipedia.org/wiki/Thomas_Huxley">Thomas Huxley</a> (a.k.a. "Darwin's Bulldog", biologist and paleontologist) participated in a famous debate in 1860 with Lord Bishop of Oxford, Samuel Wilberforce.  This was a key moment in the wider acceptance of Charles Darwin's Theory of Evolution.
 
 There are some hard-core scientists in the XVIII century, like <a href="http://en.wikipedia.org/wiki/Joseph_Barth">Joseph Barth</a> and <a href="http://en.wikipedia.org/wiki/Georg_Joseph_Beer">Georg Beer</a> (the latter is notable for inventing the flap operation for cataracts, known today as Beer's operation).
 
 My namesake <a href="http://en.wikipedia.org/wiki/Francois_de_la_Boe_Sylvius">Franciscus Sylvius</a>, another professor in Medicine, discovered the cleft in the brain now known as Sylvius' fissure (circa 1637).  One of his advisors, <a href="http://en.wikipedia.org/wiki/Jan_Baptist_van_Helmont">Jan Baptist van Helmont</a>, is the founder of Pneumatic Chemistry and disciple of <a href="http://en.wikipedia.org/wiki/Paracelsus">Paracelsus</a>, the father of Toxicology (for some reason, the Mathematics Genealogy Project does not list any of these two in my lineage---I wonder why).
 
-There are other big names among the branches of my scientific genealogy tree, but I will postpone this discovery towards the end of the post, for a nice punch-line.
+There are other big names among the branches of my scientific genealogy tree, but I will postpone this discovery towards the end of the post, for a nice punchline.
 
-Posters with your genealogy are available for purchase from the pages of the Mathematics Genealogy Project, but they are not very flexible neither in terms of layout nor design in general.  A great option is, of course, doing it yourself.  With the aid of `python`, `GraphViz` and a the `sage` library `networkx`, this becomes a straightforward task.  Let me show you a naïve way to accomplish it:
+Posters with your genealogy are available for purchase from the pages of the Mathematics Genealogy Project, but they are not very flexible neither in terms of layout nor design in general.  A great option is, of course, doing it yourself.  With the aid of `python`, `GraphViz` and the `sage` library `networkx`, this becomes a straightforward task.  Let me show you a naïve way to accomplish it:
 
-Let us start by searching for a name in the database online.  Once in screen, note the string of numbers at the end of the url obtained:
+Let us start by searching for a name in the database online.  Once in screen, note the string of numbers at the end of the URL obtained:
 
 {% highlight text %}
 http://genealogy.math.ndsu.nodak.edu/id.php?id=113998
