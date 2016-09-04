@@ -47,4 +47,10 @@ Use the mouse wheel to zoom in and out, drag and drop to pan the underlying tria
     <div class="plotdiv" id="546ccb53-63a6-4c56-bc6e-4ecb310e397d"></div>
 </div>
 
+Take two
+
+<div class="bk-root">
+    <div class="plotdiv" id="592e3dfb-14ec-4b7f-80af-f6420469c2d3"></div>
+</div>
+
 IS this working now?
