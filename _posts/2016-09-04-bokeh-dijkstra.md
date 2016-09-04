@@ -28,3 +28,8 @@ Bokeh.$(function() {
     Bokeh.embed.embed_items(docs_json, render_items);
 });
 </script>
+
+
+<div class="bk-root">
+    <div class="plotdiv" id="546ccb53-63a6-4c56-bc6e-4ecb310e397d"></div>
+</div>
