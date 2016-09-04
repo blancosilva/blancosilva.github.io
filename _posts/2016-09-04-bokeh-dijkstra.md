@@ -15,10 +15,18 @@ Ever since publishing that post, I thought it would be even nicer to have an int
 
 Use the mouse wheel to zoom in and out, drag and drop to pan the underlying triangulation, and notice what happens when the mouse hovers over each of the vertices.
 
+<div class="bk-root">
+    <div class="plotdiv" id="546ccb53-63a6-4c56-bc6e-4ecb310e397d"></div>
+</div>
+
+
 <link rel="stylesheet" href="https://cdn.pydata.org/bokeh/release/bokeh-0.12.1.min.css" type="text/css" />
         
 <script type="text/javascript" src="https://cdn.pydata.org/bokeh/release/bokeh-0.12.1.min.js"></script>
-<script type="text/javascript"> Bokeh.set_log_level("info"); </script>
+
+<script type="text/javascript"> 
+    Bokeh.set_log_level("info"); 
+</script>
 
 <script type="text/javascript">
 Bokeh.$(function() {
@@ -40,8 +48,5 @@ Bokeh.$(function() {
 });
 </script>
 
-<div class="bk-root">
-    <div class="plotdiv" id="546ccb53-63a6-4c56-bc6e-4ecb310e397d"></div>
-</div>
 
 Blah
