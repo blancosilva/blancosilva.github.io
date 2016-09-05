@@ -13,10 +13,8 @@ As a means to bring attention to my latest book, <a href="https://www.amazon.com
 
 Ever since publishing that post, I thought it would be even nicer to have an interactive diagram, where just by hovering over the vertices of the triangulation, we could quickly compute and display those paths.  It took me a while, but now with the assistance of `bokeh`, it came to fruition.  Well, here it is!
 
-Use the mouse wheel to zoom in and out, drag and drop to pan the underlying triangulation, and notice what happens when the mouse hovers over each of the vertices.
+Use the mouse wheel to zoom in and out (you may have to activate that option in the diagram toolbar), drag and drop to pan the underlying triangulation, and notice what happens when the mouse hovers over each of the different vertices.
 
-Take four
-        
 <link rel="stylesheet" href="https://cdn.pydata.org/bokeh/release/bokeh-0.12.1.min.css" type="text/css" />
         
 <script type="text/javascript" src="https://cdn.pydata.org/bokeh/release/bokeh-0.12.1.min.js"></script>
@@ -24,7 +22,7 @@ Take four
     Bokeh.set_log_level("info");
 </script>
 
-<div class="bk-root">
+<div class="bk-root" style="text-width:100%">
     <div class="plotdiv" id="9f7fea17-8e58-46cb-a7f0-111dfbbb4042"></div>
 </div>
 
