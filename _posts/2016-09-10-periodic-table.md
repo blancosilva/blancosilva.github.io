@@ -1,7 +1,7 @@
 ---
 layout: post
 title: How good is Kmeans clustering predicting subcategories in the metal-metalloid-nonmetal trend?
-date: 2016-08-24 
+date: 2016-09-10 
 category: post
 current: true
 comments: true
@@ -33,7 +33,7 @@ I applied Lloyd's clustering algorithm to that data imposing 10 clusters, with t
 
 For visualization of the obtained results, I could not choose which one best: isometric map, principal component analysis, spectral embedding, or local linear embedding of the data.  I will let you decide.  
 
-I included below an interactive `Bokeh` diagram that lets you choose one of those projections of the data, and it presents the clustered elements in the same color.  Hover over the different points to obtain the symbol of the corresponding element, and its atomic number.  Use the zoom and box-zoom capabilities of `Bokeh` to isolate different clusters.  This simplifies and enhances the information obtained on your visualization of the data.
+I included below an interactive `Bokeh` diagram that lets you choose one of those projections of the data, and it presents the clustered elements in the same color.  Hover over the different points to obtain the symbol of the corresponding element, and its atomic number.  Use the zoom and box-zoom capabilities of `Bokeh` to isolate different clusters.  This simplifies and enhances the information obtained on your visualization of the data.  The tabs in the menu of the diagram allow you to switch among the four computed projections of the data.
 
 Note, for example, one of the clusters obtained:
 
