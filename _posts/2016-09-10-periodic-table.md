@@ -37,7 +37,7 @@ Bokeh.$(function() {
 });
 </script>
 
-Note, for example, how one of the clusters obtained gathers all noble gases together---although it adds some extra elements to the group.
+Note how the orange cluster gathers all noble gases together---although some extra elements have been included in this group.
 
 {% highlight python %}
 print data[km_model.labels_==3]['NAME']
