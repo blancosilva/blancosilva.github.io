@@ -9,31 +9,11 @@ image:
   teaser: http://blancosilva.github.io/images/hydrogen.png
 ---
 
-I found a database with some of the properties of the chemical elements, and collected all of those for which I had all the corresponding values.  This lead me to a small dataset with 80 elements, and their following properties: Atomic number, atomic weight, electronegativity, ionization potential, atomic radius, atomic volume, boiling point, covalent radius, density, heat of fusion, heat of vaporization, melting point, and specific heat capacity.  For instance, for Hydrogen, these values are as follows (I trust you can figure out the units):
+I started with a database containing some of the properties of the chemical elements: Atomic number, atomic weight, electronegativity, ionization potential, atomic radius, atomic volume, boiling point, covalent radius, density, heat of fusion, heat of vaporization, melting point, and specific heat capacity.  A quick cleaning of the data gave me a reduced dataset with 80 elements.  
 
-{% highlight text %}
-NAME Hydrogen
-SYMBOL H
-ATOMIC_NUMBER 1
-ATOMIC_WEIGHT 1.00794
-ELECTRONEGATIVITY 2.1
-IONIZATION_POTENTIAL 13.598
-ATOMIC RADIUS 2.08e-10
-ATOMIC VOLUME 1.41e-05
-BOILING POINT 20.28
-COVALENT RADIUS 0.32
-DENSITY 0.0899
-HEAT OF FUSION 0.0585
-HEAT OF VAPORIZATION 0.4581
-MELTING POINT 13.81
-SPECIFIC HEAT CAPACITY 14.304
-{% endhighlight %}
+I applied Lloyd’s clustering algorithm to this dataset, imposing 10 clusters. My hope was that the K-means method would be accurate enough to put together all elements from the same metal-metalloid-nonmetal trend.  In other words, I expected each cluster to match one of the following: Alkali metals, alkaline earth metals, lan­thanides, actinides, transition metals, post-​transition metals, metalloids, polyatomic nonmetals, diatomic nonmetals, or noble gasses.
 
-I applied Lloyd's clustering algorithm to that data imposing 10 clusters, with the hopes that this K-means method will be accurate enough to put together all the elements in the same subcategory in the metal-metalloid-nonmetal trend: Alkali metals, alkaline earth metals, lan­thanides, actinides, transition metals, post-​transition metals, metalloids, polyatomic nonmetals, diatomic nonmetals, or noble gases.
-
-For visualization of the obtained results, I could not choose which one was the best: isometric map, principal component analysis, spectral embedding, or local linear embedding of the data.  I will let you decide.  
-
-I included below an interactive `Bokeh` diagram that lets you choose one of those projections of the data, and it presents the clustered elements in the same color.  Hover over the different points to obtain the symbol of the corresponding element, and its atomic number.  Use the zoom and box-zoom capabilities of `Bokeh` to isolate different clusters.  This simplifies and enhances the information obtained on your visualization of the data.  The tabs in the menu of the diagram allow you to switch among the four computed projections of the data.
+I included an interactive Bokeh diagram.  This diagram offers four possible representations of (projections of) the data: isometric map, principal component analysis, spectral embedding, local linear embedding.  The tabs in the menu of the diagram allow me to switch among the four computed projections.  In any case, the chart presents all clustered elements as points with the same color. By hovering over different points I obtain both symbol and atomic number of the corresponding chemical element. Using zoom or box-zoom capabilities to isolate different clusters enhances the information obtained. 
 
 <link rel="stylesheet" href="https://cdn.pydata.org/bokeh/release/bokeh-0.12.1.min.css" type="text/css" />
 <link rel="stylesheet" href="https://cdn.pydata.org/bokeh/release/bokeh-widgets-0.12.1.min.css" type="text/css" />
@@ -57,19 +37,7 @@ Bokeh.$(function() {
 });
 </script>
 
-Note, for example, one of the clusters obtained:
-
-{% highlight python %}
-print data[km_model.labels_==3]['NAME']
-
-1     Aluminum
-35     Gallium
-45      Indium
-97         Tin
-Name: NAME, dtype: object
-{% endhighlight %}
-
-It correctly clusters together four of the eleven post-transition metals.  Other clusters present similar accuracy.  For instance, note the cluster containing the noble gases.
+Note, for example, how one of the clusters obtained gathers all noble gases together---although it adds some extra elements to the group.
 
 {% highlight python %}
 print data[km_model.labels_==3]['NAME']
@@ -87,4 +55,3 @@ print data[km_model.labels_==3]['NAME']
 107       Xenon
 Name: NAME, dtype: object
 {% endhighlight %}
-
