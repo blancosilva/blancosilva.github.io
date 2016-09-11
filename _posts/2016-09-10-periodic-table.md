@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How good is Kmeans clustering predicting subcategories in the metal-metalloid-nonmetal trend?
+title: How accurate is K-means clustering as predictor of subcategories in the metal-metalloid-nonmetal trend?
 date: 2016-09-10 
 category: post
 current: true
