@@ -40,18 +40,17 @@ Bokeh.$(function() {
 Note how the orange cluster gathers all noble gases together---although some extra elements have been included in this group.
 
 {% highlight python %}
-print data[km_model.labels_==3]['NAME']
-
-4         Argon
-14      Bromine
-20     Chlorine
-31     Fluorine
-38     Hydrogen
-44       Iodine
-48      Krypton
-58     Nitrogen
-62         Neon
-66       Oxygen
-107       Xenon
-Name: NAME, dtype: object
+4           Argon
+14        Bromine
+20       Chlorine
+31       Fluorine
+38       Hydrogen
+41        Mercury
+44         Iodine
+48        Krypton
+58       Nitrogen
+62           Neon
+66         Oxygen
+68     Phosphorus
+107         Xenon
 {% endhighlight %}
