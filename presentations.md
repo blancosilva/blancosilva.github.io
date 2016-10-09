@@ -82,6 +82,7 @@ Feel free to download any of my presentations.  You may find a complete list in 
 					<h4 class="list-group-item-heading" style="text-align:center;">Mathematical Imaging [Technical version]</h4>
 					<img style="border:2px solid #000000; width:100%" src="http://farm5.static.flickr.com/4056/4333203122_81d24aa6fd_o.jpg" alt="Mathematical Imaging [Technical version]">
 				</a>
+				<p> Blah </p>
 			</div>
 			<div class="item">
 				<a href="https://github.com/blancosilva/Presentations/blob/master/ImageProcessingBasic.pdf">
