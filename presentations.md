@@ -118,9 +118,6 @@ Feel free to download any of my presentations.  You may find a complete list in 
 					<h4 class="list-group-item-heading" style="text-align:center;">Modeling the Impact of Ebola and Bushmeat hunting</h4>
 					<img style="border:2px solid #000000; width:100%" src="http://farm1.static.flickr.com/83/257085082_86da369859_d.jpg" alt="Modeling the Impact of Ebola and Bushmeat hunting">
 				</a>
-				<p>
-					In May 2003, together with fellow Mathematician Stephanie Gruver, Statistician Young-Ju Kim, and Forestry Engineer Carol Rizkalla, we worked on this little project to apply ideas from Dynamical Systems to an epidemiology model of the Ebola hemorrhagic fever in the Republic of Congo. The manuscript ebola/root.pdf is a first draft, and contains most of the mathematics behind the study. Carol worked in a less-math-more-biology version: ebola/Ecohealth.pdf “Modeling the Impact of Ebola and Bushmeat Hunting on Western Lowland Gorillas,” and presented it to EcoHealth, where it has been published (June 2007). She also prepared a poster for the Sigma-Xi competition: Click on the image above to retrieve a PowerPoint version of it.
-				</p>
 			</div>
 		</div>
 		<a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
