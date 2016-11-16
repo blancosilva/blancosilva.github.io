@@ -405,7 +405,7 @@ While it is possible to compute the convex hull of a reasonably large set of
 points in the plane through the geometry module of the library `sympy`, this is
 not recommendable.  A much faster and reliable code is available in the module
 `scipy.spatial` through the routine `ConvexHull`, which is in turn a wrapper to
-`qconvex`, from the `Qhull` libraries [www.qhull.org](www.qhull.org).  This
+`qconvex`, from the `Qhull` libraries [www.qhull.org](http://www.qhull.org).  This
 routine also allows the computation of convex hulls in higher dimensions.   Let
 us compare both methods, with the famous *Lake Superior* polygon,
 `superior.poly`.
@@ -711,13 +711,13 @@ new set of *Steiner points*, which are allowed anywhere, not only on edges.
 > To achieve these high-level triangulations, we need to step outside of the
 `scipy` stack.  We have a `python` wrapper to the amazing implementation of mesh
 generators
-[www.cs.cmu.edu/~quake/triangle.html](www.cs.cmu.edu/~quake/triangle.html) by
+[www.cs.cmu.edu/~quake/triangle.html](http://www.cs.cmu.edu/~quake/triangle.html) by
 Richard Shewchuck .  This wrapper, together with examples and other related
 functions, can be installed by issuing
 >        pip install triangle
 > For more information on this module, refer to the documentation online from
 its author, Dzhelil Rufat, at
-[dzhelil.info/triangle/index.html](dzhelil.info/triangle/index.html)
+[dzhelil.info/triangle/index.html](http://dzhelil.info/triangle/index.html)
 
 Let us compute those different triangulations for our running example.  We use
 once again the `poly` file with the features of Lake Superior, which we read
@@ -805,8 +805,7 @@ graphs.  Among these routines, we have several different algorithms to compute
 shortest paths on a graph.
 
 > For more information on the module `scipy.sparse.csgraph`, refer to the online
-documentation at [docs.scipy.org/doc/scipy/reference/sparse.csgraph.html](docs.s
-cipy.org/doc/scipy/reference/sparse.csgraph.html)
+documentation at [docs.scipy.org/doc/scipy/reference/sparse.csgraph.html](http://docs.scipy.org/doc/scipy/reference/sparse.csgraph.html)
 > For the theory and applications of Graph Theory, one of the best sources is
 the introductory book by Reinhard Diestel, _Graph Theory_, published by
 Springer-Verlag.
@@ -1278,10 +1277,8 @@ and plot plane Bézier curves.
 
 
 > For information about the class `Path` and its usage within the `matplotlib`
-libraries, refer to the official documentation at [matplotlib.org/api/path_api.h
-tml#matplotlib.path.Path](http://matplotlib.org/api/path_api.html#matplotlib.path.Path)
-, as well as the very instructive tutorial at [matplotlib.org/users/path_tutoria
-l.html](http://matplotlib.org/users/path_tutorial.html).  In this section, we focus
+libraries, refer to the official documentation at [matplotlib.org/api/path_api.html#matplotlib.path.Path](http://matplotlib.org/api/path_api.html#matplotlib.path.Path)
+, as well as the very instructive tutorial at [matplotlib.org/users/path_tutorial.html](http://matplotlib.org/users/path_tutorial.html).  In this section, we focus
 solely on the necessary material to deal with Bézier curves.
 
 Before we proceed, we need some basic code to represent and visualize Bézier
