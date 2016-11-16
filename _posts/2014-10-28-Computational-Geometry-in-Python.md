@@ -413,10 +413,10 @@ us compare both methods, with the famous *Lake Superior* polygon,
 > `poly` files represent *planar straight line graphs*---a simple list of
 vertices and edges, together with information about holes and concavities, in
 some cases.  The running example can be downloaded from
-[www.math.sc.edu/~blanco/superior.poly](www.math.sc.edu/~blanco/superior.poly).
+[http://http://people.math.sc.edu/blanco/superior.poly](http://people.math.sc.edu/blanco/superior.poly).
 It contains a polygonal description of the coastline of Lake Superior, with 7
 holes (for the islands), 518 vertices, and 518 edges.
-> For a complete description of the `poly` format, refer to [www.cs.cmu.edu/~qua
+> For a complete description of the `poly` format, refer to [http://www.cs.cmu.edu/~qua
 ke/triangle.poly.html](www.cs.cmu.edu/~quake/triangle.poly.html).  With that
 information, we can write  a simple reader without much effort.  This is an
 example:
