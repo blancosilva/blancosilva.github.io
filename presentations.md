@@ -30,7 +30,7 @@ Feel free to download any of my presentations.  You may find a complete list in 
 		</ol>
 		<div class="carousel-inner" role="listbox">
 			<div class="item active">
-				<a href="https://github.com/blancosilva/Presentations/blob/master/CGiP.pdf">
+				<a href="https://github.com/blancosilva/Presentations/SSCA-Oct24.pdf">
 					<h4 class="list-group-item-heading" style="text-align:center;">Searching for the SS Central America</h4>
 					<img style="border:2px solid #000000; width:100%" src="https://farm4.staticflickr.com/3933/14996421073_1930d8082e_b_d.jpg" alt="Searching for the SS Central America">
 				</a>
