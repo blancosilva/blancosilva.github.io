@@ -32,7 +32,7 @@
 						{% endif %}
 						{% endfor %}
 						<li class="divider"></li>
-						<li class="dropdown-header">Review Exams</li>
+						<li class="dropdown-header">Forums for Homework and Review Exams</li>
 						{% for post in site.posts %}
 						{% if post.category == "forum" and post.current %}
 						<li><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></li>
