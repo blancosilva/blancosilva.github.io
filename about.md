@@ -23,7 +23,7 @@ Originally from Spain, I spent a few years in Indiana pursuing a Ph.D. in Applie
 When I am not working, mowing the lawn, or hanging out with my family, I spend my time developing any of my multiple hobbies.
 
 + I am crazy for the *outdoors*: *swimming*, *hiking*, *camping*, some *rock climbing* and *bouldering* are my favorite activities while at the mountains.  I met my wife in a climbing trip to the walls of Looking Glass Rock, in the Pisgah National Forest near Brevard, in North Carolina.  We married a few years after that adventure.
-+ We have a (very energetic) *dog* and a (very independent) *cat*.
+<!-- + We have a (very energetic) *dog* and a (very independent) *cat*. -->
 + I practice *Shotokan karate*.
 + I played *tennis* competitively in high school.  I played *racquetball* and *handball* for fun when I came to the States.
 + In school and college, I played competitively *soccer*, *rugby*, and less seriously, *basketball*.
