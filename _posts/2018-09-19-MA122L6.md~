@@ -1,0 +1,32 @@
+---
+layout: post
+title: Answers to Assigned Problems in Lesson 05
+date: 2018-09-09 22:22
+comments: false
+category: forum
+current: true
+---
+
+1. \\( P(t) = 11000(1.085)^t \\)
+2. \\( P(t) = 6000(1.012)^t \\)
+3. \\( P(t) = 32500(0.95)^t. P(12) \approx \$ 17,561 \\)
+4. \\( P(t) = 125000(0.88)^t.  P(6) \approx \$ 58,050 \\)
+5. Answers:
+
+    Annually: \\( P(t) = 4000(1.07)^t. P(9) \approx \$ 7,353.84. \\)
+
+    Quarterly: \\( P(t) = 4000(1.0175)^t.  P(9 \cdot 4) \approx \$ 7,469.63. \\)
+
+    Monthly: \\( P(t) = 4000(1.0058)^t. P(9\cdot 12) \approx \$ 7,469.92. \\)
+    
+    Continuously: \\( P(t) = 4000e^{0.07t}. P(9) \approx \$ 7,510.44. \\)
+
+6. Answers:
+    
+    Annually: \\( P(t) = 6000(1.09)^t. P(5) \approx \$ 9,231.74. \\)
+
+    Quarterly: \\( P(t) = 6000(1.0225)^t. P(5\cdot 4) \approx \$ 9,363.06. \\)
+    
+    Monthly: \\( P(t) = 6000(1.0075)^t. P(5\cdot 12) \approx \$ 9,394.09. \\)
+    
+    Continuously: \\( P(t) = 6000e^{0.09t}. P(5) \approx \$ 9,409.87. \\)
