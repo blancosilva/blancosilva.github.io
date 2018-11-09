@@ -1,0 +1,32 @@
+---
+layout: post
+title: MATH 300 Fall 2018 Assignment 14
+date: 2018-11-09 8:11 am
+comments: true
+category: forum
+current: true
+---
+
+## Non-Conditional Statements
+
+<div class="alert alert-info">
+  The following is the list of problems for Chapter 7 of the <em>Book of Proof</em> (page 129).  There is a forum open
+  at the end, so you can ask questions.  It is a great way to interact with the instructor and with other students in
+  your class, should you need some assistance with any question. Please, <strong>do not post solutions</strong>.
+</div>
+
+Prove the following statements.  These exercises are cumulative, covering all techniques addressed in Chapters 4--7.
+
+1. Suppose \\( x \in \mathbb{Z}. \\) Then \\( x \\) is even if and only if \\( 3x+5 \\) is odd.
+2. Suppose \\( x in \mathbb{Z}. \\)  Then \\( x \\) is odd if and only if \\( 3x+6 \\) is odd.
+3. Given an integer \\( a, \\) then \\( a^3+a^2+a \\) is even if and only if \\( a \\) is even.
+4. Given an integer \\( a, \\) then \\( a^2+4a+5 \\) is odd if and only if \\( a \\) is even.
+5. An integer \\( a \\) is odd if and only if \\( a^3 \\) is odd.
+6. Suppose \\( x, y \in \mathbb{R}. \\)  Then \\( x^3+x^2y=y^2+xy \\) if and only if \\( y=x^2 \\) or \\( y=-x. \\)
+7. Suppose \\( x, y \in \mathbb{R}. \\)  Then \\( (x+y)^2=x^2+y^2 \\) if and only if \\( x=0 \\) or \\( y=0. \\)
+8. Suppose \\( a, b \in \mathbb{Z}. \\) Prove that \\( a \equiv b \pmod{10} \\) if and only if \\( a \equiv b \pmod{2}
+   \\) and \\( a \equiv b \pmod{5}. \\)
+9. Suppose \\( a \in \mathbb{Z}. \\) Prove that \\( 14 \vert a \\) if and only if \\( 7 \vert a \\) and \\( 2 \vert
+   a. \\)
+10. If \\( a \in \mathbb{Z}, \\) then \\( a^3 \equiv a \pmod{3}. \\)
+11. Suppose \\( a, b \in 
