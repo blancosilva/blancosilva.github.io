@@ -21,7 +21,7 @@ crumbs: false
 </div>
 
 <p style="text-align:center;">
-	<a href="https://www.dropbox.com/s/ziykmd7kz2sj0d9/resumeAlly.pdf?dl=0"?
+	<a href="https://www.dropbox.com/s/ziykmd7kz2sj0d9/resumeAlly.pdf?dl=0">
 		<img src="https://blancosilva.github.io/images/resumeAlly.jpg" style="width:75%; border:1px solid black; margin-left:auto; margin-right:auto;">
 	</a>
 </p>
